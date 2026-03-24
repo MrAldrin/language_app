@@ -181,3 +181,7 @@ test/
 .devbox
 # enforcing strict reproducibility not suitable for template
 devbox.lock
+
+# other
+_site/
+assets/

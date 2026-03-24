@@ -224,11 +224,20 @@ def _():
 
 @app.cell
 def _(dropdown_language_pairs):
-    pair = dropdown_language_pairs.value
-    file_path = mo.notebook_location() / "public" / pair / "questions.json"
+    import sys
+    import urllib.request
 
-    with open(file_path, "r", encoding="utf-8") as f:
-        data = json.load(f)
+    pair = dropdown_language_pairs.value
+
+    if "pyodide" in sys.modules:
+        from pyodide.http import open_url
+
+        url = f"../public/{pair}/questions.json"
+        data = json.loads(open_url(url).read())
+    else:
+        file_path = mo.notebook_location().parent / "public" / pair / "questions.json"
+        with open(file_path, "r", encoding="utf-8") as f:
+            data = json.load(f)
 
     df_raw = load_curriculum(data)
     return (df_raw,)
