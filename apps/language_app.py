@@ -10,7 +10,7 @@
 import marimo
 
 __generated_with = "0.21.1"
-app = marimo.App(width="full")
+app = marimo.App(width="full", layout_file="layouts/language_app.grid.json")
 
 with app.setup:
     import marimo as mo
@@ -25,14 +25,6 @@ with app.setup:
 def _():
     mo.md(r"""
     # UI stuff
-    """)
-    return
-
-
-@app.cell(hide_code=True)
-def _():
-    mo.md(r"""
-    # schipper mag ik overvaren?
     """)
     return
 
@@ -60,12 +52,12 @@ def _(
     ui_options,
     ui_word_alternatives,
 ):
+    app_header = mo.md("# Schipper mag ik overvaren?").center()
+
     progress_section = mo.hstack([ui_difficulty, progress], widths="equal")
 
     # Core Exercise
-    answer_text = (
-        f"**Answer:** {current_sentence['target']}" if current_sentence else ""
-    )
+    answer_text = f"**Answer:** {current_sentence['target']}" if current_sentence else ""
     if current_sentence and current_sentence.get("accepted"):
         answer_text += f"<br/>*Or:* {' / '.join(current_sentence['accepted'])}"
 
@@ -99,6 +91,7 @@ def _(
     if current_sentence:
         ui = mo.vstack(
             [
+                app_header,
                 ui_options,
                 mo.md("---"),
                 progress_section,
@@ -108,7 +101,7 @@ def _(
             gap=0.0,
         )
     else:
-        ui = mo.vstack([ui_options, mo.md("---"), placeholder], gap=3)
+        ui = mo.vstack([app_header, ui_options, mo.md("---"), placeholder], gap=3)
     return (ui,)
 
 
@@ -162,9 +155,7 @@ def _(current_sentence, df, row_number):
     )
     progress = render_progress(row_number, len(df))
     question = (
-        render_question_text(current_sentence["source"])
-        if current_sentence
-        else mo.md("")
+        render_question_text(current_sentence["source"]) if current_sentence else mo.md("")
     )
     return progress, question, ui_difficulty
 
@@ -235,7 +226,7 @@ def _(dropdown_language_pairs):
         url = f"../public/{pair}/questions.json"
         data = json.loads(open_url(url).read())
     else:
-        file_path = mo.notebook_location().parent / "public" / pair / "questions.json"
+        file_path = mo.notebook_location() / "public" / pair / "questions.json"
         with open(file_path, "r", encoding="utf-8") as f:
             data = json.load(f)
 
