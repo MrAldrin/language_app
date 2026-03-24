@@ -63,7 +63,9 @@ def _(
     progress_section = mo.hstack([ui_difficulty, progress], widths="equal")
 
     # Core Exercise
-    answer_text = f"**Answer:** {current_sentence['target']}" if current_sentence else ""
+    answer_text = (
+        f"**Answer:** {current_sentence['target']}" if current_sentence else ""
+    )
     if current_sentence and current_sentence.get("accepted"):
         answer_text += f"<br/>*Or:* {' / '.join(current_sentence['accepted'])}"
 
@@ -160,7 +162,9 @@ def _(current_sentence, df, row_number):
     )
     progress = render_progress(row_number, len(df))
     question = (
-        render_question_text(current_sentence["source"]) if current_sentence else mo.md("")
+        render_question_text(current_sentence["source"])
+        if current_sentence
+        else mo.md("")
     )
     return progress, question, ui_difficulty
 
@@ -220,19 +224,11 @@ def _():
 
 @app.cell
 def _(dropdown_language_pairs):
-    import sys
-
     pair = dropdown_language_pairs.value
-    if "pyodide" in sys.modules:
-        import urllib.request
+    file_path = mo.notebook_location() / "public" / pair / "questions.json"
 
-        file_path = f"{mo.notebook_location()}/public/{pair}/questions.json"
-        response = urllib.request.urlopen(file_path)
-        data = json.loads(response.read().decode("utf-8"))
-    else:
-        file_path = f"apps/public/{pair}/questions.json"
-        with open(file_path, "r", encoding="utf-8") as f:
-            data = json.load(f)
+    with open(file_path, "r", encoding="utf-8") as f:
+        data = json.load(f)
 
     df_raw = load_curriculum(data)
     return (df_raw,)
