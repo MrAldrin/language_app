@@ -1,0 +1,139 @@
+- id: 1
+  difficulty: easy
+  en: the cat drinks milk
+  'no': katten drikker melk
+  words_en: [the, cat, drinks, milk, milks, drink, cinema, brother, eat]
+  words_no: [katten, drikker, melk, melks, kattene, du, bordet, himmelen]
+- id: 2
+  difficulty: easy
+  en: i like to eat
+  'no': jeg liker å spise
+  words_en: [i, like, to, eat, likeen, lika, dinner, will, walk]
+  words_no: [jeg, liker, å, spise, spises, likere, melk, morgen, hjem]
+- id: 3
+  difficulty: easy
+  en: she reads a book
+  'no': hun leser en bok
+  words_en: [she, reads, a, book, readse, readsen, in, under, writing]
+  words_no: [hun, leser, en, bok, leseren, lesere, og, brev, nydelig]
+- id: 4
+  difficulty: easy
+  en: he sees a dog
+  'no': han ser en hund
+  words_en: [he, sees, a, dog, seesen, saes, they, during, buy]
+  words_no: [han, ser, en, hund, hunde, hunden, spiser, min, sommerferien]
+- id: 5
+  difficulty: easy
+  en: we walk home now
+  'no': vi går hjem nå
+  words_en: [we, walk, home, now, homes, homa, sees, under, buy]
+  words_no: [vi, går, hjem, nå, hjam, hjems, vil, et, må]
+- id: 6
+  difficulty: easy
+  en: the sun is hot
+  'no': solen er varm
+  words_en: [the, sun, is, hot, blue, cup, play]
+  words_no: [solen, er, varm, verm, varme, på, været, det]
+- id: 7
+  difficulty: easy
+  en: they play football today
+  'no': de spiller fotball i dag
+  words_en: [they, play, football, today, theyen, theye, like, cat, water]
+  words_no: [de, spiller, fotball, i, dag, spillere, fotbell, vi, solen, hun]
+- id: 8
+  difficulty: easy
+  en: i have a car
+  'no': jeg har en bil
+  words_en: [i, have, a, car, heve, haves, new, friend, table]
+  words_no: [jeg, har, en, bil, går, sin, et]
+- id: 9
+  difficulty: easy
+  en: you run very fast
+  'no': du løper veldig fort
+  words_en: [you, run, very, fast, vary, fasts, will, travel, new]
+  words_no: [du, løper, veldig, fort, løpere, forten, kaffe, kopp, blå]
+- id: 10
+  difficulty: easy
+  en: the water is cold
+  'no': vannet er kaldt
+  words_en: [the, water, is, cold, watere, colden, hot, sleeps, six]
+  words_no: [vannet, er, kaldt, kaldten, kaldts, varm, solen, lille]
+- id: 11
+  difficulty: medium
+  en: my brother wants to buy a new red car
+  'no': broren min vil kjøpe en ny rød bil
+  words_en: [my, brother, wants, to, buy, a, new, red, car, want, wantsen, now, home,
+    quickly]
+  words_no: [broren, min, vil, kjøpe, en, ny, rød, bil, kjøpa, kjøpes, alltid, om,
+    går]
+- id: 12
+  difficulty: medium
+  en: we are going to the cinema tomorrow evening
+  'no': vi skal på kino i morgen kveld
+  words_en: [we, are, going, to, the, cinema, tomorrow, evening, cinemas, tomorrowe,
+    job, cat, letter]
+  words_no: [vi, skal, på, kino, i, morgen, kveld, morgan, skalen, kopp, reise, leser]
+- id: 13
+  difficulty: medium
+  en: the small dog sleeps under the big table
+  'no': den lille hunden sover under det store bordet
+  words_en: [the, small, dog, sleeps, under, the, big, table, undere, tableen, of,
+    and, i]
+  words_no: [den, lille, hunden, sover, under, det, store, bordet, bordete, hundene,
+    fant, langt, løper]
+- id: 14
+  difficulty: medium
+  en: i need to learn this language very quickly
+  'no': jeg må lære dette språket veldig fort
+  words_en: [i, need, to, learn, this, language, very, quickly, vary, lenguage, in,
+    book, beautiful]
+  words_no: [jeg, må, lære, dette, språket, veldig, fort, språkat, datte, katten,
+    byen, været]
+- id: 15
+  difficulty: medium
+  en: she is writing a long letter to her friend
+  'no': hun skriver et langt brev til vennen sin
+  words_en: [she, is, writing, a, long, letter, to, her, friend, friand, friends,
+    home, play, cinema]
+  words_no: [hun, skriver, et, langt, brev, til, vennen, sin, skriveren, breven, morgenen,
+    ny, varm]
+- id: 16
+  difficulty: medium
+  en: the weather is beautiful and the sky is blue
+  'no': været er nydelig og himmelen er blå
+  words_en: [the, weather, is, beautiful, and, the, sky, is, blue, beautifuls, beautifulen,
+    letter, play, dinner]
+  words_no: [været, er, nydelig, og, himmelen, er, blå, himmelens, nydeligen, et,
+    under, seks]
+- id: 17
+  difficulty: medium
+  en: they will travel to spain during the summer holidays
+  'no': de skal reise til spania i sommerferien
+  words_en: [they, will, travel, to, spain, during, the, summer, holidays, theys,
+    travelen, going, red, milk]
+  words_no: [de, skal, reise, til, spania, i, sommerferien, skel, reiseen, god, ny,
+    det]
+- id: 18
+  difficulty: medium
+  en: i always drink a cup of coffee in the morning
+  'no': jeg drikker alltid en kopp kaffe om morgenen
+  words_en: [i, always, drink, a, cup, of, coffee, in, the, morning, elways, mornings,
+    are, big, we]
+  words_no: [jeg, drikker, alltid, en, kopp, kaffe, om, morgenen, drikkers, morgenene,
+    vannet, klokken, kjøpe]
+- id: 19
+  difficulty: medium
+  en: he found a good job in the big city
+  'no': han fant en god jobb i den store byen
+  words_en: [he, found, a, good, job, in, the, big, city, goode, founde, dog, home,
+    walk]
+  words_no: [han, fant, en, god, jobb, i, den, store, byen, byens, stora, å, rød,
+    vil]
+- id: 20
+  difficulty: medium
+  en: we eat dinner together every evening at six o'clock
+  'no': vi spiser middag sammen hver kveld klokken seks
+  words_en: [we, eat, dinner, together, every, evening, at, six, o'clock, avening,
+    dinners, the, morning, summer]
+  words_no: [vi, spiser, middag, sammen, hver, kveld, klokken, seks, kvald, spisar,
+    og, sover, til]

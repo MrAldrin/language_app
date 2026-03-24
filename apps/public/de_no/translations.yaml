@@ -1,0 +1,138 @@
+- id: 1
+  difficulty: easy
+  de: die katze trinkt milch
+  'no': katten drikker melk
+  words_de: [die, katze, trinkt, milch, katzes, katzeen, in, rotes, trinke]
+  words_no: [katten, drikker, melk, kattens, drikkeren, kino, jobb, brev]
+- id: 2
+  difficulty: easy
+  de: ich esse gerne
+  'no': jeg liker å spise
+  words_de: [ich, esse, gerne, esseen, esses, eine, hause, sechs]
+  words_no: [jeg, liker, å, spise, likere, likeren, du, store, fotball]
+- id: 3
+  difficulty: easy
+  de: sie liest ein buch
+  'no': hun leser en bok
+  words_de: [sie, liest, ein, buch, buchs, liast, großen, job, blau]
+  words_no: [hun, leser, en, bok, lesere, lesers, varm, morgen, kaldt]
+- id: 4
+  difficulty: easy
+  de: er sieht einen hund
+  'no': han ser en hund
+  words_de: [er, sieht, einen, hund, einene, ainen, esse, heute, ein]
+  words_no: [han, ser, en, hund, hunds, hunde, sover, melk, det]
+- id: 5
+  difficulty: easy
+  de: wir laufen jetzt nach hause
+  'no': vi går hjem nå
+  words_de: [wir, laufen, jetzt, nach, hause, nech, nachs, milch, trinkt, sie]
+  words_no: [vi, går, hjem, nå, hjam, hjems, til, vennen, skriver]
+- id: 6
+  difficulty: easy
+  de: die sonne ist heiß
+  'no': solen er varm
+  words_de: [die, sonne, ist, heiß, heiße, sonneen, reisen, auto, und]
+  words_no: [solen, er, varm, solens, varme, hun, sammen, sover]
+- id: 7
+  difficulty: easy
+  de: sie spielen heute fußball
+  'no': de spiller fotball i dag
+  words_de: [sie, spielen, heute, fußball, haute, spialen, freundin, esse, kaufen]
+  words_no: [de, spiller, fotball, i, dag, spillers, fotballs, liker, sin, dette]
+- id: 8
+  difficulty: easy
+  de: ich habe ein auto
+  'no': jeg har en bil
+  words_de: [ich, habe, ein, auto, hebe, autoe, hause, fußball, die]
+  words_no: [jeg, har, en, bil, vannet, hun, klokken]
+- id: 9
+  difficulty: easy
+  de: du rennst sehr schnell
+  'no': du løper veldig fort
+  words_de: [du, rennst, sehr, schnell, schnells, schnelle, wasser, kino, esse]
+  words_no: [du, løper, veldig, fort, løperen, veldigen, kaldt, på, melk]
+- id: 10
+  difficulty: easy
+  de: das wasser ist kalt
+  'no': vannet er kaldt
+  words_de: [das, wasser, ist, kalt, kalten, kalte, essen, trinkt, den]
+  words_no: [vannet, er, kaldt, kaldte, kaldts, sammen, bordet, ser]
+- id: 11
+  difficulty: medium
+  de: mein bruder will ein neues rotes auto kaufen
+  'no': broren min vil kjøpe en ny rød bil
+  words_de: [mein, bruder, will, ein, neues, rotes, auto, kaufen, neue, brudere, tisch,
+    eine, job]
+  words_no: [broren, min, vil, kjøpe, en, ny, rød, bil, broran, kjøpeen, jobb, bok,
+    nå]
+- id: 12
+  difficulty: medium
+  de: wir gehen morgen abend ins kino
+  'no': vi skal på kino i morgen kveld
+  words_de: [wir, gehen, morgen, abend, ins, kino, ebend, morgens, rennst, dem, er]
+  words_no: [vi, skal, på, kino, i, morgen, kveld, kinoe, skale, morgenen, været,
+    rød]
+- id: 13
+  difficulty: medium
+  de: der kleine hund schläft unter dem großen tisch
+  'no': den lille hunden sover under det store bordet
+  words_de: [der, kleine, hund, schläft, unter, dem, großen, tisch, kleines, kleineen,
+    kaufen, job, fußball]
+  words_no: [den, lille, hunden, sover, under, det, store, bordet, soveren, stora,
+    løper, vil, seks]
+- id: 14
+  difficulty: medium
+  de: ich muss diese sprache sehr schnell lernen
+  'no': jeg må lære dette språket veldig fort
+  words_de: [ich, muss, diese, sprache, sehr, schnell, lernen, lernens, sehren, mein,
+    tasse, ist]
+  words_no: [jeg, må, lære, dette, språket, veldig, fort, valdig, detteen, kjøpe,
+    nå, til]
+- id: 15
+  difficulty: medium
+  de: sie schreibt einen langen brief an ihre freundin
+  'no': hun skriver et langt brev til vennen sin
+  words_de: [sie, schreibt, einen, langen, brief, an, ihre, freundin, briefen, ihres,
+    sommerferien, hund, sehr]
+  words_no: [hun, skriver, et, langt, brev, til, vennen, sin, skrivere, langts, store,
+    morgenen, god]
+- id: 16
+  difficulty: medium
+  de: das wetter ist schön und der himmel ist blau
+  'no': været er nydelig og himmelen er blå
+  words_de: [das, wetter, ist, schön, und, der, himmel, ist, blau, schönen, himmels,
+    wasser, in, sehr]
+  words_no: [været, er, nydelig, og, himmelen, er, blå, værat, himmelene, melk, broren,
+    spiser]
+- id: 17
+  difficulty: medium
+  de: sie werden in den sommerferien nach spanien reisen
+  'no': de skal reise til spania i sommerferien
+  words_de: [sie, werden, in, den, sommerferien, nach, spanien, reisen, werdens, warden,
+    morgen, ein, auto]
+  words_no: [de, skal, reise, til, spania, i, sommerferien, skals, skale, og, været,
+    spise]
+- id: 18
+  difficulty: medium
+  de: ich trinke morgens immer eine tasse kaffee
+  'no': jeg drikker alltid en kopp kaffe om morgenen
+  words_de: [ich, trinke, morgens, immer, eine, tasse, kaffee, aine, kaffeeen, das,
+    hund, mein]
+  words_no: [jeg, drikker, alltid, en, kopp, kaffe, om, morgenen, drikkers, kaffes,
+    leser, språket, god]
+- id: 19
+  difficulty: medium
+  de: er hat einen guten job in der großen stadt gefunden
+  'no': han fant en god jobb i den store byen
+  words_de: [er, hat, einen, guten, job, in, der, großen, stadt, gefunden, großan,
+    gutan, essen, milch, brief]
+  words_no: [han, fant, en, god, jobb, i, den, store, byen, byan, fants, å, de, om]
+- id: 20
+  difficulty: medium
+  de: wir essen jeden abend um sechs uhr zusammen zu abend
+  'no': vi spiser middag sammen hver kveld klokken seks
+  words_de: [wir, essen, jeden, abend, um, sechs, uhr, zusammen, zu, abend, sachs,
+    zusemmen, katze, heiß, kino]
+  words_no: [vi, spiser, middag, sammen, hver, kveld, klokken, seks, saks, hvar, spise,
+    de, spania]

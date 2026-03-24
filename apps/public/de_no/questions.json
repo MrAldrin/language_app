@@ -1,0 +1,2562 @@
+[
+  {
+    "id": 1,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 1,
+    "tags": [
+      "basics",
+      "adjectives"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Der Apfel ist sehr rot",
+        "accepted": [
+          "Der Apfel ist richtig rot"
+        ],
+        "word_pool": [
+          "Apfel",
+          "der",
+          "die",
+          "gelb",
+          "ist",
+          "nicht",
+          "Orange",
+          "richtig",
+          "rot",
+          "sauer",
+          "sehr",
+          "war"
+        ]
+      },
+      "no": {
+        "primary": "Eplet er veldig rødt",
+        "accepted": [
+          "Eplet er skikkelig rødt"
+        ],
+        "word_pool": [
+          "appelsinen",
+          "den",
+          "eplet",
+          "er",
+          "gult",
+          "ikke",
+          "rødt",
+          "skikkelig",
+          "surt",
+          "var",
+          "veldig"
+        ]
+      }
+    }
+  },
+  {
+    "id": 2,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 2,
+    "tags": [
+      "animals",
+      "adjectives"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Er hat einen großen Hund",
+        "accepted": [],
+        "word_pool": [
+          "einen",
+          "er",
+          "großen",
+          "hat",
+          "hatte",
+          "Hund",
+          "Katze",
+          "klein",
+          "sie",
+          "Vogel",
+          "wir"
+        ]
+      },
+      "no": {
+        "primary": "Han har en stor hund",
+        "accepted": [],
+        "word_pool": [
+          "en",
+          "fugl",
+          "hadde",
+          "han",
+          "har",
+          "hun",
+          "hund",
+          "katt",
+          "liten",
+          "stor",
+          "vi"
+        ]
+      }
+    }
+  },
+  {
+    "id": 3,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 1,
+    "tags": [
+      "beverages",
+      "basics"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Ich trinke gerne heißen Kaffee",
+        "accepted": [
+          "Ich mag es heißen Kaffee zu trinken"
+        ],
+        "word_pool": [
+          "er",
+          "es",
+          "Essen",
+          "gerne",
+          "heißen",
+          "ich",
+          "Kaffee",
+          "kalt",
+          "mag",
+          "Tee",
+          "trank",
+          "trinke",
+          "trinken",
+          "Wasser",
+          "zu"
+        ]
+      },
+      "no": {
+        "primary": "Jeg liker å drikke varm kaffe",
+        "accepted": [
+          "Jeg drikker gjerne varm kaffe"
+        ],
+        "word_pool": [
+          "drakk",
+          "drikke",
+          "drikker",
+          "gjerne",
+          "han",
+          "jeg",
+          "kaffe",
+          "kald",
+          "liker",
+          "spise",
+          "te",
+          "vann",
+          "varm",
+          "å"
+        ]
+      }
+    }
+  },
+  {
+    "id": 4,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 3,
+    "tags": [
+      "communication",
+      "verbs"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Sie schreibt einen langen Brief",
+        "accepted": [
+          "Sie verfasst einen langen Brief"
+        ],
+        "word_pool": [
+          "Brief",
+          "Buch",
+          "einen",
+          "er",
+          "kurz",
+          "langen",
+          "liest",
+          "Morgen",
+          "schreibt",
+          "schrieb",
+          "sie",
+          "verfasst"
+        ]
+      },
+      "no": {
+        "primary": "Hun skriver et langt brev",
+        "accepted": [
+          "Hun forfatter et langt brev"
+        ],
+        "word_pool": [
+          "bok",
+          "brev",
+          "et",
+          "forfatter",
+          "han",
+          "hun",
+          "i morgen",
+          "kort",
+          "langt",
+          "leser",
+          "skrev",
+          "skriver"
+        ]
+      }
+    }
+  },
+  {
+    "id": 5,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 2,
+    "tags": [
+      "languages",
+      "basics"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Du sprichst sehr gut Deutsch",
+        "accepted": [
+          "Sie sprechen sehr gut Deutsch"
+        ],
+        "word_pool": [
+          "Deutsch",
+          "du",
+          "Englisch",
+          "er",
+          "gut",
+          "ich",
+          "schlecht",
+          "sehr",
+          "sie",
+          "sprach",
+          "sprechen",
+          "sprichst",
+          "verstehst"
+        ]
+      },
+      "no": {
+        "primary": "Du snakker veldig godt tysk",
+        "accepted": [
+          "Du prater veldig bra tysk",
+          "Du snakker veldig bra tysk"
+        ],
+        "word_pool": [
+          "bra",
+          "du",
+          "dårlig",
+          "engelsk",
+          "forstår",
+          "godt",
+          "han",
+          "jeg",
+          "prater",
+          "snakker",
+          "snakket",
+          "tysk",
+          "veldig"
+        ]
+      }
+    }
+  },
+  {
+    "id": 6,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 3,
+    "tags": [
+      "sports",
+      "time"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Wir spielen jeden Abend Fußball",
+        "accepted": [],
+        "word_pool": [
+          "Abend",
+          "Fußball",
+          "jeden",
+          "Morgen",
+          "nie",
+          "sehen",
+          "sie",
+          "spielen",
+          "spielten",
+          "Tennis",
+          "wir"
+        ]
+      },
+      "no": {
+        "primary": "Vi spiller fotball hver kveld",
+        "accepted": [],
+        "word_pool": [
+          "aldri",
+          "de",
+          "fotball",
+          "hver",
+          "kveld",
+          "morgen",
+          "ser",
+          "spiller",
+          "spilte",
+          "tennis",
+          "vi"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 4,
+    "tags": [
+      "travel",
+      "destinations"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Sie reisen morgen nach England",
+        "accepted": [
+          "Sie werden morgen nach England reisen"
+        ],
+        "word_pool": [
+          "Auto",
+          "England",
+          "fliegen",
+          "fuhren",
+          "heute",
+          "Morgen",
+          "nach",
+          "reisen",
+          "sie",
+          "Spanien",
+          "werden",
+          "wir"
+        ]
+      },
+      "no": {
+        "primary": "De reiser til England i morgen",
+        "accepted": [
+          "De skal reise til England i morgen"
+        ],
+        "word_pool": [
+          "bil",
+          "de",
+          "England",
+          "flyr",
+          "i",
+          "i dag",
+          "kjørte",
+          "morgen",
+          "reise",
+          "reiser",
+          "skal",
+          "Spania",
+          "til",
+          "vi"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 1,
+    "tags": [
+      "weather",
+      "adjectives"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Das Wetter ist heute wunderschön",
+        "accepted": [
+          "Das Wetter ist heute sehr schön"
+        ],
+        "word_pool": [
+          "das",
+          "gestern",
+          "heute",
+          "ihr",
+          "ist",
+          "kalt",
+          "Regen",
+          "schlecht",
+          "schön",
+          "sehr",
+          "war",
+          "Wetter",
+          "wunderschön"
+        ]
+      },
+      "no": {
+        "primary": "Været er nydelig i dag",
+        "accepted": [
+          "Været er kjempefint i dag",
+          "Været er veldig pent i dag"
+        ],
+        "word_pool": [
+          "dag",
+          "dere",
+          "dårlig",
+          "er",
+          "i",
+          "i går",
+          "kaldt",
+          "kjempefint",
+          "nydelig",
+          "pent",
+          "regn",
+          "var",
+          "veldig",
+          "været"
+        ]
+      }
+    }
+  },
+  {
+    "id": 9,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 3,
+    "tags": [
+      "shopping",
+      "objects"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Er möchte ein neues Auto kaufen",
+        "accepted": [
+          "Er will ein neues Auto kaufen"
+        ],
+        "word_pool": [
+          "alt",
+          "Auto",
+          "ein",
+          "er",
+          "Fahrrad",
+          "kaufen",
+          "möchte",
+          "neues",
+          "sie",
+          "verkaufen",
+          "will",
+          "wir",
+          "wollte"
+        ]
+      },
+      "no": {
+        "primary": "Han ønsker å kjøpe en ny bil",
+        "accepted": [
+          "Han vil kjøpe en ny bil"
+        ],
+        "word_pool": [
+          "bil",
+          "en",
+          "gammel",
+          "han",
+          "hun",
+          "kjøpe",
+          "ny",
+          "selge",
+          "sykkel",
+          "vi",
+          "vil",
+          "å",
+          "ønsker",
+          "ønsket"
+        ]
+      }
+    }
+  },
+  {
+    "id": 10,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 1,
+    "tags": [
+      "nature",
+      "temperature"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Das Wasser ist sehr kalt",
+        "accepted": [
+          "Das Wasser ist richtig kalt"
+        ],
+        "word_pool": [
+          "das",
+          "Feuer",
+          "heiß",
+          "ich",
+          "ist",
+          "kalt",
+          "lauwarm",
+          "nicht",
+          "richtig",
+          "sehr",
+          "war",
+          "Wasser"
+        ]
+      },
+      "no": {
+        "primary": "Vannet er veldig kaldt",
+        "accepted": [
+          "Vannet er skikkelig kaldt"
+        ],
+        "word_pool": [
+          "er",
+          "ikke",
+          "ild",
+          "jeg",
+          "kaldt",
+          "lunkent",
+          "skikkelig",
+          "vannet",
+          "var",
+          "varmt",
+          "veldig"
+        ]
+      }
+    }
+  },
+  {
+    "id": 11,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 2,
+    "tags": [
+      "feelings",
+      "basics"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Ich bin heute sehr glücklich",
+        "accepted": [
+          "Ich bin heute richtig froh"
+        ],
+        "word_pool": [
+          "bin",
+          "böse",
+          "er",
+          "froh",
+          "glücklich",
+          "heute",
+          "ich",
+          "Morgen",
+          "richtig",
+          "sehr",
+          "traurig",
+          "war",
+          "wir"
+        ]
+      },
+      "no": {
+        "primary": "Jeg er veldig glad i dag",
+        "accepted": [
+          "Jeg er skikkelig glad i dag",
+          "Jeg er veldig lykkelig i dag"
+        ],
+        "word_pool": [
+          "dag",
+          "er",
+          "glad",
+          "han",
+          "i",
+          "i morgen",
+          "jeg",
+          "lykkelig",
+          "sint",
+          "skikkelig",
+          "trist",
+          "var",
+          "veldig",
+          "vi"
+        ]
+      }
+    }
+  },
+  {
+    "id": 12,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 2,
+    "tags": [
+      "hobbies",
+      "entertainment"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Wir lesen ein spannendes Buch",
+        "accepted": [
+          "Wir lesen ein interessantes Buch"
+        ],
+        "word_pool": [
+          "Buch",
+          "ein",
+          "er",
+          "interessantes",
+          "langweilig",
+          "lasen",
+          "lesen",
+          "schreiben",
+          "sie",
+          "spannendes",
+          "wir",
+          "Zeitung"
+        ]
+      },
+      "no": {
+        "primary": "Vi leser en spennende bok",
+        "accepted": [
+          "Vi leser en interessant bok"
+        ],
+        "word_pool": [
+          "avis",
+          "bok",
+          "de",
+          "en",
+          "han",
+          "interessant",
+          "kjedelig",
+          "leser",
+          "leste",
+          "skriver",
+          "spennende",
+          "vi"
+        ]
+      }
+    }
+  },
+  {
+    "id": 13,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 4,
+    "tags": [
+      "school",
+      "comprehension"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Die Schüler verstehen den Lehrer gut",
+        "accepted": [
+          "Die Studenten verstehen den Lehrer gut"
+        ],
+        "word_pool": [
+          "den",
+          "die",
+          "gut",
+          "hören",
+          "Lehrer",
+          "nicht",
+          "schlecht",
+          "Schule",
+          "Schüler",
+          "Studenten",
+          "verstanden",
+          "verstehen",
+          "wir"
+        ]
+      },
+      "no": {
+        "primary": "Eleven forstår læreren godt",
+        "accepted": [
+          "Elevene skjønner læreren godt"
+        ],
+        "word_pool": [
+          "dårlig",
+          "eleven",
+          "elevene",
+          "forsto",
+          "forstår",
+          "godt",
+          "hører",
+          "ikke",
+          "læreren",
+          "skjønner",
+          "skole",
+          "vi"
+        ]
+      }
+    }
+  },
+  {
+    "id": 14,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 5,
+    "tags": [
+      "travel",
+      "transport"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Der schnelle Zug fährt bald ab",
+        "accepted": [
+          "Der Schnellzug fährt in Kürze ab",
+          "Der schnelle Zug fährt gleich ab"
+        ],
+        "word_pool": [
+          "ab",
+          "Auto",
+          "bald",
+          "Bus",
+          "der",
+          "fährt",
+          "gestern",
+          "gleich",
+          "in",
+          "kommt",
+          "kürze",
+          "langsam",
+          "schnelle",
+          "Schnellzug",
+          "wir",
+          "Zug"
+        ]
+      },
+      "no": {
+        "primary": "Det raske toget går snart",
+        "accepted": [
+          "Det kjappe toget drar snart",
+          "Hurtigtoget går snart"
+        ],
+        "word_pool": [
+          "bil",
+          "bussen",
+          "det",
+          "drar",
+          "går",
+          "hurtigtoget",
+          "i går",
+          "kjappe",
+          "kommer",
+          "raske",
+          "snart",
+          "toget",
+          "trege",
+          "vi"
+        ]
+      }
+    }
+  },
+  {
+    "id": 15,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 2,
+    "tags": [
+      "social",
+      "requests"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Ich brauche dringend deine Hilfe",
+        "accepted": [
+          "Ich benötige dringend deine Hilfe"
+        ],
+        "word_pool": [
+          "benötige",
+          "brauche",
+          "brauchte",
+          "deine",
+          "dringend",
+          "Geld",
+          "helfen",
+          "Hilfe",
+          "ich",
+          "nie",
+          "seine",
+          "wir"
+        ]
+      },
+      "no": {
+        "primary": "Jeg trenger din hjelp strak",
+        "accepted": [
+          "Jeg behøver din hjelp umiddelbart"
+        ],
+        "word_pool": [
+          "aldri",
+          "behøver",
+          "din",
+          "hans",
+          "hjelp",
+          "hjelpe",
+          "jeg",
+          "penger",
+          "strak",
+          "trenger",
+          "trengte",
+          "umiddelbart",
+          "vi"
+        ]
+      }
+    }
+  },
+  {
+    "id": 16,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 1,
+    "tags": [
+      "animals",
+      "sleep"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Die graue Katze schläft",
+        "accepted": [
+          "Die graue Katze ruht sich aus"
+        ],
+        "word_pool": [
+          "aus",
+          "die",
+          "er",
+          "graue",
+          "Hund",
+          "Katze",
+          "ruht",
+          "schlief",
+          "schläft",
+          "schwarz",
+          "sich",
+          "wacht",
+          "wir"
+        ]
+      },
+      "no": {
+        "primary": "Den grå katten sover",
+        "accepted": [
+          "Den grå katten hviler"
+        ],
+        "word_pool": [
+          "den",
+          "grå",
+          "han",
+          "hunden",
+          "hviler",
+          "katten",
+          "sov",
+          "sover",
+          "svart",
+          "vi",
+          "våkner"
+        ]
+      }
+    }
+  },
+  {
+    "id": 17,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 2,
+    "tags": [
+      "home",
+      "possessions"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Sie haben ein großes Haus gekauft",
+        "accepted": [
+          "Sie haben ein großes Haus erworben"
+        ],
+        "word_pool": [
+          "Baum",
+          "ein",
+          "erworben",
+          "gekauft",
+          "großes",
+          "haben",
+          "hatten",
+          "Haus",
+          "klein",
+          "sie",
+          "verkaufen",
+          "wir",
+          "Wohnung"
+        ]
+      },
+      "no": {
+        "primary": "De har kjøpt et stort hus",
+        "accepted": [
+          "De har anskaffet et stort hus"
+        ],
+        "word_pool": [
+          "anskaffet",
+          "de",
+          "et",
+          "hadde",
+          "har",
+          "hus",
+          "kjøpt",
+          "leilighet",
+          "lite",
+          "selge",
+          "stort",
+          "tre",
+          "vi"
+        ]
+      }
+    }
+  },
+  {
+    "id": 18,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 1,
+    "tags": [
+      "nature",
+      "colors"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Der Himmel ist heute sehr blau",
+        "accepted": [
+          "Der Himmel ist heute richtig blau"
+        ],
+        "word_pool": [
+          "blau",
+          "der",
+          "gelb",
+          "heute",
+          "Himmel",
+          "ist",
+          "Morgen",
+          "Nacht",
+          "richtig",
+          "schwarz",
+          "sehr",
+          "war",
+          "wir"
+        ]
+      },
+      "no": {
+        "primary": "Himmelen er veldig blå i dag",
+        "accepted": [
+          "Himmelen er skikkelig blå i dag"
+        ],
+        "word_pool": [
+          "blå",
+          "dag",
+          "er",
+          "gul",
+          "himmelen",
+          "i",
+          "i morgen",
+          "natten",
+          "skikkelig",
+          "svart",
+          "var",
+          "veldig",
+          "vi"
+        ]
+      }
+    }
+  },
+  {
+    "id": 19,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 1,
+    "tags": [
+      "food",
+      "routines"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Wir essen pünktlich zu Abend",
+        "accepted": [
+          "Wir essen pünktlich Abendessen"
+        ],
+        "word_pool": [
+          "Abend",
+          "Abendessen",
+          "aßen",
+          "Essen",
+          "Frühstück",
+          "Kaffee",
+          "Morgen",
+          "pünktlich",
+          "sie",
+          "spät",
+          "wir",
+          "zu"
+        ]
+      },
+      "no": {
+        "primary": "Vi spiser middag presis",
+        "accepted": [
+          "Vi spiser middag på tiden"
+        ],
+        "word_pool": [
+          "de",
+          "frokost",
+          "i morgen",
+          "kaffe",
+          "middag",
+          "presis",
+          "på",
+          "sent",
+          "spiser",
+          "spiste",
+          "tiden",
+          "vi"
+        ]
+      }
+    }
+  },
+  {
+    "id": 20,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 3,
+    "tags": [
+      "work",
+      "locations"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Mein Vater arbeitet in einer Fabrik",
+        "accepted": [
+          "Mein Papa arbeitet in einer Fabrik"
+        ],
+        "word_pool": [
+          "arbeitet",
+          "arbeitete",
+          "Büro",
+          "draußen",
+          "einer",
+          "Fabrik",
+          "in",
+          "mein",
+          "Mutter",
+          "Papa",
+          "sie",
+          "Vater",
+          "wir"
+        ]
+      },
+      "no": {
+        "primary": "Min far jobber på en fabrikk",
+        "accepted": [
+          "Pappaen min jobber på en fabrikk"
+        ],
+        "word_pool": [
+          "en",
+          "fabrikk",
+          "far",
+          "hun",
+          "jobber",
+          "jobbet",
+          "kontor",
+          "min",
+          "mor",
+          "pappaen",
+          "på",
+          "ute",
+          "vi"
+        ]
+      }
+    }
+  },
+  {
+    "id": 21,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 1,
+    "tags": [
+      "food",
+      "adjectives"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Das Essen schmeckt wirklich gut",
+        "accepted": [
+          "Das Essen ist wirklich lecker"
+        ],
+        "word_pool": [
+          "das",
+          "er",
+          "Essen",
+          "gut",
+          "ist",
+          "lecker",
+          "nicht",
+          "schlecht",
+          "schmeckt",
+          "schmeckte",
+          "Wasser",
+          "wir",
+          "wirklich"
+        ]
+      },
+      "no": {
+        "primary": "Maten smaker virkelig utmerket",
+        "accepted": [
+          "Maten er virkelig god"
+        ],
+        "word_pool": [
+          "dårlig",
+          "er",
+          "god",
+          "han",
+          "ikke",
+          "maten",
+          "smaker",
+          "smakte",
+          "utmerket",
+          "vann",
+          "vi",
+          "virkelig"
+        ]
+      }
+    }
+  },
+  {
+    "id": 22,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 2,
+    "tags": [
+      "animals",
+      "vision"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Ich sehe einen gelben Vogel",
+        "accepted": [
+          "Ich erblicke einen gelben Vogel"
+        ],
+        "word_pool": [
+          "einen",
+          "er",
+          "erblicke",
+          "gelben",
+          "grün",
+          "Hund",
+          "ich",
+          "sah",
+          "sehe",
+          "singen",
+          "Vogel",
+          "wir"
+        ]
+      },
+      "no": {
+        "primary": "Jeg ser en gul fugl",
+        "accepted": [
+          "Jeg får øye på en gul fugl"
+        ],
+        "word_pool": [
+          "en",
+          "fugl",
+          "får",
+          "grønn",
+          "gul",
+          "han",
+          "hund",
+          "jeg",
+          "på",
+          "ser",
+          "synge",
+          "så",
+          "vi",
+          "øye"
+        ]
+      }
+    }
+  },
+  {
+    "id": 23,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 3,
+    "tags": [
+      "music",
+      "activities"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Meine Schwester singt ein schönes Lied",
+        "accepted": [
+          "Meine Schwester singt ein tolles Lied"
+        ],
+        "word_pool": [
+          "Bruder",
+          "ein",
+          "er",
+          "Gedicht",
+          "hässlich",
+          "Lied",
+          "meine",
+          "sang",
+          "Schwester",
+          "schönes",
+          "singt",
+          "tolles",
+          "wir"
+        ]
+      },
+      "no": {
+        "primary": "Min søster synger en vakker sang",
+        "accepted": [
+          "Søsteren min synger en fin sang"
+        ],
+        "word_pool": [
+          "bror",
+          "dikt",
+          "en",
+          "fin",
+          "han",
+          "min",
+          "sang",
+          "stygg",
+          "synger",
+          "søster",
+          "søsteren",
+          "vakker",
+          "vi"
+        ]
+      }
+    }
+  },
+  {
+    "id": 24,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 4,
+    "tags": [
+      "feelings",
+      "appearances"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Du siehst heute sehr müde aus",
+        "accepted": [
+          "Sie sehen heute sehr müde aus"
+        ],
+        "word_pool": [
+          "aus",
+          "ausruhen",
+          "du",
+          "er",
+          "gestern",
+          "heute",
+          "ich",
+          "müde",
+          "sehen",
+          "sehr",
+          "sie",
+          "siehst",
+          "wach",
+          "wir"
+        ]
+      },
+      "no": {
+        "primary": "Du ser veldig trøtt ut i dag",
+        "accepted": [
+          "Du virker veldig trøtt i dag"
+        ],
+        "word_pool": [
+          "dag",
+          "du",
+          "han",
+          "hvile",
+          "i",
+          "i går",
+          "jeg",
+          "ser",
+          "trøtt",
+          "ut",
+          "veldig",
+          "vi",
+          "virker",
+          "våken"
+        ]
+      }
+    }
+  },
+  {
+    "id": 25,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 5,
+    "tags": [
+      "family",
+      "descriptions"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Ihr älterer Bruder ist ziemlich groß",
+        "accepted": [
+          "Ihr großer Bruder ist ziemlich groß"
+        ],
+        "word_pool": [
+          "Bruder",
+          "groß",
+          "großer",
+          "ihr",
+          "ist",
+          "klein",
+          "lterer",
+          "mein",
+          "Schwester",
+          "sie",
+          "war",
+          "wir",
+          "ziemlich"
+        ]
+      },
+      "no": {
+        "primary": "Hennes eldre bror er ganske høy",
+        "accepted": [
+          "Storebroren hennes er ganske høy"
+        ],
+        "word_pool": [
+          "bror",
+          "eldre",
+          "er",
+          "ganske",
+          "hennes",
+          "hun",
+          "høy",
+          "lav",
+          "min",
+          "storebroren",
+          "søster",
+          "var",
+          "vi"
+        ]
+      }
+    }
+  },
+  {
+    "id": 26,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 2,
+    "tags": [
+      "city",
+      "places"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Die große Stadt ist immer belebt",
+        "accepted": [
+          "Die Großstadt ist immer belebt"
+        ],
+        "word_pool": [
+          "belebt",
+          "die",
+          "dorf",
+          "große",
+          "Großstadt",
+          "immer",
+          "ist",
+          "klein",
+          "nie",
+          "ruhig",
+          "Stadt",
+          "war",
+          "wir"
+        ]
+      },
+      "no": {
+        "primary": "Den store byen er alltid travel",
+        "accepted": [
+          "Storbyen er alltid travel"
+        ],
+        "word_pool": [
+          "aldri",
+          "alltid",
+          "byen",
+          "den",
+          "er",
+          "landsbyen",
+          "lille",
+          "stille",
+          "storbyen",
+          "store",
+          "travel",
+          "var",
+          "vi"
+        ]
+      }
+    }
+  },
+  {
+    "id": 27,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 3,
+    "tags": [
+      "food",
+      "verbs"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Sie backt einen leckeren Kuchen",
+        "accepted": [
+          "Sie macht einen leckeren Kuchen"
+        ],
+        "word_pool": [
+          "backt",
+          "Brot",
+          "einen",
+          "er",
+          "ißt",
+          "Kuchen",
+          "leckeren",
+          "macht",
+          "schlecht",
+          "sie",
+          "war"
+        ]
+      },
+      "no": {
+        "primary": "Hun baker en deilig kake",
+        "accepted": [
+          "Hun baker ei deilig kake",
+          "Hun lager en deilig kake"
+        ],
+        "word_pool": [
+          "baker",
+          "brød",
+          "de",
+          "deilig",
+          "dårlig",
+          "ei",
+          "en",
+          "han",
+          "hun",
+          "kake",
+          "lager",
+          "spiser",
+          "var"
+        ]
+      }
+    }
+  },
+  {
+    "id": 28,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 1,
+    "tags": [
+      "basics",
+      "pronouns"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Ich sehe dich und ihn",
+        "accepted": [
+          "Ich sehe euch"
+        ],
+        "word_pool": [
+          "alle",
+          "dich",
+          "euch",
+          "ich",
+          "ihn",
+          "ihnen",
+          "nicht",
+          "sah",
+          "sehe",
+          "sie",
+          "und",
+          "wir"
+        ]
+      },
+      "no": {
+        "primary": "Jeg ser deg og ham",
+        "accepted": [
+          "Jeg ser deg og han"
+        ],
+        "word_pool": [
+          "de",
+          "deg",
+          "dem",
+          "ham",
+          "han",
+          "henne",
+          "hun",
+          "jeg",
+          "og",
+          "ser",
+          "så",
+          "vi"
+        ]
+      }
+    }
+  },
+  {
+    "id": 29,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 4,
+    "tags": [
+      "future",
+      "plans"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Wir werden morgen meine Eltern besuchen",
+        "accepted": [
+          "Wir besuchen morgen meine Eltern"
+        ],
+        "word_pool": [
+          "besuchen",
+          "besuchten",
+          "Eltern",
+          "Freunde",
+          "gestern",
+          "Haus",
+          "meine",
+          "Morgen",
+          "sie",
+          "werden",
+          "wir"
+        ]
+      },
+      "no": {
+        "primary": "Vi skal besøke foreldrene mine i morgen",
+        "accepted": [
+          "Vi vil besøke foreldrene mine i morgen"
+        ],
+        "word_pool": [
+          "besøke",
+          "besøkte",
+          "de",
+          "foreldrene",
+          "hjem",
+          "i",
+          "i går",
+          "mine",
+          "morgen",
+          "skal",
+          "venner",
+          "vi",
+          "vil"
+        ]
+      }
+    }
+  },
+  {
+    "id": 30,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 2,
+    "tags": [
+      "emotions",
+      "adjectives"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Warum bist du heute so traurig",
+        "accepted": [],
+        "word_pool": [
+          "bist",
+          "du",
+          "er",
+          "glücklich",
+          "heute",
+          "ist",
+          "Morgen",
+          "so",
+          "traurig",
+          "war",
+          "warum",
+          "wir"
+        ]
+      },
+      "no": {
+        "primary": "Hvorfor er du så trist i dag",
+        "accepted": [
+          "Hvorfor er du så lei deg i dag"
+        ],
+        "word_pool": [
+          "dag",
+          "deg",
+          "du",
+          "er",
+          "glad",
+          "han",
+          "hvorfor",
+          "i",
+          "i morgen",
+          "lei",
+          "så",
+          "trist",
+          "var",
+          "vi"
+        ]
+      }
+    }
+  },
+  {
+    "id": 31,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 3,
+    "tags": [
+      "health",
+      "verbs"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Er muss mehr schlafen",
+        "accepted": [
+          "Er braucht mehr Schlaf"
+        ],
+        "word_pool": [
+          "arbeiten",
+          "braucht",
+          "er",
+          "Essen",
+          "mehr",
+          "muss",
+          "musste",
+          "Schlaf",
+          "schlafen",
+          "sie",
+          "weniger",
+          "will"
+        ]
+      },
+      "no": {
+        "primary": "Han må sove mer",
+        "accepted": [
+          "Han trenger å sove mer"
+        ],
+        "word_pool": [
+          "han",
+          "hun",
+          "jobbe",
+          "mer",
+          "mindre",
+          "må",
+          "sove",
+          "spise",
+          "trenger",
+          "trengte",
+          "vil",
+          "å"
+        ]
+      }
+    }
+  },
+  {
+    "id": 32,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 5,
+    "tags": [
+      "work",
+      "possessions"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Ich habe meine Schlüssel zu Hause vergessen",
+        "accepted": [],
+        "word_pool": [
+          "Brieftasche",
+          "Büro",
+          "erinnert",
+          "fand",
+          "habe",
+          "Hause",
+          "ich",
+          "mein",
+          "meine",
+          "Schlüssel",
+          "sie",
+          "vergessen",
+          "zu"
+        ]
+      },
+      "no": {
+        "primary": "Jeg glemte nøklene mine hjemme",
+        "accepted": [],
+        "word_pool": [
+          "fant",
+          "glemte",
+          "hjemme",
+          "hun",
+          "husket",
+          "jeg",
+          "kontoret",
+          "lommeboka",
+          "mine",
+          "nøklene"
+        ]
+      }
+    }
+  },
+  {
+    "id": 33,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 2,
+    "tags": [
+      "weather",
+      "verbs"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Draußen regnet es gerade",
+        "accepted": [
+          "Es regnet draußen"
+        ],
+        "word_pool": [
+          "draußen",
+          "drinnen",
+          "es",
+          "gerade",
+          "gestern",
+          "ist",
+          "regnet",
+          "schneit",
+          "Sonne",
+          "war"
+        ]
+      },
+      "no": {
+        "primary": "Det regner ute akkurat nå",
+        "accepted": [],
+        "word_pool": [
+          "akkurat",
+          "det",
+          "er",
+          "i går",
+          "inne",
+          "nå",
+          "regner",
+          "snør",
+          "sol",
+          "ute",
+          "var"
+        ]
+      }
+    }
+  },
+  {
+    "id": 34,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 4,
+    "tags": [
+      "travel",
+      "questions"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Wie viel kostet die Fahrkarte",
+        "accepted": [
+          "Was kostet die Fahrkarte"
+        ],
+        "word_pool": [
+          "billiger",
+          "die",
+          "Fahrkarte",
+          "ist",
+          "kaufen",
+          "kostet",
+          "Preis",
+          "teuer",
+          "viel",
+          "viele",
+          "was",
+          "wie"
+        ]
+      },
+      "no": {
+        "primary": "Hvor mye koster billetten",
+        "accepted": [
+          "Hva koster billetten"
+        ],
+        "word_pool": [
+          "billetten",
+          "billigere",
+          "dyrt",
+          "er",
+          "hva",
+          "hvor",
+          "kjøpe",
+          "koster",
+          "mange",
+          "mye",
+          "pris"
+        ]
+      }
+    }
+  },
+  {
+    "id": 35,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 1,
+    "tags": [
+      "colors",
+      "objects"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Das rote Auto ist schnell",
+        "accepted": [],
+        "word_pool": [
+          "Auto",
+          "blau",
+          "Bus",
+          "das",
+          "ist",
+          "langsam",
+          "nicht",
+          "rote",
+          "schnell",
+          "war"
+        ]
+      },
+      "no": {
+        "primary": "Den røde bilen er rask",
+        "accepted": [
+          "Den røde bilen er kjapp"
+        ],
+        "word_pool": [
+          "bilen",
+          "blå",
+          "bussen",
+          "den",
+          "er",
+          "ikke",
+          "kjapp",
+          "rask",
+          "røde",
+          "treg",
+          "var"
+        ]
+      }
+    }
+  },
+  {
+    "id": 36,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 3,
+    "tags": [
+      "family",
+      "age"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Wie alt ist deine Schwester",
+        "accepted": [
+          "Wie alt ist Ihre Schwester"
+        ],
+        "word_pool": [
+          "alt",
+          "Bruder",
+          "deine",
+          "ihre",
+          "ist",
+          "mein",
+          "Schwester",
+          "viele",
+          "war",
+          "wie",
+          "wo"
+        ]
+      },
+      "no": {
+        "primary": "Hvor gammel er søsteren din",
+        "accepted": [],
+        "word_pool": [
+          "bror",
+          "din",
+          "er",
+          "gammel",
+          "hvor",
+          "mange",
+          "min",
+          "søsteren",
+          "var"
+        ]
+      }
+    }
+  },
+  {
+    "id": 37,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 2,
+    "tags": [
+      "food",
+      "likes"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Ich mag kein scharfes Essen",
+        "accepted": [
+          "Ich esse nicht gerne scharf"
+        ],
+        "word_pool": [
+          "esse",
+          "Essen",
+          "gerne",
+          "heiß",
+          "ich",
+          "kein",
+          "lecker",
+          "mag",
+          "nicht",
+          "scharf",
+          "scharfes",
+          "sehr",
+          "sie",
+          "süß"
+        ]
+      },
+      "no": {
+        "primary": "Jeg liker ikke sterk mat",
+        "accepted": [],
+        "word_pool": [
+          "deilig",
+          "hun",
+          "ikke",
+          "jeg",
+          "liker",
+          "mat",
+          "spise",
+          "sterk",
+          "søt",
+          "varm",
+          "veldig"
+        ]
+      }
+    }
+  },
+  {
+    "id": 38,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 4,
+    "tags": [
+      "locations",
+      "verbs"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Wo wohnst du jetzt",
+        "accepted": [
+          "Wo wohnen Sie jetzt"
+        ],
+        "word_pool": [
+          "arbeiten",
+          "bleiben",
+          "du",
+          "hier",
+          "jetzt",
+          "sie",
+          "wann",
+          "wo",
+          "wohnen",
+          "wohnst",
+          "wohnte"
+        ]
+      },
+      "no": {
+        "primary": "Hvor bor du nå",
+        "accepted": [],
+        "word_pool": [
+          "blir",
+          "bodde",
+          "bor",
+          "de",
+          "du",
+          "her",
+          "hvor",
+          "jobber",
+          "nå",
+          "når"
+        ]
+      }
+    }
+  },
+  {
+    "id": 39,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 1,
+    "tags": [
+      "basics",
+      "numbers"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Ich habe zwei kleine Katzen",
+        "accepted": [],
+        "word_pool": [
+          "drei",
+          "eine",
+          "groß",
+          "habe",
+          "hatte",
+          "Hunde",
+          "ich",
+          "Katzen",
+          "kleine",
+          "wir",
+          "zwei"
+        ]
+      },
+      "no": {
+        "primary": "Jeg har to små katter",
+        "accepted": [
+          "Jeg eier to små katter"
+        ],
+        "word_pool": [
+          "eier",
+          "en",
+          "hadde",
+          "har",
+          "hunder",
+          "jeg",
+          "katter",
+          "små",
+          "store",
+          "to",
+          "tre",
+          "vi"
+        ]
+      }
+    }
+  },
+  {
+    "id": 40,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 5,
+    "tags": [
+      "past",
+      "travel"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Sie ist letzten Sommer nach Norwegen gereist",
+        "accepted": [
+          "Sie reiste letzten Sommer nach Norwegen"
+        ],
+        "word_pool": [
+          "besuchen",
+          "er",
+          "gereist",
+          "ging",
+          "ist",
+          "letzten",
+          "nach",
+          "Norwegen",
+          "Reise",
+          "reiste",
+          "sie",
+          "Sommer",
+          "winter",
+          "wird"
+        ]
+      },
+      "no": {
+        "primary": "Hun reiste til Norge i fjor sommer",
+        "accepted": [],
+        "word_pool": [
+          "besøke",
+          "dro",
+          "fjor",
+          "han",
+          "hun",
+          "i",
+          "Norge",
+          "reiste",
+          "skal",
+          "sommer",
+          "til",
+          "tur",
+          "vinter"
+        ]
+      }
+    }
+  },
+  {
+    "id": 41,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 2,
+    "tags": [
+      "daily_life",
+      "verbs"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Er wacht jeden Tag früh auf",
+        "accepted": [
+          "Er steht jeden Tag früh auf"
+        ],
+        "word_pool": [
+          "auf",
+          "er",
+          "früh",
+          "immer",
+          "jeden",
+          "Morgen",
+          "schläft",
+          "sie",
+          "spät",
+          "steht",
+          "Tag",
+          "wacht",
+          "wachte"
+        ]
+      },
+      "no": {
+        "primary": "Han våkner tidlig hver dag",
+        "accepted": [
+          "Han står opp tidlig hver dag"
+        ],
+        "word_pool": [
+          "alltid",
+          "dag",
+          "han",
+          "hun",
+          "hver",
+          "morgen",
+          "opp",
+          "sent",
+          "sover",
+          "står",
+          "tidlig",
+          "våkner",
+          "våknet"
+        ]
+      }
+    }
+  },
+  {
+    "id": 42,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 3,
+    "tags": [
+      "social",
+      "offers"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Willst du etwas Wasser",
+        "accepted": [
+          "Möchten Sie etwas Wasser"
+        ],
+        "word_pool": [
+          "brauchen",
+          "du",
+          "etwas",
+          "Kaffee",
+          "möchten",
+          "sie",
+          "trinken",
+          "war",
+          "Wasser",
+          "willst"
+        ]
+      },
+      "no": {
+        "primary": "Vil du ha litt vann",
+        "accepted": [
+          "Ønsker du litt vann"
+        ],
+        "word_pool": [
+          "de",
+          "drikke",
+          "du",
+          "ha",
+          "kaffe",
+          "litt",
+          "noe",
+          "trenger",
+          "vann",
+          "var",
+          "vil",
+          "ønsker"
+        ]
+      }
+    }
+  },
+  {
+    "id": 43,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 1,
+    "tags": [
+      "basics",
+      "introductions"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Wie heißt du",
+        "accepted": [
+          "Wie heißen Sie",
+          "Was ist dein Name"
+        ],
+        "word_pool": [
+          "dein",
+          "du",
+          "heißen",
+          "heißt",
+          "ist",
+          "mein",
+          "Name",
+          "sie",
+          "war",
+          "was",
+          "wer",
+          "wie",
+          "wo"
+        ]
+      },
+      "no": {
+        "primary": "Hva heter du",
+        "accepted": [
+          "Hva er navnet ditt"
+        ],
+        "word_pool": [
+          "ditt",
+          "du",
+          "er",
+          "heter",
+          "hva",
+          "hvem",
+          "hvor",
+          "hvordan",
+          "mitt",
+          "navnet",
+          "var"
+        ]
+      }
+    }
+  },
+  {
+    "id": 44,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 4,
+    "tags": [
+      "transport",
+      "verbs"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Wir warten auf den Bus",
+        "accepted": [
+          "Wir warten an der Bushaltestelle"
+        ],
+        "word_pool": [
+          "an",
+          "auf",
+          "Bus",
+          "Bushaltestelle",
+          "den",
+          "der",
+          "für",
+          "sehen",
+          "sie",
+          "warten",
+          "warteten",
+          "werden",
+          "wir",
+          "Zug"
+        ]
+      },
+      "no": {
+        "primary": "Vi venter på bussen",
+        "accepted": [],
+        "word_pool": [
+          "bussen",
+          "de",
+          "etter",
+          "på",
+          "ser",
+          "skal",
+          "toget",
+          "venter",
+          "ventet",
+          "vi"
+        ]
+      }
+    }
+  },
+  {
+    "id": 45,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 2,
+    "tags": [
+      "home",
+      "adjectives"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Unser neuer Garten ist sehr schön",
+        "accepted": [
+          "Unser neuer Garten ist wunderbar"
+        ],
+        "word_pool": [
+          "alt",
+          "Garten",
+          "Haus",
+          "ist",
+          "klein",
+          "neuer",
+          "nicht",
+          "schön",
+          "sehr",
+          "sie",
+          "unser",
+          "war",
+          "wunderbar"
+        ]
+      },
+      "no": {
+        "primary": "Vår nye hage er veldig vakker",
+        "accepted": [
+          "Hagen vår er veldig fin",
+          "Den nye hagen vår er veldig vakker"
+        ],
+        "word_pool": [
+          "de",
+          "den",
+          "er",
+          "fin",
+          "gammel",
+          "hage",
+          "hagen",
+          "hus",
+          "ikke",
+          "liten",
+          "nye",
+          "vakker",
+          "var",
+          "veldig",
+          "vår"
+        ]
+      }
+    }
+  },
+  {
+    "id": 46,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 5,
+    "tags": [
+      "complex",
+      "opinions"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Ich finde es wichtig Sprachen zu lernen",
+        "accepted": [
+          "Ich glaube es ist wichtig Sprachen zu lernen"
+        ],
+        "word_pool": [
+          "dachte",
+          "dass",
+          "es",
+          "finde",
+          "glaube",
+          "ich",
+          "ist",
+          "lernen",
+          "nutzlos",
+          "sie",
+          "Sprachen",
+          "sprechen",
+          "war",
+          "wichtig",
+          "zu"
+        ]
+      },
+      "no": {
+        "primary": "Jeg synes det er viktig å lære språk",
+        "accepted": [
+          "Jeg tror det er viktig å lære språk",
+          "Jeg mener det er viktig å lære språk"
+        ],
+        "word_pool": [
+          "at",
+          "de",
+          "det",
+          "er",
+          "jeg",
+          "lære",
+          "mener",
+          "snakke",
+          "språk",
+          "synes",
+          "syntes",
+          "tror",
+          "unødvendig",
+          "var",
+          "viktig",
+          "å"
+        ]
+      }
+    }
+  },
+  {
+    "id": 47,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 3,
+    "tags": [
+      "time",
+      "routines"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Ich trinke normalerweise morgens Tee",
+        "accepted": [
+          "Normalerweise trinke ich morgens Tee"
+        ],
+        "word_pool": [
+          "Abend",
+          "ich",
+          "immer",
+          "Kaffee",
+          "morgens",
+          "nie",
+          "normalerweise",
+          "sie",
+          "Tee",
+          "trank",
+          "trinke"
+        ]
+      },
+      "no": {
+        "primary": "Jeg drikker vanligvis te om morgenen",
+        "accepted": [
+          "Jeg pleier å drikke te om morgenen"
+        ],
+        "word_pool": [
+          "aldri",
+          "alltid",
+          "drakk",
+          "drikke",
+          "drikker",
+          "hun",
+          "jeg",
+          "kaffe",
+          "kvelden",
+          "morgenen",
+          "om",
+          "pleier",
+          "te",
+          "vanligvis",
+          "å"
+        ]
+      }
+    }
+  },
+  {
+    "id": 48,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 2,
+    "tags": [
+      "nature",
+      "verbs"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Die Sonne scheint heute",
+        "accepted": [],
+        "word_pool": [
+          "die",
+          "gestern",
+          "heute",
+          "Mond",
+          "nicht",
+          "Regen",
+          "scheint",
+          "schien",
+          "Sonne",
+          "war"
+        ]
+      },
+      "no": {
+        "primary": "Solen skinner i dag",
+        "accepted": [
+          "Sola skinner i dag"
+        ],
+        "word_pool": [
+          "dag",
+          "i",
+          "i går",
+          "ikke",
+          "månen",
+          "regn",
+          "skinner",
+          "skinte",
+          "sola",
+          "solen",
+          "var"
+        ]
+      }
+    }
+  },
+  {
+    "id": 49,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 4,
+    "tags": [
+      "objects",
+      "locations"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Mein Computer liegt auf dem Tisch",
+        "accepted": [
+          "Mein Rechner steht auf dem Tisch"
+        ],
+        "word_pool": [
+          "auf",
+          "Computer",
+          "dem",
+          "ist",
+          "liegt",
+          "mein",
+          "Rechner",
+          "sein",
+          "steht",
+          "Stuhl",
+          "Telefon",
+          "Tisch",
+          "unter",
+          "war"
+        ]
+      },
+      "no": {
+        "primary": "Datamaskinen min ligger på bordet",
+        "accepted": [
+          "PC-en min ligger på bordet"
+        ],
+        "word_pool": [
+          "bordet",
+          "datamaskinen",
+          "er",
+          "hans",
+          "ligger",
+          "min",
+          "pc-en",
+          "på",
+          "stolen",
+          "telefonen",
+          "under",
+          "var"
+        ]
+      }
+    }
+  },
+  {
+    "id": 50,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 1,
+    "tags": [
+      "basics",
+      "feelings"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Hast du Hunger",
+        "accepted": [
+          "Haben Sie Hunger"
+        ],
+        "word_pool": [
+          "du",
+          "durst",
+          "haben",
+          "hast",
+          "Hunger",
+          "ist",
+          "sie",
+          "war",
+          "wie",
+          "wo"
+        ]
+      },
+      "no": {
+        "primary": "Er du sulten",
+        "accepted": [],
+        "word_pool": [
+          "de",
+          "du",
+          "er",
+          "hvor",
+          "hvordan",
+          "sulten",
+          "tørst",
+          "var"
+        ]
+      }
+    }
+  }
+]

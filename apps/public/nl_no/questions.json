@@ -1,0 +1,2608 @@
+[
+  {
+    "id": 1,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 1,
+    "tags": [
+      "basics",
+      "adjectives"
+    ],
+    "translations": {
+      "nl": {
+        "primary": "Ik ben erg blij vandaag",
+        "accepted": [
+          "Ik ben zeer gelukkig vandaag"
+        ],
+        "word_pool": [
+          "ben",
+          "blij",
+          "erg",
+          "gelukkig",
+          "hij",
+          "ik",
+          "is",
+          "morgen",
+          "vandaag",
+          "verdrietig",
+          "was",
+          "ze",
+          "zeer"
+        ]
+      },
+      "no": {
+        "primary": "Jeg er veldig glad i dag",
+        "accepted": [
+          "Jeg er kjempeglad i dag"
+        ],
+        "word_pool": [
+          "dag",
+          "de",
+          "er",
+          "glad",
+          "han",
+          "i",
+          "i morgen",
+          "jeg",
+          "kjempeglad",
+          "trist",
+          "var",
+          "veldig"
+        ]
+      }
+    }
+  },
+  {
+    "id": 2,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 2,
+    "tags": [
+      "hobbies",
+      "verbs"
+    ],
+    "translations": {
+      "nl": {
+        "primary": "Ze leest een heel goed boek",
+        "accepted": [
+          "Zij leest een erg goed boek"
+        ],
+        "word_pool": [
+          "boek",
+          "boeken",
+          "een",
+          "erg",
+          "goed",
+          "heel",
+          "hij",
+          "krant",
+          "leest",
+          "lezen",
+          "slecht",
+          "we",
+          "ze",
+          "zij"
+        ]
+      },
+      "no": {
+        "primary": "Hun leser ei veldig god bok",
+        "accepted": [
+          "Hun leser en veldig god bok"
+        ],
+        "word_pool": [
+          "avis",
+          "bok",
+          "bøker",
+          "dårlig",
+          "ei",
+          "en",
+          "god",
+          "han",
+          "hun",
+          "lese",
+          "leser",
+          "veldig",
+          "vi"
+        ]
+      }
+    }
+  },
+  {
+    "id": 3,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 1,
+    "tags": [
+      "food",
+      "present_tense"
+    ],
+    "translations": {
+      "nl": {
+        "primary": "We eten nu avondeten",
+        "accepted": [
+          "Wij eten nu het avondeten"
+        ],
+        "word_pool": [
+          "altijd",
+          "aten",
+          "avondeten",
+          "eten",
+          "het",
+          "lunch",
+          "morgen",
+          "nu",
+          "ontbijt",
+          "we",
+          "wij",
+          "ze"
+        ]
+      },
+      "no": {
+        "primary": "Vi spiser middag nå",
+        "accepted": [
+          "Vi eter middag nå"
+        ],
+        "word_pool": [
+          "alltid",
+          "de",
+          "eter",
+          "frokost",
+          "i morgen",
+          "lunsj",
+          "middag",
+          "nå",
+          "spiser",
+          "vi",
+          "åt"
+        ]
+      }
+    }
+  },
+  {
+    "id": 4,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 3,
+    "tags": [
+      "directions",
+      "verbs"
+    ],
+    "translations": {
+      "nl": {
+        "primary": "Ze lopen naar de nieuwe winkel",
+        "accepted": [
+          "Zij wandelen naar de nieuwe winkel"
+        ],
+        "word_pool": [
+          "auto",
+          "de",
+          "hij",
+          "lopen",
+          "naar",
+          "nieuwe",
+          "oud",
+          "renden",
+          "supermarkt",
+          "wandelen",
+          "we",
+          "winkel",
+          "ze",
+          "zij"
+        ]
+      },
+      "no": {
+        "primary": "De går til den nye butikken",
+        "accepted": [
+          "De vandrer til den nye butikken"
+        ],
+        "word_pool": [
+          "bil",
+          "butikken",
+          "de",
+          "den",
+          "gammel",
+          "går",
+          "han",
+          "løp",
+          "nye",
+          "supermarked",
+          "til",
+          "vandrer",
+          "vi"
+        ]
+      }
+    }
+  },
+  {
+    "id": 5,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 1,
+    "tags": [
+      "animals",
+      "adjectives"
+    ],
+    "translations": {
+      "nl": {
+        "primary": "De hond is groot en bruin",
+        "accepted": [],
+        "word_pool": [
+          "bruin",
+          "de",
+          "en",
+          "groot",
+          "hond",
+          "is",
+          "kat",
+          "katten",
+          "klein",
+          "niet",
+          "was",
+          "zwart"
+        ]
+      },
+      "no": {
+        "primary": "Hunden er stor og brun",
+        "accepted": [],
+        "word_pool": [
+          "brun",
+          "er",
+          "hunden",
+          "hunder",
+          "ikke",
+          "katten",
+          "liten",
+          "og",
+          "stor",
+          "svart",
+          "var"
+        ]
+      }
+    }
+  },
+  {
+    "id": 6,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 2,
+    "tags": [
+      "animals",
+      "verbs"
+    ],
+    "translations": {
+      "nl": {
+        "primary": "De kleine kat slaapt de hele dag",
+        "accepted": [],
+        "word_pool": [
+          "dag",
+          "de",
+          "groot",
+          "hele",
+          "hond",
+          "kat",
+          "kleine",
+          "nacht",
+          "slaapt",
+          "sliep",
+          "wordt wakker",
+          "ze"
+        ]
+      },
+      "no": {
+        "primary": "Den lille katten sover hele dagen",
+        "accepted": [
+          "Den lille katten ligger og sover hele dagen"
+        ],
+        "word_pool": [
+          "dagen",
+          "de",
+          "den",
+          "hele",
+          "hund",
+          "katten",
+          "ligger",
+          "lille",
+          "natt",
+          "og",
+          "sov",
+          "sover",
+          "stor",
+          "våkner"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 1,
+    "tags": [
+      "possessions",
+      "basics"
+    ],
+    "translations": {
+      "nl": {
+        "primary": "Ik heb een snelle rode auto",
+        "accepted": [
+          "Ik bezit een snelle rode auto"
+        ],
+        "word_pool": [
+          "auto",
+          "bezit",
+          "blauw",
+          "bus",
+          "een",
+          "had",
+          "heb",
+          "hij",
+          "ik",
+          "langzaam",
+          "rode",
+          "snelle",
+          "we"
+        ]
+      },
+      "no": {
+        "primary": "Jeg har en rask rød bil",
+        "accepted": [
+          "Jeg eier en rask rød bil"
+        ],
+        "word_pool": [
+          "bil",
+          "blå",
+          "buss",
+          "eier",
+          "en",
+          "hadde",
+          "han",
+          "har",
+          "jeg",
+          "rask",
+          "rød",
+          "treg",
+          "vi"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 4,
+    "tags": [
+      "work",
+      "locations"
+    ],
+    "translations": {
+      "nl": {
+        "primary": "Hij werkt in een groot kantoor",
+        "accepted": [
+          "Hij werkt op een groot kantoor"
+        ],
+        "word_pool": [
+          "buiten",
+          "een",
+          "fabriek",
+          "groot",
+          "hij",
+          "in",
+          "kantoor",
+          "klein",
+          "op",
+          "werkt",
+          "werkte",
+          "ze"
+        ]
+      },
+      "no": {
+        "primary": "Han jobber på et stort kontor",
+        "accepted": [
+          "Han arbeider på et stort kontor"
+        ],
+        "word_pool": [
+          "arbeider",
+          "et",
+          "fabrikk",
+          "han",
+          "hun",
+          "jobber",
+          "jobbet",
+          "kontor",
+          "lite",
+          "på",
+          "stort",
+          "ute",
+          "vi"
+        ]
+      }
+    }
+  },
+  {
+    "id": 9,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 2,
+    "tags": [
+      "languages",
+      "present_tense"
+    ],
+    "translations": {
+      "nl": {
+        "primary": "Je spreekt heel goed Noors",
+        "accepted": [
+          "U spreekt heel goed Noors"
+        ],
+        "word_pool": [
+          "begrijp",
+          "Engels",
+          "goed",
+          "heel",
+          "hij",
+          "ik",
+          "je",
+          "Noors",
+          "slecht",
+          "sprak",
+          "spreekt",
+          "u"
+        ]
+      },
+      "no": {
+        "primary": "Du snakker veldig godt norsk",
+        "accepted": [
+          "Du snakker kjempebra norsk"
+        ],
+        "word_pool": [
+          "du",
+          "dårlig",
+          "engelsk",
+          "forstår",
+          "godt",
+          "han",
+          "jeg",
+          "kjempebra",
+          "norsk",
+          "snakker",
+          "snakket",
+          "veldig"
+        ]
+      }
+    }
+  },
+  {
+    "id": 10,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 1,
+    "tags": [
+      "weather",
+      "adjectives"
+    ],
+    "translations": {
+      "nl": {
+        "primary": "Het weer is echt prachtig vandaag",
+        "accepted": [
+          "Het weer is heel erg mooi vandaag"
+        ],
+        "word_pool": [
+          "echt",
+          "erg",
+          "gisteren",
+          "heel",
+          "het",
+          "is",
+          "koud",
+          "mooi",
+          "prachtig",
+          "regen",
+          "slecht",
+          "vandaag",
+          "was",
+          "weer",
+          "zal"
+        ]
+      },
+      "no": {
+        "primary": "Været er virkelig nydelig i dag",
+        "accepted": [
+          "Været er kjempefint i dag"
+        ],
+        "word_pool": [
+          "dag",
+          "dårlig",
+          "er",
+          "i",
+          "i går",
+          "kaldt",
+          "kjempefint",
+          "nydelig",
+          "regn",
+          "var",
+          "vil",
+          "virkelig",
+          "været"
+        ]
+      }
+    }
+  },
+  {
+    "id": 11,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 4,
+    "tags": [
+      "family",
+      "descriptions"
+    ],
+    "translations": {
+      "nl": {
+        "primary": "Mijn jonge broer is erg lang",
+        "accepted": [
+          "Mijn broertje is erg lang"
+        ],
+        "word_pool": [
+          "broer",
+          "broertje",
+          "erg",
+          "is",
+          "jonge",
+          "jouw",
+          "kort",
+          "lang",
+          "mijn",
+          "oud",
+          "was",
+          "ze",
+          "zus"
+        ]
+      },
+      "no": {
+        "primary": "Min unge bror er veldig høy",
+        "accepted": [
+          "Lillebroren min er veldig høy"
+        ],
+        "word_pool": [
+          "bror",
+          "din",
+          "er",
+          "gammel",
+          "hun",
+          "høy",
+          "kort",
+          "lillebroren",
+          "min",
+          "søster",
+          "unge",
+          "var",
+          "veldig"
+        ]
+      }
+    }
+  },
+  {
+    "id": 12,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 3,
+    "tags": [
+      "shopping",
+      "verbs"
+    ],
+    "translations": {
+      "nl": {
+        "primary": "We willen een nieuw huis kopen",
+        "accepted": [
+          "Wij willen een nieuw huis kopen"
+        ],
+        "word_pool": [
+          "appartement",
+          "auto",
+          "een",
+          "huis",
+          "kopen",
+          "nieuw",
+          "oud",
+          "verkopen",
+          "we",
+          "wij",
+          "wilden",
+          "willen",
+          "ze"
+        ]
+      },
+      "no": {
+        "primary": "Vi vil kjøpe et nytt hus",
+        "accepted": [
+          "Vi ønsker å kjøpe et nytt hus"
+        ],
+        "word_pool": [
+          "bil",
+          "de",
+          "et",
+          "gammelt",
+          "hus",
+          "kjøpe",
+          "leilighet",
+          "nytt",
+          "selge",
+          "vi",
+          "vil",
+          "ville",
+          "å",
+          "ønsker"
+        ]
+      }
+    }
+  },
+  {
+    "id": 13,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 2,
+    "tags": [
+      "beverages",
+      "basics"
+    ],
+    "translations": {
+      "nl": {
+        "primary": "Ik drink graag zwarte koffie",
+        "accepted": [
+          "Ik hou ervan om zwarte koffie te drinken"
+        ],
+        "word_pool": [
+          "at",
+          "drink",
+          "drinken",
+          "ervan",
+          "graag",
+          "haat",
+          "hij",
+          "hou",
+          "ik",
+          "koffie",
+          "om",
+          "te",
+          "thee",
+          "water",
+          "wit",
+          "zwarte"
+        ]
+      },
+      "no": {
+        "primary": "Jeg drikker gjerne svart kaffe",
+        "accepted": [
+          "Jeg liker å drikke svart kaffe"
+        ],
+        "word_pool": [
+          "drakk",
+          "drikke",
+          "drikker",
+          "gjerne",
+          "han",
+          "hater",
+          "hvit",
+          "jeg",
+          "kaffe",
+          "liker",
+          "svart",
+          "te",
+          "vann",
+          "å"
+        ]
+      }
+    }
+  },
+  {
+    "id": 14,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 4,
+    "tags": [
+      "travel",
+      "frequencies"
+    ],
+    "translations": {
+      "nl": {
+        "primary": "Ze reizen vaak naar Spanje",
+        "accepted": [
+          "Zij reizen dikwijls naar Spanje"
+        ],
+        "word_pool": [
+          "auto",
+          "dikwijls",
+          "Duitsland",
+          "naar",
+          "nooit",
+          "reden",
+          "reizen",
+          "Spanje",
+          "vaak",
+          "vlogen",
+          "we",
+          "ze",
+          "zij"
+        ]
+      },
+      "no": {
+        "primary": "De reiser ofte til Spania",
+        "accepted": [
+          "De drar ofte til Spania"
+        ],
+        "word_pool": [
+          "aldri",
+          "bil",
+          "de",
+          "drar",
+          "fløy",
+          "kjørte",
+          "ofte",
+          "reiser",
+          "Spania",
+          "til",
+          "Tyskland",
+          "vi"
+        ]
+      }
+    }
+  },
+  {
+    "id": 15,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 1,
+    "tags": [
+      "food",
+      "adjectives"
+    ],
+    "translations": {
+      "nl": {
+        "primary": "Het eten is koud en slecht",
+        "accepted": [
+          "De maaltijd is koud en slecht"
+        ],
+        "word_pool": [
+          "de",
+          "en",
+          "eten",
+          "goed",
+          "het",
+          "hij",
+          "is",
+          "koud",
+          "maaltijd",
+          "slecht",
+          "warm",
+          "was",
+          "water",
+          "we"
+        ]
+      },
+      "no": {
+        "primary": "Maten er kald og dårlig",
+        "accepted": [
+          "Måltidet er kaldt og dårlig"
+        ],
+        "word_pool": [
+          "dårlig",
+          "er",
+          "god",
+          "han",
+          "kald",
+          "kaldt",
+          "maten",
+          "måltidet",
+          "og",
+          "vann",
+          "var",
+          "varm",
+          "vi"
+        ]
+      }
+    }
+  },
+  {
+    "id": 16,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 5,
+    "tags": [
+      "time",
+      "verbs",
+      "travel"
+    ],
+    "translations": {
+      "nl": {
+        "primary": "De snelle trein vertrekt nu meteen",
+        "accepted": [
+          "De sneltrein vertrekt nu"
+        ],
+        "word_pool": [
+          "auto",
+          "bus",
+          "de",
+          "komt",
+          "langzaam",
+          "later",
+          "meteen",
+          "nu",
+          "snelle",
+          "sneltrein",
+          "trein",
+          "vertrekt",
+          "we"
+        ]
+      },
+      "no": {
+        "primary": "Det raske toget drar akkurat nå",
+        "accepted": [
+          "Det kjappe toget drar nå",
+          "Hurtigtoget drar nå"
+        ],
+        "word_pool": [
+          "akkurat",
+          "bil",
+          "buss",
+          "det",
+          "drar",
+          "hurtigtoget",
+          "kjappe",
+          "kommer",
+          "nå",
+          "raske",
+          "senere",
+          "toget",
+          "trege",
+          "vi"
+        ]
+      }
+    }
+  },
+  {
+    "id": 17,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 3,
+    "tags": [
+      "sports",
+      "verbs"
+    ],
+    "translations": {
+      "nl": {
+        "primary": "We voetballen elke avond",
+        "accepted": [
+          "Wij spelen elke avonds voetbal"
+        ],
+        "word_pool": [
+          "avond",
+          "avonds",
+          "elke",
+          "kijken",
+          "nooit",
+          "ochtend",
+          "speelden",
+          "spelen",
+          "tennis",
+          "voetbal",
+          "voetballen",
+          "we",
+          "wij",
+          "ze"
+        ]
+      },
+      "no": {
+        "primary": "Vi spiller fotball hver kveld",
+        "accepted": [
+          "Vi fotballer hver kveld"
+        ],
+        "word_pool": [
+          "aldri",
+          "de",
+          "fotball",
+          "fotballer",
+          "hver",
+          "kveld",
+          "morgen",
+          "ser",
+          "spiller",
+          "spilte",
+          "tennis",
+          "vi"
+        ]
+      }
+    }
+  },
+  {
+    "id": 18,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 4,
+    "tags": [
+      "communication",
+      "past_tense"
+    ],
+    "translations": {
+      "nl": {
+        "primary": "Ze schreef gisteren een lange brief",
+        "accepted": [
+          "Zij schreef gisteren een lange brief"
+        ],
+        "word_pool": [
+          "boek",
+          "brief",
+          "een",
+          "gisteren",
+          "hij",
+          "kort",
+          "lange",
+          "lezen",
+          "morgen",
+          "schreef",
+          "schrijft",
+          "ze",
+          "zij"
+        ]
+      },
+      "no": {
+        "primary": "Hun skrev et langt brev i går",
+        "accepted": [
+          "Hun skrev ei lang melding i går"
+        ],
+        "word_pool": [
+          "bok",
+          "brev",
+          "ei",
+          "et",
+          "går",
+          "han",
+          "hun",
+          "i",
+          "i morgen",
+          "kort",
+          "lang",
+          "langt",
+          "lese",
+          "melding",
+          "skrev",
+          "skriver"
+        ]
+      }
+    }
+  },
+  {
+    "id": 19,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 2,
+    "tags": [
+      "feelings",
+      "past_tense"
+    ],
+    "translations": {
+      "nl": {
+        "primary": "Hij was gisteren erg moe",
+        "accepted": [],
+        "word_pool": [
+          "boos",
+          "erg",
+          "gisteren",
+          "hij",
+          "is",
+          "moe",
+          "morgen",
+          "wakker",
+          "was",
+          "we",
+          "ze"
+        ]
+      },
+      "no": {
+        "primary": "Han var veldig trøtt i går",
+        "accepted": [
+          "Han var ganske sliten i går"
+        ],
+        "word_pool": [
+          "er",
+          "ganske",
+          "går",
+          "han",
+          "hun",
+          "i",
+          "i morgen",
+          "sint",
+          "sliten",
+          "trøtt",
+          "var",
+          "veldig",
+          "vi",
+          "våken"
+        ]
+      }
+    }
+  },
+  {
+    "id": 20,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 5,
+    "tags": [
+      "comprehension",
+      "negation"
+    ],
+    "translations": {
+      "nl": {
+        "primary": "Ik begrijp je helemaal niet",
+        "accepted": [
+          "Ik snap u helemaal niet"
+        ],
+        "word_pool": [
+          "alles",
+          "begreep",
+          "begrijp",
+          "helemaal",
+          "hem",
+          "hij",
+          "horen",
+          "ik",
+          "je",
+          "niet",
+          "snap",
+          "u",
+          "weten"
+        ]
+      },
+      "no": {
+        "primary": "Jeg forstår deg ikke i det hele tatt",
+        "accepted": [
+          "Jeg skjønner deg ikke i det hele tatt"
+        ],
+        "word_pool": [
+          "alt",
+          "deg",
+          "det",
+          "forsto",
+          "forstår",
+          "ham",
+          "han",
+          "hele",
+          "hører",
+          "i",
+          "ikke",
+          "jeg",
+          "skjønner",
+          "tatt",
+          "tro"
+        ]
+      }
+    }
+  },
+  {
+    "id": 21,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 3,
+    "tags": [
+      "school",
+      "objects"
+    ],
+    "translations": {
+      "nl": {
+        "primary": "De leraar heeft een blauwe pen",
+        "accepted": [
+          "De docent heeft een blauwe pen"
+        ],
+        "word_pool": [
+          "blauwe",
+          "de",
+          "docent",
+          "een",
+          "had",
+          "heeft",
+          "hij",
+          "leraar",
+          "pen",
+          "potlood",
+          "rood",
+          "student",
+          "we"
+        ]
+      },
+      "no": {
+        "primary": "Læreren har en blå penn",
+        "accepted": [
+          "Læreren eier en blå penn"
+        ],
+        "word_pool": [
+          "blyant",
+          "blå",
+          "eier",
+          "eleven",
+          "en",
+          "hadde",
+          "han",
+          "har",
+          "læreren",
+          "penn",
+          "rød",
+          "vi"
+        ]
+      }
+    }
+  },
+  {
+    "id": 22,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 4,
+    "tags": [
+      "activities",
+      "music"
+    ],
+    "translations": {
+      "nl": {
+        "primary": "Ze luisteren naar harde muziek",
+        "accepted": [
+          "Zij luisteren naar luide muziek"
+        ],
+        "word_pool": [
+          "harde",
+          "hij",
+          "luide",
+          "luisterden",
+          "luisteren",
+          "muziek",
+          "naar",
+          "radio",
+          "spelen",
+          "we",
+          "zacht",
+          "ze",
+          "zij"
+        ]
+      },
+      "no": {
+        "primary": "De hører på høy musikk",
+        "accepted": [
+          "De lytter til høy musikk"
+        ],
+        "word_pool": [
+          "de",
+          "han",
+          "hører",
+          "hørte",
+          "høy",
+          "lav",
+          "lytter",
+          "musikk",
+          "på",
+          "radio",
+          "spiller",
+          "til",
+          "vi"
+        ]
+      }
+    }
+  },
+  {
+    "id": 23,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 2,
+    "tags": [
+      "clothes",
+      "colors"
+    ],
+    "translations": {
+      "nl": {
+        "primary": "Ze draagt een gele jurk",
+        "accepted": [
+          "Zij heeft een gele jurk aan"
+        ],
+        "word_pool": [
+          "aan",
+          "draagt",
+          "droeg",
+          "een",
+          "gele",
+          "groen",
+          "heeft",
+          "hij",
+          "jurk",
+          "overhemd",
+          "schoenen",
+          "ze",
+          "zij"
+        ]
+      },
+      "no": {
+        "primary": "Hun har på seg en gul kjole",
+        "accepted": [
+          "Hun bruker en gul kjole",
+          "Hun har på seg ei gul kåpe"
+        ],
+        "word_pool": [
+          "bruker",
+          "de",
+          "ei",
+          "en",
+          "grønn",
+          "gul",
+          "hadde",
+          "han",
+          "har",
+          "hun",
+          "kjole",
+          "kåpe",
+          "på",
+          "seg",
+          "skjorte",
+          "sko"
+        ]
+      }
+    }
+  },
+  {
+    "id": 24,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 5,
+    "tags": [
+      "travel",
+      "future_tense"
+    ],
+    "translations": {
+      "nl": {
+        "primary": "Ik vlieg volgende week naar Londen",
+        "accepted": [
+          "Ik zal volgende week naar Londen vliegen"
+        ],
+        "word_pool": [
+          "ik",
+          "Londen",
+          "maand",
+          "naar",
+          "Parijs",
+          "rijden",
+          "vlieg",
+          "vliegen",
+          "vloog",
+          "volgende",
+          "we",
+          "week",
+          "zal",
+          "ze"
+        ]
+      },
+      "no": {
+        "primary": "Jeg flyr til London neste uke",
+        "accepted": [
+          "Jeg skal fly til London neste uke",
+          "Jeg vil fly til London neste uke"
+        ],
+        "word_pool": [
+          "fly",
+          "flyr",
+          "fløy",
+          "hun",
+          "jeg",
+          "kjøre",
+          "London",
+          "måned",
+          "neste",
+          "Paris",
+          "skal",
+          "til",
+          "uke",
+          "vi",
+          "vil"
+        ]
+      }
+    }
+  },
+  {
+    "id": 25,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 1,
+    "tags": [
+      "nature",
+      "basics"
+    ],
+    "translations": {
+      "nl": {
+        "primary": "De hoge boom is heel oud",
+        "accepted": [],
+        "word_pool": [
+          "bloem",
+          "boom",
+          "de",
+          "heel",
+          "hij",
+          "hoge",
+          "is",
+          "jong",
+          "kort",
+          "oud",
+          "was",
+          "we"
+        ]
+      },
+      "no": {
+        "primary": "Det høye treet er veldig gammelt",
+        "accepted": [],
+        "word_pool": [
+          "blomst",
+          "det",
+          "er",
+          "gammelt",
+          "han",
+          "høye",
+          "kort",
+          "treet",
+          "ungt",
+          "var",
+          "veldig",
+          "vi"
+        ]
+      }
+    }
+  },
+  {
+    "id": 26,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 2,
+    "tags": [
+      "city",
+      "places"
+    ],
+    "translations": {
+      "nl": {
+        "primary": "De grote stad is altijd druk",
+        "accepted": [],
+        "word_pool": [
+          "altijd",
+          "de",
+          "dorp",
+          "druk",
+          "grote",
+          "is",
+          "klein",
+          "nooit",
+          "rustig",
+          "stad",
+          "was",
+          "we"
+        ]
+      },
+      "no": {
+        "primary": "Storbyen er alltid travel",
+        "accepted": [
+          "Den store byen er alltid travel"
+        ],
+        "word_pool": [
+          "aldri",
+          "alltid",
+          "byen",
+          "den",
+          "er",
+          "landsbyen",
+          "liten",
+          "stille",
+          "storbyen",
+          "store",
+          "travel",
+          "var",
+          "vi"
+        ]
+      }
+    }
+  },
+  {
+    "id": 27,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 3,
+    "tags": [
+      "food",
+      "verbs"
+    ],
+    "translations": {
+      "nl": {
+        "primary": "Ze maakt een heerlijke taart",
+        "accepted": [
+          "Ze bakt een heerlijke taart"
+        ],
+        "word_pool": [
+          "bakt",
+          "brood",
+          "een",
+          "eten",
+          "heerlijke",
+          "hij",
+          "maakt",
+          "slecht",
+          "taart",
+          "was",
+          "ze"
+        ]
+      },
+      "no": {
+        "primary": "Hun lager en deilig kake",
+        "accepted": [
+          "Hun baker ei deilig kake"
+        ],
+        "word_pool": [
+          "baker",
+          "brød",
+          "de",
+          "deilig",
+          "dårlig",
+          "ei",
+          "en",
+          "han",
+          "hun",
+          "kake",
+          "lager",
+          "spise",
+          "var"
+        ]
+      }
+    }
+  },
+  {
+    "id": 28,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 1,
+    "tags": [
+      "basics",
+      "pronouns"
+    ],
+    "translations": {
+      "nl": {
+        "primary": "Ik zie jou en hem",
+        "accepted": [],
+        "word_pool": [
+          "en",
+          "haar",
+          "hem",
+          "hen",
+          "ik",
+          "jou",
+          "we",
+          "zag",
+          "ze",
+          "zie"
+        ]
+      },
+      "no": {
+        "primary": "Jeg ser deg og ham",
+        "accepted": [
+          "Jeg ser deg og han"
+        ],
+        "word_pool": [
+          "de",
+          "deg",
+          "dem",
+          "ham",
+          "han",
+          "henne",
+          "hun",
+          "jeg",
+          "og",
+          "ser",
+          "så",
+          "vi"
+        ]
+      }
+    }
+  },
+  {
+    "id": 29,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 4,
+    "tags": [
+      "future",
+      "plans"
+    ],
+    "translations": {
+      "nl": {
+        "primary": "We gaan morgen bij mijn ouders op bezoek",
+        "accepted": [
+          "Wij zullen morgen mijn ouders bezoeken"
+        ],
+        "word_pool": [
+          "bezochten",
+          "bezoek",
+          "bezoeken",
+          "bij",
+          "gaan",
+          "gisteren",
+          "huis",
+          "mijn",
+          "morgen",
+          "op",
+          "ouders",
+          "vrienden",
+          "we",
+          "wij",
+          "ze",
+          "zullen"
+        ]
+      },
+      "no": {
+        "primary": "Vi skal besøke foreldrene mine i morgen",
+        "accepted": [
+          "Vi vil besøke foreldrene mine i morgen"
+        ],
+        "word_pool": [
+          "besøke",
+          "besøkte",
+          "de",
+          "foreldrene",
+          "hjem",
+          "i",
+          "i går",
+          "mine",
+          "morgen",
+          "skal",
+          "venner",
+          "vi",
+          "vil"
+        ]
+      }
+    }
+  },
+  {
+    "id": 30,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 2,
+    "tags": [
+      "emotions",
+      "adjectives"
+    ],
+    "translations": {
+      "nl": {
+        "primary": "Waarom ben je vandaag zo verdrietig",
+        "accepted": [
+          "Waarom bent u vandaag zo verdrietig"
+        ],
+        "word_pool": [
+          "ben",
+          "bent",
+          "blij",
+          "hij",
+          "is",
+          "je",
+          "morgen",
+          "u",
+          "vandaag",
+          "verdrietig",
+          "waarom",
+          "was",
+          "we",
+          "zo"
+        ]
+      },
+      "no": {
+        "primary": "Hvorfor er du så trist i dag",
+        "accepted": [
+          "Hvorfor er du så lei deg i dag"
+        ],
+        "word_pool": [
+          "dag",
+          "deg",
+          "du",
+          "er",
+          "glad",
+          "han",
+          "hvorfor",
+          "i",
+          "i morgen",
+          "lei",
+          "så",
+          "trist",
+          "var",
+          "vi"
+        ]
+      }
+    }
+  },
+  {
+    "id": 31,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 3,
+    "tags": [
+      "health",
+      "verbs"
+    ],
+    "translations": {
+      "nl": {
+        "primary": "Hij moet meer slapen",
+        "accepted": [
+          "Hij heeft meer slaap nodig"
+        ],
+        "word_pool": [
+          "eten",
+          "heeft",
+          "hij",
+          "meer",
+          "minder",
+          "moest",
+          "moet",
+          "nodig",
+          "slaap",
+          "slapen",
+          "werken",
+          "wil",
+          "ze"
+        ]
+      },
+      "no": {
+        "primary": "Han må sove mer",
+        "accepted": [
+          "Han trenger å sove mer"
+        ],
+        "word_pool": [
+          "han",
+          "hun",
+          "jobbe",
+          "mer",
+          "mindre",
+          "må",
+          "sove",
+          "spise",
+          "trenger",
+          "trengte",
+          "vil",
+          "å"
+        ]
+      }
+    }
+  },
+  {
+    "id": 32,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 5,
+    "tags": [
+      "work",
+      "possessions"
+    ],
+    "translations": {
+      "nl": {
+        "primary": "Ik ben mijn sleutels thuis vergeten",
+        "accepted": [],
+        "word_pool": [
+          "ben",
+          "ik",
+          "kantoor",
+          "mijn",
+          "onthouden",
+          "portemonnee",
+          "sleutels",
+          "thuis",
+          "vergeten",
+          "vond",
+          "ze"
+        ]
+      },
+      "no": {
+        "primary": "Jeg glemte nøklene mine hjemme",
+        "accepted": [
+          "Jeg har glemt nøklene mine hjemme"
+        ],
+        "word_pool": [
+          "fant",
+          "glemt",
+          "glemte",
+          "har",
+          "hjemme",
+          "hun",
+          "husket",
+          "jeg",
+          "kontoret",
+          "lommeboka",
+          "mine",
+          "nøklene"
+        ]
+      }
+    }
+  },
+  {
+    "id": 33,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 2,
+    "tags": [
+      "weather",
+      "verbs"
+    ],
+    "translations": {
+      "nl": {
+        "primary": "Het regent nu buiten",
+        "accepted": [],
+        "word_pool": [
+          "binnen",
+          "buiten",
+          "gisteren",
+          "het",
+          "is",
+          "nu",
+          "regent",
+          "sneeuwt",
+          "was",
+          "zon"
+        ]
+      },
+      "no": {
+        "primary": "Det regner ute akkurat nå",
+        "accepted": [
+          "Det regner ute nå"
+        ],
+        "word_pool": [
+          "akkurat",
+          "det",
+          "er",
+          "i går",
+          "inne",
+          "nå",
+          "regner",
+          "snør",
+          "sol",
+          "ute",
+          "var"
+        ]
+      }
+    }
+  },
+  {
+    "id": 34,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 4,
+    "tags": [
+      "travel",
+      "questions"
+    ],
+    "translations": {
+      "nl": {
+        "primary": "Hoeveel kost het kaartje",
+        "accepted": [
+          "Wat kost het ticket"
+        ],
+        "word_pool": [
+          "duur",
+          "goedkoper",
+          "het",
+          "hoeveel",
+          "is",
+          "kaartje",
+          "kopen",
+          "kost",
+          "prijs",
+          "ticket",
+          "veel",
+          "wat"
+        ]
+      },
+      "no": {
+        "primary": "Hvor mye koster billetten",
+        "accepted": [
+          "Hva koster billetten"
+        ],
+        "word_pool": [
+          "billetten",
+          "billigere",
+          "dyrt",
+          "er",
+          "hva",
+          "hvor",
+          "kjøpe",
+          "koster",
+          "mange",
+          "mye",
+          "pris"
+        ]
+      }
+    }
+  },
+  {
+    "id": 35,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 1,
+    "tags": [
+      "colors",
+      "objects"
+    ],
+    "translations": {
+      "nl": {
+        "primary": "De rode auto is snel",
+        "accepted": [],
+        "word_pool": [
+          "auto",
+          "blauw",
+          "bus",
+          "de",
+          "is",
+          "langzaam",
+          "niet",
+          "rode",
+          "snel",
+          "was"
+        ]
+      },
+      "no": {
+        "primary": "Den røde bilen er rask",
+        "accepted": [
+          "Den røde bilen er kjapp"
+        ],
+        "word_pool": [
+          "bilen",
+          "blå",
+          "bussen",
+          "den",
+          "er",
+          "ikke",
+          "kjapp",
+          "rask",
+          "røde",
+          "treg",
+          "var"
+        ]
+      }
+    }
+  },
+  {
+    "id": 36,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 3,
+    "tags": [
+      "family",
+      "age"
+    ],
+    "translations": {
+      "nl": {
+        "primary": "Hoe oud is je zus",
+        "accepted": [
+          "Hoe oud is uw zuster"
+        ],
+        "word_pool": [
+          "broer",
+          "hoe",
+          "is",
+          "je",
+          "mijn",
+          "oud",
+          "uw",
+          "veel",
+          "waar",
+          "was",
+          "zus",
+          "zuster"
+        ]
+      },
+      "no": {
+        "primary": "Hvor gammel er søsteren din",
+        "accepted": [
+          "Hvor gammel er søstera di"
+        ],
+        "word_pool": [
+          "bror",
+          "di",
+          "din",
+          "er",
+          "gammel",
+          "hvor",
+          "mange",
+          "min",
+          "søstera",
+          "søsteren",
+          "var"
+        ]
+      }
+    }
+  },
+  {
+    "id": 37,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 2,
+    "tags": [
+      "food",
+      "likes"
+    ],
+    "translations": {
+      "nl": {
+        "primary": "Ik hou niet van pittig eten",
+        "accepted": [],
+        "word_pool": [
+          "eten",
+          "heel",
+          "heerlijk",
+          "hou",
+          "ik",
+          "niet",
+          "pittig",
+          "van",
+          "warm",
+          "ze",
+          "zoet"
+        ]
+      },
+      "no": {
+        "primary": "Jeg liker ikke sterk mat",
+        "accepted": [
+          "Jeg er ikke glad i sterk mat"
+        ],
+        "word_pool": [
+          "deilig",
+          "er",
+          "glad",
+          "hun",
+          "i",
+          "ikke",
+          "jeg",
+          "liker",
+          "mat",
+          "spise",
+          "sterk",
+          "søt",
+          "varm",
+          "veldig"
+        ]
+      }
+    }
+  },
+  {
+    "id": 38,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 4,
+    "tags": [
+      "locations",
+      "verbs"
+    ],
+    "translations": {
+      "nl": {
+        "primary": "Waar woon je nu",
+        "accepted": [
+          "Waar woont u nu"
+        ],
+        "word_pool": [
+          "hier",
+          "je",
+          "nu",
+          "u",
+          "verblijven",
+          "waar",
+          "wanneer",
+          "werken",
+          "woon",
+          "woonde",
+          "woont",
+          "ze"
+        ]
+      },
+      "no": {
+        "primary": "Hvor bor du nå",
+        "accepted": [
+          "Hvor oppholder du deg nå"
+        ],
+        "word_pool": [
+          "blir",
+          "bodde",
+          "bor",
+          "de",
+          "deg",
+          "du",
+          "her",
+          "hvor",
+          "jobber",
+          "nå",
+          "når",
+          "oppholder"
+        ]
+      }
+    }
+  },
+  {
+    "id": 39,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 1,
+    "tags": [
+      "basics",
+      "numbers"
+    ],
+    "translations": {
+      "nl": {
+        "primary": "Ik heb twee kleine katten",
+        "accepted": [],
+        "word_pool": [
+          "drie",
+          "groot",
+          "had",
+          "heb",
+          "honden",
+          "ik",
+          "katten",
+          "kleine",
+          "n",
+          "twee",
+          "we"
+        ]
+      },
+      "no": {
+        "primary": "Jeg har to små katter",
+        "accepted": [
+          "Jeg eier to små katter"
+        ],
+        "word_pool": [
+          "eier",
+          "en",
+          "hadde",
+          "har",
+          "hunder",
+          "jeg",
+          "katter",
+          "små",
+          "store",
+          "to",
+          "tre",
+          "vi"
+        ]
+      }
+    }
+  },
+  {
+    "id": 40,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 5,
+    "tags": [
+      "past",
+      "travel"
+    ],
+    "translations": {
+      "nl": {
+        "primary": "Ze is vorige zomer naar Noorwegen gereisd",
+        "accepted": [
+          "Zij reisde vorige zomer naar Noorwegen"
+        ],
+        "word_pool": [
+          "bezoeken",
+          "gereisd",
+          "ging",
+          "hij",
+          "is",
+          "naar",
+          "Noorwegen",
+          "reis",
+          "reisde",
+          "vorige",
+          "winter",
+          "zal",
+          "ze",
+          "zij",
+          "zomer"
+        ]
+      },
+      "no": {
+        "primary": "Hun reiste til Norge i fjor sommer",
+        "accepted": [
+          "Hun dro til Norge i fjor sommer"
+        ],
+        "word_pool": [
+          "besøke",
+          "dro",
+          "fjor",
+          "han",
+          "hun",
+          "i",
+          "Norge",
+          "reiste",
+          "skal",
+          "sommer",
+          "til",
+          "tur",
+          "vinter"
+        ]
+      }
+    }
+  },
+  {
+    "id": 41,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 2,
+    "tags": [
+      "daily_life",
+      "verbs"
+    ],
+    "translations": {
+      "nl": {
+        "primary": "Hij wordt elke dag vroeg wakker",
+        "accepted": [
+          "Hij staat elke dag vroeg op"
+        ],
+        "word_pool": [
+          "altijd",
+          "dag",
+          "elke",
+          "hij",
+          "laat",
+          "ochtend",
+          "op",
+          "slaapt",
+          "staat",
+          "vroeg",
+          "wakker",
+          "werd wakker",
+          "wordt",
+          "ze"
+        ]
+      },
+      "no": {
+        "primary": "Han våkner tidlig hver dag",
+        "accepted": [
+          "Han står opp tidlig hver dag"
+        ],
+        "word_pool": [
+          "alltid",
+          "dag",
+          "han",
+          "hun",
+          "hver",
+          "morgen",
+          "opp",
+          "sent",
+          "sover",
+          "står",
+          "tidlig",
+          "våkner",
+          "våknet"
+        ]
+      }
+    }
+  },
+  {
+    "id": 42,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 3,
+    "tags": [
+      "social",
+      "offers"
+    ],
+    "translations": {
+      "nl": {
+        "primary": "Wil je wat water",
+        "accepted": [
+          "Wilt u wat water"
+        ],
+        "word_pool": [
+          "drinken",
+          "iets",
+          "je",
+          "koffie",
+          "nodig",
+          "u",
+          "was",
+          "wat",
+          "water",
+          "wil",
+          "wilt",
+          "ze"
+        ]
+      },
+      "no": {
+        "primary": "Vil du ha litt vann",
+        "accepted": [
+          "Ønsker du litt vann"
+        ],
+        "word_pool": [
+          "de",
+          "drikke",
+          "du",
+          "ha",
+          "kaffe",
+          "litt",
+          "noe",
+          "trenger",
+          "vann",
+          "var",
+          "vil",
+          "ønsker"
+        ]
+      }
+    }
+  },
+  {
+    "id": 43,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 1,
+    "tags": [
+      "basics",
+      "introductions"
+    ],
+    "translations": {
+      "nl": {
+        "primary": "Hoe heet je",
+        "accepted": [
+          "Hoe heet u",
+          "Wat is je naam"
+        ],
+        "word_pool": [
+          "heet",
+          "hoe",
+          "is",
+          "je",
+          "mijn",
+          "naam",
+          "u",
+          "waar",
+          "was",
+          "wat",
+          "wie"
+        ]
+      },
+      "no": {
+        "primary": "Hva heter du",
+        "accepted": [
+          "Hva er navnet ditt"
+        ],
+        "word_pool": [
+          "ditt",
+          "du",
+          "er",
+          "heter",
+          "hva",
+          "hvem",
+          "hvor",
+          "hvordan",
+          "mitt",
+          "navnet",
+          "var"
+        ]
+      }
+    }
+  },
+  {
+    "id": 44,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 4,
+    "tags": [
+      "transport",
+      "verbs"
+    ],
+    "translations": {
+      "nl": {
+        "primary": "We wachten op de bus",
+        "accepted": [
+          "Wij zijn aan het wachten op de bus"
+        ],
+        "word_pool": [
+          "aan",
+          "bus",
+          "de",
+          "het",
+          "kijken",
+          "op",
+          "trein",
+          "voor",
+          "wachten",
+          "wachtten",
+          "we",
+          "wij",
+          "ze",
+          "zijn",
+          "zullen"
+        ]
+      },
+      "no": {
+        "primary": "Vi venter på bussen",
+        "accepted": [
+          "Vi står og venter på bussen"
+        ],
+        "word_pool": [
+          "bussen",
+          "de",
+          "etter",
+          "og",
+          "på",
+          "ser",
+          "skal",
+          "står",
+          "toget",
+          "venter",
+          "ventet",
+          "vi"
+        ]
+      }
+    }
+  },
+  {
+    "id": 45,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 2,
+    "tags": [
+      "home",
+      "adjectives"
+    ],
+    "translations": {
+      "nl": {
+        "primary": "Onze nieuwe tuin is heel erg mooi",
+        "accepted": [
+          "Onze nieuwe tuin is prachtig"
+        ],
+        "word_pool": [
+          "erg",
+          "heel",
+          "huis",
+          "is",
+          "klein",
+          "mooi",
+          "niet",
+          "nieuwe",
+          "onze",
+          "oud",
+          "prachtig",
+          "tuin",
+          "was",
+          "ze"
+        ]
+      },
+      "no": {
+        "primary": "Vår nye hage er veldig vakker",
+        "accepted": [
+          "Hagen vår er veldig fin",
+          "Den nye hagen vår er veldig vakker"
+        ],
+        "word_pool": [
+          "de",
+          "den",
+          "er",
+          "fin",
+          "gammel",
+          "hage",
+          "hagen",
+          "hus",
+          "ikke",
+          "liten",
+          "nye",
+          "vakker",
+          "var",
+          "veldig",
+          "vår"
+        ]
+      }
+    }
+  },
+  {
+    "id": 46,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 5,
+    "tags": [
+      "complex",
+      "opinions"
+    ],
+    "translations": {
+      "nl": {
+        "primary": "Ik vind het belangrijk om talen te leren",
+        "accepted": [
+          "Ik geloof dat het belangrijk is om talen te leren"
+        ],
+        "word_pool": [
+          "belangrijk",
+          "dacht",
+          "dat",
+          "geloof",
+          "het",
+          "ik",
+          "is",
+          "leren",
+          "nutteloos",
+          "om",
+          "spreken",
+          "talen",
+          "te",
+          "vind",
+          "was",
+          "ze"
+        ]
+      },
+      "no": {
+        "primary": "Jeg synes det er viktig å lære språk",
+        "accepted": [
+          "Jeg tror det er viktig å lære språk",
+          "Jeg mener det er viktig å lære språk"
+        ],
+        "word_pool": [
+          "at",
+          "de",
+          "det",
+          "er",
+          "jeg",
+          "lære",
+          "mener",
+          "snakke",
+          "språk",
+          "synes",
+          "syntes",
+          "tror",
+          "unødvendig",
+          "var",
+          "viktig",
+          "å"
+        ]
+      }
+    }
+  },
+  {
+    "id": 47,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 3,
+    "tags": [
+      "time",
+      "routines"
+    ],
+    "translations": {
+      "nl": {
+        "primary": "Ik drink meestal thee in de ochtend",
+        "accepted": [
+          "Gewoonlijk drink ik thee 's ochtends"
+        ],
+        "word_pool": [
+          "altijd",
+          "avond",
+          "de",
+          "drink",
+          "dronk",
+          "gewoonlijk",
+          "ik",
+          "in",
+          "koffie",
+          "meestal",
+          "nooit",
+          "ochtend",
+          "ochtends",
+          "s",
+          "thee",
+          "ze"
+        ]
+      },
+      "no": {
+        "primary": "Jeg drikker vanligvis te om morgenen",
+        "accepted": [
+          "Jeg pleier å drikke te om morgenen"
+        ],
+        "word_pool": [
+          "aldri",
+          "alltid",
+          "drakk",
+          "drikke",
+          "drikker",
+          "hun",
+          "jeg",
+          "kaffe",
+          "kvelden",
+          "morgenen",
+          "om",
+          "pleier",
+          "te",
+          "vanligvis",
+          "å"
+        ]
+      }
+    }
+  },
+  {
+    "id": 48,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 2,
+    "tags": [
+      "nature",
+      "verbs"
+    ],
+    "translations": {
+      "nl": {
+        "primary": "De zon schijnt vandaag",
+        "accepted": [],
+        "word_pool": [
+          "de",
+          "gisteren",
+          "maan",
+          "niet",
+          "regen",
+          "scheen",
+          "schijnt",
+          "vandaag",
+          "was",
+          "zon"
+        ]
+      },
+      "no": {
+        "primary": "Solen skinner i dag",
+        "accepted": [
+          "Sola skinner i dag"
+        ],
+        "word_pool": [
+          "dag",
+          "i",
+          "i går",
+          "ikke",
+          "månen",
+          "regn",
+          "skinner",
+          "skinte",
+          "sola",
+          "solen",
+          "var"
+        ]
+      }
+    }
+  },
+  {
+    "id": 49,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 4,
+    "tags": [
+      "objects",
+      "locations"
+    ],
+    "translations": {
+      "nl": {
+        "primary": "Mijn computer staat op de tafel",
+        "accepted": [
+          "Mijn laptop ligt op de tafel"
+        ],
+        "word_pool": [
+          "computer",
+          "de",
+          "is",
+          "laptop",
+          "ligt",
+          "mijn",
+          "onder",
+          "op",
+          "staat",
+          "stoel",
+          "tafel",
+          "telefoon",
+          "was",
+          "zijn"
+        ]
+      },
+      "no": {
+        "primary": "Datamaskinen min ligger på bordet",
+        "accepted": [
+          "PC-en min ligger på bordet"
+        ],
+        "word_pool": [
+          "bordet",
+          "datamaskinen",
+          "er",
+          "hans",
+          "ligger",
+          "min",
+          "pc-en",
+          "på",
+          "stolen",
+          "telefonen",
+          "under",
+          "var"
+        ]
+      }
+    }
+  },
+  {
+    "id": 50,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 1,
+    "tags": [
+      "basics",
+      "feelings"
+    ],
+    "translations": {
+      "nl": {
+        "primary": "Heb je honger",
+        "accepted": [
+          "Heeft u honger"
+        ],
+        "word_pool": [
+          "dorst",
+          "heb",
+          "heeft",
+          "hoe",
+          "honger",
+          "is",
+          "je",
+          "u",
+          "waar",
+          "was",
+          "ze"
+        ]
+      },
+      "no": {
+        "primary": "Er du sulten",
+        "accepted": [],
+        "word_pool": [
+          "de",
+          "du",
+          "er",
+          "hvor",
+          "hvordan",
+          "sulten",
+          "tørst",
+          "var"
+        ]
+      }
+    }
+  }
+]

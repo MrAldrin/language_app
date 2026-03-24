@@ -1,0 +1,2542 @@
+[
+  {
+    "id": 1,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 1,
+    "tags": [
+      "basics",
+      "adjectives"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Ich bin heute sehr glücklich",
+        "accepted": [
+          "Ich bin heute richtig froh"
+        ],
+        "word_pool": [
+          "bin",
+          "böse",
+          "er",
+          "froh",
+          "glücklich",
+          "heute",
+          "ich",
+          "Morgen",
+          "richtig",
+          "sehr",
+          "traurig",
+          "war",
+          "wir"
+        ]
+      },
+      "en": {
+        "primary": "I am very happy today",
+        "accepted": [
+          "I am very glad today"
+        ],
+        "word_pool": [
+          "am",
+          "glad",
+          "happy",
+          "he",
+          "I",
+          "is",
+          "sad",
+          "today",
+          "tomorrow",
+          "very",
+          "was",
+          "we"
+        ]
+      }
+    }
+  },
+  {
+    "id": 2,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 2,
+    "tags": [
+      "hobbies",
+      "verbs"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Sie liest ein sehr gutes Buch",
+        "accepted": [
+          "Sie liest gerade ein sehr gutes Buch"
+        ],
+        "word_pool": [
+          "Buch",
+          "Bücher",
+          "ein",
+          "er",
+          "gerade",
+          "gutes",
+          "las",
+          "liest",
+          "schlecht",
+          "sehr",
+          "sie",
+          "wir",
+          "Zeitung"
+        ]
+      },
+      "en": {
+        "primary": "She reads a really good book",
+        "accepted": [
+          "She is reading a really good book"
+        ],
+        "word_pool": [
+          "a",
+          "bad",
+          "book",
+          "books",
+          "good",
+          "he",
+          "is",
+          "newspaper",
+          "read",
+          "reading",
+          "reads",
+          "really",
+          "she",
+          "we"
+        ]
+      }
+    }
+  },
+  {
+    "id": 3,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 1,
+    "tags": [
+      "food",
+      "present_tense"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Wir essen jetzt zu Abend",
+        "accepted": [
+          "Wir essen jetzt Abendessen"
+        ],
+        "word_pool": [
+          "Abend",
+          "Abendessen",
+          "aßen",
+          "Essen",
+          "Frühstück",
+          "immer",
+          "jetzt",
+          "Mittagessen",
+          "Morgen",
+          "sie",
+          "wir",
+          "zu"
+        ]
+      },
+      "en": {
+        "primary": "We are eating dinner now",
+        "accepted": [
+          "We eat dinner now"
+        ],
+        "word_pool": [
+          "always",
+          "are",
+          "ate",
+          "breakfast",
+          "dinner",
+          "eat",
+          "eating",
+          "lunch",
+          "now",
+          "they",
+          "tomorrow",
+          "we"
+        ]
+      }
+    }
+  },
+  {
+    "id": 4,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 3,
+    "tags": [
+      "directions",
+      "verbs"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Sie gehen zum neuen Laden",
+        "accepted": [
+          "Sie laufen zum neuen Geschäft"
+        ],
+        "word_pool": [
+          "alt",
+          "Auto",
+          "er",
+          "fuhren",
+          "gehen",
+          "Geschäft",
+          "Laden",
+          "laufen",
+          "neuen",
+          "sie",
+          "Supermarkt",
+          "wir",
+          "zum"
+        ]
+      },
+      "en": {
+        "primary": "They walk to the new store",
+        "accepted": [
+          "They are walking to the new shop",
+          "They walk to the new shop"
+        ],
+        "word_pool": [
+          "are",
+          "car",
+          "he",
+          "new",
+          "old",
+          "ran",
+          "shop",
+          "store",
+          "supermarket",
+          "the",
+          "they",
+          "to",
+          "walk",
+          "walking",
+          "we"
+        ]
+      }
+    }
+  },
+  {
+    "id": 5,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 1,
+    "tags": [
+      "animals",
+      "adjectives"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Der Hund ist groß und braun",
+        "accepted": [],
+        "word_pool": [
+          "braun",
+          "der",
+          "groß",
+          "Hund",
+          "Hunde",
+          "ist",
+          "Katze",
+          "klein",
+          "nicht",
+          "schwarz",
+          "und",
+          "war"
+        ]
+      },
+      "en": {
+        "primary": "The dog is big and brown",
+        "accepted": [],
+        "word_pool": [
+          "and",
+          "big",
+          "black",
+          "brown",
+          "cat",
+          "cats",
+          "dog",
+          "is",
+          "not",
+          "small",
+          "the",
+          "was"
+        ]
+      }
+    }
+  },
+  {
+    "id": 6,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 2,
+    "tags": [
+      "animals",
+      "verbs"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Die kleine Katze schläft den ganzen Tag",
+        "accepted": [],
+        "word_pool": [
+          "den",
+          "die",
+          "ganzen",
+          "groß",
+          "Hund",
+          "Katze",
+          "kleine",
+          "Nacht",
+          "schlief",
+          "schläft",
+          "sie",
+          "Tag",
+          "wacht"
+        ]
+      },
+      "en": {
+        "primary": "The small cat sleeps all day",
+        "accepted": [
+          "The little cat sleeps all day"
+        ],
+        "word_pool": [
+          "all",
+          "big",
+          "cat",
+          "day",
+          "dog",
+          "little",
+          "night",
+          "sleeps",
+          "slept",
+          "small",
+          "the",
+          "they",
+          "wakes"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 1,
+    "tags": [
+      "possessions",
+      "basics"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Ich habe ein schnelles rotes Auto",
+        "accepted": [
+          "Ich besitze ein schnelles rotes Auto"
+        ],
+        "word_pool": [
+          "Auto",
+          "besitze",
+          "blau",
+          "Bus",
+          "ein",
+          "er",
+          "habe",
+          "hatte",
+          "ich",
+          "langsam",
+          "rotes",
+          "schnelles",
+          "wir"
+        ]
+      },
+      "en": {
+        "primary": "I have a fast red car",
+        "accepted": [
+          "I own a fast red car"
+        ],
+        "word_pool": [
+          "a",
+          "blue",
+          "bus",
+          "car",
+          "fast",
+          "had",
+          "have",
+          "he",
+          "I",
+          "own",
+          "red",
+          "slow",
+          "we"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 4,
+    "tags": [
+      "work",
+      "locations"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Er arbeitet in einem großen Büro",
+        "accepted": [
+          "Er ist in einem großen Büro beschäftigt"
+        ],
+        "word_pool": [
+          "arbeitet",
+          "arbeitete",
+          "beschäftigt",
+          "Büro",
+          "draußen",
+          "einem",
+          "er",
+          "Fabrik",
+          "großen",
+          "in",
+          "ist",
+          "klein",
+          "sie",
+          "wir"
+        ]
+      },
+      "en": {
+        "primary": "He works in a large office",
+        "accepted": [
+          "He is working in a large office"
+        ],
+        "word_pool": [
+          "a",
+          "factory",
+          "he",
+          "in",
+          "is",
+          "large",
+          "office",
+          "outside",
+          "she",
+          "small",
+          "they",
+          "worked",
+          "working",
+          "works"
+        ]
+      }
+    }
+  },
+  {
+    "id": 9,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 2,
+    "tags": [
+      "languages",
+      "present_tense"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Du sprichst sehr gut Deutsch",
+        "accepted": [
+          "Sie sprechen sehr gut Deutsch"
+        ],
+        "word_pool": [
+          "Deutsch",
+          "du",
+          "Englisch",
+          "er",
+          "gut",
+          "ich",
+          "schlecht",
+          "sehr",
+          "sie",
+          "sprach",
+          "sprechen",
+          "sprichst",
+          "verstehst"
+        ]
+      },
+      "en": {
+        "primary": "You speak German very well",
+        "accepted": [
+          "You talk German very well"
+        ],
+        "word_pool": [
+          "badly",
+          "English",
+          "German",
+          "he",
+          "I",
+          "speak",
+          "spoke",
+          "talk",
+          "understand",
+          "very",
+          "well",
+          "you"
+        ]
+      }
+    }
+  },
+  {
+    "id": 10,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 1,
+    "tags": [
+      "weather",
+      "adjectives"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Das Wetter ist heute wirklich schön",
+        "accepted": [
+          "Das Wetter ist heute sehr schön"
+        ],
+        "word_pool": [
+          "das",
+          "gestern",
+          "heute",
+          "ist",
+          "kalt",
+          "Regen",
+          "schlecht",
+          "schön",
+          "sehr",
+          "war",
+          "Wetter",
+          "wird",
+          "wirklich"
+        ]
+      },
+      "en": {
+        "primary": "The weather is really nice today",
+        "accepted": [
+          "The weather is very nice today"
+        ],
+        "word_pool": [
+          "bad",
+          "cold",
+          "is",
+          "nice",
+          "rain",
+          "really",
+          "the",
+          "today",
+          "very",
+          "was",
+          "weather",
+          "will",
+          "yesterday"
+        ]
+      }
+    }
+  },
+  {
+    "id": 11,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 4,
+    "tags": [
+      "family",
+      "descriptions"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Mein junger Bruder ist sehr groß",
+        "accepted": [
+          "Mein kleiner Bruder ist sehr groß"
+        ],
+        "word_pool": [
+          "alt",
+          "Bruder",
+          "dein",
+          "groß",
+          "ist",
+          "junger",
+          "kleiner",
+          "kurz",
+          "mein",
+          "Schwester",
+          "sehr",
+          "sie",
+          "war"
+        ]
+      },
+      "en": {
+        "primary": "My young brother is very tall",
+        "accepted": [
+          "My little brother is very tall"
+        ],
+        "word_pool": [
+          "brother",
+          "is",
+          "little",
+          "my",
+          "old",
+          "she",
+          "short",
+          "sister",
+          "tall",
+          "very",
+          "was",
+          "young",
+          "your"
+        ]
+      }
+    }
+  },
+  {
+    "id": 12,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 3,
+    "tags": [
+      "shopping",
+      "verbs"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Wir wollen ein neues Haus kaufen",
+        "accepted": [
+          "Wir möchten ein neues Haus kaufen"
+        ],
+        "word_pool": [
+          "alt",
+          "Auto",
+          "ein",
+          "Haus",
+          "kaufen",
+          "möchten",
+          "neues",
+          "sie",
+          "verkaufen",
+          "wir",
+          "Wohnung",
+          "wollen",
+          "wollten"
+        ]
+      },
+      "en": {
+        "primary": "We want to buy a new house",
+        "accepted": [
+          "We wish to buy a new house"
+        ],
+        "word_pool": [
+          "a",
+          "apartment",
+          "buy",
+          "car",
+          "house",
+          "new",
+          "old",
+          "sell",
+          "they",
+          "to",
+          "want",
+          "wanted",
+          "we",
+          "wish"
+        ]
+      }
+    }
+  },
+  {
+    "id": 13,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 2,
+    "tags": [
+      "beverages",
+      "basics"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Ich trinke gerne schwarzen Kaffee",
+        "accepted": [
+          "Ich mag es schwarzen Kaffee zu trinken"
+        ],
+        "word_pool": [
+          "aß",
+          "er",
+          "es",
+          "gerne",
+          "hasse",
+          "ich",
+          "Kaffee",
+          "mag",
+          "schwarzen",
+          "Tee",
+          "trinke",
+          "trinken",
+          "Wasser",
+          "weiß",
+          "zu"
+        ]
+      },
+      "en": {
+        "primary": "I like to drink black coffee",
+        "accepted": [
+          "I enjoy drinking black coffee"
+        ],
+        "word_pool": [
+          "ate",
+          "black",
+          "coffee",
+          "drink",
+          "drinking",
+          "enjoy",
+          "hate",
+          "he",
+          "I",
+          "like",
+          "tea",
+          "to",
+          "water",
+          "white"
+        ]
+      }
+    }
+  },
+  {
+    "id": 14,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 4,
+    "tags": [
+      "travel",
+      "frequencies"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Sie reisen oft nach Spanien",
+        "accepted": [
+          "Oft reisen sie nach Spanien"
+        ],
+        "word_pool": [
+          "Auto",
+          "Deutschland",
+          "flogen",
+          "fuhren",
+          "nach",
+          "nie",
+          "oft",
+          "reisen",
+          "sie",
+          "Spanien",
+          "wir"
+        ]
+      },
+      "en": {
+        "primary": "They often travel to Spain",
+        "accepted": [
+          "They travel to Spain often"
+        ],
+        "word_pool": [
+          "car",
+          "drove",
+          "flew",
+          "Germany",
+          "never",
+          "often",
+          "Spain",
+          "they",
+          "to",
+          "travel",
+          "we"
+        ]
+      }
+    }
+  },
+  {
+    "id": 15,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 1,
+    "tags": [
+      "food",
+      "adjectives"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Das Essen ist kalt und schlecht",
+        "accepted": [
+          "Die Mahlzeit ist kalt und schlecht"
+        ],
+        "word_pool": [
+          "das",
+          "die",
+          "er",
+          "Essen",
+          "gut",
+          "heiß",
+          "ist",
+          "kalt",
+          "Mahlzeit",
+          "schlecht",
+          "und",
+          "war",
+          "Wasser",
+          "wir"
+        ]
+      },
+      "en": {
+        "primary": "The food is cold and bad",
+        "accepted": [
+          "The meal is cold and bad"
+        ],
+        "word_pool": [
+          "and",
+          "bad",
+          "cold",
+          "food",
+          "good",
+          "he",
+          "hot",
+          "is",
+          "meal",
+          "the",
+          "was",
+          "water",
+          "we"
+        ]
+      }
+    }
+  },
+  {
+    "id": 16,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 5,
+    "tags": [
+      "time",
+      "verbs",
+      "travel"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Der schnelle Zug fährt jetzt ab",
+        "accepted": [
+          "Der Schnellzug fährt jetzt ab"
+        ],
+        "word_pool": [
+          "ab",
+          "Auto",
+          "Bus",
+          "der",
+          "fährt",
+          "jetzt",
+          "kommt",
+          "langsam",
+          "schnelle",
+          "Schnellzug",
+          "später",
+          "wir",
+          "Zug"
+        ]
+      },
+      "en": {
+        "primary": "The fast train departs right now",
+        "accepted": [
+          "The fast train leaves right now"
+        ],
+        "word_pool": [
+          "arrives",
+          "bus",
+          "car",
+          "departs",
+          "fast",
+          "later",
+          "leaves",
+          "now",
+          "right",
+          "slow",
+          "the",
+          "train",
+          "we"
+        ]
+      }
+    }
+  },
+  {
+    "id": 17,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 3,
+    "tags": [
+      "sports",
+      "verbs"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Wir spielen jeden Abend Fußball",
+        "accepted": [],
+        "word_pool": [
+          "Abend",
+          "Fußball",
+          "jeden",
+          "Morgen",
+          "nie",
+          "sehen",
+          "sie",
+          "spielen",
+          "spielten",
+          "Tennis",
+          "wir"
+        ]
+      },
+      "en": {
+        "primary": "We play football every evening",
+        "accepted": [
+          "We play soccer every evening"
+        ],
+        "word_pool": [
+          "evening",
+          "every",
+          "football",
+          "morning",
+          "never",
+          "play",
+          "played",
+          "soccer",
+          "tennis",
+          "they",
+          "watch",
+          "we"
+        ]
+      }
+    }
+  },
+  {
+    "id": 18,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 4,
+    "tags": [
+      "communication",
+      "past_tense"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Sie schrieb gestern einen langen Brief",
+        "accepted": [],
+        "word_pool": [
+          "Brief",
+          "Buch",
+          "einen",
+          "er",
+          "gestern",
+          "kurz",
+          "langen",
+          "las",
+          "Morgen",
+          "schreibt",
+          "schrieb",
+          "sie"
+        ]
+      },
+      "en": {
+        "primary": "She wrote a long letter yesterday",
+        "accepted": [],
+        "word_pool": [
+          "a",
+          "book",
+          "he",
+          "letter",
+          "long",
+          "read",
+          "she",
+          "short",
+          "tomorrow",
+          "writes",
+          "wrote",
+          "yesterday"
+        ]
+      }
+    }
+  },
+  {
+    "id": 19,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 2,
+    "tags": [
+      "feelings",
+      "past_tense"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Er war gestern sehr müde",
+        "accepted": [],
+        "word_pool": [
+          "böse",
+          "er",
+          "gestern",
+          "ist",
+          "Morgen",
+          "müde",
+          "sehr",
+          "sie",
+          "wach",
+          "war",
+          "wir"
+        ]
+      },
+      "en": {
+        "primary": "He was very tired yesterday",
+        "accepted": [],
+        "word_pool": [
+          "angry",
+          "awake",
+          "he",
+          "is",
+          "she",
+          "tired",
+          "tomorrow",
+          "very",
+          "was",
+          "we",
+          "yesterday"
+        ]
+      }
+    }
+  },
+  {
+    "id": 20,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 5,
+    "tags": [
+      "comprehension",
+      "negation"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Ich verstehe dich überhaupt nicht",
+        "accepted": [
+          "Ich verstehe Sie überhaupt nicht"
+        ],
+        "word_pool": [
+          "alles",
+          "dich",
+          "er",
+          "höre",
+          "ich",
+          "ihn",
+          "nicht",
+          "sie",
+          "verstand",
+          "verstehe",
+          "weiß",
+          "überhaupt"
+        ]
+      },
+      "en": {
+        "primary": "I do not understand you at all",
+        "accepted": [
+          "I don't understand you at all"
+        ],
+        "word_pool": [
+          "all",
+          "at",
+          "do",
+          "don't",
+          "everything",
+          "he",
+          "hear",
+          "him",
+          "I",
+          "know",
+          "not",
+          "understand",
+          "understood",
+          "you"
+        ]
+      }
+    }
+  },
+  {
+    "id": 21,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 3,
+    "tags": [
+      "school",
+      "objects"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Der Lehrer hat einen blauen Stift",
+        "accepted": [
+          "Der Lehrer besitzt einen blauen Stift"
+        ],
+        "word_pool": [
+          "besitzt",
+          "blauen",
+          "Bleistift",
+          "der",
+          "einen",
+          "er",
+          "hat",
+          "hatte",
+          "Lehrer",
+          "rot",
+          "Schüler",
+          "Stift",
+          "wir"
+        ]
+      },
+      "en": {
+        "primary": "The teacher has a blue pen",
+        "accepted": [
+          "The instructor has a blue pen"
+        ],
+        "word_pool": [
+          "a",
+          "blue",
+          "had",
+          "has",
+          "he",
+          "instructor",
+          "pen",
+          "pencil",
+          "red",
+          "student",
+          "teacher",
+          "the",
+          "we"
+        ]
+      }
+    }
+  },
+  {
+    "id": 22,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 4,
+    "tags": [
+      "activities",
+      "music"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Sie hören laute Musik",
+        "accepted": [
+          "Sie hören gerade laute Musik"
+        ],
+        "word_pool": [
+          "er",
+          "gerade",
+          "hören",
+          "hörten",
+          "laute",
+          "leise",
+          "Musik",
+          "Radio",
+          "sie",
+          "spielen",
+          "wir"
+        ]
+      },
+      "en": {
+        "primary": "They listen to loud music",
+        "accepted": [
+          "They are listening to loud music"
+        ],
+        "word_pool": [
+          "are",
+          "he",
+          "listen",
+          "listened",
+          "listening",
+          "loud",
+          "music",
+          "play",
+          "quiet",
+          "radio",
+          "they",
+          "to",
+          "we"
+        ]
+      }
+    }
+  },
+  {
+    "id": 23,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 2,
+    "tags": [
+      "clothes",
+      "colors"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Sie trägt ein gelbes Kleid",
+        "accepted": [
+          "Sie hat ein gelbes Kleid an"
+        ],
+        "word_pool": [
+          "an",
+          "ein",
+          "er",
+          "gelbes",
+          "grün",
+          "hat",
+          "hemd",
+          "Kleid",
+          "Schuhe",
+          "sie",
+          "trug",
+          "trägt"
+        ]
+      },
+      "en": {
+        "primary": "She wears a yellow dress",
+        "accepted": [
+          "She is wearing a yellow dress"
+        ],
+        "word_pool": [
+          "a",
+          "dress",
+          "green",
+          "he",
+          "is",
+          "she",
+          "shirt",
+          "shoes",
+          "they",
+          "wearing",
+          "wears",
+          "wore",
+          "yellow"
+        ]
+      }
+    }
+  },
+  {
+    "id": 24,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 5,
+    "tags": [
+      "travel",
+      "future_tense"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Ich werde nächste Woche nach London fliegen",
+        "accepted": [
+          "Nächste Woche fliege ich nach London"
+        ],
+        "word_pool": [
+          "fahren",
+          "fliege",
+          "fliegen",
+          "flog",
+          "ich",
+          "London",
+          "Monat",
+          "nach",
+          "nächste",
+          "Paris",
+          "sie",
+          "werde",
+          "wir",
+          "Woche"
+        ]
+      },
+      "en": {
+        "primary": "I will fly to London next week",
+        "accepted": [],
+        "word_pool": [
+          "drive",
+          "flew",
+          "fly",
+          "I",
+          "London",
+          "month",
+          "next",
+          "Paris",
+          "she",
+          "to",
+          "we",
+          "week",
+          "will"
+        ]
+      }
+    }
+  },
+  {
+    "id": 25,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 1,
+    "tags": [
+      "nature",
+      "basics"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Der hohe Baum ist sehr alt",
+        "accepted": [],
+        "word_pool": [
+          "alt",
+          "Baum",
+          "Blume",
+          "der",
+          "er",
+          "hohe",
+          "ist",
+          "jung",
+          "kurz",
+          "sehr",
+          "war",
+          "wir"
+        ]
+      },
+      "en": {
+        "primary": "The tall tree is very old",
+        "accepted": [],
+        "word_pool": [
+          "flower",
+          "he",
+          "is",
+          "old",
+          "short",
+          "tall",
+          "the",
+          "tree",
+          "very",
+          "was",
+          "we",
+          "young"
+        ]
+      }
+    }
+  },
+  {
+    "id": 26,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 2,
+    "tags": [
+      "city",
+      "places"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Die große Stadt ist immer belebt",
+        "accepted": [
+          "Die Großstadt ist immer belebt"
+        ],
+        "word_pool": [
+          "belebt",
+          "die",
+          "dorf",
+          "große",
+          "Großstadt",
+          "immer",
+          "ist",
+          "klein",
+          "nie",
+          "ruhig",
+          "Stadt",
+          "war",
+          "wir"
+        ]
+      },
+      "en": {
+        "primary": "The big city is always busy",
+        "accepted": [
+          "The large city is always busy"
+        ],
+        "word_pool": [
+          "always",
+          "big",
+          "busy",
+          "city",
+          "is",
+          "large",
+          "never",
+          "quiet",
+          "small",
+          "the",
+          "village",
+          "was",
+          "we"
+        ]
+      }
+    }
+  },
+  {
+    "id": 27,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 3,
+    "tags": [
+      "food",
+      "verbs"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Sie backt einen leckeren Kuchen",
+        "accepted": [
+          "Sie macht einen leckeren Kuchen"
+        ],
+        "word_pool": [
+          "backt",
+          "Brot",
+          "einen",
+          "er",
+          "ißt",
+          "Kuchen",
+          "leckeren",
+          "macht",
+          "schlecht",
+          "sie",
+          "war"
+        ]
+      },
+      "en": {
+        "primary": "She is making a delicious cake",
+        "accepted": [
+          "She makes a delicious cake",
+          "She is baking a delicious cake"
+        ],
+        "word_pool": [
+          "a",
+          "bad",
+          "baking",
+          "bread",
+          "cake",
+          "delicious",
+          "eating",
+          "he",
+          "is",
+          "makes",
+          "making",
+          "she",
+          "they",
+          "was"
+        ]
+      }
+    }
+  },
+  {
+    "id": 28,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 1,
+    "tags": [
+      "basics",
+      "pronouns"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Ich sehe dich und ihn",
+        "accepted": [
+          "Ich sehe euch"
+        ],
+        "word_pool": [
+          "alle",
+          "dich",
+          "euch",
+          "ich",
+          "ihn",
+          "ihnen",
+          "nicht",
+          "sah",
+          "sehe",
+          "sie",
+          "und",
+          "wir"
+        ]
+      },
+      "en": {
+        "primary": "I see you and him",
+        "accepted": [],
+        "word_pool": [
+          "and",
+          "her",
+          "him",
+          "I",
+          "saw",
+          "see",
+          "she",
+          "them",
+          "they",
+          "we",
+          "you"
+        ]
+      }
+    }
+  },
+  {
+    "id": 29,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 4,
+    "tags": [
+      "future",
+      "plans"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Wir werden morgen meine Eltern besuchen",
+        "accepted": [
+          "Wir besuchen morgen meine Eltern"
+        ],
+        "word_pool": [
+          "besuchen",
+          "besuchten",
+          "Eltern",
+          "Freunde",
+          "gestern",
+          "Haus",
+          "meine",
+          "Morgen",
+          "sie",
+          "werden",
+          "wir"
+        ]
+      },
+      "en": {
+        "primary": "We will visit my parents tomorrow",
+        "accepted": [
+          "We are visiting my parents tomorrow"
+        ],
+        "word_pool": [
+          "are",
+          "friends",
+          "home",
+          "my",
+          "parents",
+          "they",
+          "tomorrow",
+          "visit",
+          "visited",
+          "visiting",
+          "we",
+          "will",
+          "yesterday"
+        ]
+      }
+    }
+  },
+  {
+    "id": 30,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 2,
+    "tags": [
+      "emotions",
+      "adjectives"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Warum bist du heute so traurig",
+        "accepted": [],
+        "word_pool": [
+          "bist",
+          "du",
+          "er",
+          "glücklich",
+          "heute",
+          "ist",
+          "Morgen",
+          "so",
+          "traurig",
+          "war",
+          "warum",
+          "wir"
+        ]
+      },
+      "en": {
+        "primary": "Why are you so sad today",
+        "accepted": [],
+        "word_pool": [
+          "are",
+          "happy",
+          "he",
+          "is",
+          "sad",
+          "so",
+          "today",
+          "tomorrow",
+          "was",
+          "we",
+          "why",
+          "you"
+        ]
+      }
+    }
+  },
+  {
+    "id": 31,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 3,
+    "tags": [
+      "health",
+      "verbs"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Er muss mehr schlafen",
+        "accepted": [
+          "Er braucht mehr Schlaf"
+        ],
+        "word_pool": [
+          "arbeiten",
+          "braucht",
+          "er",
+          "Essen",
+          "mehr",
+          "muss",
+          "musste",
+          "Schlaf",
+          "schlafen",
+          "sie",
+          "weniger",
+          "will"
+        ]
+      },
+      "en": {
+        "primary": "He needs to sleep more",
+        "accepted": [
+          "He must sleep more"
+        ],
+        "word_pool": [
+          "eat",
+          "he",
+          "less",
+          "more",
+          "must",
+          "needed",
+          "needs",
+          "she",
+          "sleep",
+          "to",
+          "wants",
+          "work"
+        ]
+      }
+    }
+  },
+  {
+    "id": 32,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 5,
+    "tags": [
+      "work",
+      "possessions"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Ich habe meine Schlüssel zu Hause vergessen",
+        "accepted": [],
+        "word_pool": [
+          "Brieftasche",
+          "Büro",
+          "erinnert",
+          "fand",
+          "habe",
+          "Hause",
+          "ich",
+          "mein",
+          "meine",
+          "Schlüssel",
+          "sie",
+          "vergessen",
+          "zu"
+        ]
+      },
+      "en": {
+        "primary": "I forgot my keys at home",
+        "accepted": [],
+        "word_pool": [
+          "at",
+          "forgot",
+          "found",
+          "home",
+          "I",
+          "keys",
+          "my",
+          "office",
+          "remembered",
+          "she",
+          "wallet"
+        ]
+      }
+    }
+  },
+  {
+    "id": 33,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 2,
+    "tags": [
+      "weather",
+      "verbs"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Draußen regnet es gerade",
+        "accepted": [
+          "Es regnet draußen"
+        ],
+        "word_pool": [
+          "draußen",
+          "drinnen",
+          "es",
+          "gerade",
+          "gestern",
+          "ist",
+          "regnet",
+          "schneit",
+          "Sonne",
+          "war"
+        ]
+      },
+      "en": {
+        "primary": "It is raining outside right now",
+        "accepted": [
+          "It rains outside right now"
+        ],
+        "word_pool": [
+          "inside",
+          "is",
+          "it",
+          "now",
+          "outside",
+          "raining",
+          "rains",
+          "right",
+          "snowing",
+          "sun",
+          "was",
+          "yesterday"
+        ]
+      }
+    }
+  },
+  {
+    "id": 34,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 4,
+    "tags": [
+      "travel",
+      "questions"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Wie viel kostet die Fahrkarte",
+        "accepted": [
+          "Was kostet die Fahrkarte"
+        ],
+        "word_pool": [
+          "billiger",
+          "die",
+          "Fahrkarte",
+          "ist",
+          "kaufen",
+          "kostet",
+          "Preis",
+          "teuer",
+          "viel",
+          "viele",
+          "was",
+          "wie"
+        ]
+      },
+      "en": {
+        "primary": "How much does the ticket cost",
+        "accepted": [],
+        "word_pool": [
+          "buy",
+          "cheaper",
+          "cost",
+          "does",
+          "expensive",
+          "how",
+          "is",
+          "many",
+          "much",
+          "price",
+          "the",
+          "ticket"
+        ]
+      }
+    }
+  },
+  {
+    "id": 35,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 1,
+    "tags": [
+      "colors",
+      "objects"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Das rote Auto ist schnell",
+        "accepted": [],
+        "word_pool": [
+          "Auto",
+          "blau",
+          "Bus",
+          "das",
+          "ist",
+          "langsam",
+          "nicht",
+          "rote",
+          "schnell",
+          "war"
+        ]
+      },
+      "en": {
+        "primary": "The red car is fast",
+        "accepted": [],
+        "word_pool": [
+          "blue",
+          "bus",
+          "car",
+          "fast",
+          "is",
+          "not",
+          "red",
+          "slow",
+          "the",
+          "was"
+        ]
+      }
+    }
+  },
+  {
+    "id": 36,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 3,
+    "tags": [
+      "family",
+      "age"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Wie alt ist deine Schwester",
+        "accepted": [
+          "Wie alt ist Ihre Schwester"
+        ],
+        "word_pool": [
+          "alt",
+          "Bruder",
+          "deine",
+          "ihre",
+          "ist",
+          "mein",
+          "Schwester",
+          "viele",
+          "war",
+          "wie",
+          "wo"
+        ]
+      },
+      "en": {
+        "primary": "How old is your sister",
+        "accepted": [],
+        "word_pool": [
+          "brother",
+          "how",
+          "is",
+          "many",
+          "my",
+          "old",
+          "sister",
+          "was",
+          "where",
+          "your"
+        ]
+      }
+    }
+  },
+  {
+    "id": 37,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 2,
+    "tags": [
+      "food",
+      "likes"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Ich mag kein scharfes Essen",
+        "accepted": [
+          "Ich esse nicht gerne scharf"
+        ],
+        "word_pool": [
+          "esse",
+          "Essen",
+          "gerne",
+          "heiß",
+          "ich",
+          "kein",
+          "lecker",
+          "mag",
+          "nicht",
+          "scharf",
+          "scharfes",
+          "sehr",
+          "sie",
+          "süß"
+        ]
+      },
+      "en": {
+        "primary": "I don't like spicy food",
+        "accepted": [
+          "I do not like spicy food"
+        ],
+        "word_pool": [
+          "delicious",
+          "do",
+          "don't",
+          "eat",
+          "food",
+          "hot",
+          "I",
+          "like",
+          "not",
+          "she",
+          "spicy",
+          "sweet",
+          "very"
+        ]
+      }
+    }
+  },
+  {
+    "id": 38,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 4,
+    "tags": [
+      "locations",
+      "verbs"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Wo wohnst du jetzt",
+        "accepted": [
+          "Wo wohnen Sie jetzt"
+        ],
+        "word_pool": [
+          "arbeiten",
+          "bleiben",
+          "du",
+          "hier",
+          "jetzt",
+          "sie",
+          "wann",
+          "wo",
+          "wohnen",
+          "wohnst",
+          "wohnte"
+        ]
+      },
+      "en": {
+        "primary": "Where do you live now",
+        "accepted": [
+          "Where are you living now"
+        ],
+        "word_pool": [
+          "are",
+          "do",
+          "here",
+          "live",
+          "lived",
+          "living",
+          "now",
+          "stay",
+          "they",
+          "when",
+          "where",
+          "work",
+          "you"
+        ]
+      }
+    }
+  },
+  {
+    "id": 39,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 1,
+    "tags": [
+      "basics",
+      "numbers"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Ich habe zwei kleine Katzen",
+        "accepted": [],
+        "word_pool": [
+          "drei",
+          "eine",
+          "groß",
+          "habe",
+          "hatte",
+          "Hunde",
+          "ich",
+          "Katzen",
+          "kleine",
+          "wir",
+          "zwei"
+        ]
+      },
+      "en": {
+        "primary": "I have two small cats",
+        "accepted": [],
+        "word_pool": [
+          "big",
+          "cats",
+          "dogs",
+          "had",
+          "have",
+          "I",
+          "one",
+          "small",
+          "three",
+          "two",
+          "we"
+        ]
+      }
+    }
+  },
+  {
+    "id": 40,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 5,
+    "tags": [
+      "past",
+      "travel"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Sie ist letzten Sommer nach Norwegen gereist",
+        "accepted": [
+          "Sie reiste letzten Sommer nach Norwegen"
+        ],
+        "word_pool": [
+          "besuchen",
+          "er",
+          "gereist",
+          "ging",
+          "ist",
+          "letzten",
+          "nach",
+          "Norwegen",
+          "Reise",
+          "reiste",
+          "sie",
+          "Sommer",
+          "winter",
+          "wird"
+        ]
+      },
+      "en": {
+        "primary": "She travelled to Norway last summer",
+        "accepted": [
+          "She traveled to Norway last summer"
+        ],
+        "word_pool": [
+          "he",
+          "last",
+          "Norway",
+          "she",
+          "summer",
+          "to",
+          "traveled",
+          "travelled",
+          "trip",
+          "visit",
+          "went",
+          "will",
+          "winter"
+        ]
+      }
+    }
+  },
+  {
+    "id": 41,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 2,
+    "tags": [
+      "daily_life",
+      "verbs"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Er wacht jeden Tag früh auf",
+        "accepted": [
+          "Er steht jeden Tag früh auf"
+        ],
+        "word_pool": [
+          "auf",
+          "er",
+          "früh",
+          "immer",
+          "jeden",
+          "Morgen",
+          "schläft",
+          "sie",
+          "spät",
+          "steht",
+          "Tag",
+          "wacht",
+          "wachte"
+        ]
+      },
+      "en": {
+        "primary": "He wakes up early every day",
+        "accepted": [
+          "He gets up early every day"
+        ],
+        "word_pool": [
+          "always",
+          "day",
+          "early",
+          "every",
+          "gets",
+          "he",
+          "late",
+          "morning",
+          "she",
+          "sleeps",
+          "up",
+          "wakes",
+          "woke"
+        ]
+      }
+    }
+  },
+  {
+    "id": 42,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 3,
+    "tags": [
+      "social",
+      "offers"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Willst du etwas Wasser",
+        "accepted": [
+          "Möchten Sie etwas Wasser"
+        ],
+        "word_pool": [
+          "brauchen",
+          "du",
+          "etwas",
+          "Kaffee",
+          "möchten",
+          "sie",
+          "trinken",
+          "war",
+          "Wasser",
+          "willst"
+        ]
+      },
+      "en": {
+        "primary": "Do you want some water",
+        "accepted": [
+          "Would you like some water"
+        ],
+        "word_pool": [
+          "any",
+          "coffee",
+          "do",
+          "drink",
+          "like",
+          "need",
+          "some",
+          "they",
+          "want",
+          "was",
+          "water",
+          "would",
+          "you"
+        ]
+      }
+    }
+  },
+  {
+    "id": 43,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 1,
+    "tags": [
+      "basics",
+      "introductions"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Wie heißt du",
+        "accepted": [
+          "Wie heißen Sie",
+          "Was ist dein Name"
+        ],
+        "word_pool": [
+          "dein",
+          "du",
+          "heißen",
+          "heißt",
+          "ist",
+          "mein",
+          "Name",
+          "sie",
+          "war",
+          "was",
+          "wer",
+          "wie",
+          "wo"
+        ]
+      },
+      "en": {
+        "primary": "What is your name",
+        "accepted": [
+          "What's your name"
+        ],
+        "word_pool": [
+          "how",
+          "is",
+          "my",
+          "name",
+          "was",
+          "what",
+          "what's",
+          "where",
+          "who",
+          "your"
+        ]
+      }
+    }
+  },
+  {
+    "id": 44,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 4,
+    "tags": [
+      "transport",
+      "verbs"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Wir warten auf den Bus",
+        "accepted": [
+          "Wir warten an der Bushaltestelle"
+        ],
+        "word_pool": [
+          "an",
+          "auf",
+          "Bus",
+          "Bushaltestelle",
+          "den",
+          "der",
+          "für",
+          "sehen",
+          "sie",
+          "warten",
+          "warteten",
+          "werden",
+          "wir",
+          "Zug"
+        ]
+      },
+      "en": {
+        "primary": "We are waiting for the bus",
+        "accepted": [
+          "We wait for the bus"
+        ],
+        "word_pool": [
+          "are",
+          "bus",
+          "for",
+          "looking",
+          "the",
+          "they",
+          "train",
+          "wait",
+          "waited",
+          "waiting",
+          "we",
+          "will"
+        ]
+      }
+    }
+  },
+  {
+    "id": 45,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 2,
+    "tags": [
+      "home",
+      "adjectives"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Unser neuer Garten ist sehr schön",
+        "accepted": [
+          "Unser neuer Garten ist wunderbar"
+        ],
+        "word_pool": [
+          "alt",
+          "Garten",
+          "Haus",
+          "ist",
+          "klein",
+          "neuer",
+          "nicht",
+          "schön",
+          "sehr",
+          "sie",
+          "unser",
+          "war",
+          "wunderbar"
+        ]
+      },
+      "en": {
+        "primary": "Our new garden is very beautiful",
+        "accepted": [
+          "Our new garden is very pretty"
+        ],
+        "word_pool": [
+          "beautiful",
+          "garden",
+          "house",
+          "is",
+          "new",
+          "not",
+          "old",
+          "our",
+          "pretty",
+          "small",
+          "they",
+          "very",
+          "was"
+        ]
+      }
+    }
+  },
+  {
+    "id": 46,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 5,
+    "tags": [
+      "complex",
+      "opinions"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Ich finde es wichtig Sprachen zu lernen",
+        "accepted": [
+          "Ich glaube es ist wichtig Sprachen zu lernen"
+        ],
+        "word_pool": [
+          "dachte",
+          "dass",
+          "es",
+          "finde",
+          "glaube",
+          "ich",
+          "ist",
+          "lernen",
+          "nutzlos",
+          "sie",
+          "Sprachen",
+          "sprechen",
+          "war",
+          "wichtig",
+          "zu"
+        ]
+      },
+      "en": {
+        "primary": "I think it is important to learn languages",
+        "accepted": [
+          "I believe it is important to learn languages"
+        ],
+        "word_pool": [
+          "believe",
+          "I",
+          "important",
+          "is",
+          "it",
+          "languages",
+          "learn",
+          "speak",
+          "that",
+          "they",
+          "think",
+          "thought",
+          "to",
+          "useless",
+          "was"
+        ]
+      }
+    }
+  },
+  {
+    "id": 47,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 3,
+    "tags": [
+      "time",
+      "routines"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Ich trinke normalerweise morgens Tee",
+        "accepted": [
+          "Normalerweise trinke ich morgens Tee"
+        ],
+        "word_pool": [
+          "Abend",
+          "ich",
+          "immer",
+          "Kaffee",
+          "morgens",
+          "nie",
+          "normalerweise",
+          "sie",
+          "Tee",
+          "trank",
+          "trinke"
+        ]
+      },
+      "en": {
+        "primary": "I usually drink tea in the morning",
+        "accepted": [
+          "I normally drink tea in the morning"
+        ],
+        "word_pool": [
+          "always",
+          "coffee",
+          "drank",
+          "drink",
+          "evening",
+          "I",
+          "in",
+          "morning",
+          "never",
+          "normally",
+          "she",
+          "tea",
+          "the",
+          "usually"
+        ]
+      }
+    }
+  },
+  {
+    "id": 48,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 2,
+    "tags": [
+      "nature",
+      "verbs"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Die Sonne scheint heute",
+        "accepted": [],
+        "word_pool": [
+          "die",
+          "gestern",
+          "heute",
+          "Mond",
+          "nicht",
+          "Regen",
+          "scheint",
+          "schien",
+          "Sonne",
+          "war"
+        ]
+      },
+      "en": {
+        "primary": "The sun is shining today",
+        "accepted": [],
+        "word_pool": [
+          "is",
+          "moon",
+          "not",
+          "rain",
+          "shining",
+          "shone",
+          "sun",
+          "the",
+          "today",
+          "was",
+          "yesterday"
+        ]
+      }
+    }
+  },
+  {
+    "id": 49,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 4,
+    "tags": [
+      "objects",
+      "locations"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Mein Computer liegt auf dem Tisch",
+        "accepted": [
+          "Mein Rechner steht auf dem Tisch"
+        ],
+        "word_pool": [
+          "auf",
+          "Computer",
+          "dem",
+          "ist",
+          "liegt",
+          "mein",
+          "Rechner",
+          "sein",
+          "steht",
+          "Stuhl",
+          "Telefon",
+          "Tisch",
+          "unter",
+          "war"
+        ]
+      },
+      "en": {
+        "primary": "My computer is on the table",
+        "accepted": [],
+        "word_pool": [
+          "chair",
+          "computer",
+          "his",
+          "is",
+          "my",
+          "on",
+          "phone",
+          "table",
+          "the",
+          "under",
+          "was"
+        ]
+      }
+    }
+  },
+  {
+    "id": 50,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 1,
+    "tags": [
+      "basics",
+      "feelings"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Hast du Hunger",
+        "accepted": [
+          "Haben Sie Hunger"
+        ],
+        "word_pool": [
+          "du",
+          "durst",
+          "haben",
+          "hast",
+          "Hunger",
+          "ist",
+          "sie",
+          "war",
+          "wie",
+          "wo"
+        ]
+      },
+      "en": {
+        "primary": "Are you hungry",
+        "accepted": [],
+        "word_pool": [
+          "are",
+          "how",
+          "hungry",
+          "is",
+          "they",
+          "thirsty",
+          "was",
+          "where",
+          "you"
+        ]
+      }
+    }
+  }
+]

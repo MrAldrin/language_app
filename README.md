@@ -1,3 +1,26 @@
+# A mini MVP of a language learning app
+It runs using marimo.
+
+Difficulty is mapped to the following:
+- 1-3: easy
+- 4-7: medium
+- 8-10: hard
+
+**Questions**
+- the data source is 
+    - generated in pairs
+    - uses proper grammar and spelling
+- the user interface
+    - standardizes grammar by lowercasing and removing punctuation
+    - then compares to see if there is a match
+
+## roadmap
+[ ] publish to github pages
+[ ] improve existing questions
+[ ] add thematic tasks. the user should choose die/der/das, verb conjugation, etc.
+
+----------------------------
+
 # marimo WebAssembly + GitHub Pages Template
 
 This template repository demonstrates how to export [marimo](https://marimo.io) notebooks to WebAssembly and deploy them to GitHub Pages.

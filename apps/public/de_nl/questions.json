@@ -1,0 +1,2566 @@
+[
+  {
+    "id": 1,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 1,
+    "tags": [
+      "basics",
+      "adjectives"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Ich bin heute sehr glücklich",
+        "accepted": [
+          "Ich bin heute richtig froh"
+        ],
+        "word_pool": [
+          "bin",
+          "böse",
+          "er",
+          "froh",
+          "glücklich",
+          "heute",
+          "ich",
+          "Morgen",
+          "richtig",
+          "sehr",
+          "traurig",
+          "war",
+          "wir"
+        ]
+      },
+      "nl": {
+        "primary": "Ik ben erg blij vandaag",
+        "accepted": [
+          "Ik ben zeer gelukkig vandaag"
+        ],
+        "word_pool": [
+          "ben",
+          "blij",
+          "erg",
+          "gelukkig",
+          "hij",
+          "ik",
+          "is",
+          "morgen",
+          "vandaag",
+          "verdrietig",
+          "was",
+          "ze",
+          "zeer"
+        ]
+      }
+    }
+  },
+  {
+    "id": 2,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 2,
+    "tags": [
+      "hobbies",
+      "verbs"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Sie liest ein sehr gutes Buch",
+        "accepted": [
+          "Sie liest gerade ein sehr gutes Buch"
+        ],
+        "word_pool": [
+          "Buch",
+          "Bücher",
+          "ein",
+          "er",
+          "gerade",
+          "gutes",
+          "las",
+          "liest",
+          "schlecht",
+          "sehr",
+          "sie",
+          "wir",
+          "Zeitung"
+        ]
+      },
+      "nl": {
+        "primary": "Ze leest een heel goed boek",
+        "accepted": [
+          "Zij leest een erg goed boek"
+        ],
+        "word_pool": [
+          "boek",
+          "boeken",
+          "een",
+          "erg",
+          "goed",
+          "heel",
+          "hij",
+          "krant",
+          "leest",
+          "lezen",
+          "slecht",
+          "we",
+          "ze",
+          "zij"
+        ]
+      }
+    }
+  },
+  {
+    "id": 3,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 1,
+    "tags": [
+      "food",
+      "present_tense"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Wir essen jetzt zu Abend",
+        "accepted": [
+          "Wir essen jetzt Abendessen"
+        ],
+        "word_pool": [
+          "Abend",
+          "Abendessen",
+          "aßen",
+          "Essen",
+          "Frühstück",
+          "immer",
+          "jetzt",
+          "Mittagessen",
+          "Morgen",
+          "sie",
+          "wir",
+          "zu"
+        ]
+      },
+      "nl": {
+        "primary": "We eten nu avondeten",
+        "accepted": [
+          "Wij eten nu het avondeten"
+        ],
+        "word_pool": [
+          "altijd",
+          "aten",
+          "avondeten",
+          "eten",
+          "het",
+          "lunch",
+          "morgen",
+          "nu",
+          "ontbijt",
+          "we",
+          "wij",
+          "ze"
+        ]
+      }
+    }
+  },
+  {
+    "id": 4,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 3,
+    "tags": [
+      "directions",
+      "verbs"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Sie gehen zum neuen Laden",
+        "accepted": [
+          "Sie laufen zum neuen Geschäft"
+        ],
+        "word_pool": [
+          "alt",
+          "Auto",
+          "er",
+          "fuhren",
+          "gehen",
+          "Geschäft",
+          "Laden",
+          "laufen",
+          "neuen",
+          "sie",
+          "Supermarkt",
+          "wir",
+          "zum"
+        ]
+      },
+      "nl": {
+        "primary": "Ze lopen naar de nieuwe winkel",
+        "accepted": [
+          "Zij wandelen naar de nieuwe winkel"
+        ],
+        "word_pool": [
+          "auto",
+          "de",
+          "hij",
+          "lopen",
+          "naar",
+          "nieuwe",
+          "oud",
+          "renden",
+          "supermarkt",
+          "wandelen",
+          "we",
+          "winkel",
+          "ze",
+          "zij"
+        ]
+      }
+    }
+  },
+  {
+    "id": 5,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 1,
+    "tags": [
+      "animals",
+      "adjectives"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Der Hund ist groß und braun",
+        "accepted": [],
+        "word_pool": [
+          "braun",
+          "der",
+          "groß",
+          "Hund",
+          "Hunde",
+          "ist",
+          "Katze",
+          "klein",
+          "nicht",
+          "schwarz",
+          "und",
+          "war"
+        ]
+      },
+      "nl": {
+        "primary": "De hond is groot en bruin",
+        "accepted": [],
+        "word_pool": [
+          "bruin",
+          "de",
+          "en",
+          "groot",
+          "hond",
+          "is",
+          "kat",
+          "katten",
+          "klein",
+          "niet",
+          "was",
+          "zwart"
+        ]
+      }
+    }
+  },
+  {
+    "id": 6,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 2,
+    "tags": [
+      "animals",
+      "verbs"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Die kleine Katze schläft den ganzen Tag",
+        "accepted": [],
+        "word_pool": [
+          "den",
+          "die",
+          "ganzen",
+          "groß",
+          "Hund",
+          "Katze",
+          "kleine",
+          "Nacht",
+          "schlief",
+          "schläft",
+          "sie",
+          "Tag",
+          "wacht"
+        ]
+      },
+      "nl": {
+        "primary": "De kleine kat slaapt de hele dag",
+        "accepted": [],
+        "word_pool": [
+          "dag",
+          "de",
+          "groot",
+          "hele",
+          "hond",
+          "kat",
+          "kleine",
+          "nacht",
+          "slaapt",
+          "sliep",
+          "wordt wakker",
+          "ze"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 1,
+    "tags": [
+      "possessions",
+      "basics"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Ich habe ein schnelles rotes Auto",
+        "accepted": [
+          "Ich besitze ein schnelles rotes Auto"
+        ],
+        "word_pool": [
+          "Auto",
+          "besitze",
+          "blau",
+          "Bus",
+          "ein",
+          "er",
+          "habe",
+          "hatte",
+          "ich",
+          "langsam",
+          "rotes",
+          "schnelles",
+          "wir"
+        ]
+      },
+      "nl": {
+        "primary": "Ik heb een snelle rode auto",
+        "accepted": [
+          "Ik bezit een snelle rode auto"
+        ],
+        "word_pool": [
+          "auto",
+          "bezit",
+          "blauw",
+          "bus",
+          "een",
+          "had",
+          "heb",
+          "hij",
+          "ik",
+          "langzaam",
+          "rode",
+          "snelle",
+          "we"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 4,
+    "tags": [
+      "work",
+      "locations"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Er arbeitet in einem großen Büro",
+        "accepted": [
+          "Er ist in einem großen Büro beschäftigt"
+        ],
+        "word_pool": [
+          "arbeitet",
+          "arbeitete",
+          "beschäftigt",
+          "Büro",
+          "draußen",
+          "einem",
+          "er",
+          "Fabrik",
+          "großen",
+          "in",
+          "ist",
+          "klein",
+          "sie",
+          "wir"
+        ]
+      },
+      "nl": {
+        "primary": "Hij werkt in een groot kantoor",
+        "accepted": [
+          "Hij werkt op een groot kantoor"
+        ],
+        "word_pool": [
+          "buiten",
+          "een",
+          "fabriek",
+          "groot",
+          "hij",
+          "in",
+          "kantoor",
+          "klein",
+          "op",
+          "werkt",
+          "werkte",
+          "ze"
+        ]
+      }
+    }
+  },
+  {
+    "id": 9,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 2,
+    "tags": [
+      "languages",
+      "present_tense"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Du sprichst sehr gut Deutsch",
+        "accepted": [
+          "Sie sprechen sehr gut Deutsch"
+        ],
+        "word_pool": [
+          "Deutsch",
+          "du",
+          "Englisch",
+          "er",
+          "gut",
+          "ich",
+          "schlecht",
+          "sehr",
+          "sie",
+          "sprach",
+          "sprechen",
+          "sprichst",
+          "verstehst"
+        ]
+      },
+      "nl": {
+        "primary": "Je spreekt heel goed Duits",
+        "accepted": [
+          "U spreekt heel goed Duits"
+        ],
+        "word_pool": [
+          "begrijp",
+          "Duits",
+          "Engels",
+          "goed",
+          "heel",
+          "hij",
+          "ik",
+          "je",
+          "slecht",
+          "sprak",
+          "spreekt",
+          "u"
+        ]
+      }
+    }
+  },
+  {
+    "id": 10,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 1,
+    "tags": [
+      "weather",
+      "adjectives"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Das Wetter ist heute wirklich schön",
+        "accepted": [
+          "Das Wetter ist heute sehr schön"
+        ],
+        "word_pool": [
+          "das",
+          "gestern",
+          "heute",
+          "ist",
+          "kalt",
+          "Regen",
+          "schlecht",
+          "schön",
+          "sehr",
+          "war",
+          "Wetter",
+          "wird",
+          "wirklich"
+        ]
+      },
+      "nl": {
+        "primary": "Het weer is echt prachtig vandaag",
+        "accepted": [
+          "Het weer is heel erg mooi vandaag"
+        ],
+        "word_pool": [
+          "echt",
+          "erg",
+          "gisteren",
+          "heel",
+          "het",
+          "is",
+          "koud",
+          "mooi",
+          "prachtig",
+          "regen",
+          "slecht",
+          "vandaag",
+          "was",
+          "weer",
+          "zal"
+        ]
+      }
+    }
+  },
+  {
+    "id": 11,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 4,
+    "tags": [
+      "family",
+      "descriptions"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Mein junger Bruder ist sehr groß",
+        "accepted": [
+          "Mein kleiner Bruder ist sehr groß"
+        ],
+        "word_pool": [
+          "alt",
+          "Bruder",
+          "dein",
+          "groß",
+          "ist",
+          "junger",
+          "kleiner",
+          "kurz",
+          "mein",
+          "Schwester",
+          "sehr",
+          "sie",
+          "war"
+        ]
+      },
+      "nl": {
+        "primary": "Mijn jonge broer is erg lang",
+        "accepted": [
+          "Mijn broertje is erg lang"
+        ],
+        "word_pool": [
+          "broer",
+          "broertje",
+          "erg",
+          "is",
+          "jonge",
+          "jouw",
+          "kort",
+          "lang",
+          "mijn",
+          "oud",
+          "was",
+          "ze",
+          "zus"
+        ]
+      }
+    }
+  },
+  {
+    "id": 12,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 3,
+    "tags": [
+      "shopping",
+      "verbs"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Wir wollen ein neues Haus kaufen",
+        "accepted": [
+          "Wir möchten ein neues Haus kaufen"
+        ],
+        "word_pool": [
+          "alt",
+          "Auto",
+          "ein",
+          "Haus",
+          "kaufen",
+          "möchten",
+          "neues",
+          "sie",
+          "verkaufen",
+          "wir",
+          "Wohnung",
+          "wollen",
+          "wollten"
+        ]
+      },
+      "nl": {
+        "primary": "We willen een nieuw huis kopen",
+        "accepted": [
+          "Wij willen een nieuw huis kopen"
+        ],
+        "word_pool": [
+          "appartement",
+          "auto",
+          "een",
+          "huis",
+          "kopen",
+          "nieuw",
+          "oud",
+          "verkopen",
+          "we",
+          "wij",
+          "wilden",
+          "willen",
+          "ze"
+        ]
+      }
+    }
+  },
+  {
+    "id": 13,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 2,
+    "tags": [
+      "beverages",
+      "basics"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Ich trinke gerne schwarzen Kaffee",
+        "accepted": [
+          "Ich mag es schwarzen Kaffee zu trinken"
+        ],
+        "word_pool": [
+          "aß",
+          "er",
+          "es",
+          "gerne",
+          "hasse",
+          "ich",
+          "Kaffee",
+          "mag",
+          "schwarzen",
+          "Tee",
+          "trinke",
+          "trinken",
+          "Wasser",
+          "weiß",
+          "zu"
+        ]
+      },
+      "nl": {
+        "primary": "Ik drink graag zwarte koffie",
+        "accepted": [
+          "Ik hou ervan om zwarte koffie te drinken"
+        ],
+        "word_pool": [
+          "at",
+          "drink",
+          "drinken",
+          "ervan",
+          "graag",
+          "haat",
+          "hij",
+          "hou",
+          "ik",
+          "koffie",
+          "om",
+          "te",
+          "thee",
+          "water",
+          "wit",
+          "zwarte"
+        ]
+      }
+    }
+  },
+  {
+    "id": 14,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 4,
+    "tags": [
+      "travel",
+      "frequencies"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Sie reisen oft nach Spanien",
+        "accepted": [
+          "Oft reisen sie nach Spanien"
+        ],
+        "word_pool": [
+          "Auto",
+          "Deutschland",
+          "flogen",
+          "fuhren",
+          "nach",
+          "nie",
+          "oft",
+          "reisen",
+          "sie",
+          "Spanien",
+          "wir"
+        ]
+      },
+      "nl": {
+        "primary": "Ze reizen vaak naar Spanje",
+        "accepted": [
+          "Zij reizen dikwijls naar Spanje"
+        ],
+        "word_pool": [
+          "auto",
+          "dikwijls",
+          "Duitsland",
+          "naar",
+          "nooit",
+          "reden",
+          "reizen",
+          "Spanje",
+          "vaak",
+          "vlogen",
+          "we",
+          "ze",
+          "zij"
+        ]
+      }
+    }
+  },
+  {
+    "id": 15,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 1,
+    "tags": [
+      "food",
+      "adjectives"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Das Essen ist kalt und schlecht",
+        "accepted": [
+          "Die Mahlzeit ist kalt und schlecht"
+        ],
+        "word_pool": [
+          "das",
+          "die",
+          "er",
+          "Essen",
+          "gut",
+          "heiß",
+          "ist",
+          "kalt",
+          "Mahlzeit",
+          "schlecht",
+          "und",
+          "war",
+          "Wasser",
+          "wir"
+        ]
+      },
+      "nl": {
+        "primary": "Het eten is koud en slecht",
+        "accepted": [
+          "De maaltijd is koud en slecht"
+        ],
+        "word_pool": [
+          "de",
+          "en",
+          "eten",
+          "goed",
+          "het",
+          "hij",
+          "is",
+          "koud",
+          "maaltijd",
+          "slecht",
+          "warm",
+          "was",
+          "water",
+          "we"
+        ]
+      }
+    }
+  },
+  {
+    "id": 16,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 5,
+    "tags": [
+      "time",
+      "verbs",
+      "travel"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Der schnelle Zug fährt jetzt ab",
+        "accepted": [
+          "Der Schnellzug fährt jetzt ab"
+        ],
+        "word_pool": [
+          "ab",
+          "Auto",
+          "Bus",
+          "der",
+          "fährt",
+          "jetzt",
+          "kommt",
+          "langsam",
+          "schnelle",
+          "Schnellzug",
+          "später",
+          "wir",
+          "Zug"
+        ]
+      },
+      "nl": {
+        "primary": "De snelle trein vertrekt nu meteen",
+        "accepted": [
+          "De sneltrein vertrekt nu"
+        ],
+        "word_pool": [
+          "auto",
+          "bus",
+          "de",
+          "komt",
+          "langzaam",
+          "later",
+          "meteen",
+          "nu",
+          "snelle",
+          "sneltrein",
+          "trein",
+          "vertrekt",
+          "we"
+        ]
+      }
+    }
+  },
+  {
+    "id": 17,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 3,
+    "tags": [
+      "sports",
+      "verbs"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Wir spielen jeden Abend Fußball",
+        "accepted": [],
+        "word_pool": [
+          "Abend",
+          "Fußball",
+          "jeden",
+          "Morgen",
+          "nie",
+          "sehen",
+          "sie",
+          "spielen",
+          "spielten",
+          "Tennis",
+          "wir"
+        ]
+      },
+      "nl": {
+        "primary": "We voetballen elke avond",
+        "accepted": [
+          "Wij spelen elke avonds voetbal"
+        ],
+        "word_pool": [
+          "avond",
+          "avonds",
+          "elke",
+          "kijken",
+          "nooit",
+          "ochtend",
+          "speelden",
+          "spelen",
+          "tennis",
+          "voetbal",
+          "voetballen",
+          "we",
+          "wij",
+          "ze"
+        ]
+      }
+    }
+  },
+  {
+    "id": 18,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 4,
+    "tags": [
+      "communication",
+      "past_tense"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Sie schrieb gestern einen langen Brief",
+        "accepted": [],
+        "word_pool": [
+          "Brief",
+          "Buch",
+          "einen",
+          "er",
+          "gestern",
+          "kurz",
+          "langen",
+          "las",
+          "Morgen",
+          "schreibt",
+          "schrieb",
+          "sie"
+        ]
+      },
+      "nl": {
+        "primary": "Ze schreef gisteren een lange brief",
+        "accepted": [
+          "Zij schreef gisteren een lange brief"
+        ],
+        "word_pool": [
+          "boek",
+          "brief",
+          "een",
+          "gisteren",
+          "hij",
+          "kort",
+          "lange",
+          "lezen",
+          "morgen",
+          "schreef",
+          "schrijft",
+          "ze",
+          "zij"
+        ]
+      }
+    }
+  },
+  {
+    "id": 19,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 2,
+    "tags": [
+      "feelings",
+      "past_tense"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Er war gestern sehr müde",
+        "accepted": [],
+        "word_pool": [
+          "böse",
+          "er",
+          "gestern",
+          "ist",
+          "Morgen",
+          "müde",
+          "sehr",
+          "sie",
+          "wach",
+          "war",
+          "wir"
+        ]
+      },
+      "nl": {
+        "primary": "Hij was gisteren erg moe",
+        "accepted": [],
+        "word_pool": [
+          "boos",
+          "erg",
+          "gisteren",
+          "hij",
+          "is",
+          "moe",
+          "morgen",
+          "wakker",
+          "was",
+          "we",
+          "ze"
+        ]
+      }
+    }
+  },
+  {
+    "id": 20,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 5,
+    "tags": [
+      "comprehension",
+      "negation"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Ich verstehe dich überhaupt nicht",
+        "accepted": [
+          "Ich verstehe Sie überhaupt nicht"
+        ],
+        "word_pool": [
+          "alles",
+          "dich",
+          "er",
+          "höre",
+          "ich",
+          "ihn",
+          "nicht",
+          "sie",
+          "verstand",
+          "verstehe",
+          "weiß",
+          "überhaupt"
+        ]
+      },
+      "nl": {
+        "primary": "Ik begrijp je helemaal niet",
+        "accepted": [
+          "Ik snap u helemaal niet"
+        ],
+        "word_pool": [
+          "alles",
+          "begreep",
+          "begrijp",
+          "helemaal",
+          "hem",
+          "hij",
+          "horen",
+          "ik",
+          "je",
+          "niet",
+          "snap",
+          "u",
+          "weten"
+        ]
+      }
+    }
+  },
+  {
+    "id": 21,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 3,
+    "tags": [
+      "school",
+      "objects"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Der Lehrer hat einen blauen Stift",
+        "accepted": [
+          "Der Lehrer besitzt einen blauen Stift"
+        ],
+        "word_pool": [
+          "besitzt",
+          "blauen",
+          "Bleistift",
+          "der",
+          "einen",
+          "er",
+          "hat",
+          "hatte",
+          "Lehrer",
+          "rot",
+          "Schüler",
+          "Stift",
+          "wir"
+        ]
+      },
+      "nl": {
+        "primary": "De leraar heeft een blauwe pen",
+        "accepted": [
+          "De docent heeft een blauwe pen"
+        ],
+        "word_pool": [
+          "blauwe",
+          "de",
+          "docent",
+          "een",
+          "had",
+          "heeft",
+          "hij",
+          "leraar",
+          "pen",
+          "potlood",
+          "rood",
+          "student",
+          "we"
+        ]
+      }
+    }
+  },
+  {
+    "id": 22,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 4,
+    "tags": [
+      "activities",
+      "music"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Sie hören laute Musik",
+        "accepted": [
+          "Sie hören gerade laute Musik"
+        ],
+        "word_pool": [
+          "er",
+          "gerade",
+          "hören",
+          "hörten",
+          "laute",
+          "leise",
+          "Musik",
+          "Radio",
+          "sie",
+          "spielen",
+          "wir"
+        ]
+      },
+      "nl": {
+        "primary": "Ze luisteren naar harde muziek",
+        "accepted": [
+          "Zij luisteren naar luide muziek"
+        ],
+        "word_pool": [
+          "harde",
+          "hij",
+          "luide",
+          "luisterden",
+          "luisteren",
+          "muziek",
+          "naar",
+          "radio",
+          "spelen",
+          "we",
+          "zacht",
+          "ze",
+          "zij"
+        ]
+      }
+    }
+  },
+  {
+    "id": 23,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 2,
+    "tags": [
+      "clothes",
+      "colors"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Sie trägt ein gelbes Kleid",
+        "accepted": [
+          "Sie hat ein gelbes Kleid an"
+        ],
+        "word_pool": [
+          "an",
+          "ein",
+          "er",
+          "gelbes",
+          "grün",
+          "hat",
+          "hemd",
+          "Kleid",
+          "Schuhe",
+          "sie",
+          "trug",
+          "trägt"
+        ]
+      },
+      "nl": {
+        "primary": "Ze draagt een gele jurk",
+        "accepted": [
+          "Zij heeft een gele jurk aan"
+        ],
+        "word_pool": [
+          "aan",
+          "draagt",
+          "droeg",
+          "een",
+          "gele",
+          "groen",
+          "heeft",
+          "hij",
+          "jurk",
+          "overhemd",
+          "schoenen",
+          "ze",
+          "zij"
+        ]
+      }
+    }
+  },
+  {
+    "id": 24,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 5,
+    "tags": [
+      "travel",
+      "future_tense"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Ich werde nächste Woche nach London fliegen",
+        "accepted": [
+          "Nächste Woche fliege ich nach London"
+        ],
+        "word_pool": [
+          "fahren",
+          "fliege",
+          "fliegen",
+          "flog",
+          "ich",
+          "London",
+          "Monat",
+          "nach",
+          "nächste",
+          "parijs",
+          "sie",
+          "werde",
+          "wir",
+          "Woche"
+        ]
+      },
+      "nl": {
+        "primary": "Ik vlieg volgende week naar Londen",
+        "accepted": [
+          "Ik zal volgende week naar Londen vliegen"
+        ],
+        "word_pool": [
+          "ik",
+          "Londen",
+          "maand",
+          "naar",
+          "Parijs",
+          "rijden",
+          "vlieg",
+          "vliegen",
+          "vloog",
+          "volgende",
+          "we",
+          "week",
+          "zal",
+          "ze"
+        ]
+      }
+    }
+  },
+  {
+    "id": 25,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 1,
+    "tags": [
+      "nature",
+      "basics"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Der hohe Baum ist sehr alt",
+        "accepted": [],
+        "word_pool": [
+          "alt",
+          "Baum",
+          "Blume",
+          "der",
+          "er",
+          "hohe",
+          "ist",
+          "jung",
+          "kurz",
+          "sehr",
+          "war",
+          "wir"
+        ]
+      },
+      "nl": {
+        "primary": "De hoge boom is heel oud",
+        "accepted": [],
+        "word_pool": [
+          "bloem",
+          "boom",
+          "de",
+          "heel",
+          "hij",
+          "hoge",
+          "is",
+          "jong",
+          "kort",
+          "oud",
+          "was",
+          "we"
+        ]
+      }
+    }
+  },
+  {
+    "id": 26,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 2,
+    "tags": [
+      "city",
+      "places"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Die große Stadt ist immer belebt",
+        "accepted": [
+          "Die Großstadt ist immer belebt"
+        ],
+        "word_pool": [
+          "belebt",
+          "die",
+          "dorf",
+          "große",
+          "Großstadt",
+          "immer",
+          "ist",
+          "klein",
+          "nie",
+          "ruhig",
+          "Stadt",
+          "war",
+          "wir"
+        ]
+      },
+      "nl": {
+        "primary": "De grote stad is altijd druk",
+        "accepted": [],
+        "word_pool": [
+          "altijd",
+          "de",
+          "dorp",
+          "druk",
+          "grote",
+          "is",
+          "klein",
+          "nooit",
+          "rustig",
+          "stad",
+          "was",
+          "we"
+        ]
+      }
+    }
+  },
+  {
+    "id": 27,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 3,
+    "tags": [
+      "food",
+      "verbs"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Sie backt einen leckeren Kuchen",
+        "accepted": [
+          "Sie macht einen leckeren Kuchen"
+        ],
+        "word_pool": [
+          "backt",
+          "Brot",
+          "einen",
+          "er",
+          "ißt",
+          "Kuchen",
+          "leckeren",
+          "macht",
+          "schlecht",
+          "sie",
+          "war"
+        ]
+      },
+      "nl": {
+        "primary": "Ze maakt een heerlijke taart",
+        "accepted": [
+          "Ze bakt een heerlijke taart"
+        ],
+        "word_pool": [
+          "bakt",
+          "brood",
+          "een",
+          "eten",
+          "heerlijke",
+          "hij",
+          "maakt",
+          "slecht",
+          "taart",
+          "was",
+          "ze"
+        ]
+      }
+    }
+  },
+  {
+    "id": 28,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 1,
+    "tags": [
+      "basics",
+      "pronouns"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Ich sehe dich und ihn",
+        "accepted": [
+          "Ich sehe euch"
+        ],
+        "word_pool": [
+          "alle",
+          "dich",
+          "euch",
+          "ich",
+          "ihn",
+          "ihnen",
+          "nicht",
+          "sah",
+          "sehe",
+          "sie",
+          "und",
+          "wir"
+        ]
+      },
+      "nl": {
+        "primary": "Ik zie jou en hem",
+        "accepted": [],
+        "word_pool": [
+          "en",
+          "haar",
+          "hem",
+          "hen",
+          "ik",
+          "jou",
+          "we",
+          "zag",
+          "ze",
+          "zie"
+        ]
+      }
+    }
+  },
+  {
+    "id": 29,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 4,
+    "tags": [
+      "future",
+      "plans"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Wir werden morgen meine Eltern besuchen",
+        "accepted": [
+          "Wir besuchen morgen meine Eltern"
+        ],
+        "word_pool": [
+          "besuchen",
+          "besuchten",
+          "Eltern",
+          "Freunde",
+          "gestern",
+          "Haus",
+          "meine",
+          "Morgen",
+          "sie",
+          "werden",
+          "wir"
+        ]
+      },
+      "nl": {
+        "primary": "We gaan morgen bij mijn ouders op bezoek",
+        "accepted": [
+          "Wij zullen morgen mijn ouders bezoeken"
+        ],
+        "word_pool": [
+          "bezochten",
+          "bezoek",
+          "bezoeken",
+          "bij",
+          "gaan",
+          "gisteren",
+          "huis",
+          "mijn",
+          "morgen",
+          "op",
+          "ouders",
+          "vrienden",
+          "we",
+          "wij",
+          "ze",
+          "zullen"
+        ]
+      }
+    }
+  },
+  {
+    "id": 30,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 2,
+    "tags": [
+      "emotions",
+      "adjectives"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Warum bist du heute so traurig",
+        "accepted": [],
+        "word_pool": [
+          "bist",
+          "du",
+          "er",
+          "glücklich",
+          "heute",
+          "ist",
+          "Morgen",
+          "so",
+          "traurig",
+          "war",
+          "warum",
+          "wir"
+        ]
+      },
+      "nl": {
+        "primary": "Waarom ben je vandaag zo verdrietig",
+        "accepted": [
+          "Waarom bent u vandaag zo verdrietig"
+        ],
+        "word_pool": [
+          "ben",
+          "bent",
+          "blij",
+          "hij",
+          "is",
+          "je",
+          "morgen",
+          "u",
+          "vandaag",
+          "verdrietig",
+          "waarom",
+          "was",
+          "we",
+          "zo"
+        ]
+      }
+    }
+  },
+  {
+    "id": 31,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 3,
+    "tags": [
+      "health",
+      "verbs"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Er muss mehr schlafen",
+        "accepted": [
+          "Er braucht mehr Schlaf"
+        ],
+        "word_pool": [
+          "arbeiten",
+          "braucht",
+          "er",
+          "Essen",
+          "mehr",
+          "muss",
+          "musste",
+          "Schlaf",
+          "schlafen",
+          "sie",
+          "weniger",
+          "will"
+        ]
+      },
+      "nl": {
+        "primary": "Hij moet meer slapen",
+        "accepted": [
+          "Hij heeft meer slaap nodig"
+        ],
+        "word_pool": [
+          "eten",
+          "heeft",
+          "hij",
+          "meer",
+          "minder",
+          "moest",
+          "moet",
+          "nodig",
+          "slaap",
+          "slapen",
+          "werken",
+          "wil",
+          "ze"
+        ]
+      }
+    }
+  },
+  {
+    "id": 32,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 5,
+    "tags": [
+      "work",
+      "possessions"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Ich habe meine Schlüssel zu Hause vergessen",
+        "accepted": [],
+        "word_pool": [
+          "Brieftasche",
+          "Büro",
+          "erinnert",
+          "fand",
+          "habe",
+          "Hause",
+          "ich",
+          "mein",
+          "meine",
+          "Schlüssel",
+          "sie",
+          "vergessen",
+          "zu"
+        ]
+      },
+      "nl": {
+        "primary": "Ik ben mijn sleutels thuis vergeten",
+        "accepted": [],
+        "word_pool": [
+          "ben",
+          "ik",
+          "kantoor",
+          "mijn",
+          "onthouden",
+          "portemonnee",
+          "sleutels",
+          "thuis",
+          "vergeten",
+          "vond",
+          "ze"
+        ]
+      }
+    }
+  },
+  {
+    "id": 33,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 2,
+    "tags": [
+      "weather",
+      "verbs"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Draußen regnet es gerade",
+        "accepted": [
+          "Es regnet draußen"
+        ],
+        "word_pool": [
+          "draußen",
+          "drinnen",
+          "es",
+          "gerade",
+          "gestern",
+          "ist",
+          "regnet",
+          "schneit",
+          "Sonne",
+          "war"
+        ]
+      },
+      "nl": {
+        "primary": "Het regent nu buiten",
+        "accepted": [],
+        "word_pool": [
+          "binnen",
+          "buiten",
+          "gisteren",
+          "het",
+          "is",
+          "nu",
+          "regent",
+          "sneeuwt",
+          "was",
+          "zon"
+        ]
+      }
+    }
+  },
+  {
+    "id": 34,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 4,
+    "tags": [
+      "travel",
+      "questions"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Wie viel kostet die Fahrkarte",
+        "accepted": [
+          "Was kostet die Fahrkarte"
+        ],
+        "word_pool": [
+          "billiger",
+          "die",
+          "Fahrkarte",
+          "ist",
+          "kaufen",
+          "kostet",
+          "Preis",
+          "teuer",
+          "viel",
+          "viele",
+          "was",
+          "wie"
+        ]
+      },
+      "nl": {
+        "primary": "Hoeveel kost het kaartje",
+        "accepted": [
+          "Wat kost het ticket"
+        ],
+        "word_pool": [
+          "duur",
+          "goedkoper",
+          "het",
+          "hoeveel",
+          "is",
+          "kaartje",
+          "kopen",
+          "kost",
+          "prijs",
+          "ticket",
+          "veel",
+          "wat"
+        ]
+      }
+    }
+  },
+  {
+    "id": 35,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 1,
+    "tags": [
+      "colors",
+      "objects"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Das rote Auto ist schnell",
+        "accepted": [],
+        "word_pool": [
+          "Auto",
+          "blau",
+          "Bus",
+          "das",
+          "ist",
+          "langsam",
+          "nicht",
+          "rote",
+          "schnell",
+          "war"
+        ]
+      },
+      "nl": {
+        "primary": "De rode auto is snel",
+        "accepted": [],
+        "word_pool": [
+          "auto",
+          "blauw",
+          "bus",
+          "de",
+          "is",
+          "langzaam",
+          "niet",
+          "rode",
+          "snel",
+          "was"
+        ]
+      }
+    }
+  },
+  {
+    "id": 36,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 3,
+    "tags": [
+      "family",
+      "age"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Wie alt ist deine Schwester",
+        "accepted": [
+          "Wie alt ist Ihre Schwester"
+        ],
+        "word_pool": [
+          "alt",
+          "Bruder",
+          "deine",
+          "ihre",
+          "ist",
+          "mein",
+          "Schwester",
+          "viele",
+          "war",
+          "wie",
+          "wo"
+        ]
+      },
+      "nl": {
+        "primary": "Hoe oud is je zus",
+        "accepted": [
+          "Hoe oud is uw zuster"
+        ],
+        "word_pool": [
+          "broer",
+          "hoe",
+          "is",
+          "je",
+          "mijn",
+          "oud",
+          "uw",
+          "veel",
+          "waar",
+          "was",
+          "zus",
+          "zuster"
+        ]
+      }
+    }
+  },
+  {
+    "id": 37,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 2,
+    "tags": [
+      "food",
+      "likes"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Ich mag kein scharfes Essen",
+        "accepted": [
+          "Ich esse nicht gerne scharf"
+        ],
+        "word_pool": [
+          "esse",
+          "Essen",
+          "gerne",
+          "heiß",
+          "ich",
+          "kein",
+          "lecker",
+          "mag",
+          "nicht",
+          "scharf",
+          "scharfes",
+          "sehr",
+          "sie",
+          "süß"
+        ]
+      },
+      "nl": {
+        "primary": "Ik hou niet van pittig eten",
+        "accepted": [],
+        "word_pool": [
+          "eten",
+          "heel",
+          "heerlijk",
+          "hou",
+          "ik",
+          "niet",
+          "pittig",
+          "van",
+          "warm",
+          "ze",
+          "zoet"
+        ]
+      }
+    }
+  },
+  {
+    "id": 38,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 4,
+    "tags": [
+      "locations",
+      "verbs"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Wo wohnst du jetzt",
+        "accepted": [
+          "Wo wohnen Sie jetzt"
+        ],
+        "word_pool": [
+          "arbeiten",
+          "bleiben",
+          "du",
+          "hier",
+          "jetzt",
+          "sie",
+          "wann",
+          "wo",
+          "wohnen",
+          "wohnst",
+          "wohnte"
+        ]
+      },
+      "nl": {
+        "primary": "Waar woon je nu",
+        "accepted": [
+          "Waar woont u nu"
+        ],
+        "word_pool": [
+          "hier",
+          "je",
+          "nu",
+          "u",
+          "verblijven",
+          "waar",
+          "wanneer",
+          "werken",
+          "woon",
+          "woonde",
+          "woont",
+          "ze"
+        ]
+      }
+    }
+  },
+  {
+    "id": 39,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 1,
+    "tags": [
+      "basics",
+      "numbers"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Ich habe zwei kleine Katzen",
+        "accepted": [],
+        "word_pool": [
+          "drei",
+          "eine",
+          "groß",
+          "habe",
+          "hatte",
+          "Hunde",
+          "ich",
+          "Katzen",
+          "kleine",
+          "wir",
+          "zwei"
+        ]
+      },
+      "nl": {
+        "primary": "Ik heb twee kleine katten",
+        "accepted": [],
+        "word_pool": [
+          "drie",
+          "groot",
+          "had",
+          "heb",
+          "honden",
+          "ik",
+          "katten",
+          "kleine",
+          "n",
+          "twee",
+          "we"
+        ]
+      }
+    }
+  },
+  {
+    "id": 40,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 5,
+    "tags": [
+      "past",
+      "travel"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Sie ist letzten Sommer nach Norwegen gereist",
+        "accepted": [
+          "Sie reiste letzten Sommer nach Norwegen"
+        ],
+        "word_pool": [
+          "besuchen",
+          "er",
+          "gereist",
+          "ging",
+          "ist",
+          "letzten",
+          "nach",
+          "Norwegen",
+          "Reise",
+          "reiste",
+          "sie",
+          "Sommer",
+          "winter",
+          "wird"
+        ]
+      },
+      "nl": {
+        "primary": "Ze is vorige zomer naar Noorwegen gereisd",
+        "accepted": [
+          "Zij reisde vorige zomer naar Noorwegen"
+        ],
+        "word_pool": [
+          "bezoeken",
+          "gereisd",
+          "ging",
+          "hij",
+          "is",
+          "naar",
+          "Noorwegen",
+          "reis",
+          "reisde",
+          "vorige",
+          "winter",
+          "zal",
+          "ze",
+          "zij",
+          "zomer"
+        ]
+      }
+    }
+  },
+  {
+    "id": 41,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 2,
+    "tags": [
+      "daily_life",
+      "verbs"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Er wacht jeden Tag früh auf",
+        "accepted": [
+          "Er steht jeden Tag früh op"
+        ],
+        "word_pool": [
+          "auf",
+          "er",
+          "früh",
+          "immer",
+          "jeden",
+          "Morgen",
+          "op",
+          "schläft",
+          "sie",
+          "spät",
+          "steht",
+          "Tag",
+          "wacht",
+          "wachte"
+        ]
+      },
+      "nl": {
+        "primary": "Hij wordt elke dag vroeg wakker",
+        "accepted": [
+          "Hij staat elke dag vroeg op"
+        ],
+        "word_pool": [
+          "altijd",
+          "dag",
+          "elke",
+          "hij",
+          "laat",
+          "ochtend",
+          "op",
+          "slaapt",
+          "staat",
+          "vroeg",
+          "wakker",
+          "werd wakker",
+          "wordt",
+          "ze"
+        ]
+      }
+    }
+  },
+  {
+    "id": 42,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 3,
+    "tags": [
+      "social",
+      "offers"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Willst du etwas Wasser",
+        "accepted": [
+          "Möchten Sie etwas Wasser"
+        ],
+        "word_pool": [
+          "brauchen",
+          "du",
+          "etwas",
+          "Kaffee",
+          "möchten",
+          "sie",
+          "trinken",
+          "war",
+          "Wasser",
+          "willst"
+        ]
+      },
+      "nl": {
+        "primary": "Wil je wat water",
+        "accepted": [
+          "Wilt u wat water"
+        ],
+        "word_pool": [
+          "drinken",
+          "iets",
+          "je",
+          "koffie",
+          "nodig",
+          "u",
+          "was",
+          "wat",
+          "water",
+          "wil",
+          "wilt",
+          "ze"
+        ]
+      }
+    }
+  },
+  {
+    "id": 43,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 1,
+    "tags": [
+      "basics",
+      "introductions"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Wie heißt du",
+        "accepted": [
+          "Wie heißen Sie",
+          "Was ist dein Name"
+        ],
+        "word_pool": [
+          "dein",
+          "du",
+          "heißen",
+          "heißt",
+          "ist",
+          "mein",
+          "Name",
+          "sie",
+          "war",
+          "was",
+          "wer",
+          "wie",
+          "wo"
+        ]
+      },
+      "nl": {
+        "primary": "Hoe heet je",
+        "accepted": [
+          "Hoe heet u",
+          "Wat is je naam"
+        ],
+        "word_pool": [
+          "heet",
+          "hoe",
+          "is",
+          "je",
+          "mijn",
+          "naam",
+          "u",
+          "waar",
+          "was",
+          "wat",
+          "wie"
+        ]
+      }
+    }
+  },
+  {
+    "id": 44,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 4,
+    "tags": [
+      "transport",
+      "verbs"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Wir warten auf den Bus",
+        "accepted": [
+          "Wir warten an der Bushaltestelle"
+        ],
+        "word_pool": [
+          "an",
+          "auf",
+          "Bus",
+          "Bushaltestelle",
+          "den",
+          "der",
+          "für",
+          "sehen",
+          "sie",
+          "warten",
+          "warteten",
+          "werden",
+          "wir",
+          "Zug"
+        ]
+      },
+      "nl": {
+        "primary": "We wachten op de bus",
+        "accepted": [
+          "Wij zijn aan het wachten op de bus"
+        ],
+        "word_pool": [
+          "aan",
+          "bus",
+          "de",
+          "het",
+          "kijken",
+          "op",
+          "trein",
+          "voor",
+          "wachten",
+          "wachtten",
+          "we",
+          "wij",
+          "ze",
+          "zijn",
+          "zullen"
+        ]
+      }
+    }
+  },
+  {
+    "id": 45,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 2,
+    "tags": [
+      "home",
+      "adjectives"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Unser neuer Garten ist sehr schön",
+        "accepted": [
+          "Unser neuer Garten ist wunderbar"
+        ],
+        "word_pool": [
+          "alt",
+          "Garten",
+          "Haus",
+          "ist",
+          "klein",
+          "neuer",
+          "nicht",
+          "schön",
+          "sehr",
+          "sie",
+          "unser",
+          "war",
+          "wunderbar"
+        ]
+      },
+      "nl": {
+        "primary": "Onze nieuwe tuin is heel erg mooi",
+        "accepted": [
+          "Onze nieuwe tuin is prachtig"
+        ],
+        "word_pool": [
+          "erg",
+          "heel",
+          "huis",
+          "is",
+          "klein",
+          "mooi",
+          "niet",
+          "nieuwe",
+          "onze",
+          "oud",
+          "prachtig",
+          "tuin",
+          "was",
+          "ze"
+        ]
+      }
+    }
+  },
+  {
+    "id": 46,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 5,
+    "tags": [
+      "complex",
+      "opinions"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Ich finde es wichtig Sprachen zu lernen",
+        "accepted": [
+          "Ich glaube es ist wichtig Sprachen zu lernen"
+        ],
+        "word_pool": [
+          "dachte",
+          "dass",
+          "es",
+          "finde",
+          "glaube",
+          "ich",
+          "ist",
+          "lernen",
+          "nutzlos",
+          "sie",
+          "Sprachen",
+          "sprechen",
+          "war",
+          "wichtig",
+          "zu"
+        ]
+      },
+      "nl": {
+        "primary": "Ik vind het belangrijk om talen te leren",
+        "accepted": [
+          "Ik geloof dat het belangrijk is om talen te leren"
+        ],
+        "word_pool": [
+          "belangrijk",
+          "dacht",
+          "dat",
+          "geloof",
+          "het",
+          "ik",
+          "is",
+          "leren",
+          "nutteloos",
+          "om",
+          "spreken",
+          "talen",
+          "te",
+          "vind",
+          "was",
+          "ze"
+        ]
+      }
+    }
+  },
+  {
+    "id": 47,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 3,
+    "tags": [
+      "time",
+      "routines"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Ich trinke normalerweise morgens Tee",
+        "accepted": [
+          "Normalerweise trinke ich morgens Tee"
+        ],
+        "word_pool": [
+          "Abend",
+          "ich",
+          "immer",
+          "Kaffee",
+          "morgens",
+          "nie",
+          "normalerweise",
+          "sie",
+          "Tee",
+          "trank",
+          "trinke"
+        ]
+      },
+      "nl": {
+        "primary": "Ik drink meestal thee in de ochtend",
+        "accepted": [
+          "Gewoonlijk drink ik thee 's ochtends"
+        ],
+        "word_pool": [
+          "altijd",
+          "avond",
+          "de",
+          "drink",
+          "dronk",
+          "gewoonlijk",
+          "ik",
+          "in",
+          "koffie",
+          "meestal",
+          "nooit",
+          "ochtend",
+          "ochtends",
+          "s",
+          "thee",
+          "ze"
+        ]
+      }
+    }
+  },
+  {
+    "id": 48,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 2,
+    "tags": [
+      "nature",
+      "verbs"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Die Sonne scheint heute",
+        "accepted": [],
+        "word_pool": [
+          "die",
+          "gestern",
+          "heute",
+          "Mond",
+          "nicht",
+          "Regen",
+          "scheint",
+          "schien",
+          "Sonne",
+          "war"
+        ]
+      },
+      "nl": {
+        "primary": "De zon schijnt vandaag",
+        "accepted": [],
+        "word_pool": [
+          "de",
+          "gisteren",
+          "maan",
+          "niet",
+          "regen",
+          "scheen",
+          "schijnt",
+          "vandaag",
+          "was",
+          "zon"
+        ]
+      }
+    }
+  },
+  {
+    "id": 49,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 4,
+    "tags": [
+      "objects",
+      "locations"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Mein Computer liegt auf dem Tisch",
+        "accepted": [
+          "Mein Rechner steht auf dem Tisch"
+        ],
+        "word_pool": [
+          "auf",
+          "Computer",
+          "dem",
+          "ist",
+          "liegt",
+          "mein",
+          "Rechner",
+          "sein",
+          "steht",
+          "Stuhl",
+          "Telefon",
+          "Tisch",
+          "unter",
+          "war"
+        ]
+      },
+      "nl": {
+        "primary": "Mijn computer staat op de tafel",
+        "accepted": [
+          "Mijn laptop ligt op de tafel"
+        ],
+        "word_pool": [
+          "computer",
+          "de",
+          "is",
+          "laptop",
+          "ligt",
+          "mijn",
+          "onder",
+          "op",
+          "staat",
+          "stoel",
+          "tafel",
+          "telefoon",
+          "was",
+          "zijn"
+        ]
+      }
+    }
+  },
+  {
+    "id": 50,
+    "question_type": "sentence_builder_multiple_choice",
+    "difficulty": 1,
+    "tags": [
+      "basics",
+      "feelings"
+    ],
+    "translations": {
+      "de": {
+        "primary": "Hast du Hunger",
+        "accepted": [
+          "Haben Sie Hunger"
+        ],
+        "word_pool": [
+          "du",
+          "durst",
+          "haben",
+          "hast",
+          "Hunger",
+          "ist",
+          "sie",
+          "war",
+          "wie",
+          "wo"
+        ]
+      },
+      "nl": {
+        "primary": "Heb je honger",
+        "accepted": [
+          "Heeft u honger"
+        ],
+        "word_pool": [
+          "dorst",
+          "heb",
+          "heeft",
+          "hoe",
+          "honger",
+          "is",
+          "je",
+          "u",
+          "waar",
+          "was",
+          "ze"
+        ]
+      }
+    }
+  }
+]
