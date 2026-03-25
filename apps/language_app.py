@@ -57,7 +57,9 @@ def _(
     progress_section = mo.hstack([ui_difficulty, progress], widths="equal")
 
     # Core Exercise
-    answer_text = f"**Answer:** {current_sentence['target']}" if current_sentence else ""
+    answer_text = (
+        f"**Answer:** {current_sentence['target']}" if current_sentence else ""
+    )
     if current_sentence and current_sentence.get("accepted"):
         answer_text += f"<br/>*Or:* {' / '.join(current_sentence['accepted'])}"
 
@@ -155,7 +157,9 @@ def _(current_sentence, df, row_number):
     )
     progress = render_progress(row_number, len(df))
     question = (
-        render_question_text(current_sentence["source"]) if current_sentence else mo.md("")
+        render_question_text(current_sentence["source"])
+        if current_sentence
+        else mo.md("")
     )
     return progress, question, ui_difficulty
 

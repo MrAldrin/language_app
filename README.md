@@ -1,7 +1,7 @@
 # A mini MVP of a language learning app
 It runs using marimo.
 
-Difficulty is mapped to the following:
+**Difficulty mapping:**
 - 1-3: easy
 - 4-7: medium
 - 8-10: hard
@@ -15,10 +15,12 @@ Difficulty is mapped to the following:
     - then compares to see if there is a match
 
 ## roadmap
-[ ] publish to github pages
-[ ] improve existing questions
-[ ] add thematic tasks. the user should choose die/der/das, verb conjugation, etc.
+- [x] publish to github pages
+- [x] improve existing questions
+- [ ] add thematic tasks. the user should choose die/der/das, verb conjugation, etc.
 
+----------------------------
+# Markdown from original repo template below:
 ----------------------------
 
 # marimo WebAssembly + GitHub Pages Template
