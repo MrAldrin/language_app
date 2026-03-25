@@ -19,6 +19,7 @@ with app.setup:
     import json
     import polars as pl
     import string
+    import sys
 
 
 @app.cell(hide_code=True)
@@ -30,120 +31,52 @@ def _():
 
 
 @app.cell
-def _(ui):
-    ui
+def _(render_main_ui):
+    render_main_ui()
     return
 
 
 @app.cell
 def _(
-    button_check_answer,
-    button_next,
-    button_prev,
-    button_reveal,
     current_sentence,
-    feedback,
-    placeholder,
-    progress,
-    question,
-    score,
-    ui_answer,
-    ui_difficulty,
-    ui_options,
-    ui_word_alternatives,
+    render_footer,
+    render_interaction_section,
+    render_options_section,
+    render_top_section,
 ):
-    app_header = mo.md("# Schipper mag ik overvaren?").center()
-
-    progress_section = mo.hstack([ui_difficulty, progress], widths="equal")
-
-    # Core Exercise
-    answer_text = (
-        f"**Answer:** {current_sentence['target']}" if current_sentence else ""
-    )
-    if current_sentence and current_sentence.get("accepted"):
-        answer_text += f"<br/>*Or:* {' / '.join(current_sentence['accepted'])}"
-
-    reveal_text = (
-        mo.md(answer_text).center()
-        if button_reveal.value and current_sentence
-        else mo.md("&nbsp;")
-    )
-
-    interaction_section = mo.vstack(
-        [
-            question,
-            ui_answer,
-            mo.md("---"),
-            ui_word_alternatives,
-            mo.hstack([button_check_answer, button_reveal], justify="center"),
-            reveal_text,
-        ],
-        gap=0.0,
-    )
-
-    # Feedback and Navigation
-    footer_section = mo.vstack(
-        [
-            mo.hstack([feedback, score], widths="equal"),
-            mo.md("---"),
-            mo.hstack([button_prev, button_next]),
-        ]
-    )
-
-    if current_sentence:
-        ui = mo.vstack(
-            [
-                app_header,
-                ui_options,
-                mo.md("---"),
-                progress_section,
-                interaction_section,
-                footer_section,
-            ],
-            gap=0.0,
+    def render_main_ui() -> mo.Html:
+        """Assembles the final application layout."""
+        app_header = (
+            mo.md("# Schipper mag ik overvaren?")
+            .center()
+            .style(
+                {
+                    "padding-top": "1rem",
+                    "padding-bottom": "2rem",
+                }
+            )
         )
-    else:
-        ui = mo.vstack([app_header, ui_options, mo.md("---"), placeholder], gap=3)
-    return (ui,)
 
+        if not current_sentence:
+            not_correct_use_ui = mo.vstack(
+                [app_header, render_options_section(), render_placeholder_element()],
+                gap=0.0,
+            )
+            return not_correct_use_ui
+        else:
+            ui = mo.vstack(
+                [
+                    app_header,
+                    render_options_section(),
+                    render_top_section(),
+                    render_interaction_section(),
+                    render_footer(),
+                ],
+                gap=0.0,
+            )
+            return ui
 
-@app.cell
-def _():
-    placeholder = mo.vstack(
-        [
-            mo.callout(
-                mo.md(
-                    "### 💡 Selection Required: "
-                    "You must have selected something in all the above menus"
-                ).center(),
-                kind="info",
-            ),
-        ]
-    )
-    return (placeholder,)
-
-
-@app.cell
-def _(
-    dropdown_difficulty,
-    dropdown_language_pairs,
-    dropdown_translation_direction,
-):
-    instruction_text = mo.md(
-        "Choose the language, difficulty level and translation direction to begin!"
-    ).center()
-
-    options_row = mo.hstack(
-        [
-            dropdown_language_pairs,
-            dropdown_translation_direction,
-            dropdown_difficulty,
-        ],
-        justify="space-between",
-    )
-
-    ui_options = mo.vstack([instruction_text, options_row])
-    return (ui_options,)
+    return (render_main_ui,)
 
 
 @app.cell
@@ -157,9 +90,7 @@ def _(current_sentence, df, row_number):
     )
     progress = render_progress(row_number, len(df))
     question = (
-        render_question_text(current_sentence["source"])
-        if current_sentence
-        else mo.md("")
+        render_question_text(current_sentence["source"]) if current_sentence else mo.md("")
     )
     return progress, question, ui_difficulty
 
@@ -219,9 +150,6 @@ def _():
 
 @app.cell
 def _(dropdown_language_pairs):
-    import sys
-    import urllib.request
-
     pair = dropdown_language_pairs.value
 
     if "pyodide" in sys.modules:
@@ -254,12 +182,6 @@ def _():
 def _():
     get_score, set_score = mo.state({"tries": 0, "correct": 0})
     return get_score, set_score
-
-
-@app.function
-def select_difficulty(df: pl.DataFrame, difficulty_list: list[str]):
-    df = df.filter(pl.col("difficulty_str").is_in(difficulty_list))
-    return df
 
 
 @app.cell
@@ -487,6 +409,12 @@ def load_curriculum(data: list[dict]) -> pl.DataFrame:
 
 
 @app.function
+def select_difficulty(df: pl.DataFrame, difficulty_list: list[str]):
+    df = df.filter(pl.col("difficulty_str").is_in(difficulty_list))
+    return df
+
+
+@app.function
 def get_sentence(df: pl.DataFrame, row_number: int, l1: str, l2: str) -> dict | None:
     if df.height == 0:
         return None
@@ -557,6 +485,29 @@ def callout_custom(
     return mo.callout(mo.md(text).center(), kind=kind)
 
 
+@app.cell(hide_code=True)
+def _():
+    mo.md(r"""
+    ## Render ui functions
+    """)
+    return
+
+
+@app.function
+def render_placeholder_element():
+    return mo.vstack(
+        [
+            mo.callout(
+                mo.md(
+                    "### 💡 Selection Required: "
+                    "You must have selected something in all the above menus"
+                ).center(),
+                kind="info",
+            ),
+        ]
+    )
+
+
 @app.function
 def render_difficulty_indicator(difficulty_int: int, difficulty_str: str) -> mo.Html:
     """Renders a color-coded difficulty indicator."""
@@ -571,7 +522,7 @@ def render_difficulty_indicator(difficulty_int: int, difficulty_str: str) -> mo.
         case _:
             kind = "neutral"
     return callout_custom(
-        f"Question difficulty: {difficulty_int}/10 ({difficulty_str})", kind=kind
+        f"Difficulty: {difficulty_int}/10 ({difficulty_str})", kind=kind
     )
 
 
@@ -651,6 +602,40 @@ def render_score(correct: int, tries: int) -> mo.Html:
 @app.cell(hide_code=True)
 def _():
     mo.md(r"""
+    ## Render ui - non reusable
+    """)
+    return
+
+
+@app.cell
+def _(
+    dropdown_difficulty,
+    dropdown_language_pairs,
+    dropdown_translation_direction,
+):
+    def render_options_section() -> mo.Html:
+        """Renders the initial configuration UI."""
+        instruction_text = mo.md(
+            "Choose the language, difficulty level and translation direction to begin!"
+        ).center()
+
+        options_row = mo.hstack(
+            [
+                dropdown_language_pairs,
+                dropdown_translation_direction,
+                dropdown_difficulty,
+            ],
+            justify="space-between",
+        )
+
+        return mo.vstack([instruction_text, options_row, mo.md("---")], gap=1)
+
+    return (render_options_section,)
+
+
+@app.cell(hide_code=True)
+def _():
+    mo.md(r"""
     ## State updaters
     """)
     return
@@ -671,6 +656,67 @@ def _(get_answer_pool, set_answer_pool):
                 set_answer_pool(new)
 
     return (move_word,)
+
+
+@app.cell
+def _(
+    button_check_answer,
+    button_reveal,
+    current_sentence,
+    question,
+    ui_answer,
+    ui_word_alternatives,
+):
+    def render_interaction_section():
+        # Core Exercise
+        answer_text = (
+            f"**Answer:** {current_sentence['target']}" if current_sentence else ""
+        )
+        if current_sentence and current_sentence.get("accepted"):
+            answer_text += f"<br/>*Or:* {' / '.join(current_sentence['accepted'])}"
+
+        reveal_text = (
+            mo.md(answer_text).center()
+            if button_reveal.value and current_sentence
+            else mo.md("&nbsp;")
+        )
+
+        interaction_section = mo.vstack(
+            [
+                question,
+                ui_answer,
+                mo.md("---"),
+                ui_word_alternatives,
+                mo.hstack([button_check_answer, button_reveal], justify="center"),
+                reveal_text,
+            ],
+            gap=0.0,
+        )
+        return interaction_section
+
+    return (render_interaction_section,)
+
+
+@app.cell
+def _(progress, ui_difficulty):
+    def render_top_section():
+        return mo.hstack([ui_difficulty, progress], widths="equal")
+
+    return (render_top_section,)
+
+
+@app.cell
+def _(button_next, button_prev, feedback, score):
+    def render_footer():
+        return mo.vstack(
+            [
+                mo.hstack([feedback, score], widths="equal"),
+                mo.md("---"),
+                mo.hstack([button_prev, button_next]),
+            ]
+        )
+
+    return (render_footer,)
 
 
 if __name__ == "__main__":
