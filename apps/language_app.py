@@ -621,17 +621,15 @@ def _():
 
 @app.cell
 def _(get_answer_pool, set_answer_pool):
-    def move_word(idx: int, to_answer: bool):
+    def move_word(index: int, to_answer: bool):
+        # needs to call get_answer_pool for reactivity reasons
+        get_answer_pool()
+        # adds or removes the element from the answer pool
         if to_answer:
-            current = get_answer_pool()
-            if idx not in current:
-                set_answer_pool(lambda a: a + [idx])
+            set_answer_pool(lambda a: a + [index] if index not in a else a)
         else:
-            current = get_answer_pool()
-            if idx in current:
-                new = list(current)
-                new.remove(idx)
-                set_answer_pool(new)
+            set_answer_pool(lambda a: [i for i in a if i != index])
+
 
     return (move_word,)
 
