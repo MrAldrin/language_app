@@ -80,27 +80,23 @@ def _(
 
 
 @app.cell
-def _(current_sentence, get_answer_pool, move_word, pool_words):
-    if not current_sentence:
-        ui_answer = mo.md("")
-        ui_word_alternatives = mo.md("")
-    else:
-        answer_indices = get_answer_pool()
-        ui_answer = render_word_chips(
-            pool_words, indices=answer_indices, on_click=move_word, is_pool=False
+def _(get_answer_pool, move_word, pool_words):
+    answer_indices = get_answer_pool()
+    ui_answer = render_word_chips(
+        pool_words, indices=answer_indices, on_click=move_word, is_pool=False
+    )
+    if not answer_indices and pool_words:
+        ui_answer = mo.vstack(
+            [ui_answer, mo.md("*Click words from the pool below*").center()]
         )
-        if not answer_indices:
-            ui_answer = mo.vstack(
-                [ui_answer, mo.md("*Click words from the pool below*").center()]
-            )
 
-        pool_chips_ui = render_word_chips(
-            pool_words,
-            on_click=move_word,
-            is_pool=True,
-            disabled_indices=answer_indices,
-        )
-        ui_word_alternatives = mo.vstack([mo.callout(pool_chips_ui, kind="neutral")])
+    pool_chips_ui = render_word_chips(
+        pool_words,
+        on_click=move_word,
+        is_pool=True,
+        disabled_indices=answer_indices,
+    )
+    ui_word_alternatives = mo.vstack([mo.callout(pool_chips_ui, kind="neutral")])
     return ui_answer, ui_word_alternatives
 
 
