@@ -318,16 +318,6 @@ def _():
 
 @app.cell
 def _():
-    default_callouts = mo.vstack(
-        [
-            mo.md("test").callout(kind="info"),
-            mo.md("test with longer content to trigger wrapping on narrow screens").callout(
-                kind="warn"
-            ),
-        ]
-    )
-
-
     def custom_box(text: str, border_color: str) -> mo.Html:
         return mo.md(text).style(
             {
@@ -372,27 +362,28 @@ def _():
         kind="success"
     )
 
-    success_custom = (
-        mo.md("orrect! Continue to the next question.")
-        .center()
-        .style(
-            {
-                "border": "1px solid #22c55e",
-                "border-radius": "0.5rem",
-                "background": "#dcfce7",
-                "color": "#14532d",
-            }
-        )
-    )
+    neutral_callout = mo.md("Press the button to check your answer").callout(kind="info")
+    neutral_custom = neutral_chip("Press the button to check your answer")
+
+    warn_callout = mo.md("False, continue or try again right away!").callout(kind="warn")
+    warn_custom = warn_chip("False, continue or try again right away!")
+
+    success_custom = success_chip("Correct! Continue to the next question.")
+    success_callout_long = mo.md(
+        "Correct! Great job. Continue to the next question and keep the same pace."
+    ).callout(kind="success")
+
 
     mo.vstack(
         [
-            mo.md("Default `mo.callout`"),
-            default_callouts,
             mo.md("Compact custom boxes"),
             custom_boxes,
             mo.md("`mo.stat` comparison"),
             stat_boxes,
+            mo.md("Neutral feedback comparison"),
+            mo.hstack([neutral_callout, neutral_custom], widths="equal"),
+            mo.md("False answer feedback comparison"),
+            mo.hstack([warn_callout, warn_custom], widths="equal"),
             mo.md("Success feedback comparison"),
             mo.hstack([success_callout, success_custom], widths="equal"),
         ],
@@ -628,11 +619,58 @@ def sort_words(words: list[str]) -> list[str]:
 
 
 @app.function
-def callout_custom(
-    text: str, kind: Literal["neutral", "warn", "success", "info", "danger"] = "neutral"
+def feedback_chip(
+    text: str, *, border: str, background: str, foreground: str
 ) -> mo.Html:
-    """A centralized callout that centers its markdown text."""
-    return mo.callout(mo.md(text).center(), kind=kind)
+    """Creates a compact pill-like feedback chip."""
+    return mo.md(text).center().style(
+        {
+            "display": "inline-flex",
+            "justify-content": "center",
+            "align-items": "center",
+            "margin": "0",
+            "padding": "0.2rem 0.6rem",
+            "border": f"1px solid {border}",
+            "border-radius": "9999px",
+            "background": background,
+            "color": foreground,
+            "font-weight": "500",
+            "line-height": "1.15",
+            "box-sizing": "border-box",
+            "width": "min(100%, 32rem)",
+            "text-align": "center",
+        }
+    )
+
+
+@app.function
+def success_chip(text: str) -> mo.Html:
+    return feedback_chip(
+        text,
+        border="#22c55e",
+        background="#dcfce7",
+        foreground="#14532d",
+    )
+
+
+@app.function
+def warn_chip(text: str) -> mo.Html:
+    return feedback_chip(
+        text,
+        border="#f59e0b",
+        background="#fef3c7",
+        foreground="#78350f",
+    )
+
+
+@app.function
+def neutral_chip(text: str) -> mo.Html:
+    return feedback_chip(
+        text,
+        border="#9ca3af",
+        background="#f3f4f6",
+        foreground="#1f2937",
+    )
 
 
 @app.cell(hide_code=True)
@@ -769,11 +807,11 @@ def render_word_pool(
 def render_feedback(check_value: bool | None) -> mo.Html:
     """Renders feedback based on the check result."""
     if check_value is None:
-        return callout_custom("Press the button to check your answer")
+        return neutral_chip("Press the button to check your answer")
     elif check_value:
-        return callout_custom("Correct! Continue to the next question.", kind="success")
+        return success_chip("Correct! Continue to the next question.")
     else:
-        return callout_custom("False, continue or try again right away!", kind="warn")
+        return warn_chip("False, continue or try again right away!")
 
 
 @app.cell(hide_code=True)
@@ -901,7 +939,7 @@ def _(button_check_answer, button_next, button_prev):
                     [
                         render_feedback(button_check_answer.value),
                     ],
-                    widths="equal",
+                    justify="center"
                 ),
                 mo.md("---"),
                 mo.hstack([button_prev, button_next]),
