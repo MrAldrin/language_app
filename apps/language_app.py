@@ -16,6 +16,7 @@ with app.setup:
     from typing import Callable, Literal
     import json
     import polars as pl
+    import random
     import string
     import sys
 
@@ -95,21 +96,9 @@ def _():
         "de": "German",
         "no": "Norwegian",
     }
-    return (LANG_MAP,)
 
-
-@app.cell
-def _(dropdown_language_pairs):
-    pair = dropdown_language_pairs.value
-    data = load_json_data(pair)
-    df_raw = load_curriculum(data)
-    return (df_raw,)
-
-
-@app.cell
-def _(current_sentence):
-    pool_words = sort_words(current_sentence["words"]) if current_sentence else []
-    return (pool_words,)
+    raw_pairs = sorted(["de_en", "de_nl", "de_no", "en_nl", "en_no", "nl_no"])
+    return LANG_MAP, raw_pairs
 
 
 @app.cell
@@ -124,13 +113,67 @@ def _():
     return get_score, set_score
 
 
+@app.cell(hide_code=True)
+def _():
+    mo.md(r"""
+    # temp
+    """)
+    return
+
+
 @app.cell
-def _(df_raw, dropdown_difficulty):
+def _(dropdown_language_pairs, language_1, language_2):
+    _read_json_data = load_json_data(pair=dropdown_language_pairs.value)
+    df_raw = load_curriculum(_read_json_data)
+    df_canonical = transform_to_canonical(df_raw, language_1, language_2)
+    return df_canonical, df_raw
+
+
+@app.cell
+def _(
+    LANG_MAP,
+    df_canonical,
+    dropdown_difficulty,
+    dropdown_translation_direction,
+    language_1,
+    language_2,
+):
+    direction_mode = resolve_direction_mode(
+        dropdown_translation_direction.value,
+        language_1,
+        language_2,
+        LANG_MAP,
+    )
     df = prepare_curriculum(
-        df_raw,
+        df_canonical,
         dropdown_difficulty.value,
+        direction_mode,
     )
     return (df,)
+
+
+@app.cell
+def _(df, row_number):
+    current_sentence = get_sentence(df, row_number)
+    button_reveal = mo.ui.button(
+        label="👀 Reveal Answer", value=False, on_click=lambda _: True
+    )
+    return button_reveal, current_sentence
+
+
+@app.cell
+def _(current_sentence, set_answer_pool):
+    # Reset answer selection whenever sentence identity updates.
+    pool_words = sort_words(current_sentence["words"]) if current_sentence else []
+    set_answer_pool([])
+    return (pool_words,)
+
+
+@app.cell
+def _(button_next, button_prev, df):
+    netto_count = button_next.value - button_prev.value
+    row_number = netto_count % len(df) if len(df) > 0 else 0
+    return (row_number,)
 
 
 @app.cell(hide_code=True)
@@ -142,9 +185,7 @@ def _():
 
 
 @app.cell
-def _(LANG_MAP, set_answer_pool):
-    raw_pairs = sorted(["de_en", "de_nl", "de_no", "en_nl", "en_no", "nl_no"])
-
+def _(LANG_MAP, raw_pairs, set_answer_pool):
     pair_options = {}
     for p in raw_pairs:
         p_l1, p_l2 = p.split("_")
@@ -224,13 +265,6 @@ def _(set_answer_pool):
 
 
 @app.cell
-def _(button_next, button_prev, df):
-    netto_count = button_next.value - button_prev.value
-    row_number = netto_count % len(df) if len(df) > 0 else 0
-    return (row_number,)
-
-
-@app.cell
 def _(
     current_sentence,
     get_answer_pool,
@@ -264,37 +298,6 @@ def _(
         label="↺ Reset",
     )
     return button_check_answer, button_reset
-
-
-@app.cell
-def _(
-    LANG_MAP,
-    df,
-    dropdown_translation_direction,
-    language_1,
-    language_2,
-    row_number,
-):
-    current_sentence = get_sentence(
-        df,
-        row_number,
-        dropdown_translation_direction.value,
-        language_1,
-        language_2,
-        LANG_MAP,
-    )
-    button_reveal = mo.ui.button(
-        label="👀 Reveal Answer", value=False, on_click=lambda _: True
-    )
-    return button_reveal, current_sentence
-
-
-@app.cell
-def _(current_sentence, set_answer_pool):
-    # Reset answer selection whenever sentence identity updates.
-    current_sentence
-    set_answer_pool([])
-    return
 
 
 @app.cell(hide_code=True)
@@ -361,77 +364,150 @@ def load_curriculum(data: list[dict]) -> pl.DataFrame:
 
 
 @app.function
-def prepare_curriculum(
-    df: pl.DataFrame,
-    difficulty_list: list[str],
-) -> pl.DataFrame:
-    """Performs filtering and shuffling in one pipeline."""
-    if df.height == 0:
-        return df
+def resolve_direction_mode(
+    selected_direction: str,
+    language_1: str,
+    language_2: str,
+    lang_map: dict[str, str],
+) -> str:
+    if selected_direction == "Both Directions":
+        return "both"
 
-    # 1. Filter by difficulty
-    df = df.filter(pl.col("difficulty_str").is_in(difficulty_list))
+    if not language_1 or not language_2:
+        return "not_applicable"
 
-    if df.height == 0:
-        return df
+    name_1 = lang_map.get(language_1, language_1)
+    name_2 = lang_map.get(language_2, language_2)
 
-    # 2. Shuffle
-    return df.sample(fraction=1.0, shuffle=True)
+    if selected_direction == f"{name_1} -> {name_2}":
+        return "l1_to_l2"
+    if selected_direction == f"{name_2} -> {name_1}":
+        return "l2_to_l1"
+    return "both"
 
 
 @app.function
-def get_sentence(
+def prepare_curriculum(
     df: pl.DataFrame,
-    row_number: int,
-    direction: str,
-    l1: str,
-    l2: str,
-    lang_map: dict,
-) -> dict | None:
+    difficulty_list: list[str],
+    direction_mode: str,
+) -> pl.DataFrame:
+    """Filters, precomputes direction, and materializes UI-ready rows."""
+    if df.height == 0:
+        return df
+
+    filtered_df = df.filter(pl.col("difficulty_str").is_in(difficulty_list))
+
+    if filtered_df.height == 0:
+        return filtered_df
+
+    if direction_mode == "l1_to_l2":
+        directions = ["l1_to_l2"] * filtered_df.height
+    elif direction_mode == "l2_to_l1":
+        directions = ["l2_to_l1"] * filtered_df.height
+    else:
+        rng = random.Random()
+        directions = [
+            rng.choice(["l1_to_l2", "l2_to_l1"]) for _ in range(filtered_df.height)
+        ]
+
+    prepared_rows = []
+    for row, direction in zip(filtered_df.iter_rows(named=True), directions):
+        if direction == "l1_to_l2":
+            prepared_rows.append(
+                {
+                    "question_id": row["question_id"],
+                    "difficulty": row["difficulty"],
+                    "difficulty_str": row["difficulty_str"],
+                    "direction": direction,
+                    "source": row["text_l1"],
+                    "target": row["text_l2"],
+                    "accepted": row["accepted_l2"],
+                    "words": row["word_pool_l2"],
+                }
+            )
+        else:
+            prepared_rows.append(
+                {
+                    "question_id": row["question_id"],
+                    "difficulty": row["difficulty"],
+                    "difficulty_str": row["difficulty_str"],
+                    "direction": direction,
+                    "source": row["text_l2"],
+                    "target": row["text_l1"],
+                    "accepted": row["accepted_l1"],
+                    "words": row["word_pool_l1"],
+                }
+            )
+
+    if not prepared_rows:
+        return pl.DataFrame([])
+
+    prepared_df = pl.DataFrame(prepared_rows)
+    return prepared_df.sample(fraction=1.0, shuffle=True)
+
+
+@app.function
+def make_word_pool(lang_data: dict) -> list[str]:
+    pool = lang_data.get("word_pool")
+    if pool is not None:
+        return pool
+
+    words = lang_data.get("primary", "").split()
+    for accepted in lang_data.get("accepted", []):
+        words.extend(accepted.split())
+    words.extend(lang_data.get("distraction_pool", []))
+    return list(dict.fromkeys(words))
+
+
+@app.function
+def transform_to_canonical(
+    df: pl.DataFrame,
+    language_1: str,
+    language_2: str,
+) -> pl.DataFrame:
+    """
+    Transforms source rows into a canonical bilingual schema.
+    This is the adapter layer for future data-source formats.
+    """
+    if df.height == 0 or not language_1 or not language_2:
+        return pl.DataFrame([])
+
+    rows = []
+    for index, row in enumerate(df.iter_rows(named=True)):
+        translations = row.get("translations", {})
+        lang_1_data = translations.get(language_1)
+        lang_2_data = translations.get(language_2)
+
+        if not lang_1_data or not lang_2_data:
+            continue
+
+        rows.append(
+            {
+                "question_id": row.get("id", index),
+                "difficulty": row["difficulty"],
+                "difficulty_str": row["difficulty_str"],
+                "language_1": language_1,
+                "language_2": language_2,
+                "text_l1": lang_1_data.get("primary", ""),
+                "text_l2": lang_2_data.get("primary", ""),
+                "accepted_l1": lang_1_data.get("accepted", []),
+                "accepted_l2": lang_2_data.get("accepted", []),
+                "word_pool_l1": make_word_pool(lang_1_data),
+                "word_pool_l2": make_word_pool(lang_2_data),
+            }
+        )
+
+    return pl.DataFrame(rows) if rows else pl.DataFrame([])
+
+
+@app.function
+def get_sentence(df: pl.DataFrame, row_number: int) -> dict | None:
     if df.height == 0:
         return None
+
     valid_row = max(0, min(row_number, df.height - 1))
-    row = df.row(valid_row, named=True)
-
-    translations = row["translations"]
-
-    # Determine translation direction
-    if direction == "Both Directions":
-        # Use a stable seed based on the source text to keep direction consistent for this row
-        # using the primary text of l1 as a seed
-        seed_text = translations[l1]["primary"]
-        is_l1_source = hash(seed_text) % 2 == 0
-    else:
-        is_l1_source = direction.startswith(lang_map.get(l1, l1))
-
-    def get_word_pool(lang_data):
-        pool = lang_data.get("word_pool")
-        if pool is not None:
-            return pool
-        words = lang_data.get("primary", "").split()
-        for acc in lang_data.get("accepted", []):
-            words.extend(acc.split())
-        words.extend(lang_data.get("distraction_pool", []))
-        return list(set(words))
-
-    if is_l1_source:
-        return {
-            "difficulty": row["difficulty"],
-            "difficulty_str": row["difficulty_str"],
-            "source": translations[l1]["primary"],
-            "target": translations[l2]["primary"],
-            "accepted": translations[l2].get("accepted", []),
-            "words": get_word_pool(translations[l2]),
-        }
-    else:
-        return {
-            "difficulty": row["difficulty"],
-            "difficulty_str": row["difficulty_str"],
-            "source": translations[l2]["primary"],
-            "target": translations[l1]["primary"],
-            "accepted": translations[l1].get("accepted", []),
-            "words": get_word_pool(translations[l1]),
-        }
+    return df.row(valid_row, named=True)
 
 
 @app.function
