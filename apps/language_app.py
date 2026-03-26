@@ -309,6 +309,94 @@ def _():
 
 
 @app.cell
+def _():
+    mo.stat("4/10", label="Difficulty", caption="Easy", bordered=True).center().style(
+        {"text-align": "center"}
+    )
+    return
+
+
+@app.cell
+def _():
+    mo.stat("4/10", label="Difficulty", caption="Easy", bordered=True).center().center()
+    return
+
+
+@app.cell
+def _():
+    mo.stat("4/10", label="Difficulty", caption="Easy", bordered=True).style(
+        {"text-align": "center"}
+    )
+    return
+
+
+@app.cell
+def _():
+    default_callouts = mo.vstack(
+        [
+            mo.md("test").callout(kind="info"),
+            mo.md("test with longer content to trigger wrapping on narrow screens").callout(
+                kind="warn"
+            ),
+        ]
+    )
+
+
+    def custom_box(text: str, border_color: str) -> mo.Html:
+        return mo.md(text).style(
+            {
+                "margin": "0",
+                "padding": "0.35rem 0.55rem",
+                "border": f"1px solid {border_color}",
+                "border-radius": "0.5rem",
+                "line-height": "1.2",
+                "background": "color-mix(in srgb, white 90%, #e5e7eb 10%)",
+                "height": "100%",
+                "box-sizing": "border-box",
+            }
+        )
+
+
+    custom_boxes = mo.hstack(
+        [
+            custom_box("Difficulty: 4/10", "#3b82f6"),
+            custom_box(
+                "Incorrect, continue or try again right away!",
+                "#f59e0b",
+            ),
+        ],
+        widths="equal",
+    )
+
+    stat_boxes = mo.hstack(
+        [
+            mo.stat("4/10", label="Difficulty", caption="Easy", bordered=True),
+            mo.stat(
+                "Incorrect",
+                label="Feedback",
+                caption="Continue or try again",
+                direction="decrease",
+                bordered=True,
+            ),
+        ],
+        widths="equal",
+    )
+
+    mo.vstack(
+        [
+            mo.md("Default `mo.callout`"),
+            default_callouts,
+            mo.md("Compact custom boxes"),
+            custom_boxes,
+            mo.md("`mo.stat` comparison"),
+            stat_boxes,
+        ],
+        gap=0.5,
+    )
+    return
+
+
+@app.cell
 def _(df_raw):
     df_raw
     return
@@ -567,18 +655,24 @@ def render_placeholder_element():
 
 @app.function
 def render_difficulty_indicator(difficulty_int: int, difficulty_str: str) -> mo.Html:
-    """Renders a color-coded difficulty indicator."""
-    kind: Literal["info", "warn", "danger", "neutral"]
-    match str(difficulty_str).lower():
-        case "easy":
-            kind = "info"
-        case "medium":
-            kind = "warn"
-        case "hard":
-            kind = "danger"
-        case _:
-            kind = "neutral"
-    return callout_custom(f"Difficulty: {difficulty_int}/10", kind=kind)
+    """Renders difficulty as a compact stat card."""
+    return mo.stat(
+        f"{difficulty_int}/10",
+        label="Difficulty",
+        caption=str(difficulty_str).capitalize(),
+        bordered=True,
+    ).center()
+
+
+@app.function
+def render_progress(current_idx: int, total_count: int) -> mo.Html:
+    """Renders the question progress indicator as a compact stat card."""
+    return mo.stat(
+        f"{current_idx + 1}/{total_count}",
+        label="Question",
+        caption="Progress",
+        bordered=True,
+    ).center()
 
 
 @app.function
@@ -668,12 +762,6 @@ def render_feedback(check_value: bool | None) -> mo.Html:
         return callout_custom(
             "❌ False, continue or try again right away!", kind="warn"
         )
-
-
-@app.function
-def render_progress(current_idx: int, total_count: int) -> mo.Html:
-    """Renders the question progress indicator."""
-    return callout_custom(f"Question: {current_idx + 1}/{total_count}", kind="info")
 
 
 @app.function
