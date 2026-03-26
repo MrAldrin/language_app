@@ -80,24 +80,6 @@ def _(
 
 
 @app.cell
-def _(current_sentence):
-    ui_difficulty = (
-        render_difficulty_indicator(
-            current_sentence["difficulty"], current_sentence["difficulty_str"]
-        )
-        if current_sentence
-        else mo.md("")
-    )
-    # progress = render_progress(row_number, len(df))
-    question = (
-        render_question_text(current_sentence["source"])
-        if current_sentence
-        else mo.md("")
-    )
-    return question, ui_difficulty
-
-
-@app.cell
 def _(current_sentence, get_answer_pool, move_word, pool_words):
     if not current_sentence:
         ui_answer = mo.md("")
@@ -294,6 +276,7 @@ def _(set_answer_pool):
         set_answer_pool([])  # Clear the pool synchronously!
         return c + 1
 
+
     button_prev = mo.ui.button(value=0, on_click=handle_navigation, label="◀ Previous")
     button_next = mo.ui.button(value=0, on_click=handle_navigation, label="Next ▶")
     return button_next, button_prev
@@ -348,6 +331,7 @@ def _(df, language_1, language_2, row_number):
 
 @app.cell
 def _(df, language_1, language_2, row_number, set_answer_pool):
+    # This cell is needed for reactivity. when df or the other inputs are updated this runs.
     new_sentence = get_sentence(df, row_number, language_1, language_2)
     set_answer_pool([])
     return
@@ -668,7 +652,6 @@ def _(
     button_check_answer,
     button_reveal,
     current_sentence,
-    question,
     ui_answer,
     ui_word_alternatives,
 ):
@@ -688,7 +671,7 @@ def _(
 
         interaction_section = mo.vstack(
             [
-                question,
+                render_question_text(current_sentence["source"]),
                 ui_answer,
                 mo.md("---"),
                 ui_word_alternatives,
@@ -703,10 +686,16 @@ def _(
 
 
 @app.cell
-def _(df, row_number, ui_difficulty):
+def _(current_sentence, df, row_number):
     def render_top_section():
         return mo.hstack(
-            [ui_difficulty, render_progress(row_number, len(df))], widths="equal"
+            [
+                render_difficulty_indicator(
+                    current_sentence["difficulty"], current_sentence["difficulty_str"]
+                ),
+                render_progress(row_number, len(df)),
+            ],
+            widths="equal",
         )
 
     return (render_top_section,)
