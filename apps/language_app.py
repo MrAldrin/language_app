@@ -310,20 +310,6 @@ def _():
 
 @app.cell
 def _():
-    mo.stat("4/10", label="Difficulty", caption="Easy", bordered=True).center().style(
-        {"text-align": "center"}
-    )
-    return
-
-
-@app.cell
-def _():
-    mo.stat("4/10", label="Difficulty", caption="Easy", bordered=True).center().center()
-    return
-
-
-@app.cell
-def _():
     mo.stat("4/10", label="Difficulty", caption="Easy", bordered=True).style(
         {"text-align": "center"}
     )
@@ -382,6 +368,23 @@ def _():
         widths="equal",
     )
 
+    success_callout = mo.md("Correct! Continue to the next question.").callout(
+        kind="success"
+    )
+
+    success_custom = (
+        mo.md("orrect! Continue to the next question.")
+        .center()
+        .style(
+            {
+                "border": "1px solid #22c55e",
+                "border-radius": "0.5rem",
+                "background": "#dcfce7",
+                "color": "#14532d",
+            }
+        )
+    )
+
     mo.vstack(
         [
             mo.md("Default `mo.callout`"),
@@ -390,6 +393,8 @@ def _():
             custom_boxes,
             mo.md("`mo.stat` comparison"),
             stat_boxes,
+            mo.md("Success feedback comparison"),
+            mo.hstack([success_callout, success_custom], widths="equal"),
         ],
         gap=0.5,
     )
@@ -644,7 +649,7 @@ def render_placeholder_element():
         [
             mo.callout(
                 mo.md(
-                    "### 💡 Selection Required: "
+                    "### Selection Required: "
                     "You must have selected something in all the above menus"
                 ).center(),
                 kind="info",
@@ -660,6 +665,17 @@ def render_difficulty_indicator(difficulty_int: int, difficulty_str: str) -> mo.
         f"{difficulty_int}/10",
         label="Difficulty",
         caption=str(difficulty_str).capitalize(),
+        bordered=True,
+    ).center()
+
+
+@app.function
+def render_score(correct: int, tries: int) -> mo.Html:
+    """Renders the current session score."""
+    return mo.stat(
+        value=f"{correct}/{tries}",
+        label="Correct",
+        caption="Attempts",
         bordered=True,
     ).center()
 
@@ -755,20 +771,9 @@ def render_feedback(check_value: bool | None) -> mo.Html:
     if check_value is None:
         return callout_custom("Press the button to check your answer")
     elif check_value:
-        return callout_custom(
-            "✅ Correct! Continue to the next question.", kind="success"
-        )
+        return callout_custom("Correct! Continue to the next question.", kind="success")
     else:
-        return callout_custom(
-            "❌ False, continue or try again right away!", kind="warn"
-        )
-
-
-@app.function
-def render_score(correct: int, tries: int) -> mo.Html:
-    """Renders the current session score."""
-    score_text = f"**Score:** {correct} / {tries}" if tries > 0 else "*No attempts yet*"
-    return callout_custom(score_text, kind="info")
+        return callout_custom("False, continue or try again right away!", kind="warn")
 
 
 @app.cell(hide_code=True)
@@ -829,6 +834,24 @@ def _(get_answer_pool, set_answer_pool):
 
 
 @app.cell
+def _(current_sentence, df, get_score, row_number):
+    def render_top_section():
+        stats = get_score()
+        return mo.hstack(
+            [
+                render_difficulty_indicator(
+                    current_sentence["difficulty"], current_sentence["difficulty_str"]
+                ),
+                render_score(stats["correct"], stats["tries"]),
+                render_progress(row_number, len(df)),
+            ],
+            widths="equal",
+        )
+
+    return (render_top_section,)
+
+
+@app.cell
 def _(
     button_check_answer,
     button_reset,
@@ -870,31 +893,13 @@ def _(
 
 
 @app.cell
-def _(current_sentence, df, row_number):
-    def render_top_section():
-        return mo.hstack(
-            [
-                render_difficulty_indicator(
-                    current_sentence["difficulty"], current_sentence["difficulty_str"]
-                ),
-                render_progress(row_number, len(df)),
-            ],
-            widths="equal",
-        )
-
-    return (render_top_section,)
-
-
-@app.cell
-def _(button_check_answer, button_next, button_prev, get_score):
+def _(button_check_answer, button_next, button_prev):
     def render_footer():
-        stats = get_score()
         return mo.vstack(
             [
                 mo.hstack(
                     [
                         render_feedback(button_check_answer.value),
-                        render_score(stats["correct"], stats["tries"]),
                     ],
                     widths="equal",
                 ),
