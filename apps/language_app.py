@@ -73,7 +73,6 @@ def _(
             mo_elems.append(render_footer())
         return mo.vstack(mo_elems, gap=0).style(
             {
-                "max-width": "1100px",
                 "margin": "0 auto",
                 "padding": "0.5rem 0.75rem 1rem 0.75rem",
                 "border-radius": "1rem",
