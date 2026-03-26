@@ -82,22 +82,11 @@ def _(
 @app.cell
 def _(get_answer_pool, move_word, pool_words):
     answer_indices = get_answer_pool()
-    ui_answer = render_word_chips(
-        words=pool_words, indices=answer_indices, on_click=move_word, is_pool=False
+    ui_answer = render_answer_area(pool_words, answer_indices, on_click=move_word)
+    pool_chips_ui = render_word_pool(
+        pool_words, on_click=move_word, disabled_indices=answer_indices
     )
-    if not answer_indices and pool_words:
-        ui_answer = mo.vstack(
-            [ui_answer, mo.md("*Click words from the pool below*").center()]
-        )
-
-    pool_chips_ui = render_word_chips(
-        words=pool_words,
-        on_click=move_word,
-        is_pool=True,
-        disabled_indices=answer_indices,
-    )
-    ui_word_alternatives = mo.vstack([mo.callout(pool_chips_ui, kind="neutral")])
-    return ui_answer, ui_word_alternatives
+    return pool_chips_ui, ui_answer
 
 
 @app.cell(hide_code=True)
@@ -281,7 +270,13 @@ def _(button_next, button_prev, df):
 
 
 @app.cell
-def _(current_sentence, get_answer_pool, pool_words, set_score):
+def _(
+    current_sentence,
+    get_answer_pool,
+    pool_words,
+    set_answer_pool,
+    set_score,
+):
     def handle_check(_):
         is_correct = check_answer(
             [pool_words[i] for i in get_answer_pool()],
@@ -302,7 +297,12 @@ def _(current_sentence, get_answer_pool, pool_words, set_score):
         on_click=handle_check,
         label="Check answer",
     )
-    return (button_check_answer,)
+    button_reset = mo.ui.button(
+        value=None,
+        on_click=lambda _: set_answer_pool([]),
+        label="↺ Reset",
+    )
+    return button_check_answer, button_reset
 
 
 @app.cell
@@ -490,7 +490,7 @@ def render_difficulty_indicator(difficulty_int: int, difficulty_str: str) -> mo.
         case _:
             kind = "neutral"
     return callout_custom(
-        f"Difficulty: {difficulty_int}/10 ({difficulty_str})", kind=kind
+        f"Difficulty: {difficulty_int}/10", kind=kind
     )
 
 
@@ -499,7 +499,7 @@ def render_question_text(source: str) -> mo.Html:
     """Renders the main question prompt."""
     return mo.vstack(
         [
-            mo.md("Translate this sentence:").center(),
+            mo.md("**Translate this sentence:**").center(),
             mo.md(f"### {source}").center(),
             mo.md("---"),
             mo.md("**Your Answer:**").center(),
@@ -508,34 +508,63 @@ def render_question_text(source: str) -> mo.Html:
 
 
 @app.function
-def render_word_chips(
+def make_word_chip(
+    word: str,
+    idx: int,
+    on_click: Callable[[int, bool], None],
+    *,
+    is_pool: bool,
+    disabled: bool = False,
+) -> mo.Html:
+    """Creates a single word chip button."""
+    return mo.ui.button(
+        label=word,
+        on_change=lambda _, i=idx: on_click(i, is_pool),
+        kind="neutral",
+        tooltip="Click to add" if is_pool else "Click to remove",
+        disabled=disabled,
+    )
+
+
+@app.function
+def render_answer_area(
     words: list[str],
-    indices: list[int] | None = None,
+    indices: list[int],
     *,
     on_click: Callable[[int, bool], None],
-    is_pool: bool,
+) -> mo.Html:
+    """Renders selected word chips as the answer area, or a hint when empty."""
+    if not indices:
+        return (
+            mo.md("*Click words from the pool below*").center()
+            if words
+            else mo.md("No words available").center()
+        )
+
+    chips = [
+        make_word_chip(words[idx], idx, on_click, is_pool=False) for idx in indices
+    ]
+    return mo.hstack(chips, justify="center", gap=1, wrap=True)
+
+
+@app.function
+def render_word_pool(
+    words: list[str],
+    *,
+    on_click: Callable[[int, bool], None],
     disabled_indices: list[int] | None = None,
 ) -> mo.Html:
-    """Renders a collection of word chips as buttons."""
+    """Renders all word chips for the pool, disabling already-selected words."""
     if not words:
         return mo.md("No words available").center()
 
-    chips = []
-    display_indices = indices if indices is not None else range(len(words))
-    disabled_indices = disabled_indices or []
-
-    for idx in display_indices:
-        word = words[idx]
-        chips.append(
-            mo.ui.button(
-                label=word,
-                on_change=lambda _, i=idx: on_click(i, is_pool),
-                kind="neutral",
-                tooltip="Click to add" if is_pool else "Click to remove",
-                disabled=is_pool and idx in disabled_indices,
-            )
+    disabled = disabled_indices or []
+    chips = [
+        make_word_chip(
+            words[idx], idx, on_click, is_pool=True, disabled=idx in disabled
         )
-
+        for idx in range(len(words))
+    ]
     return mo.hstack(chips, justify="center", gap=1, wrap=True)
 
 
@@ -557,7 +586,7 @@ def render_feedback(check_value: bool | None) -> mo.Html:
 @app.function
 def render_progress(current_idx: int, total_count: int) -> mo.Html:
     """Renders the question progress indicator."""
-    return callout_custom(f"**Question:** {current_idx + 1}/{total_count}", kind="info")
+    return callout_custom(f"Question: {current_idx + 1}/{total_count}", kind="info")
 
 
 @app.function
@@ -626,10 +655,11 @@ def _(get_answer_pool, set_answer_pool):
 @app.cell
 def _(
     button_check_answer,
+    button_reset,
     button_reveal,
     current_sentence,
+    pool_chips_ui,
     ui_answer,
-    ui_word_alternatives,
 ):
     def render_interaction_section():
         # Core Exercise
@@ -650,8 +680,8 @@ def _(
                 render_question_text(current_sentence["source"]),
                 ui_answer,
                 mo.md("---"),
-                ui_word_alternatives,
-                mo.hstack([button_check_answer, button_reveal], justify="center"),
+                mo.vstack([mo.callout(pool_chips_ui, kind="neutral")]),
+                mo.hstack([button_check_answer, button_reset, button_reveal], justify="center"),
                 reveal_text,
             ],
             gap=0.0,
