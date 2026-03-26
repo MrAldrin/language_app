@@ -310,14 +310,6 @@ def _():
 
 @app.cell
 def _():
-    mo.stat("4/10", label="Difficulty", caption="Easy", bordered=True).style(
-        {"text-align": "center"}
-    )
-    return
-
-
-@app.cell
-def _():
     test_words = [
         "jeg",
         "vil",
