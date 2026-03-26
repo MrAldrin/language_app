@@ -46,7 +46,7 @@ def _(
 ):
     def render_main_ui() -> mo.Html:
         """Assembles the final application layout."""
-    
+
         app_header = (
             mo.md("# Schipper mag ik overvaren?")
             .center()
@@ -58,14 +58,14 @@ def _(
             )
         )
 
-        mo_elems = [app_header,render_options_section()]
+        mo_elems = [app_header, render_options_section()]
         if not current_sentence:
             mo_elems.append(render_placeholder_element())
         else:
             mo_elems.append(render_top_section())
             mo_elems.append(render_interaction_section())
             mo_elems.append(render_footer())
-        return mo.vstack(mo_elems,gap=0)
+        return mo.vstack(mo_elems, gap=0)
 
     return (render_main_ui,)
 
@@ -137,29 +137,21 @@ def _():
 
 
 @app.cell
-def _(df_raw, dropdown_difficulty):
-    df_temp = select_difficulty(df_raw, dropdown_difficulty.value)
-    return (df_temp,)
-
-
-@app.cell
-def _(LANG_MAP, df_temp, dropdown_translation_direction, language_1):
+def _(
+    LANG_MAP,
+    df_raw,
+    dropdown_difficulty,
+    dropdown_translation_direction,
+    language_1,
+):
     mo.stop(dropdown_translation_direction.value == "None")
-    if "Both Directions" in dropdown_translation_direction.value:
-        df = df_temp.with_columns(
-            pl.Series(
-                "is_l1_source",
-                [random.choice([True, False]) for _ in range(len(df_temp))],
-            )
-        )
-    else:
-        is_l1_source = dropdown_translation_direction.value.startswith(
-            LANG_MAP.get(language_1, language_1)
-        )
-        df = df_temp.with_columns(pl.lit(is_l1_source).alias("is_l1_source"))
-
-    # Shuffle the rows
-    df = df.sample(fraction=1.0, shuffle=True)
+    df = prepare_curriculum(
+        df_raw,
+        dropdown_difficulty.value,
+        dropdown_translation_direction.value,
+        language_1,
+        LANG_MAP,
+    )
     return (df,)
 
 
@@ -247,7 +239,6 @@ def _(set_answer_pool):
         set_answer_pool([])  # Clear the pool synchronously!
         return c + 1
 
-
     button_prev = mo.ui.button(value=0, on_click=handle_navigation, label="◀ Previous")
     button_next = mo.ui.button(value=0, on_click=handle_navigation, label="Next ▶")
     return button_next, button_prev
@@ -281,7 +272,6 @@ def _(
             }
         )
         return is_correct
-
 
     button_check_answer = mo.ui.button(
         value=None,
@@ -352,10 +342,7 @@ def _():
 @app.function
 def load_curriculum(data: list[dict]) -> pl.DataFrame:
     """Loads the curriculum from parsed JSON data into a Polars DataFrame."""
-    df = pl.DataFrame(data)
-
-    # Map integer difficulties to string classes
-    df = df.with_columns(
+    return pl.DataFrame(data).with_columns(
         pl.when(pl.col("difficulty") <= 3)
         .then(pl.lit("easy"))
         .when(pl.col("difficulty") <= 7)
@@ -364,13 +351,40 @@ def load_curriculum(data: list[dict]) -> pl.DataFrame:
         .alias("difficulty_str")
     )
 
-    return df
-
 
 @app.function
-def select_difficulty(df: pl.DataFrame, difficulty_list: list[str]):
+def prepare_curriculum(
+    df: pl.DataFrame,
+    difficulty_list: list[str],
+    direction: str,
+    language_1: str,
+    lang_map: dict,
+) -> pl.DataFrame:
+    """Performs filtering, direction assignment, and shuffling in one pipeline."""
+    if df.height == 0:
+        return df
+
+    # 1. Filter by difficulty
     df = df.filter(pl.col("difficulty_str").is_in(difficulty_list))
-    return df
+
+    if df.height == 0:
+        return df
+
+    # 2. Assign translation direction
+    if direction == "Both Directions":
+        # Use random choice for each row
+        df = df.with_columns(
+            pl.Series(
+                "is_l1_source",
+                [random.choice([True, False]) for _ in range(len(df))],
+            )
+        )
+    else:
+        is_l1_source = direction.startswith(lang_map.get(language_1, language_1))
+        df = df.with_columns(pl.lit(is_l1_source).alias("is_l1_source"))
+
+    # 3. Shuffle
+    return df.sample(fraction=1.0, shuffle=True)
 
 
 @app.function
@@ -480,9 +494,7 @@ def render_difficulty_indicator(difficulty_int: int, difficulty_str: str) -> mo.
             kind = "danger"
         case _:
             kind = "neutral"
-    return callout_custom(
-        f"Difficulty: {difficulty_int}/10", kind=kind
-    )
+    return callout_custom(f"Difficulty: {difficulty_int}/10", kind=kind)
 
 
 @app.function
@@ -614,7 +626,7 @@ def _(
                 dropdown_difficulty,
             ],
             justify="space-between",
-            wrap=True
+            wrap=True,
         )
 
         return mo.vstack([instruction_text, options_row, mo.md("---")], gap=1)
@@ -673,7 +685,9 @@ def _(
                 ui_answer,
                 mo.md("---"),
                 mo.vstack([mo.callout(pool_chips_ui, kind="neutral")]),
-                mo.hstack([button_check_answer, button_reset, button_reveal], justify="center"),
+                mo.hstack(
+                    [button_check_answer, button_reset, button_reveal], justify="center"
+                ),
                 reveal_text,
             ],
             gap=0.0,
