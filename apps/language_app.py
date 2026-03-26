@@ -83,7 +83,7 @@ def _(
 def _(get_answer_pool, move_word, pool_words):
     answer_indices = get_answer_pool()
     ui_answer = render_word_chips(
-        pool_words, indices=answer_indices, on_click=move_word, is_pool=False
+        words=pool_words, indices=answer_indices, on_click=move_word, is_pool=False
     )
     if not answer_indices and pool_words:
         ui_answer = mo.vstack(
@@ -91,7 +91,7 @@ def _(get_answer_pool, move_word, pool_words):
         )
 
     pool_chips_ui = render_word_chips(
-        pool_words,
+        words=pool_words,
         on_click=move_word,
         is_pool=True,
         disabled_indices=answer_indices,
@@ -208,6 +208,7 @@ def _(LANG_MAP, set_answer_pool):
         label="Language pair",
         on_change=lambda _: set_answer_pool([]),
     )
+    dropdown_language_pairs
     return (dropdown_language_pairs,)
 
 
@@ -250,12 +251,6 @@ def _(df_raw, dropdown_language_pairs, set_answer_pool):
         )
     dropdown_difficulty
     return (dropdown_difficulty,)
-
-
-@app.cell
-def _(dropdown_language_pairs, dropdown_translation_direction):
-    mo.vstack([dropdown_language_pairs, dropdown_translation_direction])
-    return
 
 
 @app.cell(hide_code=True)
@@ -301,6 +296,7 @@ def _(current_sentence, get_answer_pool, pool_words, set_score):
         )
         return is_correct
 
+
     button_check_answer = mo.ui.button(
         value=None,
         on_click=handle_check,
@@ -320,7 +316,7 @@ def _(df, language_1, language_2, row_number):
 
 @app.cell
 def _(df, language_1, language_2, row_number, set_answer_pool):
-    # This cell is needed for reactivity. when df or the other inputs are updated this runs.
+    # This cell is needed for reactivity. when df or the other inputs are updated this runs. Resetting the answer pool
     get_sentence(df, row_number, language_1, language_2)
     set_answer_pool([])
     return
@@ -331,12 +327,6 @@ def _():
     mo.md(r"""
     ## Testing cells for inspection
     """)
-    return
-
-
-@app.cell
-def _(df, language_1, language_2, row_number):
-    get_sentence(df, row_number, language_1, language_2)
     return
 
 
@@ -629,7 +619,6 @@ def _(get_answer_pool, set_answer_pool):
             set_answer_pool(lambda a: a + [index] if index not in a else a)
         else:
             set_answer_pool(lambda a: [i for i in a if i != index])
-
 
     return (move_word,)
 
