@@ -80,7 +80,7 @@ def _(
 
 
 @app.cell
-def _(current_sentence, df, row_number):
+def _(current_sentence):
     ui_difficulty = (
         render_difficulty_indicator(
             current_sentence["difficulty"], current_sentence["difficulty_str"]
@@ -88,11 +88,13 @@ def _(current_sentence, df, row_number):
         if current_sentence
         else mo.md("")
     )
-    progress = render_progress(row_number, len(df))
+    # progress = render_progress(row_number, len(df))
     question = (
-        render_question_text(current_sentence["source"]) if current_sentence else mo.md("")
+        render_question_text(current_sentence["source"])
+        if current_sentence
+        else mo.md("")
     )
-    return progress, question, ui_difficulty
+    return question, ui_difficulty
 
 
 @app.cell
@@ -212,7 +214,7 @@ def _():
 
 
 @app.cell
-def _(LANG_MAP):
+def _(LANG_MAP, set_answer_pool):
     raw_pairs = sorted(["de_en", "de_nl", "de_no", "en_nl", "en_no", "nl_no"])
 
     pair_options = {}
@@ -226,12 +228,13 @@ def _(LANG_MAP):
         value="Dutch and Norwegian",
         allow_select_none=False,
         label="Language pair",
+        on_change=lambda _: set_answer_pool([]),
     )
     return (dropdown_language_pairs,)
 
 
 @app.cell
-def _(LANG_MAP, dropdown_language_pairs):
+def _(LANG_MAP, dropdown_language_pairs, set_answer_pool):
     if dropdown_language_pairs.value == None:
         directions = ["Not applicable"]
         language_1, language_2 = "", ""
@@ -245,21 +248,27 @@ def _(LANG_MAP, dropdown_language_pairs):
             f"{name2} -> {name1}",
         ]
     dropdown_translation_direction = mo.ui.dropdown(
-        options=directions, value=directions[0], label="Direction"
+        options=directions,
+        value=directions[0],
+        label="Direction",
+        on_change=lambda _: set_answer_pool([]),
     )
     dropdown_translation_direction
     return dropdown_translation_direction, language_1, language_2
 
 
 @app.cell
-def _(df_raw, dropdown_language_pairs):
+def _(df_raw, dropdown_language_pairs, set_answer_pool):
     if dropdown_language_pairs.value == None:
         dropdown_difficulty = mo.ui.multiselect(
             options=["Not applicable"], value=["Not applicable"], label="Difficulty"
         )
     else:
         dropdown_difficulty = mo.ui.multiselect.from_series(
-            df_raw["difficulty_str"], value=["easy"], label="Difficulty"
+            df_raw["difficulty_str"],
+            value=["easy"],
+            label="Difficulty",
+            on_change=lambda _: set_answer_pool([]),
         )
     dropdown_difficulty
     return (dropdown_difficulty,)
@@ -280,9 +289,13 @@ def _():
 
 
 @app.cell
-def _():
-    button_prev = mo.ui.button(value=0, on_click=lambda c: c + 1, label="◀ Previous")
-    button_next = mo.ui.button(value=0, on_click=lambda c: c + 1, label="Next ▶")
+def _(set_answer_pool):
+    def handle_navigation(c):
+        set_answer_pool([])  # Clear the pool synchronously!
+        return c + 1
+
+    button_prev = mo.ui.button(value=0, on_click=handle_navigation, label="◀ Previous")
+    button_next = mo.ui.button(value=0, on_click=handle_navigation, label="Next ▶")
     return button_next, button_prev
 
 
@@ -690,9 +703,11 @@ def _(
 
 
 @app.cell
-def _(progress, ui_difficulty):
+def _(df, row_number, ui_difficulty):
     def render_top_section():
-        return mo.hstack([ui_difficulty, progress], widths="equal")
+        return mo.hstack(
+            [ui_difficulty, render_progress(row_number, len(df))], widths="equal"
+        )
 
     return (render_top_section,)
 
