@@ -37,6 +37,7 @@ def _(render_main_ui):
 
 @app.cell
 def _(
+    app_theme_styles,
     current_sentence,
     render_footer,
     render_interaction_section,
@@ -47,24 +48,39 @@ def _(
         """Assembles the final application layout."""
 
         app_header = (
-            mo.md("# Schipper mag ik overvaren?")
+            mo.md(
+                """
+                <h1 style="margin:0; font-size:clamp(1.8rem, 3vw, 2.6rem);">
+                  <span style="color: var(--la-title);">Schipper mag ik overvaren?</span>
+                </h1>
+                """
+            )
             .center()
             .style(
                 {
-                    "padding-top": "1rem",
-                    "padding-bottom": "2rem",
+                    "padding-top": "1.25rem",
+                    "padding-bottom": "1.25rem",
                 }
             )
         )
 
-        mo_elems = [app_header, render_options_section()]
+        mo_elems = [app_theme_styles, app_header, render_options_section()]
         if not current_sentence:
             mo_elems.append(render_placeholder_element())
         else:
             mo_elems.append(render_top_section())
             mo_elems.append(render_interaction_section())
             mo_elems.append(render_footer())
-        return mo.vstack(mo_elems, gap=0)
+        return mo.vstack(mo_elems, gap=0).style(
+            {
+                "max-width": "1100px",
+                "margin": "0 auto",
+                "padding": "0.5rem 0.75rem 1rem 0.75rem",
+                "border-radius": "1rem",
+                "background": "var(--la-page-bg)",
+                "color": "var(--la-text)",
+            }
+        )
 
     return (render_main_ui,)
 
@@ -85,6 +101,35 @@ def _():
     # constants and state initiation
     """)
     return
+
+
+@app.cell
+def _():
+    app_theme_styles = mo.md(
+        """
+        <style>
+          :root {
+            --la-page-bg: #f4f6f8;
+            --la-card-bg: #ffffff;
+            --la-card-border: #dbe1e8;
+            --la-card-shadow: 0 8px 20px rgba(15, 23, 42, 0.05);
+            --la-text: #1f2937;
+            --la-title: #1f2937;
+            --la-button-border: #cbd5e1;
+          }
+          button {
+            border-radius: 9999px !important;
+            border-color: var(--la-button-border) !important;
+            transition: transform 0.12s ease, box-shadow 0.12s ease;
+          }
+          button:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 6px 14px rgba(15, 23, 42, 0.14);
+          }
+        </style>
+        """
+    )
+    return (app_theme_styles,)
 
 
 @app.cell
@@ -657,36 +702,48 @@ def render_placeholder_element():
 
 
 @app.function
+def render_stat_box(value: str, label: str, caption: str) -> mo.Html:
+    """Renders a full-width stat card with centered text."""
+    return mo.vstack(
+        [
+            mo.md(f"**{label}**").center(),
+            mo.md(f"### {value}").center(),
+            mo.md(f"*{caption}*").center(),
+        ],
+        gap=0.15,
+    ).style(
+        {
+            "width": "100%",
+            "padding": "0.85rem 0.7rem",
+            "border-radius": "0.75rem",
+            "background": "var(--la-card-bg)",
+            "border": "1px solid var(--la-card-border)",
+            "box-sizing": "border-box",
+            "text-align": "center",
+        }
+    )
+
+
+@app.function
 def render_difficulty_indicator(difficulty_int: int, difficulty_str: str) -> mo.Html:
-    """Renders difficulty as a compact stat card."""
-    return mo.stat(
+    """Renders difficulty as a full-width centered stat card."""
+    return render_stat_box(
         f"{difficulty_int}/10",
-        label="Difficulty",
-        caption=str(difficulty_str).capitalize(),
-        bordered=True,
-    ).center()
+        "Difficulty",
+        str(difficulty_str).capitalize(),
+    )
 
 
 @app.function
 def render_score(correct: int, tries: int) -> mo.Html:
-    """Renders the current session score."""
-    return mo.stat(
-        value=f"{correct}/{tries}",
-        label="Correct",
-        caption="Attempts",
-        bordered=True,
-    ).center()
+    """Renders the current session score as a full-width centered stat card."""
+    return render_stat_box(f"{correct}/{tries}", "Correct", "Attempts")
 
 
 @app.function
 def render_progress(current_idx: int, total_count: int) -> mo.Html:
-    """Renders the question progress indicator as a compact stat card."""
-    return mo.stat(
-        f"{current_idx + 1}/{total_count}",
-        label="Question",
-        caption="Progress",
-        bordered=True,
-    ).center()
+    """Renders question progress as a full-width centered stat card."""
+    return render_stat_box(f"{current_idx + 1}/{total_count}", "Question", "Progress")
 
 
 @app.function
@@ -768,17 +825,17 @@ def render_word_pool_container(content: mo.Html) -> mo.Html:
     """Renders the word pool inside a compact bordered container."""
     return mo.vstack([content], gap=0).style(
         {
-            "margin": "0.5rem",
-            "padding": "2rem 0.5rem",
-            "border": "1px solid #d1d5db",
-            "border-radius": "0.5rem",
-            "background": "transparent",
+            "margin": "0.5rem 0",
+            "padding": "1.25rem 0.75rem",
+            "border": "1px solid var(--la-card-border)",
+            "border-radius": "0.85rem",
+            "background": "var(--la-card-bg)",
             "overflow-y": "hidden",
             "box-sizing": "border-box",
             "width": "100%",
             "display": "flex",
             "justify-content": "center",
-            "box-shadow": "2px 2px 0 #e5e7eb",
+            "box-shadow": "var(--la-card-shadow)",
         }
     )
 
@@ -824,7 +881,15 @@ def _(
             wrap=True,
         )
 
-        return mo.vstack([instruction_text, options_row, mo.md("---")], gap=1)
+        return mo.vstack([instruction_text, options_row], gap=1).style(
+            {
+                "padding": "1rem",
+                "border-radius": "1rem",
+                "background": "var(--la-card-bg)",
+                "border": "1px solid var(--la-card-border)",
+                "box-shadow": "var(--la-card-shadow)",
+            }
+        )
 
     return (render_options_section,)
 
@@ -864,6 +929,14 @@ def _(current_sentence, df, get_score, row_number):
                 render_progress(row_number, len(df)),
             ],
             widths="equal",
+        ).style(
+            {
+                "padding": "1rem",
+                "border-radius": "1rem",
+                "background": "var(--la-card-bg)",
+                "border": "1px solid var(--la-card-border)",
+                "box-shadow": "var(--la-card-shadow)",
+            }
         )
 
     return (render_top_section,)
@@ -899,11 +972,27 @@ def _(
                 mo.md("---"),
                 render_word_pool_container(pool_chips_ui),
                 mo.hstack(
-                    [button_check_answer, button_reset, button_reveal], justify="center"
+                    [button_check_answer, button_reset, button_reveal],
+                    justify="center",
                 ),
                 reveal_text,
+                mo.hstack(
+                    [
+                        render_feedback(button_check_answer.value),
+                    ],
+                    justify="center",
+                ),
             ],
             gap=0.0,
+        ).style(
+            {
+                "padding": "1rem",
+                "margin-top": "0.75rem",
+                "border-radius": "1rem",
+                "background": "var(--la-card-bg)",
+                "border": "1px solid var(--la-card-border)",
+                "box-shadow": "var(--la-card-shadow)",
+            }
         )
         return interaction_section
 
@@ -911,19 +1000,21 @@ def _(
 
 
 @app.cell
-def _(button_check_answer, button_next, button_prev):
+def _(button_next, button_prev):
     def render_footer():
         return mo.vstack(
             [
-                mo.hstack(
-                    [
-                        render_feedback(button_check_answer.value),
-                    ],
-                    justify="center",
-                ),
-                mo.md("---"),
                 mo.hstack([button_prev, button_next]),
             ]
+        ).style(
+            {
+                "padding": "1rem",
+                "margin-top": "0.75rem",
+                "border-radius": "1rem",
+                "background": "var(--la-card-bg)",
+                "border": "1px solid var(--la-card-border)",
+                "box-shadow": "var(--la-card-shadow)",
+            }
         )
 
     return (render_footer,)
