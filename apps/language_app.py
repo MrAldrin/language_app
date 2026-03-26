@@ -332,7 +332,7 @@ def _(df, language_1, language_2, row_number):
 @app.cell
 def _(df, language_1, language_2, row_number, set_answer_pool):
     # This cell is needed for reactivity. when df or the other inputs are updated this runs.
-    new_sentence = get_sentence(df, row_number, language_1, language_2)
+    get_sentence(df, row_number, language_1, language_2)
     set_answer_pool([])
     return
 
