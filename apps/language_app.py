@@ -46,6 +46,7 @@ def _(
 ):
     def render_main_ui() -> mo.Html:
         """Assembles the final application layout."""
+    
         app_header = (
             mo.md("# Schipper mag ik overvaren?")
             .center()
@@ -57,24 +58,14 @@ def _(
             )
         )
 
+        mo_elems = [app_header,render_options_section()]
         if not current_sentence:
-            not_correct_use_ui = mo.vstack(
-                [app_header, render_options_section(), render_placeholder_element()],
-                gap=0.0,
-            )
-            return not_correct_use_ui
+            mo_elems.append(render_placeholder_element())
         else:
-            ui = mo.vstack(
-                [
-                    app_header,
-                    render_options_section(),
-                    render_top_section(),
-                    render_interaction_section(),
-                    render_footer(),
-                ],
-                gap=0.0,
-            )
-            return ui
+            mo_elems.append(render_top_section())
+            mo_elems.append(render_interaction_section())
+            mo_elems.append(render_footer())
+        return mo.vstack(mo_elems,gap=0)
 
     return (render_main_ui,)
 
@@ -623,6 +614,7 @@ def _(
                 dropdown_difficulty,
             ],
             justify="space-between",
+            wrap=True
         )
 
         return mo.vstack([instruction_text, options_row, mo.md("---")], gap=1)
