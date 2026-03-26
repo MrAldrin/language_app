@@ -15,10 +15,13 @@
       {
         "position": [
           1,
-          1,
+          0,
           58,
           89
         ]
+      },
+      {
+        "position": null
       },
       {
         "position": null

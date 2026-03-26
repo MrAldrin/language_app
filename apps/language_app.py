@@ -156,7 +156,7 @@ def _(
 def _(df, row_number):
     current_sentence = get_sentence(df, row_number)
     button_reveal = mo.ui.button(
-        label="👀 Reveal Answer", value=False, on_click=lambda _: True
+        label="Reveal Answer", value=False, on_click=lambda _: True
     )
     return button_reveal, current_sentence
 
@@ -318,74 +318,38 @@ def _():
 
 @app.cell
 def _():
-    def custom_box(text: str, border_color: str) -> mo.Html:
-        return mo.md(text).style(
-            {
-                "margin": "0",
-                "padding": "0.35rem 0.55rem",
-                "border": f"1px solid {border_color}",
-                "border-radius": "0.5rem",
-                "line-height": "1.2",
-                "background": "color-mix(in srgb, white 90%, #e5e7eb 10%)",
-                "height": "100%",
-                "box-sizing": "border-box",
-            }
-        )
-
-
-    custom_boxes = mo.hstack(
-        [
-            custom_box("Difficulty: 4/10", "#3b82f6"),
-            custom_box(
-                "Incorrect, continue or try again right away!",
-                "#f59e0b",
-            ),
-        ],
-        widths="equal",
+    test_words = [
+        "jeg",
+        "vil",
+        "gjerne",
+        "bestille",
+        "to",
+        "store",
+        "kaffer",
+        "uten",
+        "sukker",
+        "takk",
+    ]
+    pool_preview = mo.hstack(
+        [mo.ui.button(label=w, kind="neutral") for w in test_words],
+        justify="center",
+        gap=0.4,
+        wrap=True,
     )
-
-    stat_boxes = mo.hstack(
-        [
-            mo.stat("4/10", label="Difficulty", caption="Easy", bordered=True),
-            mo.stat(
-                "Incorrect",
-                label="Feedback",
-                caption="Continue or try again",
-                direction="decrease",
-                bordered=True,
-            ),
-        ],
-        widths="equal",
-    )
-
-    success_callout = mo.md("Correct! Continue to the next question.").callout(
-        kind="success"
-    )
-
-    neutral_callout = mo.md("Press the button to check your answer").callout(kind="info")
-    neutral_custom = neutral_chip("Press the button to check your answer")
-
-    warn_callout = mo.md("False, continue or try again right away!").callout(kind="warn")
-    warn_custom = warn_chip("False, continue or try again right away!")
-
-    success_custom = success_chip("Correct! Continue to the next question.")
-    success_callout_long = mo.md(
-        "Correct! Great job. Continue to the next question and keep the same pace."
-    ).callout(kind="success")
-
+    default_word_pool_box = mo.callout(pool_preview, kind="neutral")
+    custom_word_pool_box = render_word_pool_container(pool_preview)
 
     mo.vstack(
         [
-            mo.md("Compact custom boxes"),
-            custom_boxes,
-            mo.md("`mo.stat` comparison"),
-            stat_boxes,
-            mo.md("Neutral feedback comparison"),
-            mo.hstack([neutral_callout, neutral_custom], widths="equal"),
-            mo.md("False answer feedback comparison"),
-            mo.hstack([warn_callout, warn_custom], widths="equal"),
-            mo.md("Success feedback comparison"),
-            mo.hstack([success_callout, success_custom], widths="equal"),
+            mo.vstack(
+                [
+                    mo.md("Word pool container comparison"),
+                    mo.hstack(
+                        [default_word_pool_box, custom_word_pool_box], widths="equal"
+                    ),
+                ],
+                gap=0.15,
+            ),
         ],
         gap=0.5,
     )
@@ -623,23 +587,27 @@ def feedback_chip(
     text: str, *, border: str, background: str, foreground: str
 ) -> mo.Html:
     """Creates a compact pill-like feedback chip."""
-    return mo.md(text).center().style(
-        {
-            "display": "inline-flex",
-            "justify-content": "center",
-            "align-items": "center",
-            "margin": "0",
-            "padding": "0.2rem 0.6rem",
-            "border": f"1px solid {border}",
-            "border-radius": "9999px",
-            "background": background,
-            "color": foreground,
-            "font-weight": "500",
-            "line-height": "1.15",
-            "box-sizing": "border-box",
-            "width": "min(100%, 32rem)",
-            "text-align": "center",
-        }
+    return (
+        mo.md(text)
+        .center()
+        .style(
+            {
+                "display": "inline-flex",
+                "justify-content": "center",
+                "align-items": "center",
+                "margin": "0",
+                "padding": "0.2rem 0.6rem",
+                "border": f"1px solid {border}",
+                "border-radius": "9999px",
+                "background": background,
+                "color": foreground,
+                "font-weight": "500",
+                "line-height": "1.15",
+                "box-sizing": "border-box",
+                "width": "min(100%, 32rem)",
+                "text-align": "center",
+            }
+        )
     )
 
 
@@ -804,6 +772,26 @@ def render_word_pool(
 
 
 @app.function
+def render_word_pool_container(content: mo.Html) -> mo.Html:
+    """Renders the word pool inside a compact bordered container."""
+    return mo.vstack([content], gap=0).style(
+        {
+            "margin": "0.5rem",
+            "padding": "2rem 0.5rem",
+            "border": "1px solid #d1d5db",
+            "border-radius": "0.5rem",
+            "background": "transparent",
+            "overflow-y": "hidden",
+            "box-sizing": "border-box",
+            "width": "100%",
+            "display": "flex",
+            "justify-content": "center",
+            "box-shadow": "2px 2px 0 #e5e7eb",
+        }
+    )
+
+
+@app.function
 def render_feedback(check_value: bool | None) -> mo.Html:
     """Renders feedback based on the check result."""
     if check_value is None:
@@ -917,7 +905,7 @@ def _(
                 render_question_text(current_sentence["source"]),
                 ui_answer,
                 mo.md("---"),
-                mo.vstack([mo.callout(pool_chips_ui, kind="neutral")]),
+                render_word_pool_container(pool_chips_ui),
                 mo.hstack(
                     [button_check_answer, button_reset, button_reveal], justify="center"
                 ),
@@ -939,7 +927,7 @@ def _(button_check_answer, button_next, button_prev):
                     [
                         render_feedback(button_check_answer.value),
                     ],
-                    justify="center"
+                    justify="center",
                 ),
                 mo.md("---"),
                 mo.hstack([button_prev, button_next]),
