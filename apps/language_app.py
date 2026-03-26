@@ -290,24 +290,9 @@ def _(
 
 
 @app.cell
-def _(
-    LANG_MAP,
-    df,
-    dropdown_translation_direction,
-    language_1,
-    language_2,
-    row_number,
-    set_answer_pool,
-):
-    # This cell is needed for reactivity. when df or the other inputs are updated this runs. Resetting the answer pool
-    get_sentence(
-        df,
-        row_number,
-        dropdown_translation_direction.value,
-        language_1,
-        language_2,
-        LANG_MAP,
-    )
+def _(current_sentence, set_answer_pool):
+    # Reset answer selection whenever sentence identity updates.
+    current_sentence
     set_answer_pool([])
     return
 
