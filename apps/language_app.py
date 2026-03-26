@@ -2,7 +2,6 @@
 # requires-python = ">=3.12"
 # dependencies = [
 #     "marimo",
-#     "numpy",
 #     "polars",
 # ]
 # ///
@@ -14,7 +13,6 @@ app = marimo.App(width="full", layout_file="layouts/language_app.grid.json")
 
 with app.setup:
     import marimo as mo
-    import random
     from typing import Callable, Literal
     import json
     import polars as pl
@@ -166,7 +164,7 @@ def _(LANG_MAP, set_answer_pool):
 
 @app.cell
 def _(LANG_MAP, dropdown_language_pairs, set_answer_pool):
-    if dropdown_language_pairs.value == None:
+    if dropdown_language_pairs.value is None:
         directions = ["Not applicable"]
         language_1, language_2 = "", ""
     else:
@@ -190,7 +188,7 @@ def _(LANG_MAP, dropdown_language_pairs, set_answer_pool):
 
 @app.cell
 def _(df_raw, dropdown_language_pairs, set_answer_pool):
-    if dropdown_language_pairs.value == None:
+    if dropdown_language_pairs.value is None:
         dropdown_difficulty = mo.ui.multiselect(
             options=["Not applicable"], value=["Not applicable"], label="Difficulty"
         )
