@@ -291,30 +291,23 @@ def _(button_next, button_prev, df):
 
 @app.cell
 def _(current_sentence, get_answer_pool, pool_words, set_score):
+    def handle_check(_):
+        is_correct = check_answer(
+            [pool_words[i] for i in get_answer_pool()],
+            current_sentence["target"],
+            current_sentence.get("accepted", []),
+        )
+        set_score(
+            lambda s: {
+                "tries": s["tries"] + 1,
+                "correct": s["correct"] + (1 if is_correct else 0),
+            }
+        )
+        return is_correct
+
     button_check_answer = mo.ui.button(
         value=None,
-        on_click=lambda _: (
-            set_score(
-                lambda s: {
-                    "tries": s["tries"] + 1,
-                    "correct": s["correct"]
-                    + (
-                        1
-                        if check_answer(
-                            [pool_words[i] for i in get_answer_pool()],
-                            current_sentence["target"],
-                            current_sentence.get("accepted", []),
-                        )
-                        else 0
-                    ),
-                }
-            )
-            or check_answer(
-                [pool_words[i] for i in get_answer_pool()],
-                current_sentence["target"],
-                current_sentence.get("accepted", []),
-            )
-        ),
+        on_click=handle_check,
         label="Check answer",
     )
     return (button_check_answer,)
