@@ -120,14 +120,6 @@ def _(current_sentence, get_answer_pool, move_word, pool_words):
     return ui_answer, ui_word_alternatives
 
 
-@app.cell
-def _(button_check_answer, get_score):
-    feedback = render_feedback(button_check_answer.value)
-    _stats = get_score()
-    score = render_score(_stats["correct"], _stats["tries"])
-    return feedback, score
-
-
 @app.cell(hide_code=True)
 def _():
     mo.md(r"""
@@ -706,11 +698,18 @@ def _(progress, ui_difficulty):
 
 
 @app.cell
-def _(button_next, button_prev, feedback, score):
+def _(button_check_answer, button_next, button_prev, get_score):
     def render_footer():
+        stats = get_score()
         return mo.vstack(
             [
-                mo.hstack([feedback, score], widths="equal"),
+                mo.hstack(
+                    [
+                        render_feedback(button_check_answer.value),
+                        render_score(stats["correct"], stats["tries"]),
+                    ],
+                    widths="equal",
+                ),
                 mo.md("---"),
                 mo.hstack([button_prev, button_next]),
             ]
