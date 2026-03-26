@@ -103,17 +103,7 @@ def _():
 @app.cell
 def _(dropdown_language_pairs):
     pair = dropdown_language_pairs.value
-
-    if "pyodide" in sys.modules:
-        from pyodide.http import open_url
-
-        url = f"../public/{pair}/questions.json"
-        data = json.loads(open_url(url).read())
-    else:
-        file_path = mo.notebook_location() / "public" / pair / "questions.json"
-        with open(file_path, "r", encoding="utf-8") as f:
-            data = json.load(f)
-
+    data = load_json_data(pair)
     df_raw = load_curriculum(data)
     return (df_raw,)
 
@@ -137,20 +127,10 @@ def _():
 
 
 @app.cell
-def _(
-    LANG_MAP,
-    df_raw,
-    dropdown_difficulty,
-    dropdown_translation_direction,
-    language_1,
-):
-    mo.stop(dropdown_translation_direction.value == "None")
+def _(df_raw, dropdown_difficulty):
     df = prepare_curriculum(
         df_raw,
         dropdown_difficulty.value,
-        dropdown_translation_direction.value,
-        language_1,
-        LANG_MAP,
     )
     return (df,)
 
@@ -239,6 +219,7 @@ def _(set_answer_pool):
         set_answer_pool([])  # Clear the pool synchronously!
         return c + 1
 
+
     button_prev = mo.ui.button(value=0, on_click=handle_navigation, label="◀ Previous")
     button_next = mo.ui.button(value=0, on_click=handle_navigation, label="Next ▶")
     return button_next, button_prev
@@ -273,6 +254,7 @@ def _(
         )
         return is_correct
 
+
     button_check_answer = mo.ui.button(
         value=None,
         on_click=handle_check,
@@ -287,8 +269,22 @@ def _(
 
 
 @app.cell
-def _(df, language_1, language_2, row_number):
-    current_sentence = get_sentence(df, row_number, language_1, language_2)
+def _(
+    LANG_MAP,
+    df,
+    dropdown_translation_direction,
+    language_1,
+    language_2,
+    row_number,
+):
+    current_sentence = get_sentence(
+        df,
+        row_number,
+        dropdown_translation_direction.value,
+        language_1,
+        language_2,
+        LANG_MAP,
+    )
     button_reveal = mo.ui.button(
         label="👀 Reveal Answer", value=False, on_click=lambda _: True
     )
@@ -296,9 +292,24 @@ def _(df, language_1, language_2, row_number):
 
 
 @app.cell
-def _(df, language_1, language_2, row_number, set_answer_pool):
+def _(
+    LANG_MAP,
+    df,
+    dropdown_translation_direction,
+    language_1,
+    language_2,
+    row_number,
+    set_answer_pool,
+):
     # This cell is needed for reactivity. when df or the other inputs are updated this runs. Resetting the answer pool
-    get_sentence(df, row_number, language_1, language_2)
+    get_sentence(
+        df,
+        row_number,
+        dropdown_translation_direction.value,
+        language_1,
+        language_2,
+        LANG_MAP,
+    )
     set_answer_pool([])
     return
 
@@ -340,6 +351,20 @@ def _():
 
 
 @app.function
+def load_json_data(pair: str) -> dict:
+    """Loads curriculum JSON data from Pyodide or local filesystem."""
+    if "pyodide" in sys.modules:
+        from pyodide.http import open_url
+
+        url = f"../public/{pair}/questions.json"
+        return json.loads(open_url(url).read())
+    else:
+        file_path = mo.notebook_location() / "public" / pair / "questions.json"
+        with open(file_path, "r", encoding="utf-8") as f:
+            return json.load(f)
+
+
+@app.function
 def load_curriculum(data: list[dict]) -> pl.DataFrame:
     """Loads the curriculum from parsed JSON data into a Polars DataFrame."""
     return pl.DataFrame(data).with_columns(
@@ -356,11 +381,8 @@ def load_curriculum(data: list[dict]) -> pl.DataFrame:
 def prepare_curriculum(
     df: pl.DataFrame,
     difficulty_list: list[str],
-    direction: str,
-    language_1: str,
-    lang_map: dict,
 ) -> pl.DataFrame:
-    """Performs filtering, direction assignment, and shuffling in one pipeline."""
+    """Performs filtering and shuffling in one pipeline."""
     if df.height == 0:
         return df
 
@@ -370,31 +392,34 @@ def prepare_curriculum(
     if df.height == 0:
         return df
 
-    # 2. Assign translation direction
-    if direction == "Both Directions":
-        # Use random choice for each row
-        df = df.with_columns(
-            pl.Series(
-                "is_l1_source",
-                [random.choice([True, False]) for _ in range(len(df))],
-            )
-        )
-    else:
-        is_l1_source = direction.startswith(lang_map.get(language_1, language_1))
-        df = df.with_columns(pl.lit(is_l1_source).alias("is_l1_source"))
-
-    # 3. Shuffle
+    # 2. Shuffle
     return df.sample(fraction=1.0, shuffle=True)
 
 
 @app.function
-def get_sentence(df: pl.DataFrame, row_number: int, l1: str, l2: str) -> dict | None:
+def get_sentence(
+    df: pl.DataFrame,
+    row_number: int,
+    direction: str,
+    l1: str,
+    l2: str,
+    lang_map: dict,
+) -> dict | None:
     if df.height == 0:
         return None
     valid_row = max(0, min(row_number, df.height - 1))
     row = df.row(valid_row, named=True)
 
     translations = row["translations"]
+
+    # Determine translation direction
+    if direction == "Both Directions":
+        # Use a stable seed based on the source text to keep direction consistent for this row
+        # using the primary text of l1 as a seed
+        seed_text = translations[l1]["primary"]
+        is_l1_source = hash(seed_text) % 2 == 0
+    else:
+        is_l1_source = direction.startswith(lang_map.get(l1, l1))
 
     def get_word_pool(lang_data):
         pool = lang_data.get("word_pool")
@@ -406,7 +431,7 @@ def get_sentence(df: pl.DataFrame, row_number: int, l1: str, l2: str) -> dict | 
         words.extend(lang_data.get("distraction_pool", []))
         return list(set(words))
 
-    if row["is_l1_source"]:
+    if is_l1_source:
         return {
             "difficulty": row["difficulty"],
             "difficulty_str": row["difficulty_str"],
