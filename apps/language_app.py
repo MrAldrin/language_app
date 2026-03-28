@@ -43,6 +43,8 @@ def _(
     render_footer,
     render_interaction_section,
     render_options_section,
+    render_summary_section,
+    show_summary_page,
 ):
     def render_main_ui() -> mo.Html:
         """Assembles the final application layout."""
@@ -61,6 +63,8 @@ def _(
         mo_elems = [app_theme_styles, app_header]
         if not in_question_view:
             mo_elems.append(render_options_section())
+        elif show_summary_page:
+            mo_elems.append(render_summary_section())
         else:
             if current_sentence:
                 mo_elems.append(render_interaction_section())
@@ -238,18 +242,34 @@ def _(df, row_number, start_session_id):
 
 
 @app.cell
-def _(current_sentence, set_answer_pool):
+def _(current_sentence, set_answer_pool, set_session_score):
     # Reset answer selection whenever sentence identity updates.
     pool_words = sort_words(words=current_sentence["words"]) if current_sentence else []
     set_answer_pool([])
+    # Reset feedback chip when moving to a new sentence.
+    set_session_score(lambda score: {**score, "last_result": None})
     return (pool_words,)
 
 
 @app.cell
 def _(button_next, button_prev, df):
     netto_count = button_next.value - button_prev.value
-    row_number = netto_count % len(df) if len(df) > 0 else 0
+    if len(df) == 0:
+        row_number = 0
+    else:
+        row_number = max(0, min(netto_count, len(df) - 1))
     return (row_number,)
+
+
+@app.cell
+def _(button_next, df, in_question_view, row_number):
+    total_questions = len(df)
+    last_question_index = max(0, total_questions - 1)
+    is_last_question = total_questions > 0 and row_number >= last_question_index
+    show_summary_page = (
+        in_question_view and total_questions > 0 and button_next.value > last_question_index
+    )
+    return show_summary_page, total_questions
 
 
 @app.cell(hide_code=True)
@@ -344,14 +364,25 @@ def _():
         on_click=bump,
         label="↩ Back to settings",
     )
-    mo.hstack([button_start_questions, button_back_to_settings])
-    return button_back_to_settings, button_start_questions
+    button_restart_session = mo.ui.button(
+        value=0,
+        on_click=bump,
+        label="Start new session",
+    )
+    mo.hstack(
+        [button_start_questions, button_restart_session, button_back_to_settings]
+    )
+    return (
+        button_back_to_settings,
+        button_restart_session,
+        button_start_questions,
+    )
 
 
 @app.cell
-def _(button_back_to_settings, button_start_questions):
-    in_question_view = button_start_questions.value > button_back_to_settings.value
-    start_session_id = button_start_questions.value
+def _(button_back_to_settings, button_restart_session, button_start_questions):
+    start_session_id = button_start_questions.value + button_restart_session.value
+    in_question_view = start_session_id > button_back_to_settings.value
     return in_question_view, start_session_id
 
 
@@ -1157,6 +1188,68 @@ def _(button_back_to_settings):
         )
 
     return (render_footer,)
+
+
+@app.cell
+def _(
+    button_back_to_settings,
+    button_restart_session,
+    get_session_state,
+    total_questions,
+):
+    def render_summary_section() -> mo.Html:
+        stats = get_session_state()["score"]
+        attempts = stats["tries"]
+        correct = stats["correct"]
+        incorrect = max(0, attempts - correct)
+        accuracy = f"{(correct / attempts * 100):.0f}%" if attempts > 0 else "0%"
+
+        summary_stats = mo.hstack(
+            [
+                render_stat_box(
+                    value=str(total_questions),
+                    label="Total questions",
+                    caption="Session size",
+                ),
+                render_stat_box(
+                    value=str(attempts),
+                    label="Attempts",
+                    caption="Answers checked",
+                ),
+                render_stat_box(
+                    value=str(correct),
+                    label="Correct",
+                    caption="Correct answers",
+                ),
+                render_stat_box(
+                    value=str(incorrect),
+                    label="Incorrect",
+                    caption="Needs review",
+                ),
+                render_stat_box(
+                    value=accuracy,
+                    label="Accuracy",
+                    caption="Session result",
+                ),
+            ],
+            widths="equal",
+        )
+
+        actions = mo.hstack(
+            [button_restart_session, button_back_to_settings],
+            justify="center",
+        )
+
+        return mo.vstack(
+            [
+                mo.md("## Session complete").center(),
+                summary_stats,
+                actions,
+            ],
+            gap=0.8,
+        ).style(style_card(accent_edge="var(--la-accent-secondary-soft)"))
+
+    return (render_summary_section,)
 
 
 @app.cell(hide_code=True)
