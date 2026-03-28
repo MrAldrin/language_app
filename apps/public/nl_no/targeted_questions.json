@@ -954,7 +954,8 @@
           "ons",
           "hen",
           "haar",
-          "hem"
+          "hem",
+          "zichzelf"
         ]
       },
       "no": {
@@ -964,12 +965,12 @@
         ],
         "word_pool": [
           "seg",
+          "selv",
           "meg",
           "deg",
           "oss",
           "dere",
-          "dem",
-          "selv"
+          "dem"
         ]
       }
     }
@@ -1463,7 +1464,7 @@
           "niets",
           "geen",
           "nooit",
-          "geen een",
+          "een",
           "men"
         ]
       },
@@ -1543,7 +1544,8 @@
           "geen",
           "nooit",
           "wat",
-          "dat"
+          "dat",
+          "niks"
         ]
       },
       "no": {
@@ -1674,11 +1676,11 @@
         ],
         "word_pool": [
           "alle",
+          "sammen",
           "alt",
           "noen",
           "hver",
           "hvert",
-          "sammen",
           "vi"
         ]
       }
@@ -1706,7 +1708,8 @@
           "meerdere",
           "meer",
           "vaak",
-          "zo"
+          "zo",
+          "vele"
         ]
       },
       "no": {
@@ -1721,7 +1724,8 @@
           "flere",
           "mer",
           "ofte",
-          "så"
+          "så",
+          "mye"
         ]
       }
     }
@@ -1761,7 +1765,8 @@
           "ingen",
           "noe",
           "nesten",
-          "litt"
+          "litt",
+          "lite"
         ]
       }
     }
@@ -2073,9 +2078,9 @@
         ],
         "word_pool": [
           "wiens",
-          "wie",
           "wier",
-          "van wie",
+          "wie",
+          "van",
           "waar",
           "welke",
           "hem"
@@ -2093,7 +2098,8 @@
           "hvilken",
           "hans",
           "hennes",
-          "deres"
+          "deres",
+          "hvilkens"
         ]
       }
     }
@@ -2132,8 +2138,8 @@
         ],
         "word_pool": [
           "alle",
-          "alt",
           "sammen",
+          "alt",
           "ledd",
           "noen",
           "vi",
@@ -2214,10 +2220,10 @@
         ],
         "word_pool": [
           "Dem",
+          "dere",
           "Deres",
           "deg",
           "meg",
-          " dere",
           "ham",
           "henne"
         ]
@@ -2254,11 +2260,12 @@
         ],
         "word_pool": [
           "et",
-          "noen",
+          "eller",
+          "annet",
           "sted",
+          "noen",
           "steder",
           "noensteds",
-          "noen",
           "noe"
         ]
       }
@@ -2295,12 +2302,13 @@
         ],
         "word_pool": [
           "ingen",
-          "noen",
           "steder",
+          "ikke",
+          "noe",
           "sted",
+          "noen",
           "ingensteds",
-          "aldri",
-          "ikke"
+          "aldri"
         ]
       }
     }
