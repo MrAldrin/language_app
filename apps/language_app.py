@@ -202,8 +202,12 @@ def _(
 @app.cell
 def _(df, row_number):
     current_sentence = get_sentence(df=df, row_number=row_number)
+
+    def toggle_reveal(current: bool) -> bool:
+        return not current
+
     button_reveal = mo.ui.button(
-        label="Reveal Answer", value=False, on_click=lambda _: True
+        label="Reveal Answer", value=False, on_click=toggle_reveal
     )
     return button_reveal, current_sentence
 
