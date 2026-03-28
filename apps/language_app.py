@@ -71,9 +71,11 @@ def _(
 @app.cell
 def _(get_answer_pool, move_word, pool_words):
     answer_indices = get_answer_pool()
-    ui_answer = render_answer_chips(pool_words, answer_indices, on_click=move_word)
+    ui_answer = render_answer_chips(
+        words=pool_words, indices=answer_indices, on_click=move_word
+    )
     pool_chips_ui = render_word_pool(
-        pool_words, on_click=move_word, disabled_indices=answer_indices
+        words=pool_words, on_click=move_word, disabled_indices=answer_indices
     )
     return pool_chips_ui, ui_answer
 
@@ -167,8 +169,10 @@ def _():
 @app.cell
 def _(dropdown_language_pairs, language_1, language_2):
     _read_json_data = load_json_data(pair=dropdown_language_pairs.value)
-    df_raw = load_curriculum(_read_json_data)
-    df_canonical = transform_to_canonical(df_raw, language_1, language_2)
+    df_raw = load_curriculum(data=_read_json_data)
+    df_canonical = transform_to_canonical(
+        df=df_raw, language_1=language_1, language_2=language_2
+    )
     return df_canonical, df_raw
 
 
@@ -182,22 +186,22 @@ def _(
     language_2,
 ):
     direction_mode = resolve_direction_mode(
-        dropdown_translation_direction.value,
-        language_1,
-        language_2,
-        LANG_MAP,
+        selected_direction=dropdown_translation_direction.value,
+        language_1=language_1,
+        language_2=language_2,
+        lang_map=LANG_MAP,
     )
     df = prepare_curriculum(
-        df_canonical,
-        dropdown_difficulty.value,
-        direction_mode,
+        df=df_canonical,
+        difficulty_list=dropdown_difficulty.value,
+        direction_mode=direction_mode,
     )
     return (df,)
 
 
 @app.cell
 def _(df, row_number):
-    current_sentence = get_sentence(df, row_number)
+    current_sentence = get_sentence(df=df, row_number=row_number)
     button_reveal = mo.ui.button(
         label="Reveal Answer", value=False, on_click=lambda _: True
     )
@@ -207,7 +211,9 @@ def _(df, row_number):
 @app.cell
 def _(current_sentence, set_answer_pool):
     # Reset answer selection whenever sentence identity updates.
-    pool_words = sort_words(current_sentence["words"]) if current_sentence else []
+    pool_words = (
+        sort_words(words=current_sentence["words"]) if current_sentence else []
+    )
     set_answer_pool([])
     return (pool_words,)
 
@@ -317,9 +323,9 @@ def _(
 ):
     def handle_check(_: Any) -> bool:
         is_correct = check_answer(
-            [pool_words[i] for i in get_answer_pool()],
-            current_sentence["target"],
-            current_sentence.get("accepted", []),
+            user_answer=[pool_words[i] for i in get_answer_pool()],
+            target=current_sentence["target"],
+            accepted=current_sentence.get("accepted", []),
         )
         set_score(
             lambda s: {
@@ -372,7 +378,7 @@ def _():
         wrap=True,
     )
     default_word_pool_box = mo.callout(pool_preview, kind="neutral")
-    custom_word_pool_box = render_word_pool_container(pool_preview)
+    custom_word_pool_box = render_word_pool_container(content=pool_preview)
 
     mo.vstack(
         [
@@ -576,8 +582,8 @@ def transform_to_canonical(
                 "text_l2": lang_2_data.get("primary", ""),
                 "accepted_l1": lang_1_data.get("accepted", []),
                 "accepted_l2": lang_2_data.get("accepted", []),
-                "word_pool_l1": make_word_pool(lang_1_data),
-                "word_pool_l2": make_word_pool(lang_2_data),
+                "word_pool_l1": make_word_pool(lang_data=lang_1_data),
+                "word_pool_l2": make_word_pool(lang_data=lang_2_data),
             }
         )
 
@@ -605,9 +611,9 @@ def normalize_text(text: str) -> str:
 @app.function
 def check_answer(user_answer: list[str], target: str, accepted: list[str]) -> bool:
     """Checks if the assembled words match the target sentence or accepted alternatives."""
-    user_str = normalize_text(" ".join(user_answer))
-    target_str = normalize_text(target)
-    accepted_strs = [normalize_text(a) for a in (accepted or [])]
+    user_str = normalize_text(text=" ".join(user_answer))
+    target_str = normalize_text(text=target)
+    accepted_strs = [normalize_text(text=a) for a in (accepted or [])]
 
     return user_str == target_str or user_str in accepted_strs
 
@@ -708,7 +714,7 @@ def feedback_chip(
 @app.function
 def success_chip(text: str) -> mo.Html:
     return feedback_chip(
-        text,
+        text=text,
         border="var(--la-success-border)",
         background="var(--la-success-bg)",
         foreground="var(--la-success-fg)",
@@ -718,7 +724,7 @@ def success_chip(text: str) -> mo.Html:
 @app.function
 def warn_chip(text: str) -> mo.Html:
     return feedback_chip(
-        text,
+        text=text,
         border="var(--la-warning-border)",
         background="var(--la-warning-bg)",
         foreground="var(--la-warning-fg)",
@@ -728,7 +734,7 @@ def warn_chip(text: str) -> mo.Html:
 @app.function
 def neutral_chip(text: str) -> mo.Html:
     return feedback_chip(
-        text,
+        text=text,
         border="var(--la-neutral-border)",
         background="var(--la-neutral-bg)",
         foreground="var(--la-neutral-fg)",
@@ -775,22 +781,28 @@ def render_stat_box(value: str, label: str, caption: str) -> mo.Html:
 def render_difficulty_indicator(difficulty_int: int, difficulty_str: str) -> mo.Html:
     """Renders difficulty as a full-width centered stat card."""
     return render_stat_box(
-        f"{difficulty_int}/10",
-        "Difficulty",
-        str(difficulty_str).capitalize(),
+        value=f"{difficulty_int}/10",
+        label="Difficulty",
+        caption=str(difficulty_str).capitalize(),
     )
 
 
 @app.function
 def render_score(correct: int, tries: int) -> mo.Html:
     """Renders the current session score as a full-width centered stat card."""
-    return render_stat_box(f"{correct}/{tries}", "Correct", "Attempts")
+    return render_stat_box(
+        value=f"{correct}/{tries}", label="Correct", caption="Attempts"
+    )
 
 
 @app.function
 def render_progress(current_idx: int, total_count: int) -> mo.Html:
     """Renders question progress as a full-width centered stat card."""
-    return render_stat_box(f"{current_idx + 1}/{total_count}", "Question", "Progress")
+    return render_stat_box(
+        value=f"{current_idx + 1}/{total_count}",
+        label="Question",
+        caption="Progress",
+    )
 
 
 @app.function
@@ -846,7 +858,8 @@ def render_answer_chips(
         )
 
     chips = [
-        make_word_chip(words[idx], idx, on_click, is_pool=False) for idx in indices
+        make_word_chip(word=words[idx], idx=idx, on_click=on_click, is_pool=False)
+        for idx in indices
     ]
     return mo.hstack(chips, justify="center", gap=1, wrap=True)
 
@@ -865,7 +878,11 @@ def render_word_pool(
     disabled = disabled_indices or []
     chips = [
         make_word_chip(
-            words[idx], idx, on_click, is_pool=True, disabled=idx in disabled
+            word=words[idx],
+            idx=idx,
+            on_click=on_click,
+            is_pool=True,
+            disabled=idx in disabled,
         )
         for idx in range(len(words))
     ]
@@ -882,11 +899,11 @@ def render_word_pool_container(content: mo.Html) -> mo.Html:
 def render_feedback(check_value: bool | None) -> mo.Html:
     """Renders feedback based on the check result."""
     if check_value is None:
-        return neutral_chip("Press the button to check your answer")
+        return neutral_chip(text="Press the button to check your answer")
     elif check_value:
-        return success_chip("Correct! Continue to the next question.")
+        return success_chip(text="Correct! Continue to the next question.")
     else:
-        return warn_chip("False, continue or try again right away!")
+        return warn_chip(text="False, continue or try again right away!")
 
 
 @app.cell(hide_code=True)
@@ -935,10 +952,11 @@ def _(current_sentence, df, get_score, row_number):
         return mo.hstack(
             [
                 render_difficulty_indicator(
-                    current_sentence["difficulty"], current_sentence["difficulty_str"]
+                    difficulty_int=current_sentence["difficulty"],
+                    difficulty_str=current_sentence["difficulty_str"],
                 ),
-                render_score(stats["correct"], stats["tries"]),
-                render_progress(row_number, len(df)),
+                render_score(correct=stats["correct"], tries=stats["tries"]),
+                render_progress(current_idx=row_number, total_count=len(df)),
             ],
             widths="equal",
         )
@@ -984,9 +1002,9 @@ def _(
         interaction_section = mo.vstack(
             [
                 render_stats(),
-                render_question_area(current_sentence["source"]),
+                render_question_area(source=current_sentence["source"]),
                 render_answer_area(ui_answer=ui_answer),
-                render_word_pool_container(pool_chips_ui),
+                render_word_pool_container(content=pool_chips_ui),
                 render_answer_button_set(),
                 # mo.hstack(
                 #     [button_check_answer, button_reset, button_reveal],
@@ -995,7 +1013,7 @@ def _(
                 reveal_text,
                 mo.hstack(
                     [
-                        render_feedback(button_check_answer.value),
+                        render_feedback(check_value=button_check_answer.value),
                     ],
                     justify="center",
                 ),
