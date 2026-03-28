@@ -13,7 +13,7 @@ app = marimo.App(width="full", layout_file="layouts/language_app.grid.json")
 
 with app.setup:
     import marimo as mo
-    from typing import Callable
+    from typing import Any, Callable
     import json
     import polars as pl
     import random
@@ -297,7 +297,7 @@ def _():
 
 @app.cell
 def _(set_answer_pool):
-    def handle_navigation(c):
+    def handle_navigation(c: int) -> int:
         set_answer_pool([])  # Clear the pool synchronously!
         return c + 1
 
@@ -315,7 +315,7 @@ def _(
     set_answer_pool,
     set_score,
 ):
-    def handle_check(_):
+    def handle_check(_: Any) -> bool:
         is_correct = check_answer(
             [pool_words[i] for i in get_answer_pool()],
             current_sentence["target"],
@@ -420,7 +420,7 @@ def _():
 
 
 @app.function
-def load_json_data(pair: str) -> dict:
+def load_json_data(pair: str) -> list[dict[str, Any]]:
     """Loads curriculum JSON data from Pyodide or local filesystem."""
     if "pyodide" in sys.modules:
         from pyodide.http import open_url
@@ -434,7 +434,7 @@ def load_json_data(pair: str) -> dict:
 
 
 @app.function
-def load_curriculum(data: list[dict]) -> pl.DataFrame:
+def load_curriculum(data: list[dict[str, Any]]) -> pl.DataFrame:
     """Loads the curriculum from parsed JSON data into a Polars DataFrame."""
     return pl.DataFrame(data).with_columns(
         pl.when(pl.col("difficulty") <= 3)
@@ -531,7 +531,7 @@ def prepare_curriculum(
 
 
 @app.function
-def make_word_pool(lang_data: dict) -> list[str]:
+def make_word_pool(lang_data: dict[str, Any]) -> list[str]:
     pool = lang_data.get("word_pool")
     if pool is not None:
         return pool
@@ -585,7 +585,7 @@ def transform_to_canonical(
 
 
 @app.function
-def get_sentence(df: pl.DataFrame, row_number: int) -> dict | None:
+def get_sentence(df: pl.DataFrame, row_number: int) -> dict[str, Any] | None:
     if df.height == 0:
         return None
 
@@ -744,7 +744,7 @@ def _():
 
 
 @app.function
-def render_placeholder_element():
+def render_placeholder_element() -> mo.Html:
     return mo.vstack(
         [
             mo.callout(
@@ -805,7 +805,7 @@ def render_question_area(source: str) -> mo.Html:
 
 
 @app.function
-def render_answer_area(ui_answer) -> mo.Html:
+def render_answer_area(ui_answer: mo.Html) -> mo.Html:
     return mo.vstack(
         [mo.md("**Your Answer:**").center(), ui_answer, mo.md("---")]
     ).style({"margin-top": "1rem"})
@@ -930,7 +930,7 @@ def _(
 
 @app.cell
 def _(current_sentence, df, get_score, row_number):
-    def render_stats():
+    def render_stats() -> mo.Html:
         stats = get_score()
         return mo.hstack(
             [
@@ -948,7 +948,7 @@ def _(current_sentence, df, get_score, row_number):
 
 @app.cell
 def _(button_check_answer, button_reset, button_reveal):
-    def render_answer_button_set():
+    def render_answer_button_set() -> mo.Html:
         return mo.hstack(
             [button_check_answer, button_reset, button_reveal],
             justify="center",
@@ -967,7 +967,7 @@ def _(
     render_stats,
     ui_answer,
 ):
-    def render_interaction_section():
+    def render_interaction_section() -> mo.Html:
         # Core Exercise
         answer_text = (
             f"**Answer:** {current_sentence['target']}" if current_sentence else ""
@@ -1013,7 +1013,7 @@ def _(
 
 @app.cell
 def _(button_next, button_prev):
-    def render_footer():
+    def render_footer() -> mo.Html:
         return mo.vstack(
             [
                 mo.hstack([button_prev, button_next]),
@@ -1037,7 +1037,7 @@ def _():
 
 @app.cell
 def _(get_answer_pool, set_answer_pool):
-    def move_word(index: int, to_answer: bool):
+    def move_word(index: int, to_answer: bool) -> None:
         # needs to call get_answer_pool for reactivity reasons
         get_answer_pool()
         # adds or removes the element from the answer pool
