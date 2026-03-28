@@ -92,20 +92,11 @@ def _():
         """
         <style>
           :root {
-            --la-canvas: #ffffff;
-            --la-surface-0: #ffffff;
-            --la-surface-1: #f8fafc;
+            /* Active design tokens used by current UI styles/components. */
+            --la-bg-surface: #ffffff;
             --la-border-subtle: #d8e0ea;
-            --la-border-strong: #b9c7d7;
-            --la-text-primary: #1d2733;
-            --la-text-muted: #4d6379;
-            --la-title: #17212f;
-            --la-accent-blue: #2f6fdd;
-            --la-accent-blue-soft: #eef4ff;
-            --la-accent-teal: #0f766e;
-            --la-accent-teal-soft: #e8f6f4;
-            --la-accent: var(--la-accent-blue);
-            --la-accent-soft: var(--la-accent-blue-soft);
+            --la-accent-primary-soft: #eef4ff;
+            --la-accent-secondary-soft: #e8f6f4;
             --la-success-border: #2e8b57;
             --la-success-bg: #e5f7ee;
             --la-success-fg: #145339;
@@ -115,31 +106,23 @@ def _():
             --la-neutral-border: #8ea3b8;
             --la-neutral-bg: #eaf0f6;
             --la-neutral-fg: #243548;
-            --la-shadow-soft: 0 8px 20px rgba(16, 35, 59, 0.08);
             --la-radius-md: 0.75rem;
             --la-radius-lg: 1rem;
+            --la-radius-pool: 0.85rem;
             --la-space-section: 1rem;
             --la-space-card-margin: 0.5rem;
-
-            /* Backward-compatible aliases used in existing UI snippets. */
-            --la-page-bg: var(--la-canvas);
-            --la-card-bg: var(--la-surface-0);
-            --la-card-border: var(--la-border-subtle);
-            --la-card-shadow: var(--la-shadow-soft);
-            --la-text: var(--la-text-primary);
-            --la-button-border: var(--la-border-strong);
           }
           /* Keep all menu controls visually consistent across widget types. */
           [data-testid="mo-output"] marimo-dropdown,
           [data-testid="mo-output"] marimo-multiselect {
-            --background: #ffffff;
+            --background: var(--la-bg-surface);
           }
           [data-testid="mo-output"] select,
           [data-testid="mo-output"] select:focus,
           [data-testid="mo-output"] [role="combobox"],
           [data-testid="mo-output"] [aria-haspopup="listbox"] {
-            background: #ffffff !important;
-            background-color: #ffffff !important;
+            background: var(--la-bg-surface) !important;
+            background-color: var(--la-bg-surface) !important;
           }
         </style>
         """
@@ -641,7 +624,7 @@ def style_card(
         "padding": "var(--la-space-section)",
         "margin": "var(--la-space-card-margin)",
         "border-radius": "var(--la-radius-lg)",
-        "background": "var(--la-surface-0)",
+        "background": "var(--la-bg-surface)",
         "border": "1px solid var(--la-border-subtle)",
         "box-sizing": "border-box",
     }
@@ -657,7 +640,7 @@ def style_stat_box() -> dict[str, str]:
         "width": "100%",
         "padding": ".5rem",
         "border-radius": "var(--la-radius-md)",
-        "background": "var(--la-surface-0)",
+        "background": "var(--la-bg-surface)",
         "border": "1px solid var(--la-border-subtle)",
         "box-sizing": "border-box",
         "text-align": "center",
@@ -692,8 +675,8 @@ def style_word_pool_box() -> dict[str, str]:
         # "margin": "0.5rem 0",
         "padding": "1rem",
         "border": "1px solid var(--la-border-subtle)",
-        "border-radius": "0.85rem",
-        "background": "var(--la-accent-teal-soft)",
+        "border-radius": "var(--la-radius-pool)",
+        "background": "var(--la-accent-secondary-soft)",
         "overflow-y": "hidden",
         "box-sizing": "border-box",
         "width": "100%",
@@ -939,7 +922,7 @@ def _(
 
         return mo.vstack([instruction_text, options_row], gap=1).style(
             style_card(
-                accent_edge="var(--la-accent-blue-soft)",
+                accent_edge="var(--la-accent-primary-soft)",
             )
         )
 
@@ -1021,7 +1004,7 @@ def _(
             gap=0.0,
         ).style(
             style_card(
-                accent_edge="var(--la-accent-teal-soft)",
+                accent_edge="var(--la-accent-secondary-soft)",
             )
         )
         return interaction_section
@@ -1038,7 +1021,7 @@ def _(button_next, button_prev):
             ]
         ).style(
             style_card(
-                accent_edge="var(--la-accent-teal-soft)",
+                accent_edge="var(--la-accent-secondary-soft)",
             )
         )
 
