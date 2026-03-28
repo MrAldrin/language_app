@@ -42,7 +42,6 @@ def _(
     render_footer,
     render_interaction_section,
     render_options_section,
-    render_top_section,
 ):
     def render_main_ui() -> mo.Html:
         """Assembles the final application layout."""
@@ -68,13 +67,11 @@ def _(
         if not current_sentence:
             mo_elems.append(render_placeholder_element())
         else:
-            mo_elems.append(render_top_section())
             mo_elems.append(render_interaction_section())
             mo_elems.append(render_footer())
         return mo.vstack(mo_elems, gap=0).style(
             {
                 "margin": "0 auto",
-                "padding": "0.5rem 0.75rem 1rem 0.75rem",
                 "border-radius": "1rem",
                 "background": "var(--la-page-bg)",
                 "color": "var(--la-text)",
@@ -825,7 +822,7 @@ def render_word_pool_container(content: mo.Html) -> mo.Html:
     return mo.vstack([content], gap=0).style(
         {
             "margin": "0.5rem 0",
-            "padding": "1.25rem 0.75rem",
+            "padding": "1rem",
             "border": "1px solid var(--la-card-border)",
             "border-radius": "0.85rem",
             "background": "var(--la-card-bg)",
@@ -834,7 +831,6 @@ def render_word_pool_container(content: mo.Html) -> mo.Html:
             "width": "100%",
             "display": "flex",
             "justify-content": "center",
-            "box-shadow": "var(--la-card-shadow)",
         }
     )
 
@@ -856,6 +852,30 @@ def _():
     ## Render ui - non reusable
     """)
     return
+
+
+@app.cell
+def _(current_sentence, df, get_score, row_number):
+    def render_top_section():
+        stats = get_score()
+        return mo.hstack(
+            [
+                render_difficulty_indicator(
+                    current_sentence["difficulty"], current_sentence["difficulty_str"]
+                ),
+                render_score(stats["correct"], stats["tries"]),
+                render_progress(row_number, len(df)),
+            ],
+            widths="equal",
+        ).style(
+            {
+                "padding": "1rem",
+                "border-radius": "1rem",
+                "background": "var(--la-card-bg)",
+            }
+        )
+
+    return (render_top_section,)
 
 
 @app.cell
@@ -883,14 +903,92 @@ def _(
         return mo.vstack([instruction_text, options_row], gap=1).style(
             {
                 "padding": "1rem",
+                "margin": "0.5rem",
                 "border-radius": "1rem",
                 "background": "var(--la-card-bg)",
                 "border": "1px solid var(--la-card-border)",
-                "box-shadow": "var(--la-card-shadow)",
             }
         )
 
     return (render_options_section,)
+
+
+@app.cell
+def _(
+    button_check_answer,
+    button_reset,
+    button_reveal,
+    current_sentence,
+    pool_chips_ui,
+    render_top_section,
+    ui_answer,
+):
+    def render_interaction_section():
+        # Core Exercise
+        answer_text = (
+            f"**Answer:** {current_sentence['target']}" if current_sentence else ""
+        )
+        if current_sentence and current_sentence.get("accepted"):
+            answer_text += f"<br/>*Or:* {' / '.join(current_sentence['accepted'])}"
+
+        reveal_text = (
+            mo.md(answer_text).center()
+            if button_reveal.value and current_sentence
+            else mo.md("&nbsp;")
+        )
+
+        interaction_section = mo.vstack(
+            [
+                render_top_section(),
+                render_question_text(current_sentence["source"]),
+                ui_answer,
+                mo.md("---"),
+                render_word_pool_container(pool_chips_ui),
+                mo.hstack(
+                    [button_check_answer, button_reset, button_reveal],
+                    justify="center",
+                ),
+                reveal_text,
+                mo.hstack(
+                    [
+                        render_feedback(button_check_answer.value),
+                    ],
+                    justify="center",
+                ),
+            ],
+            gap=0.0,
+        ).style(
+            {
+                "padding": "1rem",
+                "margin": "0.5rem",
+                "border-radius": "1rem",
+                "background": "var(--la-card-bg)",
+                "border": "1px solid var(--la-card-border)",
+            }
+        )
+        return interaction_section
+
+    return (render_interaction_section,)
+
+
+@app.cell
+def _(button_next, button_prev):
+    def render_footer():
+        return mo.vstack(
+            [
+                mo.hstack([button_prev, button_next]),
+            ]
+        ).style(
+            {
+                "padding": "1rem",
+                "margin": "0.5rem",
+                "border-radius": "1rem",
+                "background": "var(--la-card-bg)",
+                "border": "1px solid var(--la-card-border)",
+            }
+        )
+
+    return (render_footer,)
 
 
 @app.cell(hide_code=True)
@@ -913,110 +1011,6 @@ def _(get_answer_pool, set_answer_pool):
             set_answer_pool(lambda a: [i for i in a if i != index])
 
     return (move_word,)
-
-
-@app.cell
-def _(current_sentence, df, get_score, row_number):
-    def render_top_section():
-        stats = get_score()
-        return mo.hstack(
-            [
-                render_difficulty_indicator(
-                    current_sentence["difficulty"], current_sentence["difficulty_str"]
-                ),
-                render_score(stats["correct"], stats["tries"]),
-                render_progress(row_number, len(df)),
-            ],
-            widths="equal",
-        ).style(
-            {
-                "padding": "1rem",
-                "border-radius": "1rem",
-                "background": "var(--la-card-bg)",
-                "border": "1px solid var(--la-card-border)",
-                "box-shadow": "var(--la-card-shadow)",
-            }
-        )
-
-    return (render_top_section,)
-
-
-@app.cell
-def _(
-    button_check_answer,
-    button_reset,
-    button_reveal,
-    current_sentence,
-    pool_chips_ui,
-    ui_answer,
-):
-    def render_interaction_section():
-        # Core Exercise
-        answer_text = (
-            f"**Answer:** {current_sentence['target']}" if current_sentence else ""
-        )
-        if current_sentence and current_sentence.get("accepted"):
-            answer_text += f"<br/>*Or:* {' / '.join(current_sentence['accepted'])}"
-
-        reveal_text = (
-            mo.md(answer_text).center()
-            if button_reveal.value and current_sentence
-            else mo.md("&nbsp;")
-        )
-
-        interaction_section = mo.vstack(
-            [
-                render_question_text(current_sentence["source"]),
-                ui_answer,
-                mo.md("---"),
-                render_word_pool_container(pool_chips_ui),
-                mo.hstack(
-                    [button_check_answer, button_reset, button_reveal],
-                    justify="center",
-                ),
-                reveal_text,
-                mo.hstack(
-                    [
-                        render_feedback(button_check_answer.value),
-                    ],
-                    justify="center",
-                ),
-            ],
-            gap=0.0,
-        ).style(
-            {
-                "padding": "1rem",
-                "margin-top": "0.75rem",
-                "border-radius": "1rem",
-                "background": "var(--la-card-bg)",
-                "border": "1px solid var(--la-card-border)",
-                "box-shadow": "var(--la-card-shadow)",
-            }
-        )
-        return interaction_section
-
-    return (render_interaction_section,)
-
-
-@app.cell
-def _(button_next, button_prev):
-    def render_footer():
-        return mo.vstack(
-            [
-                mo.hstack([button_prev, button_next]),
-            ]
-        ).style(
-            {
-                "padding": "1rem",
-                "margin-top": "0.75rem",
-                "border-radius": "1rem",
-                "background": "var(--la-card-bg)",
-                "border": "1px solid var(--la-card-border)",
-                "box-shadow": "var(--la-card-shadow)",
-            }
-        )
-
-    return (render_footer,)
 
 
 if __name__ == "__main__":
