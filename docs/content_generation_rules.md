@@ -27,10 +27,8 @@
 
 ## 3. Technical Constraints
 - File type: json
-- Encoding: Strictly **UTF-8** (support *æ, ø, å, ü, ß*).
-- The questions should be generated in pairs of languages (one JSON file per language pair) and placed in their respective folders in data/. 
-- The languages are `en`, `de`, `no`, `nl`
-
+- Encoding: UTF-8
+- The questions should be generated in pairs of languages (one JSON file per language pair) and placed in their respective folders in apps/public/. 
 
 ## Schema example:
 ```json
