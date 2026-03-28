@@ -52,8 +52,8 @@ def _(
             .center()
             .style(
                 {
-                    "padding-top": "1.25rem",
-                    "padding-bottom": "1.25rem",
+                    "padding-top": "1rem",
+                    "padding-bottom": "1rem",
                 }
             )
         )
@@ -61,7 +61,6 @@ def _(
         mo_elems = [app_theme_styles, app_header]
         if not in_question_view:
             mo_elems.append(render_options_section())
-            mo_elems.append(render_placeholder_element())
         else:
             if current_sentence:
                 mo_elems.append(render_interaction_section())
@@ -102,8 +101,8 @@ def _():
             /* Active design tokens used by current UI styles/components. */
             --la-bg-surface: #ffffff;
             --la-border-subtle: #d8e0ea;
-            --la-accent-primary-soft: #eef4ff;
-            --la-accent-secondary-soft: #e8f6f4;
+            --la-accent-primary-soft: #e8f6f4;
+            --la-accent-secondary-soft: #eef4ff;
             --la-success-border: #2e8b57;
             --la-success-bg: #e5f7ee;
             --la-success-fg: #145339;
@@ -183,6 +182,7 @@ def _(
     dropdown_translation_direction,
     language_1,
     language_2,
+    start_session_id,
 ):
     direction_mode = resolve_direction_mode(
         selected_direction=dropdown_translation_direction.value,
@@ -194,6 +194,7 @@ def _(
         df=df_canonical,
         difficulty_list=dropdown_difficulty.value,
         direction_mode=direction_mode,
+        session_id=start_session_id,
     )
     return (df,)
 
@@ -203,21 +204,19 @@ def _(df, row_number, start_session_id):
     _ = start_session_id
     current_sentence = get_sentence(df=df, row_number=row_number)
 
+
     def toggle_reveal(current: bool) -> bool:
         return not current
 
-    button_reveal = mo.ui.button(
-        label="Reveal Answer", value=False, on_click=toggle_reveal
-    )
+
+    button_reveal = mo.ui.button(label="Reveal Answer", value=False, on_click=toggle_reveal)
     return button_reveal, current_sentence
 
 
 @app.cell
 def _(current_sentence, set_answer_pool):
     # Reset answer selection whenever sentence identity updates.
-    pool_words = (
-        sort_words(words=current_sentence["words"]) if current_sentence else []
-    )
+    pool_words = sort_words(words=current_sentence["words"]) if current_sentence else []
     set_answer_pool([])
     return (pool_words,)
 
@@ -310,6 +309,7 @@ def _():
     def bump(counter: int) -> int:
         return counter + 1
 
+
     button_start_questions = mo.ui.button(
         value=0,
         on_click=bump,
@@ -320,6 +320,7 @@ def _():
         on_click=bump,
         label="↩ Back to settings",
     )
+    mo.hstack([button_start_questions, button_back_to_settings])
     return button_back_to_settings, button_start_questions
 
 
@@ -341,6 +342,7 @@ def _(set_answer_pool, start_session_id):
 @app.cell
 def _(set_answer_pool, start_session_id):
     _ = start_session_id
+
 
     def handle_navigation(c: int) -> int:
         set_answer_pool([])  # Clear the pool synchronously!
@@ -479,6 +481,14 @@ def _():
     return
 
 
+@app.cell(hide_code=True)
+def _():
+    mo.md(r"""
+    ## Data load and transform
+    """)
+    return
+
+
 @app.function
 def load_json_data(pair: str) -> list[dict[str, Any]]:
     """Loads curriculum JSON data from Pyodide or local filesystem."""
@@ -534,8 +544,11 @@ def prepare_curriculum(
     df: pl.DataFrame,
     difficulty_list: list[str],
     direction_mode: str,
+    session_size: int = 10,
+    session_id: int | None = None,
 ) -> pl.DataFrame:
-    """Filters, precomputes direction, and materializes UI-ready rows."""
+    """Filters and materializes a shuffled session of UI-ready rows."""
+    _ = session_id  # kept as a reactive trigger for new sessions
     if df.height == 0:
         return df
 
@@ -544,12 +557,13 @@ def prepare_curriculum(
     if filtered_df.height == 0:
         return filtered_df
 
+    rng = random.Random()
+
     if direction_mode == "l1_to_l2":
         directions = ["l1_to_l2"] * filtered_df.height
     elif direction_mode == "l2_to_l1":
         directions = ["l2_to_l1"] * filtered_df.height
     else:
-        rng = random.Random()
         directions = [
             rng.choice(["l1_to_l2", "l2_to_l1"]) for _ in range(filtered_df.height)
         ]
@@ -586,8 +600,18 @@ def prepare_curriculum(
     if not prepared_rows:
         return pl.DataFrame([])
 
-    prepared_df = pl.DataFrame(prepared_rows)
-    return prepared_df.sample(fraction=1.0, shuffle=True)
+    rng.shuffle(prepared_rows)
+    if len(prepared_rows) <= session_size:
+        return pl.DataFrame(prepared_rows)
+    return pl.DataFrame(prepared_rows[:session_size])
+
+
+@app.cell(hide_code=True)
+def _():
+    mo.md(r"""
+    ## Other functions
+    """)
+    return
 
 
 @app.function
@@ -738,7 +762,7 @@ def style_word_pool_box() -> dict[str, str]:
         "padding": "1rem",
         "border": "1px solid var(--la-border-subtle)",
         "border-radius": "var(--la-radius-pool)",
-        "background": "var(--la-accent-secondary-soft)",
+        "background": "var(--la-accent-primary-soft)",
         "overflow-y": "hidden",
         "box-sizing": "border-box",
         "width": "100%",
@@ -801,21 +825,6 @@ def _():
     ## Render ui functions
     """)
     return
-
-
-@app.function
-def render_placeholder_element() -> mo.Html:
-    return mo.vstack(
-        [
-            mo.callout(
-                mo.md(
-                    "### Selection Required: "
-                    "You must have selected something in all the above menus"
-                ).center(),
-                kind="info",
-            ),
-        ]
-    )
 
 
 @app.function
@@ -884,7 +893,7 @@ def render_question_area(source: str) -> mo.Html:
 @app.function
 def render_answer_area(ui_answer: mo.Html) -> mo.Html:
     return mo.vstack(
-        [mo.md("**Your Answer:**").center(), ui_answer, mo.md("---")]
+        [mo.md("**Your answer:**").center(), ui_answer, mo.md("---")]
     ).style({"margin-top": "1rem"})
 
 
@@ -989,7 +998,7 @@ def _(
     def render_options_section() -> mo.Html:
         """Renders the initial configuration UI."""
         instruction_text = mo.md(
-            "Choose the language, difficulty level and translation direction to begin!"
+            "Choose the language and difficulty level, then press start to begin! If you only want to practice sentences in one dirrection, choose the direction too."
         ).center()
 
         options_row = mo.hstack(
@@ -1002,9 +1011,11 @@ def _(
             wrap=True,
         )
 
-        return mo.vstack([instruction_text, options_row, button_start_questions], gap=1).style(
+        return mo.vstack(
+            [instruction_text, options_row, button_start_questions.center()], gap=1
+        ).style(
             style_card(
-                accent_edge="var(--la-accent-primary-soft)",
+                accent_edge="var(--la-accent-secondary-soft)",
             )
         )
 
@@ -1042,12 +1053,21 @@ def _(button_check_answer, button_reset, button_reveal):
 
 
 @app.cell
+def _(button_next, button_prev):
+    def render_navigation_buttons():
+        return mo.hstack([button_prev, button_next]).style({"margin-top": "1rem"})
+
+    return (render_navigation_buttons,)
+
+
+@app.cell
 def _(
     button_check_answer,
     button_reveal,
     current_sentence,
     pool_chips_ui,
     render_answer_button_set,
+    render_navigation_buttons,
     render_stats,
     ui_answer,
 ):
@@ -1085,11 +1105,12 @@ def _(
                     ],
                     justify="center",
                 ),
+                render_navigation_buttons(),
             ],
             gap=0.0,
         ).style(
             style_card(
-                accent_edge="var(--la-accent-secondary-soft)",
+                accent_edge="var(--la-accent-primary-soft)",
             )
         )
         return interaction_section
@@ -1098,13 +1119,9 @@ def _(
 
 
 @app.cell
-def _(button_back_to_settings, button_next, button_prev):
+def _(button_back_to_settings):
     def render_footer() -> mo.Html:
-        return mo.vstack(
-            [
-                mo.hstack([button_back_to_settings, button_prev, button_next]),
-            ]
-        ).style(
+        return mo.vstack([button_back_to_settings.center()]).style(
             style_card(
                 accent_edge="var(--la-accent-secondary-soft)",
             )
