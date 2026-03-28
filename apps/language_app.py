@@ -301,6 +301,7 @@ def _(set_answer_pool):
         set_answer_pool([])  # Clear the pool synchronously!
         return c + 1
 
+
     button_prev = mo.ui.button(value=0, on_click=handle_navigation, label="◀ Previous")
     button_next = mo.ui.button(value=0, on_click=handle_navigation, label="Next ▶")
     return button_next, button_prev
@@ -327,6 +328,7 @@ def _(
             }
         )
         return is_correct
+
 
     button_check_answer = mo.ui.button(
         value=None,
@@ -802,14 +804,11 @@ def render_question_area(source: str) -> mo.Html:
     ).style({"margin-top": "1rem"})
 
 
-@app.cell
-def _(ui_answer):
-    def render_answer_area() -> mo.Html:
-        return mo.vstack(
-            [mo.md("**Your Answer:**").center(), ui_answer, mo.md("---")]
-        ).style({"margin-top": "1rem"})
-
-    return (render_answer_area,)
+@app.function
+def render_answer_area(ui_answer) -> mo.Html:
+    return mo.vstack(
+        [mo.md("**Your Answer:**").center(), ui_answer, mo.md("---")]
+    ).style({"margin-top": "1rem"})
 
 
 @app.function
@@ -964,9 +963,9 @@ def _(
     button_reveal,
     current_sentence,
     pool_chips_ui,
-    render_answer_area,
     render_answer_button_set,
     render_stats,
+    ui_answer,
 ):
     def render_interaction_section():
         # Core Exercise
@@ -986,7 +985,7 @@ def _(
             [
                 render_stats(),
                 render_question_area(current_sentence["source"]),
-                render_answer_area(),
+                render_answer_area(ui_answer=ui_answer),
                 render_word_pool_container(pool_chips_ui),
                 render_answer_button_set(),
                 # mo.hstack(
