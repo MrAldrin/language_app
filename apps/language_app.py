@@ -47,13 +47,7 @@ def _(
         """Assembles the final application layout."""
 
         app_header = (
-            mo.md(
-                """
-                <h1 style="margin:0; font-size:clamp(1.8rem, 3vw, 2.6rem);">
-                  <span style="color: var(--la-title);">Schipper mag ik overvaren?</span>
-                </h1>
-                """
-            )
+            mo.md("# Schipper mag ik overvaren?")
             .center()
             .style(
                 {
@@ -69,14 +63,7 @@ def _(
         else:
             mo_elems.append(render_interaction_section())
             mo_elems.append(render_footer())
-        return mo.vstack(mo_elems, gap=0).style(
-            {
-                "margin": "0 auto",
-                "border-radius": "1rem",
-                "background": "var(--la-page-bg)",
-                "color": "var(--la-text)",
-            }
-        )
+        return mo.vstack(mo_elems, gap=0).style(style_page_shell())
 
     return (render_main_ui,)
 
@@ -84,7 +71,7 @@ def _(
 @app.cell
 def _(get_answer_pool, move_word, pool_words):
     answer_indices = get_answer_pool()
-    ui_answer = render_answer_area(pool_words, answer_indices, on_click=move_word)
+    ui_answer = render_answer_chips(pool_words, answer_indices, on_click=move_word)
     pool_chips_ui = render_word_pool(
         pool_words, on_click=move_word, disabled_indices=answer_indices
     )
@@ -105,22 +92,59 @@ def _():
         """
         <style>
           :root {
-            --la-page-bg: #f4f6f8;
-            --la-card-bg: #ffffff;
-            --la-card-border: #dbe1e8;
-            --la-card-shadow: 0 8px 20px rgba(15, 23, 42, 0.05);
-            --la-text: #1f2937;
-            --la-title: #1f2937;
-            --la-button-border: #cbd5e1;
+            --la-canvas: #ffffff;
+            --la-surface-0: #ffffff;
+            --la-surface-1: #f8fafc;
+            --la-border-subtle: #d8e0ea;
+            --la-border-strong: #b9c7d7;
+            --la-text-primary: #1d2733;
+            --la-text-muted: #4d6379;
+            --la-title: #17212f;
+            --la-accent-blue: #2f6fdd;
+            --la-accent-blue-soft: #eef4ff;
+            --la-accent-teal: #0f766e;
+            --la-accent-teal-soft: #e8f6f4;
+            --la-accent: var(--la-accent-blue);
+            --la-accent-soft: var(--la-accent-blue-soft);
+            --la-success-border: #2e8b57;
+            --la-success-bg: #e5f7ee;
+            --la-success-fg: #145339;
+            --la-warning-border: #c97b0e;
+            --la-warning-bg: #fff0d8;
+            --la-warning-fg: #704010;
+            --la-neutral-border: #8ea3b8;
+            --la-neutral-bg: #eaf0f6;
+            --la-neutral-fg: #243548;
+            --la-shadow-soft: 0 8px 20px rgba(16, 35, 59, 0.08);
+            --la-radius-md: 0.75rem;
+            --la-radius-lg: 1rem;
+            --la-space-section: 1rem;
+            --la-space-card-margin: 0.5rem;
+
+            /* Backward-compatible aliases used in existing UI snippets. */
+            --la-page-bg: var(--la-canvas);
+            --la-card-bg: var(--la-surface-0);
+            --la-card-border: var(--la-border-subtle);
+            --la-card-shadow: var(--la-shadow-soft);
+            --la-text: var(--la-text-primary);
+            --la-button-border: var(--la-border-strong);
           }
-          button {
-            border-radius: 9999px !important;
-            border-color: var(--la-button-border) !important;
-            transition: transform 0.12s ease, box-shadow 0.12s ease;
+          .la-divider {
+            width: 100%;
+            border-top: 1px solid var(--la-border-subtle);
+            margin: 0.75rem 0;
           }
-          button:hover {
-            transform: translateY(-1px);
-            box-shadow: 0 6px 14px rgba(15, 23, 42, 0.14);
+          /* Keep all menu controls visually consistent across widget types. */
+          [data-testid="mo-output"] marimo-dropdown,
+          [data-testid="mo-output"] marimo-multiselect {
+            --background: #ffffff;
+          }
+          [data-testid="mo-output"] select,
+          [data-testid="mo-output"] select:focus,
+          [data-testid="mo-output"] [role="combobox"],
+          [data-testid="mo-output"] [aria-haspopup="listbox"] {
+            background: #ffffff !important;
+            background-color: #ffffff !important;
           }
         </style>
         """
@@ -616,6 +640,91 @@ def sort_words(words: list[str]) -> list[str]:
 
 
 @app.function
+def style_page_shell() -> dict[str, str]:
+    return {
+        "margin": "0 auto",
+        "padding": "0.5rem",
+        "border-radius": "var(--la-radius-lg)",
+        "background": "var(--la-page-bg)",
+        "color": "var(--la-text-primary)",
+        "box-sizing": "border-box",
+    }
+
+
+@app.function
+def style_card(
+    *,
+    padding: str = "var(--la-space-section)",
+    margin: str = "var(--la-space-card-margin)",
+    background: str = "var(--la-surface-0)",
+    accent_edge: str | None = None,
+) -> dict[str, str]:
+    style = {
+        "padding": padding,
+        "margin": margin,
+        "border-radius": "var(--la-radius-lg)",
+        "background": background,
+        "border": "1px solid var(--la-border-subtle)",
+        "box-sizing": "border-box",
+    }
+    if accent_edge:
+        style["border-right"] = f"5px solid {accent_edge}"
+        style["border-bottom"] = f"5px solid {accent_edge}"
+    return style
+
+
+@app.function
+def style_stat_box() -> dict[str, str]:
+    return {
+        "width": "100%",
+        "padding": ".5rem",
+        "border-radius": "var(--la-radius-md)",
+        "background": "var(--la-surface-0)",
+        "border": "1px solid var(--la-border-subtle)",
+        "box-sizing": "border-box",
+        "text-align": "center",
+    }
+
+
+@app.function
+def style_feedback_chip(
+    *, border: str, background: str, foreground: str
+) -> dict[str, str]:
+    return {
+        "display": "inline-flex",
+        "justify-content": "center",
+        "align-items": "center",
+        "margin": "0",
+        "padding": "0.2rem 0.6rem",
+        "border": f"1px solid {border}",
+        "border-radius": "9999px",
+        "background": background,
+        "color": foreground,
+        "font-weight": "500",
+        "line-height": "1.15",
+        "box-sizing": "border-box",
+        "width": "min(100%, 32rem)",
+        "text-align": "center",
+    }
+
+
+@app.function
+def style_word_pool_box() -> dict[str, str]:
+    return {
+        # "margin": "0.5rem 0",
+        "padding": "1rem",
+        "border": "1px solid var(--la-border-subtle)",
+        "border-radius": "0.85rem",
+        "background": "var(--la-accent-teal-soft)",
+        "overflow-y": "hidden",
+        "box-sizing": "border-box",
+        "width": "100%",
+        "display": "flex",
+        "justify-content": "center",
+    }
+
+
+@app.function
 def feedback_chip(
     text: str, *, border: str, background: str, foreground: str
 ) -> mo.Html:
@@ -624,22 +733,11 @@ def feedback_chip(
         mo.md(text)
         .center()
         .style(
-            {
-                "display": "inline-flex",
-                "justify-content": "center",
-                "align-items": "center",
-                "margin": "0",
-                "padding": "0.2rem 0.6rem",
-                "border": f"1px solid {border}",
-                "border-radius": "9999px",
-                "background": background,
-                "color": foreground,
-                "font-weight": "500",
-                "line-height": "1.15",
-                "box-sizing": "border-box",
-                "width": "min(100%, 32rem)",
-                "text-align": "center",
-            }
+            style_feedback_chip(
+                border=border,
+                background=background,
+                foreground=foreground,
+            )
         )
     )
 
@@ -648,9 +746,9 @@ def feedback_chip(
 def success_chip(text: str) -> mo.Html:
     return feedback_chip(
         text,
-        border="#22c55e",
-        background="#dcfce7",
-        foreground="#14532d",
+        border="var(--la-success-border)",
+        background="var(--la-success-bg)",
+        foreground="var(--la-success-fg)",
     )
 
 
@@ -658,9 +756,9 @@ def success_chip(text: str) -> mo.Html:
 def warn_chip(text: str) -> mo.Html:
     return feedback_chip(
         text,
-        border="#f59e0b",
-        background="#fef3c7",
-        foreground="#78350f",
+        border="var(--la-warning-border)",
+        background="var(--la-warning-bg)",
+        foreground="var(--la-warning-fg)",
     )
 
 
@@ -668,9 +766,9 @@ def warn_chip(text: str) -> mo.Html:
 def neutral_chip(text: str) -> mo.Html:
     return feedback_chip(
         text,
-        border="#9ca3af",
-        background="#f3f4f6",
-        foreground="#1f2937",
+        border="var(--la-neutral-border)",
+        background="var(--la-neutral-bg)",
+        foreground="var(--la-neutral-fg)",
     )
 
 
@@ -707,17 +805,7 @@ def render_stat_box(value: str, label: str, caption: str) -> mo.Html:
             mo.md(f"*{caption}*").center(),
         ],
         gap=0.15,
-    ).style(
-        {
-            "width": "100%",
-            "padding": "0.85rem 0.7rem",
-            "border-radius": "0.75rem",
-            "background": "var(--la-card-bg)",
-            "border": "1px solid var(--la-card-border)",
-            "box-sizing": "border-box",
-            "text-align": "center",
-        }
-    )
+    ).style(style_stat_box())
 
 
 @app.function
@@ -743,16 +831,24 @@ def render_progress(current_idx: int, total_count: int) -> mo.Html:
 
 
 @app.function
-def render_question_text(source: str) -> mo.Html:
+def render_question_area(source: str) -> mo.Html:
     """Renders the main question prompt."""
     return mo.vstack(
         [
             mo.md("**Translate this sentence:**").center(),
             mo.md(f"### {source}").center(),
-            mo.md("---"),
-            mo.md("**Your Answer:**").center(),
         ]
-    )
+    ).style({"margin-top": "1rem"})
+
+
+@app.cell
+def _(ui_answer):
+    def render_answer_area() -> mo.Html:
+        return mo.vstack(
+            [mo.md("**Your Answer:**").center(), ui_answer, mo.md("---")]
+        ).style({"margin-top": "1rem"})
+
+    return (render_answer_area,)
 
 
 @app.function
@@ -775,7 +871,7 @@ def make_word_chip(
 
 
 @app.function
-def render_answer_area(
+def render_answer_chips(
     words: list[str],
     indices: list[int],
     *,
@@ -819,20 +915,7 @@ def render_word_pool(
 @app.function
 def render_word_pool_container(content: mo.Html) -> mo.Html:
     """Renders the word pool inside a compact bordered container."""
-    return mo.vstack([content], gap=0).style(
-        {
-            "margin": "0.5rem 0",
-            "padding": "1rem",
-            "border": "1px solid var(--la-card-border)",
-            "border-radius": "0.85rem",
-            "background": "var(--la-card-bg)",
-            "overflow-y": "hidden",
-            "box-sizing": "border-box",
-            "width": "100%",
-            "display": "flex",
-            "justify-content": "center",
-        }
-    )
+    return mo.vstack([content], gap=0).style(style_word_pool_box())
 
 
 @app.function
@@ -852,30 +935,6 @@ def _():
     ## Render ui - non reusable
     """)
     return
-
-
-@app.cell
-def _(current_sentence, df, get_score, row_number):
-    def render_top_section():
-        stats = get_score()
-        return mo.hstack(
-            [
-                render_difficulty_indicator(
-                    current_sentence["difficulty"], current_sentence["difficulty_str"]
-                ),
-                render_score(stats["correct"], stats["tries"]),
-                render_progress(row_number, len(df)),
-            ],
-            widths="equal",
-        ).style(
-            {
-                "padding": "1rem",
-                "border-radius": "1rem",
-                "background": "var(--la-card-bg)",
-            }
-        )
-
-    return (render_top_section,)
 
 
 @app.cell
@@ -901,27 +960,52 @@ def _(
         )
 
         return mo.vstack([instruction_text, options_row], gap=1).style(
-            {
-                "padding": "1rem",
-                "margin": "0.5rem",
-                "border-radius": "1rem",
-                "background": "var(--la-card-bg)",
-                "border": "1px solid var(--la-card-border)",
-            }
+            style_card(
+                accent_edge="var(--la-accent-blue-soft)",
+            )
         )
 
     return (render_options_section,)
 
 
 @app.cell
+def _(current_sentence, df, get_score, row_number):
+    def render_stats():
+        stats = get_score()
+        return mo.hstack(
+            [
+                render_difficulty_indicator(
+                    current_sentence["difficulty"], current_sentence["difficulty_str"]
+                ),
+                render_score(stats["correct"], stats["tries"]),
+                render_progress(row_number, len(df)),
+            ],
+            widths="equal",
+        )
+
+    return (render_stats,)
+
+
+@app.cell
+def _(button_check_answer, button_reset, button_reveal):
+    def render_answer_button_set():
+        return mo.hstack(
+            [button_check_answer, button_reset, button_reveal],
+            justify="center",
+        ).style({"margin-top": "1rem"})
+
+    return (render_answer_button_set,)
+
+
+@app.cell
 def _(
     button_check_answer,
-    button_reset,
     button_reveal,
     current_sentence,
     pool_chips_ui,
-    render_top_section,
-    ui_answer,
+    render_answer_area,
+    render_answer_button_set,
+    render_stats,
 ):
     def render_interaction_section():
         # Core Exercise
@@ -939,15 +1023,15 @@ def _(
 
         interaction_section = mo.vstack(
             [
-                render_top_section(),
-                render_question_text(current_sentence["source"]),
-                ui_answer,
-                mo.md("---"),
+                render_stats(),
+                render_question_area(current_sentence["source"]),
+                render_answer_area(),
                 render_word_pool_container(pool_chips_ui),
-                mo.hstack(
-                    [button_check_answer, button_reset, button_reveal],
-                    justify="center",
-                ),
+                render_answer_button_set(),
+                # mo.hstack(
+                #     [button_check_answer, button_reset, button_reveal],
+                #     justify="center",
+                # ),
                 reveal_text,
                 mo.hstack(
                     [
@@ -958,13 +1042,9 @@ def _(
             ],
             gap=0.0,
         ).style(
-            {
-                "padding": "1rem",
-                "margin": "0.5rem",
-                "border-radius": "1rem",
-                "background": "var(--la-card-bg)",
-                "border": "1px solid var(--la-card-border)",
-            }
+            style_card(
+                accent_edge="var(--la-accent-teal-soft)",
+            )
         )
         return interaction_section
 
@@ -979,13 +1059,9 @@ def _(button_next, button_prev):
                 mo.hstack([button_prev, button_next]),
             ]
         ).style(
-            {
-                "padding": "1rem",
-                "margin": "0.5rem",
-                "border-radius": "1rem",
-                "background": "var(--la-card-bg)",
-                "border": "1px solid var(--la-card-border)",
-            }
+            style_card(
+                accent_edge="var(--la-accent-teal-soft)",
+            )
         )
 
     return (render_footer,)
