@@ -152,12 +152,6 @@ def _():
     return get_answer_pool, set_answer_pool
 
 
-@app.cell
-def _():
-    get_score, set_score = mo.state({"tries": 0, "correct": 0})
-    return get_score, set_score
-
-
 @app.cell(hide_code=True)
 def _():
     mo.md(r"""
@@ -318,20 +312,19 @@ def _(set_answer_pool):
 
 
 @app.cell
-def _(current_sentence, get_answer_pool, pool_words, set_score):
-    def handle_check_answer(_: Any) -> bool:
+def _(current_sentence, get_answer_pool, pool_words):
+    def handle_check_answer(score: dict[str, Any] | None) -> dict[str, Any]:
+        prev_score = score or {"tries": 0, "correct": 0, "last_result": None}
         is_correct = check_answer(
             user_answer=[pool_words[i] for i in get_answer_pool()],
             target=current_sentence["target"],
             accepted=current_sentence.get("accepted", []),
         )
-        set_score(
-            lambda s: {
-                "tries": s["tries"] + 1,
-                "correct": s["correct"] + (1 if is_correct else 0),
-            }
-        )
-        return is_correct
+        return {
+            "tries": prev_score["tries"] + 1,
+            "correct": prev_score["correct"] + (1 if is_correct else 0),
+            "last_result": is_correct,
+        }
 
     return (handle_check_answer,)
 
@@ -349,7 +342,7 @@ def _(get_answer_pool, handle_check_answer, handle_reset_answer):
     has_answer = len(get_answer_pool()) > 0
 
     button_check_answer = mo.ui.button(
-        value=None,
+        value={"tries": 0, "correct": 0, "last_result": None},
         on_click=handle_check_answer,
         label="Check answer",
         disabled=not has_answer,
@@ -960,9 +953,9 @@ def _(
 
 
 @app.cell
-def _(current_sentence, df, get_score, row_number):
+def _(button_check_answer, current_sentence, df, row_number):
     def render_stats() -> mo.Html:
-        stats = get_score()
+        stats = button_check_answer.value
         return mo.hstack(
             [
                 render_difficulty_indicator(
@@ -1027,7 +1020,9 @@ def _(
                 reveal_text,
                 mo.hstack(
                     [
-                        render_feedback(check_value=button_check_answer.value),
+                        render_feedback(
+                            check_value=button_check_answer.value["last_result"]
+                        ),
                     ],
                     justify="center",
                 ),
