@@ -63,7 +63,7 @@ def _(
         else:
             mo_elems.append(render_interaction_section())
             mo_elems.append(render_footer())
-        return mo.vstack(mo_elems, gap=0).style(style_page_shell())
+        return mo.vstack(mo_elems, gap=0)
 
     return (render_main_ui,)
 
@@ -637,18 +637,6 @@ def check_answer(user_answer: list[str], target: str, accepted: list[str]) -> bo
 @app.function
 def sort_words(words: list[str]) -> list[str]:
     return sorted(words, key=lambda w: w.lower())
-
-
-@app.function
-def style_page_shell() -> dict[str, str]:
-    return {
-        "margin": "0 auto",
-        "padding": "0.5rem",
-        "border-radius": "var(--la-radius-lg)",
-        "background": "var(--la-page-bg)",
-        "color": "var(--la-text-primary)",
-        "box-sizing": "border-box",
-    }
 
 
 @app.function
