@@ -907,7 +907,7 @@ def render_feedback(check_value: bool | None) -> mo.Html:
     elif check_value:
         return success_chip(text="Correct! Continue to the next question.")
     else:
-        return warn_chip(text="False, continue or try again right away!")
+        return warn_chip(text="False, continue or try again")
 
 
 @app.cell(hide_code=True)
