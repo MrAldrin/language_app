@@ -1,0 +1,1082 @@
+[
+  {
+    "id": 2001,
+    "question_type": "word_translation",
+    "difficulty": 1,
+    "tags": ["pronoun", "singular", "subject"],
+    "translations": {
+      "de": {
+        "primary": "ich",
+        "accepted": [],
+        "word_pool": ["ich", "mich", "mir", "du", "er", "wir", "sie"]
+      },
+      "no": {
+        "primary": "jeg",
+        "accepted": [],
+        "word_pool": ["jeg", "meg", "min", "du", "han", "vi", "hun"]
+      }
+    }
+  },
+  {
+    "id": 2002,
+    "question_type": "word_translation",
+    "difficulty": 1,
+    "tags": ["pronoun", "plural", "subject"],
+    "translations": {
+      "de": {
+        "primary": "wir",
+        "accepted": [],
+        "word_pool": ["wir", "uns", "ihr", "sie", "du", "Sie", "euch"]
+      },
+      "no": {
+        "primary": "vi",
+        "accepted": [],
+        "word_pool": ["vi", "oss", "dere", "de", "du", "deg", "dere"]
+      }
+    }
+  },
+  {
+    "id": 2003,
+    "question_type": "word_translation",
+    "difficulty": 2,
+    "tags": ["pronoun", "possessive", "singular"],
+    "translations": {
+      "de": {
+        "primary": "mein",
+        "accepted": ["meine", "meinen", "meinem", "meiner"],
+        "word_pool": ["mein", "meine", "meinen", "meinem", "meiner", "dein", "deine", "sein", "ihr", "unser"]
+      },
+      "no": {
+        "primary": "min",
+        "accepted": ["mi", "mitt", "mine"],
+        "word_pool": ["min", "mi", "mitt", "mine", "din", "di", "ditt", "dine", "sin", "vår"]
+      }
+    }
+  },
+  {
+    "id": 2004,
+    "question_type": "word_translation",
+    "difficulty": 1,
+    "tags": ["pronoun", "singular", "subject"],
+    "translations": {
+      "de": {
+        "primary": "du",
+        "accepted": [],
+        "word_pool": ["du", "dich", "dir", "ich", "er", "sie", "wir"]
+      },
+      "no": {
+        "primary": "du",
+        "accepted": [],
+        "word_pool": ["du", "deg", "din", "jeg", "han", "hun", "vi"]
+      }
+    }
+  },
+  {
+    "id": 2005,
+    "question_type": "word_translation",
+    "difficulty": 1,
+    "tags": ["pronoun", "singular", "subject", "masculine"],
+    "translations": {
+      "de": {
+        "primary": "er",
+        "accepted": [],
+        "word_pool": ["er", "ihn", "ihm", "sie", "es", "wir", "man"]
+      },
+      "no": {
+        "primary": "han",
+        "accepted": [],
+        "word_pool": ["han", "ham", "hans", "hun", "det", "vi", "en"]
+      }
+    }
+  },
+  {
+    "id": 2006,
+    "question_type": "word_translation",
+    "difficulty": 1,
+    "tags": ["pronoun", "singular", "subject", "feminine"],
+    "translations": {
+      "de": {
+        "primary": "sie (singular)",
+        "accepted": [],
+        "word_pool": ["sie", "ihr", "ihre", "er", "es", "wir", "man"]
+      },
+      "no": {
+        "primary": "hun",
+        "accepted": [],
+        "word_pool": ["hun", "henne", "hennes", "han", "det", "vi", "en"]
+      }
+    }
+  },
+  {
+    "id": 2007,
+    "question_type": "word_translation",
+    "difficulty": 1,
+    "tags": ["pronoun", "singular", "subject", "neuter"],
+    "translations": {
+      "de": {
+        "primary": "es",
+        "accepted": [],
+        "word_pool": ["es", "er", "sie", "ihn", "ihm", "man", "wir"]
+      },
+      "no": {
+        "primary": "det",
+        "accepted": ["den"],
+        "word_pool": ["det", "den", "han", "hun", "ham", "vi", "de"]
+      }
+    }
+  },
+  {
+    "id": 2008,
+    "question_type": "word_translation",
+    "difficulty": 1,
+    "tags": ["pronoun", "plural", "subject"],
+    "translations": {
+      "de": {
+        "primary": "ihr (Plural)",
+        "accepted": [],
+        "word_pool": ["ihr", "euch", "wir", "sie", "Sie", "du", "dein"]
+      },
+      "no": {
+        "primary": "dere",
+        "accepted": [],
+        "word_pool": ["dere", "vi", "de", "du", "deg", "din", "oss"]
+      }
+    }
+  },
+  {
+    "id": 2009,
+    "question_type": "word_translation",
+    "difficulty": 1,
+    "tags": ["pronoun", "plural", "subject"],
+    "translations": {
+      "de": {
+        "primary": "sie (Plural)",
+        "accepted": [],
+        "word_pool": ["sie", "ihnen", "ihre", "ihr", "wir", "wir", "es"]
+      },
+      "no": {
+        "primary": "de",
+        "accepted": [],
+        "word_pool": ["de", "dem", "deres", "dere", "vi", "det", "den"]
+      }
+    }
+  },
+  {
+    "id": 2010,
+    "question_type": "word_translation",
+    "difficulty": 3,
+    "tags": ["pronoun", "formal"],
+    "translations": {
+      "de": {
+        "primary": "Sie (höflich)",
+        "accepted": [],
+        "word_pool": ["Sie", "Ihnen", "Ihr", "du", "ihr", "sie", "wir"]
+      },
+      "no": {
+        "primary": "De (formelt)",
+        "accepted": ["dere"],
+        "word_pool": ["De", "Dem", "Deres", "du", "dere", "de", "vi"]
+      }
+    }
+  },
+  {
+    "id": 2011,
+    "question_type": "word_translation",
+    "difficulty": 2,
+    "tags": ["pronoun", "singular", "object"],
+    "translations": {
+      "de": {
+        "primary": "mich",
+        "accepted": [],
+        "word_pool": ["mich", "mir", "ich", "dich", "ihn", "uns", "sich"]
+      },
+      "no": {
+        "primary": "meg",
+        "accepted": [],
+        "word_pool": ["meg", "jeg", "deg", "ham", "oss", "seg", "min"]
+      }
+    }
+  },
+  {
+    "id": 2012,
+    "question_type": "word_translation",
+    "difficulty": 2,
+    "tags": ["pronoun", "singular", "object"],
+    "translations": {
+      "de": {
+        "primary": "dich",
+        "accepted": [],
+        "word_pool": ["dich", "dir", "du", "mich", "ihn", "euch", "sich"]
+      },
+      "no": {
+        "primary": "deg",
+        "accepted": [],
+        "word_pool": ["deg", "du", "meg", "ham", "dere", "seg", "din"]
+      }
+    }
+  },
+  {
+    "id": 2013,
+    "question_type": "word_translation",
+    "difficulty": 2,
+    "tags": ["pronoun", "singular", "object", "masculine"],
+    "translations": {
+      "de": {
+        "primary": "ihn",
+        "accepted": [],
+        "word_pool": ["ihn", "ihm", "er", "sie", "es", "mich", "sich"]
+      },
+      "no": {
+        "primary": "ham",
+        "accepted": ["han"],
+        "word_pool": ["ham", "han", "henne", "det", "meg", "seg", "hans"]
+      }
+    }
+  },
+  {
+    "id": 2014,
+    "question_type": "word_translation",
+    "difficulty": 2,
+    "tags": ["pronoun", "singular", "object", "feminine"],
+    "translations": {
+      "de": {
+        "primary": "sie (Akkusativ)",
+        "accepted": [],
+        "word_pool": ["sie", "ihr", "ihre", "ihn", "mich", "uns", "sich"]
+      },
+      "no": {
+        "primary": "henne",
+        "accepted": [],
+        "word_pool": ["henne", "hun", "ham", "meg", "oss", "seg", "hennes"]
+      }
+    }
+  },
+  {
+    "id": 2015,
+    "question_type": "word_translation",
+    "difficulty": 2,
+    "tags": ["pronoun", "plural", "object"],
+    "translations": {
+      "de": {
+        "primary": "uns",
+        "accepted": [],
+        "word_pool": ["uns", "wir", "euch", "ihnen", "mich", "sich", "unser"]
+      },
+      "no": {
+        "primary": "oss",
+        "accepted": [],
+        "word_pool": ["oss", "vi", "dere", "dem", "meg", "seg", "vår"]
+      }
+    }
+  },
+  {
+    "id": 2016,
+    "question_type": "word_translation",
+    "difficulty": 2,
+    "tags": ["pronoun", "plural", "object"],
+    "translations": {
+      "de": {
+        "primary": "euch",
+        "accepted": [],
+        "word_pool": ["euch", "ihr", "uns", "ihnen", "dich", "sich", "euer"]
+      },
+      "no": {
+        "primary": "dere (objekt)",
+        "accepted": [],
+        "word_pool": ["dere", "dere", "oss", "dem", "deg", "seg", "deres"]
+      }
+    }
+  },
+  {
+    "id": 2017,
+    "question_type": "word_translation",
+    "difficulty": 2,
+    "tags": ["pronoun", "plural", "object"],
+    "translations": {
+      "de": {
+        "primary": "sie (Plural, Akkusativ)",
+        "accepted": [],
+        "word_pool": ["sie", "ihnen", "ihre", "euch", "uns", "sich", "wir"]
+      },
+      "no": {
+        "primary": "dem",
+        "accepted": [],
+        "word_pool": ["dem", "de", "deres", "dere", "oss", "seg", "vi"]
+      }
+    }
+  },
+  {
+    "id": 2018,
+    "question_type": "word_translation",
+    "difficulty": 3,
+    "tags": ["pronoun", "singular", "dative"],
+    "translations": {
+      "de": {
+        "primary": "mir",
+        "accepted": [],
+        "word_pool": ["mir", "mich", "ich", "dir", "ihm", "uns", "meinem"]
+      },
+      "no": {
+        "primary": "meg (indirekte)",
+        "accepted": ["meg"],
+        "word_pool": ["meg", "jeg", "deg", "ham", "oss", "min", "mitt"]
+      }
+    }
+  },
+  {
+    "id": 2019,
+    "question_type": "word_translation",
+    "difficulty": 3,
+    "tags": ["pronoun", "singular", "dative"],
+    "translations": {
+      "de": {
+        "primary": "dir",
+        "accepted": [],
+        "word_pool": ["dir", "dich", "du", "mir", "ihm", "euch", "deinem"]
+      },
+      "no": {
+        "primary": "deg (indirekte)",
+        "accepted": ["deg"],
+        "word_pool": ["deg", "du", "meg", "ham", "dere", "din", "ditt"]
+      }
+    }
+  },
+  {
+    "id": 2020,
+    "question_type": "word_translation",
+    "difficulty": 3,
+    "tags": ["pronoun", "singular", "dative", "masculine"],
+    "translations": {
+      "de": {
+        "primary": "ihm",
+        "accepted": [],
+        "word_pool": ["ihm", "ihn", "er", "ihr", "ihnen", "uns", "seinem"]
+      },
+      "no": {
+        "primary": "ham (indirekte)",
+        "accepted": ["ham", "han"],
+        "word_pool": ["ham", "han", "henne", "dem", "oss", "hans", "sin"]
+      }
+    }
+  },
+  {
+    "id": 2021,
+    "question_type": "word_translation",
+    "difficulty": 2,
+    "tags": ["pronoun", "possessive", "singular"],
+    "translations": {
+      "de": {
+        "primary": "dein",
+        "accepted": ["deine", "deinen", "deinem", "deiner"],
+        "word_pool": ["dein", "deine", "deinen", "mein", "sein", "euer", "unser"]
+      },
+      "no": {
+        "primary": "din",
+        "accepted": ["di", "ditt", "dine"],
+        "word_pool": ["din", "di", "ditt", "dine", "min", "sin", "deres"]
+      }
+    }
+  },
+  {
+    "id": 2022,
+    "question_type": "word_translation",
+    "difficulty": 2,
+    "tags": ["pronoun", "possessive", "singular", "masculine"],
+    "translations": {
+      "de": {
+        "primary": "sein",
+        "accepted": ["seine", "seinen", "seinem", "seiner"],
+        "word_pool": ["sein", "seine", "seinen", "ihr", "mein", "dein", "unser"]
+      },
+      "no": {
+        "primary": "hans",
+        "accepted": ["sin", "si", "sitt", "sine"],
+        "word_pool": ["hans", "sin", "si", "sitt", "sine", "hennes", "min"]
+      }
+    }
+  },
+  {
+    "id": 2023,
+    "question_type": "word_translation",
+    "difficulty": 2,
+    "tags": ["pronoun", "possessive", "singular", "feminine"],
+    "translations": {
+      "de": {
+        "primary": "ihr (Possessiv)",
+        "accepted": ["ihre", "ihren", "ihrem", "ihrer"],
+        "word_pool": ["ihr", "ihre", "ihren", "sein", "mein", "dein", "unser"]
+      },
+      "no": {
+        "primary": "hennes",
+        "accepted": ["sin", "si", "sitt", "sine"],
+        "word_pool": ["hennes", "sin", "si", "sitt", "sine", "hans", "min"]
+      }
+    }
+  },
+  {
+    "id": 2024,
+    "question_type": "word_translation",
+    "difficulty": 2,
+    "tags": ["pronoun", "possessive", "plural"],
+    "translations": {
+      "de": {
+        "primary": "unser",
+        "accepted": ["unsere", "unseren", "unserem", "unserer"],
+        "word_pool": ["unser", "unsere", "wir", "uns", "euer", "ihr", "mein"]
+      },
+      "no": {
+        "primary": "vår",
+        "accepted": ["vårt", "våre"],
+        "word_pool": ["vår", "vårt", "våre", "vi", "oss", "deres", "min"]
+      }
+    }
+  },
+  {
+    "id": 2025,
+    "question_type": "word_translation",
+    "difficulty": 2,
+    "tags": ["pronoun", "possessive", "plural"],
+    "translations": {
+      "de": {
+        "primary": "euer",
+        "accepted": ["eure", "euren", "eurem", "eurer"],
+        "word_pool": ["euer", "eure", "ihr", "euch", "unser", "ihr", "mein"]
+      },
+      "no": {
+        "primary": "deres (Plural, din)",
+        "accepted": [],
+        "word_pool": ["deres", "dere", "dere", "vår", "min", "din", "sin"]
+      }
+    }
+  },
+  {
+    "id": 2026,
+    "question_type": "word_translation",
+    "difficulty": 2,
+    "tags": ["pronoun", "possessive", "plural"],
+    "translations": {
+      "de": {
+        "primary": "ihr (Possessiv, Plural)",
+        "accepted": ["ihre", "ihren", "ihrem", "ihrer"],
+        "word_pool": ["ihr", "ihre", "ihren", "unser", "euer", "sein", "mein"]
+      },
+      "no": {
+        "primary": "deres (deres)",
+        "accepted": [],
+        "word_pool": ["deres", "de", "dem", "vår", "hennes", "hans", "min"]
+      }
+    }
+  },
+  {
+    "id": 2027,
+    "question_type": "word_translation",
+    "difficulty": 2,
+    "tags": ["pronoun", "reflexive"],
+    "translations": {
+      "de": {
+        "primary": "sich",
+        "accepted": [],
+        "word_pool": ["sich", "mich", "dich", "uns", "euch", "selbst", "ihn"]
+      },
+      "no": {
+        "primary": "seg",
+        "accepted": [],
+        "word_pool": ["seg", "meg", "deg", "oss", "dere", "selv", "ham"]
+      }
+    }
+  },
+  {
+    "id": 2028,
+    "question_type": "word_translation",
+    "difficulty": 1,
+    "tags": ["pronoun", "interrogative"],
+    "translations": {
+      "de": {
+        "primary": "wer",
+        "accepted": [],
+        "word_pool": ["wer", "was", "wie", "wo", "wann", "warum", "wen"]
+      },
+      "no": {
+        "primary": "hvem",
+        "accepted": [],
+        "word_pool": ["hvem", "hva", "hvordan", "hvor", "når", "hvorfor", "hvis"]
+      }
+    }
+  },
+  {
+    "id": 2029,
+    "question_type": "word_translation",
+    "difficulty": 1,
+    "tags": ["pronoun", "interrogative"],
+    "translations": {
+      "de": {
+        "primary": "was",
+        "accepted": [],
+        "word_pool": ["was", "wer", "wie", "wo", "wann", "warum", "welches"]
+      },
+      "no": {
+        "primary": "hva",
+        "accepted": [],
+        "word_pool": ["hva", "hvem", "hvordan", "hvor", "når", "hvorfor", "hvilket"]
+      }
+    }
+  },
+  {
+    "id": 2030,
+    "question_type": "word_translation",
+    "difficulty": 3,
+    "tags": ["pronoun", "indefinite"],
+    "translations": {
+      "de": {
+        "primary": "man",
+        "accepted": ["jemand"],
+        "word_pool": ["man", "jemand", "niemand", "alle", "einer", "jeder", "wir"]
+      },
+      "no": {
+        "primary": "man",
+        "accepted": ["en"],
+        "word_pool": ["man", "en", "noen", "ingen", "alle", "hver", "vi"]
+      }
+    }
+  },
+  {
+    "id": 2031,
+    "question_type": "word_translation",
+    "difficulty": 2,
+    "tags": ["pronoun", "demonstrative", "masculine"],
+    "translations": {
+      "de": {
+        "primary": "dieser",
+        "accepted": [],
+        "word_pool": ["dieser", "diese", "dieses", "jener", "derer", "unser", "euer"]
+      },
+      "no": {
+        "primary": "denne",
+        "accepted": [],
+        "word_pool": ["denne", "dette", "disse", "den", "det", "de", "vår"]
+      }
+    }
+  },
+  {
+    "id": 2032,
+    "question_type": "word_translation",
+    "difficulty": 2,
+    "tags": ["pronoun", "demonstrative", "neuter"],
+    "translations": {
+      "de": {
+        "primary": "dieses",
+        "accepted": [],
+        "word_pool": ["dieses", "dieser", "diese", "jener", "was", "das", "es"]
+      },
+      "no": {
+        "primary": "dette",
+        "accepted": [],
+        "word_pool": ["dette", "denne", "disse", "det", "den", "noe", "alt"]
+      }
+    }
+  },
+  {
+    "id": 2033,
+    "question_type": "word_translation",
+    "difficulty": 2,
+    "tags": ["pronoun", "demonstrative", "plural"],
+    "translations": {
+      "de": {
+        "primary": "diese (Plural)",
+        "accepted": [],
+        "word_pool": ["diese", "dieser", "dieses", "jene", "alle", "viele", "wir"]
+      },
+      "no": {
+        "primary": "disse",
+        "accepted": [],
+        "word_pool": ["disse", "denne", "dette", "de", "alle", "mange", "vi"]
+      }
+    }
+  },
+  {
+    "id": 2034,
+    "question_type": "word_translation",
+    "difficulty": 3,
+    "tags": ["pronoun", "demonstrative"],
+    "translations": {
+      "de": {
+        "primary": "jener",
+        "accepted": ["jene", "jenes"],
+        "word_pool": ["jener", "jene", "jenes", "dieser", "der", "welcher", "man"]
+      },
+      "no": {
+        "primary": "den (der borte)",
+        "accepted": ["det", "de"],
+        "word_pool": ["den", "det", "de", "denne", "dette", "hvilken", "en"]
+      }
+    }
+  },
+  {
+    "id": 2035,
+    "question_type": "word_translation",
+    "difficulty": 4,
+    "tags": ["pronoun", "relative", "masculine"],
+    "translations": {
+      "de": {
+        "primary": "der (relativ)",
+        "accepted": [],
+        "word_pool": ["der", "den", "dem", "dessen", "welcher", "wer", "er"]
+      },
+      "no": {
+        "primary": "som",
+        "accepted": [],
+        "word_pool": ["som", "hvem", "hva", "den", "det", "er", "han"]
+      }
+    }
+  },
+  {
+    "id": 2036,
+    "question_type": "word_translation",
+    "difficulty": 4,
+    "tags": ["pronoun", "relative", "feminine"],
+    "translations": {
+      "de": {
+        "primary": "die (relativ)",
+        "accepted": [],
+        "word_pool": ["die", "der", "deren", "welche", "sie", "wer", "wir"]
+      },
+      "no": {
+        "primary": "som (relativ)",
+        "accepted": ["som"],
+        "word_pool": ["som", "hvem", "hun", "den", "de", "vi", "en"]
+      }
+    }
+  },
+  {
+    "id": 2037,
+    "question_type": "word_translation",
+    "difficulty": 4,
+    "tags": ["pronoun", "relative", "neuter"],
+    "translations": {
+      "de": {
+        "primary": "das (relativ)",
+        "accepted": [],
+        "word_pool": ["das", "dem", "dessen", "welches", "es", "was", "man"]
+      },
+      "no": {
+        "primary": "som (nøytrum)",
+        "accepted": ["som"],
+        "word_pool": ["som", "hva", "det", "den", "noe", "alt", "en"]
+      }
+    }
+  },
+  {
+    "id": 2038,
+    "question_type": "word_translation",
+    "difficulty": 2,
+    "tags": ["pronoun", "indefinite"],
+    "translations": {
+      "de": {
+        "primary": "jemand",
+        "accepted": [],
+        "word_pool": ["jemand", "niemand", "man", "einer", "wer", "alle", "wir"]
+      },
+      "no": {
+        "primary": "noen (noen)",
+        "accepted": [],
+        "word_pool": ["noen", "ingen", "man", "en", "hvem", "alle", "vi"]
+      }
+    }
+  },
+  {
+    "id": 2039,
+    "question_type": "word_translation",
+    "difficulty": 2,
+    "tags": ["pronoun", "indefinite"],
+    "translations": {
+      "de": {
+        "primary": "niemand",
+        "accepted": [],
+        "word_pool": ["niemand", "jemand", "man", "keiner", "nie", "nichts", "wir"]
+      },
+      "no": {
+        "primary": "ingen",
+        "accepted": [],
+        "word_pool": ["ingen", "noen", "man", "aldri", "ingenting", "vi", "en"]
+      }
+    }
+  },
+  {
+    "id": 2040,
+    "question_type": "word_translation",
+    "difficulty": 2,
+    "tags": ["pronoun", "indefinite"],
+    "translations": {
+      "de": {
+        "primary": "etwas",
+        "accepted": [],
+        "word_pool": ["etwas", "nichts", "alles", "welches", "das", "was", "man"]
+      },
+      "no": {
+        "primary": "noe",
+        "accepted": [],
+        "word_pool": ["noe", "ingenting", "alt", "hvilket", "det", "hva", "en"]
+      }
+    }
+  },
+  {
+    "id": 2041,
+    "question_type": "word_translation",
+    "difficulty": 2,
+    "tags": ["pronoun", "indefinite"],
+    "translations": {
+      "de": {
+        "primary": "nichts",
+        "accepted": [],
+        "word_pool": ["nichts", "etwas", "alles", "nie", "keiner", "man", "es"]
+      },
+      "no": {
+        "primary": "ingenting",
+        "accepted": [],
+        "word_pool": ["ingenting", "noe", "alt", "aldri", "ingen", "man", "det"]
+      }
+    }
+  },
+  {
+    "id": 2042,
+    "question_type": "word_translation",
+    "difficulty": 2,
+    "tags": ["pronoun", "indefinite"],
+    "translations": {
+      "de": {
+        "primary": "jeder",
+        "accepted": ["jedes", "jede"],
+        "word_pool": ["jeder", "jedes", "jede", "alle", "man", "einer", "wir"]
+      },
+      "no": {
+        "primary": "hver",
+        "accepted": ["hvert"],
+        "word_pool": ["hver", "hvert", "alle", "man", "en", "begge", "vi"]
+      }
+    }
+  },
+  {
+    "id": 2043,
+    "question_type": "word_translation",
+    "difficulty": 2,
+    "tags": ["pronoun", "indefinite"],
+    "translations": {
+      "de": {
+        "primary": "alles",
+        "accepted": [],
+        "word_pool": ["alles", "etwas", "nichts", "alle", "ganz", "man", "es"]
+      },
+      "no": {
+        "primary": "alt",
+        "accepted": [],
+        "word_pool": ["alt", "noe", "ingenting", "alle", "helt", "man", "det"]
+      }
+    }
+  },
+  {
+    "id": 2044,
+    "question_type": "word_translation",
+    "difficulty": 2,
+    "tags": ["pronoun", "quantity"],
+    "translations": {
+      "de": {
+        "primary": "alle",
+        "accepted": [],
+        "word_pool": ["alle", "jeder", "viele", "manche", "wenige", "wir", "sie"]
+      },
+      "no": {
+        "primary": "alle",
+        "accepted": [],
+        "word_pool": ["alle", "hver", "mange", "noen", "få", "vi", "de"]
+      }
+    }
+  },
+  {
+    "id": 2045,
+    "question_type": "word_translation",
+    "difficulty": 2,
+    "tags": ["pronoun", "quantity"],
+    "translations": {
+      "de": {
+        "primary": "manche",
+        "accepted": ["einige"],
+        "word_pool": ["manche", "einige", "viele", "alle", "etwas", "mehr", "wir"]
+      },
+      "no": {
+        "primary": "noen (manche)",
+        "accepted": ["enkelte"],
+        "word_pool": ["noen", "enkelte", "mange", "alle", "noe", "mer", "vi"]
+      }
+    }
+  },
+  {
+    "id": 2046,
+    "question_type": "word_translation",
+    "difficulty": 2,
+    "tags": ["pronoun", "quantity"],
+    "translations": {
+      "de": {
+        "primary": "viele",
+        "accepted": [],
+        "word_pool": ["viele", "wenige", "alle", "manche", "mehr", "sie", "wir"]
+      },
+      "no": {
+        "primary": "mange",
+        "accepted": [],
+        "word_pool": ["mange", "få", "alle", "noen", "mer", "de", "vi"]
+      }
+    }
+  },
+  {
+    "id": 2047,
+    "question_type": "word_translation",
+    "difficulty": 2,
+    "tags": ["pronoun", "quantity"],
+    "translations": {
+      "de": {
+        "primary": "wenige",
+        "accepted": [],
+        "word_pool": ["wenige", "viele", "alle", "manche", "keiner", "sie", "wir"]
+      },
+      "no": {
+        "primary": "få",
+        "accepted": [],
+        "word_pool": ["få", "mange", "alle", "noen", "ingen", "de", "vi"]
+      }
+    }
+  },
+  {
+    "id": 2048,
+    "question_type": "word_translation",
+    "difficulty": 1,
+    "tags": ["pronoun", "interrogative"],
+    "translations": {
+      "de": {
+        "primary": "wie",
+        "accepted": [],
+        "word_pool": ["wie", "wo", "wann", "warum", "was", "welcher", "wer"]
+      },
+      "no": {
+        "primary": "hvordan",
+        "accepted": [],
+        "word_pool": ["hvordan", "hvor", "når", "hvorfor", "hva", "hvilken", "hvem"]
+      }
+    }
+  },
+  {
+    "id": 2049,
+    "question_type": "word_translation",
+    "difficulty": 1,
+    "tags": ["pronoun", "interrogative"],
+    "translations": {
+      "de": {
+        "primary": "wo",
+        "accepted": [],
+        "word_pool": ["wo", "wie", "wann", "warum", "woher", "wohin", "was"]
+      },
+      "no": {
+        "primary": "hvor",
+        "accepted": [],
+        "word_pool": ["hvor", "hvordan", "når", "hvorfor", "hvorfra", "hvorhen", "hva"]
+      }
+    }
+  },
+  {
+    "id": 2050,
+    "question_type": "word_translation",
+    "difficulty": 1,
+    "tags": ["pronoun", "interrogative"],
+    "translations": {
+      "de": {
+        "primary": "wann",
+        "accepted": [],
+        "word_pool": ["wann", "wie", "wo", "warum", "jetzt", "dann", "was"]
+      },
+      "no": {
+        "primary": "når",
+        "accepted": [],
+        "word_pool": ["når", "hvordan", "hvor", "hvorfor", "nå", "da", "hva"]
+      }
+    }
+  },
+  {
+    "id": 2051,
+    "question_type": "word_translation",
+    "difficulty": 1,
+    "tags": ["pronoun", "interrogative"],
+    "translations": {
+      "de": {
+        "primary": "warum",
+        "accepted": ["weshalb", "wieso"],
+        "word_pool": ["warum", "weshalb", "wieso", "weil", "wie", "wo", "wann"]
+      },
+      "no": {
+        "primary": "hvorfor",
+        "accepted": [],
+        "word_pool": ["hvorfor", "fordi", "hvordan", "hvor", "når", "hva", "hvem"]
+      }
+    }
+  },
+  {
+    "id": 2052,
+    "question_type": "word_translation",
+    "difficulty": 2,
+    "tags": ["pronoun", "interrogative"],
+    "translations": {
+      "de": {
+        "primary": "welcher",
+        "accepted": ["welche", "welches"],
+        "word_pool": ["welcher", "welche", "welches", "wer", "was", "wie", "jeder"]
+      },
+      "no": {
+        "primary": "hvilken",
+        "accepted": ["hvilket", "hvilke"],
+        "word_pool": ["hvilken", "hvilket", "hvilke", "hvem", "hva", "hvordan", "hver"]
+      }
+    }
+  },
+  {
+    "id": 2053,
+    "question_type": "word_translation",
+    "difficulty": 3,
+    "tags": ["pronoun", "interrogative"],
+    "translations": {
+      "de": {
+        "primary": "wessen",
+        "accepted": [],
+        "word_pool": ["wessen", "wem", "wen", "wer", "dessen", "meiner", "ihrer"]
+      },
+      "no": {
+        "primary": "hvis (spørrende)",
+        "accepted": [],
+        "word_pool": ["hvis", "hvem", "hva", "hvilken", "hans", "hennes", "deres"]
+      }
+    }
+  },
+  {
+    "id": 2054,
+    "question_type": "word_translation",
+    "difficulty": 3,
+    "tags": ["pronoun", "reciprocal"],
+    "translations": {
+      "de": {
+        "primary": "einander",
+        "accepted": [],
+        "word_pool": ["einander", "sich", "alleine", "wir", "uns", "zusammen", "miteinander"]
+      },
+      "no": {
+        "primary": "hverandre",
+        "accepted": [],
+        "word_pool": ["hverandre", "seg", "alene", "vi", "oss", "sammen", "dem"]
+      }
+    }
+  },
+  {
+    "id": 2055,
+    "question_type": "word_translation",
+    "difficulty": 3,
+    "tags": ["pronoun", "emphatic"],
+    "translations": {
+      "de": {
+        "primary": "selbst",
+        "accepted": ["selber"],
+        "word_pool": ["selbst", "selber", "sich", "mich", "dich", "allein", "man"]
+      },
+      "no": {
+        "primary": "selv",
+        "accepted": ["sjøl"],
+        "word_pool": ["selv", "sjøl", "seg", "meg", "deg", "alene", "man"]
+      }
+    }
+  },
+  {
+    "id": 2056,
+    "question_type": "word_translation",
+    "difficulty": 2,
+    "tags": ["pronoun", "quantity"],
+    "translations": {
+      "de": {
+        "primary": "beide",
+        "accepted": [],
+        "word_pool": ["beide", "alle", "zwei", "manche", "einer", "jeder", "wir"]
+      },
+      "no": {
+        "primary": "begge",
+        "accepted": [],
+        "word_pool": ["begge", "alle", "to", "noen", "en", "hver", "vi"]
+      }
+    }
+  },
+  {
+    "id": 2057,
+    "question_type": "word_translation",
+    "difficulty": 4,
+    "tags": ["pronoun", "formal", "possessive"],
+    "translations": {
+      "de": {
+        "primary": "Ihr (höflich)",
+        "accepted": ["Ihre", "Ihrem", "Ihren"],
+        "word_pool": ["Ihr", "Ihre", "Ihr", "dein", "euer", "Sie", "mein"]
+      },
+      "no": {
+        "primary": "Deres (formelt)",
+        "accepted": ["dere"],
+        "word_pool": ["Deres", "De", "Dem", "din", "deres", "dere", "vi"]
+      }
+    }
+  },
+  {
+    "id": 2058,
+    "question_type": "word_translation",
+    "difficulty": 4,
+    "tags": ["pronoun", "formal", "dative"],
+    "translations": {
+      "de": {
+        "primary": "Ihnen (höflich)",
+        "accepted": [],
+        "word_pool": ["Ihnen", "Sie", "Ihr", "euch", "dir", "mir", "uns"]
+      },
+      "no": {
+        "primary": "Dem (formelt)",
+        "accepted": ["dere"],
+        "word_pool": ["Dem", "De", "Deres", "dere", "deg", "meg", "oss"]
+      }
+    }
+  },
+  {
+    "id": 2059,
+    "question_type": "word_translation",
+    "difficulty": 2,
+    "tags": ["pronoun", "interrogative"],
+    "translations": {
+      "de": {
+        "primary": "wen",
+        "accepted": [],
+        "word_pool": ["wen", "wer", "wem", "was", "den", "ihn", "dich"]
+      },
+      "no": {
+        "primary": "hvem (objekt)",
+        "accepted": ["hvem"],
+        "word_pool": ["hvem", "hva", "han", "ham", "deg", "meg", "hvis"]
+      }
+    }
+  },
+  {
+    "id": 2060,
+    "question_type": "word_translation",
+    "difficulty": 2,
+    "tags": ["pronoun", "interrogative"],
+    "translations": {
+      "de": {
+        "primary": "wem",
+        "accepted": [],
+        "word_pool": ["wem", "wer", "wen", "was", "dem", "ihm", "dir"]
+      },
+      "no": {
+        "primary": "hvem (indirekte)",
+        "accepted": ["hvem"],
+        "word_pool": ["hvem", "hva", "han", "ham", "deg", "meg", "hvis"]
+      }
+    }
+  }
+]
