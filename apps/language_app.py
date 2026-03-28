@@ -39,6 +39,7 @@ def _(render_main_ui):
 def _(
     app_theme_styles,
     current_sentence,
+    in_question_view,
     render_footer,
     render_interaction_section,
     render_options_section,
@@ -57,11 +58,15 @@ def _(
             )
         )
 
-        mo_elems = [app_theme_styles, app_header, render_options_section()]
-        if not current_sentence:
+        mo_elems = [app_theme_styles, app_header]
+        if not in_question_view:
+            mo_elems.append(render_options_section())
             mo_elems.append(render_placeholder_element())
         else:
-            mo_elems.append(render_interaction_section())
+            if current_sentence:
+                mo_elems.append(render_interaction_section())
+            else:
+                mo_elems.append(render_no_questions_element())
             mo_elems.append(render_footer())
         return mo.vstack(mo_elems, gap=0)
 
@@ -194,7 +199,8 @@ def _(
 
 
 @app.cell
-def _(df, row_number):
+def _(df, row_number, start_session_id):
+    _ = start_session_id
     current_sentence = get_sentence(df=df, row_number=row_number)
 
     def toggle_reveal(current: bool) -> bool:
@@ -300,7 +306,42 @@ def _():
 
 
 @app.cell
-def _(set_answer_pool):
+def _():
+    def bump(counter: int) -> int:
+        return counter + 1
+
+    button_start_questions = mo.ui.button(
+        value=0,
+        on_click=bump,
+        label="Start questions",
+    )
+    button_back_to_settings = mo.ui.button(
+        value=0,
+        on_click=bump,
+        label="↩ Back to settings",
+    )
+    return button_back_to_settings, button_start_questions
+
+
+@app.cell
+def _(button_back_to_settings, button_start_questions):
+    in_question_view = button_start_questions.value > button_back_to_settings.value
+    start_session_id = button_start_questions.value
+    return in_question_view, start_session_id
+
+
+@app.cell
+def _(set_answer_pool, start_session_id):
+    # Keep answers fresh when starting a new question session.
+    _ = start_session_id
+    set_answer_pool([])
+    return
+
+
+@app.cell
+def _(set_answer_pool, start_session_id):
+    _ = start_session_id
+
     def handle_navigation(c: int) -> int:
         set_answer_pool([])  # Clear the pool synchronously!
         return c + 1
@@ -338,7 +379,13 @@ def _(set_answer_pool):
 
 
 @app.cell
-def _(get_answer_pool, handle_check_answer, handle_reset_answer):
+def _(
+    get_answer_pool,
+    handle_check_answer,
+    handle_reset_answer,
+    start_session_id,
+):
+    _ = start_session_id
     has_answer = len(get_answer_pool()) > 0
 
     button_check_answer = mo.ui.button(
@@ -772,6 +819,17 @@ def render_placeholder_element() -> mo.Html:
 
 
 @app.function
+def render_no_questions_element() -> mo.Html:
+    return mo.callout(
+        mo.md(
+            "### No questions found\n"
+            "Go back to settings and adjust language pair, direction, or difficulty."
+        ).center(),
+        kind="warn",
+    )
+
+
+@app.function
 def render_stat_box(value: str, label: str, caption: str) -> mo.Html:
     """Renders a full-width stat card with centered text."""
     return mo.vstack(
@@ -923,6 +981,7 @@ def _():
 
 @app.cell
 def _(
+    button_start_questions,
     dropdown_difficulty,
     dropdown_language_pairs,
     dropdown_translation_direction,
@@ -943,7 +1002,7 @@ def _(
             wrap=True,
         )
 
-        return mo.vstack([instruction_text, options_row], gap=1).style(
+        return mo.vstack([instruction_text, options_row, button_start_questions], gap=1).style(
             style_card(
                 accent_edge="var(--la-accent-primary-soft)",
             )
@@ -1039,11 +1098,11 @@ def _(
 
 
 @app.cell
-def _(button_next, button_prev):
+def _(button_back_to_settings, button_next, button_prev):
     def render_footer() -> mo.Html:
         return mo.vstack(
             [
-                mo.hstack([button_prev, button_next]),
+                mo.hstack([button_back_to_settings, button_prev, button_next]),
             ]
         ).style(
             style_card(
