@@ -3,17 +3,39 @@
     "id": 3001,
     "question_type": "word_translation",
     "difficulty": 1,
-    "tags": ["pronoun", "singular", "subject"],
+    "tags": [
+      "pronoun",
+      "personal",
+      "1st_person",
+      "singular",
+      "subject"
+    ],
     "translations": {
       "nl": {
         "primary": "ik",
         "accepted": [],
-        "word_pool": ["ik", "mij", "me", "jij", "hij", "wij", "zij"]
+        "word_pool": [
+          "ik",
+          "mij",
+          "me",
+          "jij",
+          "hij",
+          "wij",
+          "zij"
+        ]
       },
       "no": {
         "primary": "jeg",
         "accepted": [],
-        "word_pool": ["jeg", "meg", "du", "han", "vi", "hun", "min"]
+        "word_pool": [
+          "jeg",
+          "meg",
+          "min",
+          "du",
+          "han",
+          "vi",
+          "hun"
+        ]
       }
     }
   },
@@ -21,17 +43,41 @@
     "id": 3002,
     "question_type": "word_translation",
     "difficulty": 1,
-    "tags": ["pronoun", "singular", "subject"],
+    "tags": [
+      "pronoun",
+      "personal",
+      "2nd_person",
+      "singular",
+      "subject"
+    ],
     "translations": {
       "nl": {
         "primary": "jij",
-        "accepted": ["je"],
-        "word_pool": ["jij", "je", "jou", "ik", "hij", "u", "jullie"]
+        "accepted": [
+          "je"
+        ],
+        "word_pool": [
+          "jij",
+          "je",
+          "jou",
+          "ik",
+          "hij",
+          "u",
+          "jullie"
+        ]
       },
       "no": {
         "primary": "du",
         "accepted": [],
-        "word_pool": ["du", "deg", "din", "jeg", "han", "dere", "vi"]
+        "word_pool": [
+          "du",
+          "deg",
+          "din",
+          "jeg",
+          "han",
+          "dere",
+          "vi"
+        ]
       }
     }
   },
@@ -39,17 +85,40 @@
     "id": 3003,
     "question_type": "word_translation",
     "difficulty": 1,
-    "tags": ["pronoun", "singular", "subject", "masculine"],
+    "tags": [
+      "pronoun",
+      "personal",
+      "3rd_person",
+      "singular",
+      "subject",
+      "masculine"
+    ],
     "translations": {
       "nl": {
         "primary": "hij",
         "accepted": [],
-        "word_pool": ["hij", "hem", "zij", "het", "wij", "men", "u"]
+        "word_pool": [
+          "hij",
+          "hem",
+          "zij",
+          "het",
+          "wij",
+          "men",
+          "u"
+        ]
       },
       "no": {
         "primary": "han",
         "accepted": [],
-        "word_pool": ["han", "ham", "hun", "det", "vi", "en", "dere"]
+        "word_pool": [
+          "han",
+          "ham",
+          "hun",
+          "det",
+          "vi",
+          "en",
+          "dere"
+        ]
       }
     }
   },
@@ -57,17 +126,42 @@
     "id": 3004,
     "question_type": "word_translation",
     "difficulty": 1,
-    "tags": ["pronoun", "singular", "subject", "feminine"],
+    "tags": [
+      "pronoun",
+      "personal",
+      "3rd_person",
+      "singular",
+      "subject",
+      "feminine"
+    ],
     "translations": {
       "nl": {
         "primary": "zij (enkelvoud)",
-        "accepted": ["ze"],
-        "word_pool": ["zij", "ze", "haar", "hij", "het", "u", "wij"]
+        "accepted": [
+          "ze"
+        ],
+        "word_pool": [
+          "zij",
+          "ze",
+          "haar",
+          "hij",
+          "het",
+          "u",
+          "wij"
+        ]
       },
       "no": {
         "primary": "hun",
         "accepted": [],
-        "word_pool": ["hun", "henne", "han", "det", "vi", "dere", "de"]
+        "word_pool": [
+          "hun",
+          "henne",
+          "han",
+          "det",
+          "vi",
+          "dere",
+          "de"
+        ]
       }
     }
   },
@@ -75,17 +169,42 @@
     "id": 3005,
     "question_type": "word_translation",
     "difficulty": 1,
-    "tags": ["pronoun", "singular", "subject", "neuter"],
+    "tags": [
+      "pronoun",
+      "personal",
+      "3rd_person",
+      "singular",
+      "subject",
+      "neuter"
+    ],
     "translations": {
       "nl": {
         "primary": "het",
         "accepted": [],
-        "word_pool": ["het", "hij", "zij", "hem", "haar", "men", "wij"]
+        "word_pool": [
+          "het",
+          "hij",
+          "zij",
+          "hem",
+          "haar",
+          "men",
+          "wij"
+        ]
       },
       "no": {
         "primary": "det",
-        "accepted": ["den"],
-        "word_pool": ["det", "den", "han", "hun", "ham", "henne", "vi"]
+        "accepted": [
+          "den"
+        ],
+        "word_pool": [
+          "det",
+          "den",
+          "han",
+          "hun",
+          "ham",
+          "henne",
+          "vi"
+        ]
       }
     }
   },
@@ -93,17 +212,41 @@
     "id": 3006,
     "question_type": "word_translation",
     "difficulty": 1,
-    "tags": ["pronoun", "plural", "subject"],
+    "tags": [
+      "pronoun",
+      "personal",
+      "1st_person",
+      "plural",
+      "subject"
+    ],
     "translations": {
       "nl": {
         "primary": "wij",
-        "accepted": ["we"],
-        "word_pool": ["wij", "we", "ons", "zij", "jullie", "ik", "jij"]
+        "accepted": [
+          "we"
+        ],
+        "word_pool": [
+          "wij",
+          "we",
+          "ons",
+          "zij",
+          "jullie",
+          "ik",
+          "jij"
+        ]
       },
       "no": {
         "primary": "vi",
         "accepted": [],
-        "word_pool": ["vi", "oss", "de", "dere", "jeg", "du", "hans"]
+        "word_pool": [
+          "vi",
+          "oss",
+          "de",
+          "dere",
+          "jeg",
+          "du",
+          "hans"
+        ]
       }
     }
   },
@@ -111,17 +254,39 @@
     "id": 3007,
     "question_type": "word_translation",
     "difficulty": 1,
-    "tags": ["pronoun", "plural", "subject"],
+    "tags": [
+      "pronoun",
+      "personal",
+      "2nd_person",
+      "plural",
+      "subject"
+    ],
     "translations": {
       "nl": {
         "primary": "jullie",
         "accepted": [],
-        "word_pool": ["jullie", "wij", "zij", "u", "je", "jou", "ze"]
+        "word_pool": [
+          "jullie",
+          "wij",
+          "zij",
+          "u",
+          "je",
+          "jou",
+          "ze"
+        ]
       },
       "no": {
         "primary": "dere",
         "accepted": [],
-        "word_pool": ["dere", "vi", "de", "du", "deg", "din", "oss"]
+        "word_pool": [
+          "dere",
+          "vi",
+          "de",
+          "du",
+          "deg",
+          "din",
+          "oss"
+        ]
       }
     }
   },
@@ -129,17 +294,41 @@
     "id": 3008,
     "question_type": "word_translation",
     "difficulty": 1,
-    "tags": ["pronoun", "plural", "subject"],
+    "tags": [
+      "pronoun",
+      "personal",
+      "3rd_person",
+      "plural",
+      "subject"
+    ],
     "translations": {
       "nl": {
         "primary": "zij (meervoud)",
-        "accepted": ["ze"],
-        "word_pool": ["zij", "ze", "hen", "hun", "wij", "jullie", "u"]
+        "accepted": [
+          "ze"
+        ],
+        "word_pool": [
+          "zij",
+          "ze",
+          "hen",
+          "hun",
+          "wij",
+          "jullie",
+          "u"
+        ]
       },
       "no": {
         "primary": "de",
         "accepted": [],
-        "word_pool": ["de", "dem", "deres", "dere", "vi", "hun", "han"]
+        "word_pool": [
+          "de",
+          "dem",
+          "deres",
+          "dere",
+          "vi",
+          "hun",
+          "han"
+        ]
       }
     }
   },
@@ -147,17 +336,41 @@
     "id": 3009,
     "question_type": "word_translation",
     "difficulty": 3,
-    "tags": ["pronoun", "formal"],
+    "tags": [
+      "pronoun",
+      "personal",
+      "2nd_person",
+      "formal",
+      "subject"
+    ],
     "translations": {
       "nl": {
         "primary": "u",
         "accepted": [],
-        "word_pool": ["u", "uw", "jij", "jullie", "hij", "zij", "wij"]
+        "word_pool": [
+          "u",
+          "uw",
+          "jij",
+          "jullie",
+          "hij",
+          "zij",
+          "wij"
+        ]
       },
       "no": {
         "primary": "De (formelt)",
-        "accepted": ["dere"],
-        "word_pool": ["De", "Dem", "Deres", "du", "dere", "de", "vi"]
+        "accepted": [
+          "dere"
+        ],
+        "word_pool": [
+          "De",
+          "Dem",
+          "Deres",
+          "du",
+          "dere",
+          "de",
+          "vi"
+        ]
       }
     }
   },
@@ -165,17 +378,41 @@
     "id": 3010,
     "question_type": "word_translation",
     "difficulty": 2,
-    "tags": ["pronoun", "singular", "object"],
+    "tags": [
+      "pronoun",
+      "personal",
+      "1st_person",
+      "singular",
+      "object"
+    ],
     "translations": {
       "nl": {
         "primary": "mij",
-        "accepted": ["me"],
-        "word_pool": ["mij", "me", "ik", "jou", "hem", "haar", "ons"]
+        "accepted": [
+          "me"
+        ],
+        "word_pool": [
+          "mij",
+          "me",
+          "ik",
+          "jou",
+          "hem",
+          "haar",
+          "ons"
+        ]
       },
       "no": {
         "primary": "meg",
         "accepted": [],
-        "word_pool": ["meg", "jeg", "deg", "ham", "henne", "oss", "seg"]
+        "word_pool": [
+          "meg",
+          "jeg",
+          "deg",
+          "ham",
+          "henne",
+          "oss",
+          "seg"
+        ]
       }
     }
   },
@@ -183,17 +420,41 @@
     "id": 3011,
     "question_type": "word_translation",
     "difficulty": 2,
-    "tags": ["pronoun", "singular", "object"],
+    "tags": [
+      "pronoun",
+      "personal",
+      "2nd_person",
+      "singular",
+      "object"
+    ],
     "translations": {
       "nl": {
         "primary": "jou",
-        "accepted": ["je"],
-        "word_pool": ["jou", "je", "jij", "mij", "hem", "u", "jullie"]
+        "accepted": [
+          "je"
+        ],
+        "word_pool": [
+          "jou",
+          "je",
+          "jij",
+          "mij",
+          "hem",
+          "u",
+          "jullie"
+        ]
       },
       "no": {
         "primary": "deg",
         "accepted": [],
-        "word_pool": ["deg", "du", "meg", "ham", "dere", "seg", "din"]
+        "word_pool": [
+          "deg",
+          "du",
+          "meg",
+          "ham",
+          "dere",
+          "seg",
+          "din"
+        ]
       }
     }
   },
@@ -201,17 +462,42 @@
     "id": 3012,
     "question_type": "word_translation",
     "difficulty": 2,
-    "tags": ["pronoun", "singular", "object", "masculine"],
+    "tags": [
+      "pronoun",
+      "personal",
+      "3rd_person",
+      "singular",
+      "object",
+      "masculine"
+    ],
     "translations": {
       "nl": {
         "primary": "hem",
         "accepted": [],
-        "word_pool": ["hem", "hij", "haar", "het", "hen", "mij", "ons"]
+        "word_pool": [
+          "hem",
+          "hij",
+          "haar",
+          "het",
+          "hen",
+          "mij",
+          "ons"
+        ]
       },
       "no": {
         "primary": "ham",
-        "accepted": ["han"],
-        "word_pool": ["ham", "han", "henne", "det", "dem", "meg", "seg"]
+        "accepted": [
+          "han"
+        ],
+        "word_pool": [
+          "ham",
+          "han",
+          "henne",
+          "det",
+          "dem",
+          "meg",
+          "seg"
+        ]
       }
     }
   },
@@ -219,17 +505,40 @@
     "id": 3013,
     "question_type": "word_translation",
     "difficulty": 2,
-    "tags": ["pronoun", "singular", "object", "feminine"],
+    "tags": [
+      "pronoun",
+      "personal",
+      "3rd_person",
+      "singular",
+      "object",
+      "feminine"
+    ],
     "translations": {
       "nl": {
         "primary": "haar (object)",
         "accepted": [],
-        "word_pool": ["haar", "zij", "hem", "hen", "mij", "je", "u"]
+        "word_pool": [
+          "haar",
+          "zij",
+          "hem",
+          "hen",
+          "mij",
+          "je",
+          "u"
+        ]
       },
       "no": {
         "primary": "henne",
         "accepted": [],
-        "word_pool": ["henne", "hun", "ham", "meg", "oss", "seg", "min"]
+        "word_pool": [
+          "henne",
+          "hun",
+          "ham",
+          "meg",
+          "oss",
+          "seg",
+          "min"
+        ]
       }
     }
   },
@@ -237,17 +546,39 @@
     "id": 3014,
     "question_type": "word_translation",
     "difficulty": 2,
-    "tags": ["pronoun", "plural", "object"],
+    "tags": [
+      "pronoun",
+      "personal",
+      "1st_person",
+      "plural",
+      "object"
+    ],
     "translations": {
       "nl": {
         "primary": "ons",
         "accepted": [],
-        "word_pool": ["ons", "wij", "jullie", "hen", "hun", "mij", "u"]
+        "word_pool": [
+          "ons",
+          "wij",
+          "jullie",
+          "hen",
+          "hun",
+          "mij",
+          "u"
+        ]
       },
       "no": {
         "primary": "oss",
         "accepted": [],
-        "word_pool": ["oss", "vi", "dere", "dem", "meg", "seg", "vår"]
+        "word_pool": [
+          "oss",
+          "vi",
+          "dere",
+          "dem",
+          "meg",
+          "seg",
+          "vår"
+        ]
       }
     }
   },
@@ -255,17 +586,42 @@
     "id": 3015,
     "question_type": "word_translation",
     "difficulty": 2,
-    "tags": ["pronoun", "plural", "object"],
+    "tags": [
+      "pronoun",
+      "personal",
+      "3rd_person",
+      "plural",
+      "object"
+    ],
     "translations": {
       "nl": {
         "primary": "hen",
-        "accepted": ["ze", "hun"],
-        "word_pool": ["hen", "hun", "ze", "zij", "mij", "jullie", "u"]
+        "accepted": [
+          "ze",
+          "hun"
+        ],
+        "word_pool": [
+          "hen",
+          "hun",
+          "ze",
+          "zij",
+          "mij",
+          "jullie",
+          "u"
+        ]
       },
       "no": {
         "primary": "dem",
         "accepted": [],
-        "word_pool": ["dem", "de", "deres", "dere", "oss", "seg", "vi"]
+        "word_pool": [
+          "dem",
+          "de",
+          "deres",
+          "dere",
+          "oss",
+          "seg",
+          "vi"
+        ]
       }
     }
   },
@@ -273,17 +629,44 @@
     "id": 3016,
     "question_type": "word_translation",
     "difficulty": 2,
-    "tags": ["pronoun", "possessive", "singular"],
+    "tags": [
+      "pronoun",
+      "possessive",
+      "1st_person",
+      "singular"
+    ],
     "translations": {
       "nl": {
         "primary": "mijn",
-        "accepted": ["m'n"],
-        "word_pool": ["mijn", "mij", "m'n", "jouw", "zijn", "haar", "ons"]
+        "accepted": [
+          "m'n"
+        ],
+        "word_pool": [
+          "mijn",
+          "mij",
+          "m'n",
+          "jouw",
+          "zijn",
+          "haar",
+          "ons"
+        ]
       },
       "no": {
         "primary": "min",
-        "accepted": ["mi", "mitt", "mine"],
-        "word_pool": ["min", "mi", "mitt", "mine", "din", "hans", "vår"]
+        "accepted": [
+          "mi",
+          "mitt",
+          "mine"
+        ],
+        "word_pool": [
+          "min",
+          "mi",
+          "mitt",
+          "mine",
+          "din",
+          "hans",
+          "vår"
+        ]
       }
     }
   },
@@ -291,17 +674,44 @@
     "id": 3017,
     "question_type": "word_translation",
     "difficulty": 2,
-    "tags": ["pronoun", "possessive", "singular"],
+    "tags": [
+      "pronoun",
+      "possessive",
+      "2nd_person",
+      "singular"
+    ],
     "translations": {
       "nl": {
         "primary": "jouw",
-        "accepted": ["je"],
-        "word_pool": ["jouw", "jou", "je", "mijn", "zijn", "haar", "uw"]
+        "accepted": [
+          "je"
+        ],
+        "word_pool": [
+          "jouw",
+          "jou",
+          "je",
+          "mijn",
+          "zijn",
+          "haar",
+          "uw"
+        ]
       },
       "no": {
         "primary": "din",
-        "accepted": ["di", "ditt", "dine"],
-        "word_pool": ["din", "di", "ditt", "dine", "min", "hans", "deres"]
+        "accepted": [
+          "di",
+          "ditt",
+          "dine"
+        ],
+        "word_pool": [
+          "din",
+          "di",
+          "ditt",
+          "dine",
+          "min",
+          "hans",
+          "deres"
+        ]
       }
     }
   },
@@ -309,17 +719,46 @@
     "id": 3018,
     "question_type": "word_translation",
     "difficulty": 2,
-    "tags": ["pronoun", "possessive", "singular", "masculine"],
+    "tags": [
+      "pronoun",
+      "possessive",
+      "3rd_person",
+      "singular",
+      "masculine"
+    ],
     "translations": {
       "nl": {
         "primary": "zijn",
-        "accepted": ["z'n"],
-        "word_pool": ["zijn", "z'n", "haar", "hun", "ons", "mijn", "jouw"]
+        "accepted": [
+          "z'n"
+        ],
+        "word_pool": [
+          "zijn",
+          "z'n",
+          "haar",
+          "hun",
+          "ons",
+          "mijn",
+          "jouw"
+        ]
       },
       "no": {
         "primary": "hans",
-        "accepted": ["sin", "si", "sitt", "sine"],
-        "word_pool": ["hans", "sin", "si", "sitt", "sine", "hennes", "deres"]
+        "accepted": [
+          "sin",
+          "si",
+          "sitt",
+          "sine"
+        ],
+        "word_pool": [
+          "hans",
+          "sin",
+          "si",
+          "sitt",
+          "sine",
+          "hennes",
+          "deres"
+        ]
       }
     }
   },
@@ -327,17 +766,46 @@
     "id": 3019,
     "question_type": "word_translation",
     "difficulty": 2,
-    "tags": ["pronoun", "possessive", "singular", "feminine"],
+    "tags": [
+      "pronoun",
+      "possessive",
+      "3rd_person",
+      "singular",
+      "feminine"
+    ],
     "translations": {
       "nl": {
         "primary": "haar (bezittelijk)",
-        "accepted": ["d'r"],
-        "word_pool": ["haar", "d'r", "zijn", "hun", "ons", "mijn", "uw"]
+        "accepted": [
+          "d'r"
+        ],
+        "word_pool": [
+          "haar",
+          "d'r",
+          "zijn",
+          "hun",
+          "ons",
+          "mijn",
+          "uw"
+        ]
       },
       "no": {
         "primary": "hennes",
-        "accepted": ["sin", "si", "sitt", "sine"],
-        "word_pool": ["hennes", "sin", "si", "sitt", "sine", "hans", "deres"]
+        "accepted": [
+          "sin",
+          "si",
+          "sitt",
+          "sine"
+        ],
+        "word_pool": [
+          "hennes",
+          "sin",
+          "si",
+          "sitt",
+          "sine",
+          "hans",
+          "deres"
+        ]
       }
     }
   },
@@ -345,17 +813,43 @@
     "id": 3020,
     "question_type": "word_translation",
     "difficulty": 2,
-    "tags": ["pronoun", "possessive", "plural"],
+    "tags": [
+      "pronoun",
+      "possessive",
+      "1st_person",
+      "plural"
+    ],
     "translations": {
       "nl": {
         "primary": "ons",
-        "accepted": ["onze"],
-        "word_pool": ["ons", "onze", "hun", "jullie", "uw", "mijn", "jouw"]
+        "accepted": [
+          "onze"
+        ],
+        "word_pool": [
+          "ons",
+          "onze",
+          "hun",
+          "jullie",
+          "uw",
+          "mijn",
+          "jouw"
+        ]
       },
       "no": {
         "primary": "vår",
-        "accepted": ["vårt", "våre"],
-        "word_pool": ["vår", "vårt", "våre", "deres", "min", "din", "oss"]
+        "accepted": [
+          "vårt",
+          "våre"
+        ],
+        "word_pool": [
+          "vår",
+          "vårt",
+          "våre",
+          "deres",
+          "min",
+          "din",
+          "oss"
+        ]
       }
     }
   },
@@ -363,17 +857,38 @@
     "id": 3021,
     "question_type": "word_translation",
     "difficulty": 2,
-    "tags": ["pronoun", "possessive", "plural"],
+    "tags": [
+      "pronoun",
+      "possessive",
+      "3rd_person",
+      "plural"
+    ],
     "translations": {
       "nl": {
         "primary": "hun",
         "accepted": [],
-        "word_pool": ["hun", "hen", "zij", "ons", "jullie", "haar", "zijn"]
+        "word_pool": [
+          "hun",
+          "hen",
+          "zij",
+          "ons",
+          "jullie",
+          "haar",
+          "zijn"
+        ]
       },
       "no": {
         "primary": "deres (deres)",
         "accepted": [],
-        "word_pool": ["deres", "vår", "hennes", "hans", "sin", "de", "dem"]
+        "word_pool": [
+          "deres",
+          "vår",
+          "hennes",
+          "hans",
+          "sin",
+          "de",
+          "dem"
+        ]
       }
     }
   },
@@ -381,17 +896,40 @@
     "id": 3022,
     "question_type": "word_translation",
     "difficulty": 3,
-    "tags": ["pronoun", "formal", "possessive"],
+    "tags": [
+      "pronoun",
+      "possessive",
+      "2nd_person",
+      "formal"
+    ],
     "translations": {
       "nl": {
         "primary": "uw",
         "accepted": [],
-        "word_pool": ["uw", "u", "jouw", "jullie", "ons", "zijn", "haar"]
+        "word_pool": [
+          "uw",
+          "u",
+          "jouw",
+          "jullie",
+          "ons",
+          "zijn",
+          "haar"
+        ]
       },
       "no": {
         "primary": "Deres (formelt)",
-        "accepted": ["dere"],
-        "word_pool": ["Deres", "De", "Dem", "din", "deres", "dere", "vi"]
+        "accepted": [
+          "dere"
+        ],
+        "word_pool": [
+          "Deres",
+          "De",
+          "Dem",
+          "din",
+          "deres",
+          "dere",
+          "vi"
+        ]
       }
     }
   },
@@ -399,17 +937,40 @@
     "id": 3023,
     "question_type": "word_translation",
     "difficulty": 2,
-    "tags": ["pronoun", "reflexive"],
+    "tags": [
+      "pronoun",
+      "reflexive"
+    ],
     "translations": {
       "nl": {
         "primary": "zich",
-        "accepted": ["zichzelf"],
-        "word_pool": ["zich", "me", "je", "ons", "hen", "haar", "hem"]
+        "accepted": [
+          "zichzelf"
+        ],
+        "word_pool": [
+          "zich",
+          "me",
+          "je",
+          "ons",
+          "hen",
+          "haar",
+          "hem"
+        ]
       },
       "no": {
         "primary": "seg",
-        "accepted": ["seg selv"],
-        "word_pool": ["seg", "meg", "deg", "oss", "dere", "dem", "selv"]
+        "accepted": [
+          "seg selv"
+        ],
+        "word_pool": [
+          "seg",
+          "meg",
+          "deg",
+          "oss",
+          "dere",
+          "dem",
+          "selv"
+        ]
       }
     }
   },
@@ -417,17 +978,37 @@
     "id": 3024,
     "question_type": "word_translation",
     "difficulty": 1,
-    "tags": ["pronoun", "interrogative"],
+    "tags": [
+      "pronoun",
+      "interrogative",
+      "person"
+    ],
     "translations": {
       "nl": {
         "primary": "wie",
         "accepted": [],
-        "word_pool": ["wie", "wat", "waar", "hoe", "waarom", "welke", "wanneer"]
+        "word_pool": [
+          "wie",
+          "wat",
+          "waar",
+          "hoe",
+          "waarom",
+          "welke",
+          "wanneer"
+        ]
       },
       "no": {
         "primary": "hvem",
         "accepted": [],
-        "word_pool": ["hvem", "hva", "hvor", "hvordan", "hvorfor", "hvilken", "når"]
+        "word_pool": [
+          "hvem",
+          "hva",
+          "hvor",
+          "hvordan",
+          "hvorfor",
+          "hvilken",
+          "når"
+        ]
       }
     }
   },
@@ -435,17 +1016,37 @@
     "id": 3025,
     "question_type": "word_translation",
     "difficulty": 1,
-    "tags": ["pronoun", "interrogative"],
+    "tags": [
+      "pronoun",
+      "interrogative",
+      "object"
+    ],
     "translations": {
       "nl": {
         "primary": "wat",
         "accepted": [],
-        "word_pool": ["wat", "wie", "waar", "hoe", "waarom", "iets", "alles"]
+        "word_pool": [
+          "wat",
+          "wie",
+          "waar",
+          "hoe",
+          "waarom",
+          "iets",
+          "alles"
+        ]
       },
       "no": {
         "primary": "hva",
         "accepted": [],
-        "word_pool": ["hva", "hvem", "hvor", "hvordan", "hvorfor", "noe", "alt"]
+        "word_pool": [
+          "hva",
+          "hvem",
+          "hvor",
+          "hvordan",
+          "hvorfor",
+          "noe",
+          "alt"
+        ]
       }
     }
   },
@@ -453,17 +1054,37 @@
     "id": 3026,
     "question_type": "word_translation",
     "difficulty": 1,
-    "tags": ["pronoun", "interrogative"],
+    "tags": [
+      "pronoun",
+      "interrogative",
+      "location"
+    ],
     "translations": {
       "nl": {
         "primary": "waar",
         "accepted": [],
-        "word_pool": ["waar", "wie", "wat", "hoe", "waarom", "wanneer", "er"]
+        "word_pool": [
+          "waar",
+          "wie",
+          "wat",
+          "hoe",
+          "waarom",
+          "wanneer",
+          "er"
+        ]
       },
       "no": {
         "primary": "hvor",
         "accepted": [],
-        "word_pool": ["hvor", "hvem", "hva", "hvordan", "hvorfor", "når", "her"]
+        "word_pool": [
+          "hvor",
+          "hvem",
+          "hva",
+          "hvordan",
+          "hvorfor",
+          "når",
+          "her"
+        ]
       }
     }
   },
@@ -471,17 +1092,37 @@
     "id": 3027,
     "question_type": "word_translation",
     "difficulty": 1,
-    "tags": ["pronoun", "interrogative"],
+    "tags": [
+      "pronoun",
+      "interrogative",
+      "time"
+    ],
     "translations": {
       "nl": {
         "primary": "wanneer",
         "accepted": [],
-        "word_pool": ["wanneer", "hoe", "waar", "waarom", "wat", "nu", "dan"]
+        "word_pool": [
+          "wanneer",
+          "hoe",
+          "waar",
+          "waarom",
+          "wat",
+          "nu",
+          "dan"
+        ]
       },
       "no": {
         "primary": "når",
         "accepted": [],
-        "word_pool": ["når", "hvordan", "hvor", "hvorfor", "hva", "nå", "da"]
+        "word_pool": [
+          "når",
+          "hvordan",
+          "hvor",
+          "hvorfor",
+          "hva",
+          "nå",
+          "da"
+        ]
       }
     }
   },
@@ -489,17 +1130,37 @@
     "id": 3028,
     "question_type": "word_translation",
     "difficulty": 1,
-    "tags": ["pronoun", "interrogative"],
+    "tags": [
+      "pronoun",
+      "interrogative",
+      "manner"
+    ],
     "translations": {
       "nl": {
         "primary": "hoe",
         "accepted": [],
-        "word_pool": ["hoe", "waarom", "wanneer", "wat", "wie", "zo", "welke"]
+        "word_pool": [
+          "hoe",
+          "waarom",
+          "wanneer",
+          "wat",
+          "wie",
+          "zo",
+          "welke"
+        ]
       },
       "no": {
         "primary": "hvordan",
         "accepted": [],
-        "word_pool": ["hvordan", "hvorfor", "når", "hva", "hvem", "så", "hvilken"]
+        "word_pool": [
+          "hvordan",
+          "hvorfor",
+          "når",
+          "hva",
+          "hvem",
+          "så",
+          "hvilken"
+        ]
       }
     }
   },
@@ -507,17 +1168,37 @@
     "id": 3029,
     "question_type": "word_translation",
     "difficulty": 1,
-    "tags": ["pronoun", "interrogative"],
+    "tags": [
+      "pronoun",
+      "interrogative",
+      "reason"
+    ],
     "translations": {
       "nl": {
         "primary": "waarom",
         "accepted": [],
-        "word_pool": ["waarom", "doordat", "hoe", "wanneer", "wie", "omdat", "waar"]
+        "word_pool": [
+          "waarom",
+          "doordat",
+          "hoe",
+          "wanneer",
+          "wie",
+          "omdat",
+          "waar"
+        ]
       },
       "no": {
         "primary": "hvorfor",
         "accepted": [],
-        "word_pool": ["hvorfor", "fordi", "hvordan", "når", "hvem", "for", "hvor"]
+        "word_pool": [
+          "hvorfor",
+          "fordi",
+          "hvordan",
+          "når",
+          "hvem",
+          "for",
+          "hvor"
+        ]
       }
     }
   },
@@ -525,17 +1206,42 @@
     "id": 3030,
     "question_type": "word_translation",
     "difficulty": 2,
-    "tags": ["pronoun", "interrogative"],
+    "tags": [
+      "pronoun",
+      "interrogative",
+      "choice"
+    ],
     "translations": {
       "nl": {
         "primary": "welke",
-        "accepted": ["welk"],
-        "word_pool": ["welke", "welk", "wie", "wat", "die", "deze", "elk"]
+        "accepted": [
+          "welk"
+        ],
+        "word_pool": [
+          "welke",
+          "welk",
+          "wie",
+          "wat",
+          "die",
+          "deze",
+          "elk"
+        ]
       },
       "no": {
         "primary": "hvilken",
-        "accepted": ["hvilket", "hvilke"],
-        "word_pool": ["hvilken", "hvilket", "hvilke", "hvem", "hva", "den", "denne"]
+        "accepted": [
+          "hvilket",
+          "hvilke"
+        ],
+        "word_pool": [
+          "hvilken",
+          "hvilket",
+          "hvilke",
+          "hvem",
+          "hva",
+          "den",
+          "denne"
+        ]
       }
     }
   },
@@ -543,17 +1249,39 @@
     "id": 3031,
     "question_type": "word_translation",
     "difficulty": 2,
-    "tags": ["pronoun", "demonstrative", "masculine"],
+    "tags": [
+      "pronoun",
+      "demonstrative",
+      "masculine",
+      "feminine",
+      "singular"
+    ],
     "translations": {
       "nl": {
         "primary": "deze (enkelvoud)",
         "accepted": [],
-        "word_pool": ["deze", "dit", "die", "dat", "dieze", "elk", "alle"]
+        "word_pool": [
+          "deze",
+          "dit",
+          "die",
+          "dat",
+          "dieze",
+          "elk",
+          "alle"
+        ]
       },
       "no": {
         "primary": "denne",
         "accepted": [],
-        "word_pool": ["denne", "dette", "disse", "den", "det", "de", "hver"]
+        "word_pool": [
+          "denne",
+          "dette",
+          "disse",
+          "den",
+          "det",
+          "de",
+          "hver"
+        ]
       }
     }
   },
@@ -561,17 +1289,38 @@
     "id": 3032,
     "question_type": "word_translation",
     "difficulty": 2,
-    "tags": ["pronoun", "demonstrative", "neuter"],
+    "tags": [
+      "pronoun",
+      "demonstrative",
+      "neuter",
+      "singular"
+    ],
     "translations": {
       "nl": {
         "primary": "dit",
         "accepted": [],
-        "word_pool": ["dit", "deze", "die", "dat", "het", "elk", "iets"]
+        "word_pool": [
+          "dit",
+          "deze",
+          "die",
+          "dat",
+          "het",
+          "elk",
+          "iets"
+        ]
       },
       "no": {
         "primary": "dette",
         "accepted": [],
-        "word_pool": ["dette", "denne", "disse", "det", "den", "hvert", "noe"]
+        "word_pool": [
+          "dette",
+          "denne",
+          "disse",
+          "det",
+          "den",
+          "hvert",
+          "noe"
+        ]
       }
     }
   },
@@ -579,17 +1328,37 @@
     "id": 3033,
     "question_type": "word_translation",
     "difficulty": 2,
-    "tags": ["pronoun", "demonstrative", "plural"],
+    "tags": [
+      "pronoun",
+      "demonstrative",
+      "plural"
+    ],
     "translations": {
       "nl": {
         "primary": "deze (meervoud)",
         "accepted": [],
-        "word_pool": ["deze", "die", "jullie", "zij", "alle", "sommige", "wij"]
+        "word_pool": [
+          "deze",
+          "die",
+          "jullie",
+          "zij",
+          "alle",
+          "sommige",
+          "wij"
+        ]
       },
       "no": {
         "primary": "disse",
         "accepted": [],
-        "word_pool": ["disse", "denne", "de", "dere", "alle", "noen", "vi"]
+        "word_pool": [
+          "disse",
+          "denne",
+          "de",
+          "dere",
+          "alle",
+          "noen",
+          "vi"
+        ]
       }
     }
   },
@@ -597,17 +1366,42 @@
     "id": 3034,
     "question_type": "word_translation",
     "difficulty": 2,
-    "tags": ["pronoun", "demonstrative"],
+    "tags": [
+      "pronoun",
+      "demonstrative",
+      "distance"
+    ],
     "translations": {
       "nl": {
         "primary": "die",
-        "accepted": ["dat"],
-        "word_pool": ["die", "dat", "deze", "dit", "wie", "ze", "jou"]
+        "accepted": [
+          "dat"
+        ],
+        "word_pool": [
+          "die",
+          "dat",
+          "deze",
+          "dit",
+          "wie",
+          "ze",
+          "jou"
+        ]
       },
       "no": {
         "primary": "den (demonstrativ)",
-        "accepted": ["det", "de"],
-        "word_pool": ["den", "det", "de", "denne", "hvem", "hennes", "ham"]
+        "accepted": [
+          "det",
+          "de"
+        ],
+        "word_pool": [
+          "den",
+          "det",
+          "de",
+          "denne",
+          "hvem",
+          "hennes",
+          "ham"
+        ]
       }
     }
   },
@@ -615,17 +1409,37 @@
     "id": 3035,
     "question_type": "word_translation",
     "difficulty": 2,
-    "tags": ["pronoun", "indefinite"],
+    "tags": [
+      "pronoun",
+      "indefinite",
+      "person"
+    ],
     "translations": {
       "nl": {
         "primary": "iemand",
         "accepted": [],
-        "word_pool": ["iemand", "niemand", "iets", "iedereen", "iedere", "wie", "elke"]
+        "word_pool": [
+          "iemand",
+          "niemand",
+          "iets",
+          "iedereen",
+          "iedere",
+          "wie",
+          "elke"
+        ]
       },
       "no": {
         "primary": "noen (person)",
         "accepted": [],
-        "word_pool": ["noen", "ingen", "noe", "alle", "hver", "hvem", "hvert"]
+        "word_pool": [
+          "noen",
+          "ingen",
+          "noe",
+          "alle",
+          "hver",
+          "hvem",
+          "hvert"
+        ]
       }
     }
   },
@@ -633,17 +1447,38 @@
     "id": 3036,
     "question_type": "word_translation",
     "difficulty": 2,
-    "tags": ["pronoun", "indefinite"],
+    "tags": [
+      "pronoun",
+      "indefinite",
+      "negative",
+      "person"
+    ],
     "translations": {
       "nl": {
         "primary": "niemand",
         "accepted": [],
-        "word_pool": ["niemand", "iemand", "niets", "geen", "nooit", "geen een", "men"]
+        "word_pool": [
+          "niemand",
+          "iemand",
+          "niets",
+          "geen",
+          "nooit",
+          "geen een",
+          "men"
+        ]
       },
       "no": {
         "primary": "ingen",
         "accepted": [],
-        "word_pool": ["ingen", "noen", "ingenting", "aldri", "man", "ikke", "hverken"]
+        "word_pool": [
+          "ingen",
+          "noen",
+          "ingenting",
+          "aldri",
+          "man",
+          "ikke",
+          "hverken"
+        ]
       }
     }
   },
@@ -651,17 +1486,37 @@
     "id": 3037,
     "question_type": "word_translation",
     "difficulty": 2,
-    "tags": ["pronoun", "indefinite"],
+    "tags": [
+      "pronoun",
+      "indefinite",
+      "object"
+    ],
     "translations": {
       "nl": {
         "primary": "iets",
         "accepted": [],
-        "word_pool": ["iets", "niets", "alles", "hoe", "wat", "veel", "elke"]
+        "word_pool": [
+          "iets",
+          "niets",
+          "alles",
+          "hoe",
+          "wat",
+          "veel",
+          "elke"
+        ]
       },
       "no": {
         "primary": "noe",
         "accepted": [],
-        "word_pool": ["noe", "ingenting", "alt", "hvordan", "hva", "mange", "hver"]
+        "word_pool": [
+          "noe",
+          "ingenting",
+          "alt",
+          "hvordan",
+          "hva",
+          "mange",
+          "hver"
+        ]
       }
     }
   },
@@ -669,17 +1524,40 @@
     "id": 3038,
     "question_type": "word_translation",
     "difficulty": 2,
-    "tags": ["pronoun", "indefinite"],
+    "tags": [
+      "pronoun",
+      "indefinite",
+      "negative",
+      "object"
+    ],
     "translations": {
       "nl": {
         "primary": "niets",
-        "accepted": ["niks"],
-        "word_pool": ["niets", "iets", "alles", "geen", "nooit", "wat", "dat"]
+        "accepted": [
+          "niks"
+        ],
+        "word_pool": [
+          "niets",
+          "iets",
+          "alles",
+          "geen",
+          "nooit",
+          "wat",
+          "dat"
+        ]
       },
       "no": {
         "primary": "ingenting",
         "accepted": [],
-        "word_pool": ["ingenting", "noe", "alt", "mer", "aldri", "hva", "det"]
+        "word_pool": [
+          "ingenting",
+          "noe",
+          "alt",
+          "mer",
+          "aldri",
+          "hva",
+          "det"
+        ]
       }
     }
   },
@@ -687,17 +1565,37 @@
     "id": 3039,
     "question_type": "word_translation",
     "difficulty": 2,
-    "tags": ["pronoun", "indefinite"],
+    "tags": [
+      "pronoun",
+      "indefinite",
+      "totality"
+    ],
     "translations": {
       "nl": {
         "primary": "alles",
         "accepted": [],
-        "word_pool": ["alles", "iets", "niets", "alle", "iedereen", "heel", "wat"]
+        "word_pool": [
+          "alles",
+          "iets",
+          "niets",
+          "alle",
+          "iedereen",
+          "heel",
+          "wat"
+        ]
       },
       "no": {
         "primary": "alt",
         "accepted": [],
-        "word_pool": ["alt", "noe", "ingenting", "alle", "hver", "helt", "hva"]
+        "word_pool": [
+          "alt",
+          "noe",
+          "ingenting",
+          "alle",
+          "hver",
+          "helt",
+          "hva"
+        ]
       }
     }
   },
@@ -705,17 +1603,41 @@
     "id": 3040,
     "question_type": "word_translation",
     "difficulty": 3,
-    "tags": ["pronoun", "indefinite"],
+    "tags": [
+      "pronoun",
+      "indefinite",
+      "general"
+    ],
     "translations": {
       "nl": {
         "primary": "men",
-        "accepted": ["je"],
-        "word_pool": ["men", "je", "we", "ze", "iemand", "iedereen", "hij"]
+        "accepted": [
+          "je"
+        ],
+        "word_pool": [
+          "men",
+          "je",
+          "we",
+          "ze",
+          "iemand",
+          "iedereen",
+          "hij"
+        ]
       },
       "no": {
         "primary": "man",
-        "accepted": ["en"],
-        "word_pool": ["man", "en", "vi", "de", "noen", "alle", "han"]
+        "accepted": [
+          "en"
+        ],
+        "word_pool": [
+          "man",
+          "en",
+          "vi",
+          "de",
+          "noen",
+          "alle",
+          "han"
+        ]
       }
     }
   },
@@ -723,17 +1645,42 @@
     "id": 3041,
     "question_type": "word_translation",
     "difficulty": 2,
-    "tags": ["pronoun", "indefinite"],
+    "tags": [
+      "pronoun",
+      "indefinite",
+      "totality",
+      "person"
+    ],
     "translations": {
       "nl": {
         "primary": "iedereen",
-        "accepted": ["allen"],
-        "word_pool": ["iedereen", "allen", "alles", "iemand", "iedere", "elk", "wij"]
+        "accepted": [
+          "allen"
+        ],
+        "word_pool": [
+          "iedereen",
+          "allen",
+          "alles",
+          "iemand",
+          "iedere",
+          "elk",
+          "wij"
+        ]
       },
       "no": {
         "primary": "alle (personer)",
-        "accepted": ["alle sammen"],
-        "word_pool": ["alle", "alt", "noen", "hver", "hvert", "sammen", "vi"]
+        "accepted": [
+          "alle sammen"
+        ],
+        "word_pool": [
+          "alle",
+          "alt",
+          "noen",
+          "hver",
+          "hvert",
+          "sammen",
+          "vi"
+        ]
       }
     }
   },
@@ -741,17 +1688,41 @@
     "id": 3042,
     "question_type": "word_translation",
     "difficulty": 2,
-    "tags": ["pronoun", "quantity"],
+    "tags": [
+      "pronoun",
+      "quantity",
+      "large"
+    ],
     "translations": {
       "nl": {
         "primary": "veel",
-        "accepted": ["vele"],
-        "word_pool": ["veel", "weinig", "alle", "meerdere", "meer", "vaak", "zo"]
+        "accepted": [
+          "vele"
+        ],
+        "word_pool": [
+          "veel",
+          "weinig",
+          "alle",
+          "meerdere",
+          "meer",
+          "vaak",
+          "zo"
+        ]
       },
       "no": {
         "primary": "mange",
-        "accepted": ["mye"],
-        "word_pool": ["mange", "få", "alle", "flere", "mer", "ofte", "så"]
+        "accepted": [
+          "mye"
+        ],
+        "word_pool": [
+          "mange",
+          "få",
+          "alle",
+          "flere",
+          "mer",
+          "ofte",
+          "så"
+        ]
       }
     }
   },
@@ -759,17 +1730,39 @@
     "id": 3043,
     "question_type": "word_translation",
     "difficulty": 2,
-    "tags": ["pronoun", "quantity"],
+    "tags": [
+      "pronoun",
+      "quantity",
+      "small"
+    ],
     "translations": {
       "nl": {
         "primary": "weinig",
         "accepted": [],
-        "word_pool": ["weinig", "veel", "alle", "geen", "wat", "bijna", "iets"]
+        "word_pool": [
+          "weinig",
+          "veel",
+          "alle",
+          "geen",
+          "wat",
+          "bijna",
+          "iets"
+        ]
       },
       "no": {
         "primary": "få",
-        "accepted": ["lite"],
-        "word_pool": ["få", "mange", "alle", "ingen", "noe", "nesten", "litt"]
+        "accepted": [
+          "lite"
+        ],
+        "word_pool": [
+          "få",
+          "mange",
+          "alle",
+          "ingen",
+          "noe",
+          "nesten",
+          "litt"
+        ]
       }
     }
   },
@@ -777,17 +1770,41 @@
     "id": 3044,
     "question_type": "word_translation",
     "difficulty": 2,
-    "tags": ["pronoun", "quantity"],
+    "tags": [
+      "pronoun",
+      "quantity",
+      "dual"
+    ],
     "translations": {
       "nl": {
         "primary": "beide",
-        "accepted": ["allebei"],
-        "word_pool": ["beide", "allebei", "twee", "alle", "elk", "ieder", "wij"]
+        "accepted": [
+          "allebei"
+        ],
+        "word_pool": [
+          "beide",
+          "allebei",
+          "twee",
+          "alle",
+          "elk",
+          "ieder",
+          "wij"
+        ]
       },
       "no": {
         "primary": "begge",
-        "accepted": ["begge to"],
-        "word_pool": ["begge", "to", "alle", "hver", "hvert", "vi", "sammen"]
+        "accepted": [
+          "begge to"
+        ],
+        "word_pool": [
+          "begge",
+          "to",
+          "alle",
+          "hver",
+          "hvert",
+          "vi",
+          "sammen"
+        ]
       }
     }
   },
@@ -795,17 +1812,41 @@
     "id": 3045,
     "question_type": "word_translation",
     "difficulty": 2,
-    "tags": ["pronoun", "quantity"],
+    "tags": [
+      "pronoun",
+      "quantity",
+      "partial"
+    ],
     "translations": {
       "nl": {
         "primary": "enkele",
-        "accepted": ["sommige"],
-        "word_pool": ["enkele", "sommige", "veel", "weinig", "paar", "wat", "die"]
+        "accepted": [
+          "sommige"
+        ],
+        "word_pool": [
+          "enkele",
+          "sommige",
+          "veel",
+          "weinig",
+          "paar",
+          "wat",
+          "die"
+        ]
       },
       "no": {
         "primary": "noen (enkelte)",
-        "accepted": ["enkelte"],
-        "word_pool": ["noen", "enkelte", "mange", "få", "par", "noe", "de"]
+        "accepted": [
+          "enkelte"
+        ],
+        "word_pool": [
+          "noen",
+          "enkelte",
+          "mange",
+          "få",
+          "par",
+          "noe",
+          "de"
+        ]
       }
     }
   },
@@ -813,17 +1854,40 @@
     "id": 3046,
     "question_type": "word_translation",
     "difficulty": 2,
-    "tags": ["pronoun", "emphatic"],
+    "tags": [
+      "pronoun",
+      "emphatic"
+    ],
     "translations": {
       "nl": {
         "primary": "zelf",
-        "accepted": ["zelfs"],
-        "word_pool": ["zelf", "zelfs", "zich", "me", "je", "ons", "eigen"]
+        "accepted": [
+          "zelfs"
+        ],
+        "word_pool": [
+          "zelf",
+          "zelfs",
+          "zich",
+          "me",
+          "je",
+          "ons",
+          "eigen"
+        ]
       },
       "no": {
         "primary": "selv",
-        "accepted": ["sjøl"],
-        "word_pool": ["selv", "sjøl", "seg", "meg", "deg", "oss", "egen"]
+        "accepted": [
+          "sjøl"
+        ],
+        "word_pool": [
+          "selv",
+          "sjøl",
+          "seg",
+          "meg",
+          "deg",
+          "oss",
+          "egen"
+        ]
       }
     }
   },
@@ -831,17 +1895,36 @@
     "id": 3047,
     "question_type": "word_translation",
     "difficulty": 2,
-    "tags": ["pronoun", "reciprocal"],
+    "tags": [
+      "pronoun",
+      "reciprocal"
+    ],
     "translations": {
       "nl": {
         "primary": "elkaar",
         "accepted": [],
-        "word_pool": ["elkaar", "zich", "samen", "ons", "jullie", "hen", "wij"]
+        "word_pool": [
+          "elkaar",
+          "zich",
+          "samen",
+          "ons",
+          "jullie",
+          "hen",
+          "wij"
+        ]
       },
       "no": {
         "primary": "hverandre",
         "accepted": [],
-        "word_pool": ["hverandre", "seg", "sammen", "oss", "dere", "dem", "vi"]
+        "word_pool": [
+          "hverandre",
+          "seg",
+          "sammen",
+          "oss",
+          "dere",
+          "dem",
+          "vi"
+        ]
       }
     }
   },
@@ -849,17 +1932,42 @@
     "id": 3048,
     "question_type": "word_translation",
     "difficulty": 3,
-    "tags": ["pronoun", "relative"],
+    "tags": [
+      "pronoun",
+      "relative",
+      "masculine",
+      "feminine",
+      "plural"
+    ],
     "translations": {
       "nl": {
         "primary": "die (relatief)",
-        "accepted": ["wie", "welke"],
-        "word_pool": ["die", "dat", "wat", "wie", "welke", "hen", "hun"]
+        "accepted": [
+          "wie",
+          "welke"
+        ],
+        "word_pool": [
+          "die",
+          "dat",
+          "wat",
+          "wie",
+          "welke",
+          "hen",
+          "hun"
+        ]
       },
       "no": {
         "primary": "som (relativ)",
         "accepted": [],
-        "word_pool": ["som", "den", "det", "hvem", "hva", "han", "henne"]
+        "word_pool": [
+          "som",
+          "den",
+          "det",
+          "hvem",
+          "hva",
+          "han",
+          "henne"
+        ]
       }
     }
   },
@@ -867,17 +1975,40 @@
     "id": 3049,
     "question_type": "word_translation",
     "difficulty": 3,
-    "tags": ["pronoun", "relative"],
+    "tags": [
+      "pronoun",
+      "relative",
+      "neuter",
+      "singular"
+    ],
     "translations": {
       "nl": {
         "primary": "dat (relatief)",
-        "accepted": ["wat"],
-        "word_pool": ["dat", "die", "wat", "welk", "het", "elk", "men"]
+        "accepted": [
+          "wat"
+        ],
+        "word_pool": [
+          "dat",
+          "die",
+          "wat",
+          "welk",
+          "het",
+          "elk",
+          "men"
+        ]
       },
       "no": {
         "primary": "som (nøytrum relativ)",
         "accepted": [],
-        "word_pool": ["som", "det", "den", "hva", "det", "en", "man"]
+        "word_pool": [
+          "som",
+          "det",
+          "den",
+          "hva",
+          "det",
+          "en",
+          "man"
+        ]
       }
     }
   },
@@ -885,17 +2016,43 @@
     "id": 3050,
     "question_type": "word_translation",
     "difficulty": 3,
-    "tags": ["pronoun", "indefinite"],
+    "tags": [
+      "pronoun",
+      "indefinite",
+      "distributive"
+    ],
     "translations": {
       "nl": {
         "primary": "elke",
-        "accepted": ["eder", "iedere"],
-        "word_pool": ["elke", "elk", "ieder", "iedere", "alle", "heel", "sommige"]
+        "accepted": [
+          "elk",
+          "ieder",
+          "iedere"
+        ],
+        "word_pool": [
+          "elke",
+          "elk",
+          "ieder",
+          "iedere",
+          "alle",
+          "heel",
+          "sommige"
+        ]
       },
       "no": {
         "primary": "hver",
-        "accepted": ["hvert"],
-        "word_pool": ["hver", "hvert", "alle", "helt", "noen", "enkelte", "vi"]
+        "accepted": [
+          "hvert"
+        ],
+        "word_pool": [
+          "hver",
+          "hvert",
+          "alle",
+          "helt",
+          "noen",
+          "enkelte",
+          "vi"
+        ]
       }
     }
   },
@@ -903,17 +2060,41 @@
     "id": 3051,
     "question_type": "word_translation",
     "difficulty": 3,
-    "tags": ["pronoun", "interrogative"],
+    "tags": [
+      "pronoun",
+      "interrogative",
+      "possessive"
+    ],
     "translations": {
       "nl": {
         "primary": "wiens",
-        "accepted": ["wier"],
-        "word_pool": ["wiens", "wie", "wier", "van wie", "waar", "welke", "hem"]
+        "accepted": [
+          "wier"
+        ],
+        "word_pool": [
+          "wiens",
+          "wie",
+          "wier",
+          "van wie",
+          "waar",
+          "welke",
+          "hem"
+        ]
       },
       "no": {
-        "primary": "hvis (eiendomspronomen)",
-        "accepted": ["hvilkens"],
-        "word_pool": ["hvis", "hvem", "hva", "hvilken", "hans", "hennes", "deres"]
+        "primary": "hvis (spørrende)",
+        "accepted": [
+          "hvilkens"
+        ],
+        "word_pool": [
+          "hvis",
+          "hvem",
+          "hva",
+          "hvilken",
+          "hans",
+          "hennes",
+          "deres"
+        ]
       }
     }
   },
@@ -921,17 +2102,43 @@
     "id": 3052,
     "question_type": "word_translation",
     "difficulty": 2,
-    "tags": ["pronoun", "indefinite"],
+    "tags": [
+      "pronoun",
+      "indefinite",
+      "totality",
+      "group"
+    ],
     "translations": {
       "nl": {
         "primary": "allemaal",
-        "accepted": ["allen", "alle"],
-        "word_pool": ["allemaal", "allen", "alle", "alles", "iedereen", "wij", "ze"]
+        "accepted": [
+          "allen",
+          "alle"
+        ],
+        "word_pool": [
+          "allemaal",
+          "allen",
+          "alle",
+          "alles",
+          "iedereen",
+          "wij",
+          "ze"
+        ]
       },
       "no": {
         "primary": "alle sammen",
-        "accepted": ["alle"],
-        "word_pool": ["alle", "alt", "sammen", "ledd", "noen", "vi", "de"]
+        "accepted": [
+          "alle"
+        ],
+        "word_pool": [
+          "alle",
+          "alt",
+          "sammen",
+          "ledd",
+          "noen",
+          "vi",
+          "de"
+        ]
       }
     }
   },
@@ -939,17 +2146,40 @@
     "id": 3053,
     "question_type": "word_translation",
     "difficulty": 4,
-    "tags": ["pronoun", "locative"],
+    "tags": [
+      "pronoun",
+      "locative"
+    ],
     "translations": {
       "nl": {
         "primary": "er",
-        "accepted": ["daar"],
-        "word_pool": ["er", "hier", "daar", "waar", "het", "men", "ze"]
+        "accepted": [
+          "daar"
+        ],
+        "word_pool": [
+          "er",
+          "hier",
+          "daar",
+          "waar",
+          "het",
+          "men",
+          "ze"
+        ]
       },
       "no": {
         "primary": "der (sted)",
-        "accepted": ["her"],
-        "word_pool": ["der", "her", "det", "den", "han", "hun", "oss"]
+        "accepted": [
+          "her"
+        ],
+        "word_pool": [
+          "der",
+          "her",
+          "det",
+          "den",
+          "han",
+          "hun",
+          "oss"
+        ]
       }
     }
   },
@@ -957,17 +2187,40 @@
     "id": 3054,
     "question_type": "word_translation",
     "difficulty": 2,
-    "tags": ["pronoun", "singular", "object"],
+    "tags": [
+      "pronoun",
+      "personal",
+      "formal",
+      "object"
+    ],
     "translations": {
       "nl": {
         "primary": "u (object)",
         "accepted": [],
-        "word_pool": ["u", "uw", "je", "jou", "jullie", "hem", "haar"]
+        "word_pool": [
+          "u",
+          "uw",
+          "je",
+          "jou",
+          "jullie",
+          "hem",
+          "haar"
+        ]
       },
       "no": {
         "primary": "Dem (objekt)",
-        "accepted": ["dere"],
-        "word_pool": ["Dem", "Deres", "deg", "meg", " dere", "ham", "henne"]
+        "accepted": [
+          "dere"
+        ],
+        "word_pool": [
+          "Dem",
+          "Deres",
+          "deg",
+          "meg",
+          " dere",
+          "ham",
+          "henne"
+        ]
       }
     }
   },
@@ -975,17 +2228,39 @@
     "id": 3055,
     "question_type": "word_translation",
     "difficulty": 3,
-    "tags": ["pronoun", "indefinite"],
+    "tags": [
+      "pronoun",
+      "indefinite",
+      "location"
+    ],
     "translations": {
       "nl": {
         "primary": "ergens",
         "accepted": [],
-        "word_pool": ["ergens", "nergens", "overal", "iemand", "iets", "soms", "ooit"]
+        "word_pool": [
+          "ergens",
+          "nergens",
+          "overal",
+          "iemand",
+          "iets",
+          "soms",
+          "ooit"
+        ]
       },
       "no": {
         "primary": "et eller annet sted",
-        "accepted": ["noen steder"],
-        "word_pool": ["et", "noen", "sted", "steder", "noensteds", "noen", "noe"]
+        "accepted": [
+          "noen steder"
+        ],
+        "word_pool": [
+          "et",
+          "noen",
+          "sted",
+          "steder",
+          "noensteds",
+          "noen",
+          "noe"
+        ]
       }
     }
   },
@@ -993,17 +2268,40 @@
     "id": 3056,
     "question_type": "word_translation",
     "difficulty": 3,
-    "tags": ["pronoun", "indefinite"],
+    "tags": [
+      "pronoun",
+      "indefinite",
+      "negative",
+      "location"
+    ],
     "translations": {
       "nl": {
         "primary": "nergens",
         "accepted": [],
-        "word_pool": ["nergens", "ergens", "overal", "niemand", "niets", "nooit", "geen"]
+        "word_pool": [
+          "nergens",
+          "ergens",
+          "overal",
+          "niemand",
+          "niets",
+          "nooit",
+          "geen"
+        ]
       },
       "no": {
         "primary": "ingen steder",
-        "accepted": ["ikke noe sted"],
-        "word_pool": ["ingen", "noen", "steder", "sted", "ingensteds", "aldri", "ikke"]
+        "accepted": [
+          "ikke noe sted"
+        ],
+        "word_pool": [
+          "ingen",
+          "noen",
+          "steder",
+          "sted",
+          "ingensteds",
+          "aldri",
+          "ikke"
+        ]
       }
     }
   },
@@ -1011,17 +2309,38 @@
     "id": 3057,
     "question_type": "word_translation",
     "difficulty": 3,
-    "tags": ["pronoun", "indefinite"],
+    "tags": [
+      "pronoun",
+      "indefinite",
+      "totality",
+      "location"
+    ],
     "translations": {
       "nl": {
         "primary": "overal",
         "accepted": [],
-        "word_pool": ["overal", "ergens", "nergens", "alles", "iedereen", "elke", "altijd"]
+        "word_pool": [
+          "overal",
+          "ergens",
+          "nergens",
+          "alles",
+          "iedereen",
+          "elke",
+          "altijd"
+        ]
       },
       "no": {
         "primary": "overalt",
         "accepted": [],
-        "word_pool": ["overalt", "noen", "ingen", "alt", "alle", "hver", "alltid"]
+        "word_pool": [
+          "overalt",
+          "noen",
+          "ingen",
+          "alt",
+          "alle",
+          "hver",
+          "alltid"
+        ]
       }
     }
   },
@@ -1029,17 +2348,37 @@
     "id": 3058,
     "question_type": "word_translation",
     "difficulty": 2,
-    "tags": ["pronoun", "reciprocal"],
+    "tags": [
+      "pronoun",
+      "reciprocal",
+      "possessive"
+    ],
     "translations": {
       "nl": {
         "primary": "elkaars",
         "accepted": [],
-        "word_pool": ["elkaars", "elkaar", "onze", "jouw", "hun", "zijn", "haar"]
+        "word_pool": [
+          "elkaars",
+          "elkaar",
+          "onze",
+          "jouw",
+          "hun",
+          "zijn",
+          "haar"
+        ]
       },
       "no": {
         "primary": "hverandres",
         "accepted": [],
-        "word_pool": ["hverandres", "hverandre", "vår", "din", "deres", "hans", "hennes"]
+        "word_pool": [
+          "hverandres",
+          "hverandre",
+          "vår",
+          "din",
+          "deres",
+          "hans",
+          "hennes"
+        ]
       }
     }
   },
@@ -1047,17 +2386,41 @@
     "id": 3059,
     "question_type": "word_translation",
     "difficulty": 2,
-    "tags": ["pronoun", "indefinite"],
+    "tags": [
+      "pronoun",
+      "quantity",
+      "plural"
+    ],
     "translations": {
       "nl": {
         "primary": "sommige",
-        "accepted": ["enkele"],
-        "word_pool": ["sommige", "enkele", "veel", "weinig", "alle", "meerdere", "meer"]
+        "accepted": [
+          "enkele"
+        ],
+        "word_pool": [
+          "sommige",
+          "enkele",
+          "veel",
+          "weinig",
+          "alle",
+          "meerdere",
+          "meer"
+        ]
       },
       "no": {
         "primary": "noen (flertall)",
-        "accepted": ["enkelte"],
-        "word_pool": ["noen", "enkelte", "mange", "få", "alle", "flere", "mer"]
+        "accepted": [
+          "enkelte"
+        ],
+        "word_pool": [
+          "noen",
+          "enkelte",
+          "mange",
+          "få",
+          "alle",
+          "flere",
+          "mer"
+        ]
       }
     }
   },
@@ -1065,17 +2428,38 @@
     "id": 3060,
     "question_type": "word_translation",
     "difficulty": 1,
-    "tags": ["pronoun", "singular", "subject"],
+    "tags": [
+      "pronoun",
+      "demonstrative",
+      "feminine",
+      "singular"
+    ],
     "translations": {
       "nl": {
         "primary": "deze (vrouwelijk)",
-        "accepted": ["deze"],
-        "word_pool": ["deze", "dit", "die", "zij", "haar", "een", "dieze"]
+        "accepted": [],
+        "word_pool": [
+          "deze",
+          "dit",
+          "die",
+          "zij",
+          "haar",
+          "een",
+          "dieze"
+        ]
       },
       "no": {
-        "primary": "denne (hun-kjønn)",
-        "accepted": ["denne"],
-        "word_pool": ["denne", "hun", "henne", "ei", "den", "det", "vår"]
+        "primary": "denne (hunkjønn)",
+        "accepted": [],
+        "word_pool": [
+          "denne",
+          "hun",
+          "henne",
+          "ei",
+          "den",
+          "det",
+          "vår"
+        ]
       }
     }
   }
