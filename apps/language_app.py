@@ -318,14 +318,8 @@ def _(set_answer_pool):
 
 
 @app.cell
-def _(
-    current_sentence,
-    get_answer_pool,
-    pool_words,
-    set_answer_pool,
-    set_score,
-):
-    def handle_check(_: Any) -> bool:
+def _(current_sentence, get_answer_pool, pool_words, set_score):
+    def handle_check_answer(_: Any) -> bool:
         is_correct = check_answer(
             user_answer=[pool_words[i] for i in get_answer_pool()],
             target=current_sentence["target"],
@@ -339,16 +333,32 @@ def _(
         )
         return is_correct
 
+    return (handle_check_answer,)
+
+
+@app.cell
+def _(set_answer_pool):
+    def handle_reset_answer(_: Any) -> None:
+        set_answer_pool([])
+
+    return (handle_reset_answer,)
+
+
+@app.cell
+def _(get_answer_pool, handle_check_answer, handle_reset_answer):
+    has_answer = len(get_answer_pool()) > 0
 
     button_check_answer = mo.ui.button(
         value=None,
-        on_click=handle_check,
+        on_click=handle_check_answer,
         label="Check answer",
+        disabled=not has_answer,
     )
     button_reset = mo.ui.button(
         value=None,
-        on_click=lambda _: set_answer_pool([]),
+        on_click=handle_reset_answer,
         label="↺ Reset",
+        disabled=not has_answer,
     )
     return button_check_answer, button_reset
 
