@@ -17,6 +17,7 @@ with app.setup:
     import json
     import polars as pl
     import random
+    import re
     import string
     import sys
 
@@ -155,6 +156,20 @@ def _():
 
 
 @app.cell
+def _(raw_pairs):
+    pyodide_question_files_by_pair = {pair: ["questions.json"] for pair in raw_pairs}
+    pyodide_question_files_by_pair["de_no"] = [
+        "questions.json",
+        "targeted_questions.json",
+    ]
+    pyodide_question_files_by_pair["nl_no"] = [
+        "questions.json",
+        "targeted_questions.json",
+    ]
+    return (pyodide_question_files_by_pair,)
+
+
+@app.cell
 def _():
     get_session_state, set_session_state = mo.state(
         {
@@ -193,8 +208,10 @@ def _():
 
 
 @app.cell
-def _(dropdown_language_pairs, language_1, language_2):
-    _read_json_data = load_json_data(pair=dropdown_language_pairs.value)
+def _(dropdown_language_pairs, dropdown_question_file, language_1, language_2):
+    _read_json_data = load_json_data(
+        pair=dropdown_language_pairs.value, filename=dropdown_question_file.value
+    )
     df_raw = load_curriculum(data=_read_json_data)
     df_canonical = transform_to_canonical(
         df=df_raw, language_1=language_1, language_2=language_2
@@ -297,6 +314,34 @@ def _(LANG_MAP, raw_pairs, set_answer_pool):
     )
     dropdown_language_pairs
     return (dropdown_language_pairs,)
+
+
+@app.cell
+def _(
+    dropdown_language_pairs,
+    pyodide_question_files_by_pair,
+    set_answer_pool,
+):
+    pair = dropdown_language_pairs.value
+    file_names = list_question_files(
+        pair=pair, pyodide_files_by_pair=pyodide_question_files_by_pair
+    )
+
+    default_file = "questions.json" if "questions.json" in file_names else file_names[0]
+    default_file_option = humanize_question_file_name(default_file)
+    file_options = {
+        humanize_question_file_name(name): name for name in file_names
+    }
+
+    dropdown_question_file = mo.ui.dropdown(
+        options=file_options,
+        value=default_file_option,
+        allow_select_none=False,
+        label="Question set",
+        on_change=lambda _: set_answer_pool([]),
+    )
+    dropdown_question_file
+    return (dropdown_question_file,)
 
 
 @app.cell
@@ -548,15 +593,43 @@ def _():
 
 
 @app.function
-def load_json_data(pair: str) -> list[dict[str, Any]]:
+def list_question_files(
+    pair: str | None, pyodide_files_by_pair: dict[str, list[str]]
+) -> list[str]:
+    """Lists selectable JSON files for a language pair with safe fallbacks."""
+    if not pair:
+        return ["questions.json"]
+
+    if "pyodide" in sys.modules:
+        files = pyodide_files_by_pair.get(pair, ["questions.json"])
+        unique_files = sorted(set(files))
+        return unique_files or ["questions.json"]
+
+    pair_dir = mo.notebook_location() / "public" / pair
+    if pair_dir.exists():
+        file_names = sorted(path.name for path in pair_dir.glob("*.json") if path.is_file())
+        if file_names:
+            return file_names
+
+    return ["questions.json"]
+
+
+@app.function
+def humanize_question_file_name(filename: str) -> str:
+    stem = filename.removesuffix(".json")
+    return stem.replace("_", " ")
+
+
+@app.function
+def load_json_data(pair: str, filename: str) -> list[dict[str, Any]]:
     """Loads curriculum JSON data from Pyodide or local filesystem."""
     if "pyodide" in sys.modules:
         from pyodide.http import open_url
 
-        url = f"../public/{pair}/questions.json"
+        url = f"../public/{pair}/{filename}"
         return json.loads(open_url(url).read())
     else:
-        file_path = mo.notebook_location() / "public" / pair / "questions.json"
+        file_path = mo.notebook_location() / "public" / pair / filename
         with open(file_path, "r", encoding="utf-8") as f:
             return json.load(f)
 
@@ -741,7 +814,11 @@ def normalize_text(text: str) -> str:
     if not text:
         return ""
 
-    return str(text).lower().translate(str.maketrans("", "", string.punctuation))
+    # Drop parenthetical clarifiers (e.g. "deze (enkelvoud)" -> "deze")
+    # so one-word answers compare correctly against word forms.
+    no_parentheses = re.sub(r"\s*\([^)]*\)", "", str(text))
+    normalized = no_parentheses.lower().translate(str.maketrans("", "", string.punctuation))
+    return " ".join(normalized.split())
 
 
 @app.function
@@ -1051,6 +1128,7 @@ def _(
     button_start_questions,
     dropdown_difficulty,
     dropdown_language_pairs,
+    dropdown_question_file,
     dropdown_translation_direction,
 ):
     def render_options_section() -> mo.Html:
@@ -1062,6 +1140,7 @@ def _(
         options_row = mo.hstack(
             [
                 dropdown_language_pairs,
+                dropdown_question_file,
                 dropdown_translation_direction,
                 dropdown_difficulty,
             ],
