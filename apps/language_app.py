@@ -13,7 +13,7 @@ app = marimo.App(width="full", layout_file="layouts/language_app.grid.json")
 
 with app.setup:
     import marimo as mo
-    from typing import Callable, Literal
+    from typing import Callable
     import json
     import polars as pl
     import random
@@ -128,11 +128,6 @@ def _():
             --la-card-shadow: var(--la-shadow-soft);
             --la-text: var(--la-text-primary);
             --la-button-border: var(--la-border-strong);
-          }
-          .la-divider {
-            width: 100%;
-            border-top: 1px solid var(--la-border-subtle);
-            margin: 0.75rem 0;
           }
           /* Keep all menu controls visually consistent across widget types. */
           [data-testid="mo-output"] marimo-dropdown,
@@ -323,7 +318,6 @@ def _(set_answer_pool):
         set_answer_pool([])  # Clear the pool synchronously!
         return c + 1
 
-
     button_prev = mo.ui.button(value=0, on_click=handle_navigation, label="◀ Previous")
     button_next = mo.ui.button(value=0, on_click=handle_navigation, label="Next ▶")
     return button_next, button_prev
@@ -350,7 +344,6 @@ def _(
             }
         )
         return is_correct
-
 
     button_check_answer = mo.ui.button(
         value=None,
@@ -642,16 +635,13 @@ def sort_words(words: list[str]) -> list[str]:
 @app.function
 def style_card(
     *,
-    padding: str = "var(--la-space-section)",
-    margin: str = "var(--la-space-card-margin)",
-    background: str = "var(--la-surface-0)",
     accent_edge: str | None = None,
 ) -> dict[str, str]:
     style = {
-        "padding": padding,
-        "margin": margin,
+        "padding": "var(--la-space-section)",
+        "margin": "var(--la-space-card-margin)",
         "border-radius": "var(--la-radius-lg)",
-        "background": background,
+        "background": "var(--la-surface-0)",
         "border": "1px solid var(--la-border-subtle)",
         "box-sizing": "border-box",
     }
