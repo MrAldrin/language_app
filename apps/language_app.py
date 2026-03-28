@@ -73,8 +73,8 @@ def _(
 
 
 @app.cell
-def _(get_answer_pool, move_word, pool_words):
-    answer_indices = get_answer_pool()
+def _(get_session_state, move_word, pool_words):
+    answer_indices = get_session_state()["answer_pool"]
     ui_answer = render_answer_chips(
         words=pool_words, indices=answer_indices, on_click=move_word
     )
@@ -152,8 +152,32 @@ def _():
 
 @app.cell
 def _():
-    get_answer_pool, set_answer_pool = mo.state([])
-    return get_answer_pool, set_answer_pool
+    get_session_state, set_session_state = mo.state(
+        {
+            "answer_pool": [],
+            "score": {"tries": 0, "correct": 0, "last_result": None},
+        }
+    )
+
+    def set_answer_pool(
+        update: list[int] | Callable[[list[int]], list[int]]
+    ) -> None:
+        if callable(update):
+            set_session_state(
+                lambda s: {**s, "answer_pool": update(s["answer_pool"])}
+            )
+        else:
+            set_session_state(lambda s: {**s, "answer_pool": update})
+
+    def set_session_score(
+        update: dict[str, Any] | Callable[[dict[str, Any]], dict[str, Any]]
+    ) -> None:
+        if callable(update):
+            set_session_state(lambda s: {**s, "score": update(s["score"])})
+        else:
+            set_session_state(lambda s: {**s, "score": update})
+
+    return get_session_state, set_answer_pool, set_session_score
 
 
 @app.cell(hide_code=True)
@@ -332,10 +356,11 @@ def _(button_back_to_settings, button_start_questions):
 
 
 @app.cell
-def _(set_answer_pool, start_session_id):
-    # Keep answers fresh when starting a new question session.
+def _(set_answer_pool, set_session_score, start_session_id):
+    # Reset per-session states only when starting a new question session.
     _ = start_session_id
     set_answer_pool([])
+    set_session_score({"tries": 0, "correct": 0, "last_result": None})
     return
 
 
@@ -355,49 +380,51 @@ def _(set_answer_pool, start_session_id):
 
 
 @app.cell
-def _(current_sentence, get_answer_pool, pool_words):
-    def handle_check_answer(score: dict[str, Any] | None) -> dict[str, Any]:
-        prev_score = score or {"tries": 0, "correct": 0, "last_result": None}
+def _(current_sentence, get_session_state, pool_words, set_session_score):
+    def handle_check_answer(click_count: int) -> int:
+        session_state = get_session_state()
+        prev_score = session_state["score"]
+        if not current_sentence:
+            return click_count + 1
+
         is_correct = check_answer(
-            user_answer=[pool_words[i] for i in get_answer_pool()],
+            user_answer=[pool_words[i] for i in session_state["answer_pool"]],
             target=current_sentence["target"],
             accepted=current_sentence.get("accepted", []),
         )
-        return {
-            "tries": prev_score["tries"] + 1,
-            "correct": prev_score["correct"] + (1 if is_correct else 0),
-            "last_result": is_correct,
-        }
+        set_session_score(
+            {
+                "tries": prev_score["tries"] + 1,
+                "correct": prev_score["correct"] + (1 if is_correct else 0),
+                "last_result": is_correct,
+            }
+        )
+        return click_count + 1
 
     return (handle_check_answer,)
 
 
 @app.cell
 def _(set_answer_pool):
-    def handle_reset_answer(_: Any) -> None:
+    def handle_reset_answer(click_count: int) -> int:
         set_answer_pool([])
+        return click_count + 1
 
     return (handle_reset_answer,)
 
 
 @app.cell
-def _(
-    get_answer_pool,
-    handle_check_answer,
-    handle_reset_answer,
-    start_session_id,
-):
-    _ = start_session_id
-    has_answer = len(get_answer_pool()) > 0
+def _(get_session_state, handle_check_answer, handle_reset_answer):
+    has_answer = len(get_session_state()["answer_pool"]) > 0
 
     button_check_answer = mo.ui.button(
-        value={"tries": 0, "correct": 0, "last_result": None},
+        value=0,
         on_click=handle_check_answer,
         label="Check answer",
         disabled=not has_answer,
     )
     button_reset = mo.ui.button(
-        value=None,
+        value=0,
         on_click=handle_reset_answer,
         label="↺ Reset",
         disabled=not has_answer,
@@ -1023,9 +1050,10 @@ def _(
 
 
 @app.cell
-def _(button_check_answer, current_sentence, df, row_number):
+def _(current_sentence, df, get_session_state, row_number):
+    stats = get_session_state()["score"]
+
     def render_stats() -> mo.Html:
-        stats = button_check_answer.value
         return mo.hstack(
             [
                 render_difficulty_indicator(
@@ -1062,9 +1090,9 @@ def _(button_next, button_prev):
 
 @app.cell
 def _(
-    button_check_answer,
     button_reveal,
     current_sentence,
+    get_session_state,
     pool_chips_ui,
     render_answer_button_set,
     render_navigation_buttons,
@@ -1072,6 +1100,7 @@ def _(
     ui_answer,
 ):
     def render_interaction_section() -> mo.Html:
+        session_score = get_session_state()["score"]
         # Core Exercise
         answer_text = (
             f"**Answer:** {current_sentence['target']}" if current_sentence else ""
@@ -1100,7 +1129,7 @@ def _(
                 mo.hstack(
                     [
                         render_feedback(
-                            check_value=button_check_answer.value["last_result"]
+                            check_value=session_score["last_result"]
                         ),
                     ],
                     justify="center",
@@ -1139,10 +1168,10 @@ def _():
 
 
 @app.cell
-def _(get_answer_pool, set_answer_pool):
+def _(get_session_state, set_answer_pool):
     def move_word(index: int, to_answer: bool) -> None:
-        # needs to call get_answer_pool for reactivity reasons
-        get_answer_pool()
+        # needs to read state for reactivity reasons
+        get_session_state()
         # adds or removes the element from the answer pool
         if to_answer:
             set_answer_pool(lambda a: a + [index] if index not in a else a)
