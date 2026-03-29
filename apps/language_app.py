@@ -183,18 +183,32 @@ def _():
     ) -> None:
         if callable(update):
             set_session_state(
-                lambda s: {**s, "answer_pool": update(s["answer_pool"])}
+                lambda s: (
+                    s
+                    if (new_pool := update(s["answer_pool"])) == s["answer_pool"]
+                    else {**s, "answer_pool": new_pool}
+                )
             )
         else:
-            set_session_state(lambda s: {**s, "answer_pool": update})
+            set_session_state(
+                lambda s: s if update == s["answer_pool"] else {**s, "answer_pool": update}
+            )
 
     def set_session_score(
         update: dict[str, Any] | Callable[[dict[str, Any]], dict[str, Any]]
     ) -> None:
         if callable(update):
-            set_session_state(lambda s: {**s, "score": update(s["score"])})
+            set_session_state(
+                lambda s: (
+                    s
+                    if (new_score := update(s["score"])) == s["score"]
+                    else {**s, "score": new_score}
+                )
+            )
         else:
-            set_session_state(lambda s: {**s, "score": update})
+            set_session_state(
+                lambda s: s if update == s["score"] else {**s, "score": update}
+            )
 
     return get_session_state, set_answer_pool, set_session_score
 
@@ -259,12 +273,8 @@ def _(df, row_number, start_session_id):
 
 
 @app.cell
-def _(current_sentence, set_answer_pool, set_session_score):
-    # Reset answer selection whenever sentence identity updates.
+def _(current_sentence):
     pool_words = sort_words(words=current_sentence["words"]) if current_sentence else []
-    set_answer_pool([])
-    # Reset feedback chip when moving to a new sentence.
-    set_session_score(lambda score: {**score, "last_result": None})
     return (pool_words,)
 
 
@@ -441,12 +451,13 @@ def _(set_answer_pool, set_session_score, start_session_id):
 
 
 @app.cell
-def _(set_answer_pool, start_session_id):
+def _(set_answer_pool, set_session_score, start_session_id):
     _ = start_session_id
 
 
     def handle_navigation(c: int) -> int:
-        set_answer_pool([])  # Clear the pool synchronously!
+        set_answer_pool([])
+        set_session_score(lambda score: {**score, "last_result": None})
         return c + 1
 
 
@@ -481,8 +492,9 @@ def _(current_sentence, get_session_state, pool_words, set_session_score):
 
 
 @app.cell
-def _(set_answer_pool):
+def _(get_session_state, set_answer_pool):
     def handle_reset_answer(click_count: int) -> int:
+        _ = get_session_state
         set_answer_pool([])
         return click_count + 1
 
@@ -490,20 +502,16 @@ def _(set_answer_pool):
 
 
 @app.cell
-def _(get_session_state, handle_check_answer, handle_reset_answer):
-    has_answer = len(get_session_state()["answer_pool"]) > 0
-
+def _(handle_check_answer, handle_reset_answer):
     button_check_answer = mo.ui.button(
         value=0,
         on_click=handle_check_answer,
         label="Check answer",
-        disabled=not has_answer,
     )
     button_reset = mo.ui.button(
         value=0,
         on_click=handle_reset_answer,
         label="↺ Reset",
-        disabled=not has_answer,
     )
     return button_check_answer, button_reset
 
