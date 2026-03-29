@@ -95,8 +95,8 @@ class QuestionWidget(anywidget.AnyWidget):
     
                 // CHANGED: three buttons, each with fixed width so the row never changes size
                 // check/next label changes but button stays same width via CSS
-                const checkDisabled = (phase === "idle" && answerIndices.length === 0) ? "disabled" : "";
-                const checkLabel = phase === "correct" ? "Next →" : "Check answer";
+                const checkDisabled = answerIndices.length === 0 ? "disabled" : "";
+                const checkLabel = phase === "correct"
                 // ADDED: clear disabled when answer is empty and phase is idle - nothing to clear
                 const clearDisabled = (answerIndices.length === 0 && phase === "idle") ? "disabled" : "";
     
@@ -159,17 +159,6 @@ class QuestionWidget(anywidget.AnyWidget):
                 const checkBtn = el.querySelector("#check-btn");
                 if (checkBtn) {
                     checkBtn.addEventListener("click", () => {
-                        // CHANGED: if correct, this click advances to next question
-                        if (phase === "correct") {
-                            model.set("advances", model.get("advances") + 1);
-                            model.save_changes();
-                            answerIndices = [];
-                            phase = "idle";
-                            // ADDED: hide reveal when moving to next question
-                            revealed = false;
-                            redraw();
-                            return;
-                        }
     
                         const words = model.get("words");
                         const target = model.get("target");
@@ -197,7 +186,7 @@ class QuestionWidget(anywidget.AnyWidget):
         }
         export default { render };
     """
-    
+
     _css = """
         .answer-area {
             min-height: 3rem;
@@ -316,7 +305,6 @@ class QuestionWidget(anywidget.AnyWidget):
 
     # JS → Python (outputs)
     correct = traitlets.Bool(False).tag(sync=True)
-    advances = traitlets.Int(0).tag(sync=True)
 
 
 @app.cell
@@ -335,26 +323,7 @@ def _(current_sentence, pool_words):
 
 @app.cell
 def _(widget):
-    advances = widget.value["advances"]
     correct = widget.value["correct"]
-    return advances, correct
-
-
-@app.cell
-def _(advances):
-    advances
-    return
-
-
-@app.cell
-def _(correct):
-    correct
-    return
-
-
-@app.cell
-def _(widget):
-    widget
     return
 
 
@@ -422,7 +391,7 @@ def _(active_question_key, get_answer_pool_by_question, move_word, pool_words):
     pool_chips_ui = render_word_pool(
         words=pool_words, on_click=move_word, disabled_indices=answer_indices
     )
-    return pool_chips_ui, ui_answer
+    return
 
 
 @app.cell(hide_code=True)
@@ -587,8 +556,8 @@ def _(df, row_number, start_session_id):
         return not current
 
 
-    button_reveal = mo.ui.button(label="Reveal Answer", value=False, on_click=toggle_reveal)
-    return button_reveal, current_sentence
+    # button_reveal = mo.ui.button(label="Reveal Answer", value=False, on_click=toggle_reveal)
+    return (current_sentence,)
 
 
 @app.cell
@@ -770,71 +739,63 @@ def _(start_session_id):
 
 
 @app.cell
-def _(
-    button_next,
-    button_prev,
-    df,
-    get_answer_pool_by_question,
-    start_session_id,
-):
-    def handle_check_answer(score: dict[str, Any] | None) -> dict[str, Any]:
-        prev_score = score or {"tries": 0, "correct": 0, "last_result": None}
-        if len(df) == 0:
-            return prev_score
+def _():
+    # def handle_check_answer(score: dict[str, Any] | None) -> dict[str, Any]:
+    #     prev_score = score or {"tries": 0, "correct": 0, "last_result": None}
+    #     if len(df) == 0:
+    #         return prev_score
 
-        row_number = max(0, min(button_next.value - button_prev.value, len(df) - 1))
-        question_step = button_next.value + button_prev.value
-        active_question_key = f"{start_session_id}:{question_step}:{row_number}"
-        current_sentence = get_sentence(df=df, row_number=row_number)
-        if not current_sentence:
-            return prev_score
+    #     row_number = max(0, min(button_next.value - button_prev.value, len(df) - 1))
+    #     question_step = button_next.value + button_prev.value
+    #     active_question_key = f"{start_session_id}:{question_step}:{row_number}"
+    #     current_sentence = get_sentence(df=df, row_number=row_number)
+    #     if not current_sentence:
+    #         return prev_score
 
-        pool_words = sort_words(words=current_sentence["words"])
-        answer_pool = get_answer_pool_by_question().get(active_question_key, [])
+    #     pool_words = sort_words(words=current_sentence["words"])
+    #     answer_pool = get_answer_pool_by_question().get(active_question_key, [])
 
-        is_correct = check_answer(
-            user_answer=[pool_words[i] for i in answer_pool],
-            target=current_sentence["target"],
-            accepted=current_sentence.get("accepted", []),
-        )
-        return {
-            "tries": prev_score["tries"] + 1,
-            "correct": prev_score["correct"] + (1 if is_correct else 0),
-            "last_result": is_correct,
-        }
-
-    return (handle_check_answer,)
+    #     is_correct = check_answer(
+    #         user_answer=[pool_words[i] for i in answer_pool],
+    #         target=current_sentence["target"],
+    #         accepted=current_sentence.get("accepted", []),
+    #     )
+    #     return {
+    #         "tries": prev_score["tries"] + 1,
+    #         "correct": prev_score["correct"] + (1 if is_correct else 0),
+    #         "last_result": is_correct,
+    #     }
+    return
 
 
 @app.cell
-def _(button_next, button_prev, df, set_answer_pool, start_session_id):
-    def handle_reset_answer(click_count: int) -> int:
-        if len(df) == 0:
-            return click_count
-        row_number = max(0, min(button_next.value - button_prev.value, len(df) - 1))
-        question_step = button_next.value + button_prev.value
-        active_question_key = f"{start_session_id}:{question_step}:{row_number}"
-        set_answer_pool(active_question_key, [])
-        return click_count
-
-    return (handle_reset_answer,)
+def _():
+    # def handle_reset_answer(click_count: int) -> int:
+    #     if len(df) == 0:
+    #         return click_count
+    #     row_number = max(0, min(button_next.value - button_prev.value, len(df) - 1))
+    #     question_step = button_next.value + button_prev.value
+    #     active_question_key = f"{start_session_id}:{question_step}:{row_number}"
+    #     set_answer_pool(active_question_key, [])
+    #     return click_count
+    return
 
 
 @app.cell
-def _(handle_check_answer, handle_reset_answer, start_session_id):
+def _(start_session_id):
     _ = start_session_id
 
-    button_check_answer = mo.ui.button(
-        value={"tries": 0, "correct": 0, "last_result": None},
-        on_click=handle_check_answer,
-        label="Check answer",
-    )
-    button_reset = mo.ui.button(
-        value=0,
-        on_click=handle_reset_answer,
-        label="↺ Reset",
-    )
-    return button_check_answer, button_reset
+    # button_check_answer = mo.ui.button(
+    #     value={"tries": 0, "correct": 0, "last_result": None},
+    #     on_click=handle_check_answer,
+    #     label="Check answer",
+    # )
+    # button_reset = mo.ui.button(
+    #     value=0,
+    #     on_click=handle_reset_answer,
+    #     label="↺ Reset",
+    # )
+    return
 
 
 @app.cell(hide_code=True)
@@ -1443,15 +1404,17 @@ def render_word_pool_container(content: mo.Html) -> mo.Html:
     return mo.vstack([content], gap=0).style(style_word_pool_box())
 
 
-@app.function
-def render_feedback(check_value: bool | None) -> mo.Html:
-    """Renders feedback based on the check result."""
-    if check_value is None:
-        return neutral_chip(text="Press the button to check your answer")
-    elif check_value:
-        return success_chip(text="Correct! Continue to the next question.")
-    else:
-        return warn_chip(text="False, continue or try again")
+@app.cell
+def _():
+    # def render_feedback(check_value: bool | None) -> mo.Html:
+    #     """Renders feedback based on the check result."""
+    #     if check_value is None:
+    #         return neutral_chip(text="Press the button to check your answer")
+    #     elif check_value:
+    #         return success_chip(text="Correct! Continue to the next question.")
+    #     else:
+    #         return warn_chip(text="False, continue or try again")
+    return
 
 
 @app.cell(hide_code=True)
@@ -1499,8 +1462,8 @@ def _(
 
 
 @app.cell
-def _(button_check_answer, current_sentence, df, row_number):
-    stats = button_check_answer.value
+def _(current_sentence, df, row_number):
+    # stats = button_check_answer.value
 
 
     def render_stats() -> mo.Html:
@@ -1510,7 +1473,7 @@ def _(button_check_answer, current_sentence, df, row_number):
                     difficulty_int=current_sentence["difficulty"],
                     difficulty_str=current_sentence["difficulty_str"],
                 ),
-                render_score(correct=stats["correct"], tries=stats["tries"]),
+                # render_score(correct=stats["correct"], tries=stats["tries"]),
                 render_progress(current_idx=row_number, total_count=len(df)),
             ],
             widths="equal",
@@ -1520,14 +1483,17 @@ def _(button_check_answer, current_sentence, df, row_number):
 
 
 @app.cell
-def _(button_check_answer, button_reset, button_reveal):
-    def render_answer_button_set() -> mo.Html:
-        return mo.hstack(
-            [button_check_answer, button_reset, button_reveal],
-            justify="center",
-        ).style({"margin-top": "1rem"})
-
-    return (render_answer_button_set,)
+def _():
+    # def render_answer_button_set() -> mo.Html:
+    #     return mo.hstack(
+    #         [
+    #             # button_check_answer,
+    #             button_reset,
+    #             button_reveal,
+    #         ],
+    #         justify="center",
+    #     ).style({"margin-top": "1rem"})
+    return
 
 
 @app.cell
@@ -1539,49 +1505,39 @@ def _(button_next, button_prev):
 
 
 @app.cell
-def _(
-    active_question_key,
-    button_check_answer,
-    button_reveal,
-    current_sentence,
-    get_answer_pool_by_question,
-    pool_chips_ui,
-    render_answer_button_set,
-    render_navigation_buttons,
-    render_stats,
-    ui_answer,
-):
+def _(current_sentence, render_navigation_buttons, render_stats, widget):
     def render_interaction_section() -> mo.Html:
-        session_score = button_check_answer.value
-        answer_indices = get_answer_pool_by_question().get(active_question_key, [])
-        feedback_value = session_score["last_result"] if answer_indices else None
-        # Core Exercise
-        answer_text = (
-            f"**Answer:** {current_sentence['target']}" if current_sentence else ""
-        )
-        if current_sentence and current_sentence.get("accepted"):
-            answer_text += f"<br/>*Or:* {' / '.join(current_sentence['accepted'])}"
+        # session_score = button_check_answer.value
+        # answer_indices = get_answer_pool_by_question().get(active_question_key, [])
+        # feedback_value = session_score["last_result"] if answer_indices else None
+        # # Core Exercise
+        # answer_text = (
+        #     f"**Answer:** {current_sentence['target']}" if current_sentence else ""
+        # )
+        # if current_sentence and current_sentence.get("accepted"):
+        #     answer_text += f"<br/>*Or:* {' / '.join(current_sentence['accepted'])}"
 
-        reveal_text = (
-            mo.md(answer_text).center()
-            if button_reveal.value and current_sentence
-            else mo.md("&nbsp;")
-        )
+        # reveal_text = (
+        #     mo.md(answer_text).center()
+        #     if button_reveal.value and current_sentence
+        #     else mo.md("&nbsp;")
+        # )
 
         interaction_section = mo.vstack(
             [
                 render_stats(),
                 render_question_area(source=current_sentence["source"]),
-                render_answer_area(ui_answer=ui_answer),
-                render_word_pool_container(content=pool_chips_ui),
-                render_answer_button_set(),
-                reveal_text,
-                mo.hstack(
-                    [
-                        render_feedback(check_value=feedback_value),
-                    ],
-                    justify="center",
-                ),
+                # render_answer_area(ui_answer=ui_answer),
+                # render_word_pool_container(content=pool_chips_ui),
+                # render_answer_button_set(),
+                # reveal_text,
+                # mo.hstack(
+                #     [
+                #         render_feedback(check_value=feedback_value),
+                #     ],
+                #     justify="center",
+                # ),
+                widget,
                 render_navigation_buttons(),
             ],
             gap=0.0,
@@ -1608,14 +1564,9 @@ def _(button_back_to_settings):
 
 
 @app.cell
-def _(
-    button_back_to_settings,
-    button_check_answer,
-    button_restart_session,
-    total_questions,
-):
+def _(button_back_to_settings, button_restart_session, stats, total_questions):
     def render_summary_section() -> mo.Html:
-        stats = button_check_answer.value
+        # stats = button_check_answer.value
         attempts = stats["tries"]
         correct = stats["correct"]
         incorrect = max(0, attempts - correct)
