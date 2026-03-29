@@ -72,14 +72,14 @@ class QuestionWidget(anywidget.AnyWidget):
                     }
 
                     const answerHtml = answerIndices.map(i =>
-                        `<button class="chip answer-chip" data-idx="${i}">${words[i]}</button>`
+                        `<button class="control chip answer-chip" data-idx="${i}">${words[i]}</button>`
                     ).join("");
 
                 const poolHtml = words.map((word, i) => {
                     const isSelected = answerIndices.includes(i);
                     const isLocked = phase === "correct";
                     return `<button
-                        class="chip pool-chip ${isSelected || isLocked ? "chip-disabled" : ""}"
+                        class="control chip pool-chip ${isSelected || isLocked ? "chip-disabled" : ""}"
                         data-idx="${i}"
                         ${isSelected || isLocked ? "disabled" : ""}
                     >${word}</button>`;
@@ -112,16 +112,16 @@ class QuestionWidget(anywidget.AnyWidget):
                 const clearDisabled = (answerIndices.length === 0 && phase === "idle") ? "disabled" : "";
 
                 el.innerHTML = `
-                    <div class="answer-area">
+                    <div class="surface answer-area">
                         ${answerHtml || "<span class='hint'>Click words below to build your answer</span>"}
                     </div>
-                    <div class="pool-area">
+                    <div class="surface pool-area">
                         ${poolHtml}
                     </div>
                     <div class="button-row">
-                        <button class="action-btn clear-btn" id="clear-btn" ${clearDisabled}>↺ Clear</button>
-                        <button class="action-btn check-btn" id="check-btn" ${checkDisabled}>${checkLabel}</button>
-                        <button class="action-btn reveal-btn" id="reveal-btn">
+                        <button class="control action-btn clear-btn" id="clear-btn" ${clearDisabled}>↺ Clear</button>
+                        <button class="control action-btn check-btn" id="check-btn" ${checkDisabled}>${checkLabel}</button>
+                        <button class="control action-btn reveal-btn" id="reveal-btn">
                             ${revealed ? "Hide" : "Reveal"}
                         </button>
                     </div>
@@ -185,29 +185,26 @@ class QuestionWidget(anywidget.AnyWidget):
     """
 
     _css = """
+        .surface {
+            border-radius: 0.75rem;
+            padding: 0.75rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            justify-content: center;
+        }
         .answer-area {
             min-height: 4rem;
-            padding: 0.75rem 0rem;
             margin-bottom: 0.5rem;
             border: 1px dashed #8ea3b8;
-            border-radius: 0.75rem;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem;
             align-items: center;
-            justify-content: center;
+            padding-left: 0;
+            padding-right: 0;
         }
         .pool-area {
-            padding: 0.75rem;
             background: #e8f6f4;
-            border-radius: 0.75rem;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-            justify-content: center;
         }
-        .chip,
-        .action-btn {
+        .control {
             height: 2.25rem;
             padding: 0 0.8rem;
             border: 1px solid #8ea3b8;
@@ -260,8 +257,6 @@ class QuestionWidget(anywidget.AnyWidget):
             border: 1px solid #2e8b57;
             color: #145339;
         }
-        /* ADDED: reveal area always rendered but visibility toggled
-           using visibility+height instead of display:none so layout stays stable */
         .reveal-area {
             margin: 0.5rem 0 0.25rem;
             text-align: center;
