@@ -122,7 +122,7 @@ class QuestionWidget(anywidget.AnyWidget):
                         <button class="action-btn clear-btn" id="clear-btn" ${clearDisabled}>↺ Clear</button>
                         <button class="action-btn check-btn" id="check-btn" ${checkDisabled}>${checkLabel}</button>
                         <button class="action-btn reveal-btn" id="reveal-btn">
-                            ${revealed ? "Hide answer" : "Reveal answer"}
+                            ${revealed ? "Hide" : "Reveal"}
                         </button>
                     </div>
                     ${feedbackHtml}
@@ -241,7 +241,7 @@ class QuestionWidget(anywidget.AnyWidget):
             min-height: 2rem;
             box-sizing: border-box;
             width: 100%;
-            max-width: 25rem;
+            max-width: 22rem;
             margin-left: auto;
             margin-right: auto;
         }
@@ -291,7 +291,7 @@ class QuestionWidget(anywidget.AnyWidget):
             margin-top: 0.75rem;
         }
         .action-btn {
-            min-width: 8rem;
+            min-width: 5rem;
             background: #f3f7fc;
             text-align: center;
         }
@@ -512,8 +512,10 @@ def _(df, row_number, start_session_id):
     _ = start_session_id
     current_sentence = get_sentence(df=df, row_number=row_number)
 
+
     def toggle_reveal(current: bool) -> bool:
         return not current
+
 
     # button_reveal = mo.ui.button(label="Reveal Answer", value=False, on_click=toggle_reveal)
     return (current_sentence,)
@@ -548,9 +550,7 @@ def _(button_next, df, in_question_view, row_number):
     last_question_index = max(0, total_questions - 1)
     is_last_question = total_questions > 0 and row_number >= last_question_index
     show_summary_page = (
-        in_question_view
-        and total_questions > 0
-        and button_next.value > last_question_index
+        in_question_view and total_questions > 0 and button_next.value > last_question_index
     )
     return show_summary_page, total_questions
 
@@ -654,6 +654,7 @@ def _():
     def bump(counter: int) -> int:
         return counter + 1
 
+
     button_start_questions = mo.ui.button(
         value=0,
         on_click=bump,
@@ -688,8 +689,10 @@ def _(button_back_to_settings, button_restart_session, button_start_questions):
 def _(start_session_id):
     _ = start_session_id
 
+
     def handle_navigation(c: int) -> int:
         return c + 1
+
 
     button_prev = mo.ui.button(value=0, on_click=handle_navigation, label="◀ Previous")
     button_next = mo.ui.button(value=0, on_click=handle_navigation, label="Next ▶")
@@ -1191,6 +1194,7 @@ def _(
 @app.cell
 def _(current_sentence, df, row_number):
     # stats = button_check_answer.value
+
 
     def render_stats() -> mo.Html:
         return mo.hstack(
