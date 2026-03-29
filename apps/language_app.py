@@ -3,6 +3,8 @@
 # dependencies = [
 #     "marimo",
 #     "polars",
+#     "anywidget",
+#     "traitlets",
 # ]
 # ///
 
@@ -13,19 +15,274 @@ app = marimo.App(width="full", layout_file="layouts/language_app.grid.json")
 
 with app.setup:
     import marimo as mo
-    from typing import Any, Callable
     import json
     import polars as pl
     import random
     import re
     import string
     import sys
+    import anywidget
+    import traitlets
+    from typing import Any, Callable
 
 
 @app.cell(hide_code=True)
 def _():
     mo.md(r"""
-    # UI stuff
+    # testing out anywidget
+    """)
+    return
+
+
+@app.class_definition
+class QuestionWidget(anywidget.AnyWidget):
+    _esm = """
+        function normalize(str) {
+            // mirror normalize_text: lowercase, strip punctuation, collapse spaces
+            return str.toLowerCase()
+                .replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g, "")
+                .replace(/\s+/g, " ")
+                .trim();
+        }
+    
+        function checkAnswer(answerIndices, words, target, accepted) {
+            // extract words from indices, join, then compare normalized strings
+            const userStr = normalize(answerIndices.map(i => words[i]).join(" "));
+            const targetStr = normalize(target);
+            const acceptedStrs = accepted.map(a => normalize(a));
+            return userStr === targetStr || acceptedStrs.includes(userStr);
+        }
+    
+        function render({ model, el }) {
+            let answerIndices = [];
+
+            // ADDED: phase tracks where we are in the question lifecycle
+            // "idle"    = question just loaded, nothing checked yet
+            // "wrong"   = user checked and was incorrect, can retry
+            // "correct" = user got it right, ready to advance
+            let phase = "idle";
+    
+            function redraw() {
+                const words = model.get("words");
+    
+                // build answer chips from indices, extract word via words[i]
+                const answerHtml = answerIndices.map(i =>
+                    `<button class="chip answer-chip" data-idx="${i}">${words[i]}</button>`
+                ).join("");
+    
+                // pool renders all words, selected indices get disabled
+                const poolHtml = words.map((word, i) => {
+                    // pool chips are disabled when phase is not idle
+                    const isSelected = answerIndices.includes(i);
+                    const isLocked = phase === "correct";
+                    return `<button
+                        class="chip pool-chip ${isSelected || isLocked ? "chip-disabled" : ""}"
+                        data-idx="${i}"
+                        ${isSelected || isLocked ? "disabled" : ""}
+                    >${word}</button>`;
+                }).join("");
+                
+                // feedback message shown below the pool depending on phase
+                // empty string in idle so the layout doesnt jump around
+                const feedbackHtml = {
+                    idle:    "",
+                    wrong:   `<div class="feedback feedback-wrong">✗ Not quite — try again</div>`,
+                    correct: `<div class="feedback feedback-correct">✓ Correct!</div>`,
+                }[phase];
+    
+                // button label and disabled state depend on phase
+                // idle/wrong = "Check answer", correct = label changes in step 4 to "Next"
+                // disabled when answer area is empty so user cant check a blank answer
+                const checkDisabled = answerIndices.length === 0 ? "disabled" : "";
+                const checkLabel = "Check answer";
+                
+                el.innerHTML = `
+                    <div class="answer-area">
+                        ${answerHtml || "<span class='hint'>Click words below to build your answer</span>"}
+                    </div>
+                    <div class="pool-area">
+                        ${poolHtml}
+                    </div>
+                    ${feedbackHtml}
+                    <div class="button-row">
+                        <button class="check-btn" id="check-btn" ${checkDisabled}>${checkLabel}</button>
+                    </div>
+                `;
+    
+                // answer chips locked when phase is "correct"
+                if (phase !== "correct") {
+                    el.querySelectorAll(".answer-chip").forEach(btn => {
+                        btn.addEventListener("click", () => {
+                            const pos = answerIndices.indexOf(parseInt(btn.dataset.idx));
+                            if (pos !== -1) answerIndices.splice(pos, 1);
+                            // moving a word resets phase to idle so feedback clears
+                            phase = "idle";
+                            redraw();
+                        });
+                    });
+    
+                    el.querySelectorAll(".pool-chip:not([disabled])").forEach(btn => {
+                        btn.addEventListener("click", () => {
+                            answerIndices.push(parseInt(btn.dataset.idx));
+                            // moving a word resets phase to idle so feedback clears
+                            phase = "idle";
+                            redraw();
+                        });
+                    });
+                }
+                
+                // ADDED: check button handler
+                const checkBtn = el.querySelector("#check-btn");
+                if (checkBtn) {
+                    checkBtn.addEventListener("click", () => {
+                        const words = model.get("words");
+                        const target = model.get("target");
+                        const accepted = model.get("accepted");
+    
+                        const isCorrect = checkAnswer(answerIndices, words, target, accepted);
+    
+                        // ADDED: sync result to Python via traitlet
+                        // Python will see widget.correct update reactively
+                        model.set("correct", isCorrect);
+                        model.save_changes();
+    
+                        // ADDED: update phase locally, no Python round-trip needed
+                        phase = isCorrect ? "correct" : "wrong";
+     
+                        redraw();
+                    });
+                }
+            }
+    
+            model.on("change:words", () => {
+                answerIndices = [];
+                phase = "idle";
+                redraw();
+            });
+    
+            redraw();
+        }
+        export default { render };
+    """
+
+    _css = """
+        .answer-area {
+            min-height: 3rem;
+            padding: 0.75rem;
+            margin-bottom: 0.5rem;
+            border: 1px dashed #8ea3b8;
+            border-radius: 0.75rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            align-items: center;
+            justify-content: center;
+        }
+        .pool-area {
+            padding: 0.75rem;
+            background: #e8f6f4;
+            border-radius: 0.75rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            justify-content: center;
+        }
+        .chip {
+            padding: 0.3rem 0.8rem;
+            border: 1px solid #8ea3b8;
+            border-radius: 9999px;
+            background: white;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        .chip:hover:not([disabled]) {
+            background: #e8f6f4;
+        }
+        .chip-disabled {
+            opacity: 0.35;
+            cursor: default;
+        }
+        .hint {
+            color: #8ea3b8;
+            font-style: italic;
+            font-size: 0.9rem;
+        }
+        /* ADDED: feedback message sits between pool and button with breathing room */
+        .feedback {
+            margin: 0.75rem 0 0.25rem;
+            padding: 0.4rem 1rem;
+            border-radius: 9999px;
+            text-align: center;
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+        .feedback-wrong {
+            background: #fff0d8;
+            border: 1px solid #c97b0e;
+            color: #704010;
+        }
+        .feedback-correct {
+            background: #e5f7ee;
+            border: 1px solid #2e8b57;
+            color: #145339;
+        }
+        /* ADDED: check button sits centered below everything */
+        .button-row {
+            display: flex;
+            justify-content: center;
+            margin-top: 0.75rem;
+        }
+        .check-btn {
+            padding: 0.5rem 1.5rem;
+            border-radius: 9999px;
+            border: 1px solid #8ea3b8;
+            background: white;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+        .check-btn:hover:not([disabled]) {
+            background: #e8f6f4;
+        }
+        .check-btn[disabled] {
+            opacity: 0.35;
+            cursor: default;
+        }
+    """
+
+    # Python → JS (inputs)
+    words = traitlets.List([]).tag(sync=True)
+    target = traitlets.Unicode("").tag(sync=True)
+    accepted = traitlets.List([]).tag(sync=True)
+
+    # JS → Python (outputs)
+    correct = traitlets.Bool(False).tag(sync=True)
+    advances = traitlets.Int(0).tag(sync=True)
+
+
+@app.cell
+def _(current_sentence, pool_words):
+    if current_sentence is None:
+        widget = None
+    else:
+        _widget = QuestionWidget(
+            words=pool_words,
+            target=current_sentence["target"],
+            accepted=current_sentence.get("accepted", []),
+        )
+        widget = mo.ui.anywidget(_widget)
+    return (widget,)
+
+
+@app.cell
+def _(widget):
+    widget
+    return
+
+
+@app.cell(hide_code=True)
+def _():
+    mo.md(r"""
+    # UI
     """)
     return
 
@@ -173,9 +430,9 @@ def _(raw_pairs):
 def _():
     get_answer_pool_by_question, set_answer_pool_by_question = mo.state({})
 
+
     def set_answer_pool(
-        question_key: str,
-        update: list[int] | Callable[[list[int]], list[int]]
+        question_key: str, update: list[int] | Callable[[list[int]], list[int]]
     ) -> None:
         def _update_answer_pool(state: dict[str, list[int]]) -> dict[str, list[int]]:
             current_pool = state.get(question_key, [])
@@ -324,9 +581,7 @@ def _(dropdown_language_pairs, pyodide_question_files_by_pair):
 
     default_file = "questions.json" if "questions.json" in file_names else file_names[0]
     default_file_option = humanize_question_file_name(default_file)
-    file_options = {
-        humanize_question_file_name(name): name for name in file_names
-    }
+    file_options = {humanize_question_file_name(name): name for name in file_names}
 
     dropdown_question_file = mo.ui.dropdown(
         options=file_options,
@@ -406,9 +661,7 @@ def _():
         on_click=bump,
         label="Start new session",
     )
-    mo.hstack(
-        [button_start_questions, button_restart_session, button_back_to_settings]
-    )
+    mo.hstack([button_start_questions, button_restart_session, button_back_to_settings])
     return (
         button_back_to_settings,
         button_restart_session,
@@ -508,7 +761,7 @@ def _(handle_check_answer, handle_reset_answer, start_session_id):
 @app.cell(hide_code=True)
 def _():
     mo.md(r"""
-    ## Testing cells for inspection
+    # Testing cells for inspection
     """)
     return
 
@@ -604,7 +857,9 @@ def list_question_files(
 
     pair_dir = mo.notebook_location() / "public" / pair
     if pair_dir.exists():
-        file_names = sorted(path.name for path in pair_dir.glob("*.json") if path.is_file())
+        file_names = sorted(
+            path.name for path in pair_dir.glob("*.json") if path.is_file()
+        )
         if file_names:
             return file_names
 
@@ -814,7 +1069,9 @@ def normalize_text(text: str) -> str:
     # Drop parenthetical clarifiers (e.g. "deze (enkelvoud)" -> "deze")
     # so one-word answers compare correctly against word forms.
     no_parentheses = re.sub(r"\s*\([^)]*\)", "", str(text))
-    normalized = no_parentheses.lower().translate(str.maketrans("", "", string.punctuation))
+    normalized = no_parentheses.lower().translate(
+        str.maketrans("", "", string.punctuation)
+    )
     return " ".join(normalized.split())
 
 
@@ -1039,6 +1296,7 @@ def make_word_chip(
     disabled: bool = False,
 ) -> mo.Html:
     """Creates a single word chip button."""
+
     def handle_chip_click(click_count: int, i: int = idx) -> int:
         on_click(i, is_pool)
         return click_count + 1
@@ -1165,6 +1423,7 @@ def _(
 def _(button_check_answer, current_sentence, df, row_number):
     stats = button_check_answer.value
 
+
     def render_stats() -> mo.Html:
         return mo.hstack(
             [
@@ -1240,9 +1499,7 @@ def _(
                 reveal_text,
                 mo.hstack(
                     [
-                        render_feedback(
-                            check_value=feedback_value
-                        ),
+                        render_feedback(check_value=feedback_value),
                     ],
                     justify="center",
                 ),
