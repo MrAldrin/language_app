@@ -18,12 +18,10 @@ with app.setup:
     import json
     import polars as pl
     import random
-    import re
-    import string
     import sys
     import anywidget
     import traitlets
-    from typing import Any, Callable
+    from typing import Any
 
 
 @app.cell(hide_code=True)
@@ -51,18 +49,31 @@ class QuestionWidget(anywidget.AnyWidget):
             return userStr === targetStr || acceptedStrs.includes(userStr);
         }
 
-        function render({ model, el }) {
-            let answerIndices = [];
-            let phase = "idle";
-            // ADDED: reveal is independent of phase - user can toggle it any time
-            let revealed = false;
+            function render({ model, el }) {
+                let answerIndices = [];
+                let phase = "idle";
+                let feedbackPhase = "idle";
+                // ADDED: reveal is independent of phase - user can toggle it any time
+                let revealed = false;
 
-            function redraw() {
-                const words = model.get("words");
+                function setIdleAndRedraw() {
+                    phase = "idle";
+                    redraw();
+                }
 
-                const answerHtml = answerIndices.map(i =>
-                    `<button class="chip answer-chip" data-idx="${i}">${words[i]}</button>`
-                ).join("");
+                function redraw() {
+                    const words = model.get("words");
+                    const target = model.get("target");
+                    const accepted = model.get("accepted");
+
+                    function on(selector, event, handler) {
+                        const node = el.querySelector(selector);
+                        if (node) node.addEventListener(event, handler);
+                    }
+
+                    const answerHtml = answerIndices.map(i =>
+                        `<button class="chip answer-chip" data-idx="${i}">${words[i]}</button>`
+                    ).join("");
 
                 const poolHtml = words.map((word, i) => {
                     const isSelected = answerIndices.includes(i);
@@ -74,15 +85,15 @@ class QuestionWidget(anywidget.AnyWidget):
                     >${word}</button>`;
                 }).join("");
 
-                const feedbackHtml = {
-                    idle:    "",
-                    wrong:   `<div class="feedback feedback-wrong">✗ Not quite — try again</div>`,
-                    correct: `<div class="feedback feedback-correct">✓ Correct!</div>`,
-                }[phase];
+                const feedbackByPhase = {
+                    idle:    { cls: "feedback-neutral", text: "Press Check to validate your answer" },
+                    wrong:   { cls: "feedback-wrong", text: "Not quite, continue or try again" },
+                    correct: { cls: "feedback-correct", text: "Correct! Continue" },
+                };
+                const feedback = feedbackByPhase[feedbackPhase] || feedbackByPhase.idle;
+                const feedbackHtml = `<div class="feedback ${feedback.cls}">${feedback.text}</div>`;
 
                 // ADDED: reveal area shown when revealed=true, always same height to avoid jumping
-                const target = model.get("target");
-                const accepted = model.get("accepted");
                 const acceptedHtml = accepted.length > 0
                     ? `<div class="reveal-accepted">Also accepted: ${accepted.join(" / ")}</div>`
                     : "";
@@ -96,7 +107,7 @@ class QuestionWidget(anywidget.AnyWidget):
                 // CHANGED: three buttons, each with fixed width so the row never changes size
                 // check/next label changes but button stays same width via CSS
                 const checkDisabled = answerIndices.length === 0 ? "disabled" : "";
-                const checkLabel = phase === "correct"
+                const checkLabel = "Check";
                 // ADDED: clear disabled when answer is empty and phase is idle - nothing to clear
                 const clearDisabled = (answerIndices.length === 0 && phase === "idle") ? "disabled" : "";
 
@@ -107,8 +118,6 @@ class QuestionWidget(anywidget.AnyWidget):
                     <div class="pool-area">
                         ${poolHtml}
                     </div>
-                    ${revealHtml}
-                    ${feedbackHtml}
                     <div class="button-row">
                         <button class="action-btn clear-btn" id="clear-btn" ${clearDisabled}>↺ Clear</button>
                         <button class="action-btn check-btn" id="check-btn" ${checkDisabled}>${checkLabel}</button>
@@ -116,6 +125,8 @@ class QuestionWidget(anywidget.AnyWidget):
                             ${revealed ? "Hide answer" : "Reveal answer"}
                         </button>
                     </div>
+                    ${feedbackHtml}
+                    ${revealHtml}
                 `;
 
                 // chip handlers - only when not locked
@@ -124,59 +135,45 @@ class QuestionWidget(anywidget.AnyWidget):
                         btn.addEventListener("click", () => {
                             const pos = answerIndices.indexOf(parseInt(btn.dataset.idx));
                             if (pos !== -1) answerIndices.splice(pos, 1);
-                            phase = "idle";
-                            redraw();
+                            setIdleAndRedraw();
                         });
                     });
                     el.querySelectorAll(".pool-chip:not([disabled])").forEach(btn => {
                         btn.addEventListener("click", () => {
                             answerIndices.push(parseInt(btn.dataset.idx));
-                            phase = "idle";
-                            redraw();
+                            setIdleAndRedraw();
                         });
                     });
                 }
 
                 // ADDED: clear resets answer area and phase back to idle
-                const clearBtn = el.querySelector("#clear-btn");
-                if (clearBtn) {
-                    clearBtn.addEventListener("click", () => {
-                        answerIndices = [];
-                        phase = "idle";
-                        redraw();
-                    });
-                }
+                on("#clear-btn", "click", () => {
+                    answerIndices = [];
+                    setIdleAndRedraw();
+                });
 
                 // ADDED: reveal toggles independently - does not affect phase or answer
-                const revealBtn = el.querySelector("#reveal-btn");
-                if (revealBtn) {
-                    revealBtn.addEventListener("click", () => {
-                        revealed = !revealed;
-                        redraw();
-                    });
-                }
+                on("#reveal-btn", "click", () => {
+                    revealed = !revealed;
+                    redraw();
+                });
 
-                const checkBtn = el.querySelector("#check-btn");
-                if (checkBtn) {
-                    checkBtn.addEventListener("click", () => {
+                on("#check-btn", "click", () => {
+                    const isCorrect = checkAnswer(answerIndices, words, target, accepted);
 
-                        const words = model.get("words");
-                        const target = model.get("target");
-                        const accepted = model.get("accepted");
-                        const isCorrect = checkAnswer(answerIndices, words, target, accepted);
+                    model.set("correct", isCorrect);
+                    model.save_changes();
 
-                        model.set("correct", isCorrect);
-                        model.save_changes();
-
-                        phase = isCorrect ? "correct" : "wrong";
-                        redraw();
-                    });
-                }
+                    phase = isCorrect ? "correct" : "wrong";
+                    feedbackPhase = phase;
+                    redraw();
+                });
             }
 
             model.on("change:words", () => {
                 answerIndices = [];
                 phase = "idle";
+                feedbackPhase = "idle";
                 // ADDED: hide reveal when Python pushes a new question
                 revealed = false;
                 redraw();
@@ -189,8 +186,8 @@ class QuestionWidget(anywidget.AnyWidget):
 
     _css = """
         .answer-area {
-            min-height: 3rem;
-            padding: 0.75rem;
+            min-height: 4rem;
+            padding: 0.75rem 0rem;
             margin-bottom: 0.5rem;
             border: 1px dashed #8ea3b8;
             border-radius: 0.75rem;
@@ -209,13 +206,18 @@ class QuestionWidget(anywidget.AnyWidget):
             gap: 0.5rem;
             justify-content: center;
         }
-        .chip {
-            padding: 0.3rem 0.8rem;
+        .chip,
+        .action-btn {
+            height: 2.25rem;
+            padding: 0 0.8rem;
             border: 1px solid #8ea3b8;
-            border-radius: 9999px;
-            background: white;
-            cursor: pointer;
+            border-radius: 10px;
             font-size: 1rem;
+            cursor: pointer;
+            box-sizing: border-box;
+        }
+        .chip {
+            background: #ffffff;
         }
         .chip:hover:not([disabled]) {
             background: #e8f6f4;
@@ -236,6 +238,17 @@ class QuestionWidget(anywidget.AnyWidget):
             text-align: center;
             font-weight: 500;
             font-size: 0.95rem;
+            min-height: 2rem;
+            box-sizing: border-box;
+            width: 100%;
+            max-width: 25rem;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .feedback-neutral {
+            background: #f1f5f9;
+            border: 1px solid #cbd5e1;
+            color: #334155;
         }
         .feedback-wrong {
             background: #fff0d8;
@@ -277,16 +290,9 @@ class QuestionWidget(anywidget.AnyWidget):
             gap: 0.5rem;
             margin-top: 0.75rem;
         }
-        /* ADDED: all action buttons share the same base style and fixed min-width
-           so the row never changes size when labels change */
         .action-btn {
             min-width: 8rem;
-            padding: 0.5rem 1rem;
-            border-radius: 9999px;
-            border: 1px solid #8ea3b8;
-            background: white;
-            font-size: 1rem;
-            cursor: pointer;
+            background: #f3f7fc;
             text-align: center;
         }
         .action-btn:hover:not([disabled]) {
@@ -506,10 +512,8 @@ def _(df, row_number, start_session_id):
     _ = start_session_id
     current_sentence = get_sentence(df=df, row_number=row_number)
 
-
     def toggle_reveal(current: bool) -> bool:
         return not current
-
 
     # button_reveal = mo.ui.button(label="Reveal Answer", value=False, on_click=toggle_reveal)
     return (current_sentence,)
@@ -544,7 +548,9 @@ def _(button_next, df, in_question_view, row_number):
     last_question_index = max(0, total_questions - 1)
     is_last_question = total_questions > 0 and row_number >= last_question_index
     show_summary_page = (
-        in_question_view and total_questions > 0 and button_next.value > last_question_index
+        in_question_view
+        and total_questions > 0
+        and button_next.value > last_question_index
     )
     return show_summary_page, total_questions
 
@@ -648,7 +654,6 @@ def _():
     def bump(counter: int) -> int:
         return counter + 1
 
-
     button_start_questions = mo.ui.button(
         value=0,
         on_click=bump,
@@ -683,10 +688,8 @@ def _(button_back_to_settings, button_restart_session, button_start_questions):
 def _(start_session_id):
     _ = start_session_id
 
-
     def handle_navigation(c: int) -> int:
         return c + 1
-
 
     button_prev = mo.ui.button(value=0, on_click=handle_navigation, label="◀ Previous")
     button_next = mo.ui.button(value=0, on_click=handle_navigation, label="Next ▶")
@@ -1188,7 +1191,6 @@ def _(
 @app.cell
 def _(current_sentence, df, row_number):
     # stats = button_check_answer.value
-
 
     def render_stats() -> mo.Html:
         return mo.hstack(
