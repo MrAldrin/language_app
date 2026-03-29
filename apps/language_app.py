@@ -38,7 +38,6 @@ def _():
 class QuestionWidget(anywidget.AnyWidget):
     _esm = """
         function normalize(str) {
-            // mirror normalize_text: lowercase, strip punctuation, collapse spaces
             return str.toLowerCase()
                 .replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g, "")
                 .replace(/\s+/g, " ")
@@ -46,7 +45,6 @@ class QuestionWidget(anywidget.AnyWidget):
         }
     
         function checkAnswer(answerIndices, words, target, accepted) {
-            // extract words from indices, join, then compare normalized strings
             const userStr = normalize(answerIndices.map(i => words[i]).join(" "));
             const targetStr = normalize(target);
             const acceptedStrs = accepted.map(a => normalize(a));
@@ -55,24 +53,18 @@ class QuestionWidget(anywidget.AnyWidget):
     
         function render({ model, el }) {
             let answerIndices = [];
-
-            // ADDED: phase tracks where we are in the question lifecycle
-            // "idle"    = question just loaded, nothing checked yet
-            // "wrong"   = user checked and was incorrect, can retry
-            // "correct" = user got it right, ready to advance
             let phase = "idle";
+            // ADDED: reveal is independent of phase - user can toggle it any time
+            let revealed = false;
     
             function redraw() {
                 const words = model.get("words");
     
-                // build answer chips from indices, extract word via words[i]
                 const answerHtml = answerIndices.map(i =>
                     `<button class="chip answer-chip" data-idx="${i}">${words[i]}</button>`
                 ).join("");
     
-                // pool renders all words, selected indices get disabled
                 const poolHtml = words.map((word, i) => {
-                    // pool chips are disabled when phase is not idle
                     const isSelected = answerIndices.includes(i);
                     const isLocked = phase === "correct";
                     return `<button
@@ -81,21 +73,33 @@ class QuestionWidget(anywidget.AnyWidget):
                         ${isSelected || isLocked ? "disabled" : ""}
                     >${word}</button>`;
                 }).join("");
-                
-                // feedback message shown below the pool depending on phase
-                // empty string in idle so the layout doesnt jump around
+    
                 const feedbackHtml = {
                     idle:    "",
                     wrong:   `<div class="feedback feedback-wrong">✗ Not quite — try again</div>`,
                     correct: `<div class="feedback feedback-correct">✓ Correct!</div>`,
                 }[phase];
     
-                // button label and disabled state depend on phase
-                // idle/wrong = "Check answer", correct = label changes in step 4 to "Next"
-                // disabled when answer area is empty so user cant check a blank answer
-                const checkDisabled = answerIndices.length === 0 ? "disabled" : "";
-                const checkLabel = "Check answer";
-                
+                // ADDED: reveal area shown when revealed=true, always same height to avoid jumping
+                const target = model.get("target");
+                const accepted = model.get("accepted");
+                const acceptedHtml = accepted.length > 0
+                    ? `<div class="reveal-accepted">Also accepted: ${accepted.join(" / ")}</div>`
+                    : "";
+                const revealHtml = `
+                    <div class="reveal-area ${revealed ? "reveal-visible" : "reveal-hidden"}">
+                        <div class="reveal-target">${target}</div>
+                        ${acceptedHtml}
+                    </div>
+                `;
+    
+                // CHANGED: three buttons, each with fixed width so the row never changes size
+                // check/next label changes but button stays same width via CSS
+                const checkDisabled = (phase === "idle" && answerIndices.length === 0) ? "disabled" : "";
+                const checkLabel = phase === "correct" ? "Next →" : "Check answer";
+                // ADDED: clear disabled when answer is empty and phase is idle - nothing to clear
+                const clearDisabled = (answerIndices.length === 0 && phase === "idle") ? "disabled" : "";
+    
                 el.innerHTML = `
                     <div class="answer-area">
                         ${answerHtml || "<span class='hint'>Click words below to build your answer</span>"}
@@ -103,52 +107,79 @@ class QuestionWidget(anywidget.AnyWidget):
                     <div class="pool-area">
                         ${poolHtml}
                     </div>
+                    ${revealHtml}
                     ${feedbackHtml}
                     <div class="button-row">
-                        <button class="check-btn" id="check-btn" ${checkDisabled}>${checkLabel}</button>
+                        <button class="action-btn clear-btn" id="clear-btn" ${clearDisabled}>↺ Clear</button>
+                        <button class="action-btn check-btn" id="check-btn" ${checkDisabled}>${checkLabel}</button>
+                        <button class="action-btn reveal-btn" id="reveal-btn">
+                            ${revealed ? "Hide answer" : "Reveal answer"}
+                        </button>
                     </div>
                 `;
     
-                // answer chips locked when phase is "correct"
+                // chip handlers - only when not locked
                 if (phase !== "correct") {
                     el.querySelectorAll(".answer-chip").forEach(btn => {
                         btn.addEventListener("click", () => {
                             const pos = answerIndices.indexOf(parseInt(btn.dataset.idx));
                             if (pos !== -1) answerIndices.splice(pos, 1);
-                            // moving a word resets phase to idle so feedback clears
                             phase = "idle";
                             redraw();
                         });
                     });
-    
                     el.querySelectorAll(".pool-chip:not([disabled])").forEach(btn => {
                         btn.addEventListener("click", () => {
                             answerIndices.push(parseInt(btn.dataset.idx));
-                            // moving a word resets phase to idle so feedback clears
                             phase = "idle";
                             redraw();
                         });
                     });
                 }
-                
-                // ADDED: check button handler
+    
+                // ADDED: clear resets answer area and phase back to idle
+                const clearBtn = el.querySelector("#clear-btn");
+                if (clearBtn) {
+                    clearBtn.addEventListener("click", () => {
+                        answerIndices = [];
+                        phase = "idle";
+                        redraw();
+                    });
+                }
+    
+                // ADDED: reveal toggles independently - does not affect phase or answer
+                const revealBtn = el.querySelector("#reveal-btn");
+                if (revealBtn) {
+                    revealBtn.addEventListener("click", () => {
+                        revealed = !revealed;
+                        redraw();
+                    });
+                }
+    
                 const checkBtn = el.querySelector("#check-btn");
                 if (checkBtn) {
                     checkBtn.addEventListener("click", () => {
+                        // CHANGED: if correct, this click advances to next question
+                        if (phase === "correct") {
+                            model.set("advances", model.get("advances") + 1);
+                            model.save_changes();
+                            answerIndices = [];
+                            phase = "idle";
+                            // ADDED: hide reveal when moving to next question
+                            revealed = false;
+                            redraw();
+                            return;
+                        }
+    
                         const words = model.get("words");
                         const target = model.get("target");
                         const accepted = model.get("accepted");
-    
                         const isCorrect = checkAnswer(answerIndices, words, target, accepted);
     
-                        // ADDED: sync result to Python via traitlet
-                        // Python will see widget.correct update reactively
                         model.set("correct", isCorrect);
                         model.save_changes();
     
-                        // ADDED: update phase locally, no Python round-trip needed
                         phase = isCorrect ? "correct" : "wrong";
-     
                         redraw();
                     });
                 }
@@ -157,6 +188,8 @@ class QuestionWidget(anywidget.AnyWidget):
             model.on("change:words", () => {
                 answerIndices = [];
                 phase = "idle";
+                // ADDED: hide reveal when Python pushes a new question
+                revealed = false;
                 redraw();
             });
     
@@ -164,7 +197,7 @@ class QuestionWidget(anywidget.AnyWidget):
         }
         export default { render };
     """
-
+    
     _css = """
         .answer-area {
             min-height: 3rem;
@@ -207,7 +240,6 @@ class QuestionWidget(anywidget.AnyWidget):
             font-style: italic;
             font-size: 0.9rem;
         }
-        /* ADDED: feedback message sits between pool and button with breathing room */
         .feedback {
             margin: 0.75rem 0 0.25rem;
             padding: 0.4rem 1rem;
@@ -226,24 +258,52 @@ class QuestionWidget(anywidget.AnyWidget):
             border: 1px solid #2e8b57;
             color: #145339;
         }
-        /* ADDED: check button sits centered below everything */
+        /* ADDED: reveal area always rendered but visibility toggled
+           using visibility+height instead of display:none so layout stays stable */
+        .reveal-area {
+            margin: 0.5rem 0 0.25rem;
+            text-align: center;
+            min-height: 2.5rem;
+        }
+        .reveal-hidden {
+            visibility: hidden;
+        }
+        .reveal-visible {
+            visibility: visible;
+        }
+        .reveal-target {
+            font-weight: 600;
+            font-size: 1rem;
+            color: #243548;
+        }
+        .reveal-accepted {
+            font-size: 0.85rem;
+            font-style: italic;
+            color: #243548;
+            margin-top: 0.2rem;
+        }
         .button-row {
             display: flex;
             justify-content: center;
+            gap: 0.5rem;
             margin-top: 0.75rem;
         }
-        .check-btn {
-            padding: 0.5rem 1.5rem;
+        /* ADDED: all action buttons share the same base style and fixed min-width
+           so the row never changes size when labels change */
+        .action-btn {
+            min-width: 8rem;
+            padding: 0.5rem 1rem;
             border-radius: 9999px;
             border: 1px solid #8ea3b8;
             background: white;
             font-size: 1rem;
             cursor: pointer;
+            text-align: center;
         }
-        .check-btn:hover:not([disabled]) {
+        .action-btn:hover:not([disabled]) {
             background: #e8f6f4;
         }
-        .check-btn[disabled] {
+        .action-btn[disabled] {
             opacity: 0.35;
             cursor: default;
         }
@@ -271,6 +331,25 @@ def _(current_sentence, pool_words):
         )
         widget = mo.ui.anywidget(_widget)
     return (widget,)
+
+
+@app.cell
+def _(widget):
+    advances = widget.value["advances"]
+    correct = widget.value["correct"]
+    return advances, correct
+
+
+@app.cell
+def _(advances):
+    advances
+    return
+
+
+@app.cell
+def _(correct):
+    correct
+    return
 
 
 @app.cell
