@@ -36,34 +36,34 @@ def _():
 
 @app.class_definition
 class QuestionWidget(anywidget.AnyWidget):
-    _esm = """
+    _esm = r"""
         function normalize(str) {
             return str.toLowerCase()
                 .replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g, "")
                 .replace(/\s+/g, " ")
                 .trim();
         }
-    
+
         function checkAnswer(answerIndices, words, target, accepted) {
             const userStr = normalize(answerIndices.map(i => words[i]).join(" "));
             const targetStr = normalize(target);
             const acceptedStrs = accepted.map(a => normalize(a));
             return userStr === targetStr || acceptedStrs.includes(userStr);
         }
-    
+
         function render({ model, el }) {
             let answerIndices = [];
             let phase = "idle";
             // ADDED: reveal is independent of phase - user can toggle it any time
             let revealed = false;
-    
+
             function redraw() {
                 const words = model.get("words");
-    
+
                 const answerHtml = answerIndices.map(i =>
                     `<button class="chip answer-chip" data-idx="${i}">${words[i]}</button>`
                 ).join("");
-    
+
                 const poolHtml = words.map((word, i) => {
                     const isSelected = answerIndices.includes(i);
                     const isLocked = phase === "correct";
@@ -73,13 +73,13 @@ class QuestionWidget(anywidget.AnyWidget):
                         ${isSelected || isLocked ? "disabled" : ""}
                     >${word}</button>`;
                 }).join("");
-    
+
                 const feedbackHtml = {
                     idle:    "",
                     wrong:   `<div class="feedback feedback-wrong">✗ Not quite — try again</div>`,
                     correct: `<div class="feedback feedback-correct">✓ Correct!</div>`,
                 }[phase];
-    
+
                 // ADDED: reveal area shown when revealed=true, always same height to avoid jumping
                 const target = model.get("target");
                 const accepted = model.get("accepted");
@@ -92,14 +92,14 @@ class QuestionWidget(anywidget.AnyWidget):
                         ${acceptedHtml}
                     </div>
                 `;
-    
+
                 // CHANGED: three buttons, each with fixed width so the row never changes size
                 // check/next label changes but button stays same width via CSS
                 const checkDisabled = answerIndices.length === 0 ? "disabled" : "";
                 const checkLabel = phase === "correct"
                 // ADDED: clear disabled when answer is empty and phase is idle - nothing to clear
                 const clearDisabled = (answerIndices.length === 0 && phase === "idle") ? "disabled" : "";
-    
+
                 el.innerHTML = `
                     <div class="answer-area">
                         ${answerHtml || "<span class='hint'>Click words below to build your answer</span>"}
@@ -117,7 +117,7 @@ class QuestionWidget(anywidget.AnyWidget):
                         </button>
                     </div>
                 `;
-    
+
                 // chip handlers - only when not locked
                 if (phase !== "correct") {
                     el.querySelectorAll(".answer-chip").forEach(btn => {
@@ -136,7 +136,7 @@ class QuestionWidget(anywidget.AnyWidget):
                         });
                     });
                 }
-    
+
                 // ADDED: clear resets answer area and phase back to idle
                 const clearBtn = el.querySelector("#clear-btn");
                 if (clearBtn) {
@@ -146,7 +146,7 @@ class QuestionWidget(anywidget.AnyWidget):
                         redraw();
                     });
                 }
-    
+
                 // ADDED: reveal toggles independently - does not affect phase or answer
                 const revealBtn = el.querySelector("#reveal-btn");
                 if (revealBtn) {
@@ -155,25 +155,25 @@ class QuestionWidget(anywidget.AnyWidget):
                         redraw();
                     });
                 }
-    
+
                 const checkBtn = el.querySelector("#check-btn");
                 if (checkBtn) {
                     checkBtn.addEventListener("click", () => {
-    
+
                         const words = model.get("words");
                         const target = model.get("target");
                         const accepted = model.get("accepted");
                         const isCorrect = checkAnswer(answerIndices, words, target, accepted);
-    
+
                         model.set("correct", isCorrect);
                         model.save_changes();
-    
+
                         phase = isCorrect ? "correct" : "wrong";
                         redraw();
                     });
                 }
             }
-    
+
             model.on("change:words", () => {
                 answerIndices = [];
                 phase = "idle";
@@ -181,7 +181,7 @@ class QuestionWidget(anywidget.AnyWidget):
                 revealed = false;
                 redraw();
             });
-    
+
             redraw();
         }
         export default { render };
@@ -321,12 +321,6 @@ def _(current_sentence, pool_words):
     return (widget,)
 
 
-@app.cell
-def _(widget):
-    correct = widget.value["correct"]
-    return
-
-
 @app.cell(hide_code=True)
 def _():
     mo.md(r"""
@@ -380,18 +374,6 @@ def _(
         return mo.vstack(mo_elems, gap=0)
 
     return (render_main_ui,)
-
-
-@app.cell
-def _(active_question_key, get_answer_pool_by_question, move_word, pool_words):
-    answer_indices = get_answer_pool_by_question().get(active_question_key, [])
-    ui_answer = render_answer_chips(
-        words=pool_words, indices=answer_indices, on_click=move_word
-    )
-    pool_chips_ui = render_word_pool(
-        words=pool_words, on_click=move_word, disabled_indices=answer_indices
-    )
-    return
 
 
 @app.cell(hide_code=True)
@@ -474,33 +456,6 @@ def _(raw_pairs):
     return (pyodide_question_files_by_pair,)
 
 
-@app.cell
-def _():
-    get_answer_pool_by_question, set_answer_pool_by_question = mo.state({})
-
-
-    def set_answer_pool(
-        question_key: str, update: list[int] | Callable[[list[int]], list[int]]
-    ) -> None:
-        def _update_answer_pool(state: dict[str, list[int]]) -> dict[str, list[int]]:
-            current_pool = state.get(question_key, [])
-            new_pool = update(current_pool) if callable(update) else update
-
-            if new_pool == current_pool:
-                return state
-
-            if not new_pool:
-                if question_key not in state:
-                    return state
-                return {k: v for k, v in state.items() if k != question_key}
-
-            return {**state, question_key: new_pool}
-
-        set_answer_pool_by_question(_update_answer_pool)
-
-    return get_answer_pool_by_question, set_answer_pool
-
-
 @app.cell(hide_code=True)
 def _():
     mo.md(r"""
@@ -580,7 +535,7 @@ def _(button_next, button_prev, df):
 def _(button_next, button_prev, row_number, start_session_id):
     question_step = button_next.value + button_prev.value
     active_question_key = f"{start_session_id}:{question_step}:{row_number}"
-    return (active_question_key,)
+    return
 
 
 @app.cell
@@ -739,49 +694,6 @@ def _(start_session_id):
 
 
 @app.cell
-def _():
-    # def handle_check_answer(score: dict[str, Any] | None) -> dict[str, Any]:
-    #     prev_score = score or {"tries": 0, "correct": 0, "last_result": None}
-    #     if len(df) == 0:
-    #         return prev_score
-
-    #     row_number = max(0, min(button_next.value - button_prev.value, len(df) - 1))
-    #     question_step = button_next.value + button_prev.value
-    #     active_question_key = f"{start_session_id}:{question_step}:{row_number}"
-    #     current_sentence = get_sentence(df=df, row_number=row_number)
-    #     if not current_sentence:
-    #         return prev_score
-
-    #     pool_words = sort_words(words=current_sentence["words"])
-    #     answer_pool = get_answer_pool_by_question().get(active_question_key, [])
-
-    #     is_correct = check_answer(
-    #         user_answer=[pool_words[i] for i in answer_pool],
-    #         target=current_sentence["target"],
-    #         accepted=current_sentence.get("accepted", []),
-    #     )
-    #     return {
-    #         "tries": prev_score["tries"] + 1,
-    #         "correct": prev_score["correct"] + (1 if is_correct else 0),
-    #         "last_result": is_correct,
-    #     }
-    return
-
-
-@app.cell
-def _():
-    # def handle_reset_answer(click_count: int) -> int:
-    #     if len(df) == 0:
-    #         return click_count
-    #     row_number = max(0, min(button_next.value - button_prev.value, len(df) - 1))
-    #     question_step = button_next.value + button_prev.value
-    #     active_question_key = f"{start_session_id}:{question_step}:{row_number}"
-    #     set_answer_pool(active_question_key, [])
-    #     return click_count
-    return
-
-
-@app.cell
 def _(start_session_id):
     _ = start_session_id
 
@@ -803,46 +715,6 @@ def _():
     mo.md(r"""
     # Testing cells for inspection
     """)
-    return
-
-
-@app.cell
-def _():
-    test_words = [
-        "jeg",
-        "vil",
-        "gjerne",
-        "bestille",
-        "to",
-        "store",
-        "kaffer",
-        "uten",
-        "sukker",
-        "takk",
-    ]
-    pool_preview = mo.hstack(
-        [mo.ui.button(label=w, kind="neutral") for w in test_words],
-        justify="center",
-        gap=0.4,
-        wrap=True,
-    )
-    default_word_pool_box = mo.callout(pool_preview, kind="neutral")
-    custom_word_pool_box = render_word_pool_container(content=pool_preview)
-
-    mo.vstack(
-        [
-            mo.vstack(
-                [
-                    mo.md("Word pool container comparison"),
-                    mo.hstack(
-                        [default_word_pool_box, custom_word_pool_box], widths="equal"
-                    ),
-                ],
-                gap=0.15,
-            ),
-        ],
-        gap=0.5,
-    )
     return
 
 
@@ -1101,31 +973,6 @@ def get_sentence(df: pl.DataFrame, row_number: int) -> dict[str, Any] | None:
 
 
 @app.function
-def normalize_text(text: str) -> str:
-    """Removes punctuation and lowercase the text."""
-    if not text:
-        return ""
-
-    # Drop parenthetical clarifiers (e.g. "deze (enkelvoud)" -> "deze")
-    # so one-word answers compare correctly against word forms.
-    no_parentheses = re.sub(r"\s*\([^)]*\)", "", str(text))
-    normalized = no_parentheses.lower().translate(
-        str.maketrans("", "", string.punctuation)
-    )
-    return " ".join(normalized.split())
-
-
-@app.function
-def check_answer(user_answer: list[str], target: str, accepted: list[str]) -> bool:
-    """Checks if the assembled words match the target sentence or accepted alternatives."""
-    user_str = normalize_text(text=" ".join(user_answer))
-    target_str = normalize_text(text=target)
-    accepted_strs = [normalize_text(text=a) for a in (accepted or [])]
-
-    return user_str == target_str or user_str in accepted_strs
-
-
-@app.function
 def sort_words(words: list[str]) -> list[str]:
     return sorted(words, key=lambda w: w.lower())
 
@@ -1184,68 +1031,43 @@ def style_feedback_chip(
     }
 
 
-@app.function
-def style_word_pool_box() -> dict[str, str]:
-    return {
-        # "margin": "0.5rem 0",
-        "padding": "1rem",
-        "border": "1px solid var(--la-border-subtle)",
-        "border-radius": "var(--la-radius-pool)",
-        "background": "var(--la-accent-primary-soft)",
-        "overflow-y": "hidden",
-        "box-sizing": "border-box",
-        "width": "100%",
-        "display": "flex",
-        "justify-content": "center",
-    }
-
-
-@app.function
-def feedback_chip(
-    text: str, *, border: str, background: str, foreground: str
-) -> mo.Html:
-    """Creates a compact pill-like feedback chip."""
-    return (
-        mo.md(text)
-        .center()
-        .style(
-            style_feedback_chip(
-                border=border,
-                background=background,
-                foreground=foreground,
-            )
+@app.cell
+def _(feedback_chip):
+    def success_chip(text: str) -> mo.Html:
+        return feedback_chip(
+            text=text,
+            border="var(--la-success-border)",
+            background="var(--la-success-bg)",
+            foreground="var(--la-success-fg)",
         )
-    )
+
+    return
 
 
-@app.function
-def success_chip(text: str) -> mo.Html:
-    return feedback_chip(
-        text=text,
-        border="var(--la-success-border)",
-        background="var(--la-success-bg)",
-        foreground="var(--la-success-fg)",
-    )
+@app.cell
+def _(feedback_chip):
+    def warn_chip(text: str) -> mo.Html:
+        return feedback_chip(
+            text=text,
+            border="var(--la-warning-border)",
+            background="var(--la-warning-bg)",
+            foreground="var(--la-warning-fg)",
+        )
+
+    return
 
 
-@app.function
-def warn_chip(text: str) -> mo.Html:
-    return feedback_chip(
-        text=text,
-        border="var(--la-warning-border)",
-        background="var(--la-warning-bg)",
-        foreground="var(--la-warning-fg)",
-    )
+@app.cell
+def _(feedback_chip):
+    def neutral_chip(text: str) -> mo.Html:
+        return feedback_chip(
+            text=text,
+            border="var(--la-neutral-border)",
+            background="var(--la-neutral-bg)",
+            foreground="var(--la-neutral-fg)",
+        )
 
-
-@app.function
-def neutral_chip(text: str) -> mo.Html:
-    return feedback_chip(
-        text=text,
-        border="var(--la-neutral-border)",
-        background="var(--la-neutral-bg)",
-        foreground="var(--la-neutral-fg)",
-    )
+    return
 
 
 @app.cell(hide_code=True)
@@ -1319,104 +1141,6 @@ def render_question_area(source: str) -> mo.Html:
     ).style({"margin-top": "1rem"})
 
 
-@app.function
-def render_answer_area(ui_answer: mo.Html) -> mo.Html:
-    return mo.vstack(
-        [mo.md("**Your answer:**").center(), ui_answer, mo.md("---")]
-    ).style({"margin-top": "1rem"})
-
-
-@app.function
-def make_word_chip(
-    word: str,
-    idx: int,
-    on_click: Callable[[int, bool], None],
-    *,
-    is_pool: bool,
-    disabled: bool = False,
-) -> mo.Html:
-    """Creates a single word chip button."""
-
-    def handle_chip_click(click_count: int, i: int = idx) -> int:
-        on_click(i, is_pool)
-        return click_count + 1
-
-    return mo.ui.button(
-        label=word,
-        value=0,
-        on_click=handle_chip_click,
-        kind="neutral",
-        tooltip="Click to add" if is_pool else "Click to remove",
-        disabled=disabled,
-    )
-
-
-@app.function
-def render_answer_chips(
-    words: list[str],
-    indices: list[int],
-    *,
-    on_click: Callable[[int, bool], None],
-) -> mo.Html:
-    """Renders selected word chips as the answer area, or a hint when empty."""
-    if not indices:
-        return (
-            mo.md("*Click words from the pool below*").center()
-            if words
-            else mo.md("No words available").center()
-        )
-
-    chips = [
-        make_word_chip(word=words[idx], idx=idx, on_click=on_click, is_pool=False)
-        for idx in indices
-    ]
-    return mo.hstack(chips, justify="center", gap=1, wrap=True)
-
-
-@app.function
-def render_word_pool(
-    words: list[str],
-    *,
-    on_click: Callable[[int, bool], None],
-    disabled_indices: list[int] | None = None,
-) -> mo.Html:
-    """Renders all word chips for the pool, disabling already-selected words."""
-    if not words:
-        return mo.md("No words available").center()
-
-    disabled = disabled_indices or []
-    chips = [
-        make_word_chip(
-            word=words[idx],
-            idx=idx,
-            on_click=on_click,
-            is_pool=True,
-            disabled=idx in disabled,
-        )
-        for idx in range(len(words))
-    ]
-    return mo.hstack(chips, justify="center", gap=1, wrap=True)
-
-
-@app.function
-def render_word_pool_container(content: mo.Html) -> mo.Html:
-    """Renders the word pool inside a compact bordered container."""
-    return mo.vstack([content], gap=0).style(style_word_pool_box())
-
-
-@app.cell
-def _():
-    # def render_feedback(check_value: bool | None) -> mo.Html:
-    #     """Renders feedback based on the check result."""
-    #     if check_value is None:
-    #         return neutral_chip(text="Press the button to check your answer")
-    #     elif check_value:
-    #         return success_chip(text="Correct! Continue to the next question.")
-    #     else:
-    #         return warn_chip(text="False, continue or try again")
-    return
-
-
 @app.cell(hide_code=True)
 def _():
     mo.md(r"""
@@ -1483,20 +1207,6 @@ def _(current_sentence, df, row_number):
 
 
 @app.cell
-def _():
-    # def render_answer_button_set() -> mo.Html:
-    #     return mo.hstack(
-    #         [
-    #             # button_check_answer,
-    #             button_reset,
-    #             button_reveal,
-    #         ],
-    #         justify="center",
-    #     ).style({"margin-top": "1rem"})
-    return
-
-
-@app.cell
 def _(button_next, button_prev):
     def render_navigation_buttons():
         return mo.hstack([button_prev, button_next]).style({"margin-top": "1rem"})
@@ -1507,36 +1217,10 @@ def _(button_next, button_prev):
 @app.cell
 def _(current_sentence, render_navigation_buttons, render_stats, widget):
     def render_interaction_section() -> mo.Html:
-        # session_score = button_check_answer.value
-        # answer_indices = get_answer_pool_by_question().get(active_question_key, [])
-        # feedback_value = session_score["last_result"] if answer_indices else None
-        # # Core Exercise
-        # answer_text = (
-        #     f"**Answer:** {current_sentence['target']}" if current_sentence else ""
-        # )
-        # if current_sentence and current_sentence.get("accepted"):
-        #     answer_text += f"<br/>*Or:* {' / '.join(current_sentence['accepted'])}"
-
-        # reveal_text = (
-        #     mo.md(answer_text).center()
-        #     if button_reveal.value and current_sentence
-        #     else mo.md("&nbsp;")
-        # )
-
         interaction_section = mo.vstack(
             [
                 render_stats(),
                 render_question_area(source=current_sentence["source"]),
-                # render_answer_area(ui_answer=ui_answer),
-                # render_word_pool_container(content=pool_chips_ui),
-                # render_answer_button_set(),
-                # reveal_text,
-                # mo.hstack(
-                #     [
-                #         render_feedback(check_value=feedback_value),
-                #     ],
-                #     justify="center",
-                # ),
                 widget,
                 render_navigation_buttons(),
             ],
@@ -1564,13 +1248,13 @@ def _(button_back_to_settings):
 
 
 @app.cell
-def _(button_back_to_settings, button_restart_session, stats, total_questions):
+def _(button_back_to_settings, button_restart_session, total_questions):
     def render_summary_section() -> mo.Html:
         # stats = button_check_answer.value
-        attempts = stats["tries"]
-        correct = stats["correct"]
-        incorrect = max(0, attempts - correct)
-        accuracy = f"{(correct / attempts * 100):.0f}%" if attempts > 0 else "0%"
+        # attempts = stats["tries"]
+        # correct = stats["correct"]
+        # incorrect = max(0, attempts - correct)
+        # accuracy = f"{(correct / attempts * 100):.0f}%" if attempts > 0 else "0%"
 
         summary_stats = mo.hstack(
             [
@@ -1579,26 +1263,26 @@ def _(button_back_to_settings, button_restart_session, stats, total_questions):
                     label="Total questions",
                     caption="Session size",
                 ),
-                render_stat_box(
-                    value=str(attempts),
-                    label="Attempts",
-                    caption="Answers checked",
-                ),
-                render_stat_box(
-                    value=str(correct),
-                    label="Correct",
-                    caption="Correct answers",
-                ),
-                render_stat_box(
-                    value=str(incorrect),
-                    label="Incorrect",
-                    caption="Needs review",
-                ),
-                render_stat_box(
-                    value=accuracy,
-                    label="Accuracy",
-                    caption="Session result",
-                ),
+                # render_stat_box(
+                #     value=str(attempts),
+                #     label="Attempts",
+                #     caption="Answers checked",
+                # ),
+                # render_stat_box(
+                #     value=str(correct),
+                #     label="Correct",
+                #     caption="Correct answers",
+                # ),
+                # render_stat_box(
+                #     value=str(incorrect),
+                #     label="Incorrect",
+                #     caption="Needs review",
+                # ),
+                # render_stat_box(
+                #     value=accuracy,
+                #     label="Accuracy",
+                #     caption="Session result",
+                # ),
             ],
             widths="equal",
         )
@@ -1618,30 +1302,6 @@ def _(button_back_to_settings, button_restart_session, stats, total_questions):
         ).style(style_card(accent_edge="var(--la-accent-secondary-soft)"))
 
     return (render_summary_section,)
-
-
-@app.cell(hide_code=True)
-def _():
-    mo.md(r"""
-    ## State updaters
-    """)
-    return
-
-
-@app.cell
-def _(active_question_key, get_answer_pool_by_question, set_answer_pool):
-    def move_word(index: int, to_answer: bool) -> None:
-        # Read current answer pool to keep callback reactivity wired in marimo.
-        _ = get_answer_pool_by_question()
-        # Adds or removes the clicked word index from the active answer pool.
-        if to_answer:
-            set_answer_pool(
-                active_question_key, lambda a: a + [index] if index not in a else a
-            )
-        else:
-            set_answer_pool(active_question_key, lambda a: [i for i in a if i != index])
-
-    return (move_word,)
 
 
 if __name__ == "__main__":
