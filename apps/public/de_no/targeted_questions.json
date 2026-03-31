@@ -20,7 +20,9 @@
           "er",
           "wir",
           "sie"
-        ]
+        ],
+        "prompt": "ich",
+        "answer": "ich"
       },
       "no": {
         "primary": "jeg",
@@ -33,8 +35,14 @@
           "han",
           "vi",
           "hun"
-        ]
+        ],
+        "prompt": "jeg",
+        "answer": "jeg"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -58,7 +66,9 @@
           "du",
           "Sie",
           "euch"
-        ]
+        ],
+        "prompt": "wir",
+        "answer": "wir"
       },
       "no": {
         "primary": "vi",
@@ -71,8 +81,14 @@
           "du",
           "deg",
           "dere"
-        ]
+        ],
+        "prompt": "vi",
+        "answer": "vi"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -106,7 +122,9 @@
           "sein",
           "ihr",
           "unser"
-        ]
+        ],
+        "prompt": "mein",
+        "answer": "mein"
       },
       "no": {
         "primary": "min",
@@ -126,8 +144,14 @@
           "dine",
           "sin",
           "vår"
-        ]
+        ],
+        "prompt": "min",
+        "answer": "min"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -151,7 +175,9 @@
           "er",
           "sie",
           "wir"
-        ]
+        ],
+        "prompt": "du",
+        "answer": "du"
       },
       "no": {
         "primary": "du",
@@ -164,8 +190,14 @@
           "han",
           "hun",
           "vi"
-        ]
+        ],
+        "prompt": "du",
+        "answer": "du"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -190,7 +222,9 @@
           "es",
           "wir",
           "man"
-        ]
+        ],
+        "prompt": "er",
+        "answer": "er"
       },
       "no": {
         "primary": "han",
@@ -203,8 +237,14 @@
           "det",
           "vi",
           "en"
-        ]
+        ],
+        "prompt": "han",
+        "answer": "han"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -229,7 +269,10 @@
           "es",
           "wir",
           "man"
-        ]
+        ],
+        "prompt": "sie",
+        "answer": "sie",
+        "hint": "singular"
       },
       "no": {
         "primary": "hun",
@@ -242,8 +285,14 @@
           "det",
           "vi",
           "en"
-        ]
+        ],
+        "prompt": "hun",
+        "answer": "hun"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -268,7 +317,9 @@
           "ihm",
           "man",
           "wir"
-        ]
+        ],
+        "prompt": "es",
+        "answer": "es"
       },
       "no": {
         "primary": "det",
@@ -283,8 +334,14 @@
           "ham",
           "vi",
           "de"
-        ]
+        ],
+        "prompt": "det",
+        "answer": "det"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -308,7 +365,10 @@
           "Sie",
           "du",
           "dein"
-        ]
+        ],
+        "prompt": "ihr",
+        "answer": "ihr",
+        "hint": "plural"
       },
       "no": {
         "primary": "dere",
@@ -321,8 +381,14 @@
           "deg",
           "din",
           "oss"
-        ]
+        ],
+        "prompt": "dere",
+        "answer": "dere"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -346,7 +412,10 @@
           "wir",
           "es",
           "man"
-        ]
+        ],
+        "prompt": "sie",
+        "answer": "sie",
+        "hint": "plural"
       },
       "no": {
         "primary": "de",
@@ -359,8 +428,14 @@
           "vi",
           "det",
           "den"
-        ]
+        ],
+        "prompt": "de",
+        "answer": "de"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -383,7 +458,10 @@
           "ihr",
           "sie",
           "wir"
-        ]
+        ],
+        "prompt": "Sie",
+        "answer": "Sie",
+        "hint": "formell"
       },
       "no": {
         "primary": "De (formelt)",
@@ -398,8 +476,15 @@
           "dere",
           "de",
           "vi"
-        ]
+        ],
+        "prompt": "De",
+        "answer": "De",
+        "hint": "formelt"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -423,7 +508,9 @@
           "ihn",
           "uns",
           "sich"
-        ]
+        ],
+        "prompt": "mich",
+        "answer": "mich"
       },
       "no": {
         "primary": "meg",
@@ -436,8 +523,14 @@
           "oss",
           "seg",
           "min"
-        ]
+        ],
+        "prompt": "meg",
+        "answer": "meg"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -461,7 +554,9 @@
           "ihn",
           "euch",
           "sich"
-        ]
+        ],
+        "prompt": "dich",
+        "answer": "dich"
       },
       "no": {
         "primary": "deg",
@@ -474,8 +569,14 @@
           "dere",
           "seg",
           "din"
-        ]
+        ],
+        "prompt": "deg",
+        "answer": "deg"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -500,7 +601,9 @@
           "es",
           "mich",
           "sich"
-        ]
+        ],
+        "prompt": "ihn",
+        "answer": "ihn"
       },
       "no": {
         "primary": "ham",
@@ -515,8 +618,14 @@
           "meg",
           "seg",
           "hans"
-        ]
+        ],
+        "prompt": "ham",
+        "answer": "ham"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -541,7 +650,10 @@
           "mich",
           "uns",
           "sich"
-        ]
+        ],
+        "prompt": "sie",
+        "answer": "sie",
+        "hint": "Objekt, fem."
       },
       "no": {
         "primary": "henne",
@@ -554,8 +666,14 @@
           "oss",
           "seg",
           "hennes"
-        ]
+        ],
+        "prompt": "henne",
+        "answer": "henne"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -579,7 +697,9 @@
           "mich",
           "sich",
           "unser"
-        ]
+        ],
+        "prompt": "uns",
+        "answer": "uns"
       },
       "no": {
         "primary": "oss",
@@ -592,8 +712,14 @@
           "meg",
           "seg",
           "vår"
-        ]
+        ],
+        "prompt": "oss",
+        "answer": "oss"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -617,7 +743,9 @@
           "dich",
           "sich",
           "euer"
-        ]
+        ],
+        "prompt": "euch",
+        "answer": "euch"
       },
       "no": {
         "primary": "dere (objekt)",
@@ -630,8 +758,15 @@
           "seg",
           "deres",
           "vi"
-        ]
+        ],
+        "prompt": "dere",
+        "answer": "dere",
+        "hint": "objekt"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -655,7 +790,10 @@
           "uns",
           "sich",
           "wir"
-        ]
+        ],
+        "prompt": "sie",
+        "answer": "sie",
+        "hint": "Objekt, plural"
       },
       "no": {
         "primary": "dem",
@@ -668,8 +806,14 @@
           "oss",
           "seg",
           "vi"
-        ]
+        ],
+        "prompt": "dem",
+        "answer": "dem"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -693,7 +837,9 @@
           "ihm",
           "uns",
           "meinem"
-        ]
+        ],
+        "prompt": "mir",
+        "answer": "mir"
       },
       "no": {
         "primary": "meg (indirekte)",
@@ -707,8 +853,15 @@
           "min",
           "mitt",
           "en"
-        ]
+        ],
+        "prompt": "meg",
+        "answer": "meg",
+        "hint": "indirekte"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -732,7 +885,9 @@
           "ihm",
           "euch",
           "deinem"
-        ]
+        ],
+        "prompt": "dir",
+        "answer": "dir"
       },
       "no": {
         "primary": "deg (indirekte)",
@@ -745,8 +900,15 @@
           "dere",
           "din",
           "ditt"
-        ]
+        ],
+        "prompt": "deg",
+        "answer": "deg",
+        "hint": "indirekte"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -771,7 +933,9 @@
           "ihnen",
           "uns",
           "seinem"
-        ]
+        ],
+        "prompt": "ihm",
+        "answer": "ihm"
       },
       "no": {
         "primary": "ham (indirekte)",
@@ -786,8 +950,15 @@
           "oss",
           "hans",
           "sin"
-        ]
+        ],
+        "prompt": "ham",
+        "answer": "ham",
+        "hint": "indirekte"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -820,7 +991,9 @@
           "unser",
           "deinem",
           "deiner"
-        ]
+        ],
+        "prompt": "dein",
+        "answer": "dein"
       },
       "no": {
         "primary": "din",
@@ -837,8 +1010,14 @@
           "min",
           "sin",
           "deres"
-        ]
+        ],
+        "prompt": "din",
+        "answer": "din"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -870,7 +1049,9 @@
           "unser",
           "seinem",
           "seiner"
-        ]
+        ],
+        "prompt": "sein",
+        "answer": "sein"
       },
       "no": {
         "primary": "hans",
@@ -888,8 +1069,14 @@
           "sine",
           "hennes",
           "min"
-        ]
+        ],
+        "prompt": "hans",
+        "answer": "hans"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -921,7 +1108,10 @@
           "unser",
           "ihrem",
           "ihrer"
-        ]
+        ],
+        "prompt": "ihr",
+        "answer": "ihr",
+        "hint": "Possessiv, fem."
       },
       "no": {
         "primary": "hennes",
@@ -939,8 +1129,14 @@
           "sine",
           "hans",
           "min"
-        ]
+        ],
+        "prompt": "hennes",
+        "answer": "hennes"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -972,7 +1168,9 @@
           "unseren",
           "unserem",
           "unserer"
-        ]
+        ],
+        "prompt": "unser",
+        "answer": "unser"
       },
       "no": {
         "primary": "vår",
@@ -988,8 +1186,14 @@
           "oss",
           "deres",
           "min"
-        ]
+        ],
+        "prompt": "vår",
+        "answer": "vår"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -1021,7 +1225,9 @@
           "euren",
           "eurem",
           "eurer"
-        ]
+        ],
+        "prompt": "euer",
+        "answer": "euer"
       },
       "no": {
         "primary": "deres (flertall)",
@@ -1034,8 +1240,15 @@
           "din",
           "sin",
           "vi"
-        ]
+        ],
+        "prompt": "deres",
+        "answer": "deres",
+        "hint": "flertall"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -1066,7 +1279,10 @@
           "mein",
           "ihrem",
           "ihrer"
-        ]
+        ],
+        "prompt": "ihr",
+        "answer": "ihr",
+        "hint": "Possessiv, Plural"
       },
       "no": {
         "primary": "deres (de sin)",
@@ -1079,8 +1295,15 @@
           "hennes",
           "hans",
           "min"
-        ]
+        ],
+        "prompt": "deres",
+        "answer": "deres",
+        "hint": "de sin"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -1103,7 +1326,9 @@
           "euch",
           "selbst",
           "ihn"
-        ]
+        ],
+        "prompt": "sich",
+        "answer": "sich"
       },
       "no": {
         "primary": "seg",
@@ -1116,8 +1341,14 @@
           "dere",
           "selv",
           "ham"
-        ]
+        ],
+        "prompt": "seg",
+        "answer": "seg"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -1140,7 +1371,9 @@
           "wann",
           "warum",
           "wen"
-        ]
+        ],
+        "prompt": "wer",
+        "answer": "wer"
       },
       "no": {
         "primary": "hvem",
@@ -1153,8 +1386,14 @@
           "når",
           "hvorfor",
           "hvis"
-        ]
+        ],
+        "prompt": "hvem",
+        "answer": "hvem"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -1177,7 +1416,9 @@
           "wann",
           "warum",
           "welches"
-        ]
+        ],
+        "prompt": "was",
+        "answer": "was"
       },
       "no": {
         "primary": "hva",
@@ -1190,8 +1431,14 @@
           "når",
           "hvorfor",
           "hvilket"
-        ]
+        ],
+        "prompt": "hva",
+        "answer": "hva"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -1216,7 +1463,9 @@
           "einer",
           "jeder",
           "wir"
-        ]
+        ],
+        "prompt": "man",
+        "answer": "man"
       },
       "no": {
         "primary": "man",
@@ -1231,8 +1480,14 @@
           "alle",
           "hver",
           "vi"
-        ]
+        ],
+        "prompt": "man",
+        "answer": "man"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -1256,7 +1511,9 @@
           "derer",
           "unser",
           "euer"
-        ]
+        ],
+        "prompt": "dieser",
+        "answer": "dieser"
       },
       "no": {
         "primary": "denne",
@@ -1269,8 +1526,14 @@
           "det",
           "de",
           "vår"
-        ]
+        ],
+        "prompt": "denne",
+        "answer": "denne"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -1294,7 +1557,9 @@
           "was",
           "das",
           "es"
-        ]
+        ],
+        "prompt": "dieses",
+        "answer": "dieses"
       },
       "no": {
         "primary": "dette",
@@ -1307,8 +1572,14 @@
           "den",
           "noe",
           "alt"
-        ]
+        ],
+        "prompt": "dette",
+        "answer": "dette"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -1332,7 +1603,10 @@
           "alle",
           "viele",
           "wir"
-        ]
+        ],
+        "prompt": "diese",
+        "answer": "diese",
+        "hint": "plural"
       },
       "no": {
         "primary": "disse",
@@ -1345,8 +1619,14 @@
           "alle",
           "mange",
           "vi"
-        ]
+        ],
+        "prompt": "disse",
+        "answer": "disse"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -1373,7 +1653,9 @@
           "der",
           "welcher",
           "man"
-        ]
+        ],
+        "prompt": "jener",
+        "answer": "jener"
       },
       "no": {
         "primary": "den (der borte)",
@@ -1389,8 +1671,15 @@
           "dette",
           "hvilken",
           "en"
-        ]
+        ],
+        "prompt": "den",
+        "answer": "den",
+        "hint": "der borte"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -1414,7 +1703,10 @@
           "welcher",
           "wer",
           "er"
-        ]
+        ],
+        "prompt": "der",
+        "answer": "der",
+        "hint": "relativ"
       },
       "no": {
         "primary": "som",
@@ -1427,8 +1719,14 @@
           "det",
           "er",
           "han"
-        ]
+        ],
+        "prompt": "som",
+        "answer": "som"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -1452,7 +1750,10 @@
           "sie",
           "wer",
           "wir"
-        ]
+        ],
+        "prompt": "die",
+        "answer": "die",
+        "hint": "relativ"
       },
       "no": {
         "primary": "som (relativ)",
@@ -1465,8 +1766,15 @@
           "de",
           "vi",
           "en"
-        ]
+        ],
+        "prompt": "som",
+        "answer": "som",
+        "hint": "relativ"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -1490,7 +1798,10 @@
           "es",
           "was",
           "man"
-        ]
+        ],
+        "prompt": "das",
+        "answer": "das",
+        "hint": "relativ"
       },
       "no": {
         "primary": "som (nøytrum)",
@@ -1503,8 +1814,15 @@
           "noe",
           "alt",
           "en"
-        ]
+        ],
+        "prompt": "som",
+        "answer": "som",
+        "hint": "nøytrum"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -1527,7 +1845,9 @@
           "wer",
           "alle",
           "wir"
-        ]
+        ],
+        "prompt": "jemand",
+        "answer": "jemand"
       },
       "no": {
         "primary": "noen (person)",
@@ -1540,8 +1860,15 @@
           "hvem",
           "alle",
           "vi"
-        ]
+        ],
+        "prompt": "noen",
+        "answer": "noen",
+        "hint": "person"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -1564,7 +1891,9 @@
           "nie",
           "nichts",
           "wir"
-        ]
+        ],
+        "prompt": "niemand",
+        "answer": "niemand"
       },
       "no": {
         "primary": "ingen",
@@ -1577,8 +1906,14 @@
           "ingenting",
           "vi",
           "en"
-        ]
+        ],
+        "prompt": "ingen",
+        "answer": "ingen"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -1601,7 +1936,9 @@
           "das",
           "was",
           "man"
-        ]
+        ],
+        "prompt": "etwas",
+        "answer": "etwas"
       },
       "no": {
         "primary": "noe",
@@ -1614,8 +1951,14 @@
           "det",
           "hva",
           "en"
-        ]
+        ],
+        "prompt": "noe",
+        "answer": "noe"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -1638,7 +1981,9 @@
           "keiner",
           "man",
           "es"
-        ]
+        ],
+        "prompt": "nichts",
+        "answer": "nichts"
       },
       "no": {
         "primary": "ingenting",
@@ -1651,8 +1996,14 @@
           "ingen",
           "man",
           "det"
-        ]
+        ],
+        "prompt": "ingenting",
+        "answer": "ingenting"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -1678,7 +2029,9 @@
           "man",
           "einer",
           "wir"
-        ]
+        ],
+        "prompt": "jeder",
+        "answer": "jeder"
       },
       "no": {
         "primary": "hver",
@@ -1693,8 +2046,14 @@
           "en",
           "begge",
           "vi"
-        ]
+        ],
+        "prompt": "hver",
+        "answer": "hver"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -1717,7 +2076,9 @@
           "ganz",
           "man",
           "es"
-        ]
+        ],
+        "prompt": "alles",
+        "answer": "alles"
       },
       "no": {
         "primary": "alt",
@@ -1730,8 +2091,14 @@
           "helt",
           "man",
           "det"
-        ]
+        ],
+        "prompt": "alt",
+        "answer": "alt"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -1754,7 +2121,9 @@
           "wenige",
           "wir",
           "sie"
-        ]
+        ],
+        "prompt": "alle",
+        "answer": "alle"
       },
       "no": {
         "primary": "alle",
@@ -1767,8 +2136,14 @@
           "få",
           "vi",
           "de"
-        ]
+        ],
+        "prompt": "alle",
+        "answer": "alle"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -1793,7 +2168,9 @@
           "etwas",
           "mehr",
           "wir"
-        ]
+        ],
+        "prompt": "manche",
+        "answer": "manche"
       },
       "no": {
         "primary": "noen (flere)",
@@ -1810,8 +2187,15 @@
           "noe",
           "mer",
           "vi"
-        ]
+        ],
+        "prompt": "noen",
+        "answer": "noen",
+        "hint": "flere"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -1834,7 +2218,9 @@
           "mehr",
           "sie",
           "wir"
-        ]
+        ],
+        "prompt": "viele",
+        "answer": "viele"
       },
       "no": {
         "primary": "mange",
@@ -1847,8 +2233,14 @@
           "mer",
           "de",
           "vi"
-        ]
+        ],
+        "prompt": "mange",
+        "answer": "mange"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -1871,7 +2263,9 @@
           "keiner",
           "sie",
           "wir"
-        ]
+        ],
+        "prompt": "wenige",
+        "answer": "wenige"
       },
       "no": {
         "primary": "få",
@@ -1884,8 +2278,14 @@
           "ingen",
           "de",
           "vi"
-        ]
+        ],
+        "prompt": "få",
+        "answer": "få"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -1908,7 +2308,9 @@
           "was",
           "welcher",
           "wer"
-        ]
+        ],
+        "prompt": "wie",
+        "answer": "wie"
       },
       "no": {
         "primary": "hvordan",
@@ -1921,8 +2323,14 @@
           "hva",
           "hvilken",
           "hvem"
-        ]
+        ],
+        "prompt": "hvordan",
+        "answer": "hvordan"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -1945,7 +2353,9 @@
           "woher",
           "wohin",
           "was"
-        ]
+        ],
+        "prompt": "wo",
+        "answer": "wo"
       },
       "no": {
         "primary": "hvor",
@@ -1958,8 +2368,14 @@
           "hvorfra",
           "hvorhen",
           "hva"
-        ]
+        ],
+        "prompt": "hvor",
+        "answer": "hvor"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -1982,7 +2398,9 @@
           "jetzt",
           "dann",
           "was"
-        ]
+        ],
+        "prompt": "wann",
+        "answer": "wann"
       },
       "no": {
         "primary": "når",
@@ -1995,8 +2413,14 @@
           "nå",
           "da",
           "hva"
-        ]
+        ],
+        "prompt": "når",
+        "answer": "når"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -2022,7 +2446,9 @@
           "wie",
           "wo",
           "wann"
-        ]
+        ],
+        "prompt": "warum",
+        "answer": "warum"
       },
       "no": {
         "primary": "hvorfor",
@@ -2035,8 +2461,14 @@
           "når",
           "hva",
           "hvem"
-        ]
+        ],
+        "prompt": "hvorfor",
+        "answer": "hvorfor"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -2063,7 +2495,9 @@
           "was",
           "wie",
           "jeder"
-        ]
+        ],
+        "prompt": "welcher",
+        "answer": "welcher"
       },
       "no": {
         "primary": "hvilken",
@@ -2079,8 +2513,14 @@
           "hva",
           "hvordan",
           "hver"
-        ]
+        ],
+        "prompt": "hvilken",
+        "answer": "hvilken"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -2103,7 +2543,9 @@
           "dessen",
           "meiner",
           "ihrer"
-        ]
+        ],
+        "prompt": "wessen",
+        "answer": "wessen"
       },
       "no": {
         "primary": "hvis (eie)",
@@ -2119,8 +2561,15 @@
           "hans",
           "hennes",
           "deres"
-        ]
+        ],
+        "prompt": "hvis",
+        "answer": "hvis",
+        "hint": "eie"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -2143,7 +2592,9 @@
           "uns",
           "zusammen",
           "miteinander"
-        ]
+        ],
+        "prompt": "einander",
+        "answer": "einander"
       },
       "no": {
         "primary": "hverandre",
@@ -2156,8 +2607,14 @@
           "oss",
           "sammen",
           "dem"
-        ]
+        ],
+        "prompt": "hverandre",
+        "answer": "hverandre"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -2182,7 +2639,9 @@
           "dich",
           "allein",
           "man"
-        ]
+        ],
+        "prompt": "selbst",
+        "answer": "selbst"
       },
       "no": {
         "primary": "selv",
@@ -2197,8 +2656,14 @@
           "deg",
           "alene",
           "man"
-        ]
+        ],
+        "prompt": "selv",
+        "answer": "selv"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -2221,7 +2686,9 @@
           "einer",
           "jeder",
           "wir"
-        ]
+        ],
+        "prompt": "beide",
+        "answer": "beide"
       },
       "no": {
         "primary": "begge",
@@ -2234,8 +2701,14 @@
           "en",
           "hver",
           "vi"
-        ]
+        ],
+        "prompt": "begge",
+        "answer": "begge"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -2265,7 +2738,10 @@
           "mein",
           "Ihrem",
           "Ihren"
-        ]
+        ],
+        "prompt": "Ihr",
+        "answer": "Ihr",
+        "hint": "formell"
       },
       "no": {
         "primary": "Deres (formelt)",
@@ -2280,8 +2756,15 @@
           "deres",
           "dere",
           "vi"
-        ]
+        ],
+        "prompt": "Deres",
+        "answer": "Deres",
+        "hint": "formelt"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -2305,7 +2788,10 @@
           "dir",
           "mir",
           "uns"
-        ]
+        ],
+        "prompt": "Ihnen",
+        "answer": "Ihnen",
+        "hint": "formell"
       },
       "no": {
         "primary": "Dem (formelt)",
@@ -2320,8 +2806,15 @@
           "deg",
           "meg",
           "oss"
-        ]
+        ],
+        "prompt": "Dem",
+        "answer": "Dem",
+        "hint": "formelt"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -2344,7 +2837,9 @@
           "den",
           "ihn",
           "dich"
-        ]
+        ],
+        "prompt": "wen",
+        "answer": "wen"
       },
       "no": {
         "primary": "hvem (objekt)",
@@ -2357,8 +2852,15 @@
           "deg",
           "meg",
           "hvis"
-        ]
+        ],
+        "prompt": "hvem",
+        "answer": "hvem",
+        "hint": "objekt"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -2381,7 +2883,9 @@
           "dem",
           "ihm",
           "dir"
-        ]
+        ],
+        "prompt": "wem",
+        "answer": "wem"
       },
       "no": {
         "primary": "hvem (indirekte)",
@@ -2394,8 +2898,15 @@
           "deg",
           "meg",
           "hvis"
-        ]
+        ],
+        "prompt": "hvem",
+        "answer": "hvem",
+        "hint": "indirekte"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -2420,7 +2931,9 @@
           "welche",
           "meine",
           "deine"
-        ]
+        ],
+        "prompt": "diese",
+        "answer": "diese"
       },
       "no": {
         "primary": "denne (hunkjønn)",
@@ -2433,8 +2946,15 @@
           "det",
           "mi",
           "di"
-        ]
+        ],
+        "prompt": "denne",
+        "answer": "denne",
+        "hint": "hunkjønn"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -2458,7 +2978,9 @@
           "diese",
           "wer",
           "was"
-        ]
+        ],
+        "prompt": "welche",
+        "answer": "welche"
       },
       "no": {
         "primary": "hvilken (hunkjønn)",
@@ -2473,8 +2995,15 @@
           "dette",
           "hvem",
           "hva"
-        ]
+        ],
+        "prompt": "hvilken",
+        "answer": "hvilken",
+        "hint": "hunkjønn"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   }
 ]

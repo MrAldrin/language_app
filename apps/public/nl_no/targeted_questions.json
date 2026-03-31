@@ -22,7 +22,9 @@
           "hij",
           "wij",
           "zij"
-        ]
+        ],
+        "prompt": "ik",
+        "answer": "ik"
       },
       "no": {
         "primary": "jeg",
@@ -35,8 +37,14 @@
           "han",
           "vi",
           "hun"
-        ]
+        ],
+        "prompt": "jeg",
+        "answer": "jeg"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -64,7 +72,9 @@
           "hij",
           "u",
           "jullie"
-        ]
+        ],
+        "prompt": "jij",
+        "answer": "jij"
       },
       "no": {
         "primary": "du",
@@ -77,8 +87,14 @@
           "han",
           "dere",
           "vi"
-        ]
+        ],
+        "prompt": "du",
+        "answer": "du"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -105,7 +121,9 @@
           "wij",
           "men",
           "u"
-        ]
+        ],
+        "prompt": "hij",
+        "answer": "hij"
       },
       "no": {
         "primary": "han",
@@ -118,8 +136,14 @@
           "vi",
           "en",
           "dere"
-        ]
+        ],
+        "prompt": "han",
+        "answer": "han"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -148,7 +172,10 @@
           "het",
           "u",
           "wij"
-        ]
+        ],
+        "prompt": "zij",
+        "answer": "zij",
+        "hint": "enkelvoud"
       },
       "no": {
         "primary": "hun",
@@ -161,8 +188,14 @@
           "vi",
           "dere",
           "de"
-        ]
+        ],
+        "prompt": "hun",
+        "answer": "hun"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -189,7 +222,9 @@
           "haar",
           "men",
           "wij"
-        ]
+        ],
+        "prompt": "het",
+        "answer": "het"
       },
       "no": {
         "primary": "det",
@@ -204,8 +239,14 @@
           "ham",
           "henne",
           "vi"
-        ]
+        ],
+        "prompt": "det",
+        "answer": "det"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -233,7 +274,9 @@
           "jullie",
           "ik",
           "jij"
-        ]
+        ],
+        "prompt": "wij",
+        "answer": "wij"
       },
       "no": {
         "primary": "vi",
@@ -246,8 +289,14 @@
           "jeg",
           "du",
           "hans"
-        ]
+        ],
+        "prompt": "vi",
+        "answer": "vi"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -273,7 +322,9 @@
           "je",
           "jou",
           "ze"
-        ]
+        ],
+        "prompt": "jullie",
+        "answer": "jullie"
       },
       "no": {
         "primary": "dere",
@@ -286,8 +337,14 @@
           "deg",
           "din",
           "oss"
-        ]
+        ],
+        "prompt": "dere",
+        "answer": "dere"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -315,7 +372,10 @@
           "wij",
           "jullie",
           "u"
-        ]
+        ],
+        "prompt": "zij",
+        "answer": "zij",
+        "hint": "meervoud"
       },
       "no": {
         "primary": "de",
@@ -328,8 +388,14 @@
           "vi",
           "hun",
           "han"
-        ]
+        ],
+        "prompt": "de",
+        "answer": "de"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -355,7 +421,9 @@
           "hij",
           "zij",
           "wij"
-        ]
+        ],
+        "prompt": "u",
+        "answer": "u"
       },
       "no": {
         "primary": "De (formelt)",
@@ -370,8 +438,15 @@
           "dere",
           "de",
           "vi"
-        ]
+        ],
+        "prompt": "De",
+        "answer": "De",
+        "hint": "formelt"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -399,7 +474,9 @@
           "hem",
           "haar",
           "ons"
-        ]
+        ],
+        "prompt": "mij",
+        "answer": "mij"
       },
       "no": {
         "primary": "meg",
@@ -412,8 +489,14 @@
           "henne",
           "oss",
           "seg"
-        ]
+        ],
+        "prompt": "meg",
+        "answer": "meg"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -441,7 +524,9 @@
           "hem",
           "u",
           "jullie"
-        ]
+        ],
+        "prompt": "jou",
+        "answer": "jou"
       },
       "no": {
         "primary": "deg",
@@ -454,8 +539,14 @@
           "dere",
           "seg",
           "din"
-        ]
+        ],
+        "prompt": "deg",
+        "answer": "deg"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -482,7 +573,9 @@
           "hen",
           "mij",
           "ons"
-        ]
+        ],
+        "prompt": "hem",
+        "answer": "hem"
       },
       "no": {
         "primary": "ham",
@@ -497,8 +590,14 @@
           "dem",
           "meg",
           "seg"
-        ]
+        ],
+        "prompt": "ham",
+        "answer": "ham"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -525,7 +624,10 @@
           "mij",
           "je",
           "u"
-        ]
+        ],
+        "prompt": "haar",
+        "answer": "haar",
+        "hint": "object"
       },
       "no": {
         "primary": "henne",
@@ -538,8 +640,14 @@
           "oss",
           "seg",
           "min"
-        ]
+        ],
+        "prompt": "henne",
+        "answer": "henne"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -565,7 +673,9 @@
           "hun",
           "mij",
           "u"
-        ]
+        ],
+        "prompt": "ons",
+        "answer": "ons"
       },
       "no": {
         "primary": "oss",
@@ -578,8 +688,14 @@
           "meg",
           "seg",
           "vår"
-        ]
+        ],
+        "prompt": "oss",
+        "answer": "oss"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -608,7 +724,9 @@
           "mij",
           "jullie",
           "u"
-        ]
+        ],
+        "prompt": "hen",
+        "answer": "hen"
       },
       "no": {
         "primary": "dem",
@@ -621,8 +739,14 @@
           "oss",
           "seg",
           "vi"
-        ]
+        ],
+        "prompt": "dem",
+        "answer": "dem"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -649,7 +773,9 @@
           "zijn",
           "haar",
           "ons"
-        ]
+        ],
+        "prompt": "mijn",
+        "answer": "mijn"
       },
       "no": {
         "primary": "min",
@@ -666,8 +792,14 @@
           "din",
           "hans",
           "vår"
-        ]
+        ],
+        "prompt": "min",
+        "answer": "min"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -694,7 +826,9 @@
           "zijn",
           "haar",
           "uw"
-        ]
+        ],
+        "prompt": "jouw",
+        "answer": "jouw"
       },
       "no": {
         "primary": "din",
@@ -711,8 +845,14 @@
           "min",
           "hans",
           "deres"
-        ]
+        ],
+        "prompt": "din",
+        "answer": "din"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -740,7 +880,9 @@
           "ons",
           "mijn",
           "jouw"
-        ]
+        ],
+        "prompt": "zijn",
+        "answer": "zijn"
       },
       "no": {
         "primary": "hans",
@@ -758,8 +900,14 @@
           "sine",
           "hennes",
           "deres"
-        ]
+        ],
+        "prompt": "hans",
+        "answer": "hans"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -787,7 +935,10 @@
           "ons",
           "mijn",
           "uw"
-        ]
+        ],
+        "prompt": "haar",
+        "answer": "haar",
+        "hint": "bezittelijk"
       },
       "no": {
         "primary": "hennes",
@@ -805,8 +956,14 @@
           "sine",
           "hans",
           "deres"
-        ]
+        ],
+        "prompt": "hennes",
+        "answer": "hennes"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -833,7 +990,9 @@
           "uw",
           "mijn",
           "jouw"
-        ]
+        ],
+        "prompt": "ons",
+        "answer": "ons"
       },
       "no": {
         "primary": "vår",
@@ -849,8 +1008,14 @@
           "min",
           "din",
           "oss"
-        ]
+        ],
+        "prompt": "vår",
+        "answer": "vår"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -875,7 +1040,9 @@
           "jullie",
           "haar",
           "zijn"
-        ]
+        ],
+        "prompt": "hun",
+        "answer": "hun"
       },
       "no": {
         "primary": "deres (deres)",
@@ -888,8 +1055,15 @@
           "sin",
           "de",
           "dem"
-        ]
+        ],
+        "prompt": "deres",
+        "answer": "deres",
+        "hint": "deres"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -914,7 +1088,9 @@
           "ons",
           "zijn",
           "haar"
-        ]
+        ],
+        "prompt": "uw",
+        "answer": "uw"
       },
       "no": {
         "primary": "Deres (formelt)",
@@ -929,8 +1105,15 @@
           "deres",
           "dere",
           "vi"
-        ]
+        ],
+        "prompt": "Deres",
+        "answer": "Deres",
+        "hint": "formelt"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -956,7 +1139,9 @@
           "haar",
           "hem",
           "zichzelf"
-        ]
+        ],
+        "prompt": "zich",
+        "answer": "zich"
       },
       "no": {
         "primary": "seg",
@@ -971,8 +1156,14 @@
           "oss",
           "dere",
           "dem"
-        ]
+        ],
+        "prompt": "seg",
+        "answer": "seg"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -996,7 +1187,9 @@
           "waarom",
           "welke",
           "wanneer"
-        ]
+        ],
+        "prompt": "wie",
+        "answer": "wie"
       },
       "no": {
         "primary": "hvem",
@@ -1009,8 +1202,14 @@
           "hvorfor",
           "hvilken",
           "når"
-        ]
+        ],
+        "prompt": "hvem",
+        "answer": "hvem"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -1034,7 +1233,9 @@
           "waarom",
           "iets",
           "alles"
-        ]
+        ],
+        "prompt": "wat",
+        "answer": "wat"
       },
       "no": {
         "primary": "hva",
@@ -1047,8 +1248,14 @@
           "hvorfor",
           "noe",
           "alt"
-        ]
+        ],
+        "prompt": "hva",
+        "answer": "hva"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -1072,7 +1279,9 @@
           "waarom",
           "wanneer",
           "er"
-        ]
+        ],
+        "prompt": "waar",
+        "answer": "waar"
       },
       "no": {
         "primary": "hvor",
@@ -1085,8 +1294,14 @@
           "hvorfor",
           "når",
           "her"
-        ]
+        ],
+        "prompt": "hvor",
+        "answer": "hvor"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -1110,7 +1325,9 @@
           "wat",
           "nu",
           "dan"
-        ]
+        ],
+        "prompt": "wanneer",
+        "answer": "wanneer"
       },
       "no": {
         "primary": "når",
@@ -1123,8 +1340,14 @@
           "hva",
           "nå",
           "da"
-        ]
+        ],
+        "prompt": "når",
+        "answer": "når"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -1148,7 +1371,9 @@
           "wie",
           "zo",
           "welke"
-        ]
+        ],
+        "prompt": "hoe",
+        "answer": "hoe"
       },
       "no": {
         "primary": "hvordan",
@@ -1161,8 +1386,14 @@
           "hvem",
           "så",
           "hvilken"
-        ]
+        ],
+        "prompt": "hvordan",
+        "answer": "hvordan"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -1186,7 +1417,9 @@
           "wie",
           "omdat",
           "waar"
-        ]
+        ],
+        "prompt": "waarom",
+        "answer": "waarom"
       },
       "no": {
         "primary": "hvorfor",
@@ -1199,8 +1432,14 @@
           "hvem",
           "for",
           "hvor"
-        ]
+        ],
+        "prompt": "hvorfor",
+        "answer": "hvorfor"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -1226,7 +1465,9 @@
           "die",
           "deze",
           "elk"
-        ]
+        ],
+        "prompt": "welke",
+        "answer": "welke"
       },
       "no": {
         "primary": "hvilken",
@@ -1242,8 +1483,14 @@
           "hva",
           "den",
           "denne"
-        ]
+        ],
+        "prompt": "hvilken",
+        "answer": "hvilken"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -1269,7 +1516,10 @@
           "dieze",
           "elk",
           "alle"
-        ]
+        ],
+        "prompt": "deze",
+        "answer": "deze",
+        "hint": "enkelvoud"
       },
       "no": {
         "primary": "denne",
@@ -1282,8 +1532,14 @@
           "det",
           "de",
           "hver"
-        ]
+        ],
+        "prompt": "denne",
+        "answer": "denne"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -1308,7 +1564,9 @@
           "het",
           "elk",
           "iets"
-        ]
+        ],
+        "prompt": "dit",
+        "answer": "dit"
       },
       "no": {
         "primary": "dette",
@@ -1321,8 +1579,14 @@
           "den",
           "hvert",
           "noe"
-        ]
+        ],
+        "prompt": "dette",
+        "answer": "dette"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -1346,7 +1610,10 @@
           "alle",
           "sommige",
           "wij"
-        ]
+        ],
+        "prompt": "deze",
+        "answer": "deze",
+        "hint": "meervoud"
       },
       "no": {
         "primary": "disse",
@@ -1359,8 +1626,14 @@
           "alle",
           "noen",
           "vi"
-        ]
+        ],
+        "prompt": "disse",
+        "answer": "disse"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -1386,7 +1659,9 @@
           "wie",
           "ze",
           "jou"
-        ]
+        ],
+        "prompt": "die",
+        "answer": "die"
       },
       "no": {
         "primary": "den (demonstrativ)",
@@ -1402,8 +1677,15 @@
           "hvem",
           "hennes",
           "ham"
-        ]
+        ],
+        "prompt": "den",
+        "answer": "den",
+        "hint": "demonstrativ"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -1427,7 +1709,9 @@
           "iedere",
           "wie",
           "elke"
-        ]
+        ],
+        "prompt": "iemand",
+        "answer": "iemand"
       },
       "no": {
         "primary": "noen (person)",
@@ -1440,8 +1724,15 @@
           "hver",
           "hvem",
           "hvert"
-        ]
+        ],
+        "prompt": "noen",
+        "answer": "noen",
+        "hint": "person"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -1466,7 +1757,9 @@
           "nooit",
           "een",
           "men"
-        ]
+        ],
+        "prompt": "niemand",
+        "answer": "niemand"
       },
       "no": {
         "primary": "ingen",
@@ -1479,8 +1772,14 @@
           "man",
           "ikke",
           "hverken"
-        ]
+        ],
+        "prompt": "ingen",
+        "answer": "ingen"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -1504,7 +1803,9 @@
           "wat",
           "veel",
           "elke"
-        ]
+        ],
+        "prompt": "iets",
+        "answer": "iets"
       },
       "no": {
         "primary": "noe",
@@ -1517,8 +1818,14 @@
           "hva",
           "mange",
           "hver"
-        ]
+        ],
+        "prompt": "noe",
+        "answer": "noe"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -1546,7 +1853,9 @@
           "wat",
           "dat",
           "niks"
-        ]
+        ],
+        "prompt": "niets",
+        "answer": "niets"
       },
       "no": {
         "primary": "ingenting",
@@ -1559,8 +1868,14 @@
           "aldri",
           "hva",
           "det"
-        ]
+        ],
+        "prompt": "ingenting",
+        "answer": "ingenting"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -1584,7 +1899,9 @@
           "iedereen",
           "heel",
           "wat"
-        ]
+        ],
+        "prompt": "alles",
+        "answer": "alles"
       },
       "no": {
         "primary": "alt",
@@ -1597,8 +1914,14 @@
           "hver",
           "helt",
           "hva"
-        ]
+        ],
+        "prompt": "alt",
+        "answer": "alt"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -1624,7 +1947,9 @@
           "iemand",
           "iedereen",
           "hij"
-        ]
+        ],
+        "prompt": "men",
+        "answer": "men"
       },
       "no": {
         "primary": "man",
@@ -1639,8 +1964,14 @@
           "noen",
           "alle",
           "han"
-        ]
+        ],
+        "prompt": "man",
+        "answer": "man"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -1667,7 +1998,9 @@
           "iedere",
           "elk",
           "wij"
-        ]
+        ],
+        "prompt": "iedereen",
+        "answer": "iedereen"
       },
       "no": {
         "primary": "alle (personer)",
@@ -1682,8 +2015,15 @@
           "hver",
           "hvert",
           "vi"
-        ]
+        ],
+        "prompt": "alle",
+        "answer": "alle",
+        "hint": "personer"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -1710,7 +2050,9 @@
           "vaak",
           "zo",
           "vele"
-        ]
+        ],
+        "prompt": "veel",
+        "answer": "veel"
       },
       "no": {
         "primary": "mange",
@@ -1726,8 +2068,14 @@
           "ofte",
           "så",
           "mye"
-        ]
+        ],
+        "prompt": "mange",
+        "answer": "mange"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -1751,7 +2099,9 @@
           "wat",
           "bijna",
           "iets"
-        ]
+        ],
+        "prompt": "weinig",
+        "answer": "weinig"
       },
       "no": {
         "primary": "få",
@@ -1767,8 +2117,14 @@
           "nesten",
           "litt",
           "lite"
-        ]
+        ],
+        "prompt": "få",
+        "answer": "få"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -1794,7 +2150,9 @@
           "elk",
           "ieder",
           "wij"
-        ]
+        ],
+        "prompt": "beide",
+        "answer": "beide"
       },
       "no": {
         "primary": "begge",
@@ -1809,8 +2167,14 @@
           "hvert",
           "vi",
           "sammen"
-        ]
+        ],
+        "prompt": "begge",
+        "answer": "begge"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -1836,7 +2200,9 @@
           "paar",
           "wat",
           "die"
-        ]
+        ],
+        "prompt": "enkele",
+        "answer": "enkele"
       },
       "no": {
         "primary": "noen (enkelte)",
@@ -1851,8 +2217,15 @@
           "par",
           "noe",
           "de"
-        ]
+        ],
+        "prompt": "noen",
+        "answer": "noen",
+        "hint": "enkelte"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -1877,7 +2250,9 @@
           "je",
           "ons",
           "eigen"
-        ]
+        ],
+        "prompt": "zelf",
+        "answer": "zelf"
       },
       "no": {
         "primary": "selv",
@@ -1892,8 +2267,14 @@
           "deg",
           "oss",
           "egen"
-        ]
+        ],
+        "prompt": "selv",
+        "answer": "selv"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -1916,7 +2297,9 @@
           "jullie",
           "hen",
           "wij"
-        ]
+        ],
+        "prompt": "elkaar",
+        "answer": "elkaar"
       },
       "no": {
         "primary": "hverandre",
@@ -1929,8 +2312,14 @@
           "dere",
           "dem",
           "vi"
-        ]
+        ],
+        "prompt": "hverandre",
+        "answer": "hverandre"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -1959,7 +2348,10 @@
           "welke",
           "hen",
           "hun"
-        ]
+        ],
+        "prompt": "die",
+        "answer": "die",
+        "hint": "relatief"
       },
       "no": {
         "primary": "som (relativ)",
@@ -1972,8 +2364,15 @@
           "hva",
           "han",
           "henne"
-        ]
+        ],
+        "prompt": "som",
+        "answer": "som",
+        "hint": "relativ"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -2000,7 +2399,10 @@
           "het",
           "elk",
           "men"
-        ]
+        ],
+        "prompt": "dat",
+        "answer": "dat",
+        "hint": "relatief"
       },
       "no": {
         "primary": "som (nøytrum relativ)",
@@ -2013,8 +2415,15 @@
           "det",
           "en",
           "man"
-        ]
+        ],
+        "prompt": "som",
+        "answer": "som",
+        "hint": "nøytrum relativ"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -2042,7 +2451,9 @@
           "alle",
           "heel",
           "sommige"
-        ]
+        ],
+        "prompt": "elke",
+        "answer": "elke"
       },
       "no": {
         "primary": "hver",
@@ -2057,8 +2468,14 @@
           "noen",
           "enkelte",
           "vi"
-        ]
+        ],
+        "prompt": "hver",
+        "answer": "hver"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -2084,7 +2501,9 @@
           "waar",
           "welke",
           "hem"
-        ]
+        ],
+        "prompt": "wiens",
+        "answer": "wiens"
       },
       "no": {
         "primary": "hvis (spørrende)",
@@ -2100,8 +2519,15 @@
           "hennes",
           "deres",
           "hvilkens"
-        ]
+        ],
+        "prompt": "hvis",
+        "answer": "hvis",
+        "hint": "spørrende"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -2129,7 +2555,9 @@
           "iedereen",
           "wij",
           "ze"
-        ]
+        ],
+        "prompt": "allemaal",
+        "answer": "allemaal"
       },
       "no": {
         "primary": "alle sammen",
@@ -2144,8 +2572,14 @@
           "noen",
           "vi",
           "de"
-        ]
+        ],
+        "prompt": "alle sammen",
+        "answer": "alle sammen"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -2170,7 +2604,9 @@
           "het",
           "men",
           "ze"
-        ]
+        ],
+        "prompt": "er",
+        "answer": "er"
       },
       "no": {
         "primary": "der (sted)",
@@ -2185,8 +2621,15 @@
           "han",
           "hun",
           "oss"
-        ]
+        ],
+        "prompt": "der",
+        "answer": "der",
+        "hint": "sted"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -2211,7 +2654,10 @@
           "jullie",
           "hem",
           "haar"
-        ]
+        ],
+        "prompt": "u",
+        "answer": "u",
+        "hint": "object"
       },
       "no": {
         "primary": "Dem (objekt)",
@@ -2226,8 +2672,15 @@
           "meg",
           "ham",
           "henne"
-        ]
+        ],
+        "prompt": "Dem",
+        "answer": "Dem",
+        "hint": "objekt"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -2251,7 +2704,9 @@
           "iets",
           "soms",
           "ooit"
-        ]
+        ],
+        "prompt": "ergens",
+        "answer": "ergens"
       },
       "no": {
         "primary": "et eller annet sted",
@@ -2267,8 +2722,14 @@
           "steder",
           "noensteds",
           "noe"
-        ]
+        ],
+        "prompt": "et eller annet sted",
+        "answer": "et eller annet sted"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -2293,7 +2754,9 @@
           "niets",
           "nooit",
           "geen"
-        ]
+        ],
+        "prompt": "nergens",
+        "answer": "nergens"
       },
       "no": {
         "primary": "ingen steder",
@@ -2309,8 +2772,14 @@
           "noen",
           "ingensteds",
           "aldri"
-        ]
+        ],
+        "prompt": "ingen steder",
+        "answer": "ingen steder"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -2335,7 +2804,9 @@
           "iedereen",
           "elke",
           "altijd"
-        ]
+        ],
+        "prompt": "overal",
+        "answer": "overal"
       },
       "no": {
         "primary": "overalt",
@@ -2348,8 +2819,14 @@
           "alle",
           "hver",
           "alltid"
-        ]
+        ],
+        "prompt": "overalt",
+        "answer": "overalt"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -2373,7 +2850,9 @@
           "hun",
           "zijn",
           "haar"
-        ]
+        ],
+        "prompt": "elkaars",
+        "answer": "elkaars"
       },
       "no": {
         "primary": "hverandres",
@@ -2386,8 +2865,14 @@
           "deres",
           "hans",
           "hennes"
-        ]
+        ],
+        "prompt": "hverandres",
+        "answer": "hverandres"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -2413,7 +2898,9 @@
           "alle",
           "meerdere",
           "meer"
-        ]
+        ],
+        "prompt": "sommige",
+        "answer": "sommige"
       },
       "no": {
         "primary": "noen (flertall)",
@@ -2428,8 +2915,15 @@
           "alle",
           "flere",
           "mer"
-        ]
+        ],
+        "prompt": "noen",
+        "answer": "noen",
+        "hint": "flertall"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   },
   {
@@ -2454,7 +2948,10 @@
           "haar",
           "een",
           "dieze"
-        ]
+        ],
+        "prompt": "deze",
+        "answer": "deze",
+        "hint": "vrouwelijk"
       },
       "no": {
         "primary": "denne (hunkjønn)",
@@ -2467,8 +2964,15 @@
           "den",
           "det",
           "vår"
-        ]
+        ],
+        "prompt": "denne",
+        "answer": "denne",
+        "hint": "hunkjønn"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "single_token_choice"
     }
   }
 ]

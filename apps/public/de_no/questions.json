@@ -26,7 +26,9 @@
           "sauer",
           "sehr",
           "war"
-        ]
+        ],
+        "prompt": "Der Apfel ist sehr rot",
+        "answer": "Der Apfel ist sehr rot"
       },
       "no": {
         "primary": "Eplet er veldig rødt",
@@ -45,8 +47,14 @@
           "surt",
           "var",
           "veldig"
-        ]
+        ],
+        "prompt": "Eplet er veldig rødt",
+        "answer": "Eplet er veldig rødt"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   },
   {
@@ -73,7 +81,9 @@
           "sie",
           "Vogel",
           "wir"
-        ]
+        ],
+        "prompt": "Er hat einen großen Hund",
+        "answer": "Er hat einen großen Hund"
       },
       "no": {
         "primary": "Han har en stor hund",
@@ -90,8 +100,14 @@
           "liten",
           "stor",
           "vi"
-        ]
+        ],
+        "prompt": "Han har en stor hund",
+        "answer": "Han har en stor hund"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   },
   {
@@ -124,7 +140,9 @@
           "trinken",
           "Wasser",
           "zu"
-        ]
+        ],
+        "prompt": "Ich trinke gerne heißen Kaffee",
+        "answer": "Ich trinke gerne heißen Kaffee"
       },
       "no": {
         "primary": "Jeg liker å drikke varm kaffe",
@@ -146,8 +164,14 @@
           "vann",
           "varm",
           "å"
-        ]
+        ],
+        "prompt": "Jeg liker å drikke varm kaffe",
+        "answer": "Jeg liker å drikke varm kaffe"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   },
   {
@@ -177,7 +201,9 @@
           "schrieb",
           "sie",
           "verfasst"
-        ]
+        ],
+        "prompt": "Sie schreibt einen langen Brief",
+        "answer": "Sie schreibt einen langen Brief"
       },
       "no": {
         "primary": "Hun skriver et langt brev",
@@ -197,8 +223,14 @@
           "leser",
           "skrev",
           "skriver"
-        ]
+        ],
+        "prompt": "Hun skriver et langt brev",
+        "answer": "Hun skriver et langt brev"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   },
   {
@@ -229,7 +261,9 @@
           "sprechen",
           "sprichst",
           "verstehst"
-        ]
+        ],
+        "prompt": "Du sprichst sehr gut Deutsch",
+        "answer": "Du sprichst sehr gut Deutsch"
       },
       "no": {
         "primary": "Du snakker veldig godt tysk",
@@ -251,8 +285,14 @@
           "snakket",
           "tysk",
           "veldig"
-        ]
+        ],
+        "prompt": "Du snakker veldig godt tysk",
+        "answer": "Du snakker veldig godt tysk"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   },
   {
@@ -279,7 +319,9 @@
           "spielten",
           "Tennis",
           "wir"
-        ]
+        ],
+        "prompt": "Wir spielen jeden Abend Fußball",
+        "answer": "Wir spielen jeden Abend Fußball"
       },
       "no": {
         "primary": "Vi spiller fotball hver kveld",
@@ -296,8 +338,14 @@
           "spilte",
           "tennis",
           "vi"
-        ]
+        ],
+        "prompt": "Vi spiller fotball hver kveld",
+        "answer": "Vi spiller fotball hver kveld"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   },
   {
@@ -327,7 +375,9 @@
           "Spanien",
           "werden",
           "wir"
-        ]
+        ],
+        "prompt": "Sie reisen morgen nach England",
+        "answer": "Sie reisen morgen nach England"
       },
       "no": {
         "primary": "De reiser til England i morgen",
@@ -349,8 +399,14 @@
           "Spania",
           "til",
           "vi"
-        ]
+        ],
+        "prompt": "De reiser til England i morgen",
+        "answer": "De reiser til England i morgen"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   },
   {
@@ -381,7 +437,9 @@
           "war",
           "Wetter",
           "wunderschön"
-        ]
+        ],
+        "prompt": "Das Wetter ist heute wunderschön",
+        "answer": "Das Wetter ist heute wunderschön"
       },
       "no": {
         "primary": "Været er nydelig i dag",
@@ -404,8 +462,14 @@
           "var",
           "veldig",
           "været"
-        ]
+        ],
+        "prompt": "Været er nydelig i dag",
+        "answer": "Været er nydelig i dag"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   },
   {
@@ -436,7 +500,9 @@
           "will",
           "wir",
           "wollte"
-        ]
+        ],
+        "prompt": "Er möchte ein neues Auto kaufen",
+        "answer": "Er möchte ein neues Auto kaufen"
       },
       "no": {
         "primary": "Han ønsker å kjøpe en ny bil",
@@ -458,8 +524,14 @@
           "å",
           "ønsker",
           "ønsket"
-        ]
+        ],
+        "prompt": "Han ønsker å kjøpe en ny bil",
+        "answer": "Han ønsker å kjøpe en ny bil"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   },
   {
@@ -489,7 +561,9 @@
           "sehr",
           "war",
           "Wasser"
-        ]
+        ],
+        "prompt": "Das Wasser ist sehr kalt",
+        "answer": "Das Wasser ist sehr kalt"
       },
       "no": {
         "primary": "Vannet er veldig kaldt",
@@ -508,8 +582,14 @@
           "var",
           "varmt",
           "veldig"
-        ]
+        ],
+        "prompt": "Vannet er veldig kaldt",
+        "answer": "Vannet er veldig kaldt"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   },
   {
@@ -540,7 +620,9 @@
           "traurig",
           "war",
           "wir"
-        ]
+        ],
+        "prompt": "Ich bin heute sehr glücklich",
+        "answer": "Ich bin heute sehr glücklich"
       },
       "no": {
         "primary": "Jeg er veldig glad i dag",
@@ -563,8 +645,14 @@
           "var",
           "veldig",
           "vi"
-        ]
+        ],
+        "prompt": "Jeg er veldig glad i dag",
+        "answer": "Jeg er veldig glad i dag"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   },
   {
@@ -594,7 +682,9 @@
           "spannendes",
           "wir",
           "Zeitung"
-        ]
+        ],
+        "prompt": "Wir lesen ein spannendes Buch",
+        "answer": "Wir lesen ein spannendes Buch"
       },
       "no": {
         "primary": "Vi leser en spennende bok",
@@ -614,8 +704,14 @@
           "skriver",
           "spennende",
           "vi"
-        ]
+        ],
+        "prompt": "Vi leser en spennende bok",
+        "answer": "Vi leser en spennende bok"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   },
   {
@@ -646,7 +742,9 @@
           "verstanden",
           "verstehen",
           "wir"
-        ]
+        ],
+        "prompt": "Die Schüler verstehen den Lehrer gut",
+        "answer": "Die Schüler verstehen den Lehrer gut"
       },
       "no": {
         "primary": "Eleven forstår læreren godt",
@@ -666,8 +764,14 @@
           "skjønner",
           "skole",
           "vi"
-        ]
+        ],
+        "prompt": "Eleven forstår læreren godt",
+        "answer": "Eleven forstår læreren godt"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   },
   {
@@ -702,7 +806,9 @@
           "Schnellzug",
           "wir",
           "Zug"
-        ]
+        ],
+        "prompt": "Der schnelle Zug fährt bald ab",
+        "answer": "Der schnelle Zug fährt bald ab"
       },
       "no": {
         "primary": "Det raske toget går snart",
@@ -725,8 +831,14 @@
           "toget",
           "trege",
           "vi"
-        ]
+        ],
+        "prompt": "Det raske toget går snart",
+        "answer": "Det raske toget går snart"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   },
   {
@@ -756,7 +868,9 @@
           "nie",
           "seine",
           "wir"
-        ]
+        ],
+        "prompt": "Ich brauche dringend deine Hilfe",
+        "answer": "Ich brauche dringend deine Hilfe"
       },
       "no": {
         "primary": "Jeg trenger din hjelp strak",
@@ -777,8 +891,14 @@
           "trengte",
           "umiddelbart",
           "vi"
-        ]
+        ],
+        "prompt": "Jeg trenger din hjelp strak",
+        "answer": "Jeg trenger din hjelp strak"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   },
   {
@@ -809,7 +929,9 @@
           "sich",
           "wacht",
           "wir"
-        ]
+        ],
+        "prompt": "Die graue Katze schläft",
+        "answer": "Die graue Katze schläft"
       },
       "no": {
         "primary": "Den grå katten sover",
@@ -828,8 +950,14 @@
           "svart",
           "vi",
           "våkner"
-        ]
+        ],
+        "prompt": "Den grå katten sover",
+        "answer": "Den grå katten sover"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   },
   {
@@ -860,7 +988,9 @@
           "verkaufen",
           "wir",
           "Wohnung"
-        ]
+        ],
+        "prompt": "Sie haben ein großes Haus gekauft",
+        "answer": "Sie haben ein großes Haus gekauft"
       },
       "no": {
         "primary": "De har kjøpt et stort hus",
@@ -881,8 +1011,14 @@
           "stort",
           "tre",
           "vi"
-        ]
+        ],
+        "prompt": "De har kjøpt et stort hus",
+        "answer": "De har kjøpt et stort hus"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   },
   {
@@ -913,7 +1049,9 @@
           "sehr",
           "war",
           "wir"
-        ]
+        ],
+        "prompt": "Der Himmel ist heute sehr blau",
+        "answer": "Der Himmel ist heute sehr blau"
       },
       "no": {
         "primary": "Himmelen er veldig blå i dag",
@@ -934,8 +1072,14 @@
           "var",
           "veldig",
           "vi"
-        ]
+        ],
+        "prompt": "Himmelen er veldig blå i dag",
+        "answer": "Himmelen er veldig blå i dag"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   },
   {
@@ -965,7 +1109,9 @@
           "spät",
           "wir",
           "zu"
-        ]
+        ],
+        "prompt": "Wir essen pünktlich zu Abend",
+        "answer": "Wir essen pünktlich zu Abend"
       },
       "no": {
         "primary": "Vi spiser middag presis",
@@ -985,8 +1131,14 @@
           "spiste",
           "tiden",
           "vi"
-        ]
+        ],
+        "prompt": "Vi spiser middag presis",
+        "answer": "Vi spiser middag presis"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   },
   {
@@ -1017,7 +1169,9 @@
           "sie",
           "Vater",
           "wir"
-        ]
+        ],
+        "prompt": "Mein Vater arbeitet in einer Fabrik",
+        "answer": "Mein Vater arbeitet in einer Fabrik"
       },
       "no": {
         "primary": "Min far jobber på en fabrikk",
@@ -1038,8 +1192,14 @@
           "på",
           "ute",
           "vi"
-        ]
+        ],
+        "prompt": "Min far jobber på en fabrikk",
+        "answer": "Min far jobber på en fabrikk"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   },
   {
@@ -1070,7 +1230,9 @@
           "Wasser",
           "wir",
           "wirklich"
-        ]
+        ],
+        "prompt": "Das Essen schmeckt wirklich gut",
+        "answer": "Das Essen schmeckt wirklich gut"
       },
       "no": {
         "primary": "Maten smaker virkelig utmerket",
@@ -1090,8 +1252,14 @@
           "vann",
           "vi",
           "virkelig"
-        ]
+        ],
+        "prompt": "Maten smaker virkelig utmerket",
+        "answer": "Maten smaker virkelig utmerket"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   },
   {
@@ -1121,7 +1289,9 @@
           "singen",
           "Vogel",
           "wir"
-        ]
+        ],
+        "prompt": "Ich sehe einen gelben Vogel",
+        "answer": "Ich sehe einen gelben Vogel"
       },
       "no": {
         "primary": "Jeg ser en gul fugl",
@@ -1143,8 +1313,14 @@
           "så",
           "vi",
           "øye"
-        ]
+        ],
+        "prompt": "Jeg ser en gul fugl",
+        "answer": "Jeg ser en gul fugl"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   },
   {
@@ -1175,7 +1351,9 @@
           "singt",
           "tolles",
           "wir"
-        ]
+        ],
+        "prompt": "Meine Schwester singt ein schönes Lied",
+        "answer": "Meine Schwester singt ein schönes Lied"
       },
       "no": {
         "primary": "Min søster synger en vakker sang",
@@ -1196,8 +1374,14 @@
           "søsteren",
           "vakker",
           "vi"
-        ]
+        ],
+        "prompt": "Min søster synger en vakker sang",
+        "answer": "Min søster synger en vakker sang"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   },
   {
@@ -1229,7 +1413,9 @@
           "siehst",
           "wach",
           "wir"
-        ]
+        ],
+        "prompt": "Du siehst heute sehr müde aus",
+        "answer": "Du siehst heute sehr müde aus"
       },
       "no": {
         "primary": "Du ser veldig trøtt ut i dag",
@@ -1251,8 +1437,14 @@
           "vi",
           "virker",
           "våken"
-        ]
+        ],
+        "prompt": "Du ser veldig trøtt ut i dag",
+        "answer": "Du ser veldig trøtt ut i dag"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   },
   {
@@ -1283,7 +1475,9 @@
           "war",
           "wir",
           "ziemlich"
-        ]
+        ],
+        "prompt": "Ihr älterer Bruder ist ziemlich groß",
+        "answer": "Ihr älterer Bruder ist ziemlich groß"
       },
       "no": {
         "primary": "Hennes eldre bror er ganske høy",
@@ -1304,8 +1498,14 @@
           "søster",
           "var",
           "vi"
-        ]
+        ],
+        "prompt": "Hennes eldre bror er ganske høy",
+        "answer": "Hennes eldre bror er ganske høy"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   },
   {
@@ -1336,7 +1536,9 @@
           "Stadt",
           "war",
           "wir"
-        ]
+        ],
+        "prompt": "Die große Stadt ist immer belebt",
+        "answer": "Die große Stadt ist immer belebt"
       },
       "no": {
         "primary": "Den store byen er alltid travel",
@@ -1357,8 +1559,14 @@
           "travel",
           "var",
           "vi"
-        ]
+        ],
+        "prompt": "Den store byen er alltid travel",
+        "answer": "Den store byen er alltid travel"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   },
   {
@@ -1387,7 +1595,9 @@
           "schlecht",
           "sie",
           "war"
-        ]
+        ],
+        "prompt": "Sie backt einen leckeren Kuchen",
+        "answer": "Sie backt einen leckeren Kuchen"
       },
       "no": {
         "primary": "Hun baker en deilig kake",
@@ -1409,8 +1619,14 @@
           "lager",
           "spiser",
           "var"
-        ]
+        ],
+        "prompt": "Hun baker en deilig kake",
+        "answer": "Hun baker en deilig kake"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   },
   {
@@ -1440,7 +1656,9 @@
           "sie",
           "und",
           "wir"
-        ]
+        ],
+        "prompt": "Ich sehe dich und ihn",
+        "answer": "Ich sehe dich und ihn"
       },
       "no": {
         "primary": "Jeg ser deg og ham",
@@ -1460,8 +1678,14 @@
           "ser",
           "så",
           "vi"
-        ]
+        ],
+        "prompt": "Jeg ser deg og ham",
+        "answer": "Jeg ser deg og ham"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   },
   {
@@ -1490,7 +1714,9 @@
           "sie",
           "werden",
           "wir"
-        ]
+        ],
+        "prompt": "Wir werden morgen meine Eltern besuchen",
+        "answer": "Wir werden morgen meine Eltern besuchen"
       },
       "no": {
         "primary": "Vi skal besøke foreldrene mine i morgen",
@@ -1511,8 +1737,14 @@
           "venner",
           "vi",
           "vil"
-        ]
+        ],
+        "prompt": "Vi skal besøke foreldrene mine i morgen",
+        "answer": "Vi skal besøke foreldrene mine i morgen"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   },
   {
@@ -1540,7 +1772,9 @@
           "war",
           "warum",
           "wir"
-        ]
+        ],
+        "prompt": "Warum bist du heute so traurig",
+        "answer": "Warum bist du heute so traurig"
       },
       "no": {
         "primary": "Hvorfor er du så trist i dag",
@@ -1562,8 +1796,14 @@
           "trist",
           "var",
           "vi"
-        ]
+        ],
+        "prompt": "Hvorfor er du så trist i dag",
+        "answer": "Hvorfor er du så trist i dag"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   },
   {
@@ -1593,7 +1833,9 @@
           "sie",
           "weniger",
           "will"
-        ]
+        ],
+        "prompt": "Er muss mehr schlafen",
+        "answer": "Er muss mehr schlafen"
       },
       "no": {
         "primary": "Han må sove mer",
@@ -1613,8 +1855,14 @@
           "trengte",
           "vil",
           "å"
-        ]
+        ],
+        "prompt": "Han må sove mer",
+        "answer": "Han må sove mer"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   },
   {
@@ -1643,7 +1891,9 @@
           "sie",
           "vergessen",
           "zu"
-        ]
+        ],
+        "prompt": "Ich habe meine Schlüssel zu Hause vergessen",
+        "answer": "Ich habe meine Schlüssel zu Hause vergessen"
       },
       "no": {
         "primary": "Jeg glemte nøklene mine hjemme",
@@ -1659,8 +1909,14 @@
           "lommeboka",
           "mine",
           "nøklene"
-        ]
+        ],
+        "prompt": "Jeg glemte nøklene mine hjemme",
+        "answer": "Jeg glemte nøklene mine hjemme"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   },
   {
@@ -1688,7 +1944,9 @@
           "schneit",
           "Sonne",
           "war"
-        ]
+        ],
+        "prompt": "Draußen regnet es gerade",
+        "answer": "Draußen regnet es gerade"
       },
       "no": {
         "primary": "Det regner ute akkurat nå",
@@ -1705,8 +1963,14 @@
           "sol",
           "ute",
           "var"
-        ]
+        ],
+        "prompt": "Det regner ute akkurat nå",
+        "answer": "Det regner ute akkurat nå"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   },
   {
@@ -1736,7 +2000,9 @@
           "viele",
           "was",
           "wie"
-        ]
+        ],
+        "prompt": "Wie viel kostet die Fahrkarte",
+        "answer": "Wie viel kostet die Fahrkarte"
       },
       "no": {
         "primary": "Hvor mye koster billetten",
@@ -1755,8 +2021,14 @@
           "mange",
           "mye",
           "pris"
-        ]
+        ],
+        "prompt": "Hvor mye koster billetten",
+        "answer": "Hvor mye koster billetten"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   },
   {
@@ -1782,7 +2054,9 @@
           "rote",
           "schnell",
           "war"
-        ]
+        ],
+        "prompt": "Das rote Auto ist schnell",
+        "answer": "Das rote Auto ist schnell"
       },
       "no": {
         "primary": "Den røde bilen er rask",
@@ -1801,8 +2075,14 @@
           "røde",
           "treg",
           "var"
-        ]
+        ],
+        "prompt": "Den røde bilen er rask",
+        "answer": "Den røde bilen er rask"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   },
   {
@@ -1831,7 +2111,9 @@
           "war",
           "wie",
           "wo"
-        ]
+        ],
+        "prompt": "Wie alt ist deine Schwester",
+        "answer": "Wie alt ist deine Schwester"
       },
       "no": {
         "primary": "Hvor gammel er søsteren din",
@@ -1846,8 +2128,14 @@
           "min",
           "søsteren",
           "var"
-        ]
+        ],
+        "prompt": "Hvor gammel er søsteren din",
+        "answer": "Hvor gammel er søsteren din"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   },
   {
@@ -1879,7 +2167,9 @@
           "sehr",
           "sie",
           "süß"
-        ]
+        ],
+        "prompt": "Ich mag kein scharfes Essen",
+        "answer": "Ich mag kein scharfes Essen"
       },
       "no": {
         "primary": "Jeg liker ikke sterk mat",
@@ -1896,8 +2186,14 @@
           "søt",
           "varm",
           "veldig"
-        ]
+        ],
+        "prompt": "Jeg liker ikke sterk mat",
+        "answer": "Jeg liker ikke sterk mat"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   },
   {
@@ -1926,7 +2222,9 @@
           "wohnen",
           "wohnst",
           "wohnte"
-        ]
+        ],
+        "prompt": "Wo wohnst du jetzt",
+        "answer": "Wo wohnst du jetzt"
       },
       "no": {
         "primary": "Hvor bor du nå",
@@ -1942,8 +2240,14 @@
           "jobber",
           "nå",
           "når"
-        ]
+        ],
+        "prompt": "Hvor bor du nå",
+        "answer": "Hvor bor du nå"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   },
   {
@@ -1970,7 +2274,9 @@
           "kleine",
           "wir",
           "zwei"
-        ]
+        ],
+        "prompt": "Ich habe zwei kleine Katzen",
+        "answer": "Ich habe zwei kleine Katzen"
       },
       "no": {
         "primary": "Jeg har to små katter",
@@ -1990,8 +2296,14 @@
           "to",
           "tre",
           "vi"
-        ]
+        ],
+        "prompt": "Jeg har to små katter",
+        "answer": "Jeg har to små katter"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   },
   {
@@ -2023,7 +2335,9 @@
           "Sommer",
           "winter",
           "wird"
-        ]
+        ],
+        "prompt": "Sie ist letzten Sommer nach Norwegen gereist",
+        "answer": "Sie ist letzten Sommer nach Norwegen gereist"
       },
       "no": {
         "primary": "Hun reiste til Norge i fjor sommer",
@@ -2042,8 +2356,14 @@
           "til",
           "tur",
           "vinter"
-        ]
+        ],
+        "prompt": "Hun reiste til Norge i fjor sommer",
+        "answer": "Hun reiste til Norge i fjor sommer"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   },
   {
@@ -2074,7 +2394,9 @@
           "Tag",
           "wacht",
           "wachte"
-        ]
+        ],
+        "prompt": "Er wacht jeden Tag früh auf",
+        "answer": "Er wacht jeden Tag früh auf"
       },
       "no": {
         "primary": "Han våkner tidlig hver dag",
@@ -2095,8 +2417,14 @@
           "tidlig",
           "våkner",
           "våknet"
-        ]
+        ],
+        "prompt": "Han våkner tidlig hver dag",
+        "answer": "Han våkner tidlig hver dag"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   },
   {
@@ -2124,7 +2452,9 @@
           "war",
           "Wasser",
           "willst"
-        ]
+        ],
+        "prompt": "Willst du etwas Wasser",
+        "answer": "Willst du etwas Wasser"
       },
       "no": {
         "primary": "Vil du ha litt vann",
@@ -2144,8 +2474,14 @@
           "var",
           "vil",
           "ønsker"
-        ]
+        ],
+        "prompt": "Vil du ha litt vann",
+        "answer": "Vil du ha litt vann"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   },
   {
@@ -2177,7 +2513,9 @@
           "wer",
           "wie",
           "wo"
-        ]
+        ],
+        "prompt": "Wie heißt du",
+        "answer": "Wie heißt du"
       },
       "no": {
         "primary": "Hva heter du",
@@ -2196,8 +2534,14 @@
           "mitt",
           "navnet",
           "var"
-        ]
+        ],
+        "prompt": "Hva heter du",
+        "answer": "Hva heter du"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   },
   {
@@ -2229,7 +2573,9 @@
           "werden",
           "wir",
           "Zug"
-        ]
+        ],
+        "prompt": "Wir warten auf den Bus",
+        "answer": "Wir warten auf den Bus"
       },
       "no": {
         "primary": "Vi venter på bussen",
@@ -2245,8 +2591,14 @@
           "venter",
           "ventet",
           "vi"
-        ]
+        ],
+        "prompt": "Vi venter på bussen",
+        "answer": "Vi venter på bussen"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   },
   {
@@ -2277,7 +2629,9 @@
           "unser",
           "war",
           "wunderbar"
-        ]
+        ],
+        "prompt": "Unser neuer Garten ist sehr schön",
+        "answer": "Unser neuer Garten ist sehr schön"
       },
       "no": {
         "primary": "Vår nye hage er veldig vakker",
@@ -2301,8 +2655,14 @@
           "var",
           "veldig",
           "vår"
-        ]
+        ],
+        "prompt": "Vår nye hage er veldig vakker",
+        "answer": "Vår nye hage er veldig vakker"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   },
   {
@@ -2335,7 +2695,9 @@
           "war",
           "wichtig",
           "zu"
-        ]
+        ],
+        "prompt": "Ich finde es wichtig Sprachen zu lernen",
+        "answer": "Ich finde es wichtig Sprachen zu lernen"
       },
       "no": {
         "primary": "Jeg synes det er viktig å lære språk",
@@ -2360,8 +2722,14 @@
           "var",
           "viktig",
           "å"
-        ]
+        ],
+        "prompt": "Jeg synes det er viktig å lære språk",
+        "answer": "Jeg synes det er viktig å lære språk"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   },
   {
@@ -2390,7 +2758,9 @@
           "Tee",
           "trank",
           "trinke"
-        ]
+        ],
+        "prompt": "Ich trinke normalerweise morgens Tee",
+        "answer": "Ich trinke normalerweise morgens Tee"
       },
       "no": {
         "primary": "Jeg drikker vanligvis te om morgenen",
@@ -2413,8 +2783,14 @@
           "te",
           "vanligvis",
           "å"
-        ]
+        ],
+        "prompt": "Jeg drikker vanligvis te om morgenen",
+        "answer": "Jeg drikker vanligvis te om morgenen"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   },
   {
@@ -2440,7 +2816,9 @@
           "schien",
           "Sonne",
           "war"
-        ]
+        ],
+        "prompt": "Die Sonne scheint heute",
+        "answer": "Die Sonne scheint heute"
       },
       "no": {
         "primary": "Solen skinner i dag",
@@ -2459,8 +2837,14 @@
           "sola",
           "solen",
           "var"
-        ]
+        ],
+        "prompt": "Solen skinner i dag",
+        "answer": "Solen skinner i dag"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   },
   {
@@ -2492,7 +2876,9 @@
           "Tisch",
           "unter",
           "war"
-        ]
+        ],
+        "prompt": "Mein Computer liegt auf dem Tisch",
+        "answer": "Mein Computer liegt auf dem Tisch"
       },
       "no": {
         "primary": "Datamaskinen min ligger på bordet",
@@ -2512,8 +2898,14 @@
           "telefonen",
           "under",
           "var"
-        ]
+        ],
+        "prompt": "Datamaskinen min ligger på bordet",
+        "answer": "Datamaskinen min ligger på bordet"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   },
   {
@@ -2541,7 +2933,9 @@
           "war",
           "wie",
           "wo"
-        ]
+        ],
+        "prompt": "Hast du Hunger",
+        "answer": "Hast du Hunger"
       },
       "no": {
         "primary": "Er du sulten",
@@ -2555,8 +2949,14 @@
           "sulten",
           "tørst",
           "var"
-        ]
+        ],
+        "prompt": "Er du sulten",
+        "answer": "Er du sulten"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   }
 ]

@@ -870,10 +870,13 @@ def prepare_curriculum(
             prepared_rows.append(
                 {
                     "question_id": row["question_id"],
+                    "question_type": row.get("question_type", ""),
+                    "response_mode": row.get("response_mode"),
                     "difficulty": row["difficulty"],
                     "difficulty_str": row["difficulty_str"],
                     "direction": direction,
-                    "source": row["text_l1"],
+                    "source": row.get("prompt_l1", row["text_l1"]),
+                    "source_hint": row.get("hint_l1"),
                     "target": row["text_l2"],
                     "accepted": row["accepted_l2"],
                     "words": row["word_pool_l2"],
@@ -883,10 +886,13 @@ def prepare_curriculum(
             prepared_rows.append(
                 {
                     "question_id": row["question_id"],
+                    "question_type": row.get("question_type", ""),
+                    "response_mode": row.get("response_mode"),
                     "difficulty": row["difficulty"],
                     "difficulty_str": row["difficulty_str"],
                     "direction": direction,
-                    "source": row["text_l2"],
+                    "source": row.get("prompt_l2", row["text_l2"]),
+                    "source_hint": row.get("hint_l2"),
                     "target": row["text_l1"],
                     "accepted": row["accepted_l1"],
                     "words": row["word_pool_l1"],
@@ -924,6 +930,24 @@ def make_word_pool(lang_data: dict[str, Any]) -> list[str]:
 
 
 @app.function
+def extract_translation_fields(lang_data: dict[str, Any]) -> dict[str, Any]:
+    """Normalizes translation fields across schema versions."""
+    primary = lang_data.get("primary", "")
+    prompt = lang_data.get("prompt", primary)
+    answer = lang_data.get("answer", primary)
+    hint = lang_data.get("hint")
+
+    if not isinstance(prompt, str):
+        prompt = str(prompt) if prompt is not None else ""
+    if not isinstance(answer, str):
+        answer = str(answer) if answer is not None else ""
+    if not isinstance(hint, str) or not hint.strip():
+        hint = None
+
+    return {"prompt": prompt, "answer": answer, "hint": hint}
+
+
+@app.function
 def transform_to_canonical(
     df: pl.DataFrame,
     language_1: str,
@@ -945,15 +969,26 @@ def transform_to_canonical(
         if not lang_1_data or not lang_2_data:
             continue
 
+        lang_1_fields = extract_translation_fields(lang_1_data)
+        lang_2_fields = extract_translation_fields(lang_2_data)
+        content = row.get("content") if isinstance(row.get("content"), dict) else {}
+
         rows.append(
             {
                 "question_id": row.get("id", index),
+                "question_type": row.get("question_type", ""),
+                "schema_version": row.get("schema_version"),
+                "response_mode": content.get("response_mode"),
                 "difficulty": row["difficulty"],
                 "difficulty_str": row["difficulty_str"],
                 "language_1": language_1,
                 "language_2": language_2,
-                "text_l1": lang_1_data.get("primary", ""),
-                "text_l2": lang_2_data.get("primary", ""),
+                "prompt_l1": lang_1_fields["prompt"],
+                "prompt_l2": lang_2_fields["prompt"],
+                "text_l1": lang_1_fields["answer"],
+                "text_l2": lang_2_fields["answer"],
+                "hint_l1": lang_1_fields["hint"],
+                "hint_l2": lang_2_fields["hint"],
                 "accepted_l1": lang_1_data.get("accepted", []),
                 "accepted_l2": lang_2_data.get("accepted", []),
                 "word_pool_l1": make_word_pool(lang_data=lang_1_data),
@@ -1132,14 +1167,15 @@ def render_progress(current_idx: int, total_count: int) -> mo.Html:
 
 
 @app.function
-def render_question_area(source: str) -> mo.Html:
+def render_question_area(source: str, source_hint: str | None = None) -> mo.Html:
     """Renders the main question prompt."""
-    return mo.vstack(
-        [
-            mo.md("**Translate this sentence:**").center(),
-            mo.md(f"### {source}").center(),
-        ]
-    ).style({"margin-top": "1rem"})
+    elements = [
+        mo.md("**Translate this sentence:**").center(),
+        mo.md(f"### {source}").center(),
+    ]
+    if source_hint:
+        elements.append(mo.md(f"*Hint: {source_hint}*").center())
+    return mo.vstack(elements).style({"margin-top": "1rem"})
 
 
 @app.cell(hide_code=True)
@@ -1221,7 +1257,10 @@ def _(current_sentence, render_navigation_buttons, render_stats, widget):
         interaction_section = mo.vstack(
             [
                 render_stats(),
-                render_question_area(source=current_sentence["source"]),
+                render_question_area(
+                    source=current_sentence["source"],
+                    source_hint=current_sentence.get("source_hint"),
+                ),
                 widget,
                 render_navigation_buttons(),
             ],

@@ -27,7 +27,9 @@
           "traurig",
           "war",
           "wir"
-        ]
+        ],
+        "prompt": "Ich bin heute sehr glücklich",
+        "answer": "Ich bin heute sehr glücklich"
       },
       "en": {
         "primary": "I am very happy today",
@@ -47,8 +49,14 @@
           "very",
           "was",
           "we"
-        ]
+        ],
+        "prompt": "I am very happy today",
+        "answer": "I am very happy today"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   },
   {
@@ -79,7 +87,9 @@
           "sie",
           "wir",
           "Zeitung"
-        ]
+        ],
+        "prompt": "Sie liest ein sehr gutes Buch",
+        "answer": "Sie liest ein sehr gutes Buch"
       },
       "en": {
         "primary": "She reads a really good book",
@@ -101,8 +111,14 @@
           "really",
           "she",
           "we"
-        ]
+        ],
+        "prompt": "She reads a really good book",
+        "answer": "She reads a really good book"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   },
   {
@@ -132,7 +148,9 @@
           "sie",
           "wir",
           "zu"
-        ]
+        ],
+        "prompt": "Wir essen jetzt zu Abend",
+        "answer": "Wir essen jetzt zu Abend"
       },
       "en": {
         "primary": "We are eating dinner now",
@@ -152,8 +170,14 @@
           "they",
           "tomorrow",
           "we"
-        ]
+        ],
+        "prompt": "We are eating dinner now",
+        "answer": "We are eating dinner now"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   },
   {
@@ -184,7 +208,9 @@
           "Supermarkt",
           "wir",
           "zum"
-        ]
+        ],
+        "prompt": "Sie gehen zum neuen Laden",
+        "answer": "Sie gehen zum neuen Laden"
       },
       "en": {
         "primary": "They walk to the new store",
@@ -208,8 +234,14 @@
           "walk",
           "walking",
           "we"
-        ]
+        ],
+        "prompt": "They walk to the new store",
+        "answer": "They walk to the new store"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   },
   {
@@ -237,7 +269,9 @@
           "schwarz",
           "und",
           "war"
-        ]
+        ],
+        "prompt": "Der Hund ist groß und braun",
+        "answer": "Der Hund ist groß und braun"
       },
       "en": {
         "primary": "The dog is big and brown",
@@ -255,8 +289,14 @@
           "small",
           "the",
           "was"
-        ]
+        ],
+        "prompt": "The dog is big and brown",
+        "answer": "The dog is big and brown"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   },
   {
@@ -285,7 +325,9 @@
           "sie",
           "Tag",
           "wacht"
-        ]
+        ],
+        "prompt": "Die kleine Katze schläft den ganzen Tag",
+        "answer": "Die kleine Katze schläft den ganzen Tag"
       },
       "en": {
         "primary": "The small cat sleeps all day",
@@ -306,8 +348,14 @@
           "the",
           "they",
           "wakes"
-        ]
+        ],
+        "prompt": "The small cat sleeps all day",
+        "answer": "The small cat sleeps all day"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   },
   {
@@ -338,7 +386,9 @@
           "rotes",
           "schnelles",
           "wir"
-        ]
+        ],
+        "prompt": "Ich habe ein schnelles rotes Auto",
+        "answer": "Ich habe ein schnelles rotes Auto"
       },
       "en": {
         "primary": "I have a fast red car",
@@ -359,8 +409,14 @@
           "red",
           "slow",
           "we"
-        ]
+        ],
+        "prompt": "I have a fast red car",
+        "answer": "I have a fast red car"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   },
   {
@@ -392,7 +448,9 @@
           "klein",
           "sie",
           "wir"
-        ]
+        ],
+        "prompt": "Er arbeitet in einem großen Büro",
+        "answer": "Er arbeitet in einem großen Büro"
       },
       "en": {
         "primary": "He works in a large office",
@@ -414,8 +472,14 @@
           "worked",
           "working",
           "works"
-        ]
+        ],
+        "prompt": "He works in a large office",
+        "answer": "He works in a large office"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   },
   {
@@ -446,7 +510,9 @@
           "sprechen",
           "sprichst",
           "verstehst"
-        ]
+        ],
+        "prompt": "Du sprichst sehr gut Deutsch",
+        "answer": "Du sprichst sehr gut Deutsch"
       },
       "en": {
         "primary": "You speak German very well",
@@ -466,8 +532,14 @@
           "very",
           "well",
           "you"
-        ]
+        ],
+        "prompt": "You speak German very well",
+        "answer": "You speak German very well"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   },
   {
@@ -498,7 +570,9 @@
           "Wetter",
           "wird",
           "wirklich"
-        ]
+        ],
+        "prompt": "Das Wetter ist heute wirklich schön",
+        "answer": "Das Wetter ist heute wirklich schön"
       },
       "en": {
         "primary": "The weather is really nice today",
@@ -519,8 +593,14 @@
           "weather",
           "will",
           "yesterday"
-        ]
+        ],
+        "prompt": "The weather is really nice today",
+        "answer": "The weather is really nice today"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   },
   {
@@ -551,7 +631,9 @@
           "sehr",
           "sie",
           "war"
-        ]
+        ],
+        "prompt": "Mein junger Bruder ist sehr groß",
+        "answer": "Mein junger Bruder ist sehr groß"
       },
       "en": {
         "primary": "My young brother is very tall",
@@ -572,8 +654,14 @@
           "was",
           "young",
           "your"
-        ]
+        ],
+        "prompt": "My young brother is very tall",
+        "answer": "My young brother is very tall"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   },
   {
@@ -604,7 +692,9 @@
           "Wohnung",
           "wollen",
           "wollten"
-        ]
+        ],
+        "prompt": "Wir wollen ein neues Haus kaufen",
+        "answer": "Wir wollen ein neues Haus kaufen"
       },
       "en": {
         "primary": "We want to buy a new house",
@@ -626,8 +716,14 @@
           "wanted",
           "we",
           "wish"
-        ]
+        ],
+        "prompt": "We want to buy a new house",
+        "answer": "We want to buy a new house"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   },
   {
@@ -660,7 +756,9 @@
           "Wasser",
           "weiß",
           "zu"
-        ]
+        ],
+        "prompt": "Ich trinke gerne schwarzen Kaffee",
+        "answer": "Ich trinke gerne schwarzen Kaffee"
       },
       "en": {
         "primary": "I like to drink black coffee",
@@ -682,8 +780,14 @@
           "to",
           "water",
           "white"
-        ]
+        ],
+        "prompt": "I like to drink black coffee",
+        "answer": "I like to drink black coffee"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   },
   {
@@ -712,7 +816,9 @@
           "sie",
           "Spanien",
           "wir"
-        ]
+        ],
+        "prompt": "Sie reisen oft nach Spanien",
+        "answer": "Sie reisen oft nach Spanien"
       },
       "en": {
         "primary": "They often travel to Spain",
@@ -731,8 +837,14 @@
           "to",
           "travel",
           "we"
-        ]
+        ],
+        "prompt": "They often travel to Spain",
+        "answer": "They often travel to Spain"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   },
   {
@@ -764,7 +876,9 @@
           "war",
           "Wasser",
           "wir"
-        ]
+        ],
+        "prompt": "Das Essen ist kalt und schlecht",
+        "answer": "Das Essen ist kalt und schlecht"
       },
       "en": {
         "primary": "The food is cold and bad",
@@ -785,8 +899,14 @@
           "was",
           "water",
           "we"
-        ]
+        ],
+        "prompt": "The food is cold and bad",
+        "answer": "The food is cold and bad"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   },
   {
@@ -818,7 +938,9 @@
           "später",
           "wir",
           "Zug"
-        ]
+        ],
+        "prompt": "Der schnelle Zug fährt jetzt ab",
+        "answer": "Der schnelle Zug fährt jetzt ab"
       },
       "en": {
         "primary": "The fast train departs right now",
@@ -839,8 +961,14 @@
           "the",
           "train",
           "we"
-        ]
+        ],
+        "prompt": "The fast train departs right now",
+        "answer": "The fast train departs right now"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   },
   {
@@ -867,7 +995,9 @@
           "spielten",
           "Tennis",
           "wir"
-        ]
+        ],
+        "prompt": "Wir spielen jeden Abend Fußball",
+        "answer": "Wir spielen jeden Abend Fußball"
       },
       "en": {
         "primary": "We play football every evening",
@@ -887,8 +1017,14 @@
           "they",
           "watch",
           "we"
-        ]
+        ],
+        "prompt": "We play football every evening",
+        "answer": "We play football every evening"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   },
   {
@@ -916,7 +1052,9 @@
           "schreibt",
           "schrieb",
           "sie"
-        ]
+        ],
+        "prompt": "Sie schrieb gestern einen langen Brief",
+        "answer": "Sie schrieb gestern einen langen Brief"
       },
       "en": {
         "primary": "She wrote a long letter yesterday",
@@ -934,8 +1072,14 @@
           "writes",
           "wrote",
           "yesterday"
-        ]
+        ],
+        "prompt": "She wrote a long letter yesterday",
+        "answer": "She wrote a long letter yesterday"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   },
   {
@@ -962,7 +1106,9 @@
           "wach",
           "war",
           "wir"
-        ]
+        ],
+        "prompt": "Er war gestern sehr müde",
+        "answer": "Er war gestern sehr müde"
       },
       "en": {
         "primary": "He was very tired yesterday",
@@ -979,8 +1125,14 @@
           "was",
           "we",
           "yesterday"
-        ]
+        ],
+        "prompt": "He was very tired yesterday",
+        "answer": "He was very tired yesterday"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   },
   {
@@ -1010,7 +1162,9 @@
           "verstehe",
           "weiß",
           "überhaupt"
-        ]
+        ],
+        "prompt": "Ich verstehe dich überhaupt nicht",
+        "answer": "Ich verstehe dich überhaupt nicht"
       },
       "en": {
         "primary": "I do not understand you at all",
@@ -1032,8 +1186,14 @@
           "understand",
           "understood",
           "you"
-        ]
+        ],
+        "prompt": "I do not understand you at all",
+        "answer": "I do not understand you at all"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   },
   {
@@ -1064,7 +1224,9 @@
           "Schüler",
           "Stift",
           "wir"
-        ]
+        ],
+        "prompt": "Der Lehrer hat einen blauen Stift",
+        "answer": "Der Lehrer hat einen blauen Stift"
       },
       "en": {
         "primary": "The teacher has a blue pen",
@@ -1085,8 +1247,14 @@
           "teacher",
           "the",
           "we"
-        ]
+        ],
+        "prompt": "The teacher has a blue pen",
+        "answer": "The teacher has a blue pen"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   },
   {
@@ -1115,7 +1283,9 @@
           "sie",
           "spielen",
           "wir"
-        ]
+        ],
+        "prompt": "Sie hören laute Musik",
+        "answer": "Sie hören laute Musik"
       },
       "en": {
         "primary": "They listen to loud music",
@@ -1136,8 +1306,14 @@
           "they",
           "to",
           "we"
-        ]
+        ],
+        "prompt": "They listen to loud music",
+        "answer": "They listen to loud music"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   },
   {
@@ -1167,7 +1343,9 @@
           "sie",
           "trug",
           "trägt"
-        ]
+        ],
+        "prompt": "Sie trägt ein gelbes Kleid",
+        "answer": "Sie trägt ein gelbes Kleid"
       },
       "en": {
         "primary": "She wears a yellow dress",
@@ -1188,8 +1366,14 @@
           "wears",
           "wore",
           "yellow"
-        ]
+        ],
+        "prompt": "She wears a yellow dress",
+        "answer": "She wears a yellow dress"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   },
   {
@@ -1221,7 +1405,9 @@
           "werde",
           "wir",
           "Woche"
-        ]
+        ],
+        "prompt": "Ich werde nächste Woche nach London fliegen",
+        "answer": "Ich werde nächste Woche nach London fliegen"
       },
       "en": {
         "primary": "I will fly to London next week",
@@ -1240,8 +1426,14 @@
           "we",
           "week",
           "will"
-        ]
+        ],
+        "prompt": "I will fly to London next week",
+        "answer": "I will fly to London next week"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   },
   {
@@ -1269,7 +1461,9 @@
           "sehr",
           "war",
           "wir"
-        ]
+        ],
+        "prompt": "Der hohe Baum ist sehr alt",
+        "answer": "Der hohe Baum ist sehr alt"
       },
       "en": {
         "primary": "The tall tree is very old",
@@ -1287,8 +1481,14 @@
           "was",
           "we",
           "young"
-        ]
+        ],
+        "prompt": "The tall tree is very old",
+        "answer": "The tall tree is very old"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   },
   {
@@ -1319,7 +1519,9 @@
           "Stadt",
           "war",
           "wir"
-        ]
+        ],
+        "prompt": "Die große Stadt ist immer belebt",
+        "answer": "Die große Stadt ist immer belebt"
       },
       "en": {
         "primary": "The big city is always busy",
@@ -1340,8 +1542,14 @@
           "village",
           "was",
           "we"
-        ]
+        ],
+        "prompt": "The big city is always busy",
+        "answer": "The big city is always busy"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   },
   {
@@ -1370,7 +1578,9 @@
           "schlecht",
           "sie",
           "war"
-        ]
+        ],
+        "prompt": "Sie backt einen leckeren Kuchen",
+        "answer": "Sie backt einen leckeren Kuchen"
       },
       "en": {
         "primary": "She is making a delicious cake",
@@ -1393,8 +1603,14 @@
           "she",
           "they",
           "was"
-        ]
+        ],
+        "prompt": "She is making a delicious cake",
+        "answer": "She is making a delicious cake"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   },
   {
@@ -1424,7 +1640,9 @@
           "sie",
           "und",
           "wir"
-        ]
+        ],
+        "prompt": "Ich sehe dich und ihn",
+        "answer": "Ich sehe dich und ihn"
       },
       "en": {
         "primary": "I see you and him",
@@ -1441,8 +1659,14 @@
           "they",
           "we",
           "you"
-        ]
+        ],
+        "prompt": "I see you and him",
+        "answer": "I see you and him"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   },
   {
@@ -1471,7 +1695,9 @@
           "sie",
           "werden",
           "wir"
-        ]
+        ],
+        "prompt": "Wir werden morgen meine Eltern besuchen",
+        "answer": "Wir werden morgen meine Eltern besuchen"
       },
       "en": {
         "primary": "We will visit my parents tomorrow",
@@ -1492,8 +1718,14 @@
           "we",
           "will",
           "yesterday"
-        ]
+        ],
+        "prompt": "We will visit my parents tomorrow",
+        "answer": "We will visit my parents tomorrow"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   },
   {
@@ -1521,7 +1753,9 @@
           "war",
           "warum",
           "wir"
-        ]
+        ],
+        "prompt": "Warum bist du heute so traurig",
+        "answer": "Warum bist du heute so traurig"
       },
       "en": {
         "primary": "Why are you so sad today",
@@ -1539,8 +1773,14 @@
           "we",
           "why",
           "you"
-        ]
+        ],
+        "prompt": "Why are you so sad today",
+        "answer": "Why are you so sad today"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   },
   {
@@ -1570,7 +1810,9 @@
           "sie",
           "weniger",
           "will"
-        ]
+        ],
+        "prompt": "Er muss mehr schlafen",
+        "answer": "Er muss mehr schlafen"
       },
       "en": {
         "primary": "He needs to sleep more",
@@ -1590,8 +1832,14 @@
           "to",
           "wants",
           "work"
-        ]
+        ],
+        "prompt": "He needs to sleep more",
+        "answer": "He needs to sleep more"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   },
   {
@@ -1620,7 +1868,9 @@
           "sie",
           "vergessen",
           "zu"
-        ]
+        ],
+        "prompt": "Ich habe meine Schlüssel zu Hause vergessen",
+        "answer": "Ich habe meine Schlüssel zu Hause vergessen"
       },
       "en": {
         "primary": "I forgot my keys at home",
@@ -1637,8 +1887,14 @@
           "remembered",
           "she",
           "wallet"
-        ]
+        ],
+        "prompt": "I forgot my keys at home",
+        "answer": "I forgot my keys at home"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   },
   {
@@ -1666,7 +1922,9 @@
           "schneit",
           "Sonne",
           "war"
-        ]
+        ],
+        "prompt": "Draußen regnet es gerade",
+        "answer": "Draußen regnet es gerade"
       },
       "en": {
         "primary": "It is raining outside right now",
@@ -1686,8 +1944,14 @@
           "sun",
           "was",
           "yesterday"
-        ]
+        ],
+        "prompt": "It is raining outside right now",
+        "answer": "It is raining outside right now"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   },
   {
@@ -1717,7 +1981,9 @@
           "viele",
           "was",
           "wie"
-        ]
+        ],
+        "prompt": "Wie viel kostet die Fahrkarte",
+        "answer": "Wie viel kostet die Fahrkarte"
       },
       "en": {
         "primary": "How much does the ticket cost",
@@ -1735,8 +2001,14 @@
           "price",
           "the",
           "ticket"
-        ]
+        ],
+        "prompt": "How much does the ticket cost",
+        "answer": "How much does the ticket cost"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   },
   {
@@ -1762,7 +2034,9 @@
           "rote",
           "schnell",
           "war"
-        ]
+        ],
+        "prompt": "Das rote Auto ist schnell",
+        "answer": "Das rote Auto ist schnell"
       },
       "en": {
         "primary": "The red car is fast",
@@ -1778,8 +2052,14 @@
           "slow",
           "the",
           "was"
-        ]
+        ],
+        "prompt": "The red car is fast",
+        "answer": "The red car is fast"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   },
   {
@@ -1808,7 +2088,9 @@
           "war",
           "wie",
           "wo"
-        ]
+        ],
+        "prompt": "Wie alt ist deine Schwester",
+        "answer": "Wie alt ist deine Schwester"
       },
       "en": {
         "primary": "How old is your sister",
@@ -1824,8 +2106,14 @@
           "was",
           "where",
           "your"
-        ]
+        ],
+        "prompt": "How old is your sister",
+        "answer": "How old is your sister"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   },
   {
@@ -1857,7 +2145,9 @@
           "sehr",
           "sie",
           "süß"
-        ]
+        ],
+        "prompt": "Ich mag kein scharfes Essen",
+        "answer": "Ich mag kein scharfes Essen"
       },
       "en": {
         "primary": "I don't like spicy food",
@@ -1878,8 +2168,14 @@
           "spicy",
           "sweet",
           "very"
-        ]
+        ],
+        "prompt": "I don't like spicy food",
+        "answer": "I don't like spicy food"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   },
   {
@@ -1908,7 +2204,9 @@
           "wohnen",
           "wohnst",
           "wohnte"
-        ]
+        ],
+        "prompt": "Wo wohnst du jetzt",
+        "answer": "Wo wohnst du jetzt"
       },
       "en": {
         "primary": "Where do you live now",
@@ -1929,8 +2227,14 @@
           "where",
           "work",
           "you"
-        ]
+        ],
+        "prompt": "Where do you live now",
+        "answer": "Where do you live now"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   },
   {
@@ -1957,7 +2261,9 @@
           "kleine",
           "wir",
           "zwei"
-        ]
+        ],
+        "prompt": "Ich habe zwei kleine Katzen",
+        "answer": "Ich habe zwei kleine Katzen"
       },
       "en": {
         "primary": "I have two small cats",
@@ -1974,8 +2280,14 @@
           "three",
           "two",
           "we"
-        ]
+        ],
+        "prompt": "I have two small cats",
+        "answer": "I have two small cats"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   },
   {
@@ -2007,7 +2319,9 @@
           "Sommer",
           "winter",
           "wird"
-        ]
+        ],
+        "prompt": "Sie ist letzten Sommer nach Norwegen gereist",
+        "answer": "Sie ist letzten Sommer nach Norwegen gereist"
       },
       "en": {
         "primary": "She travelled to Norway last summer",
@@ -2028,8 +2342,14 @@
           "went",
           "will",
           "winter"
-        ]
+        ],
+        "prompt": "She travelled to Norway last summer",
+        "answer": "She travelled to Norway last summer"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   },
   {
@@ -2060,7 +2380,9 @@
           "Tag",
           "wacht",
           "wachte"
-        ]
+        ],
+        "prompt": "Er wacht jeden Tag früh auf",
+        "answer": "Er wacht jeden Tag früh auf"
       },
       "en": {
         "primary": "He wakes up early every day",
@@ -2081,8 +2403,14 @@
           "up",
           "wakes",
           "woke"
-        ]
+        ],
+        "prompt": "He wakes up early every day",
+        "answer": "He wakes up early every day"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   },
   {
@@ -2110,7 +2438,9 @@
           "war",
           "Wasser",
           "willst"
-        ]
+        ],
+        "prompt": "Willst du etwas Wasser",
+        "answer": "Willst du etwas Wasser"
       },
       "en": {
         "primary": "Do you want some water",
@@ -2131,8 +2461,14 @@
           "water",
           "would",
           "you"
-        ]
+        ],
+        "prompt": "Do you want some water",
+        "answer": "Do you want some water"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   },
   {
@@ -2164,7 +2500,9 @@
           "wer",
           "wie",
           "wo"
-        ]
+        ],
+        "prompt": "Wie heißt du",
+        "answer": "Wie heißt du"
       },
       "en": {
         "primary": "What is your name",
@@ -2182,8 +2520,14 @@
           "where",
           "who",
           "your"
-        ]
+        ],
+        "prompt": "What is your name",
+        "answer": "What is your name"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   },
   {
@@ -2215,7 +2559,9 @@
           "werden",
           "wir",
           "Zug"
-        ]
+        ],
+        "prompt": "Wir warten auf den Bus",
+        "answer": "Wir warten auf den Bus"
       },
       "en": {
         "primary": "We are waiting for the bus",
@@ -2235,8 +2581,14 @@
           "waiting",
           "we",
           "will"
-        ]
+        ],
+        "prompt": "We are waiting for the bus",
+        "answer": "We are waiting for the bus"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   },
   {
@@ -2267,7 +2619,9 @@
           "unser",
           "war",
           "wunderbar"
-        ]
+        ],
+        "prompt": "Unser neuer Garten ist sehr schön",
+        "answer": "Unser neuer Garten ist sehr schön"
       },
       "en": {
         "primary": "Our new garden is very beautiful",
@@ -2288,8 +2642,14 @@
           "they",
           "very",
           "was"
-        ]
+        ],
+        "prompt": "Our new garden is very beautiful",
+        "answer": "Our new garden is very beautiful"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   },
   {
@@ -2322,7 +2682,9 @@
           "war",
           "wichtig",
           "zu"
-        ]
+        ],
+        "prompt": "Ich finde es wichtig Sprachen zu lernen",
+        "answer": "Ich finde es wichtig Sprachen zu lernen"
       },
       "en": {
         "primary": "I think it is important to learn languages",
@@ -2345,8 +2707,14 @@
           "to",
           "useless",
           "was"
-        ]
+        ],
+        "prompt": "I think it is important to learn languages",
+        "answer": "I think it is important to learn languages"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   },
   {
@@ -2375,7 +2743,9 @@
           "Tee",
           "trank",
           "trinke"
-        ]
+        ],
+        "prompt": "Ich trinke normalerweise morgens Tee",
+        "answer": "Ich trinke normalerweise morgens Tee"
       },
       "en": {
         "primary": "I usually drink tea in the morning",
@@ -2397,8 +2767,14 @@
           "tea",
           "the",
           "usually"
-        ]
+        ],
+        "prompt": "I usually drink tea in the morning",
+        "answer": "I usually drink tea in the morning"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   },
   {
@@ -2424,7 +2800,9 @@
           "schien",
           "Sonne",
           "war"
-        ]
+        ],
+        "prompt": "Die Sonne scheint heute",
+        "answer": "Die Sonne scheint heute"
       },
       "en": {
         "primary": "The sun is shining today",
@@ -2441,8 +2819,14 @@
           "today",
           "was",
           "yesterday"
-        ]
+        ],
+        "prompt": "The sun is shining today",
+        "answer": "The sun is shining today"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   },
   {
@@ -2474,7 +2858,9 @@
           "Tisch",
           "unter",
           "war"
-        ]
+        ],
+        "prompt": "Mein Computer liegt auf dem Tisch",
+        "answer": "Mein Computer liegt auf dem Tisch"
       },
       "en": {
         "primary": "My computer is on the table",
@@ -2491,8 +2877,14 @@
           "the",
           "under",
           "was"
-        ]
+        ],
+        "prompt": "My computer is on the table",
+        "answer": "My computer is on the table"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   },
   {
@@ -2520,7 +2912,9 @@
           "war",
           "wie",
           "wo"
-        ]
+        ],
+        "prompt": "Hast du Hunger",
+        "answer": "Hast du Hunger"
       },
       "en": {
         "primary": "Are you hungry",
@@ -2535,8 +2929,14 @@
           "was",
           "where",
           "you"
-        ]
+        ],
+        "prompt": "Are you hungry",
+        "answer": "Are you hungry"
       }
+    },
+    "schema_version": 2,
+    "content": {
+      "response_mode": "token_sequence_choice"
     }
   }
 ]
