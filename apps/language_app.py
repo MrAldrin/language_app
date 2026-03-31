@@ -99,7 +99,7 @@ class QuestionWidget(anywidget.AnyWidget):
                     : "";
                 const revealHtml = `
                     <div class="reveal-area ${revealed ? "reveal-visible" : "reveal-hidden"}">
-                        <div class="reveal-target">${target}</div>
+                        <div class="reveal-target">Answer: ${target}</div>
                         ${acceptedHtml}
                     </div>
                 `;
@@ -119,7 +119,7 @@ class QuestionWidget(anywidget.AnyWidget):
                         ${poolHtml}
                     </div>
                     <div class="button-row">
-                        <button class="control action-btn clear-btn" id="clear-btn" ${clearDisabled}>↺ Clear</button>
+                        <button class="control action-btn clear-btn" id="clear-btn" ${clearDisabled}>Clear</button>
                         <button class="control action-btn check-btn" id="check-btn" ${checkDisabled}>${checkLabel}</button>
                         <button class="control action-btn reveal-btn" id="reveal-btn">
                             ${revealed ? "Hide" : "Reveal"}
@@ -269,7 +269,6 @@ class QuestionWidget(anywidget.AnyWidget):
             visibility: visible;
         }
         .reveal-target {
-            font-weight: 600;
             font-size: 1rem;
             color: #243548;
         }
@@ -445,14 +444,16 @@ def _():
 
 @app.cell
 def _(raw_pairs):
-    pyodide_question_files_by_pair = {pair: ["questions.json"] for pair in raw_pairs}
+    pyodide_question_files_by_pair = {
+        pair: ["sentence_builder_questions.json"] for pair in raw_pairs
+    }
     pyodide_question_files_by_pair["de_no"] = [
-        "questions.json",
-        "targeted_questions.json",
+        "sentence_builder_questions.json",
+        "word_translation_questions.json",
     ]
     pyodide_question_files_by_pair["nl_no"] = [
-        "questions.json",
-        "targeted_questions.json",
+        "sentence_builder_questions.json",
+        "word_translation_questions.json",
     ]
     return (pyodide_question_files_by_pair,)
 
@@ -583,7 +584,11 @@ def _(dropdown_language_pairs, pyodide_question_files_by_pair):
         pair=pair, pyodide_files_by_pair=pyodide_question_files_by_pair
     )
 
-    default_file = "questions.json" if "questions.json" in file_names else file_names[0]
+    default_file = (
+        "sentence_builder_questions.json"
+        if "sentence_builder_questions.json" in file_names
+        else file_names[0]
+    )
     default_file_option = humanize_question_file_name(default_file)
     file_options = {humanize_question_file_name(name): name for name in file_names}
 
@@ -761,12 +766,12 @@ def list_question_files(
 ) -> list[str]:
     """Lists selectable JSON files for a language pair with safe fallbacks."""
     if not pair:
-        return ["questions.json"]
+        return ["sentence_builder_questions.json"]
 
     if "pyodide" in sys.modules:
-        files = pyodide_files_by_pair.get(pair, ["questions.json"])
+        files = pyodide_files_by_pair.get(pair, ["sentence_builder_questions.json"])
         unique_files = sorted(set(files))
-        return unique_files or ["questions.json"]
+        return unique_files or ["sentence_builder_questions.json"]
 
     pair_dir = mo.notebook_location() / "public" / pair
     if pair_dir.exists():
@@ -776,7 +781,7 @@ def list_question_files(
         if file_names:
             return file_names
 
-    return ["questions.json"]
+    return ["sentence_builder_questions.json"]
 
 
 @app.function

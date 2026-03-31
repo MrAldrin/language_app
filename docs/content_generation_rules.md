@@ -1,52 +1,64 @@
-# Language App Content Generation Rules
+# Sentence Builder Question Rules (Schema v2)
 
+This document is the type-specific spec for `sentence_builder_multiple_choice`.
+For shared rules across all question types, see `docs/question_generation_overview.md`.
 
-## 1. Data Schema, Types and Explanation
+## Schema
 
-- **`id`**: Sequential integer.
-- **`type`**: `sentence_builder_multiple_choice`.
-- **`difficulty`**: Integer 1–10 (10 is hardest). 
-- **`tags`**: List of several relevant tags (e.g., `plural`, `food`, `verb_conjugation`, `articles`, `irregular_verbs`).
-- **`translations`**: A dictionary keyed by language code. Each entry contains:
-    - **`primary`**: The primary translation. It should be the most common and natural translation in that language.
-    - **`accepted`**: A list of all natural alternative correct translations. Can be empty if none. Omit punctuation/capitalization variations. All accepted answers must be valid translations of the other language's primary sentence (bidirectional symmetry).
-    - **`word_pool`**: A list of all words that appear in either primary or accepted and then another 4-7 extra distractor words. There should be no duplicates.
+Each question object must contain:
 
+- `id`: sequential integer
+- `schema_version`: must be `2`
+- `question_type`: must be `sentence_builder_multiple_choice`
+- `difficulty`: integer `1-10`
+- `tags`: relevant grammar/topic tags
+- `content`:
+  - `response_mode`: must be `token_sequence_choice`
+- `translations`: keyed by language code
 
-## 2. Linguistic & Pedagogy Rules
+Each `translations.<lang>` object must contain:
 
-- Grammar & Capitalization: Always use correct grammar and spelling in that language.
-- Translation rules:  Translations should try to be as directly translated as possible to show a bridge between the languages. Either in the primary or accepted section.
-- Naturalism: Use modern, conversational phrasing.
-- Concepts: Each entry should target just a few specific grammar rule or vocabulary cluster, according to the difficulty given.
-- The word_pool: Should not contain tells of the word order, like punctuation and capitalizing the first word in a sentence that is not capitalized by default in that language (Like german Zeitung)
-- Distractor Logic: 
-  - Should not contain spelling errors or non-standard contractions
-  - Should be testing the user with alternatives from the same concepts as they are tagged with
- 
+- `prompt`: source text shown to learner
+- `answer`: canonical target text for checking
+- `accepted`: natural alternative correct answers
+- `word_pool`: answer tokens + distractors
 
-## 3. Technical Constraints
-- File type: json
-- Encoding: UTF-8
-- The questions should be generated in pairs of languages (one JSON file per language pair) and placed in their respective folders in apps/public/. 
+Optional fields:
 
-## Schema example:
+- `hint`: display-only metadata (rare for this type)
+- `primary`: legacy field, deprecated
+
+## Type-Specific Authoring Rules
+
+- Keep sentence pairs directly equivalent in meaning.
+- Include enough distractors to make word order and grammar meaningful.
+- Avoid clues from punctuation/capitalization in `word_pool`.
+- Distractors should be plausible alternatives from same concept cluster.
+
+## Example
+
 ```json
 {
   "id": 1,
+  "schema_version": 2,
   "question_type": "sentence_builder_multiple_choice",
   "difficulty": 1,
   "tags": ["basics", "question"],
+  "content": {
+    "response_mode": "token_sequence_choice"
+  },
   "translations": {
     "no": {
-      "primary": "Hvor er boka?",
+      "prompt": "Hvor er boka?",
+      "answer": "Hvor er boka?",
       "accepted": ["Hvor er boken?"],
-      "word_pool": ["hva", "hvem", "når", "var", "brevet", "avisa"]
+      "word_pool": ["hva", "hvem", "når", "var", "brevet", "avisa", "hvor", "er", "boka"]
     },
     "de": {
-      "primary": "Wo ist das Buch?",
+      "prompt": "Wo ist das Buch?",
+      "answer": "Wo ist das Buch?",
       "accepted": [],
-      "word_pool": ["was", "wer", "wann", "Zeitung", "bist", "bin"]
+      "word_pool": ["was", "wer", "wann", "Zeitung", "bist", "bin", "wo", "ist", "das", "Buch"]
     }
   }
 }
