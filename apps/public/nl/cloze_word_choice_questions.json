@@ -46,17 +46,17 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Waar kom ___ vandaan?",
+        "prompt": "Hoi Jan, waar kom ___ vandaan?",
         "answer": "jij",
         "accepted": [
           "je"
         ],
         "word_pool": [
           "jij",
+          "je",
           "hij",
           "zij",
-          "wij",
-          "jullie"
+          "wij"
         ]
       }
     }
@@ -78,7 +78,7 @@
     },
     "translations": {
       "nl": {
-        "prompt": "___ gaat naar de winkel.",
+        "prompt": "Mijn opa is hongerig. ___ gaat naar de winkel.",
         "answer": "Hij",
         "accepted": [],
         "word_pool": [
@@ -108,17 +108,17 @@
     },
     "translations": {
       "nl": {
-        "prompt": "___ wonen in Amsterdam.",
+        "prompt": "Mijn vrienden en ik hebben een huis. ___ wonen in Amsterdam.",
         "answer": "Wij",
         "accepted": [
           "We"
         ],
         "word_pool": [
           "Wij",
+          "We",
           "Zij",
           "Jullie",
-          "Ik",
-          "Hij"
+          "Ik"
         ]
       }
     }
@@ -140,7 +140,7 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Komen ___ ook naar het feest?",
+        "prompt": "Hé jongens, komen ___ ook naar het feest?",
         "answer": "jullie",
         "accepted": [],
         "word_pool": [
@@ -170,16 +170,16 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Kun je ___ even helpen?",
+        "prompt": "Ik draag zware tassen. Kun je ___ even helpen?",
         "answer": "mij",
         "accepted": [
           "me"
         ],
         "word_pool": [
           "mij",
+          "me",
           "jou",
           "hem",
-          "haar",
           "ons"
         ]
       }
@@ -202,17 +202,17 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Ik zie ___ morgen op kantoor.",
+        "prompt": "Tot morgen, Jan! Ik zie ___ morgen op kantoor.",
         "answer": "jou",
         "accepted": [
           "je"
         ],
         "word_pool": [
           "jou",
+          "je",
           "hem",
           "haar",
-          "ons",
-          "jullie"
+          "ons"
         ]
       }
     }
@@ -234,7 +234,7 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Heb je ___ gesproken?",
+        "prompt": "Peter is ziek. Heb je ___ gesproken?",
         "answer": "hem",
         "accepted": [],
         "word_pool": [
@@ -264,7 +264,7 @@
     },
     "translations": {
       "nl": {
-        "prompt": "We hebben ___ een cadeau gegeven.",
+        "prompt": "Het meisje is jarig. We hebben ___ een cadeau gegeven.",
         "answer": "haar",
         "accepted": [],
         "word_pool": [
@@ -294,7 +294,7 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Kom je bij ___ eten?",
+        "prompt": "Wij zijn thuis. Kom je bij ___ eten?",
         "answer": "ons",
         "accepted": [],
         "word_pool": [
@@ -324,7 +324,7 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Ik bel ___ straks wel.",
+        "prompt": "Hé Jan en Eva! Ik bel ___ straks wel.",
         "answer": "jullie",
         "accepted": [],
         "word_pool": [
@@ -354,7 +354,7 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Heb je ___ al uitgenodigd?",
+        "prompt": "Al je vrienden komen morgen. Heb je ___ al uitgenodigd?",
         "answer": "hen",
         "accepted": [
           "hun"
@@ -387,7 +387,7 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Hoe gaat het met ___, meneer Jansen?",
+        "prompt": "Goedenavond, meneer Jansen. Hoe gaat het met ___?",
         "answer": "u",
         "accepted": [],
         "word_pool": [
@@ -447,13 +447,14 @@
     },
     "translations": {
       "nl": {
-        "prompt": "___ zijn mijn beste vrienden.",
+        "prompt": "Jan en Eva zijn aardig. ___ zijn mijn beste vrienden.",
         "answer": "Zij",
         "accepted": [
           "Ze"
         ],
         "word_pool": [
           "Zij",
+          "Ze",
           "Hij",
           "Wij",
           "Het",
@@ -479,7 +480,7 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Dat is ___ auto.",
+        "prompt": "Ik rijd in dit voertuig. Dat is ___ auto.",
         "answer": "mijn",
         "accepted": [],
         "word_pool": [
@@ -509,17 +510,17 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Is dit ___ boek?",
+        "prompt": "Hé Jan, is dit ___ boek?",
         "answer": "jouw",
         "accepted": [
           "je"
         ],
         "word_pool": [
           "jouw",
+          "je",
           "zijn",
           "haar",
-          "onze",
-          "hun"
+          "onze"
         ]
       }
     }
@@ -541,7 +542,7 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Zij zoekt ___ sleutels.",
+        "prompt": "Mijn zus is haar tas kwijt. Zij zoekt ___ sleutels.",
         "answer": "haar",
         "accepted": [],
         "word_pool": [
@@ -571,7 +572,7 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Hij heeft ___ jas aan.",
+        "prompt": "Mijn broer gaat naar buiten. Hij heeft ___ jas aan.",
         "answer": "zijn",
         "accepted": [],
         "word_pool": [
@@ -601,7 +602,7 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Dit is ___ huis.",
+        "prompt": "Mijn vrouw en ik wonen hier. Dit is ___ huis.",
         "answer": "ons",
         "accepted": [],
         "word_pool": [
@@ -631,7 +632,7 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Dit is ___ tuin.",
+        "prompt": "Wij hebben een grote buitenruimte. Dit is ___ tuin.",
         "answer": "onze",
         "accepted": [],
         "word_pool": [
@@ -668,10 +669,10 @@
         ],
         "word_pool": [
           "jullie",
+          "je",
           "onze",
           "hun",
-          "zijn",
-          "haar"
+          "zijn"
         ]
       }
     }
@@ -693,7 +694,7 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Zij wonen daar. Dat is ___ huis.",
+        "prompt": "Mijn buren wonen daar. Dat is ___ huis.",
         "answer": "hun",
         "accepted": [],
         "word_pool": [
@@ -786,7 +787,7 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Dit boek is niet van mij. Het is het ___.",
+        "prompt": "Vraag het aan Jan. Dit boek is niet van mij; het is het ___.",
         "answer": "jouwe",
         "accepted": [],
         "word_pool": [
@@ -817,7 +818,7 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Deze koffer is de ___.",
+        "prompt": "De man heeft een koffer. Deze koffer is de ___.",
         "answer": "zijne",
         "accepted": [],
         "word_pool": [
@@ -848,7 +849,7 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Die tas is de ___.",
+        "prompt": "De vrouw heeft een tas. Die tas is de ___.",
         "answer": "hare",
         "accepted": [],
         "word_pool": [
@@ -879,7 +880,7 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Dit huis is het ___.",
+        "prompt": "Zij bezitten dat gebouw. Dit huis is het ___.",
         "answer": "hunne",
         "accepted": [],
         "word_pool": [
@@ -910,7 +911,7 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Deze kinderen zijn de ___.",
+        "prompt": "Wij zijn de ouders. Deze kinderen zijn de ___.",
         "answer": "onze",
         "accepted": [],
         "word_pool": [
@@ -947,10 +948,10 @@
         ],
         "word_pool": [
           "me",
+          "mij",
           "je",
           "zich",
-          "ons",
-          "u"
+          "ons"
         ]
       }
     }
@@ -1092,7 +1093,7 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Jullie vergissen ___.",
+        "prompt": "Hé jongens, jullie vergissen ___.",
         "answer": "je",
         "accepted": [],
         "word_pool": [
@@ -1460,7 +1461,7 @@
     },
     "translations": {
       "nl": {
-        "prompt": "___ schoenen zitten erg lekker.",
+        "prompt": "___ schoenen hier zitten erg lekker.",
         "answer": "Deze",
         "accepted": [],
         "word_pool": [
@@ -1490,7 +1491,7 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Kijk naar ___ vliegtuig in de lucht.",
+        "prompt": "Kijk naar ___ vliegtuig daar in de lucht.",
         "answer": "dat",
         "accepted": [],
         "word_pool": [
@@ -1520,7 +1521,7 @@
     },
     "translations": {
       "nl": {
-        "prompt": "___ zijn mijn favoriete bloemen.",
+        "prompt": "___ hier zijn mijn favoriete bloemen.",
         "answer": "Dit",
         "accepted": [
           "Deze"
@@ -1644,7 +1645,7 @@
     },
     "translations": {
       "nl": {
-        "prompt": "In ___ tijd was alles anders.",
+        "prompt": "In ___ ver vervlogen tijd was alles anders.",
         "answer": "die",
         "accepted": [],
         "word_pool": [
@@ -1704,7 +1705,7 @@
     },
     "translations": {
       "nl": {
-        "prompt": "___ van de twee wil je?",
+        "prompt": "Ik heb twee appels. ___ van de twee wil je?",
         "answer": "Welke",
         "accepted": [],
         "word_pool": [
@@ -1824,7 +1825,7 @@
     },
     "translations": {
       "nl": {
-        "prompt": "___ zijn de feiten.",
+        "prompt": "Hier op tafel liggen ze. ___ zijn de feiten.",
         "answer": "Dit",
         "accepted": [
           "Dit"
@@ -1863,8 +1864,8 @@
           "die",
           "dat",
           "wie",
-          "wat",
-          "welke"
+          "welke",
+          "wat"
         ]
       }
     }
@@ -2316,7 +2317,7 @@
     },
     "translations": {
       "nl": {
-        "prompt": "___ is daar?",
+        "prompt": "De klas wacht. ___ is de leraar?",
         "answer": "Wie",
         "accepted": [],
         "word_pool": [

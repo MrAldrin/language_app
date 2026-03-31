@@ -437,7 +437,7 @@
     },
     "translations": {
       "de": {
-        "prompt": "___ bin sehr müde.",
+        "prompt": "Ich habe die ganze Nacht gearbeitet. ___ bin sehr müde.",
         "answer": "Ich",
         "accepted": [],
         "word_pool": [
@@ -466,7 +466,7 @@
     },
     "translations": {
       "de": {
-        "prompt": "Woher kommst ___?",
+        "prompt": "Hallo Jan, woher kommst ___?",
         "answer": "du",
         "accepted": [],
         "word_pool": [
@@ -495,7 +495,7 @@
     },
     "translations": {
       "de": {
-        "prompt": "___ geht es gut.",
+        "prompt": "Wir haben einen tollen Urlaub. ___ geht es gut.",
         "answer": "Uns",
         "accepted": [],
         "word_pool": [
@@ -525,7 +525,7 @@
     },
     "translations": {
       "de": {
-        "prompt": "Ich liebe ___.",
+        "prompt": "Du bist meine beste Freundin. Ich liebe ___.",
         "answer": "dich",
         "accepted": [],
         "word_pool": [
@@ -555,7 +555,7 @@
     },
     "translations": {
       "de": {
-        "prompt": "Können Sie ___ sehen?",
+        "prompt": "Ich stehe hier hinten. Können Sie ___ sehen?",
         "answer": "mich",
         "accepted": [],
         "word_pool": [
@@ -585,7 +585,7 @@
     },
     "translations": {
       "de": {
-        "prompt": "Ich besuche ___ morgen.",
+        "prompt": "Hallo ihr zwei! Ich besuche ___ morgen.",
         "answer": "euch",
         "accepted": [],
         "word_pool": [
@@ -615,7 +615,7 @@
     },
     "translations": {
       "de": {
-        "prompt": "Das Buch gehört ___.",
+        "prompt": "Peter vermisst sein Buch. Das Buch gehört ___.",
         "answer": "ihm",
         "accepted": [],
         "word_pool": [
@@ -645,7 +645,7 @@
     },
     "translations": {
       "de": {
-        "prompt": "Ich danke ___ herzlich.",
+        "prompt": "Sehr geehrte Frau Müller, ich danke ___ herzlich für die Hilfe.",
         "answer": "Ihnen",
         "accepted": [],
         "word_pool": [
@@ -675,7 +675,7 @@
     },
     "translations": {
       "de": {
-        "prompt": "Wie geht es ___?",
+        "prompt": "Hallo Sarah! Wie geht es ___ heute?",
         "answer": "dir",
         "accepted": [],
         "word_pool": [
@@ -704,7 +704,7 @@
     },
     "translations": {
       "de": {
-        "prompt": "___ sind meine Freunde.",
+        "prompt": "Das sind Peter und Maria. ___ sind meine Freunde.",
         "answer": "Sie",
         "accepted": [],
         "word_pool": [
@@ -733,7 +733,7 @@
     },
     "translations": {
       "de": {
-        "prompt": "___ hat ein rotes Auto.",
+        "prompt": "Mein Bruder liebt Autos. ___ hat ein rotes Auto.",
         "answer": "Er",
         "accepted": [],
         "word_pool": [
@@ -762,7 +762,7 @@
     },
     "translations": {
       "de": {
-        "prompt": "Hast ___ heute Zeit?",
+        "prompt": "Ich möchte ins Kino gehen. Hast ___ heute Zeit?",
         "answer": "du",
         "accepted": [],
         "word_pool": [
@@ -792,7 +792,7 @@
     },
     "translations": {
       "de": {
-        "prompt": "Ich sehe ___ dort oben.",
+        "prompt": "Dort oben sitzt ein Vogel. Ich sehe ___ sehr gut.",
         "answer": "ihn",
         "accepted": [],
         "word_pool": [
@@ -821,7 +821,7 @@
     },
     "translations": {
       "de": {
-        "prompt": "Ist das ___ Handy?",
+        "prompt": "Du hast etwas liegen lassen. Ist das ___ Handy?",
         "answer": "dein",
         "accepted": [],
         "word_pool": [
@@ -850,7 +850,7 @@
     },
     "translations": {
       "de": {
-        "prompt": "Wo ist ___ Schlüssel?",
+        "prompt": "Ich will gehen, aber ich kann die Tür nicht öffnen. Wo ist ___ Schlüssel?",
         "answer": "mein",
         "accepted": [],
         "word_pool": [
@@ -879,7 +879,7 @@
     },
     "translations": {
       "de": {
-        "prompt": "Sie hat ___ Tasche vergessen.",
+        "prompt": "Maria ist schon weg, aber hier liegt noch etwas. Sie hat ___ Tasche vergessen.",
         "answer": "ihre",
         "accepted": [],
         "word_pool": [
@@ -908,7 +908,7 @@
     },
     "translations": {
       "de": {
-        "prompt": "Er sucht ___ Hund.",
+        "prompt": "Der Hund ist weggelaufen. Er sucht ___ Hund jetzt überall.",
         "answer": "seinen",
         "accepted": [],
         "word_pool": [
@@ -937,7 +937,7 @@
     },
     "translations": {
       "de": {
-        "prompt": "Wir lieben ___ Stadt.",
+        "prompt": "Wir wohnen schon lange in Berlin. Wir lieben ___ Stadt.",
         "answer": "unsere",
         "accepted": [],
         "word_pool": [
@@ -966,7 +966,7 @@
     },
     "translations": {
       "de": {
-        "prompt": "Habt ihr ___ Hausaufgaben gemacht?",
+        "prompt": "Kinder, es ist schon spät. Habt ihr ___ Hausaufgaben gemacht?",
         "answer": "eure",
         "accepted": [],
         "word_pool": [
@@ -996,7 +996,7 @@
     },
     "translations": {
       "de": {
-        "prompt": "Ich spreche mit ___ Vater.",
+        "prompt": "Ich habe ein Problem. Ich spreche mit ___ Vater darüber.",
         "answer": "meinem",
         "accepted": [],
         "word_pool": [
@@ -1026,7 +1026,7 @@
     },
     "translations": {
       "de": {
-        "prompt": "Besuchst du ___ Tante?",
+        "prompt": "Sie ist im Krankenhaus. Besuchst du ___ Tante heute?",
         "answer": "deine",
         "accepted": [],
         "word_pool": [
@@ -1055,7 +1055,7 @@
     },
     "translations": {
       "de": {
-        "prompt": "Das ist ___ Auto.",
+        "prompt": "Peter hat ein neues Fahrzeug gekauft. Das ist ___ Auto.",
         "answer": "sein",
         "accepted": [],
         "word_pool": [
@@ -1084,7 +1084,7 @@
     },
     "translations": {
       "de": {
-        "prompt": "Wie heißt ___ Katze?",
+        "prompt": "Guten Tag, Herr Schmidt! Wie heißt ___ Katze?",
         "answer": "Ihre",
         "accepted": [],
         "word_pool": [
@@ -1113,7 +1113,7 @@
     },
     "translations": {
       "de": {
-        "prompt": "Kennen Sie ___ Namen?",
+        "prompt": "Wir sind neu hier. Kennen Sie schon ___ Namen?",
         "answer": "unseren",
         "accepted": [],
         "word_pool": [
@@ -1142,7 +1142,7 @@
     },
     "translations": {
       "de": {
-        "prompt": "Wo sind ___ Kinder?",
+        "prompt": "Es ist so leise im Haus. Wo sind ___ Kinder eigentlich?",
         "answer": "deine",
         "accepted": [],
         "word_pool": [
@@ -1171,7 +1171,7 @@
     },
     "translations": {
       "de": {
-        "prompt": "Er hat ___ Geld verloren.",
+        "prompt": "Sein Portemonnaie ist weg. Er hat ___ Geld verloren.",
         "answer": "sein",
         "accepted": [],
         "word_pool": [
@@ -1200,7 +1200,7 @@
     },
     "translations": {
       "de": {
-        "prompt": "Ich freue ___ auf den Urlaub.",
+        "prompt": "Ich habe die Koffer schon gepackt. Ich freue ___ auf den Urlaub.",
         "answer": "mich",
         "accepted": [],
         "word_pool": [
@@ -1229,7 +1229,7 @@
     },
     "translations": {
       "de": {
-        "prompt": "Du beschwerst ___ immer.",
+        "prompt": "Nichts gefällt dir. Du beschwerst ___ immer über alles.",
         "answer": "dich",
         "accepted": [],
         "word_pool": [
@@ -1258,7 +1258,7 @@
     },
     "translations": {
       "de": {
-        "prompt": "Wir treffen ___ um acht Uhr.",
+        "prompt": "Vergiss den Termin nicht. Wir treffen ___ um acht Uhr vor dem Kino.",
         "answer": "uns",
         "accepted": [],
         "word_pool": [
@@ -1287,7 +1287,7 @@
     },
     "translations": {
       "de": {
-        "prompt": "Sie sonnen ___ am Strand.",
+        "prompt": "Das Wetter ist herrlich. Sie sonnen ___ am Strand.",
         "answer": "sich",
         "accepted": [],
         "word_pool": [
@@ -1316,7 +1316,7 @@
     },
     "translations": {
       "de": {
-        "prompt": "Ich kaufe ___ ein neues Auto.",
+        "prompt": "Mein alter Wagen ist kaputt. Ich kaufe ___ ein neues Auto.",
         "answer": "mir",
         "accepted": [],
         "word_pool": [
@@ -1345,7 +1345,7 @@
     },
     "translations": {
       "de": {
-        "prompt": "Du putzt ___ die Zähne.",
+        "prompt": "Bevor du ins Bett gehst, putzt ___ bitte die Zähne.",
         "answer": "dir",
         "accepted": [],
         "word_pool": [
@@ -1374,7 +1374,7 @@
     },
     "translations": {
       "de": {
-        "prompt": "Er schneidet ___ die Haare.",
+        "prompt": "Er geht heute nicht zum Friseur. Er schneidet ___ die Haare selbst.",
         "answer": "sich",
         "accepted": [],
         "word_pool": [
@@ -1403,7 +1403,7 @@
     },
     "translations": {
       "de": {
-        "prompt": "Sie merkt ___ alles.",
+        "prompt": "Sie hat ein fantastisches Gedächtnis. Sie merkt ___ alles sofort.",
         "answer": "sich",
         "accepted": [],
         "word_pool": [
@@ -1432,7 +1432,7 @@
     },
     "translations": {
       "de": {
-        "prompt": "Interessieren Sie ___ für Musik?",
+        "prompt": "Hier ist ein tolles Konzert. Interessieren Sie ___ für Musik?",
         "answer": "sich",
         "accepted": [],
         "word_pool": [
@@ -1461,7 +1461,7 @@
     },
     "translations": {
       "de": {
-        "prompt": "Wir langweilen ___.",
+        "prompt": "Es gibt hier draußen nichts zu tun. Wir langweilen ___.",
         "answer": "uns",
         "accepted": [],
         "word_pool": [
@@ -1490,7 +1490,7 @@
     },
     "translations": {
       "de": {
-        "prompt": "Ihr ärgert ___ über den Regen.",
+        "prompt": "Euer Picknick wurde abgesagt. Ihr ärgert ___ über den Regen.",
         "answer": "euch",
         "accepted": [],
         "word_pool": [
@@ -1519,7 +1519,7 @@
     },
     "translations": {
       "de": {
-        "prompt": "Stell ___ bitte vor.",
+        "prompt": "Ich kenne deinen Namen noch nicht. Stell ___ bitte vor.",
         "answer": "dich",
         "accepted": [],
         "word_pool": [
@@ -1548,7 +1548,7 @@
     },
     "translations": {
       "de": {
-        "prompt": "Wir stellen ___ die Zukunft vor.",
+        "prompt": "Das Leben wird in 100 Jahren ganz anders sein. Wir stellen ___ die Zukunft vor.",
         "answer": "uns",
         "accepted": [],
         "word_pool": [
@@ -1576,15 +1576,15 @@
     },
     "translations": {
       "de": {
-        "prompt": "___ Buch hier ist sehr spannend.",
+        "prompt": "Ich habe viele Bücher gelesen, aber ___ Buch hier ist sehr spannend.",
         "answer": "Dieses",
         "accepted": [],
         "word_pool": [
           "Dieses",
-          "Dieses",
           "Jenes",
           "Solches",
-          "Welches"
+          "Welches",
+          "Das"
         ]
       }
     }
@@ -1604,7 +1604,7 @@
     },
     "translations": {
       "de": {
-        "prompt": "Kennst du ___ Leute?",
+        "prompt": "Dort drüben stehen Gäste. Kennst du ___ Leute eigentlich?",
         "answer": "diese",
         "accepted": [],
         "word_pool": [
@@ -1632,7 +1632,7 @@
     },
     "translations": {
       "de": {
-        "prompt": "Ich mag ___ Äpfel nicht.",
+        "prompt": "Diese Äpfel sind sauer. Ich mag ___ Äpfel nicht.",
         "answer": "solche",
         "accepted": [],
         "word_pool": [
@@ -1660,7 +1660,7 @@
     },
     "translations": {
       "de": {
-        "prompt": "Es ist immer ___.",
+        "prompt": "Jeder Tag ist wie der andere. Es ist immer ___.",
         "answer": "dasselbe",
         "accepted": [],
         "word_pool": [
@@ -1689,7 +1689,7 @@
     },
     "translations": {
       "de": {
-        "prompt": "Ich nehme ___ Wein.",
+        "prompt": "Es gibt viele Sorten auf der Karte. Ich nehme ___ Wein hier.",
         "answer": "diesen",
         "accepted": [],
         "word_pool": [
@@ -1718,7 +1718,7 @@
     },
     "translations": {
       "de": {
-        "prompt": "In ___ Moment kam er herein.",
+        "prompt": "Wir haben gerade über ihn gesprochen. In ___ Moment kam er herein.",
         "answer": "diesem",
         "accepted": [],
         "word_pool": [
@@ -1746,7 +1746,7 @@
     },
     "translations": {
       "de": {
-        "prompt": "Was hältst du von ___ Idee?",
+        "prompt": "Diese Idee ist gut, aber was hältst du von ___ Idee dort drüben?",
         "answer": "jener",
         "accepted": [],
         "word_pool": [
@@ -1774,7 +1774,7 @@
     },
     "translations": {
       "de": {
-        "prompt": "___ Frau kenne ich schon lange.",
+        "prompt": "Sie hat sich kaum verändert. ___ Frau kenne ich schon lange.",
         "answer": "Dieselbe",
         "accepted": [],
         "word_pool": [
@@ -1802,7 +1802,7 @@
     },
     "translations": {
       "de": {
-        "prompt": "Wir wohnen im ___ Haus.",
+        "prompt": "Wir sind Nachbarn. Wir wohnen im ___ Haus.",
         "answer": "selben",
         "accepted": [],
         "word_pool": [
@@ -1830,7 +1830,7 @@
     },
     "translations": {
       "de": {
-        "prompt": "___ Schuhe sind zu teuer.",
+        "prompt": "Diese Schuhe sind billig, aber ___ Schuhe dort sind zu teuer.",
         "answer": "Jene",
         "accepted": [],
         "word_pool": [
@@ -1858,7 +1858,7 @@
     },
     "translations": {
       "de": {
-        "prompt": "Hast du schon mal ___ Wetter erlebt?",
+        "prompt": "Es regnet Bindfäden. Hast du schon mal ___ Wetter erlebt?",
         "answer": "solches",
         "accepted": [],
         "word_pool": [
@@ -1886,7 +1886,7 @@
     },
     "translations": {
       "de": {
-        "prompt": "___ hier ist mein Platz.",
+        "prompt": "Bitte setzen Sie sich woanders hin. ___ hier ist mein Platz.",
         "answer": "Dieser",
         "accepted": [],
         "word_pool": [
@@ -1914,7 +1914,7 @@
     },
     "translations": {
       "de": {
-        "prompt": "Ich habe ___ Problem gelöst.",
+        "prompt": "Du hast Schwierigkeiten mit der Aufgabe? Ich habe gestern ___ Problem gelöst.",
         "answer": "dasselbe",
         "accepted": [],
         "word_pool": [
@@ -1943,7 +1943,7 @@
     },
     "translations": {
       "de": {
-        "prompt": "Der Mann, ___ dort steht, ist mein Onkel.",
+        "prompt": "Dort ist ein Bekannter. Der Mann, ___ dort steht, ist mein Onkel.",
         "answer": "der",
         "accepted": [],
         "word_pool": [
@@ -1972,7 +1972,7 @@
     },
     "translations": {
       "de": {
-        "prompt": "Das Auto, ___ dort parkt, ist neu.",
+        "prompt": "Schau mal auf den Parkplatz. Das Auto, ___ dort parkt, ist neu.",
         "answer": "das",
         "accepted": [],
         "word_pool": [
@@ -2001,7 +2001,7 @@
     },
     "translations": {
       "de": {
-        "prompt": "Die Frau, ___ gestern hier war, ist Ärztin.",
+        "prompt": "Erinnerst du dich an den Besuch? Die Frau, ___ gestern hier war, ist Ärztin.",
         "answer": "die",
         "accepted": [],
         "word_pool": [
@@ -2030,7 +2030,7 @@
     },
     "translations": {
       "de": {
-        "prompt": "Das ist das Kind, ___ ich geholfen habe.",
+        "prompt": "Ich kenne das Kind gut. Das ist das Kind, ___ ich gestern geholfen habe.",
         "answer": "dem",
         "accepted": [],
         "word_pool": [
@@ -2059,7 +2059,7 @@
     },
     "translations": {
       "de": {
-        "prompt": "Die Leute, ___ wir begegnet sind, waren nett.",
+        "prompt": "Wir haben im Park Wanderer getroffen. Die Leute, ___ wir begegnet sind, waren nett.",
         "answer": "denen",
         "accepted": [],
         "word_pool": [
@@ -2088,7 +2088,7 @@
     },
     "translations": {
       "de": {
-        "prompt": "Der Autor, ___ Buch ich lese, ist berühmt.",
+        "prompt": "Das Werk ist fantastisch. Der Autor, ___ Buch ich gerade lese, ist weltberühmt.",
         "answer": "dessen",
         "accepted": [],
         "word_pool": [
@@ -2117,7 +2117,7 @@
     },
     "translations": {
       "de": {
-        "prompt": "Die Stadt, ___ Kirchen alt sind, ist schön.",
+        "prompt": "Ich liebe historische Orte. Die Stadt, ___ Kirchen sehr alt sind, ist wunderschön.",
         "answer": "deren",
         "accepted": [],
         "word_pool": [
@@ -2146,7 +2146,7 @@
     },
     "translations": {
       "de": {
-        "prompt": "Das Buch, ___ du mir geschenkt hast, ist toll.",
+        "prompt": "Vielen Dank für das Geschenk! Das Buch, ___ du mir geschenkt hast, ist wirklich toll.",
         "answer": "das",
         "accepted": [],
         "word_pool": [
@@ -2175,7 +2175,7 @@
     },
     "translations": {
       "de": {
-        "prompt": "Die Freunde, ___ ich eingeladen habe, kommen.",
+        "prompt": "Ich feiere heute eine Party. Die Freunde, ___ ich eingeladen habe, kommen alle.",
         "answer": "die",
         "accepted": [],
         "word_pool": [
@@ -2204,7 +2204,7 @@
     },
     "translations": {
       "de": {
-        "prompt": "Alles, ___ glänzt, ist nicht Gold.",
+        "prompt": "Man sollte nicht nur nach dem Äußeren gehen. Alles, ___ glänzt, ist nicht Gold.",
         "answer": "was",
         "accepted": [],
         "word_pool": [
@@ -2233,7 +2233,7 @@
     },
     "translations": {
       "de": {
-        "prompt": "Das ist etwas, ___ ich nicht mag.",
+        "prompt": "Zwiebeln im Essen? Das ist etwas, ___ ich überhaupt nicht mag.",
         "answer": "was",
         "accepted": [],
         "word_pool": [
@@ -2262,7 +2262,7 @@
     },
     "translations": {
       "de": {
-        "prompt": "Der Brief, ___ ich geschrieben habe, ist weg.",
+        "prompt": "Ich kann ihn nicht finden. Der Brief, ___ ich gestern geschrieben habe, ist weg.",
         "answer": "den",
         "accepted": [],
         "word_pool": [
@@ -2291,7 +2291,7 @@
     },
     "translations": {
       "de": {
-        "prompt": "Die Frau, ___ das Kind gehört, ist hier.",
+        "prompt": "Dort ist die Mutter. Die Frau, ___ das Kind gehört, ist gerade hier.",
         "answer": "der",
         "accepted": [],
         "word_pool": [
@@ -2319,7 +2319,7 @@
     },
     "translations": {
       "de": {
-        "prompt": "___ ist das?",
+        "prompt": "Ich habe ein fremdes Objekt gefunden. ___ ist das eigentlich?",
         "answer": "Was",
         "accepted": [],
         "word_pool": [
@@ -2347,7 +2347,7 @@
     },
     "translations": {
       "de": {
-        "prompt": "___ klopft an die Tür?",
+        "prompt": "Hörst du das Geräusch? ___ klopft da an die Tür?",
         "answer": "Wer",
         "accepted": [],
         "word_pool": [
@@ -2376,7 +2376,7 @@
     },
     "translations": {
       "de": {
-        "prompt": "___ suchst du?",
+        "prompt": "Du schaust dich so suchend um. ___ suchst du hier?",
         "answer": "Wen",
         "accepted": [],
         "word_pool": [
@@ -2405,7 +2405,7 @@
     },
     "translations": {
       "de": {
-        "prompt": "___ hast du gedankt?",
+        "prompt": "Du warst sehr höflich. ___ hast du gerade gedankt?",
         "answer": "Wem",
         "accepted": [],
         "word_pool": [
@@ -2433,7 +2433,7 @@
     },
     "translations": {
       "de": {
-        "prompt": "___ Farbe gefällt dir besser?",
+        "prompt": "Hier sind Blau und Rot. ___ Farbe gefällt dir besser?",
         "answer": "Welche",
         "accepted": [],
         "word_pool": [
@@ -2461,7 +2461,7 @@
     },
     "translations": {
       "de": {
-        "prompt": "___ für ein Buch ist das?",
+        "prompt": "Das Cover sieht interessant aus. ___ für ein Buch ist das genau?",
         "answer": "Was",
         "accepted": [],
         "word_pool": [
@@ -2490,7 +2490,7 @@
     },
     "translations": {
       "de": {
-        "prompt": "___ Auto ist das?",
+        "prompt": "Es steht in unserer Einfahrt. ___ Auto ist das?",
         "answer": "Wessen",
         "accepted": [],
         "word_pool": [
@@ -2518,7 +2518,7 @@
     },
     "translations": {
       "de": {
-        "prompt": "___ hast du gemacht?",
+        "prompt": "Du bist so schmutzig! ___ hast du im Garten gemacht?",
         "answer": "Was",
         "accepted": [],
         "word_pool": [
@@ -2546,7 +2546,7 @@
     },
     "translations": {
       "de": {
-        "prompt": "___ kommt heute zu Besuch?",
+        "prompt": "Ich habe den Tisch für drei Personen gedeckt. ___ kommt heute zu Besuch?",
         "answer": "Wer",
         "accepted": [],
         "word_pool": [
@@ -2575,7 +2575,7 @@
     },
     "translations": {
       "de": {
-        "prompt": "___ meinst du damit?",
+        "prompt": "Deine Aussage ist etwas unklar. ___ meinst du genau damit?",
         "answer": "Wen",
         "accepted": [],
         "word_pool": [
@@ -2604,7 +2604,7 @@
     },
     "translations": {
       "de": {
-        "prompt": "___ hast du das gesagt?",
+        "prompt": "Das war eine wichtige Information. ___ hast du das alles gesagt?",
         "answer": "Wem",
         "accepted": [],
         "word_pool": [
@@ -2632,7 +2632,7 @@
     },
     "translations": {
       "de": {
-        "prompt": "___ Weg führt zum Bahnhof?",
+        "prompt": "Ich habe mich verlaufen. ___ Weg führt zum Bahnhof?",
         "answer": "Welcher",
         "accepted": [],
         "word_pool": [
@@ -2660,7 +2660,7 @@
     },
     "translations": {
       "de": {
-        "prompt": "___ für Leute sind das?",
+        "prompt": "Dort stehen viele Fremde. ___ für Leute sind das?",
         "answer": "Was",
         "accepted": [],
         "word_pool": [
@@ -2688,7 +2688,7 @@
     },
     "translations": {
       "de": {
-        "prompt": "___ darf hier nicht rauchen.",
+        "prompt": "Schau auf das Verbotsschild. ___ darf hier im Gebäude nicht rauchen.",
         "answer": "Man",
         "accepted": [],
         "word_pool": [
@@ -2716,7 +2716,7 @@
     },
     "translations": {
       "de": {
-        "prompt": "Hast du ___ gesehen?",
+        "prompt": "Ich war einen Moment weg. Hast du ___ in meinem Büro gesehen?",
         "answer": "jemanden",
         "accepted": [],
         "word_pool": [
@@ -2744,7 +2744,7 @@
     },
     "translations": {
       "de": {
-        "prompt": "Ich habe ___ gehört.",
+        "prompt": "Es war vollkommen still im Wald. Ich habe ___ gehört.",
         "answer": "nichts",
         "accepted": [],
         "word_pool": [
@@ -2772,7 +2772,7 @@
     },
     "translations": {
       "de": {
-        "prompt": "___ ist unmöglich.",
+        "prompt": "Mit harter Arbeit kann man alles schaffen. ___ ist wirklich unmöglich.",
         "answer": "Nichts",
         "accepted": [],
         "word_pool": [
@@ -2800,7 +2800,7 @@
     },
     "translations": {
       "de": {
-        "prompt": "___ weiß das.",
+        "prompt": "Das ist eine bekannte Tatsache. Fast ___ weiß das heute.",
         "answer": "Jeder",
         "accepted": [],
         "word_pool": [
@@ -2828,7 +2828,7 @@
     },
     "translations": {
       "de": {
-        "prompt": "___ sind gekommen.",
+        "prompt": "Ich habe viele Leute eingeladen. ___ sind gekommen.",
         "answer": "Einige",
         "accepted": [],
         "word_pool": [
@@ -2856,7 +2856,7 @@
     },
     "translations": {
       "de": {
-        "prompt": "Ich möchte ___ essen.",
+        "prompt": "Ich habe Hunger. Ich möchte ___ essen.",
         "answer": "etwas",
         "accepted": [],
         "word_pool": [
@@ -2884,15 +2884,14 @@
     },
     "translations": {
       "de": {
-        "prompt": "___ hat geholfen.",
+        "prompt": "Alle standen nur rum. ___ hat geholfen.",
         "answer": "Niemand",
         "accepted": [],
         "word_pool": [
           "Niemand",
           "Jemand",
           "Alles",
-          "Keiner",
-          "Alles"
+          "Keiner"
         ]
       }
     }
@@ -2912,7 +2911,7 @@
     },
     "translations": {
       "de": {
-        "prompt": "___ haben Angst.",
+        "prompt": "Die Prüfung ist schwer. ___ haben Angst davor.",
         "answer": "Manche",
         "accepted": [],
         "word_pool": [
@@ -2940,7 +2939,7 @@
     },
     "translations": {
       "de": {
-        "prompt": "Kann mir ___ helfen?",
+        "prompt": "Diese Tasche ist sehr schwer. Kann mir ___ helfen?",
         "answer": "jemand",
         "accepted": [],
         "word_pool": [
@@ -2968,7 +2967,7 @@
     },
     "translations": {
       "de": {
-        "prompt": "___ ist in Ordnung.",
+        "prompt": "Mach dir keine Sorgen. ___ ist in Ordnung.",
         "answer": "Alles",
         "accepted": [],
         "word_pool": [
@@ -2996,7 +2995,7 @@
     },
     "translations": {
       "de": {
-        "prompt": "Er hat ___ zu sagen.",
+        "prompt": "Er schweigt beharrlich. Er hat ___ zu sagen.",
         "answer": "nichts",
         "accepted": [],
         "word_pool": [
@@ -3024,7 +3023,7 @@
     },
     "translations": {
       "de": {
-        "prompt": "Wir haben ___ Zeit.",
+        "prompt": "Beeilt euch! Wir haben nur noch ___ Zeit.",
         "answer": "wenig",
         "accepted": [],
         "word_pool": [
