@@ -459,6 +459,16 @@ def _(raw_pairs):
 
 
 @app.cell
+def _():
+    # Mirror language-level files available in deployment (pyodide mode).
+    pyodide_question_files_by_language = {
+        "de": ["cloze_word_choice_questions.json"],
+        "nl": ["cloze_word_choice_questions.json"],
+    }
+    return (pyodide_question_files_by_language,)
+
+
+@app.cell
 def _(raw_pairs):
     available_languages = sorted({lang for pair in raw_pairs for lang in pair.split("_")})
     return (available_languages,)
@@ -475,7 +485,9 @@ def _():
 @app.cell
 def _(dropdown_question_file, selected_pair, source_language, target_language):
     _read_json_data = load_json_data(
-        pair=selected_pair, filename=dropdown_question_file.value
+        pair=selected_pair,
+        filename=dropdown_question_file.value,
+        target_language=target_language,
     )
     df_raw = load_curriculum(data=_read_json_data)
     df_canonical = transform_to_canonical(
@@ -626,11 +638,21 @@ def _(dropdown_source_language, dropdown_target_language):
 
 
 @app.cell
-def _(pyodide_question_files_by_pair, selected_pair):
+def _(
+    pyodide_question_files_by_language,
+    pyodide_question_files_by_pair,
+    selected_pair,
+    target_language,
+):
     pair = selected_pair
     file_names = list_question_files(
         pair=pair, pyodide_files_by_pair=pyodide_question_files_by_pair
     )
+    cloze_files = list_language_question_files(
+        language=target_language,
+        pyodide_files_by_language=pyodide_question_files_by_language,
+    )
+    file_names = sorted(set(file_names + cloze_files))
 
     default_file = (
         "sentence_builder_questions.json"
@@ -831,21 +853,53 @@ def list_question_files(
 
 
 @app.function
+def list_language_question_files(
+    language: str | None, pyodide_files_by_language: dict[str, list[str]]
+) -> list[str]:
+    """Lists selectable JSON files for a language-level folder (e.g. cloze)."""
+    if not language:
+        return []
+
+    if "pyodide" in sys.modules:
+        files = pyodide_files_by_language.get(language, [])
+        return sorted(set(files))
+
+    lang_dir = mo.notebook_location() / "public" / language
+    if lang_dir.exists():
+        file_names = sorted(
+            path.name for path in lang_dir.glob("*.json") if path.is_file()
+        )
+        return file_names
+
+    return []
+
+
+@app.function
 def humanize_question_file_name(filename: str) -> str:
     stem = filename.removesuffix(".json")
     return stem.replace("_", " ")
 
 
 @app.function
-def load_json_data(pair: str, filename: str) -> list[dict[str, Any]]:
+def load_json_data(
+    pair: str | None, filename: str, target_language: str | None = None
+) -> list[dict[str, Any]]:
     """Loads curriculum JSON data from Pyodide or local filesystem."""
+    use_language_path = filename == "cloze_word_choice_questions.json" and target_language
+
     if "pyodide" in sys.modules:
         from pyodide.http import open_url
 
-        url = f"../public/{pair}/{filename}"
+        if use_language_path:
+            url = f"../public/{target_language}/{filename}"
+        else:
+            url = f"../public/{pair}/{filename}"
         return json.loads(open_url(url).read())
     else:
-        file_path = mo.notebook_location() / "public" / pair / filename
+        if use_language_path:
+            file_path = mo.notebook_location() / "public" / target_language / filename
+        else:
+            file_path = mo.notebook_location() / "public" / pair / filename
         with open(file_path, "r", encoding="utf-8") as f:
             return json.load(f)
 
@@ -1014,6 +1068,44 @@ def transform_to_canonical(
     rows = []
     for index, row in enumerate(df.iter_rows(named=True)):
         translations = row.get("translations", {})
+        question_type = row.get("question_type", "")
+        content = row.get("content") if isinstance(row.get("content"), dict) else {}
+
+        if question_type == "cloze_word_choice":
+            practice_language = content.get("practice_language") or language_2
+            practice_data = translations.get(practice_language)
+            if not practice_data and len(translations) == 1:
+                practice_data = next(iter(translations.values()))
+
+            if not practice_data:
+                continue
+
+            practice_fields = extract_translation_fields(practice_data)
+            rows.append(
+                {
+                    "question_id": row.get("id", index),
+                    "question_type": question_type,
+                    "schema_version": row.get("schema_version"),
+                    "response_mode": content.get("response_mode"),
+                    "difficulty": row["difficulty"],
+                    "difficulty_str": row["difficulty_str"],
+                    "language_1": language_1,
+                    "language_2": language_2,
+                    # Keep both sides aligned for cloze so direction does not drop rows.
+                    "prompt_l1": practice_fields["prompt"],
+                    "prompt_l2": practice_fields["prompt"],
+                    "text_l1": practice_fields["answer"],
+                    "text_l2": practice_fields["answer"],
+                    "hint_l1": practice_fields["hint"],
+                    "hint_l2": practice_fields["hint"],
+                    "accepted_l1": practice_data.get("accepted", []),
+                    "accepted_l2": practice_data.get("accepted", []),
+                    "word_pool_l1": make_word_pool(lang_data=practice_data),
+                    "word_pool_l2": make_word_pool(lang_data=practice_data),
+                }
+            )
+            continue
+
         lang_1_data = translations.get(language_1)
         lang_2_data = translations.get(language_2)
 
@@ -1022,12 +1114,11 @@ def transform_to_canonical(
 
         lang_1_fields = extract_translation_fields(lang_1_data)
         lang_2_fields = extract_translation_fields(lang_2_data)
-        content = row.get("content") if isinstance(row.get("content"), dict) else {}
 
         rows.append(
             {
                 "question_id": row.get("id", index),
-                "question_type": row.get("question_type", ""),
+                "question_type": question_type,
                 "schema_version": row.get("schema_version"),
                 "response_mode": content.get("response_mode"),
                 "difficulty": row["difficulty"],
