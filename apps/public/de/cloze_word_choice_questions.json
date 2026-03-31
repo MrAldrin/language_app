@@ -1,0 +1,3040 @@
+[
+  {
+    "id": 7001,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 1,
+    "tags": [
+      "personal",
+      "subject",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "Ich habe einen Bruder. ___ heißt Lukas.",
+        "answer": "Er",
+        "accepted": [],
+        "word_pool": [
+          "Er",
+          "Sie",
+          "Es",
+          "Wir",
+          "Ihr"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7002,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 2,
+    "tags": [
+      "personal",
+      "object",
+      "dative",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "Kannst du ___ bitte helfen? Ich verstehe das nicht.",
+        "answer": "mir",
+        "accepted": [],
+        "word_pool": [
+          "mir",
+          "mich",
+          "dir",
+          "dich",
+          "uns"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7003,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 2,
+    "tags": [
+      "possessive",
+      "ownership",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "Das ist meine Schwester und das ist ___ Freund.",
+        "answer": "ihr",
+        "accepted": [],
+        "word_pool": [
+          "ihr",
+          "sein",
+          "mein",
+          "dein",
+          "unser"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7004,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 2,
+    "tags": [
+      "possessive",
+      "ownership",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "Wir wohnen hier. Das ist ___ Haus.",
+        "answer": "unser",
+        "accepted": [],
+        "word_pool": [
+          "unser",
+          "euer",
+          "ihr",
+          "mein",
+          "sein"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7005,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 3,
+    "tags": [
+      "reflexive",
+      "dative",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "Ich wasche ___ jeden Morgen das Gesicht.",
+        "answer": "mir",
+        "accepted": [],
+        "word_pool": [
+          "mir",
+          "mich",
+          "sich",
+          "uns",
+          "euch"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7006,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 3,
+    "tags": [
+      "reflexive",
+      "accusative",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "Beeilt ___ bitte, wir kommen sonst zu spät!",
+        "answer": "euch",
+        "accepted": [],
+        "word_pool": [
+          "euch",
+          "uns",
+          "sich",
+          "dich",
+          "mich"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7007,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 4,
+    "tags": [
+      "demonstrative",
+      "distancing",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "Gefällt dir dieses Kleid? Nein, ___ dort finde ich schöner.",
+        "answer": "jenes",
+        "accepted": [],
+        "word_pool": [
+          "jenes",
+          "dieses",
+          "solches",
+          "welches",
+          "das"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7008,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 3,
+    "tags": [
+      "demonstrative",
+      "identifying",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "___ Mann, den du dort siehst, ist mein Chef.",
+        "answer": "Dieser",
+        "accepted": [],
+        "word_pool": [
+          "Dieser",
+          "Jener",
+          "Welcher",
+          "Solcher",
+          "Der"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7009,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 4,
+    "tags": [
+      "relative",
+      "accusative",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "Der Film, ___ wir gestern gesehen haben, war toll.",
+        "answer": "den",
+        "accepted": [],
+        "word_pool": [
+          "den",
+          "der",
+          "dem",
+          "das",
+          "die"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7010,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 5,
+    "tags": [
+      "relative",
+      "genitive",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "Das ist die Frau, ___ Auto gestohlen wurde.",
+        "answer": "deren",
+        "accepted": [],
+        "word_pool": [
+          "deren",
+          "die",
+          "der",
+          "dessen",
+          "welcher"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7011,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 3,
+    "tags": [
+      "interrogative",
+      "dative",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "___ gehört diese Tasche?",
+        "answer": "Wem",
+        "accepted": [],
+        "word_pool": [
+          "Wem",
+          "Wer",
+          "Wen",
+          "Was",
+          "Wie"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7012,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 3,
+    "tags": [
+      "interrogative",
+      "selection",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "___ von diesen Büchern möchtest du lesen?",
+        "answer": "Welches",
+        "accepted": [],
+        "word_pool": [
+          "Welches",
+          "Was",
+          "Wer",
+          "Wem",
+          "Wie"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7013,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 2,
+    "tags": [
+      "indefinite",
+      "person",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "Gestern hat ___ für dich angerufen.",
+        "answer": "jemand",
+        "accepted": [],
+        "word_pool": [
+          "jemand",
+          "niemand",
+          "etwas",
+          "nichts",
+          "alles"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7014,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 2,
+    "tags": [
+      "indefinite",
+      "thing",
+      "negative",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "Ich habe Hunger, aber es ist ___ im Kühlschrank.",
+        "answer": "nichts",
+        "accepted": [],
+        "word_pool": [
+          "nichts",
+          "etwas",
+          "alles",
+          "manches",
+          "jedes"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7015,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 1,
+    "tags": [
+      "personal",
+      "subject"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "___ bin sehr müde.",
+        "answer": "Ich",
+        "accepted": [],
+        "word_pool": [
+          "Ich",
+          "Du",
+          "Er",
+          "Wir",
+          "Ihr"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7016,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 1,
+    "tags": [
+      "personal",
+      "subject"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "Woher kommst ___?",
+        "answer": "du",
+        "accepted": [],
+        "word_pool": [
+          "du",
+          "er",
+          "sie",
+          "ihr",
+          "wir"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7017,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 1,
+    "tags": [
+      "personal",
+      "subject"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "___ geht es gut.",
+        "answer": "Uns",
+        "accepted": [],
+        "word_pool": [
+          "Uns",
+          "Wir",
+          "Euch",
+          "Ihnen",
+          "Sie"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7018,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 2,
+    "tags": [
+      "personal",
+      "object",
+      "accusative"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "Ich liebe ___.",
+        "answer": "dich",
+        "accepted": [],
+        "word_pool": [
+          "dich",
+          "dir",
+          "mich",
+          "mir",
+          "ihn"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7019,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 2,
+    "tags": [
+      "personal",
+      "object",
+      "accusative"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "Können Sie ___ sehen?",
+        "answer": "mich",
+        "accepted": [],
+        "word_pool": [
+          "mich",
+          "mir",
+          "dich",
+          "dir",
+          "uns"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7020,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 2,
+    "tags": [
+      "personal",
+      "object",
+      "accusative"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "Ich besuche ___ morgen.",
+        "answer": "euch",
+        "accepted": [],
+        "word_pool": [
+          "euch",
+          "uns",
+          "sie",
+          "ihn",
+          "dich"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7021,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 3,
+    "tags": [
+      "personal",
+      "object",
+      "dative"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "Das Buch gehört ___.",
+        "answer": "ihm",
+        "accepted": [],
+        "word_pool": [
+          "ihm",
+          "ihn",
+          "ihr",
+          "ihre",
+          "denen"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7022,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 3,
+    "tags": [
+      "personal",
+      "object",
+      "dative"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "Ich danke ___ herzlich.",
+        "answer": "Ihnen",
+        "accepted": [],
+        "word_pool": [
+          "Ihnen",
+          "Sie",
+          "Dir",
+          "Euch",
+          "Uns"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7023,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 2,
+    "tags": [
+      "personal",
+      "object",
+      "dative"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "Wie geht es ___?",
+        "answer": "dir",
+        "accepted": [],
+        "word_pool": [
+          "dir",
+          "dich",
+          "euch",
+          "ihr",
+          "mir"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7024,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 1,
+    "tags": [
+      "personal",
+      "subject"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "___ sind meine Freunde.",
+        "answer": "Sie",
+        "accepted": [],
+        "word_pool": [
+          "Sie",
+          "Ihr",
+          "Wir",
+          "Er",
+          "Es"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7025,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 1,
+    "tags": [
+      "personal",
+      "subject"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "___ hat ein rotes Auto.",
+        "answer": "Er",
+        "accepted": [],
+        "word_pool": [
+          "Er",
+          "Sie",
+          "Es",
+          "Ihr",
+          "Wir"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7026,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 1,
+    "tags": [
+      "personal",
+      "subject"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "Hast ___ heute Zeit?",
+        "answer": "du",
+        "accepted": [],
+        "word_pool": [
+          "du",
+          "er",
+          "ihr",
+          "wir",
+          "sie"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7027,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 2,
+    "tags": [
+      "personal",
+      "object",
+      "accusative"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "Ich sehe ___ dort oben.",
+        "answer": "ihn",
+        "accepted": [],
+        "word_pool": [
+          "ihn",
+          "ihm",
+          "sie",
+          "es",
+          "mich"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7028,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 2,
+    "tags": [
+      "possessive",
+      "ownership"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "Ist das ___ Handy?",
+        "answer": "dein",
+        "accepted": [],
+        "word_pool": [
+          "dein",
+          "meine",
+          "deine",
+          "euer",
+          "unser"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7029,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 2,
+    "tags": [
+      "possessive",
+      "ownership"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "Wo ist ___ Schlüssel?",
+        "answer": "mein",
+        "accepted": [],
+        "word_pool": [
+          "mein",
+          "meine",
+          "meinen",
+          "meiner",
+          "meinem"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7030,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 3,
+    "tags": [
+      "possessive",
+      "ownership"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "Sie hat ___ Tasche vergessen.",
+        "answer": "ihre",
+        "accepted": [],
+        "word_pool": [
+          "ihre",
+          "ihr",
+          "seine",
+          "meine",
+          "deine"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7031,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 3,
+    "tags": [
+      "possessive",
+      "ownership"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "Er sucht ___ Hund.",
+        "answer": "seinen",
+        "accepted": [],
+        "word_pool": [
+          "seinen",
+          "sein",
+          "ihren",
+          "unseren",
+          "deinen"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7032,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 3,
+    "tags": [
+      "possessive",
+      "ownership"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "Wir lieben ___ Stadt.",
+        "answer": "unsere",
+        "accepted": [],
+        "word_pool": [
+          "unsere",
+          "unser",
+          "euer",
+          "eure",
+          "ihre"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7033,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 3,
+    "tags": [
+      "possessive",
+      "ownership"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "Habt ihr ___ Hausaufgaben gemacht?",
+        "answer": "eure",
+        "accepted": [],
+        "word_pool": [
+          "eure",
+          "euer",
+          "unsere",
+          "ihre",
+          "meine"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7034,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 4,
+    "tags": [
+      "possessive",
+      "ownership",
+      "dative"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "Ich spreche mit ___ Vater.",
+        "answer": "meinem",
+        "accepted": [],
+        "word_pool": [
+          "meinem",
+          "mein",
+          "meine",
+          "meinen",
+          "meiner"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7035,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 4,
+    "tags": [
+      "possessive",
+      "ownership",
+      "accusative"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "Besuchst du ___ Tante?",
+        "answer": "deine",
+        "accepted": [],
+        "word_pool": [
+          "deine",
+          "dein",
+          "deiner",
+          "deinem",
+          "deinen"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7036,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 2,
+    "tags": [
+      "possessive",
+      "ownership"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "Das ist ___ Auto.",
+        "answer": "sein",
+        "accepted": [],
+        "word_pool": [
+          "sein",
+          "seine",
+          "ihr",
+          "ihre",
+          "meine"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7037,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 3,
+    "tags": [
+      "possessive",
+      "ownership"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "Wie heißt ___ Katze?",
+        "answer": "Ihre",
+        "accepted": [],
+        "word_pool": [
+          "Ihre",
+          "Ihr",
+          "Seine",
+          "Meine",
+          "Deine"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7038,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 3,
+    "tags": [
+      "possessive",
+      "ownership"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "Kennen Sie ___ Namen?",
+        "answer": "unseren",
+        "accepted": [],
+        "word_pool": [
+          "unseren",
+          "unser",
+          "unsere",
+          "euren",
+          "ihren"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7039,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 2,
+    "tags": [
+      "possessive",
+      "ownership"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "Wo sind ___ Kinder?",
+        "answer": "deine",
+        "accepted": [],
+        "word_pool": [
+          "deine",
+          "dein",
+          "eure",
+          "unsere",
+          "ihre"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7040,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 3,
+    "tags": [
+      "possessive",
+      "ownership"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "Er hat ___ Geld verloren.",
+        "answer": "sein",
+        "accepted": [],
+        "word_pool": [
+          "sein",
+          "seine",
+          "ihr",
+          "mein",
+          "dein"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7041,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 3,
+    "tags": [
+      "reflexive",
+      "accusative"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "Ich freue ___ auf den Urlaub.",
+        "answer": "mich",
+        "accepted": [],
+        "word_pool": [
+          "mich",
+          "mir",
+          "sich",
+          "dich",
+          "uns"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7042,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 3,
+    "tags": [
+      "reflexive",
+      "accusative"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "Du beschwerst ___ immer.",
+        "answer": "dich",
+        "accepted": [],
+        "word_pool": [
+          "dich",
+          "dir",
+          "sich",
+          "mich",
+          "euch"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7043,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 3,
+    "tags": [
+      "reflexive",
+      "accusative"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "Wir treffen ___ um acht Uhr.",
+        "answer": "uns",
+        "accepted": [],
+        "word_pool": [
+          "uns",
+          "euch",
+          "sich",
+          "mich",
+          "dich"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7044,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 3,
+    "tags": [
+      "reflexive",
+      "accusative"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "Sie sonnen ___ am Strand.",
+        "answer": "sich",
+        "accepted": [],
+        "word_pool": [
+          "sich",
+          "uns",
+          "euch",
+          "mich",
+          "dich"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7045,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 4,
+    "tags": [
+      "reflexive",
+      "dative"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "Ich kaufe ___ ein neues Auto.",
+        "answer": "mir",
+        "accepted": [],
+        "word_pool": [
+          "mir",
+          "mich",
+          "dir",
+          "sich",
+          "uns"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7046,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 4,
+    "tags": [
+      "reflexive",
+      "dative"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "Du putzt ___ die Zähne.",
+        "answer": "dir",
+        "accepted": [],
+        "word_pool": [
+          "dir",
+          "dich",
+          "sich",
+          "mir",
+          "euch"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7047,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 4,
+    "tags": [
+      "reflexive",
+      "dative"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "Er schneidet ___ die Haare.",
+        "answer": "sich",
+        "accepted": [],
+        "word_pool": [
+          "sich",
+          "ihm",
+          "ihr",
+          "uns",
+          "euch"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7048,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 4,
+    "tags": [
+      "reflexive",
+      "dative"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "Sie merkt ___ alles.",
+        "answer": "sich",
+        "accepted": [],
+        "word_pool": [
+          "sich",
+          "ihr",
+          "uns",
+          "euch",
+          "mich"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7049,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 3,
+    "tags": [
+      "reflexive",
+      "accusative"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "Interessieren Sie ___ für Musik?",
+        "answer": "sich",
+        "accepted": [],
+        "word_pool": [
+          "sich",
+          "Ihnen",
+          "uns",
+          "euch",
+          "mich"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7050,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 3,
+    "tags": [
+      "reflexive",
+      "accusative"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "Wir langweilen ___.",
+        "answer": "uns",
+        "accepted": [],
+        "word_pool": [
+          "uns",
+          "euch",
+          "sich",
+          "mich",
+          "dich"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7051,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 3,
+    "tags": [
+      "reflexive",
+      "accusative"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "Ihr ärgert ___ über den Regen.",
+        "answer": "euch",
+        "accepted": [],
+        "word_pool": [
+          "euch",
+          "uns",
+          "sich",
+          "dich",
+          "mich"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7052,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 3,
+    "tags": [
+      "reflexive",
+      "accusative"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "Stell ___ bitte vor.",
+        "answer": "dich",
+        "accepted": [],
+        "word_pool": [
+          "dich",
+          "dir",
+          "mich",
+          "uns",
+          "sich"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7053,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 4,
+    "tags": [
+      "reflexive",
+      "dative"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "Wir stellen ___ die Zukunft vor.",
+        "answer": "uns",
+        "accepted": [],
+        "word_pool": [
+          "uns",
+          "euch",
+          "sich",
+          "mich",
+          "dich"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7054,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 4,
+    "tags": [
+      "demonstrative"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "___ Buch hier ist sehr spannend.",
+        "answer": "Dieses",
+        "accepted": [],
+        "word_pool": [
+          "Dieses",
+          "Dieses",
+          "Jenes",
+          "Solches",
+          "Welches"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7055,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 4,
+    "tags": [
+      "demonstrative"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "Kennst du ___ Leute?",
+        "answer": "diese",
+        "accepted": [],
+        "word_pool": [
+          "diese",
+          "dieser",
+          "diesem",
+          "diesen",
+          "jener"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7056,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 4,
+    "tags": [
+      "demonstrative"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "Ich mag ___ Äpfel nicht.",
+        "answer": "solche",
+        "accepted": [],
+        "word_pool": [
+          "solche",
+          "welche",
+          "diese",
+          "jene",
+          "manche"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7057,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 4,
+    "tags": [
+      "demonstrative"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "Es ist immer ___.",
+        "answer": "dasselbe",
+        "accepted": [],
+        "word_pool": [
+          "dasselbe",
+          "dieselbe",
+          "derselbe",
+          "gleiche",
+          "selbe"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7058,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 4,
+    "tags": [
+      "demonstrative",
+      "accusative"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "Ich nehme ___ Wein.",
+        "answer": "diesen",
+        "accepted": [],
+        "word_pool": [
+          "diesen",
+          "dieser",
+          "diesem",
+          "dieses",
+          "jenen"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7059,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 4,
+    "tags": [
+      "demonstrative",
+      "dative"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "In ___ Moment kam er herein.",
+        "answer": "diesem",
+        "accepted": [],
+        "word_pool": [
+          "diesem",
+          "diesen",
+          "dieser",
+          "dieses",
+          "jenem"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7060,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 4,
+    "tags": [
+      "demonstrative"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "Was hältst du von ___ Idee?",
+        "answer": "jener",
+        "accepted": [],
+        "word_pool": [
+          "jener",
+          "dieser",
+          "solcher",
+          "welcher",
+          "jener"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7061,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 4,
+    "tags": [
+      "demonstrative"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "___ Frau kenne ich schon lange.",
+        "answer": "Dieselbe",
+        "accepted": [],
+        "word_pool": [
+          "Dieselbe",
+          "Derselbe",
+          "Dasselbe",
+          "Diese",
+          "Jene"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7062,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 4,
+    "tags": [
+      "demonstrative"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "Wir wohnen im ___ Haus.",
+        "answer": "selben",
+        "accepted": [],
+        "word_pool": [
+          "selben",
+          "gleichen",
+          "diesem",
+          "jenem",
+          "solchem"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7063,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 4,
+    "tags": [
+      "demonstrative"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "___ Schuhe sind zu teuer.",
+        "answer": "Jene",
+        "accepted": [],
+        "word_pool": [
+          "Jene",
+          "Diese",
+          "Solche",
+          "Welche",
+          "Manche"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7064,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 4,
+    "tags": [
+      "demonstrative"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "Hast du schon mal ___ Wetter erlebt?",
+        "answer": "solches",
+        "accepted": [],
+        "word_pool": [
+          "solches",
+          "dieses",
+          "jenes",
+          "welches",
+          "manches"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7065,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 4,
+    "tags": [
+      "demonstrative"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "___ hier ist mein Platz.",
+        "answer": "Dieser",
+        "accepted": [],
+        "word_pool": [
+          "Dieser",
+          "Diese",
+          "Dieses",
+          "Jener",
+          "Der"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7066,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 4,
+    "tags": [
+      "demonstrative"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "Ich habe ___ Problem gelöst.",
+        "answer": "dasselbe",
+        "accepted": [],
+        "word_pool": [
+          "dasselbe",
+          "derselbe",
+          "dieselbe",
+          "dieses",
+          "jenes"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7067,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 3,
+    "tags": [
+      "relative",
+      "nominative"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "Der Mann, ___ dort steht, ist mein Onkel.",
+        "answer": "der",
+        "accepted": [],
+        "word_pool": [
+          "der",
+          "den",
+          "dem",
+          "dessen",
+          "welcher"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7068,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 3,
+    "tags": [
+      "relative",
+      "nominative"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "Das Auto, ___ dort parkt, ist neu.",
+        "answer": "das",
+        "accepted": [],
+        "word_pool": [
+          "das",
+          "der",
+          "die",
+          "dessen",
+          "welches"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7069,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 3,
+    "tags": [
+      "relative",
+      "nominative"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "Die Frau, ___ gestern hier war, ist Ärztin.",
+        "answer": "die",
+        "accepted": [],
+        "word_pool": [
+          "die",
+          "der",
+          "das",
+          "deren",
+          "welche"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7070,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 4,
+    "tags": [
+      "relative",
+      "dative"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "Das ist das Kind, ___ ich geholfen habe.",
+        "answer": "dem",
+        "accepted": [],
+        "word_pool": [
+          "dem",
+          "den",
+          "der",
+          "das",
+          "welchem"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7071,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 4,
+    "tags": [
+      "relative",
+      "dative"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "Die Leute, ___ wir begegnet sind, waren nett.",
+        "answer": "denen",
+        "accepted": [],
+        "word_pool": [
+          "denen",
+          "die",
+          "den",
+          "der",
+          "welchen"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7072,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 5,
+    "tags": [
+      "relative",
+      "genitive"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "Der Autor, ___ Buch ich lese, ist berühmt.",
+        "answer": "dessen",
+        "accepted": [],
+        "word_pool": [
+          "dessen",
+          "der",
+          "den",
+          "dem",
+          "welches"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7073,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 5,
+    "tags": [
+      "relative",
+      "genitive"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "Die Stadt, ___ Kirchen alt sind, ist schön.",
+        "answer": "deren",
+        "accepted": [],
+        "word_pool": [
+          "deren",
+          "die",
+          "der",
+          "derer",
+          "welcher"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7074,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 4,
+    "tags": [
+      "relative",
+      "accusative"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "Das Buch, ___ du mir geschenkt hast, ist toll.",
+        "answer": "das",
+        "accepted": [],
+        "word_pool": [
+          "das",
+          "der",
+          "dem",
+          "dessen",
+          "welches"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7075,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 4,
+    "tags": [
+      "relative",
+      "accusative"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "Die Freunde, ___ ich eingeladen habe, kommen.",
+        "answer": "die",
+        "accepted": [],
+        "word_pool": [
+          "die",
+          "denen",
+          "der",
+          "den",
+          "welche"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7076,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 4,
+    "tags": [
+      "relative",
+      "nominative"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "Alles, ___ glänzt, ist nicht Gold.",
+        "answer": "was",
+        "accepted": [],
+        "word_pool": [
+          "was",
+          "das",
+          "welches",
+          "der",
+          "die"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7077,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 4,
+    "tags": [
+      "relative",
+      "nominative"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "Das ist etwas, ___ ich nicht mag.",
+        "answer": "was",
+        "accepted": [],
+        "word_pool": [
+          "was",
+          "das",
+          "welches",
+          "der",
+          "die"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7078,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 4,
+    "tags": [
+      "relative",
+      "accusative"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "Der Brief, ___ ich geschrieben habe, ist weg.",
+        "answer": "den",
+        "accepted": [],
+        "word_pool": [
+          "den",
+          "der",
+          "dem",
+          "das",
+          "welcher"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7079,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 4,
+    "tags": [
+      "relative",
+      "dative"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "Die Frau, ___ das Kind gehört, ist hier.",
+        "answer": "der",
+        "accepted": [],
+        "word_pool": [
+          "der",
+          "die",
+          "dem",
+          "deren",
+          "welcher"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7080,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 2,
+    "tags": [
+      "interrogative"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "___ ist das?",
+        "answer": "Was",
+        "accepted": [],
+        "word_pool": [
+          "Was",
+          "Wer",
+          "Wie",
+          "Warum",
+          "Wann"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7081,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 2,
+    "tags": [
+      "interrogative"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "___ klopft an die Tür?",
+        "answer": "Wer",
+        "accepted": [],
+        "word_pool": [
+          "Wer",
+          "Was",
+          "Wie",
+          "Wo",
+          "Wann"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7082,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 3,
+    "tags": [
+      "interrogative",
+      "accusative"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "___ suchst du?",
+        "answer": "Wen",
+        "accepted": [],
+        "word_pool": [
+          "Wen",
+          "Wer",
+          "Wem",
+          "Was",
+          "Wie"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7083,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 3,
+    "tags": [
+      "interrogative",
+      "dative"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "___ hast du gedankt?",
+        "answer": "Wem",
+        "accepted": [],
+        "word_pool": [
+          "Wem",
+          "Wer",
+          "Wen",
+          "Was",
+          "Wie"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7084,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 3,
+    "tags": [
+      "interrogative"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "___ Farbe gefällt dir besser?",
+        "answer": "Welche",
+        "accepted": [],
+        "word_pool": [
+          "Welche",
+          "Was",
+          "Wer",
+          "Wie",
+          "Wo"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7085,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 3,
+    "tags": [
+      "interrogative"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "___ für ein Buch ist das?",
+        "answer": "Was",
+        "accepted": [],
+        "word_pool": [
+          "Was",
+          "Wer",
+          "Wie",
+          "Wo",
+          "Welches"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7086,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 4,
+    "tags": [
+      "interrogative",
+      "genitive"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "___ Auto ist das?",
+        "answer": "Wessen",
+        "accepted": [],
+        "word_pool": [
+          "Wessen",
+          "Wem",
+          "Wen",
+          "Wer",
+          "Was"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7087,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 3,
+    "tags": [
+      "interrogative"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "___ hast du gemacht?",
+        "answer": "Was",
+        "accepted": [],
+        "word_pool": [
+          "Was",
+          "Wer",
+          "Wie",
+          "Wo",
+          "Wann"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7088,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 3,
+    "tags": [
+      "interrogative"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "___ kommt heute zu Besuch?",
+        "answer": "Wer",
+        "accepted": [],
+        "word_pool": [
+          "Wer",
+          "Was",
+          "Wie",
+          "Wo",
+          "Wen"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7089,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 3,
+    "tags": [
+      "interrogative",
+      "accusative"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "___ meinst du damit?",
+        "answer": "Wen",
+        "accepted": [],
+        "word_pool": [
+          "Wen",
+          "Wer",
+          "Was",
+          "Wie",
+          "Wem"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7090,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 3,
+    "tags": [
+      "interrogative",
+      "dative"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "___ hast du das gesagt?",
+        "answer": "Wem",
+        "accepted": [],
+        "word_pool": [
+          "Wem",
+          "Wer",
+          "Wen",
+          "Was",
+          "Wie"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7091,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 3,
+    "tags": [
+      "interrogative"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "___ Weg führt zum Bahnhof?",
+        "answer": "Welcher",
+        "accepted": [],
+        "word_pool": [
+          "Welcher",
+          "Was",
+          "Wer",
+          "Wie",
+          "Wo"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7092,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 3,
+    "tags": [
+      "interrogative"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "___ für Leute sind das?",
+        "answer": "Was",
+        "accepted": [],
+        "word_pool": [
+          "Was",
+          "Welche",
+          "Wer",
+          "Wie",
+          "Wo"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7093,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 3,
+    "tags": [
+      "indefinite"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "___ darf hier nicht rauchen.",
+        "answer": "Man",
+        "accepted": [],
+        "word_pool": [
+          "Man",
+          "Jemand",
+          "Niemand",
+          "Alles",
+          "Etwas"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7094,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 3,
+    "tags": [
+      "indefinite"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "Hast du ___ gesehen?",
+        "answer": "jemanden",
+        "accepted": [],
+        "word_pool": [
+          "jemanden",
+          "niemand",
+          "etwas",
+          "alles",
+          "manches"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7095,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 3,
+    "tags": [
+      "indefinite"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "Ich habe ___ gehört.",
+        "answer": "nichts",
+        "accepted": [],
+        "word_pool": [
+          "nichts",
+          "etwas",
+          "alles",
+          "jemand",
+          "niemand"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7096,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 3,
+    "tags": [
+      "indefinite"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "___ ist unmöglich.",
+        "answer": "Nichts",
+        "accepted": [],
+        "word_pool": [
+          "Nichts",
+          "Alles",
+          "Etwas",
+          "Manches",
+          "Jedes"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7097,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 3,
+    "tags": [
+      "indefinite"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "___ weiß das.",
+        "answer": "Jeder",
+        "accepted": [],
+        "word_pool": [
+          "Jeder",
+          "Alle",
+          "Mancher",
+          "Keiner",
+          "Jemand"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7098,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 3,
+    "tags": [
+      "indefinite"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "___ sind gekommen.",
+        "answer": "Einige",
+        "accepted": [],
+        "word_pool": [
+          "Einige",
+          "Manche",
+          "Alle",
+          "Jeder",
+          "Keiner"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7099,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 3,
+    "tags": [
+      "indefinite"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "Ich möchte ___ essen.",
+        "answer": "etwas",
+        "accepted": [],
+        "word_pool": [
+          "etwas",
+          "nichts",
+          "alles",
+          "manches",
+          "jedes"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7100,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 3,
+    "tags": [
+      "indefinite"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "___ hat geholfen.",
+        "answer": "Niemand",
+        "accepted": [],
+        "word_pool": [
+          "Niemand",
+          "Jemand",
+          "Alles",
+          "Keiner",
+          "Alles"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7101,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 3,
+    "tags": [
+      "indefinite"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "___ haben Angst.",
+        "answer": "Manche",
+        "accepted": [],
+        "word_pool": [
+          "Manche",
+          "Einige",
+          "Alle",
+          "Jeder",
+          "Keiner"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7102,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 3,
+    "tags": [
+      "indefinite"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "Kann mir ___ helfen?",
+        "answer": "jemand",
+        "accepted": [],
+        "word_pool": [
+          "jemand",
+          "niemand",
+          "etwas",
+          "alles",
+          "jeder"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7103,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 3,
+    "tags": [
+      "indefinite"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "___ ist in Ordnung.",
+        "answer": "Alles",
+        "accepted": [],
+        "word_pool": [
+          "Alles",
+          "Nichts",
+          "Etwas",
+          "Manches",
+          "Jedes"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7104,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 3,
+    "tags": [
+      "indefinite"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "Er hat ___ zu sagen.",
+        "answer": "nichts",
+        "accepted": [],
+        "word_pool": [
+          "nichts",
+          "etwas",
+          "alles",
+          "manches",
+          "jedes"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7105,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 3,
+    "tags": [
+      "indefinite"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "de"
+    },
+    "translations": {
+      "de": {
+        "prompt": "Wir haben ___ Zeit.",
+        "answer": "wenig",
+        "accepted": [],
+        "word_pool": [
+          "wenig",
+          "viel",
+          "manche",
+          "einige",
+          "alle"
+        ]
+      }
+    }
+  }
+]
