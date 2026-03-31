@@ -1,0 +1,3230 @@
+[
+  {
+    "id": 8001,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 1,
+    "tags": [
+      "personal",
+      "subject",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "___ heb een broer. Hij heet Lucas.",
+        "answer": "Ik",
+        "accepted": [],
+        "word_pool": [
+          "Ik",
+          "Jij",
+          "Hij",
+          "Wij",
+          "Jullie"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8002,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 1,
+    "tags": [
+      "personal",
+      "subject",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "Waar kom ___ vandaan?",
+        "answer": "jij",
+        "accepted": [
+          "je"
+        ],
+        "word_pool": [
+          "jij",
+          "hij",
+          "zij",
+          "wij",
+          "jullie"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8003,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 1,
+    "tags": [
+      "personal",
+      "subject",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "___ gaat naar de winkel.",
+        "answer": "Hij",
+        "accepted": [],
+        "word_pool": [
+          "Hij",
+          "Zij",
+          "Het",
+          "Wij",
+          "Jullie"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8004,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 1,
+    "tags": [
+      "personal",
+      "subject",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "___ wonen in Amsterdam.",
+        "answer": "Wij",
+        "accepted": [
+          "We"
+        ],
+        "word_pool": [
+          "Wij",
+          "Zij",
+          "Jullie",
+          "Ik",
+          "Hij"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8005,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 1,
+    "tags": [
+      "personal",
+      "subject",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "Komen ___ ook naar het feest?",
+        "answer": "jullie",
+        "accepted": [],
+        "word_pool": [
+          "jullie",
+          "wij",
+          "zij",
+          "ik",
+          "hij"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8006,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 1,
+    "tags": [
+      "personal",
+      "object",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "Kun je ___ even helpen?",
+        "answer": "mij",
+        "accepted": [
+          "me"
+        ],
+        "word_pool": [
+          "mij",
+          "jou",
+          "hem",
+          "haar",
+          "ons"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8007,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 1,
+    "tags": [
+      "personal",
+      "object",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "Ik zie ___ morgen op kantoor.",
+        "answer": "jou",
+        "accepted": [
+          "je"
+        ],
+        "word_pool": [
+          "jou",
+          "hem",
+          "haar",
+          "ons",
+          "jullie"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8008,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 2,
+    "tags": [
+      "personal",
+      "object",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "Heb je ___ gesproken?",
+        "answer": "hem",
+        "accepted": [],
+        "word_pool": [
+          "hem",
+          "haar",
+          "ons",
+          "jullie",
+          "hen"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8009,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 2,
+    "tags": [
+      "personal",
+      "object",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "We hebben ___ een cadeau gegeven.",
+        "answer": "haar",
+        "accepted": [],
+        "word_pool": [
+          "haar",
+          "hem",
+          "ons",
+          "hen",
+          "hun"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8010,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 2,
+    "tags": [
+      "personal",
+      "object",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "Kom je bij ___ eten?",
+        "answer": "ons",
+        "accepted": [],
+        "word_pool": [
+          "ons",
+          "mij",
+          "jou",
+          "haar",
+          "jullie"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8011,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 2,
+    "tags": [
+      "personal",
+      "object",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "Ik bel ___ straks wel.",
+        "answer": "jullie",
+        "accepted": [],
+        "word_pool": [
+          "jullie",
+          "hen",
+          "hun",
+          "zij",
+          "ons"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8012,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 2,
+    "tags": [
+      "personal",
+      "object",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "Heb je ___ al uitgenodigd?",
+        "answer": "hen",
+        "accepted": [
+          "hun"
+        ],
+        "word_pool": [
+          "hen",
+          "hun",
+          "zij",
+          "haar",
+          "hem"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8013,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 1,
+    "tags": [
+      "personal",
+      "subject",
+      "formal",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "Hoe gaat het met ___, meneer Jansen?",
+        "answer": "u",
+        "accepted": [],
+        "word_pool": [
+          "u",
+          "jij",
+          "je",
+          "hij",
+          "zij"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8014,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 1,
+    "tags": [
+      "personal",
+      "subject",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "___ regent het vandaag.",
+        "answer": "Het",
+        "accepted": [],
+        "word_pool": [
+          "Het",
+          "Hij",
+          "Zij",
+          "Wij",
+          "Jullie"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8015,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 2,
+    "tags": [
+      "personal",
+      "subject",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "___ zijn mijn beste vrienden.",
+        "answer": "Zij",
+        "accepted": [
+          "Ze"
+        ],
+        "word_pool": [
+          "Zij",
+          "Hij",
+          "Wij",
+          "Het",
+          "Jullie"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8016,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 2,
+    "tags": [
+      "possessive",
+      "ownership",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "Dat is ___ auto.",
+        "answer": "mijn",
+        "accepted": [],
+        "word_pool": [
+          "mijn",
+          "jouw",
+          "zijn",
+          "haar",
+          "onze"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8017,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 2,
+    "tags": [
+      "possessive",
+      "ownership",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "Is dit ___ boek?",
+        "answer": "jouw",
+        "accepted": [
+          "je"
+        ],
+        "word_pool": [
+          "jouw",
+          "zijn",
+          "haar",
+          "onze",
+          "hun"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8018,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 2,
+    "tags": [
+      "possessive",
+      "ownership",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "Zij zoekt ___ sleutels.",
+        "answer": "haar",
+        "accepted": [],
+        "word_pool": [
+          "haar",
+          "zijn",
+          "mijn",
+          "jouw",
+          "onze"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8019,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 2,
+    "tags": [
+      "possessive",
+      "ownership",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "Hij heeft ___ jas aan.",
+        "answer": "zijn",
+        "accepted": [],
+        "word_pool": [
+          "zijn",
+          "haar",
+          "mijn",
+          "jouw",
+          "hun"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8020,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 2,
+    "tags": [
+      "possessive",
+      "ownership",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "Dit is ___ huis.",
+        "answer": "ons",
+        "accepted": [],
+        "word_pool": [
+          "ons",
+          "onze",
+          "mijn",
+          "jouw",
+          "zijn"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8021,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 2,
+    "tags": [
+      "possessive",
+      "ownership",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "Dit is ___ tuin.",
+        "answer": "onze",
+        "accepted": [],
+        "word_pool": [
+          "onze",
+          "ons",
+          "mijn",
+          "jouw",
+          "hun"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8022,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 2,
+    "tags": [
+      "possessive",
+      "ownership",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "Hebben jullie ___ huiswerk gedaan?",
+        "answer": "jullie",
+        "accepted": [
+          "je"
+        ],
+        "word_pool": [
+          "jullie",
+          "onze",
+          "hun",
+          "zijn",
+          "haar"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8023,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 2,
+    "tags": [
+      "possessive",
+      "ownership",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "Zij wonen daar. Dat is ___ huis.",
+        "answer": "hun",
+        "accepted": [],
+        "word_pool": [
+          "hun",
+          "haar",
+          "zijn",
+          "onze",
+          "jullie"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8024,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 3,
+    "tags": [
+      "possessive",
+      "ownership",
+      "formal",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "Is dit ___ tas, mevrouw?",
+        "answer": "uw",
+        "accepted": [],
+        "word_pool": [
+          "uw",
+          "jouw",
+          "mijn",
+          "haar",
+          "zijn"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8025,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 4,
+    "tags": [
+      "possessive",
+      "ownership",
+      "independent",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "Is deze fiets van jou? Nee, die is de ___.",
+        "answer": "mijne",
+        "accepted": [],
+        "word_pool": [
+          "mijne",
+          "jouwe",
+          "zijne",
+          "hare",
+          "onze"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8026,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 4,
+    "tags": [
+      "possessive",
+      "ownership",
+      "independent",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "Dit boek is niet van mij. Het is het ___.",
+        "answer": "jouwe",
+        "accepted": [],
+        "word_pool": [
+          "jouwe",
+          "mijne",
+          "zijne",
+          "hare",
+          "hunne"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8027,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 4,
+    "tags": [
+      "possessive",
+      "ownership",
+      "independent",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "Deze koffer is de ___.",
+        "answer": "zijne",
+        "accepted": [],
+        "word_pool": [
+          "zijne",
+          "hare",
+          "mijne",
+          "jouwe",
+          "onze"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8028,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 4,
+    "tags": [
+      "possessive",
+      "ownership",
+      "independent",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "Die tas is de ___.",
+        "answer": "hare",
+        "accepted": [],
+        "word_pool": [
+          "hare",
+          "zijne",
+          "hunne",
+          "mijne",
+          "jouwe"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8029,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 4,
+    "tags": [
+      "possessive",
+      "ownership",
+      "independent",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "Dit huis is het ___.",
+        "answer": "hunne",
+        "accepted": [],
+        "word_pool": [
+          "hunne",
+          "onze",
+          "mijne",
+          "jouwe",
+          "zijne"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8030,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 4,
+    "tags": [
+      "possessive",
+      "ownership",
+      "independent",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "Deze kinderen zijn de ___.",
+        "answer": "onze",
+        "accepted": [],
+        "word_pool": [
+          "onze",
+          "hunne",
+          "zijne",
+          "hare",
+          "mijne"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8031,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 3,
+    "tags": [
+      "reflexive",
+      "self-reference",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "Ik herinner ___ dat niet.",
+        "answer": "me",
+        "accepted": [
+          "mij"
+        ],
+        "word_pool": [
+          "me",
+          "je",
+          "zich",
+          "ons",
+          "u"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8032,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 3,
+    "tags": [
+      "reflexive",
+      "self-reference",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "Je moet ___ niet te druk maken.",
+        "answer": "je",
+        "accepted": [],
+        "word_pool": [
+          "je",
+          "me",
+          "zich",
+          "ons",
+          "u"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8033,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 3,
+    "tags": [
+      "reflexive",
+      "self-reference",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "Hij wast ___ elke ochtend.",
+        "answer": "zich",
+        "accepted": [],
+        "word_pool": [
+          "zich",
+          "me",
+          "je",
+          "ons",
+          "hem"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8034,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 3,
+    "tags": [
+      "reflexive",
+      "self-reference",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "Zij gedraagt ___ altijd goed.",
+        "answer": "zich",
+        "accepted": [],
+        "word_pool": [
+          "zich",
+          "haar",
+          "me",
+          "je",
+          "ons"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8035,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 3,
+    "tags": [
+      "reflexive",
+      "self-reference",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "Wij amuseren ___ prima op vakantie.",
+        "answer": "ons",
+        "accepted": [],
+        "word_pool": [
+          "ons",
+          "me",
+          "je",
+          "zich",
+          "jullie"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8036,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 3,
+    "tags": [
+      "reflexive",
+      "self-reference",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "Jullie vergissen ___.",
+        "answer": "je",
+        "accepted": [],
+        "word_pool": [
+          "je",
+          "jullie",
+          "me",
+          "zich",
+          "ons"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8037,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 3,
+    "tags": [
+      "reflexive",
+      "self-reference",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "Zij schamen ___ voor hun fouten.",
+        "answer": "zich",
+        "accepted": [],
+        "word_pool": [
+          "zich",
+          "hun",
+          "hen",
+          "ons",
+          "je"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8038,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 3,
+    "tags": [
+      "reflexive",
+      "self-reference",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "U moet ___ even voorstellen, meneer.",
+        "answer": "u",
+        "accepted": [
+          "zich"
+        ],
+        "word_pool": [
+          "u",
+          "zich",
+          "je",
+          "me",
+          "ons"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8039,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 4,
+    "tags": [
+      "reflexive",
+      "self-reference",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "Ik scheer ___ elke dag.",
+        "answer": "me",
+        "accepted": [
+          "mij"
+        ],
+        "word_pool": [
+          "me",
+          "mij",
+          "je",
+          "zich",
+          "ons"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8040,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 4,
+    "tags": [
+      "reflexive",
+      "self-reference",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "Het kind verveelt ___ nooit.",
+        "answer": "zich",
+        "accepted": [],
+        "word_pool": [
+          "zich",
+          "me",
+          "je",
+          "ons",
+          "hem"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8041,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 4,
+    "tags": [
+      "reflexive",
+      "self-reference",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "Wij haasten ___ naar station.",
+        "answer": "ons",
+        "accepted": [],
+        "word_pool": [
+          "ons",
+          "me",
+          "je",
+          "zich",
+          "jullie"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8042,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 4,
+    "tags": [
+      "reflexive",
+      "self-reference",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "U heeft ___ gisteren niet gemeld.",
+        "answer": "u",
+        "accepted": [
+          "zich"
+        ],
+        "word_pool": [
+          "u",
+          "zich",
+          "je",
+          "me",
+          "ons"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8043,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 4,
+    "tags": [
+      "reflexive",
+      "self-reference",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "Zij interesseren ___ voor kunst.",
+        "answer": "zich",
+        "accepted": [],
+        "word_pool": [
+          "zich",
+          "ons",
+          "jullie",
+          "me",
+          "je"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8044,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 4,
+    "tags": [
+      "reflexive",
+      "self-reference",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "Bereid ___ goed voor op het examen.",
+        "answer": "je",
+        "accepted": [],
+        "word_pool": [
+          "je",
+          "me",
+          "ons",
+          "u",
+          "zich"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8045,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 4,
+    "tags": [
+      "reflexive",
+      "self-reference",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "Ik maak ___ zorgen over de toekomst.",
+        "answer": "me",
+        "accepted": [
+          "mij"
+        ],
+        "word_pool": [
+          "me",
+          "mij",
+          "je",
+          "zich",
+          "ons"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8046,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 2,
+    "tags": [
+      "demonstrative",
+      "pointing",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "___ boek hier is erg spannend.",
+        "answer": "Dit",
+        "accepted": [],
+        "word_pool": [
+          "Dit",
+          "Dat",
+          "Deze",
+          "Die",
+          "Wat"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8047,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 2,
+    "tags": [
+      "demonstrative",
+      "pointing",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "Wil je ___ krant daar even aangeven?",
+        "answer": "die",
+        "accepted": [],
+        "word_pool": [
+          "die",
+          "deze",
+          "dit",
+          "dat",
+          "welke"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8048,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 2,
+    "tags": [
+      "demonstrative",
+      "pointing",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "___ schoenen zitten erg lekker.",
+        "answer": "Deze",
+        "accepted": [],
+        "word_pool": [
+          "Deze",
+          "Die",
+          "Dit",
+          "Dat",
+          "Wat"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8049,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 2,
+    "tags": [
+      "demonstrative",
+      "pointing",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "Kijk naar ___ vliegtuig in de lucht.",
+        "answer": "dat",
+        "accepted": [],
+        "word_pool": [
+          "dat",
+          "dit",
+          "deze",
+          "die",
+          "wat"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8050,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 3,
+    "tags": [
+      "demonstrative",
+      "pointing",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "___ zijn mijn favoriete bloemen.",
+        "answer": "Dit",
+        "accepted": [
+          "Deze"
+        ],
+        "word_pool": [
+          "Dit",
+          "Deze",
+          "Dat",
+          "Die",
+          "Wat"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8051,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 3,
+    "tags": [
+      "demonstrative",
+      "pointing",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "___ waren de mooiste dagen van mijn leven.",
+        "answer": "Dat",
+        "accepted": [
+          "Die"
+        ],
+        "word_pool": [
+          "Dat",
+          "Die",
+          "Dit",
+          "Deze",
+          "Wat"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8052,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 3,
+    "tags": [
+      "demonstrative",
+      "pointing",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "Ik kies voor ___ hier.",
+        "answer": "deze",
+        "accepted": [],
+        "word_pool": [
+          "deze",
+          "die",
+          "dit",
+          "dat",
+          "welke"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8053,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 3,
+    "tags": [
+      "demonstrative",
+      "pointing",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "Heb je ___ al gezien?",
+        "answer": "dat",
+        "accepted": [],
+        "word_pool": [
+          "dat",
+          "dit",
+          "deze",
+          "die",
+          "wat"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8054,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 4,
+    "tags": [
+      "demonstrative",
+      "pointing",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "In ___ tijd was alles anders.",
+        "answer": "die",
+        "accepted": [],
+        "word_pool": [
+          "die",
+          "deze",
+          "dat",
+          "dit",
+          "wat"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8055,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 4,
+    "tags": [
+      "demonstrative",
+      "pointing",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "___ keer had hij geluk.",
+        "answer": "Deze",
+        "accepted": [],
+        "word_pool": [
+          "Deze",
+          "Die",
+          "Dit",
+          "Dat",
+          "Wat"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8056,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 4,
+    "tags": [
+      "demonstrative",
+      "pointing",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "___ van de twee wil je?",
+        "answer": "Welke",
+        "accepted": [],
+        "word_pool": [
+          "Welke",
+          "Deze",
+          "Die",
+          "Dit",
+          "Dat"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8057,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 5,
+    "tags": [
+      "demonstrative",
+      "pointing",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "Hij houdt zich aan ___ afspraak.",
+        "answer": "deze",
+        "accepted": [],
+        "word_pool": [
+          "deze",
+          "die",
+          "dit",
+          "dat",
+          "wat"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8058,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 5,
+    "tags": [
+      "demonstrative",
+      "pointing",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "Ik kan niet leven met ___ gedachte.",
+        "answer": "die",
+        "accepted": [],
+        "word_pool": [
+          "die",
+          "deze",
+          "dat",
+          "dit",
+          "wat"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8059,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 5,
+    "tags": [
+      "demonstrative",
+      "pointing",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "Dat is ___ wat ik bedoelde.",
+        "answer": "precies",
+        "accepted": [],
+        "word_pool": [
+          "precies",
+          "dat",
+          "dit",
+          "wat",
+          "die"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8060,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 5,
+    "tags": [
+      "demonstrative",
+      "pointing",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "___ zijn de feiten.",
+        "answer": "Dit",
+        "accepted": [
+          "Dit"
+        ],
+        "word_pool": [
+          "Dit",
+          "Deze",
+          "Dat",
+          "Die",
+          "Wat"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8061,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 3,
+    "tags": [
+      "relative",
+      "linking",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "De man ___ daar loopt, is mijn leraar.",
+        "answer": "die",
+        "accepted": [],
+        "word_pool": [
+          "die",
+          "dat",
+          "wie",
+          "wat",
+          "welke"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8062,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 3,
+    "tags": [
+      "relative",
+      "linking",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "Het boek ___ op tafel ligt, is van mij.",
+        "answer": "dat",
+        "accepted": [],
+        "word_pool": [
+          "dat",
+          "die",
+          "wat",
+          "wie",
+          "welk"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8063,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 3,
+    "tags": [
+      "relative",
+      "linking",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "De mensen ___ we gisteren zagen, waren erg aardig.",
+        "answer": "die",
+        "accepted": [],
+        "word_pool": [
+          "die",
+          "dat",
+          "wie",
+          "wat",
+          "welke"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8064,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 4,
+    "tags": [
+      "relative",
+      "linking",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "Dat is alles ___ ik weet.",
+        "answer": "wat",
+        "accepted": [],
+        "word_pool": [
+          "wat",
+          "dat",
+          "die",
+          "wie",
+          "welk"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8065,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 4,
+    "tags": [
+      "relative",
+      "linking",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "Het is niet goud ___ er blinkt.",
+        "answer": "wat",
+        "accepted": [
+          "dat"
+        ],
+        "word_pool": [
+          "wat",
+          "dat",
+          "die",
+          "wie",
+          "welk"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8066,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 4,
+    "tags": [
+      "relative",
+      "linking",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "Dit is de man ___ zoon bij ons werkt.",
+        "answer": "wiens",
+        "accepted": [],
+        "word_pool": [
+          "wiens",
+          "wier",
+          "wie",
+          "die",
+          "dat"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8067,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 4,
+    "tags": [
+      "relative",
+      "linking",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "Dat is de vrouw ___ auto gestolen is.",
+        "answer": "wier",
+        "accepted": [
+          "wiens"
+        ],
+        "word_pool": [
+          "wier",
+          "wiens",
+          "wie",
+          "die",
+          "dat"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8068,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 4,
+    "tags": [
+      "relative",
+      "linking",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "Dat is degene ___ ik het meest vertrouw.",
+        "answer": "die",
+        "accepted": [
+          "wie"
+        ],
+        "word_pool": [
+          "die",
+          "wie",
+          "dat",
+          "wat",
+          "welke"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8069,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 4,
+    "tags": [
+      "relative",
+      "linking",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "Het huis ___ dak lekt, moet gerepareerd worden.",
+        "answer": "waarvan",
+        "accepted": [],
+        "word_pool": [
+          "waarvan",
+          "waarin",
+          "waarmee",
+          "waaroor",
+          "waaruit"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8070,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 4,
+    "tags": [
+      "relative",
+      "linking",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "De pen ___ ik schrijf, is nieuw.",
+        "answer": "waarmee",
+        "accepted": [],
+        "word_pool": [
+          "waarmee",
+          "waarin",
+          "waaruit",
+          "waarover",
+          "waaraan"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8071,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 4,
+    "tags": [
+      "relative",
+      "linking",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "Dit is iets ___ ik me zorgen om maak.",
+        "answer": "waar",
+        "accepted": [
+          "wat"
+        ],
+        "word_pool": [
+          "waar",
+          "wat",
+          "dat",
+          "die",
+          "wie"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8072,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 5,
+    "tags": [
+      "relative",
+      "linking",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "Degene ___ dit gedaan heeft, moet zich melden.",
+        "answer": "die",
+        "accepted": [],
+        "word_pool": [
+          "die",
+          "wie",
+          "welke",
+          "dat",
+          "wat"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8073,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 5,
+    "tags": [
+      "relative",
+      "linking",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "De plaats ___ wij wonen, is erg klein.",
+        "answer": "waar",
+        "accepted": [],
+        "word_pool": [
+          "waar",
+          "welke",
+          "waarin",
+          "die",
+          "dat"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8074,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 5,
+    "tags": [
+      "relative",
+      "linking",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "De reden ___ hij niet kwam, is onbekend.",
+        "answer": "waarom",
+        "accepted": [],
+        "word_pool": [
+          "waarom",
+          "waarover",
+          "waaraan",
+          "waarin",
+          "waaruit"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8075,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 5,
+    "tags": [
+      "relative",
+      "linking",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "Het is de mooiste film ___ ik ooit heb gezien.",
+        "answer": "die",
+        "accepted": [
+          "wat"
+        ],
+        "word_pool": [
+          "die",
+          "dat",
+          "wat",
+          "wie",
+          "welke"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8076,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 2,
+    "tags": [
+      "interrogative",
+      "questioning",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "___ is daar?",
+        "answer": "Wie",
+        "accepted": [],
+        "word_pool": [
+          "Wie",
+          "Wat",
+          "Welke",
+          "Waar",
+          "Wanneer"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8077,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 2,
+    "tags": [
+      "interrogative",
+      "questioning",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "___ heb je gedaan?",
+        "answer": "Wat",
+        "accepted": [],
+        "word_pool": [
+          "Wat",
+          "Wie",
+          "Welke",
+          "Waar",
+          "Wanneer"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8078,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 2,
+    "tags": [
+      "interrogative",
+      "questioning",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "___ jas is dit?",
+        "answer": "Wiens",
+        "accepted": [
+          "Wier"
+        ],
+        "word_pool": [
+          "Wiens",
+          "Wier",
+          "Welke",
+          "Wat",
+          "Wie"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8079,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 2,
+    "tags": [
+      "interrogative",
+      "questioning",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "___ van deze boeken wil je lezen?",
+        "answer": "Welke",
+        "accepted": [],
+        "word_pool": [
+          "Welke",
+          "Wat",
+          "Wie",
+          "Wiens",
+          "Wier"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8080,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 3,
+    "tags": [
+      "interrogative",
+      "questioning",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "___ voor auto heb je gekocht?",
+        "answer": "Wat",
+        "accepted": [],
+        "word_pool": [
+          "Wat",
+          "Welke",
+          "Wie",
+          "Hoe",
+          "Waar"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8081,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 3,
+    "tags": [
+      "interrogative",
+      "questioning",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "Tegen ___ heb je dat gezegd?",
+        "answer": "wie",
+        "accepted": [],
+        "word_pool": [
+          "wie",
+          "wat",
+          "welke",
+          "wiens",
+          "wier"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8082,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 3,
+    "tags": [
+      "interrogative",
+      "questioning",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "___ van jullie gaat er mee?",
+        "answer": "Wie",
+        "accepted": [],
+        "word_pool": [
+          "Wie",
+          "Wat",
+          "Welke",
+          "Wiens",
+          "Wier"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8083,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 3,
+    "tags": [
+      "interrogative",
+      "questioning",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "___ is je lievelingskleur?",
+        "answer": "Wat",
+        "accepted": [
+          "Welke"
+        ],
+        "word_pool": [
+          "Wat",
+          "Welke",
+          "Wie",
+          "Waar",
+          "Wanneer"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8084,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 4,
+    "tags": [
+      "interrogative",
+      "questioning",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "___ is de hoofdstad van Nederland?",
+        "answer": "Wat",
+        "accepted": [],
+        "word_pool": [
+          "Wat",
+          "Welke",
+          "Wie",
+          "Waar",
+          "Hoe"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8085,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 4,
+    "tags": [
+      "interrogative",
+      "questioning",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "Met ___ ben je naar de film geweest?",
+        "answer": "wie",
+        "accepted": [],
+        "word_pool": [
+          "wie",
+          "wat",
+          "welke",
+          "wiens",
+          "wier"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8086,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 4,
+    "tags": [
+      "interrogative",
+      "questioning",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "___ zijn deze sleutels?",
+        "answer": "Wiens",
+        "accepted": [
+          "Wier"
+        ],
+        "word_pool": [
+          "Wiens",
+          "Wier",
+          "Welke",
+          "Wat",
+          "Wie"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8087,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 4,
+    "tags": [
+      "interrogative",
+      "questioning",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "In ___ jaar is hij geboren?",
+        "answer": "welk",
+        "accepted": [],
+        "word_pool": [
+          "welk",
+          "welke",
+          "wat",
+          "wie",
+          "waar"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8088,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 5,
+    "tags": [
+      "interrogative",
+      "questioning",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "Over ___ hebben jullie het?",
+        "answer": "wie",
+        "accepted": [
+          "wat"
+        ],
+        "word_pool": [
+          "wie",
+          "wat",
+          "welke",
+          "wiens",
+          "wier"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8089,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 5,
+    "tags": [
+      "interrogative",
+      "questioning",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "___ van de twee is groter?",
+        "answer": "Welke",
+        "accepted": [
+          "Wie"
+        ],
+        "word_pool": [
+          "Welke",
+          "Wie",
+          "Wat",
+          "Wiens",
+          "Hoe"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8090,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 5,
+    "tags": [
+      "interrogative",
+      "questioning",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "Aan ___ denk je?",
+        "answer": "wie",
+        "accepted": [
+          "wat"
+        ],
+        "word_pool": [
+          "wie",
+          "wat",
+          "welke",
+          "wiens",
+          "wier"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8091,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 2,
+    "tags": [
+      "indefinite",
+      "general",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "___ moet hier voorzichtig zijn.",
+        "answer": "Men",
+        "accepted": [
+          "Je"
+        ],
+        "word_pool": [
+          "Men",
+          "Je",
+          "We",
+          "Iemand",
+          "Iedereen"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8092,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 2,
+    "tags": [
+      "indefinite",
+      "general",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "Er klopt ___ aan de deur.",
+        "answer": "iemand",
+        "accepted": [],
+        "word_pool": [
+          "iemand",
+          "niemand",
+          "iedereen",
+          "iets",
+          "niets"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8093,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 2,
+    "tags": [
+      "indefinite",
+      "general",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "___ heeft de telefoon opgenomen.",
+        "answer": "Niemand",
+        "accepted": [],
+        "word_pool": [
+          "Niemand",
+          "Iemand",
+          "Iedereen",
+          "Iets",
+          "Niets"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8094,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 2,
+    "tags": [
+      "indefinite",
+      "general",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "Wil je ___ eten?",
+        "answer": "iets",
+        "accepted": [],
+        "word_pool": [
+          "iets",
+          "niets",
+          "alles",
+          "wat",
+          "iemand"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8095,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 2,
+    "tags": [
+      "indefinite",
+      "general",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "Ik heb ___ gehoord.",
+        "answer": "niets",
+        "accepted": [],
+        "word_pool": [
+          "niets",
+          "iets",
+          "alles",
+          "wat",
+          "niemand"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8096,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 3,
+    "tags": [
+      "indefinite",
+      "general",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "___ is welkom op het feest.",
+        "answer": "Iedereen",
+        "accepted": [
+          "Ieder"
+        ],
+        "word_pool": [
+          "Iedereen",
+          "Ieder",
+          "Iemand",
+          "Niemand",
+          "Alles"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8097,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 3,
+    "tags": [
+      "indefinite",
+      "general",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "___ komt goed.",
+        "answer": "Alles",
+        "accepted": [
+          "Het"
+        ],
+        "word_pool": [
+          "Alles",
+          "Niets",
+          "Iets",
+          "Wat",
+          "Iedereen"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8098,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 3,
+    "tags": [
+      "indefinite",
+      "general",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "___ mensen houden van regen.",
+        "answer": "Sommige",
+        "accepted": [
+          "Sommigen"
+        ],
+        "word_pool": [
+          "Sommige",
+          "Vele",
+          "Alle",
+          "Geen",
+          "Iedere"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8099,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 3,
+    "tags": [
+      "indefinite",
+      "general",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "Er zijn ___ oplossingen mogelijk.",
+        "answer": "vele",
+        "accepted": [
+          "veel"
+        ],
+        "word_pool": [
+          "vele",
+          "sommige",
+          "alle",
+          "geen",
+          "iedere"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8100,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 3,
+    "tags": [
+      "indefinite",
+      "general",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "Heeft ___ mijn bril gezien?",
+        "answer": "iemand",
+        "accepted": [],
+        "word_pool": [
+          "iemand",
+          "niemand",
+          "iedereen",
+          "iets",
+          "niets"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8101,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 4,
+    "tags": [
+      "indefinite",
+      "general",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "Ik heb ___ te verbergen.",
+        "answer": "niets",
+        "accepted": [],
+        "word_pool": [
+          "niets",
+          "iets",
+          "alles",
+          "wat",
+          "niemand"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8102,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 4,
+    "tags": [
+      "indefinite",
+      "general",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "___ weet wat de toekomst brengt.",
+        "answer": "Niemand",
+        "accepted": [],
+        "word_pool": [
+          "Niemand",
+          "Iemand",
+          "Iedereen",
+          "Iets",
+          "Niets"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8103,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 4,
+    "tags": [
+      "indefinite",
+      "general",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "Hij heeft ___ meegemaakt.",
+        "answer": "veel",
+        "accepted": [
+          "velerlei"
+        ],
+        "word_pool": [
+          "veel",
+          "weinig",
+          "iets",
+          "niets",
+          "alles"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8104,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 4,
+    "tags": [
+      "indefinite",
+      "general",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "Er is ___ tijd meer.",
+        "answer": "weinig",
+        "accepted": [
+          "geen"
+        ],
+        "word_pool": [
+          "weinig",
+          "veel",
+          "iets",
+          "niets",
+          "alles"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8105,
+    "schema_version": 2,
+    "question_type": "cloze_word_choice",
+    "difficulty": 4,
+    "tags": [
+      "indefinite",
+      "general",
+      "pronouns"
+    ],
+    "content": {
+      "response_mode": "single_token_choice",
+      "blank_token": "___",
+      "practice_language": "nl"
+    },
+    "translations": {
+      "nl": {
+        "prompt": "___ van hen kwam opdagen.",
+        "answer": "Geen",
+        "accepted": [
+          "Niemand"
+        ],
+        "word_pool": [
+          "Geen",
+          "Niemand",
+          "Iemand",
+          "Iedereen",
+          "Alle"
+        ]
+      }
+    }
+  }
+]
