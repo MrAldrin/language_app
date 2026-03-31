@@ -12,9 +12,9 @@ Each question object must include:
 - `difficulty`: integer `1-10`
 - `tags`: grammar/topic labels
 - `content`: type-specific interaction settings
-- `translations`: keyed by language code
+- `translations`: language payload(s) used by that question type
 
-Each `translations.<lang>` object should use:
+Common translation payload fields:
 
 - `prompt`: text shown to learner
 - `answer`: canonical correctness target
@@ -29,18 +29,26 @@ Legacy compatibility during migration:
 ## Shared Authoring Rules
 
 - Keep grammar and spelling correct in every language.
-- Keep translations aligned in meaning across language directions.
 - Prefer natural, modern phrasing.
 - Keep distractors plausible (near-miss, not nonsense).
 - Never use `hint` for correctness checks.
 
-## File Naming Convention
+## File Families and Naming
 
-Use one file per question family in each language-pair directory:
+### Pair-based files (bilingual)
+
+Stored under `apps/public/<lang1>_<lang2>/`:
 
 - `sentence_builder_questions.json`
 - `word_translation_questions.json`
-- `cloze_word_choice_questions.json` (when added)
+
+### Language-based files (monolingual)
+
+Stored under `apps/public/<lang>/`:
+
+- `cloze_word_choice_questions.json`
+
+For cloze, rows should use one translation language only and set `content.practice_language` to that same language.
 
 ## Type-Specific Specs
 
