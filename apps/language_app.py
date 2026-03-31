@@ -458,6 +458,12 @@ def _(raw_pairs):
     return (pyodide_question_files_by_pair,)
 
 
+@app.cell
+def _(raw_pairs):
+    available_languages = sorted({lang for pair in raw_pairs for lang in pair.split("_")})
+    return (available_languages,)
+
+
 @app.cell(hide_code=True)
 def _():
     mo.md(r"""
@@ -467,13 +473,13 @@ def _():
 
 
 @app.cell
-def _(dropdown_language_pairs, dropdown_question_file, language_1, language_2):
+def _(dropdown_question_file, selected_pair, source_language, target_language):
     _read_json_data = load_json_data(
-        pair=dropdown_language_pairs.value, filename=dropdown_question_file.value
+        pair=selected_pair, filename=dropdown_question_file.value
     )
     df_raw = load_curriculum(data=_read_json_data)
     df_canonical = transform_to_canonical(
-        df=df_raw, language_1=language_1, language_2=language_2
+        df=df_raw, language_1=source_language, language_2=target_language
     )
     return df_canonical, df_raw
 
@@ -484,14 +490,14 @@ def _(
     df_canonical,
     dropdown_difficulty,
     dropdown_translation_direction,
-    language_1,
-    language_2,
+    source_language,
     start_session_id,
+    target_language,
 ):
     direction_mode = resolve_direction_mode(
         selected_direction=dropdown_translation_direction.value,
-        language_1=language_1,
-        language_2=language_2,
+        language_1=source_language,
+        language_2=target_language,
         lang_map=LANG_MAP,
     )
     df = prepare_curriculum(
@@ -560,26 +566,68 @@ def _():
 
 
 @app.cell
-def _(LANG_MAP, raw_pairs):
-    pair_options = {}
-    for p in raw_pairs:
-        p_l1, p_l2 = p.split("_")
-        display_name = f"{LANG_MAP.get(p_l1, p_l1)} and {LANG_MAP.get(p_l2, p_l2)}"
-        pair_options[display_name] = p
-
-    dropdown_language_pairs = mo.ui.dropdown(
-        options=pair_options,
-        value="Dutch and Norwegian",
-        allow_select_none=False,
-        label="Language pair",
+def _(LANG_MAP, available_languages):
+    source_options = {LANG_MAP.get(code, code): code for code in available_languages}
+    default_source = (
+        "nl" if "nl" in available_languages else (available_languages[0] if available_languages else "")
     )
-    dropdown_language_pairs
-    return (dropdown_language_pairs,)
+    default_source_label = LANG_MAP.get(default_source, default_source)
+
+    dropdown_source_language = mo.ui.dropdown(
+        options=source_options,
+        value=default_source_label,
+        allow_select_none=False,
+        label="Source language",
+    )
+    dropdown_source_language
+    return (dropdown_source_language,)
 
 
 @app.cell
-def _(dropdown_language_pairs, pyodide_question_files_by_pair):
-    pair = dropdown_language_pairs.value
+def _(LANG_MAP, dropdown_source_language, raw_pairs):
+    _source_language = dropdown_source_language.value or ""
+    connected_targets = sorted(
+        {
+            b if a == _source_language else a
+            for pair in raw_pairs
+            for a, b in [pair.split("_")]
+            if _source_language in {a, b}
+        }
+    )
+    target_options = {LANG_MAP.get(code, code): code for code in connected_targets}
+    if connected_targets:
+        default_target = (
+            "no" if "no" in connected_targets else connected_targets[0]
+        )
+        default_target_label = LANG_MAP.get(default_target, default_target)
+    else:
+        default_target_label = ""
+
+    dropdown_target_language = mo.ui.dropdown(
+        options=target_options,
+        value=default_target_label,
+        allow_select_none=False,
+        label="Target language",
+    )
+    dropdown_target_language
+    return (dropdown_target_language,)
+
+
+@app.cell
+def _(dropdown_source_language, dropdown_target_language):
+    source_language = dropdown_source_language.value or ""
+    target_language = dropdown_target_language.value or ""
+
+    if not source_language or not target_language or source_language == target_language:
+        selected_pair = None
+    else:
+        selected_pair = "_".join(sorted([source_language, target_language]))
+    return selected_pair, source_language, target_language
+
+
+@app.cell
+def _(pyodide_question_files_by_pair, selected_pair):
+    pair = selected_pair
     file_names = list_question_files(
         pair=pair, pyodide_files_by_pair=pyodide_question_files_by_pair
     )
@@ -603,14 +651,12 @@ def _(dropdown_language_pairs, pyodide_question_files_by_pair):
 
 
 @app.cell
-def _(LANG_MAP, dropdown_language_pairs):
-    if dropdown_language_pairs.value is None:
+def _(LANG_MAP, source_language, target_language):
+    if not source_language or not target_language:
         directions = ["Not applicable"]
-        language_1, language_2 = "", ""
     else:
-        language_1, language_2 = dropdown_language_pairs.value.split("_")
-        name1 = LANG_MAP.get(language_1, language_1)
-        name2 = LANG_MAP.get(language_2, language_2)
+        name1 = LANG_MAP.get(source_language, source_language)
+        name2 = LANG_MAP.get(target_language, target_language)
         directions = [
             "Both Directions",
             f"{name1} -> {name2}",
@@ -622,12 +668,12 @@ def _(LANG_MAP, dropdown_language_pairs):
         label="Direction",
     )
     dropdown_translation_direction
-    return dropdown_translation_direction, language_1, language_2
+    return (dropdown_translation_direction,)
 
 
 @app.cell
-def _(df_raw, dropdown_language_pairs):
-    if dropdown_language_pairs.value is None:
+def _(df_raw, selected_pair):
+    if selected_pair is None:
         dropdown_difficulty = mo.ui.multiselect(
             options=["Not applicable"], value=["Not applicable"], label="Difficulty"
         )
@@ -1195,19 +1241,21 @@ def _():
 def _(
     button_start_questions,
     dropdown_difficulty,
-    dropdown_language_pairs,
     dropdown_question_file,
+    dropdown_source_language,
+    dropdown_target_language,
     dropdown_translation_direction,
 ):
     def render_options_section() -> mo.Html:
         """Renders the initial configuration UI."""
         instruction_text = mo.md(
-            "Choose the language and difficulty level, then press start to begin! If you only want to practice sentences in one dirrection, choose the direction too."
+            "Choose source and target language, question set, and difficulty, then press start. You can also lock practice to one direction."
         ).center()
 
         options_row = mo.hstack(
             [
-                dropdown_language_pairs,
+                dropdown_source_language,
+                dropdown_target_language,
                 dropdown_question_file,
                 dropdown_translation_direction,
                 dropdown_difficulty,
