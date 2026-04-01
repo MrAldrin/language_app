@@ -9,7 +9,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Ich bin heute sehr glücklich",
         "accepted": [
           "Ich bin heute richtig froh"
         ],
@@ -32,7 +31,6 @@
         "answer": "Ich bin heute sehr glücklich"
       },
       "nl": {
-        "primary": "Ik ben erg blij vandaag",
         "accepted": [
           "Ik ben zeer gelukkig vandaag"
         ],
@@ -70,7 +68,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Sie liest ein sehr gutes Buch",
         "accepted": [
           "Sie liest gerade ein sehr gutes Buch"
         ],
@@ -93,7 +90,6 @@
         "answer": "Sie liest ein sehr gutes Buch"
       },
       "nl": {
-        "primary": "Ze leest een heel goed boek",
         "accepted": [
           "Zij leest een erg goed boek"
         ],
@@ -132,7 +128,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Wir essen jetzt zu Abend",
         "accepted": [
           "Wir essen jetzt Abendessen"
         ],
@@ -154,7 +149,6 @@
         "answer": "Wir essen jetzt zu Abend"
       },
       "nl": {
-        "primary": "We eten nu avondeten",
         "accepted": [
           "Wij eten nu het avondeten"
         ],
@@ -191,7 +185,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Sie gehen zum neuen Laden",
         "accepted": [
           "Sie laufen zum neuen Geschäft"
         ],
@@ -214,7 +207,6 @@
         "answer": "Sie gehen zum neuen Laden"
       },
       "nl": {
-        "primary": "Ze lopen naar de nieuwe winkel",
         "accepted": [
           "Zij wandelen naar de nieuwe winkel"
         ],
@@ -253,7 +245,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Der Hund ist groß und braun",
         "accepted": [],
         "word_pool": [
           "braun",
@@ -273,7 +264,6 @@
         "answer": "Der Hund ist groß und braun"
       },
       "nl": {
-        "primary": "De hond is groot en bruin",
         "accepted": [],
         "word_pool": [
           "bruin",
@@ -308,7 +298,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Die kleine Katze schläft den ganzen Tag",
         "accepted": [],
         "word_pool": [
           "den",
@@ -329,7 +318,6 @@
         "answer": "Die kleine Katze schläft den ganzen Tag"
       },
       "nl": {
-        "primary": "De kleine kat slaapt de hele dag",
         "accepted": [],
         "word_pool": [
           "dag",
@@ -364,7 +352,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Ich habe ein schnelles rotes Auto",
         "accepted": [
           "Ich besitze ein schnelles rotes Auto"
         ],
@@ -387,7 +374,6 @@
         "answer": "Ich habe ein schnelles rotes Auto"
       },
       "nl": {
-        "primary": "Ik heb een snelle rode auto",
         "accepted": [
           "Ik bezit een snelle rode auto"
         ],
@@ -425,7 +411,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Er arbeitet in einem großen Büro",
         "accepted": [
           "Er ist in einem großen Büro beschäftigt"
         ],
@@ -449,7 +434,6 @@
         "answer": "Er arbeitet in einem großen Büro"
       },
       "nl": {
-        "primary": "Hij werkt in een groot kantoor",
         "accepted": [
           "Hij werkt op een groot kantoor"
         ],
@@ -486,7 +470,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Du sprichst sehr gut Deutsch",
         "accepted": [
           "Sie sprechen sehr gut Deutsch"
         ],
@@ -509,7 +492,6 @@
         "answer": "Du sprichst sehr gut Deutsch"
       },
       "nl": {
-        "primary": "Je spreekt heel goed Duits",
         "accepted": [
           "U spreekt heel goed Duits"
         ],
@@ -546,7 +528,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Das Wetter ist heute wirklich schön",
         "accepted": [
           "Das Wetter ist heute sehr schön"
         ],
@@ -569,7 +550,6 @@
         "answer": "Das Wetter ist heute wirklich schön"
       },
       "nl": {
-        "primary": "Het weer is echt prachtig vandaag",
         "accepted": [
           "Het weer is heel erg mooi vandaag"
         ],
@@ -609,7 +589,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Mein junger Bruder ist sehr groß",
         "accepted": [
           "Mein kleiner Bruder ist sehr groß"
         ],
@@ -632,7 +611,6 @@
         "answer": "Mein junger Bruder ist sehr groß"
       },
       "nl": {
-        "primary": "Mijn jonge broer is erg lang",
         "accepted": [
           "Mijn broertje is erg lang"
         ],
@@ -670,7 +648,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Wir wollen ein neues Haus kaufen",
         "accepted": [
           "Wir möchten ein neues Haus kaufen"
         ],
@@ -693,7 +670,6 @@
         "answer": "Wir wollen ein neues Haus kaufen"
       },
       "nl": {
-        "primary": "We willen een nieuw huis kopen",
         "accepted": [
           "Wij willen een nieuw huis kopen"
         ],
@@ -731,7 +707,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Ich trinke gerne schwarzen Kaffee",
         "accepted": [
           "Ich mag es schwarzen Kaffee zu trinken"
         ],
@@ -756,7 +731,6 @@
         "answer": "Ich trinke gerne schwarzen Kaffee"
       },
       "nl": {
-        "primary": "Ik drink graag zwarte koffie",
         "accepted": [
           "Ik hou ervan om zwarte koffie te drinken"
         ],
@@ -797,7 +771,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Sie reisen oft nach Spanien",
         "accepted": [
           "Oft reisen sie nach Spanien"
         ],
@@ -818,7 +791,6 @@
         "answer": "Sie reisen oft nach Spanien"
       },
       "nl": {
-        "primary": "Ze reizen vaak naar Spanje",
         "accepted": [
           "Zij reizen dikwijls naar Spanje"
         ],
@@ -856,7 +828,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Das Essen ist kalt und schlecht",
         "accepted": [
           "Die Mahlzeit ist kalt und schlecht"
         ],
@@ -880,7 +851,6 @@
         "answer": "Das Essen ist kalt und schlecht"
       },
       "nl": {
-        "primary": "Het eten is koud en slecht",
         "accepted": [
           "De maaltijd is koud en slecht"
         ],
@@ -920,7 +890,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Der schnelle Zug fährt jetzt ab",
         "accepted": [
           "Der Schnellzug fährt jetzt ab"
         ],
@@ -943,7 +912,6 @@
         "answer": "Der schnelle Zug fährt jetzt ab"
       },
       "nl": {
-        "primary": "De snelle trein vertrekt nu meteen",
         "accepted": [
           "De sneltrein vertrekt nu"
         ],
@@ -981,7 +949,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Wir spielen jeden Abend Fußball",
         "accepted": [],
         "word_pool": [
           "Abend",
@@ -1000,7 +967,6 @@
         "answer": "Wir spielen jeden Abend Fußball"
       },
       "nl": {
-        "primary": "We voetballen elke avond",
         "accepted": [
           "Wij spelen elke avonds voetbal"
         ],
@@ -1039,7 +1005,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Sie schrieb gestern einen langen Brief",
         "accepted": [],
         "word_pool": [
           "Brief",
@@ -1059,7 +1024,6 @@
         "answer": "Sie schrieb gestern einen langen Brief"
       },
       "nl": {
-        "primary": "Ze schreef gisteren een lange brief",
         "accepted": [
           "Zij schreef gisteren een lange brief"
         ],
@@ -1097,7 +1061,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Er war gestern sehr müde",
         "accepted": [],
         "word_pool": [
           "böse",
@@ -1116,7 +1079,6 @@
         "answer": "Er war gestern sehr müde"
       },
       "nl": {
-        "primary": "Hij was gisteren erg moe",
         "accepted": [],
         "word_pool": [
           "boos",
@@ -1150,7 +1112,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Ich verstehe dich überhaupt nicht",
         "accepted": [
           "Ich verstehe Sie überhaupt nicht"
         ],
@@ -1172,7 +1133,6 @@
         "answer": "Ich verstehe dich überhaupt nicht"
       },
       "nl": {
-        "primary": "Ik begrijp je helemaal niet",
         "accepted": [
           "Ik snap u helemaal niet"
         ],
@@ -1210,7 +1170,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Der Lehrer hat einen blauen Stift",
         "accepted": [
           "Der Lehrer besitzt einen blauen Stift"
         ],
@@ -1233,7 +1192,6 @@
         "answer": "Der Lehrer hat einen blauen Stift"
       },
       "nl": {
-        "primary": "De leraar heeft een blauwe pen",
         "accepted": [
           "De docent heeft een blauwe pen"
         ],
@@ -1271,7 +1229,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Sie hören laute Musik",
         "accepted": [
           "Sie hören gerade laute Musik"
         ],
@@ -1292,7 +1249,6 @@
         "answer": "Sie hören laute Musik"
       },
       "nl": {
-        "primary": "Ze luisteren naar harde muziek",
         "accepted": [
           "Zij luisteren naar luide muziek"
         ],
@@ -1330,7 +1286,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Sie trägt ein gelbes Kleid",
         "accepted": [
           "Sie hat ein gelbes Kleid an"
         ],
@@ -1352,7 +1307,6 @@
         "answer": "Sie trägt ein gelbes Kleid"
       },
       "nl": {
-        "primary": "Ze draagt een gele jurk",
         "accepted": [
           "Zij heeft een gele jurk aan"
         ],
@@ -1390,7 +1344,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Ich werde nächste Woche nach London fliegen",
         "accepted": [
           "Nächste Woche fliege ich nach London"
         ],
@@ -1414,7 +1367,6 @@
         "answer": "Ich werde nächste Woche nach London fliegen"
       },
       "nl": {
-        "primary": "Ik vlieg volgende week naar Londen",
         "accepted": [
           "Ik zal volgende week naar Londen vliegen"
         ],
@@ -1453,7 +1405,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Der hohe Baum ist sehr alt",
         "accepted": [],
         "word_pool": [
           "alt",
@@ -1473,7 +1424,6 @@
         "answer": "Der hohe Baum ist sehr alt"
       },
       "nl": {
-        "primary": "De hoge boom is heel oud",
         "accepted": [],
         "word_pool": [
           "bloem",
@@ -1508,7 +1458,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Die große Stadt ist immer belebt",
         "accepted": [
           "Die Großstadt ist immer belebt"
         ],
@@ -1531,7 +1480,6 @@
         "answer": "Die große Stadt ist immer belebt"
       },
       "nl": {
-        "primary": "De grote stad is altijd druk",
         "accepted": [],
         "word_pool": [
           "altijd",
@@ -1566,7 +1514,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Sie backt einen leckeren Kuchen",
         "accepted": [
           "Sie macht einen leckeren Kuchen"
         ],
@@ -1587,7 +1534,6 @@
         "answer": "Sie backt einen leckeren Kuchen"
       },
       "nl": {
-        "primary": "Ze maakt een heerlijke taart",
         "accepted": [
           "Ze bakt een heerlijke taart"
         ],
@@ -1623,7 +1569,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Ich sehe dich und ihn",
         "accepted": [
           "Ich sehe euch"
         ],
@@ -1645,7 +1590,6 @@
         "answer": "Ich sehe dich und ihn"
       },
       "nl": {
-        "primary": "Ik zie jou en hem",
         "accepted": [],
         "word_pool": [
           "en",
@@ -1678,7 +1622,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Wir werden morgen meine Eltern besuchen",
         "accepted": [
           "Wir besuchen morgen meine Eltern"
         ],
@@ -1699,7 +1642,6 @@
         "answer": "Wir werden morgen meine Eltern besuchen"
       },
       "nl": {
-        "primary": "We gaan morgen bij mijn ouders op bezoek",
         "accepted": [
           "Wij zullen morgen mijn ouders bezoeken"
         ],
@@ -1740,7 +1682,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Warum bist du heute so traurig",
         "accepted": [],
         "word_pool": [
           "bist",
@@ -1760,7 +1701,6 @@
         "answer": "Warum bist du heute so traurig"
       },
       "nl": {
-        "primary": "Waarom ben je vandaag zo verdrietig",
         "accepted": [
           "Waarom bent u vandaag zo verdrietig"
         ],
@@ -1799,7 +1739,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Er muss mehr schlafen",
         "accepted": [
           "Er braucht mehr Schlaf"
         ],
@@ -1821,7 +1760,6 @@
         "answer": "Er muss mehr schlafen"
       },
       "nl": {
-        "primary": "Hij moet meer slapen",
         "accepted": [
           "Hij heeft meer slaap nodig"
         ],
@@ -1859,7 +1797,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Ich habe meine Schlüssel zu Hause vergessen",
         "accepted": [],
         "word_pool": [
           "Brieftasche",
@@ -1880,7 +1817,6 @@
         "answer": "Ich habe meine Schlüssel zu Hause vergessen"
       },
       "nl": {
-        "primary": "Ik ben mijn sleutels thuis vergeten",
         "accepted": [],
         "word_pool": [
           "ben",
@@ -1914,7 +1850,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Draußen regnet es gerade",
         "accepted": [
           "Es regnet draußen"
         ],
@@ -1934,7 +1869,6 @@
         "answer": "Draußen regnet es gerade"
       },
       "nl": {
-        "primary": "Het regent nu buiten",
         "accepted": [],
         "word_pool": [
           "binnen",
@@ -1967,7 +1901,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Wie viel kostet die Fahrkarte",
         "accepted": [
           "Was kostet die Fahrkarte"
         ],
@@ -1989,7 +1922,6 @@
         "answer": "Wie viel kostet die Fahrkarte"
       },
       "nl": {
-        "primary": "Hoeveel kost het kaartje",
         "accepted": [
           "Wat kost het ticket"
         ],
@@ -2026,7 +1958,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Das rote Auto ist schnell",
         "accepted": [],
         "word_pool": [
           "Auto",
@@ -2044,7 +1975,6 @@
         "answer": "Das rote Auto ist schnell"
       },
       "nl": {
-        "primary": "De rode auto is snel",
         "accepted": [],
         "word_pool": [
           "auto",
@@ -2077,7 +2007,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Wie alt ist deine Schwester",
         "accepted": [
           "Wie alt ist Ihre Schwester"
         ],
@@ -2098,7 +2027,6 @@
         "answer": "Wie alt ist deine Schwester"
       },
       "nl": {
-        "primary": "Hoe oud is je zus",
         "accepted": [
           "Hoe oud is uw zuster"
         ],
@@ -2135,7 +2063,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Ich mag kein scharfes Essen",
         "accepted": [
           "Ich esse nicht gerne scharf"
         ],
@@ -2159,7 +2086,6 @@
         "answer": "Ich mag kein scharfes Essen"
       },
       "nl": {
-        "primary": "Ik hou niet van pittig eten",
         "accepted": [],
         "word_pool": [
           "eten",
@@ -2193,7 +2119,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Wo wohnst du jetzt",
         "accepted": [
           "Wo wohnen Sie jetzt"
         ],
@@ -2214,7 +2139,6 @@
         "answer": "Wo wohnst du jetzt"
       },
       "nl": {
-        "primary": "Waar woon je nu",
         "accepted": [
           "Waar woont u nu"
         ],
@@ -2251,7 +2175,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Ich habe zwei kleine Katzen",
         "accepted": [],
         "word_pool": [
           "drei",
@@ -2270,7 +2193,6 @@
         "answer": "Ich habe zwei kleine Katzen"
       },
       "nl": {
-        "primary": "Ik heb twee kleine katten",
         "accepted": [],
         "word_pool": [
           "drie",
@@ -2304,7 +2226,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Sie ist letzten Sommer nach Norwegen gereist",
         "accepted": [
           "Sie reiste letzten Sommer nach Norwegen"
         ],
@@ -2328,7 +2249,6 @@
         "answer": "Sie ist letzten Sommer nach Norwegen gereist"
       },
       "nl": {
-        "primary": "Ze is vorige zomer naar Noorwegen gereisd",
         "accepted": [
           "Zij reisde vorige zomer naar Noorwegen"
         ],
@@ -2368,7 +2288,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Er wacht jeden Tag früh auf",
         "accepted": [
           "Er steht jeden Tag früh op"
         ],
@@ -2392,7 +2311,6 @@
         "answer": "Er wacht jeden Tag früh auf"
       },
       "nl": {
-        "primary": "Hij wordt elke dag vroeg wakker",
         "accepted": [
           "Hij staat elke dag vroeg op"
         ],
@@ -2431,7 +2349,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Willst du etwas Wasser",
         "accepted": [
           "Möchten Sie etwas Wasser"
         ],
@@ -2451,7 +2368,6 @@
         "answer": "Willst du etwas Wasser"
       },
       "nl": {
-        "primary": "Wil je wat water",
         "accepted": [
           "Wilt u wat water"
         ],
@@ -2488,7 +2404,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Wie heißt du",
         "accepted": [
           "Wie heißen Sie",
           "Was ist dein Name"
@@ -2512,7 +2427,6 @@
         "answer": "Wie heißt du"
       },
       "nl": {
-        "primary": "Hoe heet je",
         "accepted": [
           "Hoe heet u",
           "Wat is je naam"
@@ -2549,7 +2463,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Wir warten auf den Bus",
         "accepted": [
           "Wir warten an der Bushaltestelle"
         ],
@@ -2573,7 +2486,6 @@
         "answer": "Wir warten auf den Bus"
       },
       "nl": {
-        "primary": "We wachten op de bus",
         "accepted": [
           "Wij zijn aan het wachten op de bus"
         ],
@@ -2613,7 +2525,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Unser neuer Garten ist sehr schön",
         "accepted": [
           "Unser neuer Garten ist wunderbar"
         ],
@@ -2636,7 +2547,6 @@
         "answer": "Unser neuer Garten ist sehr schön"
       },
       "nl": {
-        "primary": "Onze nieuwe tuin is heel erg mooi",
         "accepted": [
           "Onze nieuwe tuin is prachtig"
         ],
@@ -2675,7 +2585,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Ich finde es wichtig Sprachen zu lernen",
         "accepted": [
           "Ich glaube es ist wichtig Sprachen zu lernen"
         ],
@@ -2700,7 +2609,6 @@
         "answer": "Ich finde es wichtig Sprachen zu lernen"
       },
       "nl": {
-        "primary": "Ik vind het belangrijk om talen te leren",
         "accepted": [
           "Ik geloof dat het belangrijk is om talen te leren"
         ],
@@ -2741,7 +2649,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Ich trinke normalerweise morgens Tee",
         "accepted": [
           "Normalerweise trinke ich morgens Tee"
         ],
@@ -2762,7 +2669,6 @@
         "answer": "Ich trinke normalerweise morgens Tee"
       },
       "nl": {
-        "primary": "Ik drink meestal thee in de ochtend",
         "accepted": [
           "Gewoonlijk drink ik thee 's ochtends"
         ],
@@ -2803,7 +2709,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Die Sonne scheint heute",
         "accepted": [],
         "word_pool": [
           "die",
@@ -2821,7 +2726,6 @@
         "answer": "Die Sonne scheint heute"
       },
       "nl": {
-        "primary": "De zon schijnt vandaag",
         "accepted": [],
         "word_pool": [
           "de",
@@ -2854,7 +2758,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Mein Computer liegt auf dem Tisch",
         "accepted": [
           "Mein Rechner steht auf dem Tisch"
         ],
@@ -2878,7 +2781,6 @@
         "answer": "Mein Computer liegt auf dem Tisch"
       },
       "nl": {
-        "primary": "Mijn computer staat op de tafel",
         "accepted": [
           "Mijn laptop ligt op de tafel"
         ],
@@ -2917,7 +2819,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Hast du Hunger",
         "accepted": [
           "Haben Sie Hunger"
         ],
@@ -2937,7 +2838,6 @@
         "answer": "Hast du Hunger"
       },
       "nl": {
-        "primary": "Heb je honger",
         "accepted": [
           "Heeft u honger"
         ],

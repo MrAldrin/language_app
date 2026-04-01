@@ -9,7 +9,6 @@
     ],
     "translations": {
       "en": {
-        "primary": "I am very happy today",
         "accepted": [
           "I am very glad today"
         ],
@@ -31,7 +30,6 @@
         "answer": "I am very happy today"
       },
       "no": {
-        "primary": "Jeg er veldig glad i dag",
         "accepted": [
           "Jeg er utrolig glad i dag"
         ],
@@ -68,7 +66,6 @@
     ],
     "translations": {
       "en": {
-        "primary": "She reads a really good book",
         "accepted": [
           "She is reading a really good book"
         ],
@@ -92,7 +89,6 @@
         "answer": "She reads a really good book"
       },
       "no": {
-        "primary": "Hun leser en veldig god bok",
         "accepted": [
           "Hun leser ei utrolig god bok",
           "Hun leser en veldig bra bok"
@@ -133,7 +129,6 @@
     ],
     "translations": {
       "en": {
-        "primary": "We are eating dinner now",
         "accepted": [
           "We eat dinner now"
         ],
@@ -155,7 +150,6 @@
         "answer": "We are eating dinner now"
       },
       "no": {
-        "primary": "Vi spiser middag nå",
         "accepted": [],
         "word_pool": [
           "alltid",
@@ -188,7 +182,6 @@
     ],
     "translations": {
       "en": {
-        "primary": "They walk to the new store",
         "accepted": [
           "They are walking to the new shop",
           "They walk to the new shop"
@@ -214,7 +207,6 @@
         "answer": "They walk to the new store"
       },
       "no": {
-        "primary": "De går til den nye butikken",
         "accepted": [
           "De spaserer til den nye butikken"
         ],
@@ -252,7 +244,6 @@
     ],
     "translations": {
       "en": {
-        "primary": "The dog is big and brown",
         "accepted": [],
         "word_pool": [
           "and",
@@ -272,7 +263,6 @@
         "answer": "The dog is big and brown"
       },
       "no": {
-        "primary": "Hunden er stor og brun",
         "accepted": [
           "Hunden er diger og brun"
         ],
@@ -309,7 +299,6 @@
     ],
     "translations": {
       "en": {
-        "primary": "The small cat sleeps all day",
         "accepted": [
           "The little cat sleeps all day"
         ],
@@ -332,7 +321,6 @@
         "answer": "The small cat sleeps all day"
       },
       "no": {
-        "primary": "Den lille katten sover hele dagen",
         "accepted": [],
         "word_pool": [
           "dagen",
@@ -367,7 +355,6 @@
     ],
     "translations": {
       "en": {
-        "primary": "I have a fast red car",
         "accepted": [
           "I own a fast red car"
         ],
@@ -390,7 +377,6 @@
         "answer": "I have a fast red car"
       },
       "no": {
-        "primary": "Jeg har en rask rød bil",
         "accepted": [
           "Jeg eier en kjapp rød bil"
         ],
@@ -429,7 +415,6 @@
     ],
     "translations": {
       "en": {
-        "primary": "He works in a large office",
         "accepted": [
           "He is working in a large office"
         ],
@@ -453,7 +438,6 @@
         "answer": "He works in a large office"
       },
       "no": {
-        "primary": "Han jobber på et stort kontor",
         "accepted": [
           "Han arbeider på et stort kontor"
         ],
@@ -491,7 +475,6 @@
     ],
     "translations": {
       "en": {
-        "primary": "You speak Norwegian very well",
         "accepted": [
           "You talk Norwegian very well"
         ],
@@ -513,7 +496,6 @@
         "answer": "You speak Norwegian very well"
       },
       "no": {
-        "primary": "Du snakker norsk veldig bra",
         "accepted": [
           "Du snakker norsk veldig godt",
           "Du prater norsk veldig bra"
@@ -552,7 +534,6 @@
     ],
     "translations": {
       "en": {
-        "primary": "The weather is really nice today",
         "accepted": [
           "The weather is very nice today"
         ],
@@ -575,7 +556,6 @@
         "answer": "The weather is really nice today"
       },
       "no": {
-        "primary": "Været er skikkelig fint i dag",
         "accepted": [
           "Været er veldig pent i dag",
           "Været er veldig fint i dag"
@@ -615,7 +595,6 @@
     ],
     "translations": {
       "en": {
-        "primary": "My young brother is very tall",
         "accepted": [
           "My little brother is very tall"
         ],
@@ -638,7 +617,6 @@
         "answer": "My young brother is very tall"
       },
       "no": {
-        "primary": "Min unge bror er veldig høy",
         "accepted": [
           "Min lillebror er veldig høy"
         ],
@@ -676,7 +654,6 @@
     ],
     "translations": {
       "en": {
-        "primary": "We want to buy a new house",
         "accepted": [
           "We wish to buy a new house"
         ],
@@ -700,7 +677,6 @@
         "answer": "We want to buy a new house"
       },
       "no": {
-        "primary": "Vi vil kjøpe et nytt hus",
         "accepted": [
           "Vi ønsker å kjøpe et nytt hus"
         ],
@@ -739,7 +715,6 @@
     ],
     "translations": {
       "en": {
-        "primary": "I like to drink black coffee",
         "accepted": [
           "I enjoy drinking black coffee"
         ],
@@ -763,7 +738,6 @@
         "answer": "I like to drink black coffee"
       },
       "no": {
-        "primary": "Jeg liker å drikke svart kaffe",
         "accepted": [
           "Jeg liker å drikke sort kaffe"
         ],
@@ -801,7 +775,6 @@
     ],
     "translations": {
       "en": {
-        "primary": "They often travel to Spain",
         "accepted": [
           "They travel to Spain often"
         ],
@@ -822,7 +795,6 @@
         "answer": "They often travel to Spain"
       },
       "no": {
-        "primary": "De reiser ofte til Spania",
         "accepted": [],
         "word_pool": [
           "aldri",
@@ -856,7 +828,6 @@
     ],
     "translations": {
       "en": {
-        "primary": "The food is cold and bad",
         "accepted": [
           "The meal is cold and bad"
         ],
@@ -879,7 +850,6 @@
         "answer": "The food is cold and bad"
       },
       "no": {
-        "primary": "Maten er kald og dårlig",
         "accepted": [],
         "word_pool": [
           "dårlig",
@@ -914,7 +884,6 @@
     ],
     "translations": {
       "en": {
-        "primary": "The fast train departs right now",
         "accepted": [
           "The fast train leaves right now"
         ],
@@ -937,7 +906,6 @@
         "answer": "The fast train departs right now"
       },
       "no": {
-        "primary": "Det raske toget går akkurat nå",
         "accepted": [
           "Det kjappe toget drar akkurat nå"
         ],
@@ -976,7 +944,6 @@
     ],
     "translations": {
       "en": {
-        "primary": "We play football every evening",
         "accepted": [
           "We play soccer every evening"
         ],
@@ -998,7 +965,6 @@
         "answer": "We play football every evening"
       },
       "no": {
-        "primary": "Vi spiller fotball hver kveld",
         "accepted": [],
         "word_pool": [
           "aldri",
@@ -1032,7 +998,6 @@
     ],
     "translations": {
       "en": {
-        "primary": "She wrote a long letter yesterday",
         "accepted": [],
         "word_pool": [
           "a",
@@ -1052,7 +1017,6 @@
         "answer": "She wrote a long letter yesterday"
       },
       "no": {
-        "primary": "Hun skrev et langt brev i går",
         "accepted": [],
         "word_pool": [
           "bok",
@@ -1088,7 +1052,6 @@
     ],
     "translations": {
       "en": {
-        "primary": "He was very tired yesterday",
         "accepted": [],
         "word_pool": [
           "angry",
@@ -1107,7 +1070,6 @@
         "answer": "He was very tired yesterday"
       },
       "no": {
-        "primary": "Han var veldig trøtt i går",
         "accepted": [
           "Han var utrolig trøtt i går"
         ],
@@ -1145,7 +1107,6 @@
     ],
     "translations": {
       "en": {
-        "primary": "I do not understand you at all",
         "accepted": [
           "I don't understand you at all"
         ],
@@ -1169,7 +1130,6 @@
         "answer": "I do not understand you at all"
       },
       "no": {
-        "primary": "Jeg forstår deg ikke i det hele tatt",
         "accepted": [
           "Jeg skjønner deg ikke i det hele tatt"
         ],
@@ -1209,7 +1169,6 @@
     ],
     "translations": {
       "en": {
-        "primary": "The teacher has a blue pen",
         "accepted": [
           "The instructor has a blue pen"
         ],
@@ -1232,7 +1191,6 @@
         "answer": "The teacher has a blue pen"
       },
       "no": {
-        "primary": "Læreren har en blå penn",
         "accepted": [],
         "word_pool": [
           "blyant",
@@ -1266,7 +1224,6 @@
     ],
     "translations": {
       "en": {
-        "primary": "They listen to loud music",
         "accepted": [
           "They are listening to loud music"
         ],
@@ -1289,7 +1246,6 @@
         "answer": "They listen to loud music"
       },
       "no": {
-        "primary": "De hører på høy musikk",
         "accepted": [],
         "word_pool": [
           "de",
@@ -1323,7 +1279,6 @@
     ],
     "translations": {
       "en": {
-        "primary": "She wears a yellow dress",
         "accepted": [
           "She is wearing a yellow dress"
         ],
@@ -1346,7 +1301,6 @@
         "answer": "She wears a yellow dress"
       },
       "no": {
-        "primary": "Hun har på seg en gul kjole",
         "accepted": [
           "Hun bærer en gul kjole"
         ],
@@ -1385,7 +1339,6 @@
     ],
     "translations": {
       "en": {
-        "primary": "I will fly to London next week",
         "accepted": [],
         "word_pool": [
           "drive",
@@ -1406,7 +1359,6 @@
         "answer": "I will fly to London next week"
       },
       "no": {
-        "primary": "Jeg skal fly til London neste uke",
         "accepted": [
           "Jeg vil fly til London neste uke"
         ],
@@ -1445,7 +1397,6 @@
     ],
     "translations": {
       "en": {
-        "primary": "The tall tree is very old",
         "accepted": [],
         "word_pool": [
           "flower",
@@ -1465,7 +1416,6 @@
         "answer": "The tall tree is very old"
       },
       "no": {
-        "primary": "Det høye treet er veldig gammelt",
         "accepted": [],
         "word_pool": [
           "blomsten",
@@ -1500,7 +1450,6 @@
     ],
     "translations": {
       "en": {
-        "primary": "The big city is always busy",
         "accepted": [
           "The large city is always busy"
         ],
@@ -1523,7 +1472,6 @@
         "answer": "The big city is always busy"
       },
       "no": {
-        "primary": "Den store byen er alltid travel",
         "accepted": [
           "Storbyen er alltid travel"
         ],
@@ -1561,7 +1509,6 @@
     ],
     "translations": {
       "en": {
-        "primary": "She is making a delicious cake",
         "accepted": [
           "She makes a delicious cake",
           "She is baking a delicious cake"
@@ -1586,7 +1533,6 @@
         "answer": "She is making a delicious cake"
       },
       "no": {
-        "primary": "Hun lager en deilig kake",
         "accepted": [
           "Hun baker en nydelig kake",
           "Hun lager ei deilig kake"
@@ -1626,7 +1572,6 @@
     ],
     "translations": {
       "en": {
-        "primary": "I see you and him",
         "accepted": [],
         "word_pool": [
           "and",
@@ -1645,7 +1590,6 @@
         "answer": "I see you and him"
       },
       "no": {
-        "primary": "Jeg ser deg og ham",
         "accepted": [
           "Jeg ser deg og han"
         ],
@@ -1682,7 +1626,6 @@
     ],
     "translations": {
       "en": {
-        "primary": "We will visit my parents tomorrow",
         "accepted": [
           "We are visiting my parents tomorrow"
         ],
@@ -1705,7 +1648,6 @@
         "answer": "We will visit my parents tomorrow"
       },
       "no": {
-        "primary": "Vi skal besøke foreldrene mine i morgen",
         "accepted": [
           "Vi vil besøke foreldrene mine i morgen"
         ],
@@ -1743,7 +1685,6 @@
     ],
     "translations": {
       "en": {
-        "primary": "Why are you so sad today",
         "accepted": [],
         "word_pool": [
           "are",
@@ -1763,7 +1704,6 @@
         "answer": "Why are you so sad today"
       },
       "no": {
-        "primary": "Hvorfor er du så trist i dag",
         "accepted": [
           "Hvorfor er du så lei deg i dag"
         ],
@@ -1802,7 +1742,6 @@
     ],
     "translations": {
       "en": {
-        "primary": "He needs to sleep more",
         "accepted": [
           "He must sleep more"
         ],
@@ -1824,7 +1763,6 @@
         "answer": "He needs to sleep more"
       },
       "no": {
-        "primary": "Han må sove mer",
         "accepted": [
           "Han trenger å sove mer"
         ],
@@ -1861,7 +1799,6 @@
     ],
     "translations": {
       "en": {
-        "primary": "I forgot my keys at home",
         "accepted": [],
         "word_pool": [
           "at",
@@ -1880,7 +1817,6 @@
         "answer": "I forgot my keys at home"
       },
       "no": {
-        "primary": "Jeg glemte nøklene mine hjemme",
         "accepted": [],
         "word_pool": [
           "fant",
@@ -1913,7 +1849,6 @@
     ],
     "translations": {
       "en": {
-        "primary": "It is raining outside right now",
         "accepted": [
           "It rains outside right now"
         ],
@@ -1935,7 +1870,6 @@
         "answer": "It is raining outside right now"
       },
       "no": {
-        "primary": "Det regner ute akkurat nå",
         "accepted": [],
         "word_pool": [
           "akkurat",
@@ -1969,7 +1903,6 @@
     ],
     "translations": {
       "en": {
-        "primary": "How much does the ticket cost",
         "accepted": [],
         "word_pool": [
           "buy",
@@ -1989,7 +1922,6 @@
         "answer": "How much does the ticket cost"
       },
       "no": {
-        "primary": "Hvor mye koster billetten",
         "accepted": [
           "Hva koster billetten"
         ],
@@ -2025,7 +1957,6 @@
     ],
     "translations": {
       "en": {
-        "primary": "The red car is fast",
         "accepted": [],
         "word_pool": [
           "blue",
@@ -2043,7 +1974,6 @@
         "answer": "The red car is fast"
       },
       "no": {
-        "primary": "Den røde bilen er rask",
         "accepted": [
           "Den røde bilen er kjapp"
         ],
@@ -2079,7 +2009,6 @@
     ],
     "translations": {
       "en": {
-        "primary": "How old is your sister",
         "accepted": [],
         "word_pool": [
           "brother",
@@ -2097,7 +2026,6 @@
         "answer": "How old is your sister"
       },
       "no": {
-        "primary": "Hvor gammel er søsteren din",
         "accepted": [],
         "word_pool": [
           "bror",
@@ -2129,7 +2057,6 @@
     ],
     "translations": {
       "en": {
-        "primary": "I don't like spicy food",
         "accepted": [
           "I do not like spicy food"
         ],
@@ -2152,7 +2079,6 @@
         "answer": "I don't like spicy food"
       },
       "no": {
-        "primary": "Jeg liker ikke sterk mat",
         "accepted": [],
         "word_pool": [
           "deilig",
@@ -2186,7 +2112,6 @@
     ],
     "translations": {
       "en": {
-        "primary": "Where do you live now",
         "accepted": [
           "Where are you living now"
         ],
@@ -2209,7 +2134,6 @@
         "answer": "Where do you live now"
       },
       "no": {
-        "primary": "Hvor bor du nå",
         "accepted": [],
         "word_pool": [
           "blir",
@@ -2242,7 +2166,6 @@
     ],
     "translations": {
       "en": {
-        "primary": "I have two small cats",
         "accepted": [],
         "word_pool": [
           "big",
@@ -2261,7 +2184,6 @@
         "answer": "I have two small cats"
       },
       "no": {
-        "primary": "Jeg har to små katter",
         "accepted": [
           "Jeg eier to små katter"
         ],
@@ -2298,7 +2220,6 @@
     ],
     "translations": {
       "en": {
-        "primary": "She travelled to Norway last summer",
         "accepted": [
           "She traveled to Norway last summer"
         ],
@@ -2321,7 +2242,6 @@
         "answer": "She travelled to Norway last summer"
       },
       "no": {
-        "primary": "Hun reiste til Norge i fjor sommer",
         "accepted": [],
         "word_pool": [
           "besøke",
@@ -2357,7 +2277,6 @@
     ],
     "translations": {
       "en": {
-        "primary": "He wakes up early every day",
         "accepted": [
           "He gets up early every day"
         ],
@@ -2380,7 +2299,6 @@
         "answer": "He wakes up early every day"
       },
       "no": {
-        "primary": "Han våkner tidlig hver dag",
         "accepted": [
           "Han står opp tidlig hver dag"
         ],
@@ -2418,7 +2336,6 @@
     ],
     "translations": {
       "en": {
-        "primary": "Do you want some water",
         "accepted": [
           "Would you like some water"
         ],
@@ -2441,7 +2358,6 @@
         "answer": "Do you want some water"
       },
       "no": {
-        "primary": "Vil du ha litt vann",
         "accepted": [
           "Ønsker du litt vann"
         ],
@@ -2478,7 +2394,6 @@
     ],
     "translations": {
       "en": {
-        "primary": "What is your name",
         "accepted": [
           "What's your name"
         ],
@@ -2498,7 +2413,6 @@
         "answer": "What is your name"
       },
       "no": {
-        "primary": "Hva heter du",
         "accepted": [
           "Hva er navnet ditt"
         ],
@@ -2534,7 +2448,6 @@
     ],
     "translations": {
       "en": {
-        "primary": "We are waiting for the bus",
         "accepted": [
           "We wait for the bus"
         ],
@@ -2556,7 +2469,6 @@
         "answer": "We are waiting for the bus"
       },
       "no": {
-        "primary": "Vi venter på bussen",
         "accepted": [],
         "word_pool": [
           "bussen",
@@ -2589,7 +2501,6 @@
     ],
     "translations": {
       "en": {
-        "primary": "Our new garden is very beautiful",
         "accepted": [
           "Our new garden is very pretty"
         ],
@@ -2612,7 +2523,6 @@
         "answer": "Our new garden is very beautiful"
       },
       "no": {
-        "primary": "Vår nye hage er veldig vakker",
         "accepted": [
           "Hagen vår er veldig fin",
           "Den nye hagen vår er veldig vakker"
@@ -2653,7 +2563,6 @@
     ],
     "translations": {
       "en": {
-        "primary": "I think it is important to learn languages",
         "accepted": [
           "I believe it is important to learn languages"
         ],
@@ -2678,7 +2587,6 @@
         "answer": "I think it is important to learn languages"
       },
       "no": {
-        "primary": "Jeg synes det er viktig å lære språk",
         "accepted": [
           "Jeg tror det er viktig å lære språk",
           "Jeg mener det er viktig å lære språk"
@@ -2720,7 +2628,6 @@
     ],
     "translations": {
       "en": {
-        "primary": "I usually drink tea in the morning",
         "accepted": [
           "I normally drink tea in the morning"
         ],
@@ -2744,7 +2651,6 @@
         "answer": "I usually drink tea in the morning"
       },
       "no": {
-        "primary": "Jeg drikker vanligvis te om morgenen",
         "accepted": [
           "Jeg pleier å drikke te om morgenen"
         ],
@@ -2784,7 +2690,6 @@
     ],
     "translations": {
       "en": {
-        "primary": "The sun is shining today",
         "accepted": [],
         "word_pool": [
           "is",
@@ -2803,7 +2708,6 @@
         "answer": "The sun is shining today"
       },
       "no": {
-        "primary": "Solen skinner i dag",
         "accepted": [
           "Sola skinner i dag"
         ],
@@ -2839,7 +2743,6 @@
     ],
     "translations": {
       "en": {
-        "primary": "My computer is on the table",
         "accepted": [],
         "word_pool": [
           "chair",
@@ -2858,7 +2761,6 @@
         "answer": "My computer is on the table"
       },
       "no": {
-        "primary": "Datamaskinen min ligger på bordet",
         "accepted": [
           "PC-en min ligger på bordet"
         ],
@@ -2895,7 +2797,6 @@
     ],
     "translations": {
       "en": {
-        "primary": "Are you hungry",
         "accepted": [],
         "word_pool": [
           "are",
@@ -2912,7 +2813,6 @@
         "answer": "Are you hungry"
       },
       "no": {
-        "primary": "Er du sulten",
         "accepted": [],
         "word_pool": [
           "de",

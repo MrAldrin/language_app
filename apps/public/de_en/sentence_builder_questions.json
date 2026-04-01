@@ -9,7 +9,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Ich bin heute sehr glücklich",
         "accepted": [
           "Ich bin heute richtig froh"
         ],
@@ -32,7 +31,6 @@
         "answer": "Ich bin heute sehr glücklich"
       },
       "en": {
-        "primary": "I am very happy today",
         "accepted": [
           "I am very glad today"
         ],
@@ -69,7 +67,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Sie liest ein sehr gutes Buch",
         "accepted": [
           "Sie liest gerade ein sehr gutes Buch"
         ],
@@ -92,7 +89,6 @@
         "answer": "Sie liest ein sehr gutes Buch"
       },
       "en": {
-        "primary": "She reads a really good book",
         "accepted": [
           "She is reading a really good book"
         ],
@@ -131,7 +127,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Wir essen jetzt zu Abend",
         "accepted": [
           "Wir essen jetzt Abendessen"
         ],
@@ -153,7 +148,6 @@
         "answer": "Wir essen jetzt zu Abend"
       },
       "en": {
-        "primary": "We are eating dinner now",
         "accepted": [
           "We eat dinner now"
         ],
@@ -190,7 +184,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Sie gehen zum neuen Laden",
         "accepted": [
           "Sie laufen zum neuen Geschäft"
         ],
@@ -213,7 +206,6 @@
         "answer": "Sie gehen zum neuen Laden"
       },
       "en": {
-        "primary": "They walk to the new store",
         "accepted": [
           "They are walking to the new shop",
           "They walk to the new shop"
@@ -254,7 +246,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Der Hund ist groß und braun",
         "accepted": [],
         "word_pool": [
           "braun",
@@ -274,7 +265,6 @@
         "answer": "Der Hund ist groß und braun"
       },
       "en": {
-        "primary": "The dog is big and brown",
         "accepted": [],
         "word_pool": [
           "and",
@@ -309,7 +299,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Die kleine Katze schläft den ganzen Tag",
         "accepted": [],
         "word_pool": [
           "den",
@@ -330,7 +319,6 @@
         "answer": "Die kleine Katze schläft den ganzen Tag"
       },
       "en": {
-        "primary": "The small cat sleeps all day",
         "accepted": [
           "The little cat sleeps all day"
         ],
@@ -368,7 +356,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Ich habe ein schnelles rotes Auto",
         "accepted": [
           "Ich besitze ein schnelles rotes Auto"
         ],
@@ -391,7 +378,6 @@
         "answer": "Ich habe ein schnelles rotes Auto"
       },
       "en": {
-        "primary": "I have a fast red car",
         "accepted": [
           "I own a fast red car"
         ],
@@ -429,7 +415,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Er arbeitet in einem großen Büro",
         "accepted": [
           "Er ist in einem großen Büro beschäftigt"
         ],
@@ -453,7 +438,6 @@
         "answer": "Er arbeitet in einem großen Büro"
       },
       "en": {
-        "primary": "He works in a large office",
         "accepted": [
           "He is working in a large office"
         ],
@@ -492,7 +476,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Du sprichst sehr gut Deutsch",
         "accepted": [
           "Sie sprechen sehr gut Deutsch"
         ],
@@ -515,7 +498,6 @@
         "answer": "Du sprichst sehr gut Deutsch"
       },
       "en": {
-        "primary": "You speak German very well",
         "accepted": [
           "You talk German very well"
         ],
@@ -552,7 +534,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Das Wetter ist heute wirklich schön",
         "accepted": [
           "Das Wetter ist heute sehr schön"
         ],
@@ -575,7 +556,6 @@
         "answer": "Das Wetter ist heute wirklich schön"
       },
       "en": {
-        "primary": "The weather is really nice today",
         "accepted": [
           "The weather is very nice today"
         ],
@@ -613,7 +593,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Mein junger Bruder ist sehr groß",
         "accepted": [
           "Mein kleiner Bruder ist sehr groß"
         ],
@@ -636,7 +615,6 @@
         "answer": "Mein junger Bruder ist sehr groß"
       },
       "en": {
-        "primary": "My young brother is very tall",
         "accepted": [
           "My little brother is very tall"
         ],
@@ -674,7 +652,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Wir wollen ein neues Haus kaufen",
         "accepted": [
           "Wir möchten ein neues Haus kaufen"
         ],
@@ -697,7 +674,6 @@
         "answer": "Wir wollen ein neues Haus kaufen"
       },
       "en": {
-        "primary": "We want to buy a new house",
         "accepted": [
           "We wish to buy a new house"
         ],
@@ -736,7 +712,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Ich trinke gerne schwarzen Kaffee",
         "accepted": [
           "Ich mag es schwarzen Kaffee zu trinken"
         ],
@@ -761,7 +736,6 @@
         "answer": "Ich trinke gerne schwarzen Kaffee"
       },
       "en": {
-        "primary": "I like to drink black coffee",
         "accepted": [
           "I enjoy drinking black coffee"
         ],
@@ -800,7 +774,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Sie reisen oft nach Spanien",
         "accepted": [
           "Oft reisen sie nach Spanien"
         ],
@@ -821,7 +794,6 @@
         "answer": "Sie reisen oft nach Spanien"
       },
       "en": {
-        "primary": "They often travel to Spain",
         "accepted": [
           "They travel to Spain often"
         ],
@@ -857,7 +829,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Das Essen ist kalt und schlecht",
         "accepted": [
           "Die Mahlzeit ist kalt und schlecht"
         ],
@@ -881,7 +852,6 @@
         "answer": "Das Essen ist kalt und schlecht"
       },
       "en": {
-        "primary": "The food is cold and bad",
         "accepted": [
           "The meal is cold and bad"
         ],
@@ -920,7 +890,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Der schnelle Zug fährt jetzt ab",
         "accepted": [
           "Der Schnellzug fährt jetzt ab"
         ],
@@ -943,7 +912,6 @@
         "answer": "Der schnelle Zug fährt jetzt ab"
       },
       "en": {
-        "primary": "The fast train departs right now",
         "accepted": [
           "The fast train leaves right now"
         ],
@@ -981,7 +949,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Wir spielen jeden Abend Fußball",
         "accepted": [],
         "word_pool": [
           "Abend",
@@ -1000,7 +967,6 @@
         "answer": "Wir spielen jeden Abend Fußball"
       },
       "en": {
-        "primary": "We play football every evening",
         "accepted": [
           "We play soccer every evening"
         ],
@@ -1037,7 +1003,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Sie schrieb gestern einen langen Brief",
         "accepted": [],
         "word_pool": [
           "Brief",
@@ -1057,7 +1022,6 @@
         "answer": "Sie schrieb gestern einen langen Brief"
       },
       "en": {
-        "primary": "She wrote a long letter yesterday",
         "accepted": [],
         "word_pool": [
           "a",
@@ -1092,7 +1056,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Er war gestern sehr müde",
         "accepted": [],
         "word_pool": [
           "böse",
@@ -1111,7 +1074,6 @@
         "answer": "Er war gestern sehr müde"
       },
       "en": {
-        "primary": "He was very tired yesterday",
         "accepted": [],
         "word_pool": [
           "angry",
@@ -1145,7 +1107,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Ich verstehe dich überhaupt nicht",
         "accepted": [
           "Ich verstehe Sie überhaupt nicht"
         ],
@@ -1167,7 +1128,6 @@
         "answer": "Ich verstehe dich überhaupt nicht"
       },
       "en": {
-        "primary": "I do not understand you at all",
         "accepted": [
           "I don't understand you at all"
         ],
@@ -1206,7 +1166,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Der Lehrer hat einen blauen Stift",
         "accepted": [
           "Der Lehrer besitzt einen blauen Stift"
         ],
@@ -1229,7 +1188,6 @@
         "answer": "Der Lehrer hat einen blauen Stift"
       },
       "en": {
-        "primary": "The teacher has a blue pen",
         "accepted": [
           "The instructor has a blue pen"
         ],
@@ -1267,7 +1225,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Sie hören laute Musik",
         "accepted": [
           "Sie hören gerade laute Musik"
         ],
@@ -1288,7 +1245,6 @@
         "answer": "Sie hören laute Musik"
       },
       "en": {
-        "primary": "They listen to loud music",
         "accepted": [
           "They are listening to loud music"
         ],
@@ -1326,7 +1282,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Sie trägt ein gelbes Kleid",
         "accepted": [
           "Sie hat ein gelbes Kleid an"
         ],
@@ -1348,7 +1303,6 @@
         "answer": "Sie trägt ein gelbes Kleid"
       },
       "en": {
-        "primary": "She wears a yellow dress",
         "accepted": [
           "She is wearing a yellow dress"
         ],
@@ -1386,7 +1340,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Ich werde nächste Woche nach London fliegen",
         "accepted": [
           "Nächste Woche fliege ich nach London"
         ],
@@ -1410,7 +1363,6 @@
         "answer": "Ich werde nächste Woche nach London fliegen"
       },
       "en": {
-        "primary": "I will fly to London next week",
         "accepted": [],
         "word_pool": [
           "drive",
@@ -1446,7 +1398,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Der hohe Baum ist sehr alt",
         "accepted": [],
         "word_pool": [
           "alt",
@@ -1466,7 +1417,6 @@
         "answer": "Der hohe Baum ist sehr alt"
       },
       "en": {
-        "primary": "The tall tree is very old",
         "accepted": [],
         "word_pool": [
           "flower",
@@ -1501,7 +1451,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Die große Stadt ist immer belebt",
         "accepted": [
           "Die Großstadt ist immer belebt"
         ],
@@ -1524,7 +1473,6 @@
         "answer": "Die große Stadt ist immer belebt"
       },
       "en": {
-        "primary": "The big city is always busy",
         "accepted": [
           "The large city is always busy"
         ],
@@ -1562,7 +1510,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Sie backt einen leckeren Kuchen",
         "accepted": [
           "Sie macht einen leckeren Kuchen"
         ],
@@ -1583,7 +1530,6 @@
         "answer": "Sie backt einen leckeren Kuchen"
       },
       "en": {
-        "primary": "She is making a delicious cake",
         "accepted": [
           "She makes a delicious cake",
           "She is baking a delicious cake"
@@ -1623,7 +1569,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Ich sehe dich und ihn",
         "accepted": [
           "Ich sehe euch"
         ],
@@ -1645,7 +1590,6 @@
         "answer": "Ich sehe dich und ihn"
       },
       "en": {
-        "primary": "I see you and him",
         "accepted": [],
         "word_pool": [
           "and",
@@ -1679,7 +1623,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Wir werden morgen meine Eltern besuchen",
         "accepted": [
           "Wir besuchen morgen meine Eltern"
         ],
@@ -1700,7 +1643,6 @@
         "answer": "Wir werden morgen meine Eltern besuchen"
       },
       "en": {
-        "primary": "We will visit my parents tomorrow",
         "accepted": [
           "We are visiting my parents tomorrow"
         ],
@@ -1738,7 +1680,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Warum bist du heute so traurig",
         "accepted": [],
         "word_pool": [
           "bist",
@@ -1758,7 +1699,6 @@
         "answer": "Warum bist du heute so traurig"
       },
       "en": {
-        "primary": "Why are you so sad today",
         "accepted": [],
         "word_pool": [
           "are",
@@ -1793,7 +1733,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Er muss mehr schlafen",
         "accepted": [
           "Er braucht mehr Schlaf"
         ],
@@ -1815,7 +1754,6 @@
         "answer": "Er muss mehr schlafen"
       },
       "en": {
-        "primary": "He needs to sleep more",
         "accepted": [
           "He must sleep more"
         ],
@@ -1852,7 +1790,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Ich habe meine Schlüssel zu Hause vergessen",
         "accepted": [],
         "word_pool": [
           "Brieftasche",
@@ -1873,7 +1810,6 @@
         "answer": "Ich habe meine Schlüssel zu Hause vergessen"
       },
       "en": {
-        "primary": "I forgot my keys at home",
         "accepted": [],
         "word_pool": [
           "at",
@@ -1907,7 +1843,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Draußen regnet es gerade",
         "accepted": [
           "Es regnet draußen"
         ],
@@ -1927,7 +1862,6 @@
         "answer": "Draußen regnet es gerade"
       },
       "en": {
-        "primary": "It is raining outside right now",
         "accepted": [
           "It rains outside right now"
         ],
@@ -1964,7 +1898,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Wie viel kostet die Fahrkarte",
         "accepted": [
           "Was kostet die Fahrkarte"
         ],
@@ -1986,7 +1919,6 @@
         "answer": "Wie viel kostet die Fahrkarte"
       },
       "en": {
-        "primary": "How much does the ticket cost",
         "accepted": [],
         "word_pool": [
           "buy",
@@ -2021,7 +1953,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Das rote Auto ist schnell",
         "accepted": [],
         "word_pool": [
           "Auto",
@@ -2039,7 +1970,6 @@
         "answer": "Das rote Auto ist schnell"
       },
       "en": {
-        "primary": "The red car is fast",
         "accepted": [],
         "word_pool": [
           "blue",
@@ -2072,7 +2002,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Wie alt ist deine Schwester",
         "accepted": [
           "Wie alt ist Ihre Schwester"
         ],
@@ -2093,7 +2022,6 @@
         "answer": "Wie alt ist deine Schwester"
       },
       "en": {
-        "primary": "How old is your sister",
         "accepted": [],
         "word_pool": [
           "brother",
@@ -2126,7 +2054,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Ich mag kein scharfes Essen",
         "accepted": [
           "Ich esse nicht gerne scharf"
         ],
@@ -2150,7 +2077,6 @@
         "answer": "Ich mag kein scharfes Essen"
       },
       "en": {
-        "primary": "I don't like spicy food",
         "accepted": [
           "I do not like spicy food"
         ],
@@ -2188,7 +2114,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Wo wohnst du jetzt",
         "accepted": [
           "Wo wohnen Sie jetzt"
         ],
@@ -2209,7 +2134,6 @@
         "answer": "Wo wohnst du jetzt"
       },
       "en": {
-        "primary": "Where do you live now",
         "accepted": [
           "Where are you living now"
         ],
@@ -2247,7 +2171,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Ich habe zwei kleine Katzen",
         "accepted": [],
         "word_pool": [
           "drei",
@@ -2266,7 +2189,6 @@
         "answer": "Ich habe zwei kleine Katzen"
       },
       "en": {
-        "primary": "I have two small cats",
         "accepted": [],
         "word_pool": [
           "big",
@@ -2300,7 +2222,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Sie ist letzten Sommer nach Norwegen gereist",
         "accepted": [
           "Sie reiste letzten Sommer nach Norwegen"
         ],
@@ -2324,7 +2245,6 @@
         "answer": "Sie ist letzten Sommer nach Norwegen gereist"
       },
       "en": {
-        "primary": "She travelled to Norway last summer",
         "accepted": [
           "She traveled to Norway last summer"
         ],
@@ -2362,7 +2282,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Er wacht jeden Tag früh auf",
         "accepted": [
           "Er steht jeden Tag früh auf"
         ],
@@ -2385,7 +2304,6 @@
         "answer": "Er wacht jeden Tag früh auf"
       },
       "en": {
-        "primary": "He wakes up early every day",
         "accepted": [
           "He gets up early every day"
         ],
@@ -2423,7 +2341,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Willst du etwas Wasser",
         "accepted": [
           "Möchten Sie etwas Wasser"
         ],
@@ -2443,7 +2360,6 @@
         "answer": "Willst du etwas Wasser"
       },
       "en": {
-        "primary": "Do you want some water",
         "accepted": [
           "Would you like some water"
         ],
@@ -2481,7 +2397,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Wie heißt du",
         "accepted": [
           "Wie heißen Sie",
           "Was ist dein Name"
@@ -2505,7 +2420,6 @@
         "answer": "Wie heißt du"
       },
       "en": {
-        "primary": "What is your name",
         "accepted": [
           "What's your name"
         ],
@@ -2540,7 +2454,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Wir warten auf den Bus",
         "accepted": [
           "Wir warten an der Bushaltestelle"
         ],
@@ -2564,7 +2477,6 @@
         "answer": "Wir warten auf den Bus"
       },
       "en": {
-        "primary": "We are waiting for the bus",
         "accepted": [
           "We wait for the bus"
         ],
@@ -2601,7 +2513,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Unser neuer Garten ist sehr schön",
         "accepted": [
           "Unser neuer Garten ist wunderbar"
         ],
@@ -2624,7 +2535,6 @@
         "answer": "Unser neuer Garten ist sehr schön"
       },
       "en": {
-        "primary": "Our new garden is very beautiful",
         "accepted": [
           "Our new garden is very pretty"
         ],
@@ -2662,7 +2572,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Ich finde es wichtig Sprachen zu lernen",
         "accepted": [
           "Ich glaube es ist wichtig Sprachen zu lernen"
         ],
@@ -2687,7 +2596,6 @@
         "answer": "Ich finde es wichtig Sprachen zu lernen"
       },
       "en": {
-        "primary": "I think it is important to learn languages",
         "accepted": [
           "I believe it is important to learn languages"
         ],
@@ -2727,7 +2635,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Ich trinke normalerweise morgens Tee",
         "accepted": [
           "Normalerweise trinke ich morgens Tee"
         ],
@@ -2748,7 +2655,6 @@
         "answer": "Ich trinke normalerweise morgens Tee"
       },
       "en": {
-        "primary": "I usually drink tea in the morning",
         "accepted": [
           "I normally drink tea in the morning"
         ],
@@ -2787,7 +2693,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Die Sonne scheint heute",
         "accepted": [],
         "word_pool": [
           "die",
@@ -2805,7 +2710,6 @@
         "answer": "Die Sonne scheint heute"
       },
       "en": {
-        "primary": "The sun is shining today",
         "accepted": [],
         "word_pool": [
           "is",
@@ -2839,7 +2743,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Mein Computer liegt auf dem Tisch",
         "accepted": [
           "Mein Rechner steht auf dem Tisch"
         ],
@@ -2863,7 +2766,6 @@
         "answer": "Mein Computer liegt auf dem Tisch"
       },
       "en": {
-        "primary": "My computer is on the table",
         "accepted": [],
         "word_pool": [
           "chair",
@@ -2897,7 +2799,6 @@
     ],
     "translations": {
       "de": {
-        "primary": "Hast du Hunger",
         "accepted": [
           "Haben Sie Hunger"
         ],
@@ -2917,7 +2818,6 @@
         "answer": "Hast du Hunger"
       },
       "en": {
-        "primary": "Are you hungry",
         "accepted": [],
         "word_pool": [
           "are",

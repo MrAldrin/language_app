@@ -12,7 +12,6 @@
     ],
     "translations": {
       "nl": {
-        "primary": "ik",
         "accepted": [],
         "word_pool": [
           "ik",
@@ -27,7 +26,6 @@
         "answer": "ik"
       },
       "no": {
-        "primary": "jeg",
         "accepted": [],
         "word_pool": [
           "jeg",
@@ -60,7 +58,6 @@
     ],
     "translations": {
       "nl": {
-        "primary": "jij",
         "accepted": [
           "je"
         ],
@@ -77,7 +74,6 @@
         "answer": "jij"
       },
       "no": {
-        "primary": "du",
         "accepted": [],
         "word_pool": [
           "du",
@@ -111,7 +107,6 @@
     ],
     "translations": {
       "nl": {
-        "primary": "hij",
         "accepted": [],
         "word_pool": [
           "hij",
@@ -126,7 +121,6 @@
         "answer": "hij"
       },
       "no": {
-        "primary": "han",
         "accepted": [],
         "word_pool": [
           "han",
@@ -160,7 +154,6 @@
     ],
     "translations": {
       "nl": {
-        "primary": "zij (enkelvoud)",
         "accepted": [
           "ze"
         ],
@@ -178,7 +171,6 @@
         "hint": "enkelvoud"
       },
       "no": {
-        "primary": "hun",
         "accepted": [],
         "word_pool": [
           "hun",
@@ -212,7 +204,6 @@
     ],
     "translations": {
       "nl": {
-        "primary": "het",
         "accepted": [],
         "word_pool": [
           "het",
@@ -227,7 +218,6 @@
         "answer": "het"
       },
       "no": {
-        "primary": "det",
         "accepted": [
           "den"
         ],
@@ -262,7 +252,6 @@
     ],
     "translations": {
       "nl": {
-        "primary": "wij",
         "accepted": [
           "we"
         ],
@@ -279,7 +268,6 @@
         "answer": "wij"
       },
       "no": {
-        "primary": "vi",
         "accepted": [],
         "word_pool": [
           "vi",
@@ -312,7 +300,6 @@
     ],
     "translations": {
       "nl": {
-        "primary": "jullie",
         "accepted": [],
         "word_pool": [
           "jullie",
@@ -327,7 +314,6 @@
         "answer": "jullie"
       },
       "no": {
-        "primary": "dere",
         "accepted": [],
         "word_pool": [
           "dere",
@@ -360,7 +346,6 @@
     ],
     "translations": {
       "nl": {
-        "primary": "zij (meervoud)",
         "accepted": [
           "ze"
         ],
@@ -378,7 +363,6 @@
         "hint": "meervoud"
       },
       "no": {
-        "primary": "de",
         "accepted": [],
         "word_pool": [
           "de",
@@ -411,7 +395,6 @@
     ],
     "translations": {
       "nl": {
-        "primary": "u",
         "accepted": [],
         "word_pool": [
           "u",
@@ -426,7 +409,6 @@
         "answer": "u"
       },
       "no": {
-        "primary": "De (formelt)",
         "accepted": [
           "dere"
         ],
@@ -462,7 +444,6 @@
     ],
     "translations": {
       "nl": {
-        "primary": "mij",
         "accepted": [
           "me"
         ],
@@ -479,7 +460,6 @@
         "answer": "mij"
       },
       "no": {
-        "primary": "meg",
         "accepted": [],
         "word_pool": [
           "meg",
@@ -512,7 +492,6 @@
     ],
     "translations": {
       "nl": {
-        "primary": "jou",
         "accepted": [
           "je"
         ],
@@ -529,7 +508,6 @@
         "answer": "jou"
       },
       "no": {
-        "primary": "deg",
         "accepted": [],
         "word_pool": [
           "deg",
@@ -563,7 +541,6 @@
     ],
     "translations": {
       "nl": {
-        "primary": "hem",
         "accepted": [],
         "word_pool": [
           "hem",
@@ -578,7 +555,6 @@
         "answer": "hem"
       },
       "no": {
-        "primary": "ham",
         "accepted": [
           "han"
         ],
@@ -614,7 +590,6 @@
     ],
     "translations": {
       "nl": {
-        "primary": "haar (object)",
         "accepted": [],
         "word_pool": [
           "haar",
@@ -630,7 +605,6 @@
         "hint": "object"
       },
       "no": {
-        "primary": "henne",
         "accepted": [],
         "word_pool": [
           "henne",
@@ -663,7 +637,6 @@
     ],
     "translations": {
       "nl": {
-        "primary": "ons",
         "accepted": [],
         "word_pool": [
           "ons",
@@ -678,7 +651,6 @@
         "answer": "ons"
       },
       "no": {
-        "primary": "oss",
         "accepted": [],
         "word_pool": [
           "oss",
@@ -711,7 +683,6 @@
     ],
     "translations": {
       "nl": {
-        "primary": "hen",
         "accepted": [
           "ze",
           "hun"
@@ -729,7 +700,6 @@
         "answer": "hen"
       },
       "no": {
-        "primary": "dem",
         "accepted": [],
         "word_pool": [
           "dem",
@@ -761,7 +731,6 @@
     ],
     "translations": {
       "nl": {
-        "primary": "mijn",
         "accepted": [
           "m'n"
         ],
@@ -778,7 +747,6 @@
         "answer": "mijn"
       },
       "no": {
-        "primary": "min",
         "accepted": [
           "mi",
           "mitt",
@@ -814,7 +782,6 @@
     ],
     "translations": {
       "nl": {
-        "primary": "jouw",
         "accepted": [
           "je"
         ],
@@ -831,7 +798,6 @@
         "answer": "jouw"
       },
       "no": {
-        "primary": "din",
         "accepted": [
           "di",
           "ditt",
@@ -868,7 +834,6 @@
     ],
     "translations": {
       "nl": {
-        "primary": "zijn",
         "accepted": [
           "z'n"
         ],
@@ -885,7 +850,6 @@
         "answer": "zijn"
       },
       "no": {
-        "primary": "hans",
         "accepted": [
           "sin",
           "si",
@@ -923,7 +887,6 @@
     ],
     "translations": {
       "nl": {
-        "primary": "haar (bezittelijk)",
         "accepted": [
           "d'r"
         ],
@@ -941,7 +904,6 @@
         "hint": "bezittelijk"
       },
       "no": {
-        "primary": "hennes",
         "accepted": [
           "sin",
           "si",
@@ -978,7 +940,6 @@
     ],
     "translations": {
       "nl": {
-        "primary": "ons",
         "accepted": [
           "onze"
         ],
@@ -995,7 +956,6 @@
         "answer": "ons"
       },
       "no": {
-        "primary": "vår",
         "accepted": [
           "vårt",
           "våre"
@@ -1030,7 +990,6 @@
     ],
     "translations": {
       "nl": {
-        "primary": "hun",
         "accepted": [],
         "word_pool": [
           "hun",
@@ -1045,7 +1004,6 @@
         "answer": "hun"
       },
       "no": {
-        "primary": "deres (deres)",
         "accepted": [],
         "word_pool": [
           "deres",
@@ -1078,7 +1036,6 @@
     ],
     "translations": {
       "nl": {
-        "primary": "uw",
         "accepted": [],
         "word_pool": [
           "uw",
@@ -1093,7 +1050,6 @@
         "answer": "uw"
       },
       "no": {
-        "primary": "Deres (formelt)",
         "accepted": [
           "dere"
         ],
@@ -1126,7 +1082,6 @@
     ],
     "translations": {
       "nl": {
-        "primary": "zich",
         "accepted": [
           "zichzelf"
         ],
@@ -1144,7 +1099,6 @@
         "answer": "zich"
       },
       "no": {
-        "primary": "seg",
         "accepted": [
           "seg selv"
         ],
@@ -1177,7 +1131,6 @@
     ],
     "translations": {
       "nl": {
-        "primary": "wie",
         "accepted": [],
         "word_pool": [
           "wie",
@@ -1192,7 +1145,6 @@
         "answer": "wie"
       },
       "no": {
-        "primary": "hvem",
         "accepted": [],
         "word_pool": [
           "hvem",
@@ -1223,7 +1175,6 @@
     ],
     "translations": {
       "nl": {
-        "primary": "wat",
         "accepted": [],
         "word_pool": [
           "wat",
@@ -1238,7 +1189,6 @@
         "answer": "wat"
       },
       "no": {
-        "primary": "hva",
         "accepted": [],
         "word_pool": [
           "hva",
@@ -1269,7 +1219,6 @@
     ],
     "translations": {
       "nl": {
-        "primary": "waar",
         "accepted": [],
         "word_pool": [
           "waar",
@@ -1284,7 +1233,6 @@
         "answer": "waar"
       },
       "no": {
-        "primary": "hvor",
         "accepted": [],
         "word_pool": [
           "hvor",
@@ -1315,7 +1263,6 @@
     ],
     "translations": {
       "nl": {
-        "primary": "wanneer",
         "accepted": [],
         "word_pool": [
           "wanneer",
@@ -1330,7 +1277,6 @@
         "answer": "wanneer"
       },
       "no": {
-        "primary": "når",
         "accepted": [],
         "word_pool": [
           "når",
@@ -1361,7 +1307,6 @@
     ],
     "translations": {
       "nl": {
-        "primary": "hoe",
         "accepted": [],
         "word_pool": [
           "hoe",
@@ -1376,7 +1321,6 @@
         "answer": "hoe"
       },
       "no": {
-        "primary": "hvordan",
         "accepted": [],
         "word_pool": [
           "hvordan",
@@ -1407,7 +1351,6 @@
     ],
     "translations": {
       "nl": {
-        "primary": "waarom",
         "accepted": [],
         "word_pool": [
           "waarom",
@@ -1422,7 +1365,6 @@
         "answer": "waarom"
       },
       "no": {
-        "primary": "hvorfor",
         "accepted": [],
         "word_pool": [
           "hvorfor",
@@ -1453,7 +1395,6 @@
     ],
     "translations": {
       "nl": {
-        "primary": "welke",
         "accepted": [
           "welk"
         ],
@@ -1470,7 +1411,6 @@
         "answer": "welke"
       },
       "no": {
-        "primary": "hvilken",
         "accepted": [
           "hvilket",
           "hvilke"
@@ -1506,7 +1446,6 @@
     ],
     "translations": {
       "nl": {
-        "primary": "deze (enkelvoud)",
         "accepted": [],
         "word_pool": [
           "deze",
@@ -1522,7 +1461,6 @@
         "hint": "enkelvoud"
       },
       "no": {
-        "primary": "denne",
         "accepted": [],
         "word_pool": [
           "denne",
@@ -1554,7 +1492,6 @@
     ],
     "translations": {
       "nl": {
-        "primary": "dit",
         "accepted": [],
         "word_pool": [
           "dit",
@@ -1569,7 +1506,6 @@
         "answer": "dit"
       },
       "no": {
-        "primary": "dette",
         "accepted": [],
         "word_pool": [
           "dette",
@@ -1600,7 +1536,6 @@
     ],
     "translations": {
       "nl": {
-        "primary": "deze (meervoud)",
         "accepted": [],
         "word_pool": [
           "deze",
@@ -1616,7 +1551,6 @@
         "hint": "meervoud"
       },
       "no": {
-        "primary": "disse",
         "accepted": [],
         "word_pool": [
           "disse",
@@ -1647,7 +1581,6 @@
     ],
     "translations": {
       "nl": {
-        "primary": "die",
         "accepted": [
           "dat"
         ],
@@ -1664,7 +1597,6 @@
         "answer": "die"
       },
       "no": {
-        "primary": "den (demonstrativ)",
         "accepted": [
           "det",
           "de"
@@ -1699,7 +1631,6 @@
     ],
     "translations": {
       "nl": {
-        "primary": "iemand",
         "accepted": [],
         "word_pool": [
           "iemand",
@@ -1714,7 +1645,6 @@
         "answer": "iemand"
       },
       "no": {
-        "primary": "noen (person)",
         "accepted": [],
         "word_pool": [
           "noen",
@@ -1747,7 +1677,6 @@
     ],
     "translations": {
       "nl": {
-        "primary": "niemand",
         "accepted": [],
         "word_pool": [
           "niemand",
@@ -1762,7 +1691,6 @@
         "answer": "niemand"
       },
       "no": {
-        "primary": "ingen",
         "accepted": [],
         "word_pool": [
           "ingen",
@@ -1793,7 +1721,6 @@
     ],
     "translations": {
       "nl": {
-        "primary": "iets",
         "accepted": [],
         "word_pool": [
           "iets",
@@ -1808,7 +1735,6 @@
         "answer": "iets"
       },
       "no": {
-        "primary": "noe",
         "accepted": [],
         "word_pool": [
           "noe",
@@ -1840,7 +1766,6 @@
     ],
     "translations": {
       "nl": {
-        "primary": "niets",
         "accepted": [
           "niks"
         ],
@@ -1858,7 +1783,6 @@
         "answer": "niets"
       },
       "no": {
-        "primary": "ingenting",
         "accepted": [],
         "word_pool": [
           "ingenting",
@@ -1889,7 +1813,6 @@
     ],
     "translations": {
       "nl": {
-        "primary": "alles",
         "accepted": [],
         "word_pool": [
           "alles",
@@ -1904,7 +1827,6 @@
         "answer": "alles"
       },
       "no": {
-        "primary": "alt",
         "accepted": [],
         "word_pool": [
           "alt",
@@ -1935,7 +1857,6 @@
     ],
     "translations": {
       "nl": {
-        "primary": "men",
         "accepted": [
           "je"
         ],
@@ -1952,7 +1873,6 @@
         "answer": "men"
       },
       "no": {
-        "primary": "man",
         "accepted": [
           "en"
         ],
@@ -1986,7 +1906,6 @@
     ],
     "translations": {
       "nl": {
-        "primary": "iedereen",
         "accepted": [
           "allen"
         ],
@@ -2003,7 +1922,6 @@
         "answer": "iedereen"
       },
       "no": {
-        "primary": "alle (personer)",
         "accepted": [
           "alle sammen"
         ],
@@ -2037,7 +1955,6 @@
     ],
     "translations": {
       "nl": {
-        "primary": "veel",
         "accepted": [
           "vele"
         ],
@@ -2055,7 +1972,6 @@
         "answer": "veel"
       },
       "no": {
-        "primary": "mange",
         "accepted": [
           "mye"
         ],
@@ -2089,7 +2005,6 @@
     ],
     "translations": {
       "nl": {
-        "primary": "weinig",
         "accepted": [],
         "word_pool": [
           "weinig",
@@ -2104,7 +2019,6 @@
         "answer": "weinig"
       },
       "no": {
-        "primary": "få",
         "accepted": [
           "lite"
         ],
@@ -2138,7 +2052,6 @@
     ],
     "translations": {
       "nl": {
-        "primary": "beide",
         "accepted": [
           "allebei"
         ],
@@ -2155,7 +2068,6 @@
         "answer": "beide"
       },
       "no": {
-        "primary": "begge",
         "accepted": [
           "begge to"
         ],
@@ -2188,7 +2100,6 @@
     ],
     "translations": {
       "nl": {
-        "primary": "enkele",
         "accepted": [
           "sommige"
         ],
@@ -2205,7 +2116,6 @@
         "answer": "enkele"
       },
       "no": {
-        "primary": "noen (enkelte)",
         "accepted": [
           "enkelte"
         ],
@@ -2238,7 +2148,6 @@
     ],
     "translations": {
       "nl": {
-        "primary": "zelf",
         "accepted": [
           "zelfs"
         ],
@@ -2255,7 +2164,6 @@
         "answer": "zelf"
       },
       "no": {
-        "primary": "selv",
         "accepted": [
           "sjøl"
         ],
@@ -2287,7 +2195,6 @@
     ],
     "translations": {
       "nl": {
-        "primary": "elkaar",
         "accepted": [],
         "word_pool": [
           "elkaar",
@@ -2302,7 +2209,6 @@
         "answer": "elkaar"
       },
       "no": {
-        "primary": "hverandre",
         "accepted": [],
         "word_pool": [
           "hverandre",
@@ -2335,7 +2241,6 @@
     ],
     "translations": {
       "nl": {
-        "primary": "die (relatief)",
         "accepted": [
           "wie",
           "welke"
@@ -2354,7 +2259,6 @@
         "hint": "relatief"
       },
       "no": {
-        "primary": "som (relativ)",
         "accepted": [],
         "word_pool": [
           "som",
@@ -2387,7 +2291,6 @@
     ],
     "translations": {
       "nl": {
-        "primary": "dat (relatief)",
         "accepted": [
           "wat"
         ],
@@ -2405,7 +2308,6 @@
         "hint": "relatief"
       },
       "no": {
-        "primary": "som (nøytrum relativ)",
         "accepted": [],
         "word_pool": [
           "som",
@@ -2437,7 +2339,6 @@
     ],
     "translations": {
       "nl": {
-        "primary": "elke",
         "accepted": [
           "elk",
           "ieder",
@@ -2456,7 +2357,6 @@
         "answer": "elke"
       },
       "no": {
-        "primary": "hver",
         "accepted": [
           "hvert"
         ],
@@ -2489,7 +2389,6 @@
     ],
     "translations": {
       "nl": {
-        "primary": "wiens",
         "accepted": [
           "wier"
         ],
@@ -2506,7 +2405,6 @@
         "answer": "wiens"
       },
       "no": {
-        "primary": "hvis (spørrende)",
         "accepted": [
           "hvilkens"
         ],
@@ -2542,7 +2440,6 @@
     ],
     "translations": {
       "nl": {
-        "primary": "allemaal",
         "accepted": [
           "allen",
           "alle"
@@ -2560,7 +2457,6 @@
         "answer": "allemaal"
       },
       "no": {
-        "primary": "alle sammen",
         "accepted": [
           "alle"
         ],
@@ -2592,7 +2488,6 @@
     ],
     "translations": {
       "nl": {
-        "primary": "er",
         "accepted": [
           "daar"
         ],
@@ -2609,7 +2504,6 @@
         "answer": "er"
       },
       "no": {
-        "primary": "der (sted)",
         "accepted": [
           "her"
         ],
@@ -2644,7 +2538,6 @@
     ],
     "translations": {
       "nl": {
-        "primary": "u (object)",
         "accepted": [],
         "word_pool": [
           "u",
@@ -2660,7 +2553,6 @@
         "hint": "object"
       },
       "no": {
-        "primary": "Dem (objekt)",
         "accepted": [
           "dere"
         ],
@@ -2694,7 +2586,6 @@
     ],
     "translations": {
       "nl": {
-        "primary": "ergens",
         "accepted": [],
         "word_pool": [
           "ergens",
@@ -2709,7 +2600,6 @@
         "answer": "ergens"
       },
       "no": {
-        "primary": "et eller annet sted",
         "accepted": [
           "noen steder"
         ],
@@ -2744,7 +2634,6 @@
     ],
     "translations": {
       "nl": {
-        "primary": "nergens",
         "accepted": [],
         "word_pool": [
           "nergens",
@@ -2759,7 +2648,6 @@
         "answer": "nergens"
       },
       "no": {
-        "primary": "ingen steder",
         "accepted": [
           "ikke noe sted"
         ],
@@ -2794,7 +2682,6 @@
     ],
     "translations": {
       "nl": {
-        "primary": "overal",
         "accepted": [],
         "word_pool": [
           "overal",
@@ -2809,7 +2696,6 @@
         "answer": "overal"
       },
       "no": {
-        "primary": "overalt",
         "accepted": [],
         "word_pool": [
           "overalt",
@@ -2840,7 +2726,6 @@
     ],
     "translations": {
       "nl": {
-        "primary": "elkaars",
         "accepted": [],
         "word_pool": [
           "elkaars",
@@ -2855,7 +2740,6 @@
         "answer": "elkaars"
       },
       "no": {
-        "primary": "hverandres",
         "accepted": [],
         "word_pool": [
           "hverandres",
@@ -2886,7 +2770,6 @@
     ],
     "translations": {
       "nl": {
-        "primary": "sommige",
         "accepted": [
           "enkele"
         ],
@@ -2903,7 +2786,6 @@
         "answer": "sommige"
       },
       "no": {
-        "primary": "noen (flertall)",
         "accepted": [
           "enkelte"
         ],
@@ -2938,7 +2820,6 @@
     ],
     "translations": {
       "nl": {
-        "primary": "deze (vrouwelijk)",
         "accepted": [],
         "word_pool": [
           "deze",
@@ -2954,7 +2835,6 @@
         "hint": "vrouwelijk"
       },
       "no": {
-        "primary": "denne (hunkjønn)",
         "accepted": [],
         "word_pool": [
           "denne",

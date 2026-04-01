@@ -11,12 +11,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Ich habe einen Bruder. ___ heißt Lukas.",
+        "prompt": "Ich habe einen Bruder. Er heißt Lukas.",
         "answer": "Er",
         "accepted": [],
         "word_pool": [
@@ -25,13 +24,14 @@
           "Es",
           "Wir",
           "Ihr"
-        ]
+        ],
+        "hidden_word_index": 4
       },
       "en": {
-        "hint_translation": "I have a brother. His name is Lucas."
+        "prompt": "I have a brother. His name is Lucas."
       },
       "no": {
-        "hint_translation": "Jeg har en bror. Han heter Lucas."
+        "prompt": "Jeg har en bror. Han heter Lucas."
       }
     }
   },
@@ -48,12 +48,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Kannst du ___ bitte helfen? Ich verstehe das nicht.",
+        "prompt": "Kannst du mir bitte helfen? Ich verstehe das nicht.",
         "answer": "mir",
         "accepted": [],
         "word_pool": [
@@ -62,13 +61,14 @@
           "dir",
           "dich",
           "uns"
-        ]
+        ],
+        "hidden_word_index": 2
       },
       "en": {
-        "hint_translation": "Can you please help me? I don't understand this."
+        "prompt": "Can you please help me? I don't understand this."
       },
       "no": {
-        "hint_translation": "Kan du vær så snill å hjelpe meg? Jeg forstår ikke dette."
+        "prompt": "Kan du vær så snill å hjelpe meg? Jeg forstår ikke dette."
       }
     }
   },
@@ -84,12 +84,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Das ist meine Schwester und das ist ___ Freund.",
+        "prompt": "Das ist meine Schwester und das ist ihr Freund.",
         "answer": "ihr",
         "accepted": [],
         "word_pool": [
@@ -98,13 +97,14 @@
           "mein",
           "dein",
           "unser"
-        ]
+        ],
+        "hidden_word_index": 7
       },
       "en": {
-        "hint_translation": "That is my sister and that is her boyfriend."
+        "prompt": "That is my sister and that is her boyfriend."
       },
       "no": {
-        "hint_translation": "Det er søsteren min og det er kjæresten hennes."
+        "prompt": "Det er søsteren min og det er kjæresten hennes."
       }
     }
   },
@@ -120,12 +120,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Wir wohnen hier. Das ist ___ Haus.",
+        "prompt": "Wir wohnen hier. Das ist unser Haus.",
         "answer": "unser",
         "accepted": [],
         "word_pool": [
@@ -134,13 +133,14 @@
           "ihr",
           "mein",
           "sein"
-        ]
+        ],
+        "hidden_word_index": 5
       },
       "en": {
-        "hint_translation": "We live here. That is our house."
+        "prompt": "We live here. That is our house."
       },
       "no": {
-        "hint_translation": "Vi bor her. Det er huset vårt."
+        "prompt": "Vi bor her. Det er huset vårt."
       }
     }
   },
@@ -156,12 +156,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Ich wasche ___ jeden Morgen das Gesicht.",
+        "prompt": "Ich wasche mir jeden Morgen das Gesicht.",
         "answer": "mir",
         "accepted": [],
         "word_pool": [
@@ -170,13 +169,14 @@
           "sich",
           "uns",
           "euch"
-        ]
+        ],
+        "hidden_word_index": 2
       },
       "en": {
-        "hint_translation": "I wash my face every morning."
+        "prompt": "I wash my face every morning."
       },
       "no": {
-        "hint_translation": "Jeg vasker ansiktet mitt hver morgen."
+        "prompt": "Jeg vasker ansiktet mitt hver morgen."
       }
     }
   },
@@ -192,12 +192,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Beeilt ___ bitte, wir kommen sonst zu spät!",
+        "prompt": "Beeilt euch bitte, wir kommen sonst zu spät!",
         "answer": "euch",
         "accepted": [],
         "word_pool": [
@@ -206,13 +205,14 @@
           "sich",
           "dich",
           "mich"
-        ]
+        ],
+        "hidden_word_index": 1
       },
       "en": {
-        "hint_translation": "Please hurry up, otherwise we'll be late!"
+        "prompt": "Please hurry up, otherwise we'll be late!"
       },
       "no": {
-        "hint_translation": "Skynd dere snill, ellers kommer vi for sent!"
+        "prompt": "Skynd dere snill, ellers kommer vi for sent!"
       }
     }
   },
@@ -228,12 +228,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Gefällt dir dieses Kleid? Nein, ___ dort finde ich schöner.",
+        "prompt": "Gefällt dir dieses Kleid? Nein, jenes dort finde ich schöner.",
         "answer": "jenes",
         "accepted": [],
         "word_pool": [
@@ -242,13 +241,14 @@
           "solches",
           "welches",
           "das"
-        ]
+        ],
+        "hidden_word_index": 5
       },
       "en": {
-        "hint_translation": "Do you like this dress? No, I find that one over there prettier."
+        "prompt": "Do you like this dress? No, I find that one over there prettier."
       },
       "no": {
-        "hint_translation": "Liker du denne kjolen? Nei, jeg synes den der borte er finere."
+        "prompt": "Liker du denne kjolen? Nei, jeg synes den der borte er finere."
       }
     }
   },
@@ -264,12 +264,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "___ Mann, den du dort siehst, ist mein Chef.",
+        "prompt": "Dieser Mann, den du dort siehst, ist mein Chef.",
         "answer": "Dieser",
         "accepted": [],
         "word_pool": [
@@ -278,13 +277,14 @@
           "Welcher",
           "Solcher",
           "Der"
-        ]
+        ],
+        "hidden_word_index": 0
       },
       "en": {
-        "hint_translation": "This man you see there is my boss."
+        "prompt": "This man you see there is my boss."
       },
       "no": {
-        "hint_translation": "Denne mannen du ser der er sjefen min."
+        "prompt": "Denne mannen du ser der er sjefen min."
       }
     }
   },
@@ -300,12 +300,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Der Film, ___ wir gestern gesehen haben, war toll.",
+        "prompt": "Der Film, den wir gestern gesehen haben, war toll.",
         "answer": "den",
         "accepted": [],
         "word_pool": [
@@ -314,13 +313,14 @@
           "dem",
           "das",
           "die"
-        ]
+        ],
+        "hidden_word_index": 2
       },
       "en": {
-        "hint_translation": "The movie we saw yesterday was great."
+        "prompt": "The movie we saw yesterday was great."
       },
       "no": {
-        "hint_translation": "Filmen vi så i går var kjempebra."
+        "prompt": "Filmen vi så i går var kjempebra."
       }
     }
   },
@@ -336,12 +336,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Das ist die Frau, ___ Auto gestohlen wurde.",
+        "prompt": "Das ist die Frau, deren Auto gestohlen wurde.",
         "answer": "deren",
         "accepted": [],
         "word_pool": [
@@ -350,13 +349,14 @@
           "der",
           "dessen",
           "welcher"
-        ]
+        ],
+        "hidden_word_index": 4
       },
       "en": {
-        "hint_translation": "That is the woman whose car was stolen."
+        "prompt": "That is the woman whose car was stolen."
       },
       "no": {
-        "hint_translation": "Det er kvinnen hvis bil ble stjålet."
+        "prompt": "Det er kvinnen hvis bil ble stjålet."
       }
     }
   },
@@ -372,12 +372,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "___ gehört diese Tasche?",
+        "prompt": "Wem gehört diese Tasche?",
         "answer": "Wem",
         "accepted": [],
         "word_pool": [
@@ -386,13 +385,14 @@
           "Wen",
           "Was",
           "Wie"
-        ]
+        ],
+        "hidden_word_index": 0
       },
       "en": {
-        "hint_translation": "Whose bag is this?"
+        "prompt": "Whose bag is this?"
       },
       "no": {
-        "hint_translation": "Hvem eier denne vesken?"
+        "prompt": "Hvem eier denne vesken?"
       }
     }
   },
@@ -408,12 +408,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "___ von diesen Büchern möchtest du lesen?",
+        "prompt": "Welches von diesen Büchern möchtest du lesen?",
         "answer": "Welches",
         "accepted": [],
         "word_pool": [
@@ -422,13 +421,14 @@
           "Wer",
           "Wem",
           "Wie"
-        ]
+        ],
+        "hidden_word_index": 0
       },
       "en": {
-        "hint_translation": "Which of these books would you like to read?"
+        "prompt": "Which of these books would you like to read?"
       },
       "no": {
-        "hint_translation": "Hvilken av disse bøkene vil du lese?"
+        "prompt": "Hvilken av disse bøkene vil du lese?"
       }
     }
   },
@@ -444,12 +444,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Gestern hat ___ für dich angerufen.",
+        "prompt": "Gestern hat jemand für dich angerufen.",
         "answer": "jemand",
         "accepted": [],
         "word_pool": [
@@ -458,13 +457,14 @@
           "etwas",
           "nichts",
           "alles"
-        ]
+        ],
+        "hidden_word_index": 2
       },
       "en": {
-        "hint_translation": "Yesterday someone called for you."
+        "prompt": "Yesterday someone called for you."
       },
       "no": {
-        "hint_translation": "I går var det noen som ringte til deg."
+        "prompt": "I går var det noen som ringte til deg."
       }
     }
   },
@@ -481,12 +481,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Ich habe Hunger, aber es ist ___ im Kühlschrank.",
+        "prompt": "Ich habe Hunger, aber es ist nichts im Kühlschrank.",
         "answer": "nichts",
         "accepted": [],
         "word_pool": [
@@ -495,13 +494,14 @@
           "alles",
           "manches",
           "jedes"
-        ]
+        ],
+        "hidden_word_index": 6
       },
       "en": {
-        "hint_translation": "I am hungry, but there is nothing in the fridge."
+        "prompt": "I am hungry, but there is nothing in the fridge."
       },
       "no": {
-        "hint_translation": "Jeg er sulten, men det er ingenting i kjøleskapet."
+        "prompt": "Jeg er sulten, men det er ingenting i kjøleskapet."
       }
     }
   },
@@ -516,12 +516,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Ich habe die ganze Nacht gearbeitet. ___ bin sehr müde.",
+        "prompt": "Ich habe die ganze Nacht gearbeitet. Ich bin sehr müde.",
         "answer": "Ich",
         "accepted": [],
         "word_pool": [
@@ -530,13 +529,14 @@
           "Er",
           "Wir",
           "Ihr"
-        ]
+        ],
+        "hidden_word_index": 6
       },
       "en": {
-        "hint_translation": "I worked all night. I am very tired."
+        "prompt": "I worked all night. I am very tired."
       },
       "no": {
-        "hint_translation": "Jeg jobbet hele natten. Jeg er veldig sliten."
+        "prompt": "Jeg jobbet hele natten. Jeg er veldig sliten."
       }
     }
   },
@@ -551,12 +551,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Hallo Jan, woher kommst ___?",
+        "prompt": "Hallo Jan, woher kommst du?",
         "answer": "du",
         "accepted": [],
         "word_pool": [
@@ -565,13 +564,14 @@
           "sie",
           "ihr",
           "wir"
-        ]
+        ],
+        "hidden_word_index": 4
       },
       "en": {
-        "hint_translation": "Hi Jan, where do you come from?"
+        "prompt": "Hi Jan, where do you come from?"
       },
       "no": {
-        "hint_translation": "Hei Jan, hvor kommer du fra?"
+        "prompt": "Hei Jan, hvor kommer du fra?"
       }
     }
   },
@@ -586,12 +586,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Wir haben einen tollen Urlaub. ___ geht es gut.",
+        "prompt": "Wir haben einen tollen Urlaub. Uns geht es gut.",
         "answer": "Uns",
         "accepted": [],
         "word_pool": [
@@ -600,13 +599,14 @@
           "Euch",
           "Ihnen",
           "Sie"
-        ]
+        ],
+        "hidden_word_index": 5
       },
       "en": {
-        "hint_translation": "We are having a great vacation. We are doing well."
+        "prompt": "We are having a great vacation. We are doing well."
       },
       "no": {
-        "hint_translation": "Vi har en flott ferie. Vi har det bra."
+        "prompt": "Vi har en flott ferie. Vi har det bra."
       }
     }
   },
@@ -622,12 +622,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Du bist meine beste Freundin. Ich liebe ___.",
+        "prompt": "Du bist meine beste Freundin. Ich liebe dich.",
         "answer": "dich",
         "accepted": [],
         "word_pool": [
@@ -636,13 +635,14 @@
           "mich",
           "mir",
           "ihn"
-        ]
+        ],
+        "hidden_word_index": 7
       },
       "en": {
-        "hint_translation": "You are my best friend. I love you."
+        "prompt": "You are my best friend. I love you."
       },
       "no": {
-        "hint_translation": "Du er min beste venninne. Jeg elsker deg."
+        "prompt": "Du er min beste venninne. Jeg elsker deg."
       }
     }
   },
@@ -658,12 +658,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Ich stehe hier hinten. Können Sie ___ sehen?",
+        "prompt": "Ich stehe hier hinten. Können Sie mich sehen?",
         "answer": "mich",
         "accepted": [],
         "word_pool": [
@@ -672,13 +671,14 @@
           "dich",
           "dir",
           "uns"
-        ]
+        ],
+        "hidden_word_index": 6
       },
       "en": {
-        "hint_translation": "I am standing back here. Can you see me?"
+        "prompt": "I am standing back here. Can you see me?"
       },
       "no": {
-        "hint_translation": "Jeg står her bak. Kan du se meg?"
+        "prompt": "Jeg står her bak. Kan du se meg?"
       }
     }
   },
@@ -694,12 +694,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Hallo ihr zwei! Ich besuche ___ morgen.",
+        "prompt": "Hallo ihr zwei! Ich besuche euch morgen.",
         "answer": "euch",
         "accepted": [],
         "word_pool": [
@@ -708,13 +707,14 @@
           "sie",
           "ihn",
           "dich"
-        ]
+        ],
+        "hidden_word_index": 5
       },
       "en": {
-        "hint_translation": "Hi you two! I'll visit you tomorrow."
+        "prompt": "Hi you two! I'll visit you tomorrow."
       },
       "no": {
-        "hint_translation": "Hei dere to! Jeg besøker dere i morgen."
+        "prompt": "Hei dere to! Jeg besøker dere i morgen."
       }
     }
   },
@@ -730,12 +730,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Peter vermisst sein Buch. Das Buch gehört ___.",
+        "prompt": "Peter vermisst sein Buch. Das Buch gehört ihm.",
         "answer": "ihm",
         "accepted": [],
         "word_pool": [
@@ -744,13 +743,14 @@
           "ihr",
           "ihre",
           "denen"
-        ]
+        ],
+        "hidden_word_index": 7
       },
       "en": {
-        "hint_translation": "Peter misses his book. The book belongs to him."
+        "prompt": "Peter misses his book. The book belongs to him."
       },
       "no": {
-        "hint_translation": "Peter savner boken sin. Boken tilhører ham."
+        "prompt": "Peter savner boken sin. Boken tilhører ham."
       }
     }
   },
@@ -766,12 +766,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Sehr geehrte Frau Müller, ich danke ___ herzlich für die Hilfe.",
+        "prompt": "Sehr geehrte Frau Müller, ich danke Ihnen herzlich für die Hilfe.",
         "answer": "Ihnen",
         "accepted": [],
         "word_pool": [
@@ -780,13 +779,14 @@
           "Dir",
           "Euch",
           "Uns"
-        ]
+        ],
+        "hidden_word_index": 6
       },
       "en": {
-        "hint_translation": "Dear Mrs. Müller, I thank you very much for the help."
+        "prompt": "Dear Mrs. Müller, I thank you very much for the help."
       },
       "no": {
-        "hint_translation": "Kjære fru Müller, jeg takker Dem hjertelig for hjelpen."
+        "prompt": "Kjære fru Müller, jeg takker Dem hjertelig for hjelpen."
       }
     }
   },
@@ -802,12 +802,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Hallo Sarah! Wie geht es ___ heute?",
+        "prompt": "Hallo Sarah! Wie geht es dir heute?",
         "answer": "dir",
         "accepted": [],
         "word_pool": [
@@ -816,13 +815,14 @@
           "euch",
           "ihr",
           "mir"
-        ]
+        ],
+        "hidden_word_index": 5
       },
       "en": {
-        "hint_translation": "Hi Sarah! How are you today?"
+        "prompt": "Hi Sarah! How are you today?"
       },
       "no": {
-        "hint_translation": "Hei Sarah! Hvordan har du det i dag?"
+        "prompt": "Hei Sarah! Hvordan har du det i dag?"
       }
     }
   },
@@ -837,12 +837,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Das sind Peter und Maria. ___ sind meine Freunde.",
+        "prompt": "Das sind Peter und Maria. Sie sind meine Freunde.",
         "answer": "Sie",
         "accepted": [],
         "word_pool": [
@@ -851,13 +850,14 @@
           "Wir",
           "Er",
           "Es"
-        ]
+        ],
+        "hidden_word_index": 5
       },
       "en": {
-        "hint_translation": "These are Peter and Maria. They are my friends."
+        "prompt": "These are Peter and Maria. They are my friends."
       },
       "no": {
-        "hint_translation": "Dette er Peter og Maria. De er vennene mine."
+        "prompt": "Dette er Peter og Maria. De er vennene mine."
       }
     }
   },
@@ -872,12 +872,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Mein Bruder liebt Autos. ___ hat ein rotes Auto.",
+        "prompt": "Mein Bruder liebt Autos. Er hat ein rotes Auto.",
         "answer": "Er",
         "accepted": [],
         "word_pool": [
@@ -886,13 +885,14 @@
           "Es",
           "Ihr",
           "Wir"
-        ]
+        ],
+        "hidden_word_index": 4
       },
       "en": {
-        "hint_translation": "My brother loves cars. He has a red car."
+        "prompt": "My brother loves cars. He has a red car."
       },
       "no": {
-        "hint_translation": "Broren min elsker biler. Han har en rød bil."
+        "prompt": "Broren min elsker biler. Han har en rød bil."
       }
     }
   },
@@ -907,12 +907,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Ich möchte ins Kino gehen. Hast ___ heute Zeit?",
+        "prompt": "Ich möchte ins Kino gehen. Hast du heute Zeit?",
         "answer": "du",
         "accepted": [],
         "word_pool": [
@@ -921,13 +920,14 @@
           "ihr",
           "wir",
           "sie"
-        ]
+        ],
+        "hidden_word_index": 6
       },
       "en": {
-        "hint_translation": "I want to go to the movies. Do you have time today?"
+        "prompt": "I want to go to the movies. Do you have time today?"
       },
       "no": {
-        "hint_translation": "Jeg vil gå på kino. Har du tid i dag?"
+        "prompt": "Jeg vil gå på kino. Har du tid i dag?"
       }
     }
   },
@@ -943,12 +943,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Dort oben sitzt ein Vogel. Ich sehe ___ sehr gut.",
+        "prompt": "Dort oben sitzt ein Vogel. Ich sehe ihn sehr gut.",
         "answer": "ihn",
         "accepted": [],
         "word_pool": [
@@ -957,13 +956,14 @@
           "sie",
           "es",
           "mich"
-        ]
+        ],
+        "hidden_word_index": 7
       },
       "en": {
-        "hint_translation": "A bird is sitting up there. I see it very well."
+        "prompt": "A bird is sitting up there. I see it very well."
       },
       "no": {
-        "hint_translation": "Det sitter en fugl der oppe. Jeg ser den veldig godt."
+        "prompt": "Det sitter en fugl der oppe. Jeg ser den veldig godt."
       }
     }
   },
@@ -978,12 +978,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Du hast etwas liegen lassen. Ist das ___ Handy?",
+        "prompt": "Du hast etwas liegen lassen. Ist das dein Handy?",
         "answer": "dein",
         "accepted": [],
         "word_pool": [
@@ -992,13 +991,14 @@
           "deine",
           "euer",
           "unser"
-        ]
+        ],
+        "hidden_word_index": 7
       },
       "en": {
-        "hint_translation": "You left something behind. Is that your phone?"
+        "prompt": "You left something behind. Is that your phone?"
       },
       "no": {
-        "hint_translation": "Du har lagt igjen noe. Er det mobilen din?"
+        "prompt": "Du har lagt igjen noe. Er det mobilen din?"
       }
     }
   },
@@ -1013,12 +1013,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Ich will gehen, aber ich kann die Tür nicht öffnen. Wo ist ___ Schlüssel?",
+        "prompt": "Ich will gehen, aber ich kann die Tür nicht öffnen. Wo ist mein Schlüssel?",
         "answer": "mein",
         "accepted": [],
         "word_pool": [
@@ -1027,13 +1026,14 @@
           "meinen",
           "meiner",
           "meinem"
-        ]
+        ],
+        "hidden_word_index": 12
       },
       "en": {
-        "hint_translation": "I want to go, but I can't open the door. Where is my key?"
+        "prompt": "I want to go, but I can't open the door. Where is my key?"
       },
       "no": {
-        "hint_translation": "Jeg vil gå, men jeg kan ikke åpne døren. Hvor er nøkkelen min?"
+        "prompt": "Jeg vil gå, men jeg kan ikke åpne døren. Hvor er nøkkelen min?"
       }
     }
   },
@@ -1048,12 +1048,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Maria ist schon weg, aber hier liegt noch etwas. Sie hat ___ Tasche vergessen.",
+        "prompt": "Maria ist schon weg, aber hier liegt noch etwas. Sie hat ihre Tasche vergessen.",
         "answer": "ihre",
         "accepted": [],
         "word_pool": [
@@ -1062,13 +1061,14 @@
           "seine",
           "meine",
           "deine"
-        ]
+        ],
+        "hidden_word_index": 11
       },
       "en": {
-        "hint_translation": "Maria is already gone, but something is still lying here. She forgot her bag."
+        "prompt": "Maria is already gone, but something is still lying here. She forgot her bag."
       },
       "no": {
-        "hint_translation": "Maria er allerede gått, men her ligger det noe ennå. Hun glemte vesken sin."
+        "prompt": "Maria er allerede gått, men her ligger det noe ennå. Hun glemte vesken sin."
       }
     }
   },
@@ -1083,12 +1083,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Der Hund ist weggelaufen. Er sucht ___ Hund jetzt überall.",
+        "prompt": "Der Hund ist weggelaufen. Er sucht seinen Hund jetzt überall.",
         "answer": "seinen",
         "accepted": [],
         "word_pool": [
@@ -1097,13 +1096,14 @@
           "ihren",
           "unseren",
           "deinen"
-        ]
+        ],
+        "hidden_word_index": 6
       },
       "en": {
-        "hint_translation": "The dog ran away. He is looking for his dog everywhere now."
+        "prompt": "The dog ran away. He is looking for his dog everywhere now."
       },
       "no": {
-        "hint_translation": "Hunden har løpt bort. Han leter etter hunden sin overalt nå."
+        "prompt": "Hunden har løpt bort. Han leter etter hunden sin overalt nå."
       }
     }
   },
@@ -1118,12 +1118,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Wir wohnen schon lange in Berlin. Wir lieben ___ Stadt.",
+        "prompt": "Wir wohnen schon lange in Berlin. Wir lieben unsere Stadt.",
         "answer": "unsere",
         "accepted": [],
         "word_pool": [
@@ -1132,13 +1131,14 @@
           "euer",
           "eure",
           "ihre"
-        ]
+        ],
+        "hidden_word_index": 8
       },
       "en": {
-        "hint_translation": "We have lived in Berlin for a long time. We love our city."
+        "prompt": "We have lived in Berlin for a long time. We love our city."
       },
       "no": {
-        "hint_translation": "Vi har bodd i Berlin lenge. Vi elsker byen vår."
+        "prompt": "Vi har bodd i Berlin lenge. Vi elsker byen vår."
       }
     }
   },
@@ -1153,12 +1153,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Kinder, es ist schon spät. Habt ihr ___ Hausaufgaben gemacht?",
+        "prompt": "Kinder, es ist schon spät. Habt ihr eure Hausaufgaben gemacht?",
         "answer": "eure",
         "accepted": [],
         "word_pool": [
@@ -1167,13 +1166,14 @@
           "unsere",
           "ihre",
           "meine"
-        ]
+        ],
+        "hidden_word_index": 7
       },
       "en": {
-        "hint_translation": "Children, it's already late. Have you done your homework?"
+        "prompt": "Children, it's already late. Have you done your homework?"
       },
       "no": {
-        "hint_translation": "Barn, det er allerede sent. Har dere gjort leksene deres?"
+        "prompt": "Barn, det er allerede sent. Har dere gjort leksene deres?"
       }
     }
   },
@@ -1189,12 +1189,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Ich habe ein Problem. Ich spreche mit ___ Vater darüber.",
+        "prompt": "Ich habe ein Problem. Ich spreche mit meinem Vater darüber.",
         "answer": "meinem",
         "accepted": [],
         "word_pool": [
@@ -1203,13 +1202,14 @@
           "meine",
           "meinen",
           "meiner"
-        ]
+        ],
+        "hidden_word_index": 7
       },
       "en": {
-        "hint_translation": "I have a problem. I'm talking to my father about it."
+        "prompt": "I have a problem. I'm talking to my father about it."
       },
       "no": {
-        "hint_translation": "Jeg har et problem. Jeg snakker med faren min om det."
+        "prompt": "Jeg har et problem. Jeg snakker med faren min om det."
       }
     }
   },
@@ -1225,12 +1225,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Sie ist im Krankenhaus. Besuchst du ___ Tante heute?",
+        "prompt": "Sie ist im Krankenhaus. Besuchst du deine Tante heute?",
         "answer": "deine",
         "accepted": [],
         "word_pool": [
@@ -1239,13 +1238,14 @@
           "deiner",
           "deinem",
           "deinen"
-        ]
+        ],
+        "hidden_word_index": 6
       },
       "en": {
-        "hint_translation": "She is in the hospital. Are you visiting your aunt today?"
+        "prompt": "She is in the hospital. Are you visiting your aunt today?"
       },
       "no": {
-        "hint_translation": "Hun er på sykehuset. Besøker du tanten din i dag?"
+        "prompt": "Hun er på sykehuset. Besøker du tanten din i dag?"
       }
     }
   },
@@ -1260,12 +1260,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Peter hat ein neues Fahrzeug gekauft. Das ist ___ Auto.",
+        "prompt": "Peter hat ein neues Fahrzeug gekauft. Das ist sein Auto.",
         "answer": "sein",
         "accepted": [],
         "word_pool": [
@@ -1274,13 +1273,14 @@
           "ihr",
           "ihre",
           "meine"
-        ]
+        ],
+        "hidden_word_index": 8
       },
       "en": {
-        "hint_translation": "Peter has bought a new vehicle. That is his car."
+        "prompt": "Peter has bought a new vehicle. That is his car."
       },
       "no": {
-        "hint_translation": "Peter har kjøpt et nytt kjøretøy. Det er bilen hans."
+        "prompt": "Peter har kjøpt et nytt kjøretøy. Det er bilen hans."
       }
     }
   },
@@ -1295,12 +1295,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Guten Tag, Herr Schmidt! Wie heißt ___ Katze?",
+        "prompt": "Guten Tag, Herr Schmidt! Wie heißt Ihre Katze?",
         "answer": "Ihre",
         "accepted": [],
         "word_pool": [
@@ -1309,13 +1308,14 @@
           "Seine",
           "Meine",
           "Deine"
-        ]
+        ],
+        "hidden_word_index": 6
       },
       "en": {
-        "hint_translation": "Good day, Mr. Schmidt! What is your cat's name?"
+        "prompt": "Good day, Mr. Schmidt! What is your cat's name?"
       },
       "no": {
-        "hint_translation": "God dag, herr Schmidt! Hva heter katten Deres?"
+        "prompt": "God dag, herr Schmidt! Hva heter katten Deres?"
       }
     }
   },
@@ -1330,12 +1330,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Wir sind neu hier. Kennen Sie schon ___ Namen?",
+        "prompt": "Wir sind neu hier. Kennen Sie schon unseren Namen?",
         "answer": "unseren",
         "accepted": [],
         "word_pool": [
@@ -1344,13 +1343,14 @@
           "unsere",
           "euren",
           "ihren"
-        ]
+        ],
+        "hidden_word_index": 7
       },
       "en": {
-        "hint_translation": "We are new here. Do you already know our names?"
+        "prompt": "We are new here. Do you already know our names?"
       },
       "no": {
-        "hint_translation": "Vi er nye her. Kjenner du allerede navnet vårt?"
+        "prompt": "Vi er nye her. Kjenner du allerede navnet vårt?"
       }
     }
   },
@@ -1365,12 +1365,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Es ist so leise im Haus. Wo sind ___ Kinder eigentlich?",
+        "prompt": "Es ist so leise im Haus. Wo sind deine Kinder eigentlich?",
         "answer": "deine",
         "accepted": [],
         "word_pool": [
@@ -1379,13 +1378,14 @@
           "eure",
           "unsere",
           "ihre"
-        ]
+        ],
+        "hidden_word_index": 8
       },
       "en": {
-        "hint_translation": "It is so quiet in the house. Where are your children, actually?"
+        "prompt": "It is so quiet in the house. Where are your children, actually?"
       },
       "no": {
-        "hint_translation": "Det er så stille i huset. Hvor er barna dine egentlig?"
+        "prompt": "Det er så stille i huset. Hvor er barna dine egentlig?"
       }
     }
   },
@@ -1400,12 +1400,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Sein Portemonnaie ist weg. Er hat ___ Geld verloren.",
+        "prompt": "Sein Portemonnaie ist weg. Er hat sein Geld verloren.",
         "answer": "sein",
         "accepted": [],
         "word_pool": [
@@ -1414,13 +1413,14 @@
           "ihr",
           "mein",
           "dein"
-        ]
+        ],
+        "hidden_word_index": 6
       },
       "en": {
-        "hint_translation": "His wallet is gone. He has lost his money."
+        "prompt": "His wallet is gone. He has lost his money."
       },
       "no": {
-        "hint_translation": "Lommeboken hans er borte. Han har mistet pengene sine."
+        "prompt": "Lommeboken hans er borte. Han har mistet pengene sine."
       }
     }
   },
@@ -1435,12 +1435,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Ich habe die Koffer schon gepackt. Ich freue ___ auf den Urlaub.",
+        "prompt": "Ich habe die Koffer schon gepackt. Ich freue mich auf den Urlaub.",
         "answer": "mich",
         "accepted": [],
         "word_pool": [
@@ -1449,13 +1448,14 @@
           "sich",
           "dich",
           "uns"
-        ]
+        ],
+        "hidden_word_index": 8
       },
       "en": {
-        "hint_translation": "I have already packed the suitcases. I'm looking forward to the vacation."
+        "prompt": "I have already packed the suitcases. I'm looking forward to the vacation."
       },
       "no": {
-        "hint_translation": "Jeg har allerede pakket koffertene. Jeg gleder meg til ferien."
+        "prompt": "Jeg har allerede pakket koffertene. Jeg gleder meg til ferien."
       }
     }
   },
@@ -1470,12 +1470,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Nichts gefällt dir. Du beschwerst ___ immer über alles.",
+        "prompt": "Nichts gefällt dir. Du beschwerst dich immer über alles.",
         "answer": "dich",
         "accepted": [],
         "word_pool": [
@@ -1484,13 +1483,14 @@
           "sich",
           "mich",
           "euch"
-        ]
+        ],
+        "hidden_word_index": 5
       },
       "en": {
-        "hint_translation": "Nothing pleases you. You always complain about everything."
+        "prompt": "Nothing pleases you. You always complain about everything."
       },
       "no": {
-        "hint_translation": "Ingenting gleder deg. Du klager alltid over alt."
+        "prompt": "Ingenting gleder deg. Du klager alltid over alt."
       }
     }
   },
@@ -1505,12 +1505,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Vergiss den Termin nicht. Wir treffen ___ um acht Uhr vor dem Kino.",
+        "prompt": "Vergiss den Termin nicht. Wir treffen uns um acht Uhr vor dem Kino.",
         "answer": "uns",
         "accepted": [],
         "word_pool": [
@@ -1519,13 +1518,14 @@
           "sich",
           "mich",
           "dich"
-        ]
+        ],
+        "hidden_word_index": 6
       },
       "en": {
-        "hint_translation": "Don't forget the appointment. We are meeting at eight o'clock in front of the cinema."
+        "prompt": "Don't forget the appointment. We are meeting at eight o'clock in front of the cinema."
       },
       "no": {
-        "hint_translation": "Ikke glem avtalen. Vi møtes klokken åtte foran kinoen."
+        "prompt": "Ikke glem avtalen. Vi møtes klokken åtte foran kinoen."
       }
     }
   },
@@ -1540,12 +1540,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Das Wetter ist herrlich. Sie sonnen ___ am Strand.",
+        "prompt": "Das Wetter ist herrlich. Sie sonnen sich am Strand.",
         "answer": "sich",
         "accepted": [],
         "word_pool": [
@@ -1554,13 +1553,14 @@
           "euch",
           "mich",
           "dich"
-        ]
+        ],
+        "hidden_word_index": 6
       },
       "en": {
-        "hint_translation": "The weather is lovely. They are sunbathing on the beach."
+        "prompt": "The weather is lovely. They are sunbathing on the beach."
       },
       "no": {
-        "hint_translation": "Været er nydelig. De soler seg på stranden."
+        "prompt": "Været er nydelig. De soler seg på stranden."
       }
     }
   },
@@ -1575,12 +1575,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Mein alter Wagen ist kaputt. Ich kaufe ___ ein neues Auto.",
+        "prompt": "Mein alter Wagen ist kaputt. Ich kaufe mir ein neues Auto.",
         "answer": "mir",
         "accepted": [],
         "word_pool": [
@@ -1589,13 +1588,14 @@
           "dir",
           "sich",
           "uns"
-        ]
+        ],
+        "hidden_word_index": 7
       },
       "en": {
-        "hint_translation": "My old car is broken. I'm buying a new car."
+        "prompt": "My old car is broken. I'm buying a new car."
       },
       "no": {
-        "hint_translation": "Min gamle bil er ødelagt. Jeg kjøper meg en ny bil."
+        "prompt": "Min gamle bil er ødelagt. Jeg kjøper meg en ny bil."
       }
     }
   },
@@ -1610,12 +1610,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Bevor du ins Bett gehst, putzt ___ bitte die Zähne.",
+        "prompt": "Bevor du ins Bett gehst, putzt dir bitte die Zähne.",
         "answer": "dir",
         "accepted": [],
         "word_pool": [
@@ -1624,13 +1623,14 @@
           "sich",
           "mir",
           "euch"
-        ]
+        ],
+        "hidden_word_index": 6
       },
       "en": {
-        "hint_translation": "Before you go to bed, please brush your teeth."
+        "prompt": "Before you go to bed, please brush your teeth."
       },
       "no": {
-        "hint_translation": "Før du legger deg, puss tennene dine snill."
+        "prompt": "Før du legger deg, puss tennene dine snill."
       }
     }
   },
@@ -1645,12 +1645,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Er geht heute nicht zum Friseur. Er schneidet ___ die Haare selbst.",
+        "prompt": "Er geht heute nicht zum Friseur. Er schneidet sich die Haare selbst.",
         "answer": "sich",
         "accepted": [],
         "word_pool": [
@@ -1659,13 +1658,14 @@
           "ihr",
           "uns",
           "euch"
-        ]
+        ],
+        "hidden_word_index": 8
       },
       "en": {
-        "hint_translation": "He is not going to the hairdresser today. He cuts his hair himself."
+        "prompt": "He is not going to the hairdresser today. He cuts his hair himself."
       },
       "no": {
-        "hint_translation": "Han går ikke til frisøren i dag. Han klipper håret sitt selv."
+        "prompt": "Han går ikke til frisøren i dag. Han klipper håret sitt selv."
       }
     }
   },
@@ -1680,12 +1680,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Sie hat ein fantastisches Gedächtnis. Sie merkt ___ alles sofort.",
+        "prompt": "Sie hat ein fantastisches Gedächtnis. Sie merkt sich alles sofort.",
         "answer": "sich",
         "accepted": [],
         "word_pool": [
@@ -1694,13 +1693,14 @@
           "uns",
           "euch",
           "mich"
-        ]
+        ],
+        "hidden_word_index": 7
       },
       "en": {
-        "hint_translation": "She has a fantastic memory. She notices everything immediately."
+        "prompt": "She has a fantastic memory. She notices everything immediately."
       },
       "no": {
-        "hint_translation": "Hun har en fantastisk hukommelse. Hun merker seg alt med en gang."
+        "prompt": "Hun har en fantastisk hukommelse. Hun merker seg alt med en gang."
       }
     }
   },
@@ -1715,12 +1715,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Hier ist ein tolles Konzert. Interessieren Sie ___ für Musik?",
+        "prompt": "Hier ist ein tolles Konzert. Interessieren Sie sich für Musik?",
         "answer": "sich",
         "accepted": [],
         "word_pool": [
@@ -1729,13 +1728,14 @@
           "uns",
           "euch",
           "mich"
-        ]
+        ],
+        "hidden_word_index": 7
       },
       "en": {
-        "hint_translation": "There is a great concert here. Are you interested in music?"
+        "prompt": "There is a great concert here. Are you interested in music?"
       },
       "no": {
-        "hint_translation": "Det er en flott konsert her. Er De interessert i musikk?"
+        "prompt": "Det er en flott konsert her. Er De interessert i musikk?"
       }
     }
   },
@@ -1750,12 +1750,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Es gibt hier draußen nichts zu tun. Wir langweilen ___.",
+        "prompt": "Es gibt hier draußen nichts zu tun. Wir langweilen uns.",
         "answer": "uns",
         "accepted": [],
         "word_pool": [
@@ -1764,13 +1763,14 @@
           "sich",
           "mich",
           "dich"
-        ]
+        ],
+        "hidden_word_index": 9
       },
       "en": {
-        "hint_translation": "There is nothing to do out here. We are bored."
+        "prompt": "There is nothing to do out here. We are bored."
       },
       "no": {
-        "hint_translation": "Det er ingenting å gjøre her ute. Vi kjeder oss."
+        "prompt": "Det er ingenting å gjøre her ute. Vi kjeder oss."
       }
     }
   },
@@ -1785,12 +1785,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Euer Picknick wurde abgesagt. Ihr ärgert ___ über den Regen.",
+        "prompt": "Euer Picknick wurde abgesagt. Ihr ärgert euch über den Regen.",
         "answer": "euch",
         "accepted": [],
         "word_pool": [
@@ -1799,13 +1798,14 @@
           "sich",
           "dich",
           "mich"
-        ]
+        ],
+        "hidden_word_index": 6
       },
       "en": {
-        "hint_translation": "Your picnic was cancelled. You are annoyed about the rain."
+        "prompt": "Your picnic was cancelled. You are annoyed about the rain."
       },
       "no": {
-        "hint_translation": "Pikniken deres ble avlyst. Dere er sinte over regnet."
+        "prompt": "Pikniken deres ble avlyst. Dere er sinte over regnet."
       }
     }
   },
@@ -1820,12 +1820,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Ich kenne deinen Namen noch nicht. Stell ___ bitte vor.",
+        "prompt": "Ich kenne deinen Namen noch nicht. Stell dich bitte vor.",
         "answer": "dich",
         "accepted": [],
         "word_pool": [
@@ -1834,13 +1833,14 @@
           "mich",
           "uns",
           "sich"
-        ]
+        ],
+        "hidden_word_index": 7
       },
       "en": {
-        "hint_translation": "I don't know your name yet. Please introduce yourself."
+        "prompt": "I don't know your name yet. Please introduce yourself."
       },
       "no": {
-        "hint_translation": "Jeg kjenner ikke navnet ditt ennå. Introduser deg snill."
+        "prompt": "Jeg kjenner ikke navnet ditt ennå. Introduser deg snill."
       }
     }
   },
@@ -1855,12 +1855,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Das Leben wird in 100 Jahren ganz anders sein. Wir stellen ___ die Zukunft vor.",
+        "prompt": "Das Leben wird in 100 Jahren ganz anders sein. Wir stellen uns die Zukunft vor.",
         "answer": "uns",
         "accepted": [],
         "word_pool": [
@@ -1869,13 +1868,14 @@
           "sich",
           "mich",
           "dich"
-        ]
+        ],
+        "hidden_word_index": 11
       },
       "en": {
-        "hint_translation": "Life will be very different in 100 years. We imagine the future."
+        "prompt": "Life will be very different in 100 years. We imagine the future."
       },
       "no": {
-        "hint_translation": "Livet vil være helt annerledes om 100 år. Vi forestiller oss fremtiden."
+        "prompt": "Livet vil være helt annerledes om 100 år. Vi forestiller oss fremtiden."
       }
     }
   },
@@ -1889,12 +1889,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Ich habe viele Bücher gelesen, aber ___ Buch hier ist sehr spannend.",
+        "prompt": "Ich habe viele Bücher gelesen, aber Dieses Buch hier ist sehr spannend.",
         "answer": "Dieses",
         "accepted": [],
         "word_pool": [
@@ -1903,13 +1902,14 @@
           "Solches",
           "Welches",
           "Das"
-        ]
+        ],
+        "hidden_word_index": 6
       },
       "en": {
-        "hint_translation": "I have read many books, but this book here is very exciting."
+        "prompt": "I have read many books, but this book here is very exciting."
       },
       "no": {
-        "hint_translation": "Jeg har lest mange bøker, men denne boken her er veldig spennende."
+        "prompt": "Jeg har lest mange bøker, men denne boken her er veldig spennende."
       }
     }
   },
@@ -1923,12 +1923,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Dort drüben stehen Gäste. Kennst du ___ Leute eigentlich?",
+        "prompt": "Dort drüben stehen Gäste. Kennst du diese Leute eigentlich?",
         "answer": "diese",
         "accepted": [],
         "word_pool": [
@@ -1937,13 +1936,14 @@
           "diesem",
           "diesen",
           "jener"
-        ]
+        ],
+        "hidden_word_index": 6
       },
       "en": {
-        "hint_translation": "There are guests standing over there. Do you actually know these people?"
+        "prompt": "There are guests standing over there. Do you actually know these people?"
       },
       "no": {
-        "hint_translation": "Det står gjester der borte. Kjenner du disse menneskene egentlig?"
+        "prompt": "Det står gjester der borte. Kjenner du disse menneskene egentlig?"
       }
     }
   },
@@ -1957,12 +1957,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Diese Äpfel sind sauer. Ich mag ___ Äpfel nicht.",
+        "prompt": "Diese Äpfel sind sauer. Ich mag solche Äpfel nicht.",
         "answer": "solche",
         "accepted": [],
         "word_pool": [
@@ -1971,13 +1970,14 @@
           "diese",
           "jene",
           "manche"
-        ]
+        ],
+        "hidden_word_index": 6
       },
       "en": {
-        "hint_translation": "These apples are sour. I don't like such apples."
+        "prompt": "These apples are sour. I don't like such apples."
       },
       "no": {
-        "hint_translation": "Disse eplene er sure. Jeg liker ikke slike epler."
+        "prompt": "Disse eplene er sure. Jeg liker ikke slike epler."
       }
     }
   },
@@ -1991,12 +1991,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Jeder Tag ist wie der andere. Es ist immer ___.",
+        "prompt": "Jeder Tag ist wie der andere. Es ist immer dasselbe.",
         "answer": "dasselbe",
         "accepted": [],
         "word_pool": [
@@ -2005,13 +2004,14 @@
           "derselbe",
           "gleiche",
           "selbe"
-        ]
+        ],
+        "hidden_word_index": 9
       },
       "en": {
-        "hint_translation": "Every day is like any other. It is always the same."
+        "prompt": "Every day is like any other. It is always the same."
       },
       "no": {
-        "hint_translation": "Hver dag er som enhver annen. Det er alltid det samme."
+        "prompt": "Hver dag er som enhver annen. Det er alltid det samme."
       }
     }
   },
@@ -2026,12 +2026,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Es gibt viele Sorten auf der Karte. Ich nehme ___ Wein hier.",
+        "prompt": "Es gibt viele Sorten auf der Karte. Ich nehme diesen Wein hier.",
         "answer": "diesen",
         "accepted": [],
         "word_pool": [
@@ -2040,13 +2039,14 @@
           "diesem",
           "dieses",
           "jenen"
-        ]
+        ],
+        "hidden_word_index": 9
       },
       "en": {
-        "hint_translation": "There are many varieties on the menu. I'll have this wine here."
+        "prompt": "There are many varieties on the menu. I'll have this wine here."
       },
       "no": {
-        "hint_translation": "Det er mange sorter på kartet. Jeg tar denne vinen her."
+        "prompt": "Det er mange sorter på kartet. Jeg tar denne vinen her."
       }
     }
   },
@@ -2061,12 +2061,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Wir haben gerade über ihn gesprochen. In ___ Moment kam er herein.",
+        "prompt": "Wir haben gerade über ihn gesprochen. In diesem Moment kam er herein.",
         "answer": "diesem",
         "accepted": [],
         "word_pool": [
@@ -2075,13 +2074,14 @@
           "dieser",
           "dieses",
           "jenem"
-        ]
+        ],
+        "hidden_word_index": 7
       },
       "en": {
-        "hint_translation": "We were just talking about him. At that moment he came in."
+        "prompt": "We were just talking about him. At that moment he came in."
       },
       "no": {
-        "hint_translation": "Vi snakket nettopp om ham. I det øyeblikket kom han inn."
+        "prompt": "Vi snakket nettopp om ham. I det øyeblikket kom han inn."
       }
     }
   },
@@ -2095,12 +2095,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Diese Idee ist gut, aber was hältst du von ___ Idee dort drüben?",
+        "prompt": "Diese Idee ist gut, aber was hältst du von jener Idee dort drüben?",
         "answer": "jener",
         "accepted": [],
         "word_pool": [
@@ -2109,13 +2108,14 @@
           "solcher",
           "welcher",
           "jener"
-        ]
+        ],
+        "hidden_word_index": 9
       },
       "en": {
-        "hint_translation": "This idea is good, but what do you think of that idea over there?"
+        "prompt": "This idea is good, but what do you think of that idea over there?"
       },
       "no": {
-        "hint_translation": "Denne ideen er god, men hva synes du om den ideen der borte?"
+        "prompt": "Denne ideen er god, men hva synes du om den ideen der borte?"
       }
     }
   },
@@ -2129,12 +2129,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Sie hat sich kaum verändert. ___ Frau kenne ich schon lange.",
+        "prompt": "Sie hat sich kaum verändert. Dieselbe Frau kenne ich schon lange.",
         "answer": "Dieselbe",
         "accepted": [],
         "word_pool": [
@@ -2143,13 +2142,14 @@
           "Dasselbe",
           "Diese",
           "Jene"
-        ]
+        ],
+        "hidden_word_index": 5
       },
       "en": {
-        "hint_translation": "She has hardly changed. I've known the same woman for a long time."
+        "prompt": "She has hardly changed. I've known the same woman for a long time."
       },
       "no": {
-        "hint_translation": "Hun har nesten ikke forandret seg. Jeg har kjent den samme kvinnen lenge."
+        "prompt": "Hun har nesten ikke forandret seg. Jeg har kjent den samme kvinnen lenge."
       }
     }
   },
@@ -2163,12 +2163,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Wir sind Nachbarn. Wir wohnen im ___ Haus.",
+        "prompt": "Wir sind Nachbarn. Wir wohnen im selben Haus.",
         "answer": "selben",
         "accepted": [],
         "word_pool": [
@@ -2177,13 +2176,14 @@
           "diesem",
           "jenem",
           "solchem"
-        ]
+        ],
+        "hidden_word_index": 6
       },
       "en": {
-        "hint_translation": "We are neighbors. We live in the same house."
+        "prompt": "We are neighbors. We live in the same house."
       },
       "no": {
-        "hint_translation": "Vi er naboer. Vi bor i samme hus."
+        "prompt": "Vi er naboer. Vi bor i samme hus."
       }
     }
   },
@@ -2197,12 +2197,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Diese Schuhe sind billig, aber ___ Schuhe dort sind zu teuer.",
+        "prompt": "Diese Schuhe sind billig, aber Jene Schuhe dort sind zu teuer.",
         "answer": "Jene",
         "accepted": [],
         "word_pool": [
@@ -2211,13 +2210,14 @@
           "Solche",
           "Welche",
           "Manche"
-        ]
+        ],
+        "hidden_word_index": 5
       },
       "en": {
-        "hint_translation": "These shoes are cheap, but those shoes over there are too expensive."
+        "prompt": "These shoes are cheap, but those shoes over there are too expensive."
       },
       "no": {
-        "hint_translation": "Disse skoene er billige, men de skoene der borte er for dyre."
+        "prompt": "Disse skoene er billige, men de skoene der borte er for dyre."
       }
     }
   },
@@ -2231,12 +2231,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Es regnet Bindfäden. Hast du schon mal ___ Wetter erlebt?",
+        "prompt": "Es regnet Bindfäden. Hast du schon mal solches Wetter erlebt?",
         "answer": "solches",
         "accepted": [],
         "word_pool": [
@@ -2245,13 +2244,14 @@
           "jenes",
           "welches",
           "manches"
-        ]
+        ],
+        "hidden_word_index": 7
       },
       "en": {
-        "hint_translation": "It's raining cats and dogs. Have you ever experienced such weather?"
+        "prompt": "It's raining cats and dogs. Have you ever experienced such weather?"
       },
       "no": {
-        "hint_translation": "Det regner trollkjerringer. Har du noen gang opplevd slikt vær?"
+        "prompt": "Det regner trollkjerringer. Har du noen gang opplevd slikt vær?"
       }
     }
   },
@@ -2265,12 +2265,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Bitte setzen Sie sich woanders hin. ___ hier ist mein Platz.",
+        "prompt": "Bitte setzen Sie sich woanders hin. Dieser hier ist mein Platz.",
         "answer": "Dieser",
         "accepted": [],
         "word_pool": [
@@ -2279,13 +2278,14 @@
           "Dieses",
           "Jener",
           "Der"
-        ]
+        ],
+        "hidden_word_index": 6
       },
       "en": {
-        "hint_translation": "Please sit somewhere else. This here is my place."
+        "prompt": "Please sit somewhere else. This here is my place."
       },
       "no": {
-        "hint_translation": "Sitt et annet sted snill. Dette her er min plass."
+        "prompt": "Sitt et annet sted snill. Dette her er min plass."
       }
     }
   },
@@ -2299,12 +2299,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Du hast Schwierigkeiten mit der Aufgabe? Ich habe gestern ___ Problem gelöst.",
+        "prompt": "Du hast Schwierigkeiten mit der Aufgabe? Ich habe gestern dasselbe Problem gelöst.",
         "answer": "dasselbe",
         "accepted": [],
         "word_pool": [
@@ -2313,13 +2312,14 @@
           "dieselbe",
           "dieses",
           "jenes"
-        ]
+        ],
+        "hidden_word_index": 9
       },
       "en": {
-        "hint_translation": "You have difficulties with the task? I solved the same problem yesterday."
+        "prompt": "You have difficulties with the task? I solved the same problem yesterday."
       },
       "no": {
-        "hint_translation": "Har du vanskeligheter med oppgaven? Jeg løste det samme problemet i går."
+        "prompt": "Har du vanskeligheter med oppgaven? Jeg løste det samme problemet i går."
       }
     }
   },
@@ -2334,12 +2334,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Dort ist ein Bekannter. Der Mann, ___ dort steht, ist mein Onkel.",
+        "prompt": "Dort ist ein Bekannter. Der Mann, der dort steht, ist mein Onkel.",
         "answer": "der",
         "accepted": [],
         "word_pool": [
@@ -2348,13 +2347,14 @@
           "dem",
           "dessen",
           "welcher"
-        ]
+        ],
+        "hidden_word_index": 6
       },
       "en": {
-        "hint_translation": "There is an acquaintance. The man standing there is my uncle."
+        "prompt": "There is an acquaintance. The man standing there is my uncle."
       },
       "no": {
-        "hint_translation": "Der er en bekjent. Mannen som står der er onkelen min."
+        "prompt": "Der er en bekjent. Mannen som står der er onkelen min."
       }
     }
   },
@@ -2369,12 +2369,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Schau mal auf den Parkplatz. Das Auto, ___ dort parkt, ist neu.",
+        "prompt": "Schau mal auf den Parkplatz. Das Auto, das dort parkt, ist neu.",
         "answer": "das",
         "accepted": [],
         "word_pool": [
@@ -2383,13 +2382,14 @@
           "die",
           "dessen",
           "welches"
-        ]
+        ],
+        "hidden_word_index": 7
       },
       "en": {
-        "hint_translation": "Look at the parking lot. The car parking there is new."
+        "prompt": "Look at the parking lot. The car parking there is new."
       },
       "no": {
-        "hint_translation": "Se på parkeringsplassen. Bilen som står der er ny."
+        "prompt": "Se på parkeringsplassen. Bilen som står der er ny."
       }
     }
   },
@@ -2404,12 +2404,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Erinnerst du dich an den Besuch? Die Frau, ___ gestern hier war, ist Ärztin.",
+        "prompt": "Erinnerst du dich an den Besuch? Die Frau, die gestern hier war, ist Ärztin.",
         "answer": "die",
         "accepted": [],
         "word_pool": [
@@ -2418,13 +2417,14 @@
           "das",
           "deren",
           "welche"
-        ]
+        ],
+        "hidden_word_index": 8
       },
       "en": {
-        "hint_translation": "Do you remember the visit? The woman who was here yesterday is a doctor."
+        "prompt": "Do you remember the visit? The woman who was here yesterday is a doctor."
       },
       "no": {
-        "hint_translation": "Husker du besøket? Kvinnen som var her i går er lege."
+        "prompt": "Husker du besøket? Kvinnen som var her i går er lege."
       }
     }
   },
@@ -2439,12 +2439,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Ich kenne das Kind gut. Das ist das Kind, ___ ich gestern geholfen habe.",
+        "prompt": "Ich kenne das Kind gut. Das ist das Kind, dem ich gestern geholfen habe.",
         "answer": "dem",
         "accepted": [],
         "word_pool": [
@@ -2453,13 +2452,14 @@
           "der",
           "das",
           "welchem"
-        ]
+        ],
+        "hidden_word_index": 9
       },
       "en": {
-        "hint_translation": "I know the child well. That is the child I helped yesterday."
+        "prompt": "I know the child well. That is the child I helped yesterday."
       },
       "no": {
-        "hint_translation": "Jeg kjenner barnet godt. Det er barnet jeg hjalp i går."
+        "prompt": "Jeg kjenner barnet godt. Det er barnet jeg hjalp i går."
       }
     }
   },
@@ -2474,12 +2474,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Wir haben im Park Wanderer getroffen. Die Leute, ___ wir begegnet sind, waren nett.",
+        "prompt": "Wir haben im Park Wanderer getroffen. Die Leute, denen wir begegnet sind, waren nett.",
         "answer": "denen",
         "accepted": [],
         "word_pool": [
@@ -2488,13 +2487,14 @@
           "den",
           "der",
           "welchen"
-        ]
+        ],
+        "hidden_word_index": 8
       },
       "en": {
-        "hint_translation": "We met hikers in the park. The people we encountered were nice."
+        "prompt": "We met hikers in the park. The people we encountered were nice."
       },
       "no": {
-        "hint_translation": "Vi møtte turgåere i parken. Folkene vi møtte var hyggelige."
+        "prompt": "Vi møtte turgåere i parken. Folkene vi møtte var hyggelige."
       }
     }
   },
@@ -2509,12 +2509,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Das Werk ist fantastisch. Der Autor, ___ Buch ich gerade lese, ist weltberühmt.",
+        "prompt": "Das Werk ist fantastisch. Der Autor, dessen Buch ich gerade lese, ist weltberühmt.",
         "answer": "dessen",
         "accepted": [],
         "word_pool": [
@@ -2523,13 +2522,14 @@
           "den",
           "dem",
           "welches"
-        ]
+        ],
+        "hidden_word_index": 6
       },
       "en": {
-        "hint_translation": "The work is fantastic. The author whose book I am currently reading is world-famous."
+        "prompt": "The work is fantastic. The author whose book I am currently reading is world-famous."
       },
       "no": {
-        "hint_translation": "Verket er fantastisk. Forfatteren hvis bok jeg leser nå er verdenskjent."
+        "prompt": "Verket er fantastisk. Forfatteren hvis bok jeg leser nå er verdenskjent."
       }
     }
   },
@@ -2544,12 +2544,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Ich liebe historische Orte. Die Stadt, ___ Kirchen sehr alt sind, ist wunderschön.",
+        "prompt": "Ich liebe historische Orte. Die Stadt, deren Kirchen sehr alt sind, ist wunderschön.",
         "answer": "deren",
         "accepted": [],
         "word_pool": [
@@ -2558,13 +2557,14 @@
           "der",
           "derer",
           "welcher"
-        ]
+        ],
+        "hidden_word_index": 6
       },
       "en": {
-        "hint_translation": "I love historical places. The city whose churches are very old is beautiful."
+        "prompt": "I love historical places. The city whose churches are very old is beautiful."
       },
       "no": {
-        "hint_translation": "Jeg elsker historiske steder. Byen hvis kirker er veldig gamle er vakker."
+        "prompt": "Jeg elsker historiske steder. Byen hvis kirker er veldig gamle er vakker."
       }
     }
   },
@@ -2579,12 +2579,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Vielen Dank für das Geschenk! Das Buch, ___ du mir geschenkt hast, ist wirklich toll.",
+        "prompt": "Vielen Dank für das Geschenk! Das Buch, das du mir geschenkt hast, ist wirklich toll.",
         "answer": "das",
         "accepted": [],
         "word_pool": [
@@ -2593,13 +2592,14 @@
           "dem",
           "dessen",
           "welches"
-        ]
+        ],
+        "hidden_word_index": 7
       },
       "en": {
-        "hint_translation": "Many thanks for the gift! The book you gave me is really great."
+        "prompt": "Many thanks for the gift! The book you gave me is really great."
       },
       "no": {
-        "hint_translation": "Tusen takk for gaven! Boken du ga meg er virkelig flott."
+        "prompt": "Tusen takk for gaven! Boken du ga meg er virkelig flott."
       }
     }
   },
@@ -2614,12 +2614,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Ich feiere heute eine Party. Die Freunde, ___ ich eingeladen habe, kommen alle.",
+        "prompt": "Ich feiere heute eine Party. Die Freunde, die ich eingeladen habe, kommen alle.",
         "answer": "die",
         "accepted": [],
         "word_pool": [
@@ -2628,13 +2627,14 @@
           "der",
           "den",
           "welche"
-        ]
+        ],
+        "hidden_word_index": 7
       },
       "en": {
-        "hint_translation": "I am celebrating a party today. The friends I invited are all coming."
+        "prompt": "I am celebrating a party today. The friends I invited are all coming."
       },
       "no": {
-        "hint_translation": "Jeg feirer fest i dag. Vennene jeg har invitert kommer alle."
+        "prompt": "Jeg feirer fest i dag. Vennene jeg har invitert kommer alle."
       }
     }
   },
@@ -2649,12 +2649,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Man sollte nicht nur nach dem Äußeren gehen. Alles, ___ glänzt, ist nicht Gold.",
+        "prompt": "Man sollte nicht nur nach dem Äußeren gehen. Alles, was glänzt, ist nicht Gold.",
         "answer": "was",
         "accepted": [],
         "word_pool": [
@@ -2663,13 +2662,14 @@
           "welches",
           "der",
           "die"
-        ]
+        ],
+        "hidden_word_index": 9
       },
       "en": {
-        "hint_translation": "One shouldn't judge only by appearance. Everything that glitters is not gold."
+        "prompt": "One shouldn't judge only by appearance. Everything that glitters is not gold."
       },
       "no": {
-        "hint_translation": "Man bør ikke bare se på det ytre. Alt som glitrer er ikke gull."
+        "prompt": "Man bør ikke bare se på det ytre. Alt som glitrer er ikke gull."
       }
     }
   },
@@ -2684,12 +2684,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Zwiebeln im Essen? Das ist etwas, ___ ich überhaupt nicht mag.",
+        "prompt": "Zwiebeln im Essen? Das ist etwas, was ich überhaupt nicht mag.",
         "answer": "was",
         "accepted": [],
         "word_pool": [
@@ -2698,13 +2697,14 @@
           "welches",
           "der",
           "die"
-        ]
+        ],
+        "hidden_word_index": 6
       },
       "en": {
-        "hint_translation": "Onions in the food? That is something I don't like at all."
+        "prompt": "Onions in the food? That is something I don't like at all."
       },
       "no": {
-        "hint_translation": "Løk i maten? Det er noe jeg overhodet ikke liker."
+        "prompt": "Løk i maten? Det er noe jeg overhodet ikke liker."
       }
     }
   },
@@ -2719,12 +2719,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Ich kann ihn nicht finden. Der Brief, ___ ich gestern geschrieben habe, ist weg.",
+        "prompt": "Ich kann ihn nicht finden. Der Brief, den ich gestern geschrieben habe, ist weg.",
         "answer": "den",
         "accepted": [],
         "word_pool": [
@@ -2733,13 +2732,14 @@
           "dem",
           "das",
           "welcher"
-        ]
+        ],
+        "hidden_word_index": 7
       },
       "en": {
-        "hint_translation": "I can't find it. The letter I wrote yesterday is gone."
+        "prompt": "I can't find it. The letter I wrote yesterday is gone."
       },
       "no": {
-        "hint_translation": "Jeg finner den ikke. Brevet jeg skrev i går er borte."
+        "prompt": "Jeg finner den ikke. Brevet jeg skrev i går er borte."
       }
     }
   },
@@ -2754,12 +2754,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Dort ist die Mutter. Die Frau, ___ das Kind gehört, ist gerade hier.",
+        "prompt": "Dort ist die Mutter. Die Frau, der das Kind gehört, ist gerade hier.",
         "answer": "der",
         "accepted": [],
         "word_pool": [
@@ -2768,13 +2767,14 @@
           "dem",
           "deren",
           "welcher"
-        ]
+        ],
+        "hidden_word_index": 6
       },
       "en": {
-        "hint_translation": "There is the mother. The woman the child belongs to is here right now."
+        "prompt": "There is the mother. The woman the child belongs to is here right now."
       },
       "no": {
-        "hint_translation": "Der er moren. Kvinnen barnet tilhører er her akkurat nå."
+        "prompt": "Der er moren. Kvinnen barnet tilhører er her akkurat nå."
       }
     }
   },
@@ -2788,12 +2788,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Ich habe ein fremdes Objekt gefunden. ___ ist das eigentlich?",
+        "prompt": "Ich habe ein fremdes Objekt gefunden. Was ist das eigentlich?",
         "answer": "Was",
         "accepted": [],
         "word_pool": [
@@ -2802,13 +2801,14 @@
           "Wie",
           "Warum",
           "Wann"
-        ]
+        ],
+        "hidden_word_index": 6
       },
       "en": {
-        "hint_translation": "I have found a strange object. What is that, actually?"
+        "prompt": "I have found a strange object. What is that, actually?"
       },
       "no": {
-        "hint_translation": "Jeg har funnet et fremmed objekt. Hva er det egentlig?"
+        "prompt": "Jeg har funnet et fremmed objekt. Hva er det egentlig?"
       }
     }
   },
@@ -2822,12 +2822,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Hörst du das Geräusch? ___ klopft da an die Tür?",
+        "prompt": "Hörst du das Geräusch? Wer klopft da an die Tür?",
         "answer": "Wer",
         "accepted": [],
         "word_pool": [
@@ -2836,13 +2835,14 @@
           "Wie",
           "Wo",
           "Wann"
-        ]
+        ],
+        "hidden_word_index": 4
       },
       "en": {
-        "hint_translation": "Do you hear the noise? Who is knocking at the door?"
+        "prompt": "Do you hear the noise? Who is knocking at the door?"
       },
       "no": {
-        "hint_translation": "Hører du lyden? Hvem banker på døren?"
+        "prompt": "Hører du lyden? Hvem banker på døren?"
       }
     }
   },
@@ -2857,12 +2857,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Du schaust dich so suchend um. ___ suchst du hier?",
+        "prompt": "Du schaust dich so suchend um. Wen suchst du hier?",
         "answer": "Wen",
         "accepted": [],
         "word_pool": [
@@ -2871,13 +2870,14 @@
           "Wem",
           "Was",
           "Wie"
-        ]
+        ],
+        "hidden_word_index": 6
       },
       "en": {
-        "hint_translation": "You are looking around so searchingly. Who are you looking for here?"
+        "prompt": "You are looking around so searchingly. Who are you looking for here?"
       },
       "no": {
-        "hint_translation": "Du ser deg så søkende rundt. Hvem leter du etter her?"
+        "prompt": "Du ser deg så søkende rundt. Hvem leter du etter her?"
       }
     }
   },
@@ -2892,12 +2892,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Du warst sehr höflich. ___ hast du gerade gedankt?",
+        "prompt": "Du warst sehr höflich. Wem hast du gerade gedankt?",
         "answer": "Wem",
         "accepted": [],
         "word_pool": [
@@ -2906,13 +2905,14 @@
           "Wen",
           "Was",
           "Wie"
-        ]
+        ],
+        "hidden_word_index": 4
       },
       "en": {
-        "hint_translation": "You were very polite. Who did you just thank?"
+        "prompt": "You were very polite. Who did you just thank?"
       },
       "no": {
-        "hint_translation": "Du var veldig høflig. Hvem takket du nettopp?"
+        "prompt": "Du var veldig høflig. Hvem takket du nettopp?"
       }
     }
   },
@@ -2926,12 +2926,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Hier sind Blau und Rot. ___ Farbe gefällt dir besser?",
+        "prompt": "Hier sind Blau und Rot. Welche Farbe gefällt dir besser?",
         "answer": "Welche",
         "accepted": [],
         "word_pool": [
@@ -2940,13 +2939,14 @@
           "Wer",
           "Wie",
           "Wo"
-        ]
+        ],
+        "hidden_word_index": 5
       },
       "en": {
-        "hint_translation": "Here are blue and red. Which color do you like better?"
+        "prompt": "Here are blue and red. Which color do you like better?"
       },
       "no": {
-        "hint_translation": "Her er blått og rødt. Hvilken farge liker du bedre?"
+        "prompt": "Her er blått og rødt. Hvilken farge liker du bedre?"
       }
     }
   },
@@ -2960,12 +2960,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Das Cover sieht interessant aus. ___ für ein Buch ist das genau?",
+        "prompt": "Das Cover sieht interessant aus. Was für ein Buch ist das genau?",
         "answer": "Was",
         "accepted": [],
         "word_pool": [
@@ -2974,13 +2973,14 @@
           "Wie",
           "Wo",
           "Welches"
-        ]
+        ],
+        "hidden_word_index": 5
       },
       "en": {
-        "hint_translation": "The cover looks interesting. What kind of book is that exactly?"
+        "prompt": "The cover looks interesting. What kind of book is that exactly?"
       },
       "no": {
-        "hint_translation": "Omslaget ser interessant ut. Hva slags bok er det nøyaktig?"
+        "prompt": "Omslaget ser interessant ut. Hva slags bok er det nøyaktig?"
       }
     }
   },
@@ -2995,12 +2995,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Es steht in unserer Einfahrt. ___ Auto ist das?",
+        "prompt": "Es steht in unserer Einfahrt. Wessen Auto ist das?",
         "answer": "Wessen",
         "accepted": [],
         "word_pool": [
@@ -3009,13 +3008,14 @@
           "Wen",
           "Wer",
           "Was"
-        ]
+        ],
+        "hidden_word_index": 5
       },
       "en": {
-        "hint_translation": "It is standing in our driveway. Whose car is that?"
+        "prompt": "It is standing in our driveway. Whose car is that?"
       },
       "no": {
-        "hint_translation": "Den står i vår oppkjørsel. Hvis bil er det?"
+        "prompt": "Den står i vår oppkjørsel. Hvis bil er det?"
       }
     }
   },
@@ -3029,12 +3029,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Du bist so schmutzig! ___ hast du im Garten gemacht?",
+        "prompt": "Du bist so schmutzig! Was hast du im Garten gemacht?",
         "answer": "Was",
         "accepted": [],
         "word_pool": [
@@ -3043,13 +3042,14 @@
           "Wie",
           "Wo",
           "Wann"
-        ]
+        ],
+        "hidden_word_index": 4
       },
       "en": {
-        "hint_translation": "You are so dirty! What have you been doing in the garden?"
+        "prompt": "You are so dirty! What have you been doing in the garden?"
       },
       "no": {
-        "hint_translation": "Du er så skitten! Hva har du gjort i hagen?"
+        "prompt": "Du er så skitten! Hva har du gjort i hagen?"
       }
     }
   },
@@ -3063,12 +3063,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Ich habe den Tisch für drei Personen gedeckt. ___ kommt heute zu Besuch?",
+        "prompt": "Ich habe den Tisch für drei Personen gedeckt. Wer kommt heute zu Besuch?",
         "answer": "Wer",
         "accepted": [],
         "word_pool": [
@@ -3077,13 +3076,14 @@
           "Wie",
           "Wo",
           "Wen"
-        ]
+        ],
+        "hidden_word_index": 8
       },
       "en": {
-        "hint_translation": "I have set the table for three people. Who is coming to visit today?"
+        "prompt": "I have set the table for three people. Who is coming to visit today?"
       },
       "no": {
-        "hint_translation": "Jeg har dekket bordet til tre personer. Hvem kommer på besøk i dag?"
+        "prompt": "Jeg har dekket bordet til tre personer. Hvem kommer på besøk i dag?"
       }
     }
   },
@@ -3098,12 +3098,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Deine Aussage ist etwas unklar. ___ meinst du genau damit?",
+        "prompt": "Deine Aussage ist etwas unklar. Wen meinst du genau damit?",
         "answer": "Wen",
         "accepted": [],
         "word_pool": [
@@ -3112,13 +3111,14 @@
           "Was",
           "Wie",
           "Wem"
-        ]
+        ],
+        "hidden_word_index": 5
       },
       "en": {
-        "hint_translation": "Your statement is a bit unclear. Who exactly do you mean by that?"
+        "prompt": "Your statement is a bit unclear. Who exactly do you mean by that?"
       },
       "no": {
-        "hint_translation": "Din uttalelse er litt uklar. Hvem mener du nøyaktig med det?"
+        "prompt": "Din uttalelse er litt uklar. Hvem mener du nøyaktig med det?"
       }
     }
   },
@@ -3133,12 +3133,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Das war eine wichtige Information. ___ hast du das alles gesagt?",
+        "prompt": "Das war eine wichtige Information. Wem hast du das alles gesagt?",
         "answer": "Wem",
         "accepted": [],
         "word_pool": [
@@ -3147,13 +3146,14 @@
           "Wen",
           "Was",
           "Wie"
-        ]
+        ],
+        "hidden_word_index": 5
       },
       "en": {
-        "hint_translation": "That was an important piece of information. Who did you tell all that to?"
+        "prompt": "That was an important piece of information. Who did you tell all that to?"
       },
       "no": {
-        "hint_translation": "Det var viktig informasjon. Hvem fortalte du alt det til?"
+        "prompt": "Det var viktig informasjon. Hvem fortalte du alt det til?"
       }
     }
   },
@@ -3167,12 +3167,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Ich habe mich verlaufen. ___ Weg führt zum Bahnhof?",
+        "prompt": "Ich habe mich verlaufen. Welcher Weg führt zum Bahnhof?",
         "answer": "Welcher",
         "accepted": [],
         "word_pool": [
@@ -3181,13 +3180,14 @@
           "Wer",
           "Wie",
           "Wo"
-        ]
+        ],
+        "hidden_word_index": 4
       },
       "en": {
-        "hint_translation": "I have gotten lost. Which way leads to the station?"
+        "prompt": "I have gotten lost. Which way leads to the station?"
       },
       "no": {
-        "hint_translation": "Jeg har gått meg bort. Hvilken vei fører til stasjonen?"
+        "prompt": "Jeg har gått meg bort. Hvilken vei fører til stasjonen?"
       }
     }
   },
@@ -3201,12 +3201,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Dort stehen viele Fremde. ___ für Leute sind das?",
+        "prompt": "Dort stehen viele Fremde. Was für Leute sind das?",
         "answer": "Was",
         "accepted": [],
         "word_pool": [
@@ -3215,13 +3214,14 @@
           "Wer",
           "Wie",
           "Wo"
-        ]
+        ],
+        "hidden_word_index": 4
       },
       "en": {
-        "hint_translation": "There are many strangers standing there. What kind of people are they?"
+        "prompt": "There are many strangers standing there. What kind of people are they?"
       },
       "no": {
-        "hint_translation": "Det står mange fremmede der. Hva slags folk er det?"
+        "prompt": "Det står mange fremmede der. Hva slags folk er det?"
       }
     }
   },
@@ -3235,12 +3235,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Schau auf das Verbotsschild. ___ darf hier im Gebäude nicht rauchen.",
+        "prompt": "Schau auf das Verbotsschild. Man darf hier im Gebäude nicht rauchen.",
         "answer": "Man",
         "accepted": [],
         "word_pool": [
@@ -3249,13 +3248,14 @@
           "Niemand",
           "Alles",
           "Etwas"
-        ]
+        ],
+        "hidden_word_index": 4
       },
       "en": {
-        "hint_translation": "Look at the prohibition sign. One is not allowed to smoke here in the building."
+        "prompt": "Look at the prohibition sign. One is not allowed to smoke here in the building."
       },
       "no": {
-        "hint_translation": "Se på forbudsskiltet. Man får ikke røyke her i bygningen."
+        "prompt": "Se på forbudsskiltet. Man får ikke røyke her i bygningen."
       }
     }
   },
@@ -3269,12 +3269,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Ich war einen Moment weg. Hast du ___ in meinem Büro gesehen?",
+        "prompt": "Ich war einen Moment weg. Hast du jemanden in meinem Büro gesehen?",
         "answer": "jemanden",
         "accepted": [],
         "word_pool": [
@@ -3283,13 +3282,14 @@
           "etwas",
           "alles",
           "manches"
-        ]
+        ],
+        "hidden_word_index": 7
       },
       "en": {
-        "hint_translation": "I was away for a moment. Have you seen anyone in my office?"
+        "prompt": "I was away for a moment. Have you seen anyone in my office?"
       },
       "no": {
-        "hint_translation": "Jeg var borte et øyeblikk. Har du sett noen på kontoret mitt?"
+        "prompt": "Jeg var borte et øyeblikk. Har du sett noen på kontoret mitt?"
       }
     }
   },
@@ -3303,12 +3303,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Es war vollkommen still im Wald. Ich habe ___ gehört.",
+        "prompt": "Es war vollkommen still im Wald. Ich habe nichts gehört.",
         "answer": "nichts",
         "accepted": [],
         "word_pool": [
@@ -3317,13 +3316,14 @@
           "alles",
           "jemand",
           "niemand"
-        ]
+        ],
+        "hidden_word_index": 8
       },
       "en": {
-        "hint_translation": "It was completely silent in the forest. I haven't heard anything."
+        "prompt": "It was completely silent in the forest. I haven't heard anything."
       },
       "no": {
-        "hint_translation": "Det var fullstendig stille i skogen. Jeg har ikke hørt noe."
+        "prompt": "Det var fullstendig stille i skogen. Jeg har ikke hørt noe."
       }
     }
   },
@@ -3337,12 +3337,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Mit harter Arbeit kann man alles schaffen. ___ ist wirklich unmöglich.",
+        "prompt": "Mit harter Arbeit kann man alles schaffen. Nichts ist wirklich unmöglich.",
         "answer": "Nichts",
         "accepted": [],
         "word_pool": [
@@ -3351,13 +3350,14 @@
           "Etwas",
           "Manches",
           "Jedes"
-        ]
+        ],
+        "hidden_word_index": 7
       },
       "en": {
-        "hint_translation": "With hard work one can achieve everything. Nothing is really impossible."
+        "prompt": "With hard work one can achieve everything. Nothing is really impossible."
       },
       "no": {
-        "hint_translation": "Med hardt arbeid kan man oppnå alt. Ingenting er virkelig umulig."
+        "prompt": "Med hardt arbeid kan man oppnå alt. Ingenting er virkelig umulig."
       }
     }
   },
@@ -3371,12 +3371,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Das ist eine bekannte Tatsache. Fast ___ weiß das heute.",
+        "prompt": "Das ist eine bekannte Tatsache. Fast Jeder weiß das heute.",
         "answer": "Jeder",
         "accepted": [],
         "word_pool": [
@@ -3385,13 +3384,14 @@
           "Mancher",
           "Keiner",
           "Jemand"
-        ]
+        ],
+        "hidden_word_index": 6
       },
       "en": {
-        "hint_translation": "That is a known fact. Almost everyone knows that today."
+        "prompt": "That is a known fact. Almost everyone knows that today."
       },
       "no": {
-        "hint_translation": "Det er et kjent faktum. Nesten alle vet det i dag."
+        "prompt": "Det er et kjent faktum. Nesten alle vet det i dag."
       }
     }
   },
@@ -3405,12 +3405,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Ich habe viele Leute eingeladen. ___ sind gekommen.",
+        "prompt": "Ich habe viele Leute eingeladen. Einige sind gekommen.",
         "answer": "Einige",
         "accepted": [],
         "word_pool": [
@@ -3419,13 +3418,14 @@
           "Alle",
           "Jeder",
           "Keiner"
-        ]
+        ],
+        "hidden_word_index": 5
       },
       "en": {
-        "hint_translation": "I have invited many people. Some have come."
+        "prompt": "I have invited many people. Some have come."
       },
       "no": {
-        "hint_translation": "Jeg har invitert mange mennesker. Noen har kommet."
+        "prompt": "Jeg har invitert mange mennesker. Noen har kommet."
       }
     }
   },
@@ -3439,12 +3439,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Ich habe Hunger. Ich möchte ___ essen.",
+        "prompt": "Ich habe Hunger. Ich möchte etwas essen.",
         "answer": "etwas",
         "accepted": [],
         "word_pool": [
@@ -3453,13 +3452,14 @@
           "alles",
           "manches",
           "jedes"
-        ]
+        ],
+        "hidden_word_index": 5
       },
       "en": {
-        "hint_translation": "I am hungry. I want to eat something."
+        "prompt": "I am hungry. I want to eat something."
       },
       "no": {
-        "hint_translation": "Jeg er sulten. Jeg vil spise noe."
+        "prompt": "Jeg er sulten. Jeg vil spise noe."
       }
     }
   },
@@ -3473,12 +3473,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Alle standen nur rum. ___ hat geholfen.",
+        "prompt": "Alle standen nur rum. Niemand hat geholfen.",
         "answer": "Niemand",
         "accepted": [],
         "word_pool": [
@@ -3486,13 +3485,14 @@
           "Jemand",
           "Alles",
           "Keiner"
-        ]
+        ],
+        "hidden_word_index": 4
       },
       "en": {
-        "hint_translation": "Everyone was just standing around. No one helped."
+        "prompt": "Everyone was just standing around. No one helped."
       },
       "no": {
-        "hint_translation": "Alle sto bare rundt. Ingen hjalp."
+        "prompt": "Alle sto bare rundt. Ingen hjalp."
       }
     }
   },
@@ -3506,12 +3506,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Die Prüfung ist schwer. ___ haben Angst davor.",
+        "prompt": "Die Prüfung ist schwer. Manche haben Angst davor.",
         "answer": "Manche",
         "accepted": [],
         "word_pool": [
@@ -3520,13 +3519,14 @@
           "Alle",
           "Jeder",
           "Keiner"
-        ]
+        ],
+        "hidden_word_index": 4
       },
       "en": {
-        "hint_translation": "The exam is difficult. Some are afraid of it."
+        "prompt": "The exam is difficult. Some are afraid of it."
       },
       "no": {
-        "hint_translation": "Eksamen er vanskelig. Noen er redde for den."
+        "prompt": "Eksamen er vanskelig. Noen er redde for den."
       }
     }
   },
@@ -3540,12 +3540,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Diese Tasche ist sehr schwer. Kann mir ___ helfen?",
+        "prompt": "Diese Tasche ist sehr schwer. Kann mir jemand helfen?",
         "answer": "jemand",
         "accepted": [],
         "word_pool": [
@@ -3554,13 +3553,14 @@
           "etwas",
           "alles",
           "jeder"
-        ]
+        ],
+        "hidden_word_index": 7
       },
       "en": {
-        "hint_translation": "This bag is very heavy. Can someone help me?"
+        "prompt": "This bag is very heavy. Can someone help me?"
       },
       "no": {
-        "hint_translation": "Denne vesken er veldig tung. Kan noen hjelpe meg?"
+        "prompt": "Denne vesken er veldig tung. Kan noen hjelpe meg?"
       }
     }
   },
@@ -3574,12 +3574,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Mach dir keine Sorgen. ___ ist in Ordnung.",
+        "prompt": "Mach dir keine Sorgen. Alles ist in Ordnung.",
         "answer": "Alles",
         "accepted": [],
         "word_pool": [
@@ -3588,13 +3587,14 @@
           "Etwas",
           "Manches",
           "Jedes"
-        ]
+        ],
+        "hidden_word_index": 4
       },
       "en": {
-        "hint_translation": "Don't worry. Everything is in order."
+        "prompt": "Don't worry. Everything is in order."
       },
       "no": {
-        "hint_translation": "Ikke bekymre deg. Alt er i orden."
+        "prompt": "Ikke bekymre deg. Alt er i orden."
       }
     }
   },
@@ -3608,12 +3608,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Er schweigt beharrlich. Er hat ___ zu sagen.",
+        "prompt": "Er schweigt beharrlich. Er hat nichts zu sagen.",
         "answer": "nichts",
         "accepted": [],
         "word_pool": [
@@ -3622,13 +3621,14 @@
           "alles",
           "manches",
           "jedes"
-        ]
+        ],
+        "hidden_word_index": 5
       },
       "en": {
-        "hint_translation": "He remains persistently silent. He has nothing to say."
+        "prompt": "He remains persistently silent. He has nothing to say."
       },
       "no": {
-        "hint_translation": "Han tier iherdig. Han har ingenting å si."
+        "prompt": "Han tier iherdig. Han har ingenting å si."
       }
     }
   },
@@ -3642,12 +3642,11 @@
     ],
     "content": {
       "response_mode": "single_token_choice",
-      "blank_token": "___",
       "practice_language": "de"
     },
     "translations": {
       "de": {
-        "prompt": "Beeilt euch! Wir haben nur noch ___ Zeit.",
+        "prompt": "Beeilt euch! Wir haben nur noch wenig Zeit.",
         "answer": "wenig",
         "accepted": [],
         "word_pool": [
@@ -3656,13 +3655,14 @@
           "manche",
           "einige",
           "alle"
-        ]
+        ],
+        "hidden_word_index": 6
       },
       "en": {
-        "hint_translation": "Hurry up! We only have a little time left."
+        "prompt": "Hurry up! We only have a little time left."
       },
       "no": {
-        "hint_translation": "Skynd dere! Vi har bare lite tid igjen."
+        "prompt": "Skynd dere! Vi har bare lite tid igjen."
       }
     }
   }
