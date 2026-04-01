@@ -26,6 +26,12 @@
           "Wir",
           "Ihr"
         ]
+      },
+      "en": {
+        "hint_translation": "I have a brother. His name is Lucas."
+      },
+      "no": {
+        "hint_translation": "Jeg har en bror. Han heter Lucas."
       }
     }
   },
@@ -57,6 +63,12 @@
           "dich",
           "uns"
         ]
+      },
+      "en": {
+        "hint_translation": "Can you please help me? I don't understand this."
+      },
+      "no": {
+        "hint_translation": "Kan du vær så snill å hjelpe meg? Jeg forstår ikke dette."
       }
     }
   },
@@ -87,6 +99,12 @@
           "dein",
           "unser"
         ]
+      },
+      "en": {
+        "hint_translation": "That is my sister and that is her boyfriend."
+      },
+      "no": {
+        "hint_translation": "Det er søsteren min og det er kjæresten hennes."
       }
     }
   },
@@ -117,6 +135,12 @@
           "mein",
           "sein"
         ]
+      },
+      "en": {
+        "hint_translation": "We live here. That is our house."
+      },
+      "no": {
+        "hint_translation": "Vi bor her. Det er huset vårt."
       }
     }
   },
@@ -147,6 +171,12 @@
           "uns",
           "euch"
         ]
+      },
+      "en": {
+        "hint_translation": "I wash my face every morning."
+      },
+      "no": {
+        "hint_translation": "Jeg vasker ansiktet mitt hver morgen."
       }
     }
   },
@@ -177,6 +207,12 @@
           "dich",
           "mich"
         ]
+      },
+      "en": {
+        "hint_translation": "Please hurry up, otherwise we'll be late!"
+      },
+      "no": {
+        "hint_translation": "Skynd dere snill, ellers kommer vi for sent!"
       }
     }
   },
@@ -207,6 +243,12 @@
           "welches",
           "das"
         ]
+      },
+      "en": {
+        "hint_translation": "Do you like this dress? No, I find that one over there prettier."
+      },
+      "no": {
+        "hint_translation": "Liker du denne kjolen? Nei, jeg synes den der borte er finere."
       }
     }
   },
@@ -237,6 +279,12 @@
           "Solcher",
           "Der"
         ]
+      },
+      "en": {
+        "hint_translation": "This man you see there is my boss."
+      },
+      "no": {
+        "hint_translation": "Denne mannen du ser der er sjefen min."
       }
     }
   },
@@ -267,6 +315,12 @@
           "das",
           "die"
         ]
+      },
+      "en": {
+        "hint_translation": "The movie we saw yesterday was great."
+      },
+      "no": {
+        "hint_translation": "Filmen vi så i går var kjempebra."
       }
     }
   },
@@ -297,6 +351,12 @@
           "dessen",
           "welcher"
         ]
+      },
+      "en": {
+        "hint_translation": "That is the woman whose car was stolen."
+      },
+      "no": {
+        "hint_translation": "Det er kvinnen hvis bil ble stjålet."
       }
     }
   },
@@ -327,6 +387,12 @@
           "Was",
           "Wie"
         ]
+      },
+      "en": {
+        "hint_translation": "Whose bag is this?"
+      },
+      "no": {
+        "hint_translation": "Hvem eier denne vesken?"
       }
     }
   },
@@ -357,6 +423,12 @@
           "Wem",
           "Wie"
         ]
+      },
+      "en": {
+        "hint_translation": "Which of these books would you like to read?"
+      },
+      "no": {
+        "hint_translation": "Hvilken av disse bøkene vil du lese?"
       }
     }
   },
@@ -387,6 +459,12 @@
           "nichts",
           "alles"
         ]
+      },
+      "en": {
+        "hint_translation": "Yesterday someone called for you."
+      },
+      "no": {
+        "hint_translation": "I går var det noen som ringte til deg."
       }
     }
   },
@@ -418,6 +496,12 @@
           "manches",
           "jedes"
         ]
+      },
+      "en": {
+        "hint_translation": "I am hungry, but there is nothing in the fridge."
+      },
+      "no": {
+        "hint_translation": "Jeg er sulten, men det er ingenting i kjøleskapet."
       }
     }
   },
@@ -447,6 +531,12 @@
           "Wir",
           "Ihr"
         ]
+      },
+      "en": {
+        "hint_translation": "I worked all night. I am very tired."
+      },
+      "no": {
+        "hint_translation": "Jeg jobbet hele natten. Jeg er veldig sliten."
       }
     }
   },
@@ -476,6 +566,12 @@
           "ihr",
           "wir"
         ]
+      },
+      "en": {
+        "hint_translation": "Hi Jan, where do you come from?"
+      },
+      "no": {
+        "hint_translation": "Hei Jan, hvor kommer du fra?"
       }
     }
   },
@@ -505,6 +601,12 @@
           "Ihnen",
           "Sie"
         ]
+      },
+      "en": {
+        "hint_translation": "We are having a great vacation. We are doing well."
+      },
+      "no": {
+        "hint_translation": "Vi har en flott ferie. Vi har det bra."
       }
     }
   },
@@ -535,6 +637,12 @@
           "mir",
           "ihn"
         ]
+      },
+      "en": {
+        "hint_translation": "You are my best friend. I love you."
+      },
+      "no": {
+        "hint_translation": "Du er min beste venninne. Jeg elsker deg."
       }
     }
   },
@@ -565,6 +673,12 @@
           "dir",
           "uns"
         ]
+      },
+      "en": {
+        "hint_translation": "I am standing back here. Can you see me?"
+      },
+      "no": {
+        "hint_translation": "Jeg står her bak. Kan du se meg?"
       }
     }
   },
@@ -595,6 +709,12 @@
           "ihn",
           "dich"
         ]
+      },
+      "en": {
+        "hint_translation": "Hi you two! I'll visit you tomorrow."
+      },
+      "no": {
+        "hint_translation": "Hei dere to! Jeg besøker dere i morgen."
       }
     }
   },
@@ -625,6 +745,12 @@
           "ihre",
           "denen"
         ]
+      },
+      "en": {
+        "hint_translation": "Peter misses his book. The book belongs to him."
+      },
+      "no": {
+        "hint_translation": "Peter savner boken sin. Boken tilhører ham."
       }
     }
   },
@@ -655,6 +781,12 @@
           "Euch",
           "Uns"
         ]
+      },
+      "en": {
+        "hint_translation": "Dear Mrs. Müller, I thank you very much for the help."
+      },
+      "no": {
+        "hint_translation": "Kjære fru Müller, jeg takker Dem hjertelig for hjelpen."
       }
     }
   },
@@ -685,6 +817,12 @@
           "ihr",
           "mir"
         ]
+      },
+      "en": {
+        "hint_translation": "Hi Sarah! How are you today?"
+      },
+      "no": {
+        "hint_translation": "Hei Sarah! Hvordan har du det i dag?"
       }
     }
   },
@@ -714,6 +852,12 @@
           "Er",
           "Es"
         ]
+      },
+      "en": {
+        "hint_translation": "These are Peter and Maria. They are my friends."
+      },
+      "no": {
+        "hint_translation": "Dette er Peter og Maria. De er vennene mine."
       }
     }
   },
@@ -743,6 +887,12 @@
           "Ihr",
           "Wir"
         ]
+      },
+      "en": {
+        "hint_translation": "My brother loves cars. He has a red car."
+      },
+      "no": {
+        "hint_translation": "Broren min elsker biler. Han har en rød bil."
       }
     }
   },
@@ -772,6 +922,12 @@
           "wir",
           "sie"
         ]
+      },
+      "en": {
+        "hint_translation": "I want to go to the movies. Do you have time today?"
+      },
+      "no": {
+        "hint_translation": "Jeg vil gå på kino. Har du tid i dag?"
       }
     }
   },
@@ -802,6 +958,12 @@
           "es",
           "mich"
         ]
+      },
+      "en": {
+        "hint_translation": "A bird is sitting up there. I see it very well."
+      },
+      "no": {
+        "hint_translation": "Det sitter en fugl der oppe. Jeg ser den veldig godt."
       }
     }
   },
@@ -831,6 +993,12 @@
           "euer",
           "unser"
         ]
+      },
+      "en": {
+        "hint_translation": "You left something behind. Is that your phone?"
+      },
+      "no": {
+        "hint_translation": "Du har lagt igjen noe. Er det mobilen din?"
       }
     }
   },
@@ -860,6 +1028,12 @@
           "meiner",
           "meinem"
         ]
+      },
+      "en": {
+        "hint_translation": "I want to go, but I can't open the door. Where is my key?"
+      },
+      "no": {
+        "hint_translation": "Jeg vil gå, men jeg kan ikke åpne døren. Hvor er nøkkelen min?"
       }
     }
   },
@@ -889,6 +1063,12 @@
           "meine",
           "deine"
         ]
+      },
+      "en": {
+        "hint_translation": "Maria is already gone, but something is still lying here. She forgot her bag."
+      },
+      "no": {
+        "hint_translation": "Maria er allerede gått, men her ligger det noe ennå. Hun glemte vesken sin."
       }
     }
   },
@@ -918,6 +1098,12 @@
           "unseren",
           "deinen"
         ]
+      },
+      "en": {
+        "hint_translation": "The dog ran away. He is looking for his dog everywhere now."
+      },
+      "no": {
+        "hint_translation": "Hunden har løpt bort. Han leter etter hunden sin overalt nå."
       }
     }
   },
@@ -947,6 +1133,12 @@
           "eure",
           "ihre"
         ]
+      },
+      "en": {
+        "hint_translation": "We have lived in Berlin for a long time. We love our city."
+      },
+      "no": {
+        "hint_translation": "Vi har bodd i Berlin lenge. Vi elsker byen vår."
       }
     }
   },
@@ -976,6 +1168,12 @@
           "ihre",
           "meine"
         ]
+      },
+      "en": {
+        "hint_translation": "Children, it's already late. Have you done your homework?"
+      },
+      "no": {
+        "hint_translation": "Barn, det er allerede sent. Har dere gjort leksene deres?"
       }
     }
   },
@@ -1006,6 +1204,12 @@
           "meinen",
           "meiner"
         ]
+      },
+      "en": {
+        "hint_translation": "I have a problem. I'm talking to my father about it."
+      },
+      "no": {
+        "hint_translation": "Jeg har et problem. Jeg snakker med faren min om det."
       }
     }
   },
@@ -1036,6 +1240,12 @@
           "deinem",
           "deinen"
         ]
+      },
+      "en": {
+        "hint_translation": "She is in the hospital. Are you visiting your aunt today?"
+      },
+      "no": {
+        "hint_translation": "Hun er på sykehuset. Besøker du tanten din i dag?"
       }
     }
   },
@@ -1065,6 +1275,12 @@
           "ihre",
           "meine"
         ]
+      },
+      "en": {
+        "hint_translation": "Peter has bought a new vehicle. That is his car."
+      },
+      "no": {
+        "hint_translation": "Peter har kjøpt et nytt kjøretøy. Det er bilen hans."
       }
     }
   },
@@ -1094,6 +1310,12 @@
           "Meine",
           "Deine"
         ]
+      },
+      "en": {
+        "hint_translation": "Good day, Mr. Schmidt! What is your cat's name?"
+      },
+      "no": {
+        "hint_translation": "God dag, herr Schmidt! Hva heter katten Deres?"
       }
     }
   },
@@ -1123,6 +1345,12 @@
           "euren",
           "ihren"
         ]
+      },
+      "en": {
+        "hint_translation": "We are new here. Do you already know our names?"
+      },
+      "no": {
+        "hint_translation": "Vi er nye her. Kjenner du allerede navnet vårt?"
       }
     }
   },
@@ -1152,6 +1380,12 @@
           "unsere",
           "ihre"
         ]
+      },
+      "en": {
+        "hint_translation": "It is so quiet in the house. Where are your children, actually?"
+      },
+      "no": {
+        "hint_translation": "Det er så stille i huset. Hvor er barna dine egentlig?"
       }
     }
   },
@@ -1181,6 +1415,12 @@
           "mein",
           "dein"
         ]
+      },
+      "en": {
+        "hint_translation": "His wallet is gone. He has lost his money."
+      },
+      "no": {
+        "hint_translation": "Lommeboken hans er borte. Han har mistet pengene sine."
       }
     }
   },
@@ -1210,6 +1450,12 @@
           "dich",
           "uns"
         ]
+      },
+      "en": {
+        "hint_translation": "I have already packed the suitcases. I'm looking forward to the vacation."
+      },
+      "no": {
+        "hint_translation": "Jeg har allerede pakket koffertene. Jeg gleder meg til ferien."
       }
     }
   },
@@ -1239,6 +1485,12 @@
           "mich",
           "euch"
         ]
+      },
+      "en": {
+        "hint_translation": "Nothing pleases you. You always complain about everything."
+      },
+      "no": {
+        "hint_translation": "Ingenting gleder deg. Du klager alltid over alt."
       }
     }
   },
@@ -1268,6 +1520,12 @@
           "mich",
           "dich"
         ]
+      },
+      "en": {
+        "hint_translation": "Don't forget the appointment. We are meeting at eight o'clock in front of the cinema."
+      },
+      "no": {
+        "hint_translation": "Ikke glem avtalen. Vi møtes klokken åtte foran kinoen."
       }
     }
   },
@@ -1297,6 +1555,12 @@
           "mich",
           "dich"
         ]
+      },
+      "en": {
+        "hint_translation": "The weather is lovely. They are sunbathing on the beach."
+      },
+      "no": {
+        "hint_translation": "Været er nydelig. De soler seg på stranden."
       }
     }
   },
@@ -1326,6 +1590,12 @@
           "sich",
           "uns"
         ]
+      },
+      "en": {
+        "hint_translation": "My old car is broken. I'm buying a new car."
+      },
+      "no": {
+        "hint_translation": "Min gamle bil er ødelagt. Jeg kjøper meg en ny bil."
       }
     }
   },
@@ -1355,6 +1625,12 @@
           "mir",
           "euch"
         ]
+      },
+      "en": {
+        "hint_translation": "Before you go to bed, please brush your teeth."
+      },
+      "no": {
+        "hint_translation": "Før du legger deg, puss tennene dine snill."
       }
     }
   },
@@ -1384,6 +1660,12 @@
           "uns",
           "euch"
         ]
+      },
+      "en": {
+        "hint_translation": "He is not going to the hairdresser today. He cuts his hair himself."
+      },
+      "no": {
+        "hint_translation": "Han går ikke til frisøren i dag. Han klipper håret sitt selv."
       }
     }
   },
@@ -1413,6 +1695,12 @@
           "euch",
           "mich"
         ]
+      },
+      "en": {
+        "hint_translation": "She has a fantastic memory. She notices everything immediately."
+      },
+      "no": {
+        "hint_translation": "Hun har en fantastisk hukommelse. Hun merker seg alt med en gang."
       }
     }
   },
@@ -1442,6 +1730,12 @@
           "euch",
           "mich"
         ]
+      },
+      "en": {
+        "hint_translation": "There is a great concert here. Are you interested in music?"
+      },
+      "no": {
+        "hint_translation": "Det er en flott konsert her. Er De interessert i musikk?"
       }
     }
   },
@@ -1471,6 +1765,12 @@
           "mich",
           "dich"
         ]
+      },
+      "en": {
+        "hint_translation": "There is nothing to do out here. We are bored."
+      },
+      "no": {
+        "hint_translation": "Det er ingenting å gjøre her ute. Vi kjeder oss."
       }
     }
   },
@@ -1500,6 +1800,12 @@
           "dich",
           "mich"
         ]
+      },
+      "en": {
+        "hint_translation": "Your picnic was cancelled. You are annoyed about the rain."
+      },
+      "no": {
+        "hint_translation": "Pikniken deres ble avlyst. Dere er sinte over regnet."
       }
     }
   },
@@ -1529,6 +1835,12 @@
           "uns",
           "sich"
         ]
+      },
+      "en": {
+        "hint_translation": "I don't know your name yet. Please introduce yourself."
+      },
+      "no": {
+        "hint_translation": "Jeg kjenner ikke navnet ditt ennå. Introduser deg snill."
       }
     }
   },
@@ -1558,6 +1870,12 @@
           "mich",
           "dich"
         ]
+      },
+      "en": {
+        "hint_translation": "Life will be very different in 100 years. We imagine the future."
+      },
+      "no": {
+        "hint_translation": "Livet vil være helt annerledes om 100 år. Vi forestiller oss fremtiden."
       }
     }
   },
@@ -1586,6 +1904,12 @@
           "Welches",
           "Das"
         ]
+      },
+      "en": {
+        "hint_translation": "I have read many books, but this book here is very exciting."
+      },
+      "no": {
+        "hint_translation": "Jeg har lest mange bøker, men denne boken her er veldig spennende."
       }
     }
   },
@@ -1614,6 +1938,12 @@
           "diesen",
           "jener"
         ]
+      },
+      "en": {
+        "hint_translation": "There are guests standing over there. Do you actually know these people?"
+      },
+      "no": {
+        "hint_translation": "Det står gjester der borte. Kjenner du disse menneskene egentlig?"
       }
     }
   },
@@ -1642,6 +1972,12 @@
           "jene",
           "manche"
         ]
+      },
+      "en": {
+        "hint_translation": "These apples are sour. I don't like such apples."
+      },
+      "no": {
+        "hint_translation": "Disse eplene er sure. Jeg liker ikke slike epler."
       }
     }
   },
@@ -1670,6 +2006,12 @@
           "gleiche",
           "selbe"
         ]
+      },
+      "en": {
+        "hint_translation": "Every day is like any other. It is always the same."
+      },
+      "no": {
+        "hint_translation": "Hver dag er som enhver annen. Det er alltid det samme."
       }
     }
   },
@@ -1699,6 +2041,12 @@
           "dieses",
           "jenen"
         ]
+      },
+      "en": {
+        "hint_translation": "There are many varieties on the menu. I'll have this wine here."
+      },
+      "no": {
+        "hint_translation": "Det er mange sorter på kartet. Jeg tar denne vinen her."
       }
     }
   },
@@ -1728,6 +2076,12 @@
           "dieses",
           "jenem"
         ]
+      },
+      "en": {
+        "hint_translation": "We were just talking about him. At that moment he came in."
+      },
+      "no": {
+        "hint_translation": "Vi snakket nettopp om ham. I det øyeblikket kom han inn."
       }
     }
   },
@@ -1756,6 +2110,12 @@
           "welcher",
           "jener"
         ]
+      },
+      "en": {
+        "hint_translation": "This idea is good, but what do you think of that idea over there?"
+      },
+      "no": {
+        "hint_translation": "Denne ideen er god, men hva synes du om den ideen der borte?"
       }
     }
   },
@@ -1784,6 +2144,12 @@
           "Diese",
           "Jene"
         ]
+      },
+      "en": {
+        "hint_translation": "She has hardly changed. I've known the same woman for a long time."
+      },
+      "no": {
+        "hint_translation": "Hun har nesten ikke forandret seg. Jeg har kjent den samme kvinnen lenge."
       }
     }
   },
@@ -1812,6 +2178,12 @@
           "jenem",
           "solchem"
         ]
+      },
+      "en": {
+        "hint_translation": "We are neighbors. We live in the same house."
+      },
+      "no": {
+        "hint_translation": "Vi er naboer. Vi bor i samme hus."
       }
     }
   },
@@ -1840,6 +2212,12 @@
           "Welche",
           "Manche"
         ]
+      },
+      "en": {
+        "hint_translation": "These shoes are cheap, but those shoes over there are too expensive."
+      },
+      "no": {
+        "hint_translation": "Disse skoene er billige, men de skoene der borte er for dyre."
       }
     }
   },
@@ -1868,6 +2246,12 @@
           "welches",
           "manches"
         ]
+      },
+      "en": {
+        "hint_translation": "It's raining cats and dogs. Have you ever experienced such weather?"
+      },
+      "no": {
+        "hint_translation": "Det regner trollkjerringer. Har du noen gang opplevd slikt vær?"
       }
     }
   },
@@ -1896,6 +2280,12 @@
           "Jener",
           "Der"
         ]
+      },
+      "en": {
+        "hint_translation": "Please sit somewhere else. This here is my place."
+      },
+      "no": {
+        "hint_translation": "Sitt et annet sted snill. Dette her er min plass."
       }
     }
   },
@@ -1924,6 +2314,12 @@
           "dieses",
           "jenes"
         ]
+      },
+      "en": {
+        "hint_translation": "You have difficulties with the task? I solved the same problem yesterday."
+      },
+      "no": {
+        "hint_translation": "Har du vanskeligheter med oppgaven? Jeg løste det samme problemet i går."
       }
     }
   },
@@ -1953,6 +2349,12 @@
           "dessen",
           "welcher"
         ]
+      },
+      "en": {
+        "hint_translation": "There is an acquaintance. The man standing there is my uncle."
+      },
+      "no": {
+        "hint_translation": "Der er en bekjent. Mannen som står der er onkelen min."
       }
     }
   },
@@ -1982,6 +2384,12 @@
           "dessen",
           "welches"
         ]
+      },
+      "en": {
+        "hint_translation": "Look at the parking lot. The car parking there is new."
+      },
+      "no": {
+        "hint_translation": "Se på parkeringsplassen. Bilen som står der er ny."
       }
     }
   },
@@ -2011,6 +2419,12 @@
           "deren",
           "welche"
         ]
+      },
+      "en": {
+        "hint_translation": "Do you remember the visit? The woman who was here yesterday is a doctor."
+      },
+      "no": {
+        "hint_translation": "Husker du besøket? Kvinnen som var her i går er lege."
       }
     }
   },
@@ -2040,6 +2454,12 @@
           "das",
           "welchem"
         ]
+      },
+      "en": {
+        "hint_translation": "I know the child well. That is the child I helped yesterday."
+      },
+      "no": {
+        "hint_translation": "Jeg kjenner barnet godt. Det er barnet jeg hjalp i går."
       }
     }
   },
@@ -2069,6 +2489,12 @@
           "der",
           "welchen"
         ]
+      },
+      "en": {
+        "hint_translation": "We met hikers in the park. The people we encountered were nice."
+      },
+      "no": {
+        "hint_translation": "Vi møtte turgåere i parken. Folkene vi møtte var hyggelige."
       }
     }
   },
@@ -2098,6 +2524,12 @@
           "dem",
           "welches"
         ]
+      },
+      "en": {
+        "hint_translation": "The work is fantastic. The author whose book I am currently reading is world-famous."
+      },
+      "no": {
+        "hint_translation": "Verket er fantastisk. Forfatteren hvis bok jeg leser nå er verdenskjent."
       }
     }
   },
@@ -2127,6 +2559,12 @@
           "derer",
           "welcher"
         ]
+      },
+      "en": {
+        "hint_translation": "I love historical places. The city whose churches are very old is beautiful."
+      },
+      "no": {
+        "hint_translation": "Jeg elsker historiske steder. Byen hvis kirker er veldig gamle er vakker."
       }
     }
   },
@@ -2156,6 +2594,12 @@
           "dessen",
           "welches"
         ]
+      },
+      "en": {
+        "hint_translation": "Many thanks for the gift! The book you gave me is really great."
+      },
+      "no": {
+        "hint_translation": "Tusen takk for gaven! Boken du ga meg er virkelig flott."
       }
     }
   },
@@ -2185,6 +2629,12 @@
           "den",
           "welche"
         ]
+      },
+      "en": {
+        "hint_translation": "I am celebrating a party today. The friends I invited are all coming."
+      },
+      "no": {
+        "hint_translation": "Jeg feirer fest i dag. Vennene jeg har invitert kommer alle."
       }
     }
   },
@@ -2214,6 +2664,12 @@
           "der",
           "die"
         ]
+      },
+      "en": {
+        "hint_translation": "One shouldn't judge only by appearance. Everything that glitters is not gold."
+      },
+      "no": {
+        "hint_translation": "Man bør ikke bare se på det ytre. Alt som glitrer er ikke gull."
       }
     }
   },
@@ -2243,6 +2699,12 @@
           "der",
           "die"
         ]
+      },
+      "en": {
+        "hint_translation": "Onions in the food? That is something I don't like at all."
+      },
+      "no": {
+        "hint_translation": "Løk i maten? Det er noe jeg overhodet ikke liker."
       }
     }
   },
@@ -2272,6 +2734,12 @@
           "das",
           "welcher"
         ]
+      },
+      "en": {
+        "hint_translation": "I can't find it. The letter I wrote yesterday is gone."
+      },
+      "no": {
+        "hint_translation": "Jeg finner den ikke. Brevet jeg skrev i går er borte."
       }
     }
   },
@@ -2301,6 +2769,12 @@
           "deren",
           "welcher"
         ]
+      },
+      "en": {
+        "hint_translation": "There is the mother. The woman the child belongs to is here right now."
+      },
+      "no": {
+        "hint_translation": "Der er moren. Kvinnen barnet tilhører er her akkurat nå."
       }
     }
   },
@@ -2329,6 +2803,12 @@
           "Warum",
           "Wann"
         ]
+      },
+      "en": {
+        "hint_translation": "I have found a strange object. What is that, actually?"
+      },
+      "no": {
+        "hint_translation": "Jeg har funnet et fremmed objekt. Hva er det egentlig?"
       }
     }
   },
@@ -2357,6 +2837,12 @@
           "Wo",
           "Wann"
         ]
+      },
+      "en": {
+        "hint_translation": "Do you hear the noise? Who is knocking at the door?"
+      },
+      "no": {
+        "hint_translation": "Hører du lyden? Hvem banker på døren?"
       }
     }
   },
@@ -2386,6 +2872,12 @@
           "Was",
           "Wie"
         ]
+      },
+      "en": {
+        "hint_translation": "You are looking around so searchingly. Who are you looking for here?"
+      },
+      "no": {
+        "hint_translation": "Du ser deg så søkende rundt. Hvem leter du etter her?"
       }
     }
   },
@@ -2415,6 +2907,12 @@
           "Was",
           "Wie"
         ]
+      },
+      "en": {
+        "hint_translation": "You were very polite. Who did you just thank?"
+      },
+      "no": {
+        "hint_translation": "Du var veldig høflig. Hvem takket du nettopp?"
       }
     }
   },
@@ -2443,6 +2941,12 @@
           "Wie",
           "Wo"
         ]
+      },
+      "en": {
+        "hint_translation": "Here are blue and red. Which color do you like better?"
+      },
+      "no": {
+        "hint_translation": "Her er blått og rødt. Hvilken farge liker du bedre?"
       }
     }
   },
@@ -2471,6 +2975,12 @@
           "Wo",
           "Welches"
         ]
+      },
+      "en": {
+        "hint_translation": "The cover looks interesting. What kind of book is that exactly?"
+      },
+      "no": {
+        "hint_translation": "Omslaget ser interessant ut. Hva slags bok er det nøyaktig?"
       }
     }
   },
@@ -2500,6 +3010,12 @@
           "Wer",
           "Was"
         ]
+      },
+      "en": {
+        "hint_translation": "It is standing in our driveway. Whose car is that?"
+      },
+      "no": {
+        "hint_translation": "Den står i vår oppkjørsel. Hvis bil er det?"
       }
     }
   },
@@ -2528,6 +3044,12 @@
           "Wo",
           "Wann"
         ]
+      },
+      "en": {
+        "hint_translation": "You are so dirty! What have you been doing in the garden?"
+      },
+      "no": {
+        "hint_translation": "Du er så skitten! Hva har du gjort i hagen?"
       }
     }
   },
@@ -2556,6 +3078,12 @@
           "Wo",
           "Wen"
         ]
+      },
+      "en": {
+        "hint_translation": "I have set the table for three people. Who is coming to visit today?"
+      },
+      "no": {
+        "hint_translation": "Jeg har dekket bordet til tre personer. Hvem kommer på besøk i dag?"
       }
     }
   },
@@ -2585,6 +3113,12 @@
           "Wie",
           "Wem"
         ]
+      },
+      "en": {
+        "hint_translation": "Your statement is a bit unclear. Who exactly do you mean by that?"
+      },
+      "no": {
+        "hint_translation": "Din uttalelse er litt uklar. Hvem mener du nøyaktig med det?"
       }
     }
   },
@@ -2614,6 +3148,12 @@
           "Was",
           "Wie"
         ]
+      },
+      "en": {
+        "hint_translation": "That was an important piece of information. Who did you tell all that to?"
+      },
+      "no": {
+        "hint_translation": "Det var viktig informasjon. Hvem fortalte du alt det til?"
       }
     }
   },
@@ -2642,6 +3182,12 @@
           "Wie",
           "Wo"
         ]
+      },
+      "en": {
+        "hint_translation": "I have gotten lost. Which way leads to the station?"
+      },
+      "no": {
+        "hint_translation": "Jeg har gått meg bort. Hvilken vei fører til stasjonen?"
       }
     }
   },
@@ -2670,6 +3216,12 @@
           "Wie",
           "Wo"
         ]
+      },
+      "en": {
+        "hint_translation": "There are many strangers standing there. What kind of people are they?"
+      },
+      "no": {
+        "hint_translation": "Det står mange fremmede der. Hva slags folk er det?"
       }
     }
   },
@@ -2698,6 +3250,12 @@
           "Alles",
           "Etwas"
         ]
+      },
+      "en": {
+        "hint_translation": "Look at the prohibition sign. One is not allowed to smoke here in the building."
+      },
+      "no": {
+        "hint_translation": "Se på forbudsskiltet. Man får ikke røyke her i bygningen."
       }
     }
   },
@@ -2726,6 +3284,12 @@
           "alles",
           "manches"
         ]
+      },
+      "en": {
+        "hint_translation": "I was away for a moment. Have you seen anyone in my office?"
+      },
+      "no": {
+        "hint_translation": "Jeg var borte et øyeblikk. Har du sett noen på kontoret mitt?"
       }
     }
   },
@@ -2754,6 +3318,12 @@
           "jemand",
           "niemand"
         ]
+      },
+      "en": {
+        "hint_translation": "It was completely silent in the forest. I haven't heard anything."
+      },
+      "no": {
+        "hint_translation": "Det var fullstendig stille i skogen. Jeg har ikke hørt noe."
       }
     }
   },
@@ -2782,6 +3352,12 @@
           "Manches",
           "Jedes"
         ]
+      },
+      "en": {
+        "hint_translation": "With hard work one can achieve everything. Nothing is really impossible."
+      },
+      "no": {
+        "hint_translation": "Med hardt arbeid kan man oppnå alt. Ingenting er virkelig umulig."
       }
     }
   },
@@ -2810,6 +3386,12 @@
           "Keiner",
           "Jemand"
         ]
+      },
+      "en": {
+        "hint_translation": "That is a known fact. Almost everyone knows that today."
+      },
+      "no": {
+        "hint_translation": "Det er et kjent faktum. Nesten alle vet det i dag."
       }
     }
   },
@@ -2838,6 +3420,12 @@
           "Jeder",
           "Keiner"
         ]
+      },
+      "en": {
+        "hint_translation": "I have invited many people. Some have come."
+      },
+      "no": {
+        "hint_translation": "Jeg har invitert mange mennesker. Noen har kommet."
       }
     }
   },
@@ -2866,6 +3454,12 @@
           "manches",
           "jedes"
         ]
+      },
+      "en": {
+        "hint_translation": "I am hungry. I want to eat something."
+      },
+      "no": {
+        "hint_translation": "Jeg er sulten. Jeg vil spise noe."
       }
     }
   },
@@ -2893,6 +3487,12 @@
           "Alles",
           "Keiner"
         ]
+      },
+      "en": {
+        "hint_translation": "Everyone was just standing around. No one helped."
+      },
+      "no": {
+        "hint_translation": "Alle sto bare rundt. Ingen hjalp."
       }
     }
   },
@@ -2921,6 +3521,12 @@
           "Jeder",
           "Keiner"
         ]
+      },
+      "en": {
+        "hint_translation": "The exam is difficult. Some are afraid of it."
+      },
+      "no": {
+        "hint_translation": "Eksamen er vanskelig. Noen er redde for den."
       }
     }
   },
@@ -2949,6 +3555,12 @@
           "alles",
           "jeder"
         ]
+      },
+      "en": {
+        "hint_translation": "This bag is very heavy. Can someone help me?"
+      },
+      "no": {
+        "hint_translation": "Denne vesken er veldig tung. Kan noen hjelpe meg?"
       }
     }
   },
@@ -2977,6 +3589,12 @@
           "Manches",
           "Jedes"
         ]
+      },
+      "en": {
+        "hint_translation": "Don't worry. Everything is in order."
+      },
+      "no": {
+        "hint_translation": "Ikke bekymre deg. Alt er i orden."
       }
     }
   },
@@ -3005,6 +3623,12 @@
           "manches",
           "jedes"
         ]
+      },
+      "en": {
+        "hint_translation": "He remains persistently silent. He has nothing to say."
+      },
+      "no": {
+        "hint_translation": "Han tier iherdig. Han har ingenting å si."
       }
     }
   },
@@ -3033,6 +3657,12 @@
           "einige",
           "alle"
         ]
+      },
+      "en": {
+        "hint_translation": "Hurry up! We only have a little time left."
+      },
+      "no": {
+        "hint_translation": "Skynd dere! Vi har bare lite tid igjen."
       }
     }
   }
