@@ -31,14 +31,17 @@ Each question object must contain:
   - `response_mode`: must be `single_token_choice`
   - `blank_token`: placeholder string, default `___`
   - `practice_language`: language code for this file (for example `nl`)
-- `translations`: exactly one language entry, matching `content.practice_language`
+- `translations`: a dictionary of language codes. Must contain at least one language entry matching `content.practice_language`. Other languages can optionally be added to provide translated hints.
 
-Each `translations.<lang>` object must contain:
+For the `translations.<lang>` object matching the `practice_language` (the target learning language), it must contain:
 
 - `prompt`: sentence containing exactly one blank token (for example `Ik zie ___ hond in het park.`)
 - `answer`: expected missing token
 - `accepted`: optional alternative valid tokens
 - `word_pool`: includes `answer`, all `accepted`, and distractors
+
+For other languages in `translations` (the user's source language hints), they only require:
+- `hint_translation` to show the full translated sentence.
 
 Optional fields:
 
@@ -58,11 +61,11 @@ Optional fields:
 - Correctness compares selected token to `answer` or a value in `accepted`.
 - `hint` must never affect correctness.
 - `blank_token` must appear exactly once in `prompt`.
-- `content.practice_language` must match the single language key inside `translations`.
+- `content.practice_language` must map to a valid language key inside `translations` (this key defines the primary exercise).
 
 ## 6. Examples
 
-### Dutch-only cloze row
+### Dutch practice cloze with multiple language hints
 
 ```json
 {
@@ -82,12 +85,18 @@ Optional fields:
       "answer": "een",
       "accepted": [],
       "word_pool": ["een", "de", "het", "die", "dat"]
+    },
+    "no": {
+      "hint_translation": "Jeg ser en hund i parken."
+    },
+    "en": {
+      "hint_translation": "I see a dog in the park."
     }
   }
 }
 ```
 
-### Norwegian-only cloze row
+### Norwegian practice cloze (no hints)
 
 ```json
 {
