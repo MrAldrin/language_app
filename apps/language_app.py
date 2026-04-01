@@ -65,110 +65,142 @@ class QuestionWidget(anywidget.AnyWidget):
                     const words = model.get("words");
                     const target = model.get("target");
                     const accepted = model.get("accepted");
+                    const questionType = model.get("question_type");
+                    const prompt = model.get("prompt") || "";
+                    const hiddenIndex = model.get("hidden_index");
 
                     function on(selector, event, handler) {
                         const node = el.querySelector(selector);
                         if (node) node.addEventListener(event, handler);
                     }
 
-                    const answerHtml = answerIndices.map(i =>
-                        `<button class="control chip answer-chip" data-idx="${i}">${words[i]}</button>`
-                    ).join("");
-
-                const poolHtml = words.map((word, i) => {
-                    const isSelected = answerIndices.includes(i);
-                    const isLocked = phase === "correct";
-                    return `<button
-                        class="control chip pool-chip ${isSelected || isLocked ? "chip-disabled" : ""}"
-                        data-idx="${i}"
-                        ${isSelected || isLocked ? "disabled" : ""}
-                    >${word}</button>`;
-                }).join("");
-
-                const feedbackByPhase = {
-                    idle:    { cls: "feedback-neutral", text: "Press Check to validate your answer" },
-                    wrong:   { cls: "feedback-wrong", text: "Not quite, continue or try again" },
-                    correct: { cls: "feedback-correct", text: "Correct! Continue" },
-                };
-                const feedback = feedbackByPhase[feedbackPhase] || feedbackByPhase.idle;
-                const feedbackHtml = `<div class="feedback ${feedback.cls}">${feedback.text}</div>`;
-
-                // ADDED: reveal area shown when revealed=true, always same height to avoid jumping
-                const acceptedHtml = accepted.length > 0
-                    ? `<div class="reveal-accepted">Also accepted: ${accepted.join(" / ")}</div>`
-                    : "";
-                const revealHtml = `
-                    <div class="reveal-area ${revealed ? "reveal-visible" : "reveal-hidden"}">
-                        <div class="reveal-target">Answer: ${target}</div>
-                        ${acceptedHtml}
-                    </div>
-                `;
-
-                // CHANGED: three buttons, each with fixed width so the row never changes size
-                // check/next label changes but button stays same width via CSS
-                const checkDisabled = answerIndices.length === 0 ? "disabled" : "";
-                const checkLabel = "Check";
-                // ADDED: clear disabled when answer is empty and phase is idle - nothing to clear
-                const clearDisabled = (answerIndices.length === 0 && phase === "idle") ? "disabled" : "";
-
-                el.innerHTML = `
-                    <div class="surface answer-area">
-                        ${answerHtml || "<span class='hint'>Click words below to build your answer</span>"}
-                    </div>
-                    <div class="surface pool-area">
-                        ${poolHtml}
-                    </div>
-                    <div class="button-row">
-                        <button class="control action-btn clear-btn" id="clear-btn" ${clearDisabled}>Clear</button>
-                        <button class="control action-btn check-btn" id="check-btn" ${checkDisabled}>${checkLabel}</button>
-                        <button class="control action-btn reveal-btn" id="reveal-btn">
-                            ${revealed ? "Hide" : "Reveal"}
-                        </button>
-                    </div>
-                    ${feedbackHtml}
-                    ${revealHtml}
-                `;
-
-                // chip handlers - only when not locked
-                if (phase !== "correct") {
-                    el.querySelectorAll(".answer-chip").forEach(btn => {
-                        btn.addEventListener("click", () => {
-                            const pos = answerIndices.indexOf(parseInt(btn.dataset.idx));
-                            if (pos !== -1) answerIndices.splice(pos, 1);
-                            setIdleAndRedraw();
+                    let answerHtml = "";
+                    if (questionType === "cloze_word_choice" && hiddenIndex !== -1) {
+                        // CLOZE RENDERING: Render prompt with a blank space
+                        const promptWords = prompt.split(/\s+/);
+                        answerHtml = `<div class="cloze-sentence">`;
+                        promptWords.forEach((pw, i) => {
+                            if (i === hiddenIndex) {
+                                const val = answerIndices.length > 0 ? words[answerIndices[0]] : "";
+                                const cls = val ? "cloze-filled" : "cloze-blank";
+                                answerHtml += `<span class="cloze-slot ${cls}">${val || "&nbsp;&nbsp;&nbsp;&nbsp;"}</span> `;
+                            } else {
+                                answerHtml += `<span>${pw}</span> `;
+                            }
                         });
+                        answerHtml += `</div>`;
+                    } else {
+                        // SENTENCE BUILDER RENDERING: Standard chip area
+                        answerHtml = answerIndices.map(i =>
+                            `<button class="control chip answer-chip" data-idx="${i}">${words[i]}</button>`
+                        ).join("");
+                        if (!answerHtml) {
+                            answerHtml = "<span class='hint'>Click words below to build your answer</span>";
+                        }
+                    }
+
+                    const poolHtml = words.map((word, i) => {
+                        const isSelected = answerIndices.includes(i);
+                        const isLocked = phase === "correct";
+                        return `<button
+                            class="control chip pool-chip ${isSelected || isLocked ? "chip-disabled" : ""}"
+                            data-idx="${i}"
+                            ${isSelected || isLocked ? "disabled" : ""}
+                        >${word}</button>`;
+                    }).join("");
+
+                    const feedbackByPhase = {
+                        idle:    { cls: "feedback-neutral", text: "Press Check to validate your answer" },
+                        wrong:   { cls: "feedback-wrong", text: "Not quite, continue or try again" },
+                        correct: { cls: "feedback-correct", text: "Correct! Continue" },
+                    };
+                    const feedback = feedbackByPhase[feedbackPhase] || feedbackByPhase.idle;
+                    const feedbackHtml = `<div class="feedback ${feedback.cls}">${feedback.text}</div>`;
+
+                    const acceptedHtml = accepted.length > 0
+                        ? `<div class="reveal-accepted">Also accepted: ${accepted.join(" / ")}</div>`
+                        : "";
+                    const revealHtml = `
+                        <div class="reveal-area ${revealed ? "reveal-visible" : "reveal-hidden"}">
+                            <div class="reveal-target">Answer: ${target}</div>
+                            ${acceptedHtml}
+                        </div>
+                    `;
+
+                    const checkDisabled = answerIndices.length === 0 ? "disabled" : "";
+                    const checkLabel = "Check";
+                    const clearDisabled = (answerIndices.length === 0 && phase === "idle") ? "disabled" : "";
+
+                    el.innerHTML = `
+                        <div class="surface answer-area ${questionType === "cloze_word_choice" ? "answer-area-cloze" : ""}">
+                            ${answerHtml}
+                        </div>
+                        <div class="surface pool-area">
+                            ${poolHtml}
+                        </div>
+                        <div class="button-row">
+                            <button class="control action-btn clear-btn" id="clear-btn" ${clearDisabled}>Clear</button>
+                            <button class="control action-btn check-btn" id="check-btn" ${checkDisabled}>${checkLabel}</button>
+                            <button class="control action-btn reveal-btn" id="reveal-btn">
+                                ${revealed ? "Hide" : "Reveal"}
+                            </button>
+                        </div>
+                        ${feedbackHtml}
+                        ${revealHtml}
+                    `;
+
+                    // chip handlers - only when not locked
+                    if (phase !== "correct") {
+                        el.querySelectorAll(".answer-chip").forEach(btn => {
+                            btn.addEventListener("click", () => {
+                                const pos = answerIndices.indexOf(parseInt(btn.dataset.idx));
+                                if (pos !== -1) answerIndices.splice(pos, 1);
+                                setIdleAndRedraw();
+                            });
+                        });
+                        // Also allow clicking the cloze slot to clear it
+                        el.querySelectorAll(".cloze-slot").forEach(slot => {
+                            slot.addEventListener("click", () => {
+                                answerIndices = [];
+                                setIdleAndRedraw();
+                            });
+                        });
+
+                        el.querySelectorAll(".pool-chip:not([disabled])").forEach(btn => {
+                            btn.addEventListener("click", () => {
+                                if (questionType === "cloze_word_choice") {
+                                    // Single selection for cloze
+                                    answerIndices = [parseInt(btn.dataset.idx)];
+                                } else {
+                                    // Multiple for sentence builder
+                                    answerIndices.push(parseInt(btn.dataset.idx));
+                                }
+                                setIdleAndRedraw();
+                            });
+                        });
+                    }
+
+                    on("#clear-btn", "click", () => {
+                        answerIndices = [];
+                        setIdleAndRedraw();
                     });
-                    el.querySelectorAll(".pool-chip:not([disabled])").forEach(btn => {
-                        btn.addEventListener("click", () => {
-                            answerIndices.push(parseInt(btn.dataset.idx));
-                            setIdleAndRedraw();
-                        });
+
+                    on("#reveal-btn", "click", () => {
+                        revealed = !revealed;
+                        redraw();
+                    });
+
+                    on("#check-btn", "click", () => {
+                        const isCorrect = checkAnswer(answerIndices, words, target, accepted);
+
+                        model.set("correct", isCorrect);
+                        model.save_changes();
+
+                        phase = isCorrect ? "correct" : "wrong";
+                        feedbackPhase = phase;
+                        redraw();
                     });
                 }
-
-                // ADDED: clear resets answer area and phase back to idle
-                on("#clear-btn", "click", () => {
-                    answerIndices = [];
-                    setIdleAndRedraw();
-                });
-
-                // ADDED: reveal toggles independently - does not affect phase or answer
-                on("#reveal-btn", "click", () => {
-                    revealed = !revealed;
-                    redraw();
-                });
-
-                on("#check-btn", "click", () => {
-                    const isCorrect = checkAnswer(answerIndices, words, target, accepted);
-
-                    model.set("correct", isCorrect);
-                    model.save_changes();
-
-                    phase = isCorrect ? "correct" : "wrong";
-                    feedbackPhase = phase;
-                    redraw();
-                });
-            }
 
             model.on("change:words", () => {
                 answerIndices = [];
@@ -200,6 +232,38 @@ class QuestionWidget(anywidget.AnyWidget):
             align-items: center;
             padding-left: 0;
             padding-right: 0;
+        }
+        .answer-area-cloze {
+            border: none;
+            background: #f8fafc;
+            border-radius: 0.75rem;
+            padding: 1rem;
+        }
+        .cloze-sentence {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #1e293b;
+            text-align: center;
+        }
+        .cloze-slot {
+            display: inline-block;
+            min-width: 4rem;
+            height: 2rem;
+            border-bottom: 2px solid #8ea3b8;
+            margin: 0 0.25rem;
+            vertical-align: middle;
+            cursor: pointer;
+            transition: all 0.2s;
+            text-align: center;
+            line-height: 2rem;
+        }
+        .cloze-filled {
+            border-bottom-color: #2e8b57;
+            color: #2e8b57;
+            font-weight: 600;
+        }
+        .cloze-blank {
+            background: #f1f5f9;
         }
         .pool-area {
             background: #e8f6f4;
@@ -302,6 +366,9 @@ class QuestionWidget(anywidget.AnyWidget):
     words = traitlets.List([]).tag(sync=True)
     target = traitlets.Unicode("").tag(sync=True)
     accepted = traitlets.List([]).tag(sync=True)
+    question_type = traitlets.Unicode("").tag(sync=True)
+    prompt = traitlets.Unicode("").tag(sync=True)
+    hidden_index = traitlets.Int(-1).tag(sync=True)
 
     # JS → Python (outputs)
     correct = traitlets.Bool(False).tag(sync=True)
@@ -316,6 +383,9 @@ def _(current_sentence, pool_words):
             words=pool_words,
             target=current_sentence["target"],
             accepted=current_sentence.get("accepted", []),
+            question_type=current_sentence.get("question_type", ""),
+            prompt=current_sentence.get("source", ""),
+            hidden_index=current_sentence.get("hidden_word_index", -1),
         )
         widget = mo.ui.anywidget(_widget)
     return (widget,)
@@ -470,7 +540,9 @@ def _():
 
 @app.cell
 def _(raw_pairs):
-    available_languages = sorted({lang for pair in raw_pairs for lang in pair.split("_")})
+    available_languages = sorted(
+        {lang for pair in raw_pairs for lang in pair.split("_")}
+    )
     return (available_languages,)
 
 
@@ -526,10 +598,8 @@ def _(df, row_number, start_session_id):
     _ = start_session_id
     current_sentence = get_sentence(df=df, row_number=row_number)
 
-
     def toggle_reveal(current: bool) -> bool:
         return not current
-
 
     # button_reveal = mo.ui.button(label="Reveal Answer", value=False, on_click=toggle_reveal)
     return (current_sentence,)
@@ -564,7 +634,9 @@ def _(button_next, df, in_question_view, row_number):
     last_question_index = max(0, total_questions - 1)
     is_last_question = total_questions > 0 and row_number >= last_question_index
     show_summary_page = (
-        in_question_view and total_questions > 0 and button_next.value > last_question_index
+        in_question_view
+        and total_questions > 0
+        and button_next.value > last_question_index
     )
     return show_summary_page, total_questions
 
@@ -581,7 +653,9 @@ def _():
 def _(LANG_MAP, available_languages):
     source_options = {LANG_MAP.get(code, code): code for code in available_languages}
     default_source = (
-        "nl" if "nl" in available_languages else (available_languages[0] if available_languages else "")
+        "nl"
+        if "nl" in available_languages
+        else (available_languages[0] if available_languages else "")
     )
     default_source_label = LANG_MAP.get(default_source, default_source)
 
@@ -608,9 +682,7 @@ def _(LANG_MAP, dropdown_source_language, raw_pairs):
     )
     target_options = {LANG_MAP.get(code, code): code for code in connected_targets}
     if connected_targets:
-        default_target = (
-            "no" if "no" in connected_targets else connected_targets[0]
-        )
+        default_target = "no" if "no" in connected_targets else connected_targets[0]
         default_target_label = LANG_MAP.get(default_target, default_target)
     else:
         default_target_label = ""
@@ -722,7 +794,6 @@ def _():
     def bump(counter: int) -> int:
         return counter + 1
 
-
     button_start_questions = mo.ui.button(
         value=0,
         on_click=bump,
@@ -757,10 +828,8 @@ def _(button_back_to_settings, button_restart_session, button_start_questions):
 def _(start_session_id):
     _ = start_session_id
 
-
     def handle_navigation(c: int) -> int:
         return c + 1
-
 
     button_prev = mo.ui.button(value=0, on_click=handle_navigation, label="◀ Previous")
     button_next = mo.ui.button(value=0, on_click=handle_navigation, label="Next ▶")
@@ -885,7 +954,9 @@ def load_json_data(
     pair: str | None, filename: str, target_language: str | None = None
 ) -> list[dict[str, Any]]:
     """Loads curriculum JSON data from Pyodide or local filesystem."""
-    use_language_path = filename == "cloze_word_choice_questions.json" and target_language
+    use_language_path = (
+        filename == "cloze_word_choice_questions.json" and target_language
+    )
 
     if "pyodide" in sys.modules:
         from pyodide.http import open_url
@@ -985,6 +1056,7 @@ def prepare_curriculum(
                     "target": row["text_l2"],
                     "accepted": row["accepted_l2"],
                     "words": row["word_pool_l2"],
+                    "hidden_word_index": row.get("hidden_word_index", -1),
                 }
             )
         else:
@@ -1001,6 +1073,7 @@ def prepare_curriculum(
                     "target": row["text_l1"],
                     "accepted": row["accepted_l1"],
                     "words": row["word_pool_l1"],
+                    "hidden_word_index": row.get("hidden_word_index", -1),
                 }
             )
 
@@ -1096,12 +1169,17 @@ def transform_to_canonical(
                     "prompt_l2": practice_fields["prompt"],
                     "text_l1": practice_fields["answer"],
                     "text_l2": practice_fields["answer"],
-                    "hint_l1": practice_fields["hint"],
-                    "hint_l2": practice_fields["hint"],
+                    "hint_l1": translations.get(language_1, {}).get(
+                        "hint_translation", practice_fields["hint"]
+                    ),
+                    "hint_l2": translations.get(language_2, {}).get(
+                        "hint_translation", practice_fields["hint"]
+                    ),
                     "accepted_l1": practice_data.get("accepted", []),
                     "accepted_l2": practice_data.get("accepted", []),
                     "word_pool_l1": make_word_pool(lang_data=practice_data),
                     "word_pool_l2": make_word_pool(lang_data=practice_data),
+                    "hidden_word_index": practice_data.get("hidden_word_index", -1),
                 }
             )
             continue
@@ -1135,6 +1213,7 @@ def transform_to_canonical(
                 "accepted_l2": lang_2_data.get("accepted", []),
                 "word_pool_l1": make_word_pool(lang_data=lang_1_data),
                 "word_pool_l2": make_word_pool(lang_data=lang_2_data),
+                "hidden_word_index": -1,
             }
         )
 
@@ -1309,12 +1388,19 @@ def render_progress(current_idx: int, total_count: int) -> mo.Html:
 
 
 @app.function
-def render_question_area(source: str, source_hint: str | None = None) -> mo.Html:
+def render_question_area(
+    source: str, source_hint: str | None = None, question_type: str = ""
+) -> mo.Html:
     """Renders the main question prompt."""
-    elements = [
-        mo.md("**Translate this sentence:**").center(),
-        mo.md(f"### {source}").center(),
-    ]
+    if question_type == "cloze_word_choice":
+        elements = [
+            mo.md("**Fill in the blank:**").center(),
+        ]
+    else:
+        elements = [
+            mo.md("**Translate this sentence:**").center(),
+            mo.md(f"### {source}").center(),
+        ]
     if source_hint:
         elements.append(mo.md(f"*Hint: {source_hint}*").center())
     return mo.vstack(elements).style({"margin-top": "1rem"})
@@ -1370,7 +1456,6 @@ def _(
 def _(current_sentence, df, row_number):
     # stats = button_check_answer.value
 
-
     def render_stats() -> mo.Html:
         return mo.hstack(
             [
@@ -1404,6 +1489,7 @@ def _(current_sentence, render_navigation_buttons, render_stats, widget):
                 render_question_area(
                     source=current_sentence["source"],
                     source_hint=current_sentence.get("source_hint"),
+                    question_type=current_sentence.get("question_type", ""),
                 ),
                 widget,
                 render_navigation_buttons(),
