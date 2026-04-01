@@ -220,6 +220,9 @@ class QuestionWidget(anywidget.AnyWidget):
 
                         phase = isCorrect ? "correct" : "wrong";
                         feedbackPhase = phase;
+                        if (isCorrect) {
+                            revealed = true;
+                        }
                         redraw();
                     });
                 }
@@ -297,7 +300,6 @@ class QuestionWidget(anywidget.AnyWidget):
         }
         .cloze-filled {
             border-bottom-color: #2e8b57;
-            color: #2e8b57;
             font-weight: 600;
         }
         .cloze-blank {
