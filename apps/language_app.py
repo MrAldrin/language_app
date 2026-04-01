@@ -653,8 +653,8 @@ def _():
 def _(LANG_MAP, available_languages):
     source_options = {LANG_MAP.get(code, code): code for code in available_languages}
     default_source = (
-        "nl"
-        if "nl" in available_languages
+        "no"
+        if "no" in available_languages
         else (available_languages[0] if available_languages else "")
     )
     default_source_label = LANG_MAP.get(default_source, default_source)
@@ -682,7 +682,7 @@ def _(LANG_MAP, dropdown_source_language, raw_pairs):
     )
     target_options = {LANG_MAP.get(code, code): code for code in connected_targets}
     if connected_targets:
-        default_target = "no" if "no" in connected_targets else connected_targets[0]
+        default_target = "nl" if "nl" in connected_targets else connected_targets[0]
         default_target_label = LANG_MAP.get(default_target, default_target)
     else:
         default_target_label = ""
@@ -1169,12 +1169,14 @@ def transform_to_canonical(
                     "prompt_l2": practice_fields["prompt"],
                     "text_l1": practice_fields["answer"],
                     "text_l2": practice_fields["answer"],
-                    "hint_l1": translations.get(language_1, {}).get(
-                        "hint_translation", practice_fields["hint"]
-                    ),
-                    "hint_l2": translations.get(language_2, {}).get(
-                        "hint_translation", practice_fields["hint"]
-                    ),
+                    "hint_l1": extract_translation_fields(
+                        translations.get(language_1, {})
+                    ).get("prompt")
+                    or practice_fields["hint"],
+                    "hint_l2": extract_translation_fields(
+                        translations.get(language_1, {})
+                    ).get("prompt")
+                    or practice_fields["hint"],
                     "accepted_l1": practice_data.get("accepted", []),
                     "accepted_l2": practice_data.get("accepted", []),
                     "word_pool_l1": make_word_pool(lang_data=practice_data),
