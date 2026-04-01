@@ -141,16 +141,6 @@ class QuestionWidget(anywidget.AnyWidget):
                     const feedback = feedbackByPhase[feedbackPhase] || feedbackByPhase.idle;
                     const feedbackHtml = `<div class="feedback ${feedback.cls}">${feedback.text}</div>`;
 
-                    const acceptedHtml = accepted.length > 0
-                        ? `<div class="reveal-accepted">Also accepted: ${accepted.join(" / ")}</div>`
-                        : "";
-                    const revealHtml = `
-                        <div class="reveal-area ${revealed ? "reveal-visible" : "reveal-hidden"}">
-                            <div class="reveal-target">Answer: ${target}</div>
-                            ${acceptedHtml}
-                        </div>
-                    `;
-
                     const checkDisabled = answerIndices.length === 0 ? "disabled" : "";
                     const checkLabel = "Check";
                     const clearDisabled = (answerIndices.length === 0 && phase === "idle") ? "disabled" : "";
@@ -166,12 +156,19 @@ class QuestionWidget(anywidget.AnyWidget):
                         <div class="button-row">
                             <button class="control action-btn clear-btn" id="clear-btn" ${clearDisabled}>Clear</button>
                             <button class="control action-btn check-btn" id="check-btn" ${checkDisabled}>${checkLabel}</button>
-                            <button class="control action-btn reveal-btn" id="reveal-btn">
-                                ${revealed ? "Hide" : "Reveal"}
-                            </button>
                         </div>
                         ${feedbackHtml}
-                        ${revealHtml}
+                        <div class="reveal-container">
+                            <button class="reveal-toggle-btn" id="reveal-btn">
+                                ${revealed 
+                                    ? `<div class="reveal-content">
+                                         <div class="reveal-main">${target}</div>
+                                         ${accepted.length > 0 ? `<div class="reveal-sub">Also: ${accepted.join(", ")}</div>` : ""}
+                                       </div>` 
+                                    : "Reveal answer"
+                                }
+                            </button>
+                        </div>
                     `;
 
                     // chip handlers - only when not locked
@@ -362,26 +359,44 @@ class QuestionWidget(anywidget.AnyWidget):
             border: 1px solid #2e8b57;
             color: #145339;
         }
-        .reveal-area {
-            margin: 0.5rem 0 0.25rem;
+        .reveal-container {
+            margin: 0.5rem auto 0;
+            width: 100%;
+            max-width: 22rem;
+            display: flex;
+            justify-content: center;
+        }
+        .reveal-toggle-btn {
+            width: 100%;
+            height: 3.5rem;
+            padding: 0.4rem 1rem;
+            border-radius: 0.75rem;
+            border: 1px solid #cbd5e1;
+            background: #f8fafc;
+            color: #475569;
+            cursor: pointer;
+            font-size: 0.95rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.2s;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+        .reveal-toggle-btn:hover {
+            background: #f1f5f9;
+        }
+        .reveal-main {
+            font-weight: 600;
+            color: #1e293b;
             text-align: center;
-            min-height: 2.5rem;
         }
-        .reveal-hidden {
-            visibility: hidden;
-        }
-        .reveal-visible {
-            visibility: visible;
-        }
-        .reveal-target {
-            font-size: 1rem;
-            color: #243548;
-        }
-        .reveal-accepted {
-            font-size: 0.85rem;
-            font-style: italic;
-            color: #243548;
-            margin-top: 0.2rem;
+        .reveal-sub {
+            font-size: 0.8rem;
+            opacity: 0.8;
+            margin-top: 0.1rem;
+            text-align: center;
         }
         .button-row {
             display: flex;
