@@ -67,6 +67,7 @@ class QuestionWidget(anywidget.AnyWidget):
                     const accepted = model.get("accepted");
                     const questionType = model.get("question_type");
                     const prompt = model.get("prompt") || "";
+                    const sourceHint = model.get("source_hint") || "";
                     const hiddenIndex = model.get("hidden_index");
 
                     function on(selector, event, handler) {
@@ -74,11 +75,34 @@ class QuestionWidget(anywidget.AnyWidget):
                         if (node) node.addEventListener(event, handler);
                     }
 
+                    let questionHeaderHtml = "";
+                    if (questionType === "cloze_word_choice") {
+                        questionHeaderHtml = `<strong>Fill in the blank:</strong>`;
+                    } else {
+                        questionHeaderHtml = `<strong>Translate this sentence:</strong>`;
+                    }
+
+                    const promptHtml = questionType !== "cloze_word_choice" 
+                        ? `<div class="question-text">${prompt}</div>` 
+                        : "";
+
+                    const hintHtml = sourceHint 
+                        ? `<div class="question-hint"><em>Hint: ${sourceHint}</em></div>` 
+                        : "";
+
+                    const questionAreaHtml = `
+                        <div class="question-container">
+                            <div class="question-header">${questionHeaderHtml}</div>
+                            ${promptHtml}
+                            ${hintHtml}
+                        </div>
+                    `;
+
                     let answerHtml = "";
                     if (questionType === "cloze_word_choice" && hiddenIndex !== -1) {
                         // CLOZE RENDERING: Render prompt with a blank space
                         const promptWords = prompt.split(/\s+/);
-                        answerHtml = `<div class="cloze-sentence">`;
+                        answerHtml = `<div class="question-text">`;
                         promptWords.forEach((pw, i) => {
                             if (i === hiddenIndex) {
                                 const val = answerIndices.length > 0 ? words[answerIndices[0]] : "";
@@ -132,6 +156,7 @@ class QuestionWidget(anywidget.AnyWidget):
                     const clearDisabled = (answerIndices.length === 0 && phase === "idle") ? "disabled" : "";
 
                     el.innerHTML = `
+                        ${questionAreaHtml}
                         <div class="surface answer-area ${questionType === "cloze_word_choice" ? "answer-area-cloze" : ""}">
                             ${answerHtml}
                         </div>
@@ -217,6 +242,28 @@ class QuestionWidget(anywidget.AnyWidget):
     """
 
     _css = """
+        .question-container {
+            text-align: center;
+            margin-bottom: 1rem;
+            margin-top: 0.5rem;
+        }
+        .question-header {
+            font-size: 0.9rem;
+            color: #475569;
+            margin-bottom: 0.25rem;
+        }
+        .question-text {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #1e293b;
+            text-align: center;
+            margin: 0.5rem 0;
+        }
+        .question-hint {
+            font-size: 0.95rem;
+            color: #64748b;
+            margin-top: 0.25rem;
+        }
         .surface {
             border-radius: 0.75rem;
             padding: 0.75rem;
@@ -238,12 +285,6 @@ class QuestionWidget(anywidget.AnyWidget):
             background: #f8fafc;
             border-radius: 0.75rem;
             padding: 1rem;
-        }
-        .cloze-sentence {
-            font-size: 1.1rem;
-            line-height: 1.6;
-            color: #1e293b;
-            text-align: center;
         }
         .cloze-slot {
             display: inline-block;
@@ -368,6 +409,7 @@ class QuestionWidget(anywidget.AnyWidget):
     accepted = traitlets.List([]).tag(sync=True)
     question_type = traitlets.Unicode("").tag(sync=True)
     prompt = traitlets.Unicode("").tag(sync=True)
+    source_hint = traitlets.Unicode("").tag(sync=True)
     hidden_index = traitlets.Int(-1).tag(sync=True)
 
     # JS → Python (outputs)
@@ -385,6 +427,7 @@ def _(current_sentence, pool_words):
             accepted=current_sentence.get("accepted", []),
             question_type=current_sentence.get("question_type", ""),
             prompt=current_sentence.get("source", ""),
+            source_hint=current_sentence.get("source_hint") or "",
             hidden_index=current_sentence.get("hidden_word_index", -1),
         )
         widget = mo.ui.anywidget(_widget)
@@ -1389,25 +1432,6 @@ def render_progress(current_idx: int, total_count: int) -> mo.Html:
     )
 
 
-@app.function
-def render_question_area(
-    source: str, source_hint: str | None = None, question_type: str = ""
-) -> mo.Html:
-    """Renders the main question prompt."""
-    if question_type == "cloze_word_choice":
-        elements = [
-            mo.md("**Fill in the blank:**").center(),
-        ]
-    else:
-        elements = [
-            mo.md("**Translate this sentence:**").center(),
-            mo.md(f"### {source}").center(),
-        ]
-    if source_hint:
-        elements.append(mo.md(f"*Hint: {source_hint}*").center())
-    return mo.vstack(elements).style({"margin-top": "1rem"})
-
-
 @app.cell(hide_code=True)
 def _():
     mo.md(r"""
@@ -1483,16 +1507,11 @@ def _(button_next, button_prev):
 
 
 @app.cell
-def _(current_sentence, render_navigation_buttons, render_stats, widget):
+def _(render_navigation_buttons, render_stats, widget):
     def render_interaction_section() -> mo.Html:
         interaction_section = mo.vstack(
             [
                 render_stats(),
-                render_question_area(
-                    source=current_sentence["source"],
-                    source_hint=current_sentence.get("source_hint"),
-                    question_type=current_sentence.get("question_type", ""),
-                ),
                 widget,
                 render_navigation_buttons(),
             ],
