@@ -134,11 +134,11 @@ class QuestionWidget(anywidget.AnyWidget):
                         : "";
 
                     const hintHtml = (sourceHint && questionType !== "cloze_word_choice") 
-                        ? `<div class="question-hint"><em>Hint: ${sourceHint}</em></div>` 
+                        ? `<div class="question-hint"><em>${sourceHint}</em></div>` 
                         : "";
 
                     const questionAreaHtml = `
-                        <div class="question-container">
+                        <div class="question-container ${questionType === "cloze_word_choice" ? "question-container-cloze" : "question-container-translation"}">
                             ${promptHtml}
                             ${hintHtml}
                         </div>
@@ -162,7 +162,7 @@ class QuestionWidget(anywidget.AnyWidget):
                         });
                         answerHtml += `</div>`;
                         if (sourceHint) {
-                            answerHtml += `<div class="question-hint" style="margin-top: 0.5rem;"><em>Hint: ${sourceHint}</em></div>`;
+                            answerHtml += `<div class="question-hint" "><em>${sourceHint}</em></div>`;
                         }
                     } else {
                         // SENTENCE BUILDER RENDERING: Standard chip area
@@ -334,58 +334,56 @@ class QuestionWidget(anywidget.AnyWidget):
     _css = """
         .question-container {
             text-align: center;
-            margin-bottom: 1rem;
-            margin-top: 1.5rem;
+            margin-bottom: 0;
+            margin-top: 1rem;
+        }
+        .question-container-translation {
+            margin-bottom: 0.2rem;
         }
         .question-text {
             font-size: 1.25rem;
             line-height: 1.6;
             color: #1e293b;
             text-align: center;
-            margin: 0.5rem 0;
+            margin: 0;
         }
         .question-hint {
             font-size: 0.95rem;
             color: #64748b;
-            margin-top: 0.25rem;
+            margin-top: 0;
         }
         .surface {
             border-radius: 0.75rem;
-            padding: 0.75rem;
+            padding: 0.55rem;
             display: flex;
             flex-wrap: wrap;
-            gap: 0.5rem;
+            gap: 0.4rem;
             justify-content: center;
         }
         .answer-area {
             min-height: 4rem;
-            margin-bottom: 0.5rem;
-            border: 1px dashed #8ea3b8;
+            margin-bottom: 0.2rem;
             border-radius: 0.75rem;
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 0.5rem;
         }
         .answer-area-cloze {
             flex-direction: column;
-            padding: 1rem;
+            padding: 0.75rem;
         }
         .cloze-slot {
             display: inline-flex;
             align-items: center;
             justify-content: center;
             min-width: 5rem;
-            height: 2.25rem;
+            height: 2.5rem;
             border-bottom: 2px solid #8ea3b8;
             margin: 0 0.25rem;
             vertical-align: middle;
             cursor: pointer;
         }
-        .cloze-filled {
-        }
         .cloze-blank {
-            background: #f1f5f9;
             border-radius: 0.25rem 0.25rem 0 0;
         }
         .pool-area {
@@ -429,8 +427,8 @@ class QuestionWidget(anywidget.AnyWidget):
             font-size: 0.9rem;
         }
         .feedback {
-            margin: 0.75rem 0 0.25rem;
-            padding: 0.4rem 1rem;
+            margin: 0.5rem 0 0.15rem;
+            padding: 0.35rem 0.85rem;
             border-radius: 9999px;
             text-align: center;
             font-weight: 500;
@@ -458,10 +456,10 @@ class QuestionWidget(anywidget.AnyWidget):
             color: #145339;
         }
         .reveal-container {
-            margin: 0.5rem auto 0;
+            margin: 0.35rem auto 0;
             width: 100%;
-            max-width: 22rem;
             display: flex;
+            max-width: 22rem;
             justify-content: center;
         }
         .action-btn, .reveal-toggle-btn {
@@ -481,7 +479,7 @@ class QuestionWidget(anywidget.AnyWidget):
         .reveal-toggle-btn {
             width: 100%;
             height: 3.5rem;
-            padding: 0.4rem 1rem;
+            padding: 0.35rem 0.8rem;
             border-radius: 0.75rem;
             flex-direction: column;
             overflow: hidden;
@@ -501,7 +499,7 @@ class QuestionWidget(anywidget.AnyWidget):
             display: flex;
             justify-content: center;
             gap: 0.5rem;
-            margin-top: 0.75rem;
+            margin-top: 0.55rem;
         }
         .action-btn {
             min-width: 5rem;
@@ -582,8 +580,8 @@ def _():
             --la-radius-md: 0.75rem;
             --la-radius-lg: 1rem;
             --la-radius-pool: 0.85rem;
-            --la-space-section: 1rem;
-            --la-space-card-margin: 0.5rem;
+            --la-space-section: 0.8rem;
+            --la-space-card-margin: 0.35rem;
           }
           /* Keep all menu controls visually consistent across widget types. */
           [data-testid="mo-output"] marimo-dropdown,
@@ -1402,7 +1400,7 @@ def style_card(
 def style_stat_box() -> dict[str, str]:
     return {
         "width": "100%",
-        "padding": ".5rem",
+        "padding": ".4rem",
         "border-radius": "var(--la-radius-md)",
         "background": "var(--la-bg-surface)",
         "border": "1px solid var(--la-border-subtle)",
