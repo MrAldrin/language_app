@@ -125,13 +125,6 @@ class QuestionWidget(anywidget.AnyWidget):
                         if (node) node.addEventListener(event, handler);
                     }
 
-                    let questionHeaderHtml = "";
-                    if (questionType === "cloze_word_choice") {
-                        questionHeaderHtml = `<strong>Fill in the blank:</strong>`;
-                    } else {
-                        questionHeaderHtml = `<strong>Translate this sentence:</strong>`;
-                    }
-
                     const promptHtml = questionType !== "cloze_word_choice" 
                         ? `<div class="question-text">${prompt}</div>` 
                         : "";
@@ -142,7 +135,6 @@ class QuestionWidget(anywidget.AnyWidget):
 
                     const questionAreaHtml = `
                         <div class="question-container">
-                            <div class="question-header">${questionHeaderHtml}</div>
                             ${promptHtml}
                             ${hintHtml}
                         </div>
@@ -322,11 +314,6 @@ class QuestionWidget(anywidget.AnyWidget):
             text-align: center;
             margin-bottom: 1rem;
             margin-top: 0.5rem;
-        }
-        .question-header {
-            font-size: 0.9rem;
-            color: #475569;
-            margin-bottom: 0.25rem;
         }
         .question-text {
             font-size: 1.1rem;
