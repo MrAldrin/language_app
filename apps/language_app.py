@@ -129,7 +129,7 @@ class QuestionWidget(anywidget.AnyWidget):
                         ? `<div class="question-text">${prompt}</div>` 
                         : "";
 
-                    const hintHtml = sourceHint 
+                    const hintHtml = (sourceHint && questionType !== "cloze_word_choice") 
                         ? `<div class="question-hint"><em>Hint: ${sourceHint}</em></div>` 
                         : "";
 
@@ -155,6 +155,9 @@ class QuestionWidget(anywidget.AnyWidget):
                             }
                         });
                         answerHtml += `</div>`;
+                        if (sourceHint) {
+                            answerHtml += `<div class="question-hint" style="margin-top: 0.5rem;"><em>Hint: ${sourceHint}</em></div>`;
+                        }
                     } else {
                         // SENTENCE BUILDER RENDERING: Standard chip area
                         answerHtml = answerIndices.map(i =>
@@ -346,6 +349,7 @@ class QuestionWidget(anywidget.AnyWidget):
             padding: 0.5rem;
         }
         .answer-area-cloze {
+            flex-direction: column;
             padding: 1rem;
         }
         .cloze-slot {
