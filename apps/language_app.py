@@ -316,10 +316,10 @@ class QuestionWidget(anywidget.AnyWidget):
         .question-container {
             text-align: center;
             margin-bottom: 1rem;
-            margin-top: 0.5rem;
+            margin-top: 1.5rem;
         }
         .question-text {
-            font-size: 1.1rem;
+            font-size: 1.25rem;
             line-height: 1.6;
             color: #1e293b;
             text-align: center;
@@ -360,7 +360,6 @@ class QuestionWidget(anywidget.AnyWidget):
             margin: 0 0.25rem;
             vertical-align: middle;
             cursor: pointer;
-            transition: all 0.2s;
             text-align: center;
             line-height: 2rem;
         }
@@ -378,10 +377,13 @@ class QuestionWidget(anywidget.AnyWidget):
             height: 2.25rem;
             padding: 0 0.8rem;
             border: 1px solid #8ea3b8;
-            border-radius: 10px;
-            font-size: 1rem;
+            border-radius: 0.75rem;
+            font-size: 1.25rem;
             cursor: pointer;
             box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         .sortable-ghost {
             opacity: 0.4;
@@ -444,26 +446,27 @@ class QuestionWidget(anywidget.AnyWidget):
             display: flex;
             justify-content: center;
         }
+        .action-btn, .reveal-toggle-btn {
+            background: #f8fafc;
+            border: 1px solid #cbd5e1;
+            color: #475569;
+            font-size: 0.95rem;
+            cursor: pointer;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .action-btn:hover:not([disabled]), .reveal-toggle-btn:hover {
+            background: #f1f5f9;
+        }
         .reveal-toggle-btn {
             width: 100%;
             height: 3.5rem;
             padding: 0.4rem 1rem;
             border-radius: 0.75rem;
-            border: 1px solid #cbd5e1;
-            background: #f8fafc;
-            color: #475569;
-            cursor: pointer;
-            font-size: 0.95rem;
-            display: flex;
             flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            transition: background 0.2s;
             overflow: hidden;
-            box-sizing: border-box;
-        }
-        .reveal-toggle-btn:hover {
-            background: #f1f5f9;
         }
         .reveal-main {
             font-weight: 600;
@@ -484,11 +487,6 @@ class QuestionWidget(anywidget.AnyWidget):
         }
         .action-btn {
             min-width: 5rem;
-            background: #f3f7fc;
-            text-align: center;
-        }
-        .action-btn:hover:not([disabled]) {
-            background: #e8f6f4;
         }
         .action-btn[disabled] {
             opacity: 0.35;
