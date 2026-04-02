@@ -148,8 +148,10 @@ class QuestionWidget(anywidget.AnyWidget):
                         promptWords.forEach((pw, i) => {
                             if (i === hiddenIndex) {
                                 const val = answerIndices.length > 0 ? words[answerIndices[0]] : "";
-                                const cls = val ? "cloze-filled" : "cloze-blank";
-                                answerHtml += `<span class="cloze-slot ${cls}">${val || "&nbsp;&nbsp;&nbsp;&nbsp;"}</span> `;
+                                const content = val 
+                                    ? `<button class="control chip cloze-filled" style="display: inline-flex; pointer-events: none;">${val}</button>`
+                                    : "&nbsp;&nbsp;&nbsp;&nbsp;";
+                                answerHtml += `<span class="cloze-slot cloze-blank">${content}</span> `;
                             } else {
                                 answerHtml += `<span>${pw}</span> `;
                             }
@@ -250,8 +252,8 @@ class QuestionWidget(anywidget.AnyWidget):
                                 setIdleAndRedraw();
                             });
                         });
-                        // Also allow clicking the cloze slot to clear it
-                        el.querySelectorAll(".cloze-slot").forEach(slot => {
+                        // Also allow clicking the cloze slot or filled pill to clear it
+                        el.querySelectorAll(".cloze-slot, .cloze-filled").forEach(slot => {
                             slot.addEventListener("click", () => {
                                 answerIndices = [];
                                 setIdleAndRedraw();
@@ -353,22 +355,21 @@ class QuestionWidget(anywidget.AnyWidget):
             padding: 1rem;
         }
         .cloze-slot {
-            display: inline-block;
-            min-width: 4rem;
-            height: 2rem;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 5rem;
+            height: 2.25rem;
             border-bottom: 2px solid #8ea3b8;
             margin: 0 0.25rem;
             vertical-align: middle;
             cursor: pointer;
-            text-align: center;
-            line-height: 2rem;
         }
         .cloze-filled {
-            border-bottom-color: #2e8b57;
-            font-weight: 600;
         }
         .cloze-blank {
             background: #f1f5f9;
+            border-radius: 0.25rem 0.25rem 0 0;
         }
         .pool-area {
             background: #e8f6f4;
