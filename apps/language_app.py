@@ -23,6 +23,9 @@ with app.setup:
     import traitlets
     from typing import Any
 
+    # Session-scoped score cache keyed by start_session_id.
+    SESSION_SCORE_STORE: dict[int, dict[str, Any]] = {}
+
 
 @app.cell(hide_code=True)
 def _():
@@ -105,6 +108,7 @@ class QuestionWidget(anywidget.AnyWidget):
                 let feedbackPhase = "idle";
                 // ADDED: reveal is independent of phase - user can toggle it any time
                 let revealed = false;
+                let checkNonce = Number(model.get("check_nonce") || 0);
 
                 function setIdleAndRedraw() {
                     phase = "idle";
@@ -188,9 +192,11 @@ class QuestionWidget(anywidget.AnyWidget):
                     const feedback = feedbackByPhase[feedbackPhase] || feedbackByPhase.idle;
                     const feedbackHtml = `<div class="feedback ${feedback.cls}">${feedback.text}</div>`;
 
-                    const checkDisabled = answerIndices.length === 0 ? "disabled" : "";
+                    const isLocked = phase === "correct";
+                    const checkDisabled = (answerIndices.length === 0 || isLocked) ? "disabled" : "";
                     const checkLabel = "Check";
-                    const clearDisabled = (answerIndices.length === 0 && phase === "idle") ? "disabled" : "";
+                    const clearDisabled = ((answerIndices.length === 0 && phase === "idle") || isLocked) ? "disabled" : "";
+                    const revealDisabled = isLocked ? "disabled" : "";
 
                     el.innerHTML = `
                         ${questionAreaHtml}
@@ -206,7 +212,7 @@ class QuestionWidget(anywidget.AnyWidget):
                         </div>
                         ${feedbackHtml}
                         <div class="reveal-container">
-                            <button class="reveal-toggle-btn" id="reveal-btn">
+                            <button class="reveal-toggle-btn" id="reveal-btn" ${revealDisabled}>
                                 ${revealed 
                                     ? `<div class="reveal-content">
                                          <div class="reveal-main">${target}</div>
@@ -276,19 +282,26 @@ class QuestionWidget(anywidget.AnyWidget):
                     }
 
                     on("#clear-btn", "click", () => {
+                        if (phase === "correct") return;
                         answerIndices = [];
                         setIdleAndRedraw();
                     });
 
                     on("#reveal-btn", "click", () => {
+                        if (phase === "correct") return;
                         revealed = !revealed;
                         redraw();
                     });
 
                     on("#check-btn", "click", () => {
+                        if (phase === "correct") return;
+                        if (answerIndices.length === 0) return;
                         const isCorrect = checkAnswer(answerIndices, words, target, accepted);
+                        checkNonce += 1;
 
-                        model.set("correct", isCorrect);
+                        model.set("check_nonce", checkNonce);
+                        model.set("last_check_correct", isCorrect);
+                        model.set("last_check_question_id", String(model.get("question_id") || ""));
                         model.save_changes();
 
                         phase = isCorrect ? "correct" : "wrong";
@@ -300,14 +313,18 @@ class QuestionWidget(anywidget.AnyWidget):
                     });
                 }
 
-            model.on("change:words", () => {
+            function resetForNewQuestion() {
                 answerIndices = [];
                 phase = "idle";
                 feedbackPhase = "idle";
                 // ADDED: hide reveal when Python pushes a new question
                 revealed = false;
+                checkNonce = 0;
                 redraw();
-            });
+            }
+
+            model.on("change:words", resetForNewQuestion);
+            model.on("change:question_id", resetForNewQuestion);
 
             redraw();
         }
@@ -493,6 +510,10 @@ class QuestionWidget(anywidget.AnyWidget):
             opacity: 0.35;
             cursor: default;
         }
+        .reveal-toggle-btn[disabled] {
+            opacity: 0.55;
+            cursor: default;
+        }
     """
 
     # Python → JS (inputs)
@@ -503,9 +524,12 @@ class QuestionWidget(anywidget.AnyWidget):
     prompt = traitlets.Unicode("").tag(sync=True)
     source_hint = traitlets.Unicode("").tag(sync=True)
     hidden_index = traitlets.Int(-1).tag(sync=True)
+    question_id = traitlets.Unicode("").tag(sync=True)
 
     # JS → Python (outputs)
-    correct = traitlets.Bool(False).tag(sync=True)
+    check_nonce = traitlets.Int(0).tag(sync=True)
+    last_check_correct = traitlets.Bool(False).tag(sync=True)
+    last_check_question_id = traitlets.Unicode("").tag(sync=True)
 
 
 @app.cell
@@ -521,6 +545,7 @@ def _(current_sentence, pool_words):
             prompt=current_sentence.get("source", ""),
             source_hint=current_sentence.get("source_hint") or "",
             hidden_index=current_sentence.get("hidden_word_index", -1),
+            question_id=str(current_sentence.get("question_id", "")),
         )
         widget = mo.ui.anywidget(_widget)
     return (widget,)
@@ -705,7 +730,45 @@ def _(button_next, button_prev, df):
 def _(button_next, button_prev, row_number, start_session_id):
     question_step = button_next.value + button_prev.value
     active_question_key = f"{start_session_id}:{question_step}:{row_number}"
-    return
+    return (active_question_key,)
+
+
+@app.cell
+def _(active_question_key, start_session_id, widget):
+    session_state = SESSION_SCORE_STORE.setdefault(
+        start_session_id,
+        {
+            "attempts": 0,
+            "correct": 0,
+            "last_processed_check_nonce": 0,
+            "question_attempt_counts": {},
+            "processed_event_keys": set(),
+        },
+    )
+
+    widget_state = widget.value if widget is not None else {}
+    check_nonce = int(widget_state.get("check_nonce", 0) or 0)
+    last_check_correct = bool(widget_state.get("last_check_correct", False))
+    last_check_question_id = str(widget_state.get("last_check_question_id", "") or "")
+    event_question_key = last_check_question_id or active_question_key
+    event_key = f"{event_question_key}:{check_nonce}"
+
+    if check_nonce > 0 and event_key not in session_state["processed_event_keys"]:
+        session_state["attempts"] += 1
+        if last_check_correct:
+            session_state["correct"] += 1
+        session_state["last_processed_check_nonce"] = check_nonce
+        session_state["processed_event_keys"].add(event_key)
+        counts = session_state["question_attempt_counts"]
+        counts[event_question_key] = counts.get(event_question_key, 0) + 1
+
+    session_score = {
+        "attempts": session_state["attempts"],
+        "correct": session_state["correct"],
+        "last_processed_check_nonce": session_state["last_processed_check_nonce"],
+    }
+    question_attempt_counts = dict(session_state["question_attempt_counts"])
+    return (session_score,)
 
 
 @app.cell
@@ -1516,7 +1579,7 @@ def _(
 
 
 @app.cell
-def _(current_sentence, df, row_number):
+def _(current_sentence, df, row_number, session_score):
     # stats = button_check_answer.value
 
     def render_stats() -> mo.Html:
@@ -1526,7 +1589,9 @@ def _(current_sentence, df, row_number):
                     difficulty_int=current_sentence["difficulty"],
                     difficulty_str=current_sentence["difficulty_str"],
                 ),
-                # render_score(correct=stats["correct"], tries=stats["tries"]),
+                render_score(
+                    correct=session_score["correct"], tries=session_score["attempts"]
+                ),
                 render_progress(current_idx=row_number, total_count=len(df)),
             ],
             widths="equal",
@@ -1576,13 +1641,17 @@ def _(button_back_to_settings):
 
 
 @app.cell
-def _(button_back_to_settings, button_restart_session, total_questions):
+def _(
+    button_back_to_settings,
+    button_restart_session,
+    session_score,
+    total_questions,
+):
     def render_summary_section() -> mo.Html:
-        # stats = button_check_answer.value
-        # attempts = stats["tries"]
-        # correct = stats["correct"]
-        # incorrect = max(0, attempts - correct)
-        # accuracy = f"{(correct / attempts * 100):.0f}%" if attempts > 0 else "0%"
+        attempts = session_score["attempts"]
+        correct = session_score["correct"]
+        incorrect = max(0, attempts - correct)
+        accuracy = f"{(correct / attempts * 100):.0f}%" if attempts > 0 else "0%"
 
         summary_stats = mo.hstack(
             [
@@ -1591,26 +1660,26 @@ def _(button_back_to_settings, button_restart_session, total_questions):
                     label="Total questions",
                     caption="Session size",
                 ),
-                # render_stat_box(
-                #     value=str(attempts),
-                #     label="Attempts",
-                #     caption="Answers checked",
-                # ),
-                # render_stat_box(
-                #     value=str(correct),
-                #     label="Correct",
-                #     caption="Correct answers",
-                # ),
-                # render_stat_box(
-                #     value=str(incorrect),
-                #     label="Incorrect",
-                #     caption="Needs review",
-                # ),
-                # render_stat_box(
-                #     value=accuracy,
-                #     label="Accuracy",
-                #     caption="Session result",
-                # ),
+                render_stat_box(
+                    value=str(attempts),
+                    label="Attempts",
+                    caption="Answers checked",
+                ),
+                render_stat_box(
+                    value=str(correct),
+                    label="Correct",
+                    caption="Correct answers",
+                ),
+                render_stat_box(
+                    value=str(incorrect),
+                    label="Incorrect",
+                    caption="Needs review",
+                ),
+                render_stat_box(
+                    value=accuracy,
+                    label="Accuracy",
+                    caption="Session result",
+                ),
             ],
             widths="equal",
         )
