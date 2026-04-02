@@ -27,6 +27,54 @@ with app.setup:
 @app.cell(hide_code=True)
 def _():
     mo.md(r"""
+    # UI
+    """)
+    return
+
+
+@app.cell
+def _(
+    app_theme_styles,
+    current_sentence,
+    in_question_view,
+    render_footer,
+    render_interaction_section,
+    render_options_section,
+    render_summary_section,
+    show_summary_page,
+):
+    def render_main_ui() -> mo.Html:
+        """Assembles the final application layout."""
+
+        app_header = (
+            mo.md("# Schipper mag ik overvaren?").center().style({"padding": ".5rem"})
+        )
+
+        mo_elems = [app_theme_styles, app_header]
+        if not in_question_view:
+            mo_elems.append(render_options_section())
+        elif show_summary_page:
+            mo_elems.append(render_summary_section())
+        else:
+            if current_sentence:
+                mo_elems.append(render_interaction_section())
+            else:
+                mo_elems.append(render_no_questions_element())
+            mo_elems.append(render_footer())
+        return mo.vstack(mo_elems, gap=0)
+
+    return (render_main_ui,)
+
+
+@app.cell
+def _(render_main_ui):
+    render_main_ui()
+    return
+
+
+@app.cell(hide_code=True)
+def _():
+    mo.md(r"""
     # testing out anywidget
     """)
     return
@@ -492,61 +540,6 @@ def _(current_sentence, pool_words):
 @app.cell(hide_code=True)
 def _():
     mo.md(r"""
-    # UI
-    """)
-    return
-
-
-@app.cell
-def _(render_main_ui):
-    render_main_ui()
-    return
-
-
-@app.cell
-def _(
-    app_theme_styles,
-    current_sentence,
-    in_question_view,
-    render_footer,
-    render_interaction_section,
-    render_options_section,
-    render_summary_section,
-    show_summary_page,
-):
-    def render_main_ui() -> mo.Html:
-        """Assembles the final application layout."""
-
-        app_header = (
-            mo.md("# Schipper mag ik overvaren?")
-            .center()
-            .style(
-                {
-                    "padding-top": "1rem",
-                    "padding-bottom": "1rem",
-                }
-            )
-        )
-
-        mo_elems = [app_theme_styles, app_header]
-        if not in_question_view:
-            mo_elems.append(render_options_section())
-        elif show_summary_page:
-            mo_elems.append(render_summary_section())
-        else:
-            if current_sentence:
-                mo_elems.append(render_interaction_section())
-            else:
-                mo_elems.append(render_no_questions_element())
-            mo_elems.append(render_footer())
-        return mo.vstack(mo_elems, gap=0)
-
-    return (render_main_ui,)
-
-
-@app.cell(hide_code=True)
-def _():
-    mo.md(r"""
     # constants and state initiation
     """)
     return
@@ -638,9 +631,7 @@ def _():
 
 @app.cell
 def _(raw_pairs):
-    available_languages = sorted(
-        {lang for pair in raw_pairs for lang in pair.split("_")}
-    )
+    available_languages = sorted({lang for pair in raw_pairs for lang in pair.split("_")})
     return (available_languages,)
 
 
@@ -696,8 +687,10 @@ def _(df, row_number, start_session_id):
     _ = start_session_id
     current_sentence = get_sentence(df=df, row_number=row_number)
 
+
     def toggle_reveal(current: bool) -> bool:
         return not current
+
 
     # button_reveal = mo.ui.button(label="Reveal Answer", value=False, on_click=toggle_reveal)
     return (current_sentence,)
@@ -732,9 +725,7 @@ def _(button_next, df, in_question_view, row_number):
     last_question_index = max(0, total_questions - 1)
     is_last_question = total_questions > 0 and row_number >= last_question_index
     show_summary_page = (
-        in_question_view
-        and total_questions > 0
-        and button_next.value > last_question_index
+        in_question_view and total_questions > 0 and button_next.value > last_question_index
     )
     return show_summary_page, total_questions
 
@@ -892,6 +883,7 @@ def _():
     def bump(counter: int) -> int:
         return counter + 1
 
+
     button_start_questions = mo.ui.button(
         value=0,
         on_click=bump,
@@ -926,8 +918,10 @@ def _(button_back_to_settings, button_restart_session, button_start_questions):
 def _(start_session_id):
     _ = start_session_id
 
+
     def handle_navigation(c: int) -> int:
         return c + 1
+
 
     button_prev = mo.ui.button(value=0, on_click=handle_navigation, label="◀ Previous")
     button_next = mo.ui.button(value=0, on_click=handle_navigation, label="Next ▶")
@@ -1536,6 +1530,7 @@ def _(
 @app.cell
 def _(current_sentence, df, row_number):
     # stats = button_check_answer.value
+
 
     def render_stats() -> mo.Html:
         return mo.hstack(
