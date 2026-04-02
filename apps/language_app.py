@@ -10,7 +10,7 @@
 
 import marimo
 
-__generated_with = "0.21.1"
+__generated_with = "0.22.0"
 app = marimo.App(width="full", layout_file="layouts/language_app.grid.json")
 
 with app.setup:
@@ -35,6 +35,8 @@ def _():
 @app.class_definition
 class QuestionWidget(anywidget.AnyWidget):
     _esm = r"""
+        import Sortable from "https://esm.sh/sortablejs@1.15.7";
+
         function normalize(str) {
             return str.toLowerCase()
                 .replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g, "")
@@ -173,6 +175,31 @@ class QuestionWidget(anywidget.AnyWidget):
 
                     // chip handlers - only when not locked
                     if (phase !== "correct") {
+                        if (questionType !== "cloze_word_choice") {
+                            const answerAreaEl = el.querySelector(".answer-area");
+
+                            const updateIndicesFromDOM = () => {
+                                const newAnswerIndices = [];
+                                answerAreaEl.querySelectorAll('.chip:not(.sortable-ghost)').forEach(btn => {
+                                    const idx = parseInt(btn.dataset.idx);
+                                    if (!isNaN(idx)) {
+                                        newAnswerIndices.push(idx);
+                                    }
+                                });
+                                answerIndices = newAnswerIndices;
+                                setIdleAndRedraw();
+                            };
+
+                            if (answerAreaEl) {
+                                Sortable.create(answerAreaEl, {
+                                    animation: 150,
+                                    filter: '.hint',
+                                    ghostClass: 'sortable-ghost',
+                                    onEnd: updateIndicesFromDOM
+                                });
+                            }
+                        }
+
                         el.querySelectorAll(".answer-chip").forEach(btn => {
                             btn.addEventListener("click", () => {
                                 const pos = answerIndices.indexOf(parseInt(btn.dataset.idx));
@@ -188,8 +215,9 @@ class QuestionWidget(anywidget.AnyWidget):
                             });
                         });
 
-                        el.querySelectorAll(".pool-chip:not([disabled])").forEach(btn => {
+                        el.querySelectorAll(".pool-chip").forEach(btn => {
                             btn.addEventListener("click", () => {
+                                if (btn.classList.contains("chip-disabled")) return;
                                 if (questionType === "cloze_word_choice") {
                                     // Single selection for cloze
                                     answerIndices = [parseInt(btn.dataset.idx)];
@@ -317,10 +345,20 @@ class QuestionWidget(anywidget.AnyWidget):
             cursor: pointer;
             box-sizing: border-box;
         }
+        .sortable-ghost {
+            opacity: 0.4;
+            background-color: #e2e8f0 !important;
+        }
         .chip {
             background: #ffffff;
         }
-        .chip:hover:not([disabled]) {
+        .answer-chip {
+            cursor: grab;
+        }
+        .answer-chip:active {
+            cursor: grabbing;
+        }
+        .chip:hover:not(.chip-disabled) {
             background: #e8f6f4;
         }
         .chip-disabled {
