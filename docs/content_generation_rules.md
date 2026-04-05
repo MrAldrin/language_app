@@ -11,7 +11,7 @@ Each question object must contain:
 - `schema_version`: must be `2`
 - `question_type`: must be `sentence_builder_multiple_choice`
 - `difficulty`: integer `1-10`
-- `tags`: relevant grammar/topic tags
+- `tags`: canonical namespaced tags (`namespace:value`), following shared rules in `docs/question_generation_overview.md`
 - `content`:
   - `response_mode`: must be `token_sequence_choice`
 - `translations`: keyed by language code
@@ -34,6 +34,7 @@ Optional fields:
 - Include enough distractors to make word order and grammar meaningful.
 - Avoid clues from punctuation/capitalization in `word_pool`.
 - Distractors should be plausible alternatives from same concept cluster.
+- For sentence-builder tagging, prioritize `topic:*` and add `pos:*`, `grammar:*`, and `tense:*` only when they improve targeting precision.
 
 ## Example
 
@@ -43,7 +44,7 @@ Optional fields:
   "schema_version": 2,
   "question_type": "sentence_builder_multiple_choice",
   "difficulty": 1,
-  "tags": ["basics", "question"],
+  "tags": ["grammar:question", "topic:school"],
   "content": {
     "response_mode": "token_sequence_choice"
   },

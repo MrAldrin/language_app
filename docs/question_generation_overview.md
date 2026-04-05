@@ -10,7 +10,7 @@ Each question object must include:
 - `schema_version`: `2`
 - `question_type`: discriminator for interaction type
 - `difficulty`: integer `1-10`
-- `tags`: grammar/topic labels
+- `tags`: canonical namespaced labels (`namespace:value`)
 - `content`: type-specific interaction settings
 - `translations`: language payload(s) used by that question type
 
@@ -25,6 +25,49 @@ Common translation payload fields:
 Legacy compatibility during migration:
 
 - `primary` may still exist, but is deprecated.
+
+## Canonical Tag System
+
+All tags must follow:
+
+- `namespace:value`
+
+Recommended namespaces:
+
+- `family:*` (for broad families, e.g. `family:pronoun`)
+- `pronoun_type:*` (e.g. `pronoun_type:personal`)
+- `case:*`, `person:*`, `number:*`, `role:*`, `gender:*`, `register:*`, `deixis:*`
+- `tense:*`, `pos:*`, `grammar:*`
+- `topic:*` (domain/theme labels)
+- `feature:*` (non-topic semantic distinctions)
+
+Tag policy notes:
+
+- Do not use unscoped legacy tags like `pronoun`, `relative`, `food`, `past_tense`.
+- Keep tags concise and high-signal; avoid redundant synonyms when one canonical tag already captures meaning.
+
+## Tagging By Question Type
+
+Use the same canonical system across all files, but prioritize different namespaces by interaction type:
+
+- `cloze_word_choice`:
+  - Primary focus: `family:*`, `pronoun_type:*`, plus grammar slices like `case:*`, `role:*`, `number:*`, `gender:*`, `register:*`.
+  - Typical example: `["family:pronoun", "pronoun_type:relative", "case:genitive"]`
+- `word_translation`:
+  - Primary focus: `family:*`, `pronoun_type:*`, with disambiguators such as `person:*`, `number:*`, `role:*`, `gender:*`, `case:*`, `deixis:*`.
+  - Optional semantic refiners can use `feature:*` when they materially improve targeting.
+- `sentence_builder_multiple_choice`:
+  - Primary focus: `topic:*` for scenario/theme, optionally combined with `pos:*`, `grammar:*`, and `tense:*`.
+  - Tense/time labeling must use only `tense:*` (map legacy `past`/`future` to `tense:past`/`tense:future`).
+  - Do not use low-signal broad tags like `basics`.
+
+General namespace intent:
+
+- `topic:*` = scenario/domain context (`topic:travel`, `topic:family`)
+- `pos:*` = part-of-speech focus (`pos:verb`, `pos:adjective`, `pos:pronoun`)
+- `grammar:*` = grammar intent (`grammar:question`, `grammar:negation`)
+- `tense:*` = tense dimension (`tense:present`, `tense:past`, `tense:future`)
+- `feature:*` = non-topic semantic distinctions used when they add targeting value
 
 ## Shared Authoring Rules
 

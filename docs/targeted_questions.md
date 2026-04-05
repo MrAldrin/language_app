@@ -11,7 +11,7 @@ Each question object must contain:
 - `schema_version`: must be `2`
 - `question_type`: must be `word_translation`
 - `difficulty`: integer `1-10`
-- `tags`: grammar/topic tags
+- `tags`: canonical namespaced tags (`namespace:value`), following shared rules in `docs/question_generation_overview.md`
 - `content`:
   - `response_mode`: must be `single_token_choice`
 - `translations`: keyed by language code (`en`, `de`, `no`, `nl`)
@@ -34,6 +34,7 @@ Optional fields:
 - Do not include disambiguation markers inside `answer`.
 - Distractors should be near-miss variants in same pronoun/grammar family.
 - Preserve bidirectional symmetry where intended.
+- Prefer structured pronoun tagging that combines family + subtype + useful disambiguators (for example `person:*`, `number:*`, `role:*`, `gender:*`, `case:*`).
 
 ## Example
 
@@ -43,7 +44,7 @@ Optional fields:
   "schema_version": 2,
   "question_type": "word_translation",
   "difficulty": 1,
-  "tags": ["pronoun", "plural"],
+  "tags": ["family:pronoun", "pronoun_type:personal", "person:2", "number:plural", "role:subject"],
   "content": {
     "response_mode": "single_token_choice"
   },

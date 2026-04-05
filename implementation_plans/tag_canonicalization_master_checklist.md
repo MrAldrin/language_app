@@ -170,28 +170,28 @@ Legacy semantic/theme mapping notes:
 ### Docs to Update After Data Migration
 
 #### `docs/question_generation_overview.md`
-- [ ] mapped to canonical terminology
-- [ ] validated examples
-- [ ] app filter sanity checked (if examples referenced in tests)
-- [ ] docs/examples updated if impacted
+- [x] mapped to canonical terminology
+- [x] validated examples
+- [x] app filter sanity checked (if examples referenced in tests)
+- [x] docs/examples updated if impacted
 
 #### `docs/cloze_questions.md`
-- [ ] mapped to canonical terminology
-- [ ] validated examples
-- [ ] app filter sanity checked (if examples referenced in tests)
-- [ ] docs/examples updated if impacted
+- [x] mapped to canonical terminology
+- [x] validated examples
+- [x] app filter sanity checked (if examples referenced in tests)
+- [x] docs/examples updated if impacted
 
 #### `docs/targeted_questions.md`
-- [ ] mapped to canonical terminology
-- [ ] validated examples
-- [ ] app filter sanity checked (if examples referenced in tests)
-- [ ] docs/examples updated if impacted
+- [x] mapped to canonical terminology
+- [x] validated examples
+- [x] app filter sanity checked (if examples referenced in tests)
+- [x] docs/examples updated if impacted
 
 #### `docs/content_generation_rules.md`
-- [ ] mapped to canonical terminology
-- [ ] validated examples
-- [ ] app filter sanity checked (if examples referenced in tests)
-- [ ] docs/examples updated if impacted
+- [x] mapped to canonical terminology
+- [x] validated examples
+- [x] app filter sanity checked (if examples referenced in tests)
+- [x] docs/examples updated if impacted
 
 ## 4. Per-File Validation Checklist (Completion Gate)
 
@@ -229,9 +229,9 @@ Data files total: 10
 - Remaining: 0
 
 Docs total: 4
-- Completed: 0
-- Remaining: 4
+- Completed: 4
+- Remaining: 0
 
 Overall total items: 14
-- Completed: 10
-- Remaining: 4
+- Completed: 14
+- Remaining: 0

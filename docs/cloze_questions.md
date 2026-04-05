@@ -26,7 +26,7 @@ Each question object must contain:
 - `schema_version`: must be `2`
 - `question_type`: must be `cloze_word_choice`
 - `difficulty`: integer `1-10`
-- `tags`: grammar/topic tags
+- `tags`: canonical namespaced tags (`namespace:value`), following shared rules in `docs/question_generation_overview.md`
 - `content`:
   - `response_mode`: must be `single_token_choice`
   - `blank_token`: placeholder string, default `___`
@@ -55,6 +55,7 @@ Optional fields:
 - `word_pool` should contain plausible near-miss distractors.
 - Keep prompts natural and pedagogically focused.
 - Cloze should never require filling blanks in the learner's mother tongue.
+- For pronoun-focused cloze files, include `family:pronoun` and at least one discriminative subtype/slice (for example `pronoun_type:*`, `case:*`, or `role:*`).
 
 ## 5. Validation Rules
 
@@ -73,7 +74,7 @@ Optional fields:
   "schema_version": 2,
   "question_type": "cloze_word_choice",
   "difficulty": 2,
-  "tags": ["articles", "singular", "animals"],
+  "tags": ["topic:animals", "number:singular"],
   "content": {
     "response_mode": "single_token_choice",
     "blank_token": "___",
@@ -104,7 +105,7 @@ Optional fields:
   "schema_version": 2,
   "question_type": "cloze_word_choice",
   "difficulty": 2,
-  "tags": ["articles", "singular", "animals"],
+  "tags": ["topic:animals", "number:singular"],
   "content": {
     "response_mode": "single_token_choice",
     "blank_token": "___",
