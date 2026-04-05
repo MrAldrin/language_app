@@ -5,9 +5,9 @@
     "question_type": "cloze_word_choice",
     "difficulty": 1,
     "tags": [
-      "personal",
-      "subject",
-      "pronouns"
+      "family:pronoun",
+      "pronoun_type:personal",
+      "role:subject"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -41,10 +41,10 @@
     "question_type": "cloze_word_choice",
     "difficulty": 2,
     "tags": [
-      "personal",
-      "object",
-      "dative",
-      "pronouns"
+      "case:dative",
+      "family:pronoun",
+      "pronoun_type:personal",
+      "role:object"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -78,9 +78,8 @@
     "question_type": "cloze_word_choice",
     "difficulty": 2,
     "tags": [
-      "possessive",
-      "ownership",
-      "pronouns"
+      "family:pronoun",
+      "pronoun_type:possessive"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -114,9 +113,8 @@
     "question_type": "cloze_word_choice",
     "difficulty": 2,
     "tags": [
-      "possessive",
-      "ownership",
-      "pronouns"
+      "family:pronoun",
+      "pronoun_type:possessive"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -150,9 +148,9 @@
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
-      "reflexive",
-      "dative",
-      "pronouns"
+      "case:dative",
+      "family:pronoun",
+      "pronoun_type:reflexive"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -186,9 +184,9 @@
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
-      "reflexive",
-      "accusative",
-      "pronouns"
+      "case:accusative",
+      "family:pronoun",
+      "pronoun_type:reflexive"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -222,9 +220,9 @@
     "question_type": "cloze_word_choice",
     "difficulty": 4,
     "tags": [
-      "demonstrative",
-      "distancing",
-      "pronouns"
+      "deixis:distal",
+      "family:pronoun",
+      "pronoun_type:demonstrative"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -258,9 +256,9 @@
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
-      "demonstrative",
-      "identifying",
-      "pronouns"
+      "family:pronoun",
+      "feature:identifying",
+      "pronoun_type:demonstrative"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -294,9 +292,9 @@
     "question_type": "cloze_word_choice",
     "difficulty": 4,
     "tags": [
-      "relative",
-      "accusative",
-      "pronouns"
+      "case:accusative",
+      "family:pronoun",
+      "pronoun_type:relative"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -330,9 +328,9 @@
     "question_type": "cloze_word_choice",
     "difficulty": 5,
     "tags": [
-      "relative",
-      "genitive",
-      "pronouns"
+      "case:genitive",
+      "family:pronoun",
+      "pronoun_type:relative"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -366,9 +364,9 @@
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
-      "interrogative",
-      "dative",
-      "pronouns"
+      "case:dative",
+      "family:pronoun",
+      "pronoun_type:interrogative"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -402,9 +400,9 @@
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
-      "interrogative",
-      "selection",
-      "pronouns"
+      "family:pronoun",
+      "feature:selection",
+      "pronoun_type:interrogative"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -438,9 +436,9 @@
     "question_type": "cloze_word_choice",
     "difficulty": 2,
     "tags": [
-      "indefinite",
-      "person",
-      "pronouns"
+      "family:pronoun",
+      "feature:person_ref",
+      "pronoun_type:indefinite"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -474,10 +472,10 @@
     "question_type": "cloze_word_choice",
     "difficulty": 2,
     "tags": [
-      "indefinite",
-      "thing",
-      "negative",
-      "pronouns"
+      "family:pronoun",
+      "feature:negative",
+      "feature:thing_ref",
+      "pronoun_type:indefinite"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -511,8 +509,9 @@
     "question_type": "cloze_word_choice",
     "difficulty": 1,
     "tags": [
-      "personal",
-      "subject"
+      "family:pronoun",
+      "pronoun_type:personal",
+      "role:subject"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -546,8 +545,9 @@
     "question_type": "cloze_word_choice",
     "difficulty": 1,
     "tags": [
-      "personal",
-      "subject"
+      "family:pronoun",
+      "pronoun_type:personal",
+      "role:subject"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -581,8 +581,9 @@
     "question_type": "cloze_word_choice",
     "difficulty": 1,
     "tags": [
-      "personal",
-      "subject"
+      "family:pronoun",
+      "pronoun_type:personal",
+      "role:subject"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -616,9 +617,10 @@
     "question_type": "cloze_word_choice",
     "difficulty": 2,
     "tags": [
-      "personal",
-      "object",
-      "accusative"
+      "case:accusative",
+      "family:pronoun",
+      "pronoun_type:personal",
+      "role:object"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -652,9 +654,10 @@
     "question_type": "cloze_word_choice",
     "difficulty": 2,
     "tags": [
-      "personal",
-      "object",
-      "accusative"
+      "case:accusative",
+      "family:pronoun",
+      "pronoun_type:personal",
+      "role:object"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -688,9 +691,10 @@
     "question_type": "cloze_word_choice",
     "difficulty": 2,
     "tags": [
-      "personal",
-      "object",
-      "accusative"
+      "case:accusative",
+      "family:pronoun",
+      "pronoun_type:personal",
+      "role:object"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -724,9 +728,10 @@
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
-      "personal",
-      "object",
-      "dative"
+      "case:dative",
+      "family:pronoun",
+      "pronoun_type:personal",
+      "role:object"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -760,9 +765,10 @@
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
-      "personal",
-      "object",
-      "dative"
+      "case:dative",
+      "family:pronoun",
+      "pronoun_type:personal",
+      "role:object"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -796,9 +802,10 @@
     "question_type": "cloze_word_choice",
     "difficulty": 2,
     "tags": [
-      "personal",
-      "object",
-      "dative"
+      "case:dative",
+      "family:pronoun",
+      "pronoun_type:personal",
+      "role:object"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -832,8 +839,9 @@
     "question_type": "cloze_word_choice",
     "difficulty": 1,
     "tags": [
-      "personal",
-      "subject"
+      "family:pronoun",
+      "pronoun_type:personal",
+      "role:subject"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -867,8 +875,9 @@
     "question_type": "cloze_word_choice",
     "difficulty": 1,
     "tags": [
-      "personal",
-      "subject"
+      "family:pronoun",
+      "pronoun_type:personal",
+      "role:subject"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -902,8 +911,9 @@
     "question_type": "cloze_word_choice",
     "difficulty": 1,
     "tags": [
-      "personal",
-      "subject"
+      "family:pronoun",
+      "pronoun_type:personal",
+      "role:subject"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -937,9 +947,10 @@
     "question_type": "cloze_word_choice",
     "difficulty": 2,
     "tags": [
-      "personal",
-      "object",
-      "accusative"
+      "case:accusative",
+      "family:pronoun",
+      "pronoun_type:personal",
+      "role:object"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -973,8 +984,8 @@
     "question_type": "cloze_word_choice",
     "difficulty": 2,
     "tags": [
-      "possessive",
-      "ownership"
+      "family:pronoun",
+      "pronoun_type:possessive"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -1008,8 +1019,8 @@
     "question_type": "cloze_word_choice",
     "difficulty": 2,
     "tags": [
-      "possessive",
-      "ownership"
+      "family:pronoun",
+      "pronoun_type:possessive"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -1043,8 +1054,8 @@
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
-      "possessive",
-      "ownership"
+      "family:pronoun",
+      "pronoun_type:possessive"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -1078,8 +1089,8 @@
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
-      "possessive",
-      "ownership"
+      "family:pronoun",
+      "pronoun_type:possessive"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -1113,8 +1124,8 @@
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
-      "possessive",
-      "ownership"
+      "family:pronoun",
+      "pronoun_type:possessive"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -1148,8 +1159,8 @@
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
-      "possessive",
-      "ownership"
+      "family:pronoun",
+      "pronoun_type:possessive"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -1183,9 +1194,9 @@
     "question_type": "cloze_word_choice",
     "difficulty": 4,
     "tags": [
-      "possessive",
-      "ownership",
-      "dative"
+      "case:dative",
+      "family:pronoun",
+      "pronoun_type:possessive"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -1219,9 +1230,9 @@
     "question_type": "cloze_word_choice",
     "difficulty": 4,
     "tags": [
-      "possessive",
-      "ownership",
-      "accusative"
+      "case:accusative",
+      "family:pronoun",
+      "pronoun_type:possessive"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -1255,8 +1266,8 @@
     "question_type": "cloze_word_choice",
     "difficulty": 2,
     "tags": [
-      "possessive",
-      "ownership"
+      "family:pronoun",
+      "pronoun_type:possessive"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -1290,8 +1301,8 @@
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
-      "possessive",
-      "ownership"
+      "family:pronoun",
+      "pronoun_type:possessive"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -1325,8 +1336,8 @@
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
-      "possessive",
-      "ownership"
+      "family:pronoun",
+      "pronoun_type:possessive"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -1360,8 +1371,8 @@
     "question_type": "cloze_word_choice",
     "difficulty": 2,
     "tags": [
-      "possessive",
-      "ownership"
+      "family:pronoun",
+      "pronoun_type:possessive"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -1395,8 +1406,8 @@
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
-      "possessive",
-      "ownership"
+      "family:pronoun",
+      "pronoun_type:possessive"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -1430,8 +1441,9 @@
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
-      "reflexive",
-      "accusative"
+      "case:accusative",
+      "family:pronoun",
+      "pronoun_type:reflexive"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -1465,8 +1477,9 @@
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
-      "reflexive",
-      "accusative"
+      "case:accusative",
+      "family:pronoun",
+      "pronoun_type:reflexive"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -1500,8 +1513,9 @@
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
-      "reflexive",
-      "accusative"
+      "case:accusative",
+      "family:pronoun",
+      "pronoun_type:reflexive"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -1535,8 +1549,9 @@
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
-      "reflexive",
-      "accusative"
+      "case:accusative",
+      "family:pronoun",
+      "pronoun_type:reflexive"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -1570,8 +1585,9 @@
     "question_type": "cloze_word_choice",
     "difficulty": 4,
     "tags": [
-      "reflexive",
-      "dative"
+      "case:dative",
+      "family:pronoun",
+      "pronoun_type:reflexive"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -1605,8 +1621,9 @@
     "question_type": "cloze_word_choice",
     "difficulty": 4,
     "tags": [
-      "reflexive",
-      "dative"
+      "case:dative",
+      "family:pronoun",
+      "pronoun_type:reflexive"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -1640,8 +1657,9 @@
     "question_type": "cloze_word_choice",
     "difficulty": 4,
     "tags": [
-      "reflexive",
-      "dative"
+      "case:dative",
+      "family:pronoun",
+      "pronoun_type:reflexive"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -1675,8 +1693,9 @@
     "question_type": "cloze_word_choice",
     "difficulty": 4,
     "tags": [
-      "reflexive",
-      "dative"
+      "case:dative",
+      "family:pronoun",
+      "pronoun_type:reflexive"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -1710,8 +1729,9 @@
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
-      "reflexive",
-      "accusative"
+      "case:accusative",
+      "family:pronoun",
+      "pronoun_type:reflexive"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -1745,8 +1765,9 @@
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
-      "reflexive",
-      "accusative"
+      "case:accusative",
+      "family:pronoun",
+      "pronoun_type:reflexive"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -1780,8 +1801,9 @@
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
-      "reflexive",
-      "accusative"
+      "case:accusative",
+      "family:pronoun",
+      "pronoun_type:reflexive"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -1815,8 +1837,9 @@
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
-      "reflexive",
-      "accusative"
+      "case:accusative",
+      "family:pronoun",
+      "pronoun_type:reflexive"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -1850,8 +1873,9 @@
     "question_type": "cloze_word_choice",
     "difficulty": 4,
     "tags": [
-      "reflexive",
-      "dative"
+      "case:dative",
+      "family:pronoun",
+      "pronoun_type:reflexive"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -1885,7 +1909,8 @@
     "question_type": "cloze_word_choice",
     "difficulty": 4,
     "tags": [
-      "demonstrative"
+      "family:pronoun",
+      "pronoun_type:demonstrative"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -1919,7 +1944,8 @@
     "question_type": "cloze_word_choice",
     "difficulty": 4,
     "tags": [
-      "demonstrative"
+      "family:pronoun",
+      "pronoun_type:demonstrative"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -1953,7 +1979,8 @@
     "question_type": "cloze_word_choice",
     "difficulty": 4,
     "tags": [
-      "demonstrative"
+      "family:pronoun",
+      "pronoun_type:demonstrative"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -1987,7 +2014,8 @@
     "question_type": "cloze_word_choice",
     "difficulty": 4,
     "tags": [
-      "demonstrative"
+      "family:pronoun",
+      "pronoun_type:demonstrative"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -2021,8 +2049,9 @@
     "question_type": "cloze_word_choice",
     "difficulty": 4,
     "tags": [
-      "demonstrative",
-      "accusative"
+      "case:accusative",
+      "family:pronoun",
+      "pronoun_type:demonstrative"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -2056,8 +2085,9 @@
     "question_type": "cloze_word_choice",
     "difficulty": 4,
     "tags": [
-      "demonstrative",
-      "dative"
+      "case:dative",
+      "family:pronoun",
+      "pronoun_type:demonstrative"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -2091,7 +2121,8 @@
     "question_type": "cloze_word_choice",
     "difficulty": 4,
     "tags": [
-      "demonstrative"
+      "family:pronoun",
+      "pronoun_type:demonstrative"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -2125,7 +2156,8 @@
     "question_type": "cloze_word_choice",
     "difficulty": 4,
     "tags": [
-      "demonstrative"
+      "family:pronoun",
+      "pronoun_type:demonstrative"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -2159,7 +2191,8 @@
     "question_type": "cloze_word_choice",
     "difficulty": 4,
     "tags": [
-      "demonstrative"
+      "family:pronoun",
+      "pronoun_type:demonstrative"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -2193,7 +2226,8 @@
     "question_type": "cloze_word_choice",
     "difficulty": 4,
     "tags": [
-      "demonstrative"
+      "family:pronoun",
+      "pronoun_type:demonstrative"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -2227,7 +2261,8 @@
     "question_type": "cloze_word_choice",
     "difficulty": 4,
     "tags": [
-      "demonstrative"
+      "family:pronoun",
+      "pronoun_type:demonstrative"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -2261,7 +2296,8 @@
     "question_type": "cloze_word_choice",
     "difficulty": 4,
     "tags": [
-      "demonstrative"
+      "family:pronoun",
+      "pronoun_type:demonstrative"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -2295,7 +2331,8 @@
     "question_type": "cloze_word_choice",
     "difficulty": 4,
     "tags": [
-      "demonstrative"
+      "family:pronoun",
+      "pronoun_type:demonstrative"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -2329,8 +2366,9 @@
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
-      "relative",
-      "nominative"
+      "case:nominative",
+      "family:pronoun",
+      "pronoun_type:relative"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -2364,8 +2402,9 @@
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
-      "relative",
-      "nominative"
+      "case:nominative",
+      "family:pronoun",
+      "pronoun_type:relative"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -2399,8 +2438,9 @@
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
-      "relative",
-      "nominative"
+      "case:nominative",
+      "family:pronoun",
+      "pronoun_type:relative"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -2434,8 +2474,9 @@
     "question_type": "cloze_word_choice",
     "difficulty": 4,
     "tags": [
-      "relative",
-      "dative"
+      "case:dative",
+      "family:pronoun",
+      "pronoun_type:relative"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -2469,8 +2510,9 @@
     "question_type": "cloze_word_choice",
     "difficulty": 4,
     "tags": [
-      "relative",
-      "dative"
+      "case:dative",
+      "family:pronoun",
+      "pronoun_type:relative"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -2504,8 +2546,9 @@
     "question_type": "cloze_word_choice",
     "difficulty": 5,
     "tags": [
-      "relative",
-      "genitive"
+      "case:genitive",
+      "family:pronoun",
+      "pronoun_type:relative"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -2539,8 +2582,9 @@
     "question_type": "cloze_word_choice",
     "difficulty": 5,
     "tags": [
-      "relative",
-      "genitive"
+      "case:genitive",
+      "family:pronoun",
+      "pronoun_type:relative"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -2574,8 +2618,9 @@
     "question_type": "cloze_word_choice",
     "difficulty": 4,
     "tags": [
-      "relative",
-      "accusative"
+      "case:accusative",
+      "family:pronoun",
+      "pronoun_type:relative"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -2609,8 +2654,9 @@
     "question_type": "cloze_word_choice",
     "difficulty": 4,
     "tags": [
-      "relative",
-      "accusative"
+      "case:accusative",
+      "family:pronoun",
+      "pronoun_type:relative"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -2644,8 +2690,9 @@
     "question_type": "cloze_word_choice",
     "difficulty": 4,
     "tags": [
-      "relative",
-      "nominative"
+      "case:nominative",
+      "family:pronoun",
+      "pronoun_type:relative"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -2679,8 +2726,9 @@
     "question_type": "cloze_word_choice",
     "difficulty": 4,
     "tags": [
-      "relative",
-      "nominative"
+      "case:nominative",
+      "family:pronoun",
+      "pronoun_type:relative"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -2714,8 +2762,9 @@
     "question_type": "cloze_word_choice",
     "difficulty": 4,
     "tags": [
-      "relative",
-      "accusative"
+      "case:accusative",
+      "family:pronoun",
+      "pronoun_type:relative"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -2749,8 +2798,9 @@
     "question_type": "cloze_word_choice",
     "difficulty": 4,
     "tags": [
-      "relative",
-      "dative"
+      "case:dative",
+      "family:pronoun",
+      "pronoun_type:relative"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -2784,7 +2834,8 @@
     "question_type": "cloze_word_choice",
     "difficulty": 2,
     "tags": [
-      "interrogative"
+      "family:pronoun",
+      "pronoun_type:interrogative"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -2818,7 +2869,8 @@
     "question_type": "cloze_word_choice",
     "difficulty": 2,
     "tags": [
-      "interrogative"
+      "family:pronoun",
+      "pronoun_type:interrogative"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -2852,8 +2904,9 @@
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
-      "interrogative",
-      "accusative"
+      "case:accusative",
+      "family:pronoun",
+      "pronoun_type:interrogative"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -2887,8 +2940,9 @@
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
-      "interrogative",
-      "dative"
+      "case:dative",
+      "family:pronoun",
+      "pronoun_type:interrogative"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -2922,7 +2976,8 @@
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
-      "interrogative"
+      "family:pronoun",
+      "pronoun_type:interrogative"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -2956,7 +3011,8 @@
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
-      "interrogative"
+      "family:pronoun",
+      "pronoun_type:interrogative"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -2990,8 +3046,9 @@
     "question_type": "cloze_word_choice",
     "difficulty": 4,
     "tags": [
-      "interrogative",
-      "genitive"
+      "case:genitive",
+      "family:pronoun",
+      "pronoun_type:interrogative"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -3025,7 +3082,8 @@
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
-      "interrogative"
+      "family:pronoun",
+      "pronoun_type:interrogative"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -3059,7 +3117,8 @@
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
-      "interrogative"
+      "family:pronoun",
+      "pronoun_type:interrogative"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -3093,8 +3152,9 @@
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
-      "interrogative",
-      "accusative"
+      "case:accusative",
+      "family:pronoun",
+      "pronoun_type:interrogative"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -3128,8 +3188,9 @@
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
-      "interrogative",
-      "dative"
+      "case:dative",
+      "family:pronoun",
+      "pronoun_type:interrogative"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -3163,7 +3224,8 @@
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
-      "interrogative"
+      "family:pronoun",
+      "pronoun_type:interrogative"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -3197,7 +3259,8 @@
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
-      "interrogative"
+      "family:pronoun",
+      "pronoun_type:interrogative"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -3231,7 +3294,8 @@
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
-      "indefinite"
+      "family:pronoun",
+      "pronoun_type:indefinite"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -3265,7 +3329,8 @@
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
-      "indefinite"
+      "family:pronoun",
+      "pronoun_type:indefinite"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -3299,7 +3364,8 @@
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
-      "indefinite"
+      "family:pronoun",
+      "pronoun_type:indefinite"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -3333,7 +3399,8 @@
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
-      "indefinite"
+      "family:pronoun",
+      "pronoun_type:indefinite"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -3367,7 +3434,8 @@
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
-      "indefinite"
+      "family:pronoun",
+      "pronoun_type:indefinite"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -3401,7 +3469,8 @@
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
-      "indefinite"
+      "family:pronoun",
+      "pronoun_type:indefinite"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -3435,7 +3504,8 @@
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
-      "indefinite"
+      "family:pronoun",
+      "pronoun_type:indefinite"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -3469,7 +3539,8 @@
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
-      "indefinite"
+      "family:pronoun",
+      "pronoun_type:indefinite"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -3502,7 +3573,8 @@
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
-      "indefinite"
+      "family:pronoun",
+      "pronoun_type:indefinite"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -3536,7 +3608,8 @@
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
-      "indefinite"
+      "family:pronoun",
+      "pronoun_type:indefinite"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -3570,7 +3643,8 @@
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
-      "indefinite"
+      "family:pronoun",
+      "pronoun_type:indefinite"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -3604,7 +3678,8 @@
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
-      "indefinite"
+      "family:pronoun",
+      "pronoun_type:indefinite"
     ],
     "content": {
       "response_mode": "single_token_choice",
@@ -3638,7 +3713,8 @@
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
-      "indefinite"
+      "family:pronoun",
+      "pronoun_type:indefinite"
     ],
     "content": {
       "response_mode": "single_token_choice",
