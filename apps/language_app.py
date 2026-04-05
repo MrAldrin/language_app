@@ -676,6 +676,7 @@ def _(
     LANG_MAP,
     df_canonical,
     dropdown_difficulty,
+    dropdown_focus_tags,
     dropdown_translation_direction,
     source_language,
     start_session_id,
@@ -690,6 +691,7 @@ def _(
     df = prepare_curriculum(
         df=df_canonical,
         difficulty_list=dropdown_difficulty.value,
+        focus_tags=dropdown_focus_tags.value,
         direction_mode=direction_mode,
         session_id=start_session_id,
     )
@@ -920,6 +922,29 @@ def _(df_raw, selected_pair):
         )
     dropdown_difficulty
     return (dropdown_difficulty,)
+
+
+@app.cell
+def _(df_raw):
+    tag_options: list[str] = []
+    if "tags" in df_raw.columns:
+        tag_options = (
+            df_raw.select(pl.col("tags").explode().alias("tag"))
+            .drop_nulls("tag")
+            .with_columns(pl.col("tag").cast(pl.Utf8))
+            .unique()
+            .sort("tag")
+            .get_column("tag")
+            .to_list()
+        )
+
+    dropdown_focus_tags = mo.ui.multiselect(
+        options=tag_options,
+        value=[],
+        label="Focus tags (optional)",
+    )
+    dropdown_focus_tags
+    return (dropdown_focus_tags,)
 
 
 @app.cell(hide_code=True)
@@ -1156,6 +1181,7 @@ def resolve_direction_mode(
 def prepare_curriculum(
     df: pl.DataFrame,
     difficulty_list: list[str],
+    focus_tags: list[str],
     direction_mode: str,
     session_size: int = 10,
     session_id: int | None = None,
@@ -1166,6 +1192,18 @@ def prepare_curriculum(
         return df
 
     filtered_df = df.filter(pl.col("difficulty_str").is_in(difficulty_list))
+
+    selected_tags = [str(tag).strip() for tag in focus_tags if str(tag).strip()]
+    if selected_tags and "tags" in filtered_df.columns:
+        filtered_df = filtered_df.filter(
+            pl.col("tags")
+            .is_not_null()
+            .and_(
+                pl.col("tags")
+                .list.eval(pl.element().is_in(selected_tags))
+                .list.any()
+            )
+        )
 
     if filtered_df.height == 0:
         return filtered_df
@@ -1249,6 +1287,21 @@ def make_word_pool(lang_data: dict[str, Any]) -> list[str]:
 
 
 @app.function
+def normalize_tags(raw_tags: Any) -> list[str]:
+    if not isinstance(raw_tags, list):
+        return []
+
+    cleaned = []
+    for tag in raw_tags:
+        if tag is None:
+            continue
+        tag_value = str(tag).strip()
+        if tag_value:
+            cleaned.append(tag_value)
+    return list(dict.fromkeys(cleaned))
+
+
+@app.function
 def extract_translation_fields(lang_data: dict[str, Any]) -> dict[str, Any]:
     """Normalizes translation fields across schema versions."""
     primary = lang_data.get("primary", "")
@@ -1284,6 +1337,7 @@ def transform_to_canonical(
         translations = row.get("translations", {})
         question_type = row.get("question_type", "")
         content = row.get("content") if isinstance(row.get("content"), dict) else {}
+        tags = normalize_tags(row.get("tags", []))
 
         if question_type == "cloze_word_choice":
             practice_language = content.get("practice_language") or language_2
@@ -1303,6 +1357,7 @@ def transform_to_canonical(
                     "response_mode": content.get("response_mode"),
                     "difficulty": row["difficulty"],
                     "difficulty_str": row["difficulty_str"],
+                    "tags": tags,
                     "language_1": language_1,
                     "language_2": language_2,
                     # Keep both sides aligned for cloze so direction does not drop rows.
@@ -1344,6 +1399,7 @@ def transform_to_canonical(
                 "response_mode": content.get("response_mode"),
                 "difficulty": row["difficulty"],
                 "difficulty_str": row["difficulty_str"],
+                "tags": tags,
                 "language_1": language_1,
                 "language_2": language_2,
                 "prompt_l1": lang_1_fields["prompt"],
@@ -1483,7 +1539,7 @@ def render_no_questions_element() -> mo.Html:
     return mo.callout(
         mo.md(
             "### No questions found\n"
-            "Go back to settings and adjust language pair, direction, or difficulty."
+            "Go back to settings and adjust language pair, direction, difficulty, or focus tags."
         ).center(),
         kind="warn",
     )
@@ -1542,6 +1598,7 @@ def _():
 def _(
     button_start_questions,
     dropdown_difficulty,
+    dropdown_focus_tags,
     dropdown_question_file,
     dropdown_source_language,
     dropdown_target_language,
@@ -1550,7 +1607,7 @@ def _(
     def render_options_section() -> mo.Html:
         """Renders the initial configuration UI."""
         instruction_text = mo.md(
-            "Choose source and target language, question set, and difficulty, then press start. You can also lock practice to one direction."
+            "Choose source and target language, question set, difficulty, and optional focus tags, then press start. You can also lock practice to one direction."
         ).center()
 
         options_row = mo.hstack(
@@ -1560,6 +1617,7 @@ def _(
                 dropdown_question_file,
                 dropdown_translation_direction,
                 dropdown_difficulty,
+                dropdown_focus_tags,
             ],
             justify="space-between",
             wrap=True,
