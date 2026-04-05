@@ -4,9 +4,9 @@
     "question_type": "word_translation",
     "difficulty": 1,
     "tags": [
-      "pronoun",
-      "singular",
-      "subject"
+      "family:pronoun",
+      "number:singular",
+      "role:subject"
     ],
     "translations": {
       "de": {
@@ -48,9 +48,9 @@
     "question_type": "word_translation",
     "difficulty": 1,
     "tags": [
-      "pronoun",
-      "plural",
-      "subject"
+      "family:pronoun",
+      "number:plural",
+      "role:subject"
     ],
     "translations": {
       "de": {
@@ -92,11 +92,11 @@
     "question_type": "word_translation",
     "difficulty": 2,
     "tags": [
-      "pronoun",
-      "possessive",
-      "singular",
-      "masculine",
-      "neuter"
+      "family:pronoun",
+      "gender:masculine",
+      "gender:neuter",
+      "number:singular",
+      "pronoun_type:possessive"
     ],
     "translations": {
       "de": {
@@ -153,9 +153,9 @@
     "question_type": "word_translation",
     "difficulty": 1,
     "tags": [
-      "pronoun",
-      "singular",
-      "subject"
+      "family:pronoun",
+      "number:singular",
+      "role:subject"
     ],
     "translations": {
       "de": {
@@ -197,10 +197,10 @@
     "question_type": "word_translation",
     "difficulty": 1,
     "tags": [
-      "pronoun",
-      "singular",
-      "subject",
-      "masculine"
+      "family:pronoun",
+      "gender:masculine",
+      "number:singular",
+      "role:subject"
     ],
     "translations": {
       "de": {
@@ -242,10 +242,10 @@
     "question_type": "word_translation",
     "difficulty": 1,
     "tags": [
-      "pronoun",
-      "singular",
-      "subject",
-      "feminine"
+      "family:pronoun",
+      "gender:feminine",
+      "number:singular",
+      "role:subject"
     ],
     "translations": {
       "de": {
@@ -288,10 +288,10 @@
     "question_type": "word_translation",
     "difficulty": 1,
     "tags": [
-      "pronoun",
-      "singular",
-      "subject",
-      "neuter"
+      "family:pronoun",
+      "gender:neuter",
+      "number:singular",
+      "role:subject"
     ],
     "translations": {
       "de": {
@@ -335,9 +335,9 @@
     "question_type": "word_translation",
     "difficulty": 1,
     "tags": [
-      "pronoun",
-      "plural",
-      "subject"
+      "family:pronoun",
+      "number:plural",
+      "role:subject"
     ],
     "translations": {
       "de": {
@@ -380,9 +380,9 @@
     "question_type": "word_translation",
     "difficulty": 1,
     "tags": [
-      "pronoun",
-      "plural",
-      "subject"
+      "family:pronoun",
+      "number:plural",
+      "role:subject"
     ],
     "translations": {
       "de": {
@@ -425,8 +425,8 @@
     "question_type": "word_translation",
     "difficulty": 3,
     "tags": [
-      "pronoun",
-      "formal"
+      "family:pronoun",
+      "register:formal"
     ],
     "translations": {
       "de": {
@@ -472,9 +472,9 @@
     "question_type": "word_translation",
     "difficulty": 2,
     "tags": [
-      "pronoun",
-      "singular",
-      "object"
+      "family:pronoun",
+      "number:singular",
+      "role:object"
     ],
     "translations": {
       "de": {
@@ -516,9 +516,9 @@
     "question_type": "word_translation",
     "difficulty": 2,
     "tags": [
-      "pronoun",
-      "singular",
-      "object"
+      "family:pronoun",
+      "number:singular",
+      "role:object"
     ],
     "translations": {
       "de": {
@@ -560,10 +560,10 @@
     "question_type": "word_translation",
     "difficulty": 2,
     "tags": [
-      "pronoun",
-      "singular",
-      "object",
-      "masculine"
+      "family:pronoun",
+      "gender:masculine",
+      "number:singular",
+      "role:object"
     ],
     "translations": {
       "de": {
@@ -607,10 +607,10 @@
     "question_type": "word_translation",
     "difficulty": 2,
     "tags": [
-      "pronoun",
-      "singular",
-      "object",
-      "feminine"
+      "family:pronoun",
+      "gender:feminine",
+      "number:singular",
+      "role:object"
     ],
     "translations": {
       "de": {
@@ -653,9 +653,9 @@
     "question_type": "word_translation",
     "difficulty": 2,
     "tags": [
-      "pronoun",
-      "plural",
-      "object"
+      "family:pronoun",
+      "number:plural",
+      "role:object"
     ],
     "translations": {
       "de": {
@@ -697,9 +697,9 @@
     "question_type": "word_translation",
     "difficulty": 2,
     "tags": [
-      "pronoun",
-      "plural",
-      "object"
+      "family:pronoun",
+      "number:plural",
+      "role:object"
     ],
     "translations": {
       "de": {
@@ -742,9 +742,9 @@
     "question_type": "word_translation",
     "difficulty": 2,
     "tags": [
-      "pronoun",
-      "plural",
-      "object"
+      "family:pronoun",
+      "number:plural",
+      "role:object"
     ],
     "translations": {
       "de": {
@@ -787,9 +787,9 @@
     "question_type": "word_translation",
     "difficulty": 3,
     "tags": [
-      "pronoun",
-      "singular",
-      "dative"
+      "case:dative",
+      "family:pronoun",
+      "number:singular"
     ],
     "translations": {
       "de": {
@@ -833,9 +833,9 @@
     "question_type": "word_translation",
     "difficulty": 3,
     "tags": [
-      "pronoun",
-      "singular",
-      "dative"
+      "case:dative",
+      "family:pronoun",
+      "number:singular"
     ],
     "translations": {
       "de": {
@@ -878,10 +878,10 @@
     "question_type": "word_translation",
     "difficulty": 3,
     "tags": [
-      "pronoun",
-      "singular",
-      "dative",
-      "masculine"
+      "case:dative",
+      "family:pronoun",
+      "gender:masculine",
+      "number:singular"
     ],
     "translations": {
       "de": {
@@ -926,11 +926,11 @@
     "question_type": "word_translation",
     "difficulty": 2,
     "tags": [
-      "pronoun",
-      "possessive",
-      "singular",
-      "masculine",
-      "neuter"
+      "family:pronoun",
+      "gender:masculine",
+      "gender:neuter",
+      "number:singular",
+      "pronoun_type:possessive"
     ],
     "translations": {
       "de": {
@@ -983,10 +983,10 @@
     "question_type": "word_translation",
     "difficulty": 2,
     "tags": [
-      "pronoun",
-      "possessive",
-      "singular",
-      "masculine"
+      "family:pronoun",
+      "gender:masculine",
+      "number:singular",
+      "pronoun_type:possessive"
     ],
     "translations": {
       "de": {
@@ -1040,10 +1040,10 @@
     "question_type": "word_translation",
     "difficulty": 2,
     "tags": [
-      "pronoun",
-      "possessive",
-      "singular",
-      "feminine"
+      "family:pronoun",
+      "gender:feminine",
+      "number:singular",
+      "pronoun_type:possessive"
     ],
     "translations": {
       "de": {
@@ -1098,9 +1098,9 @@
     "question_type": "word_translation",
     "difficulty": 2,
     "tags": [
-      "pronoun",
-      "possessive",
-      "plural"
+      "family:pronoun",
+      "number:plural",
+      "pronoun_type:possessive"
     ],
     "translations": {
       "de": {
@@ -1153,9 +1153,9 @@
     "question_type": "word_translation",
     "difficulty": 2,
     "tags": [
-      "pronoun",
-      "possessive",
-      "plural"
+      "family:pronoun",
+      "number:plural",
+      "pronoun_type:possessive"
     ],
     "translations": {
       "de": {
@@ -1206,9 +1206,9 @@
     "question_type": "word_translation",
     "difficulty": 2,
     "tags": [
-      "pronoun",
-      "possessive",
-      "plural"
+      "family:pronoun",
+      "number:plural",
+      "pronoun_type:possessive"
     ],
     "translations": {
       "de": {
@@ -1259,8 +1259,8 @@
     "question_type": "word_translation",
     "difficulty": 2,
     "tags": [
-      "pronoun",
-      "reflexive"
+      "family:pronoun",
+      "pronoun_type:reflexive"
     ],
     "translations": {
       "de": {
@@ -1302,8 +1302,8 @@
     "question_type": "word_translation",
     "difficulty": 1,
     "tags": [
-      "pronoun",
-      "interrogative"
+      "family:pronoun",
+      "pronoun_type:interrogative"
     ],
     "translations": {
       "de": {
@@ -1345,8 +1345,8 @@
     "question_type": "word_translation",
     "difficulty": 1,
     "tags": [
-      "pronoun",
-      "interrogative"
+      "family:pronoun",
+      "pronoun_type:interrogative"
     ],
     "translations": {
       "de": {
@@ -1388,8 +1388,8 @@
     "question_type": "word_translation",
     "difficulty": 3,
     "tags": [
-      "pronoun",
-      "indefinite"
+      "family:pronoun",
+      "pronoun_type:indefinite"
     ],
     "translations": {
       "de": {
@@ -1435,9 +1435,9 @@
     "question_type": "word_translation",
     "difficulty": 2,
     "tags": [
-      "pronoun",
-      "demonstrative",
-      "masculine"
+      "family:pronoun",
+      "gender:masculine",
+      "pronoun_type:demonstrative"
     ],
     "translations": {
       "de": {
@@ -1479,9 +1479,9 @@
     "question_type": "word_translation",
     "difficulty": 2,
     "tags": [
-      "pronoun",
-      "demonstrative",
-      "neuter"
+      "family:pronoun",
+      "gender:neuter",
+      "pronoun_type:demonstrative"
     ],
     "translations": {
       "de": {
@@ -1523,9 +1523,9 @@
     "question_type": "word_translation",
     "difficulty": 2,
     "tags": [
-      "pronoun",
-      "demonstrative",
-      "plural"
+      "family:pronoun",
+      "number:plural",
+      "pronoun_type:demonstrative"
     ],
     "translations": {
       "de": {
@@ -1568,9 +1568,9 @@
     "question_type": "word_translation",
     "difficulty": 3,
     "tags": [
-      "pronoun",
-      "demonstrative",
-      "masculine"
+      "family:pronoun",
+      "gender:masculine",
+      "pronoun_type:demonstrative"
     ],
     "translations": {
       "de": {
@@ -1619,9 +1619,9 @@
     "question_type": "word_translation",
     "difficulty": 4,
     "tags": [
-      "pronoun",
-      "relative",
-      "masculine"
+      "family:pronoun",
+      "gender:masculine",
+      "pronoun_type:relative"
     ],
     "translations": {
       "de": {
@@ -1664,9 +1664,9 @@
     "question_type": "word_translation",
     "difficulty": 4,
     "tags": [
-      "pronoun",
-      "relative",
-      "feminine"
+      "family:pronoun",
+      "gender:feminine",
+      "pronoun_type:relative"
     ],
     "translations": {
       "de": {
@@ -1710,9 +1710,9 @@
     "question_type": "word_translation",
     "difficulty": 4,
     "tags": [
-      "pronoun",
-      "relative",
-      "neuter"
+      "family:pronoun",
+      "gender:neuter",
+      "pronoun_type:relative"
     ],
     "translations": {
       "de": {
@@ -1756,8 +1756,8 @@
     "question_type": "word_translation",
     "difficulty": 2,
     "tags": [
-      "pronoun",
-      "indefinite"
+      "family:pronoun",
+      "pronoun_type:indefinite"
     ],
     "translations": {
       "de": {
@@ -1800,8 +1800,8 @@
     "question_type": "word_translation",
     "difficulty": 2,
     "tags": [
-      "pronoun",
-      "indefinite"
+      "family:pronoun",
+      "pronoun_type:indefinite"
     ],
     "translations": {
       "de": {
@@ -1843,8 +1843,8 @@
     "question_type": "word_translation",
     "difficulty": 2,
     "tags": [
-      "pronoun",
-      "indefinite"
+      "family:pronoun",
+      "pronoun_type:indefinite"
     ],
     "translations": {
       "de": {
@@ -1886,8 +1886,8 @@
     "question_type": "word_translation",
     "difficulty": 2,
     "tags": [
-      "pronoun",
-      "indefinite"
+      "family:pronoun",
+      "pronoun_type:indefinite"
     ],
     "translations": {
       "de": {
@@ -1929,8 +1929,8 @@
     "question_type": "word_translation",
     "difficulty": 2,
     "tags": [
-      "pronoun",
-      "indefinite"
+      "family:pronoun",
+      "pronoun_type:indefinite"
     ],
     "translations": {
       "de": {
@@ -1977,8 +1977,8 @@
     "question_type": "word_translation",
     "difficulty": 2,
     "tags": [
-      "pronoun",
-      "indefinite"
+      "family:pronoun",
+      "pronoun_type:indefinite"
     ],
     "translations": {
       "de": {
@@ -2020,8 +2020,8 @@
     "question_type": "word_translation",
     "difficulty": 2,
     "tags": [
-      "pronoun",
-      "quantity"
+      "family:pronoun",
+      "feature:quantity"
     ],
     "translations": {
       "de": {
@@ -2063,8 +2063,8 @@
     "question_type": "word_translation",
     "difficulty": 2,
     "tags": [
-      "pronoun",
-      "quantity"
+      "family:pronoun",
+      "feature:quantity"
     ],
     "translations": {
       "de": {
@@ -2113,8 +2113,8 @@
     "question_type": "word_translation",
     "difficulty": 2,
     "tags": [
-      "pronoun",
-      "quantity"
+      "family:pronoun",
+      "feature:quantity"
     ],
     "translations": {
       "de": {
@@ -2156,8 +2156,8 @@
     "question_type": "word_translation",
     "difficulty": 2,
     "tags": [
-      "pronoun",
-      "quantity"
+      "family:pronoun",
+      "feature:quantity"
     ],
     "translations": {
       "de": {
@@ -2199,8 +2199,8 @@
     "question_type": "word_translation",
     "difficulty": 1,
     "tags": [
-      "pronoun",
-      "interrogative"
+      "family:pronoun",
+      "pronoun_type:interrogative"
     ],
     "translations": {
       "de": {
@@ -2242,8 +2242,8 @@
     "question_type": "word_translation",
     "difficulty": 1,
     "tags": [
-      "pronoun",
-      "interrogative"
+      "family:pronoun",
+      "pronoun_type:interrogative"
     ],
     "translations": {
       "de": {
@@ -2285,8 +2285,8 @@
     "question_type": "word_translation",
     "difficulty": 1,
     "tags": [
-      "pronoun",
-      "interrogative"
+      "family:pronoun",
+      "pronoun_type:interrogative"
     ],
     "translations": {
       "de": {
@@ -2328,8 +2328,8 @@
     "question_type": "word_translation",
     "difficulty": 1,
     "tags": [
-      "pronoun",
-      "interrogative"
+      "family:pronoun",
+      "pronoun_type:interrogative"
     ],
     "translations": {
       "de": {
@@ -2374,9 +2374,9 @@
     "question_type": "word_translation",
     "difficulty": 2,
     "tags": [
-      "pronoun",
-      "interrogative",
-      "masculine"
+      "family:pronoun",
+      "gender:masculine",
+      "pronoun_type:interrogative"
     ],
     "translations": {
       "de": {
@@ -2424,8 +2424,8 @@
     "question_type": "word_translation",
     "difficulty": 3,
     "tags": [
-      "pronoun",
-      "interrogative"
+      "family:pronoun",
+      "pronoun_type:interrogative"
     ],
     "translations": {
       "de": {
@@ -2471,8 +2471,8 @@
     "question_type": "word_translation",
     "difficulty": 3,
     "tags": [
-      "pronoun",
-      "reciprocal"
+      "family:pronoun",
+      "pronoun_type:reciprocal"
     ],
     "translations": {
       "de": {
@@ -2514,8 +2514,8 @@
     "question_type": "word_translation",
     "difficulty": 3,
     "tags": [
-      "pronoun",
-      "emphatic"
+      "family:pronoun",
+      "pronoun_type:emphatic"
     ],
     "translations": {
       "de": {
@@ -2561,8 +2561,8 @@
     "question_type": "word_translation",
     "difficulty": 2,
     "tags": [
-      "pronoun",
-      "quantity"
+      "family:pronoun",
+      "feature:quantity"
     ],
     "translations": {
       "de": {
@@ -2604,9 +2604,9 @@
     "question_type": "word_translation",
     "difficulty": 4,
     "tags": [
-      "pronoun",
-      "formal",
-      "possessive"
+      "family:pronoun",
+      "pronoun_type:possessive",
+      "register:formal"
     ],
     "translations": {
       "de": {
@@ -2658,9 +2658,9 @@
     "question_type": "word_translation",
     "difficulty": 4,
     "tags": [
-      "pronoun",
-      "formal",
-      "dative"
+      "case:dative",
+      "family:pronoun",
+      "register:formal"
     ],
     "translations": {
       "de": {
@@ -2706,8 +2706,8 @@
     "question_type": "word_translation",
     "difficulty": 2,
     "tags": [
-      "pronoun",
-      "interrogative"
+      "family:pronoun",
+      "pronoun_type:interrogative"
     ],
     "translations": {
       "de": {
@@ -2750,8 +2750,8 @@
     "question_type": "word_translation",
     "difficulty": 2,
     "tags": [
-      "pronoun",
-      "interrogative"
+      "family:pronoun",
+      "pronoun_type:interrogative"
     ],
     "translations": {
       "de": {
@@ -2794,10 +2794,10 @@
     "question_type": "word_translation",
     "difficulty": 2,
     "tags": [
-      "pronoun",
-      "demonstrative",
-      "singular",
-      "feminine"
+      "family:pronoun",
+      "gender:feminine",
+      "number:singular",
+      "pronoun_type:demonstrative"
     ],
     "translations": {
       "de": {
@@ -2840,9 +2840,9 @@
     "question_type": "word_translation",
     "difficulty": 3,
     "tags": [
-      "pronoun",
-      "interrogative",
-      "feminine"
+      "family:pronoun",
+      "gender:feminine",
+      "pronoun_type:interrogative"
     ],
     "translations": {
       "de": {
