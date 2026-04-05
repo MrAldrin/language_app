@@ -126,10 +126,10 @@ Legacy semantic/theme mapping notes:
 - [x] docs/examples updated if impacted (not impacted in this phase)
 
 #### `apps/public/nl_no/word_translation_questions.json`
-- [ ] mapped
-- [ ] validated (schema/tag format)
-- [ ] app filter sanity checked
-- [ ] docs/examples updated if impacted
+- [x] mapped
+- [x] validated (schema/tag format)
+- [x] app filter sanity checked
+- [x] docs/examples updated if impacted (not impacted in this phase)
 
 #### `apps/public/de_en/sentence_builder_questions.json`
 - [x] mapped
@@ -225,13 +225,13 @@ Final checks:
 ## 6. Rollup Progress
 
 Data files total: 10
-- Completed: 9
-- Remaining: 1
+- Completed: 10
+- Remaining: 0
 
 Docs total: 4
 - Completed: 0
 - Remaining: 4
 
 Overall total items: 14
-- Completed: 9
-- Remaining: 5
+- Completed: 10
+- Remaining: 4
