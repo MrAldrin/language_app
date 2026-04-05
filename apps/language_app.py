@@ -676,8 +676,8 @@ def _(
     LANG_MAP,
     df_canonical,
     dropdown_difficulty,
-    dropdown_focus_tags,
     dropdown_translation_direction,
+    selected_focus_tags,
     source_language,
     start_session_id,
     target_language,
@@ -691,7 +691,7 @@ def _(
     df = prepare_curriculum(
         df=df_canonical,
         difficulty_list=dropdown_difficulty.value,
-        focus_tags=dropdown_focus_tags.value,
+        focus_tags=selected_focus_tags,
         direction_mode=direction_mode,
         session_id=start_session_id,
     )
@@ -927,6 +927,9 @@ def _(df_raw, selected_pair):
 @app.cell
 def _(df_raw):
     tag_options: list[str] = []
+    family_options: list[str] = []
+    family_to_attribute_options: dict[str, list[str]] = {}
+
     if "tags" in df_raw.columns:
         tag_options = (
             df_raw.select(pl.col("tags").explode().alias("tag"))
@@ -937,14 +940,103 @@ def _(df_raw):
             .get_column("tag")
             .to_list()
         )
+        family_options = [tag for tag in tag_options if tag.startswith("family:")]
 
-    dropdown_focus_tags = mo.ui.multiselect(
-        options=tag_options,
-        value=[],
-        label="Focus tags (optional)",
-    )
-    dropdown_focus_tags
-    return (dropdown_focus_tags,)
+        if family_options:
+            for family in family_options:
+                family_to_attribute_options[family] = (
+                    df_raw.filter(
+                        pl.col("tags")
+                        .is_not_null()
+                        .and_(pl.col("tags").list.contains(family))
+                    )
+                    .select(pl.col("tags").explode().alias("tag"))
+                    .drop_nulls("tag")
+                    .filter(~pl.col("tag").str.starts_with("family:"))
+                    .with_columns(pl.col("tag").cast(pl.Utf8))
+                    .unique()
+                    .sort("tag")
+                    .get_column("tag")
+                    .to_list()
+                )
+    return family_options, family_to_attribute_options
+
+
+@app.cell
+def _(family_options: list[str]):
+    has_family_tags = len(family_options) > 0
+
+    if has_family_tags:
+        dropdown_focus_family = mo.ui.dropdown(
+            options=family_options,
+            value=family_options[0],
+            allow_select_none=False,
+            label="Family",
+        )
+    else:
+        dropdown_focus_family = None
+    return dropdown_focus_family, has_family_tags
+
+
+@app.cell
+def _(
+    dropdown_focus_family,
+    family_to_attribute_options: dict[str, list[str]],
+    has_family_tags,
+):
+    if not has_family_tags or dropdown_focus_family is None:
+        dropdown_focus_attributes = None
+    else:
+        _selected_family = (
+            dropdown_focus_family.value
+            if isinstance(dropdown_focus_family.value, str)
+            else str(dropdown_focus_family.value or "")
+        )
+        dropdown_focus_attributes = mo.ui.multiselect(
+            options=family_to_attribute_options.get(_selected_family, []),
+            value=[],
+            label="Subtype / Attributes",
+        )
+    return (dropdown_focus_attributes,)
+
+
+@app.cell
+def _(dropdown_focus_attributes, dropdown_focus_family, has_family_tags):
+    if has_family_tags and dropdown_focus_family is not None:
+        focus_filter_controls = mo.vstack(
+            [dropdown_focus_family, dropdown_focus_attributes], gap=0.5
+        )
+    else:
+        focus_filter_controls = mo.md(
+            "_Focus filter is only available for question sets with `family:*` tags._"
+        )
+
+    focus_filter_controls
+    return (focus_filter_controls,)
+
+
+@app.cell
+def _(
+    dropdown_focus_attributes,
+    dropdown_focus_family,
+    family_to_attribute_options: dict[str, list[str]],
+):
+    if dropdown_focus_family is None:
+        selected_focus_tags = []
+    else:
+        _selected_family = (
+            dropdown_focus_family.value
+            if isinstance(dropdown_focus_family.value, str)
+            else str(dropdown_focus_family.value or "")
+        )
+        attribute_options = family_to_attribute_options.get(_selected_family, [])
+        selected_attributes = [
+            tag
+            for tag in list(dropdown_focus_attributes.value)
+            if tag in attribute_options
+        ]
+        selected_focus_tags = [_selected_family] + selected_attributes
+    return (selected_focus_tags,)
 
 
 @app.cell(hide_code=True)
@@ -1196,12 +1288,8 @@ def prepare_curriculum(
     selected_tags = [str(tag).strip() for tag in focus_tags if str(tag).strip()]
     if selected_tags and "tags" in filtered_df.columns:
         filtered_df = filtered_df.filter(
-            pl.col("tags")
-            .is_not_null()
-            .and_(
-                pl.col("tags")
-                .list.eval(pl.element().is_in(selected_tags))
-                .list.any()
+            pl.col("tags").is_not_null().and_(
+                pl.lit(selected_tags).list.set_difference(pl.col("tags")).list.len() == 0
             )
         )
 
@@ -1598,16 +1686,16 @@ def _():
 def _(
     button_start_questions,
     dropdown_difficulty,
-    dropdown_focus_tags,
     dropdown_question_file,
     dropdown_source_language,
     dropdown_target_language,
     dropdown_translation_direction,
+    focus_filter_controls,
 ):
     def render_options_section() -> mo.Html:
         """Renders the initial configuration UI."""
         instruction_text = mo.md(
-            "Choose source and target language, question set, difficulty, and optional focus tags, then press start. You can also lock practice to one direction."
+            "Choose source and target language, question set, and difficulty, then press start. You can also lock practice to one direction."
         ).center()
 
         options_row = mo.hstack(
@@ -1617,14 +1705,14 @@ def _(
                 dropdown_question_file,
                 dropdown_translation_direction,
                 dropdown_difficulty,
-                dropdown_focus_tags,
             ],
             justify="space-between",
             wrap=True,
         )
 
         return mo.vstack(
-            [instruction_text, options_row, button_start_questions.center()], gap=1
+            [instruction_text, options_row, focus_filter_controls, button_start_questions.center()],
+            gap=1,
         ).style(
             style_card(
                 accent_edge="var(--la-accent-secondary-soft)",
