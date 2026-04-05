@@ -110,10 +110,10 @@ Legacy semantic/theme mapping notes:
 - [x] docs/examples updated if impacted (not impacted in this phase)
 
 #### `apps/public/nl/cloze_word_choice_questions.json`
-- [ ] mapped
-- [ ] validated (schema/tag format)
-- [ ] app filter sanity checked
-- [ ] docs/examples updated if impacted
+- [x] mapped
+- [x] validated (schema/tag format)
+- [x] app filter sanity checked
+- [x] docs/examples updated if impacted (not impacted in this phase)
 
 #### `apps/public/de_no/word_translation_questions.json`
 - [ ] mapped
@@ -221,13 +221,13 @@ Final checks:
 ## 6. Rollup Progress
 
 Data files total: 10
-- Completed: 1
-- Remaining: 9
+- Completed: 2
+- Remaining: 8
 
 Docs total: 4
 - Completed: 0
 - Remaining: 4
 
 Overall total items: 14
-- Completed: 1
-- Remaining: 13
+- Completed: 2
+- Remaining: 12
