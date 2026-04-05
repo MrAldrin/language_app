@@ -88,10 +88,14 @@ Grammar mapping:
 - `present_tense` -> `tense:present`
 - `past_tense` -> `tense:past`
 - `future_tense` -> `tense:future`
+- `past` -> `tense:past`
+- `future` -> `tense:future`
 - `verbs` -> `pos:verb`
 - `adjectives` -> `pos:adjective`
+- `pronouns` (sentence-builder POS usage) -> `pos:pronoun`
 - `questions` -> `grammar:question`
 - `negation` -> `grammar:negation`
+- `basics` -> dropped (pruned as low-signal broad tag)
 
 Legacy semantic/theme mapping notes:
 
@@ -128,40 +132,40 @@ Legacy semantic/theme mapping notes:
 - [ ] docs/examples updated if impacted
 
 #### `apps/public/de_en/sentence_builder_questions.json`
-- [ ] mapped
-- [ ] validated (schema/tag format)
-- [ ] app filter sanity checked
-- [ ] docs/examples updated if impacted
+- [x] mapped
+- [x] validated (schema/tag format)
+- [x] app filter sanity checked
+- [x] docs/examples updated if impacted (not impacted in this phase)
 
 #### `apps/public/de_nl/sentence_builder_questions.json`
-- [ ] mapped
-- [ ] validated (schema/tag format)
-- [ ] app filter sanity checked
-- [ ] docs/examples updated if impacted
+- [x] mapped
+- [x] validated (schema/tag format)
+- [x] app filter sanity checked
+- [x] docs/examples updated if impacted (not impacted in this phase)
 
 #### `apps/public/de_no/sentence_builder_questions.json`
-- [ ] mapped
-- [ ] validated (schema/tag format)
-- [ ] app filter sanity checked
-- [ ] docs/examples updated if impacted
+- [x] mapped
+- [x] validated (schema/tag format)
+- [x] app filter sanity checked
+- [x] docs/examples updated if impacted (not impacted in this phase)
 
 #### `apps/public/en_nl/sentence_builder_questions.json`
-- [ ] mapped
-- [ ] validated (schema/tag format)
-- [ ] app filter sanity checked
-- [ ] docs/examples updated if impacted
+- [x] mapped
+- [x] validated (schema/tag format)
+- [x] app filter sanity checked
+- [x] docs/examples updated if impacted (not impacted in this phase)
 
 #### `apps/public/en_no/sentence_builder_questions.json`
-- [ ] mapped
-- [ ] validated (schema/tag format)
-- [ ] app filter sanity checked
-- [ ] docs/examples updated if impacted
+- [x] mapped
+- [x] validated (schema/tag format)
+- [x] app filter sanity checked
+- [x] docs/examples updated if impacted (not impacted in this phase)
 
 #### `apps/public/nl_no/sentence_builder_questions.json`
-- [ ] mapped
-- [ ] validated (schema/tag format)
-- [ ] app filter sanity checked
-- [ ] docs/examples updated if impacted
+- [x] mapped
+- [x] validated (schema/tag format)
+- [x] app filter sanity checked
+- [x] docs/examples updated if impacted (not impacted in this phase)
 
 ### Docs to Update After Data Migration
 
@@ -221,13 +225,13 @@ Final checks:
 ## 6. Rollup Progress
 
 Data files total: 10
-- Completed: 3
-- Remaining: 7
+- Completed: 9
+- Remaining: 1
 
 Docs total: 4
 - Completed: 0
 - Remaining: 4
 
 Overall total items: 14
-- Completed: 3
-- Remaining: 11
+- Completed: 9
+- Remaining: 5

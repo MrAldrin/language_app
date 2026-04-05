@@ -4,8 +4,7 @@
     "question_type": "sentence_builder_multiple_choice",
     "difficulty": 1,
     "tags": [
-      "basics",
-      "adjectives"
+      "pos:adjective"
     ],
     "translations": {
       "nl": {
@@ -62,8 +61,8 @@
     "question_type": "sentence_builder_multiple_choice",
     "difficulty": 2,
     "tags": [
-      "hobbies",
-      "verbs"
+      "pos:verb",
+      "topic:hobbies"
     ],
     "translations": {
       "nl": {
@@ -122,8 +121,8 @@
     "question_type": "sentence_builder_multiple_choice",
     "difficulty": 1,
     "tags": [
-      "food",
-      "present_tense"
+      "tense:present",
+      "topic:food"
     ],
     "translations": {
       "nl": {
@@ -178,8 +177,8 @@
     "question_type": "sentence_builder_multiple_choice",
     "difficulty": 3,
     "tags": [
-      "directions",
-      "verbs"
+      "pos:verb",
+      "topic:directions"
     ],
     "translations": {
       "nl": {
@@ -238,8 +237,8 @@
     "question_type": "sentence_builder_multiple_choice",
     "difficulty": 1,
     "tags": [
-      "animals",
-      "adjectives"
+      "pos:adjective",
+      "topic:animals"
     ],
     "translations": {
       "nl": {
@@ -290,8 +289,8 @@
     "question_type": "sentence_builder_multiple_choice",
     "difficulty": 2,
     "tags": [
-      "animals",
-      "verbs"
+      "pos:verb",
+      "topic:animals"
     ],
     "translations": {
       "nl": {
@@ -347,8 +346,7 @@
     "question_type": "sentence_builder_multiple_choice",
     "difficulty": 1,
     "tags": [
-      "possessions",
-      "basics"
+      "topic:possessions"
     ],
     "translations": {
       "nl": {
@@ -406,8 +404,8 @@
     "question_type": "sentence_builder_multiple_choice",
     "difficulty": 4,
     "tags": [
-      "work",
-      "locations"
+      "topic:locations",
+      "topic:work"
     ],
     "translations": {
       "nl": {
@@ -464,8 +462,8 @@
     "question_type": "sentence_builder_multiple_choice",
     "difficulty": 2,
     "tags": [
-      "languages",
-      "present_tense"
+      "tense:present",
+      "topic:languages"
     ],
     "translations": {
       "nl": {
@@ -521,8 +519,8 @@
     "question_type": "sentence_builder_multiple_choice",
     "difficulty": 1,
     "tags": [
-      "weather",
-      "adjectives"
+      "pos:adjective",
+      "topic:weather"
     ],
     "translations": {
       "nl": {
@@ -582,8 +580,8 @@
     "question_type": "sentence_builder_multiple_choice",
     "difficulty": 4,
     "tags": [
-      "family",
-      "descriptions"
+      "topic:descriptions",
+      "topic:family"
     ],
     "translations": {
       "nl": {
@@ -641,8 +639,8 @@
     "question_type": "sentence_builder_multiple_choice",
     "difficulty": 3,
     "tags": [
-      "shopping",
-      "verbs"
+      "pos:verb",
+      "topic:shopping"
     ],
     "translations": {
       "nl": {
@@ -701,8 +699,7 @@
     "question_type": "sentence_builder_multiple_choice",
     "difficulty": 2,
     "tags": [
-      "beverages",
-      "basics"
+      "topic:beverages"
     ],
     "translations": {
       "nl": {
@@ -764,8 +761,8 @@
     "question_type": "sentence_builder_multiple_choice",
     "difficulty": 4,
     "tags": [
-      "travel",
-      "frequencies"
+      "topic:frequencies",
+      "topic:travel"
     ],
     "translations": {
       "nl": {
@@ -822,8 +819,8 @@
     "question_type": "sentence_builder_multiple_choice",
     "difficulty": 1,
     "tags": [
-      "food",
-      "adjectives"
+      "pos:adjective",
+      "topic:food"
     ],
     "translations": {
       "nl": {
@@ -882,9 +879,9 @@
     "question_type": "sentence_builder_multiple_choice",
     "difficulty": 5,
     "tags": [
-      "time",
-      "verbs",
-      "travel"
+      "pos:verb",
+      "topic:time",
+      "topic:travel"
     ],
     "translations": {
       "nl": {
@@ -944,8 +941,8 @@
     "question_type": "sentence_builder_multiple_choice",
     "difficulty": 3,
     "tags": [
-      "sports",
-      "verbs"
+      "pos:verb",
+      "topic:sports"
     ],
     "translations": {
       "nl": {
@@ -1003,8 +1000,8 @@
     "question_type": "sentence_builder_multiple_choice",
     "difficulty": 4,
     "tags": [
-      "communication",
-      "past_tense"
+      "tense:past",
+      "topic:communication"
     ],
     "translations": {
       "nl": {
@@ -1065,8 +1062,8 @@
     "question_type": "sentence_builder_multiple_choice",
     "difficulty": 2,
     "tags": [
-      "feelings",
-      "past_tense"
+      "tense:past",
+      "topic:feelings"
     ],
     "translations": {
       "nl": {
@@ -1121,8 +1118,8 @@
     "question_type": "sentence_builder_multiple_choice",
     "difficulty": 5,
     "tags": [
-      "comprehension",
-      "negation"
+      "grammar:negation",
+      "topic:comprehension"
     ],
     "translations": {
       "nl": {
@@ -1182,8 +1179,8 @@
     "question_type": "sentence_builder_multiple_choice",
     "difficulty": 3,
     "tags": [
-      "school",
-      "objects"
+      "topic:objects",
+      "topic:school"
     ],
     "translations": {
       "nl": {
@@ -1240,8 +1237,8 @@
     "question_type": "sentence_builder_multiple_choice",
     "difficulty": 4,
     "tags": [
-      "activities",
-      "music"
+      "topic:activities",
+      "topic:music"
     ],
     "translations": {
       "nl": {
@@ -1299,8 +1296,8 @@
     "question_type": "sentence_builder_multiple_choice",
     "difficulty": 2,
     "tags": [
-      "clothes",
-      "colors"
+      "topic:clothes",
+      "topic:colors"
     ],
     "translations": {
       "nl": {
@@ -1362,8 +1359,8 @@
     "question_type": "sentence_builder_multiple_choice",
     "difficulty": 5,
     "tags": [
-      "travel",
-      "future_tense"
+      "tense:future",
+      "topic:travel"
     ],
     "translations": {
       "nl": {
@@ -1425,8 +1422,7 @@
     "question_type": "sentence_builder_multiple_choice",
     "difficulty": 1,
     "tags": [
-      "nature",
-      "basics"
+      "topic:nature"
     ],
     "translations": {
       "nl": {
@@ -1478,8 +1474,8 @@
     "question_type": "sentence_builder_multiple_choice",
     "difficulty": 2,
     "tags": [
-      "city",
-      "places"
+      "topic:city",
+      "topic:places"
     ],
     "translations": {
       "nl": {
@@ -1534,8 +1530,8 @@
     "question_type": "sentence_builder_multiple_choice",
     "difficulty": 3,
     "tags": [
-      "food",
-      "verbs"
+      "pos:verb",
+      "topic:food"
     ],
     "translations": {
       "nl": {
@@ -1591,8 +1587,7 @@
     "question_type": "sentence_builder_multiple_choice",
     "difficulty": 1,
     "tags": [
-      "basics",
-      "pronouns"
+      "pos:pronoun"
     ],
     "translations": {
       "nl": {
@@ -1644,8 +1639,8 @@
     "question_type": "sentence_builder_multiple_choice",
     "difficulty": 4,
     "tags": [
-      "future",
-      "plans"
+      "tense:future",
+      "topic:plans"
     ],
     "translations": {
       "nl": {
@@ -1706,8 +1701,8 @@
     "question_type": "sentence_builder_multiple_choice",
     "difficulty": 2,
     "tags": [
-      "emotions",
-      "adjectives"
+      "pos:adjective",
+      "topic:emotions"
     ],
     "translations": {
       "nl": {
@@ -1767,8 +1762,8 @@
     "question_type": "sentence_builder_multiple_choice",
     "difficulty": 3,
     "tags": [
-      "health",
-      "verbs"
+      "pos:verb",
+      "topic:health"
     ],
     "translations": {
       "nl": {
@@ -1825,8 +1820,8 @@
     "question_type": "sentence_builder_multiple_choice",
     "difficulty": 5,
     "tags": [
-      "work",
-      "possessions"
+      "topic:possessions",
+      "topic:work"
     ],
     "translations": {
       "nl": {
@@ -1879,8 +1874,8 @@
     "question_type": "sentence_builder_multiple_choice",
     "difficulty": 2,
     "tags": [
-      "weather",
-      "verbs"
+      "pos:verb",
+      "topic:weather"
     ],
     "translations": {
       "nl": {
@@ -1931,8 +1926,8 @@
     "question_type": "sentence_builder_multiple_choice",
     "difficulty": 4,
     "tags": [
-      "travel",
-      "questions"
+      "grammar:question",
+      "topic:travel"
     ],
     "translations": {
       "nl": {
@@ -1987,8 +1982,8 @@
     "question_type": "sentence_builder_multiple_choice",
     "difficulty": 1,
     "tags": [
-      "colors",
-      "objects"
+      "topic:colors",
+      "topic:objects"
     ],
     "translations": {
       "nl": {
@@ -2039,8 +2034,8 @@
     "question_type": "sentence_builder_multiple_choice",
     "difficulty": 3,
     "tags": [
-      "family",
-      "age"
+      "topic:age",
+      "topic:family"
     ],
     "translations": {
       "nl": {
@@ -2095,8 +2090,8 @@
     "question_type": "sentence_builder_multiple_choice",
     "difficulty": 2,
     "tags": [
-      "food",
-      "likes"
+      "topic:food",
+      "topic:likes"
     ],
     "translations": {
       "nl": {
@@ -2151,8 +2146,8 @@
     "question_type": "sentence_builder_multiple_choice",
     "difficulty": 4,
     "tags": [
-      "locations",
-      "verbs"
+      "pos:verb",
+      "topic:locations"
     ],
     "translations": {
       "nl": {
@@ -2208,8 +2203,7 @@
     "question_type": "sentence_builder_multiple_choice",
     "difficulty": 1,
     "tags": [
-      "basics",
-      "numbers"
+      "topic:numbers"
     ],
     "translations": {
       "nl": {
@@ -2262,8 +2256,8 @@
     "question_type": "sentence_builder_multiple_choice",
     "difficulty": 5,
     "tags": [
-      "past",
-      "travel"
+      "tense:past",
+      "topic:travel"
     ],
     "translations": {
       "nl": {
@@ -2323,8 +2317,8 @@
     "question_type": "sentence_builder_multiple_choice",
     "difficulty": 2,
     "tags": [
-      "daily_life",
-      "verbs"
+      "pos:verb",
+      "topic:daily_life"
     ],
     "translations": {
       "nl": {
@@ -2383,8 +2377,8 @@
     "question_type": "sentence_builder_multiple_choice",
     "difficulty": 3,
     "tags": [
-      "social",
-      "offers"
+      "topic:offers",
+      "topic:social"
     ],
     "translations": {
       "nl": {
@@ -2440,8 +2434,7 @@
     "question_type": "sentence_builder_multiple_choice",
     "difficulty": 1,
     "tags": [
-      "basics",
-      "introductions"
+      "topic:introductions"
     ],
     "translations": {
       "nl": {
@@ -2496,8 +2489,8 @@
     "question_type": "sentence_builder_multiple_choice",
     "difficulty": 4,
     "tags": [
-      "transport",
-      "verbs"
+      "pos:verb",
+      "topic:transport"
     ],
     "translations": {
       "nl": {
@@ -2556,8 +2549,8 @@
     "question_type": "sentence_builder_multiple_choice",
     "difficulty": 2,
     "tags": [
-      "home",
-      "adjectives"
+      "pos:adjective",
+      "topic:home"
     ],
     "translations": {
       "nl": {
@@ -2619,8 +2612,8 @@
     "question_type": "sentence_builder_multiple_choice",
     "difficulty": 5,
     "tags": [
-      "complex",
-      "opinions"
+      "topic:complex",
+      "topic:opinions"
     ],
     "translations": {
       "nl": {
@@ -2685,8 +2678,8 @@
     "question_type": "sentence_builder_multiple_choice",
     "difficulty": 3,
     "tags": [
-      "time",
-      "routines"
+      "topic:routines",
+      "topic:time"
     ],
     "translations": {
       "nl": {
@@ -2749,8 +2742,8 @@
     "question_type": "sentence_builder_multiple_choice",
     "difficulty": 2,
     "tags": [
-      "nature",
-      "verbs"
+      "pos:verb",
+      "topic:nature"
     ],
     "translations": {
       "nl": {
@@ -2801,8 +2794,8 @@
     "question_type": "sentence_builder_multiple_choice",
     "difficulty": 4,
     "tags": [
-      "objects",
-      "locations"
+      "topic:locations",
+      "topic:objects"
     ],
     "translations": {
       "nl": {
@@ -2860,8 +2853,7 @@
     "question_type": "sentence_builder_multiple_choice",
     "difficulty": 1,
     "tags": [
-      "basics",
-      "feelings"
+      "topic:feelings"
     ],
     "translations": {
       "nl": {
