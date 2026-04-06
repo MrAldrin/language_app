@@ -677,7 +677,8 @@ def _(
     df_canonical,
     dropdown_difficulty,
     dropdown_translation_direction,
-    selected_focus_tags,
+    selected_focus_attributes,
+    selected_focus_family,
     source_language,
     start_session_id,
     target_language,
@@ -691,7 +692,8 @@ def _(
     df = prepare_curriculum(
         df=df_canonical,
         difficulty_list=dropdown_difficulty.value,
-        focus_tags=selected_focus_tags,
+        focus_attributes=selected_focus_attributes,
+        focus_family=selected_focus_family,
         direction_mode=direction_mode,
         session_id=start_session_id,
     )
@@ -888,8 +890,15 @@ def _(
 
 
 @app.cell
-def _(LANG_MAP, source_language, target_language):
-    if not source_language or not target_language:
+def _(dropdown_question_file):
+    selected_question_file = dropdown_question_file.value or ""
+    direction_applicable = selected_question_file != "cloze_word_choice_questions.json"
+    return direction_applicable, selected_question_file
+
+
+@app.cell
+def _(LANG_MAP, direction_applicable, source_language, target_language):
+    if (not source_language) or (not target_language) or (not direction_applicable):
         directions = ["Not applicable"]
     else:
         name1 = LANG_MAP.get(source_language, source_language)
@@ -992,9 +1001,10 @@ def _(
             if isinstance(dropdown_focus_family.value, str)
             else str(dropdown_focus_family.value or "")
         )
+        _attribute_options = family_to_attribute_options.get(_selected_family, [])
         dropdown_focus_attributes = mo.ui.multiselect(
-            options=family_to_attribute_options.get(_selected_family, []),
-            value=[],
+            options=_attribute_options,
+            value=_attribute_options,
             label="Subtype / Attributes",
         )
     return (dropdown_focus_attributes,)
@@ -1007,11 +1017,7 @@ def _(dropdown_focus_attributes, dropdown_focus_family, has_family_tags):
             [dropdown_focus_family, dropdown_focus_attributes], gap=0.5
         )
     else:
-        focus_filter_controls = mo.md(
-            "_Focus filter is only available for question sets with `family:*` tags._"
-        )
-
-    focus_filter_controls
+        focus_filter_controls = None
     return (focus_filter_controls,)
 
 
@@ -1022,7 +1028,8 @@ def _(
     family_to_attribute_options: dict[str, list[str]],
 ):
     if dropdown_focus_family is None:
-        selected_focus_tags = []
+        selected_focus_family = None
+        selected_focus_attributes = []
     else:
         _selected_family = (
             dropdown_focus_family.value
@@ -1035,8 +1042,31 @@ def _(
             for tag in list(dropdown_focus_attributes.value)
             if tag in attribute_options
         ]
-        selected_focus_tags = [_selected_family] + selected_attributes
-    return (selected_focus_tags,)
+        selected_focus_family = _selected_family
+        # If user clears all attributes, keep family-only filtering active.
+        selected_focus_attributes = (
+            selected_attributes if selected_attributes else attribute_options
+        )
+    return selected_focus_attributes, selected_focus_family
+
+
+@app.cell
+def _(
+    direction_applicable,
+    dropdown_translation_direction,
+    focus_filter_controls,
+):
+    lower_level_controls: list[Any] = []
+    if direction_applicable:
+        lower_level_controls.append(dropdown_translation_direction)
+    if focus_filter_controls is not None:
+        lower_level_controls.append(focus_filter_controls)
+
+    if lower_level_controls:
+        lower_level_settings = mo.vstack(lower_level_controls, gap=0.5)
+    else:
+        lower_level_settings = None
+    return (lower_level_settings,)
 
 
 @app.cell(hide_code=True)
@@ -1273,7 +1303,8 @@ def resolve_direction_mode(
 def prepare_curriculum(
     df: pl.DataFrame,
     difficulty_list: list[str],
-    focus_tags: list[str],
+    focus_attributes: list[str],
+    focus_family: str | None,
     direction_mode: str,
     session_size: int = 10,
     session_id: int | None = None,
@@ -1285,13 +1316,22 @@ def prepare_curriculum(
 
     filtered_df = df.filter(pl.col("difficulty_str").is_in(difficulty_list))
 
-    selected_tags = [str(tag).strip() for tag in focus_tags if str(tag).strip()]
-    if selected_tags and "tags" in filtered_df.columns:
+    selected_family = str(focus_family).strip() if focus_family else ""
+    selected_attributes = [
+        str(tag).strip() for tag in focus_attributes if str(tag).strip()
+    ]
+    if selected_family and "tags" in filtered_df.columns:
         filtered_df = filtered_df.filter(
-            pl.col("tags").is_not_null().and_(
-                pl.lit(selected_tags).list.set_difference(pl.col("tags")).list.len() == 0
-            )
+            pl.col("tags").is_not_null().and_(pl.col("tags").list.contains(selected_family))
         )
+        if selected_attributes:
+            filtered_df = filtered_df.filter(
+                pl.col("tags").is_not_null().and_(
+                    pl.col("tags")
+                    .list.eval(pl.element().is_in(selected_attributes))
+                    .list.any()
+                )
+            )
 
     if filtered_df.height == 0:
         return filtered_df
@@ -1627,7 +1667,7 @@ def render_no_questions_element() -> mo.Html:
     return mo.callout(
         mo.md(
             "### No questions found\n"
-            "Go back to settings and adjust language pair, direction, difficulty, or focus tags."
+            "Go back to settings and adjust language pair, difficulty, or focus filters."
         ).center(),
         kind="warn",
     )
@@ -1689,29 +1729,32 @@ def _(
     dropdown_question_file,
     dropdown_source_language,
     dropdown_target_language,
-    dropdown_translation_direction,
-    focus_filter_controls,
+    lower_level_settings,
 ):
     def render_options_section() -> mo.Html:
         """Renders the initial configuration UI."""
         instruction_text = mo.md(
-            "Choose source and target language, question set, and difficulty, then press start. You can also lock practice to one direction."
+            "Choose source and target language, question set, and difficulty, then press start."
         ).center()
 
-        options_row = mo.hstack(
+        top_level_options_row = mo.hstack(
             [
                 dropdown_source_language,
                 dropdown_target_language,
                 dropdown_question_file,
-                dropdown_translation_direction,
                 dropdown_difficulty,
             ],
             justify="space-between",
             wrap=True,
         )
 
+        sections: list[Any] = [instruction_text, top_level_options_row]
+        if lower_level_settings is not None:
+            sections.append(lower_level_settings)
+        sections.append(button_start_questions.center())
+
         return mo.vstack(
-            [instruction_text, options_row, focus_filter_controls, button_start_questions.center()],
+            sections,
             gap=1,
         ).style(
             style_card(
