@@ -1,94 +1,85 @@
-# A mini MVP of a language learning app
-It runs using marimo.
+# Language Learning App (MVP)
 
-**Difficulty mapping:**
-- 1-3: easy
-- 4-7: medium
-- 8-10: hard
+This project is a Marimo-based language learning app focused on fast, targeted grammar and vocabulary practice.  
+Question content is JSON-driven, and the runtime adapts interaction behavior from each question type.  
+The current implementation prioritizes a functional MVP: filterable practice sessions, clear answer feedback, and lightweight session-level scoring.
 
-**Questions**
-- the data source is 
-    - generated in pairs
-    - uses proper grammar and spelling
-- the user interface
-    - standardizes grammar by lowercasing and removing punctuation
-    - then compares to see if there is a match
+## What The App Currently Supports
 
-## roadmap
-- [x] publish to github pages
-- [x] improve existing questions
-- [ ] add thematic tasks. the user should choose die/der/das, verb conjugation, etc.
+- Source and target language selection from available pair data
+- Question set selection (`sentence_builder`, `word_translation`, `cloze`)
+- Difficulty filtering with mapped bands:
+  - `1-3`: easy
+  - `4-7`: medium
+  - `8-10`: hard
+- Direction control (`Both`, `L1 -> L2`, `L2 -> L1`) for non-cloze sets
+- Family/subtype tag filtering when `family:*` tags exist in the selected dataset
+- Question navigation (`Previous` / `Next`) inside a session
+- In-question `Check`, `Clear`, and `Reveal answer` interaction flow
+- Session summary with total questions, attempts, correct/incorrect, and accuracy
 
-----------------------------
-# Markdown from original repo template below:
-----------------------------
+## Question Types And Interaction Model
 
-# marimo WebAssembly + GitHub Pages Template
+- `sentence_builder_multiple_choice`
+  - Learner builds a full answer from a token pool
+  - Selected tokens can be reordered in the answer area
+- `word_translation`
+  - Learner selects a single token answer from a pool
+  - Uses the same check/reveal flow as other sets
+- `cloze_word_choice`
+  - Learner fills one blank in a sentence from a token pool
+  - Direction selector is disabled/not applicable for this type
 
-This template repository demonstrates how to export [marimo](https://marimo.io) notebooks to WebAssembly and deploy them to GitHub Pages.
+## Question Data Files (Current Inventory)
 
-## 📚 Included Examples
+Data is stored under `apps/public/` in two layouts:
 
-- `apps/charts.py`: Interactive data visualization with Altair
-- `notebooks/fibonacci.py`: Interactive Fibonacci sequence calculator
-- `notebooks/penguins.py`: Interactive data analysis with Polars and marimo
+- Pair files: `apps/public/<lang1>_<lang2>/`
+- Language files: `apps/public/<lang>/`
 
-## 🚀 Usage
+Current inventory in this repo:
 
-1. Fork this repository
-2. Add your marimo files to the `notebooks/` or `apps/` directory
-   1. `notebooks/` notebooks are exported with `--mode edit`
-   2. `apps/` notebooks are exported with `--mode run`
-3. Push to main branch
-4. Go to repository **Settings > Pages** and change the "Source" dropdown to "GitHub Actions"
-5. GitHub Actions will automatically build and deploy to Pages
+- `sentence_builder`: 6 files x 50 questions each
+  - `de_en`, `de_nl`, `de_no`, `en_nl`, `en_no`, `nl_no`
+- `word_translation`: 2 files
+  - `apps/public/de_no/word_translation_questions.json` (62)
+  - `apps/public/nl_no/word_translation_questions.json` (60)
+- `cloze_word_choice`: 2 files
+  - `apps/public/de/cloze_word_choice_questions.json` (105)
+  - `apps/public/nl/cloze_word_choice_questions.json` (105)
 
-## Including data or assets
+## Data Schema Snapshot (Schema v2)
 
-To include data or assets in your notebooks, add them to the `public/` directory.
+Each question object uses the shared schema:
 
-For example, the `apps/charts.py` notebook loads an image asset from the `public/` directory.
+- `id`: integer identifier
+- `schema_version`: current schema version (`2`)
+- `question_type`: interaction discriminator
+- `difficulty`: integer `1-10`
+- `tags`: canonical namespaced labels in `namespace:value` format
+- `content`: type-specific interaction settings (for example `response_mode`)
+- `translations`: per-language payload with prompt/answer/accepted/word pool (+ optional hint)
 
-```markdown
-<img src="public/logo.png" width="200" />
-```
+## How To Run
 
-And the `notebooks/penguins.py` notebook loads a CSV dataset from the `public/` directory.
-
-```python
-import polars as pl
-df = pl.read_csv(mo.notebook_location() / "public" / "penguins.csv")
-```
-
-## 🎨 Templates
-
-This repository includes several templates for the generated site:
-
-1. `index.html.j2` (default): A template with styling and a footer
-2. `bare.html.j2`: A minimal template with basic styling
-3. `tailwind.html.j2`: A minimal and lean template using Tailwind CSS
-
-To use a specific template, pass the `--template` parameter to the build script:
+Run locally:
 
 ```bash
-uv run .github/scripts/build.py --template templates/tailwind.html.j2
+uv run apps/language_app.py
 ```
 
-You can also create your own custom templates. See the [templates/README.md](templates/README.md) for more information.
+This repository also includes a GitHub Pages export/deploy workflow inherited from the template. That workflow builds marimo notebooks/apps into `_site` via `.github/scripts/build.py`, but the primary project here is the language app in `apps/language_app.py`.
 
-## 🧪 Testing
+## Roadmap
 
-To test the export process, run `.github/scripts/build.py` from the root directory.
+Short term:
+- Content expansion
+  - Add more question files, expand language coverage, and increase per-set question volume
+- Authoring and tooling
+  - Strengthen validation and generation workflows for question quality and schema consistency
 
-```bash
-uv run .github/scripts/build.py
-```
-
-This will export all notebooks in a folder called `_site/` in the root directory. Then to serve the site, run:
-
-```bash
-# python -m http.server -d _site
-uv run -m http.server -d _site
-```
-
-This will serve the site at `http://localhost:8000`.
+Long term:
+- Persistence and analytics
+  - Move beyond in-memory session stats to stored session history and progress tracking
+- UX and learning flow
+  - Add review mode, adaptive repeats, and error-driven practice loops
