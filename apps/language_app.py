@@ -343,13 +343,13 @@ class QuestionWidget(anywidget.AnyWidget):
         .question-text {
             font-size: 1.25rem;
             line-height: 1.6;
-            color: #1e293b;
+            color: var(--la-text-main, #1e293b);
             text-align: center;
             margin: 0;
         }
         .question-hint {
             font-size: 0.95rem;
-            color: #64748b;
+            color: var(--la-text-muted, #64748b);
             margin-top: 0;
         }
         .surface {
@@ -378,7 +378,7 @@ class QuestionWidget(anywidget.AnyWidget):
             justify-content: center;
             min-width: 5rem;
             height: 2.5rem;
-            border-bottom: 2px solid #8ea3b8;
+            border-bottom: 2px solid var(--la-neutral-border, #8ea3b8);
             margin: 0 0.25rem;
             vertical-align: middle;
             cursor: pointer;
@@ -387,12 +387,12 @@ class QuestionWidget(anywidget.AnyWidget):
             border-radius: 0.25rem 0.25rem 0 0;
         }
         .pool-area {
-            background: #e8f6f4;
+            background: var(--la-accent-primary-soft, #e8f6f4);
         }
         .control {
             height: 2.25rem;
             padding: 0 0.8rem;
-            border: 1px solid #8ea3b8;
+            border: 1px solid var(--la-border-subtle, #d8e0ea);
             border-radius: 0.75rem;
             font-size: 1.25rem;
             cursor: pointer;
@@ -403,10 +403,11 @@ class QuestionWidget(anywidget.AnyWidget):
         }
         .sortable-ghost {
             opacity: 0.4;
-            background-color: #e2e8f0 !important;
+            background-color: var(--la-border-subtle, #e2e8f0) !important;
         }
         .chip {
-            background: #ffffff;
+            background: var(--la-bg-surface, #ffffff);
+            color: var(--la-text-main, #1e293b);
         }
         .answer-chip {
             cursor: grab;
@@ -415,14 +416,14 @@ class QuestionWidget(anywidget.AnyWidget):
             cursor: grabbing;
         }
         .chip:hover:not(.chip-disabled) {
-            background: #e8f6f4;
+            background: var(--la-accent-primary-soft, #e8f6f4);
         }
         .chip-disabled {
             opacity: 0.35;
             cursor: default;
         }
         .hint {
-            color: #8ea3b8;
+            color: var(--la-text-muted, #8ea3b8);
             font-style: italic;
             font-size: 0.9rem;
         }
@@ -441,19 +442,19 @@ class QuestionWidget(anywidget.AnyWidget):
             margin-right: auto;
         }
         .feedback-neutral {
-            background: #f1f5f9;
-            border: 1px solid #cbd5e1;
-            color: #334155;
+            background: var(--la-neutral-bg, #f1f5f9);
+            border: 1px solid var(--la-neutral-border, #cbd5e1);
+            color: var(--la-neutral-fg, #334155);
         }
         .feedback-wrong {
-            background: #fff0d8;
-            border: 1px solid #c97b0e;
-            color: #704010;
+            background: var(--la-warning-bg, #fff0d8);
+            border: 1px solid var(--la-warning-border, #c97b0e);
+            color: var(--la-warning-fg, #704010);
         }
         .feedback-correct {
-            background: #e5f7ee;
-            border: 1px solid #2e8b57;
-            color: #145339;
+            background: var(--la-success-bg, #e5f7ee);
+            border: 1px solid var(--la-success-border, #2e8b57);
+            color: var(--la-success-fg, #145339);
         }
         .reveal-container {
             margin: 0.35rem auto 0;
@@ -463,9 +464,9 @@ class QuestionWidget(anywidget.AnyWidget):
             justify-content: center;
         }
         .action-btn, .reveal-toggle-btn {
-            background: #f8fafc;
-            border: 1px solid #cbd5e1;
-            color: #475569;
+            background: var(--la-bg-surface, #f8fafc);
+            border: 1px solid var(--la-border-subtle, #cbd5e1);
+            color: var(--la-text-main, #475569);
             font-size: 0.95rem;
             cursor: pointer;
             box-sizing: border-box;
@@ -474,7 +475,7 @@ class QuestionWidget(anywidget.AnyWidget):
             justify-content: center;
         }
         .action-btn:hover:not([disabled]), .reveal-toggle-btn:hover {
-            background: #f1f5f9;
+            background: var(--la-accent-secondary-soft, #f1f5f9);
         }
         .reveal-toggle-btn {
             width: 100%;
@@ -486,7 +487,7 @@ class QuestionWidget(anywidget.AnyWidget):
         }
         .reveal-main {
             font-weight: 600;
-            color: #1e293b;
+            color: var(--la-text-main, #1e293b);
             text-align: center;
         }
         .reveal-sub {
@@ -494,6 +495,7 @@ class QuestionWidget(anywidget.AnyWidget):
             opacity: 0.8;
             margin-top: 0.1rem;
             text-align: center;
+            color: var(--la-text-muted, #64748b);
         }
         .button-row {
             display: flex;
@@ -563,7 +565,7 @@ def _():
         """
         <style>
           :root {
-            /* Active design tokens used by current UI styles/components. */
+            /* Light theme (default) */
             --la-bg-surface: #ffffff;
             --la-border-subtle: #d8e0ea;
             --la-accent-primary-soft: #e8f6f4;
@@ -582,7 +584,48 @@ def _():
             --la-radius-pool: 0.85rem;
             --la-space-section: 0.8rem;
             --la-space-card-margin: 0.35rem;
+            --la-text-main: #1e293b;
+            --la-text-muted: #64748b;
           }
+
+          /* Dark theme specifically when Marimo or the user toggles it */
+          [data-theme="dark"] {
+            --la-bg-surface: #1e293b;
+            --la-border-subtle: #334155;
+            --la-accent-primary-soft: #134e4a;
+            --la-accent-secondary-soft: #1e3a8a;
+            --la-success-border: #065f46;
+            --la-success-bg: #064e3b;
+            --la-success-fg: #6ee7b7;
+            --la-warning-border: #92400e;
+            --la-warning-bg: #78350f;
+            --la-warning-fg: #fcd34d;
+            --la-neutral-border: #475569;
+            --la-neutral-bg: #1e293b;
+            --la-neutral-fg: #cbd5e1;
+            --la-text-main: #f8fafc;
+            --la-text-muted: #94a3b8;
+          }
+
+          /* Explicit light theme override if Marimo forces it */
+          [data-theme="light"] {
+            --la-bg-surface: #ffffff;
+            --la-border-subtle: #d8e0ea;
+            --la-accent-primary-soft: #e8f6f4;
+            --la-accent-secondary-soft: #eef4ff;
+            --la-success-border: #2e8b57;
+            --la-success-bg: #e5f7ee;
+            --la-success-fg: #145339;
+            --la-warning-border: #c97b0e;
+            --la-warning-bg: #fff0d8;
+            --la-warning-fg: #704010;
+            --la-neutral-border: #8ea3b8;
+            --la-neutral-bg: #eaf0f6;
+            --la-neutral-fg: #243548;
+            --la-text-main: #1e293b;
+            --la-text-muted: #64748b;
+          }
+
           /* Keep all menu controls visually consistent across widget types. */
           [data-testid="mo-output"] marimo-dropdown,
           [data-testid="mo-output"] marimo-multiselect {
@@ -594,6 +637,7 @@ def _():
           [data-testid="mo-output"] [aria-haspopup="listbox"] {
             background: var(--la-bg-surface) !important;
             background-color: var(--la-bg-surface) !important;
+            color: var(--la-text-main) !important;
           }
         </style>
         """
