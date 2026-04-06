@@ -1471,9 +1471,22 @@ def _():
 
 
 @app.function
-def make_word_pool(lang_data: dict[str, Any]) -> list[str]:
+def make_word_pool(lang_data: dict[str, Any], is_cloze: bool = False) -> list[str]:
     # We now construct the pool from `text` and `distractors`
-    words = lang_data.get("text", "").split()
+    words = []
+    if is_cloze:
+        text = lang_data.get("text", "")
+        hidden_idx = lang_data.get("hidden_word_index", -1)
+        if hidden_idx != -1:
+            try:
+                words.append(text.split()[hidden_idx])
+            except IndexError:
+                words.extend(text.split())
+        else:
+            words.extend(text.split())
+    else:
+        words.extend(lang_data.get("text", "").split())
+
     for accepted in lang_data.get("accepted", []):
         words.extend(accepted.split())
     words.extend(lang_data.get("distractors", []))
@@ -1577,8 +1590,12 @@ def transform_to_canonical(
                     or practice_fields["hint"],
                     "accepted_l1": practice_data.get("accepted", []),
                     "accepted_l2": practice_data.get("accepted", []),
-                    "word_pool_l1": make_word_pool(lang_data=practice_data),
-                    "word_pool_l2": make_word_pool(lang_data=practice_data),
+                    "word_pool_l1": make_word_pool(
+                        lang_data=practice_data, is_cloze=True
+                    ),
+                    "word_pool_l2": make_word_pool(
+                        lang_data=practice_data, is_cloze=True
+                    ),
                     "hidden_word_index": practice_data.get("hidden_word_index", -1),
                 }
             )
