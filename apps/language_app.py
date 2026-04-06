@@ -10,7 +10,7 @@
 
 import marimo
 
-__generated_with = "0.22.0"
+__generated_with = "0.22.4"
 app = marimo.App(width="full", layout_file="layouts/language_app.grid.json")
 
 with app.setup:
@@ -893,7 +893,7 @@ def _(
 def _(dropdown_question_file):
     selected_question_file = dropdown_question_file.value or ""
     direction_applicable = selected_question_file != "cloze_word_choice_questions.json"
-    return direction_applicable, selected_question_file
+    return (direction_applicable,)
 
 
 @app.cell
@@ -1322,11 +1322,15 @@ def prepare_curriculum(
     ]
     if selected_family and "tags" in filtered_df.columns:
         filtered_df = filtered_df.filter(
-            pl.col("tags").is_not_null().and_(pl.col("tags").list.contains(selected_family))
+            pl.col("tags")
+            .is_not_null()
+            .and_(pl.col("tags").list.contains(selected_family))
         )
         if selected_attributes:
             filtered_df = filtered_df.filter(
-                pl.col("tags").is_not_null().and_(
+                pl.col("tags")
+                .is_not_null()
+                .and_(
                     pl.col("tags")
                     .list.eval(pl.element().is_in(selected_attributes))
                     .list.any()
@@ -1349,38 +1353,59 @@ def prepare_curriculum(
 
     prepared_rows = []
     for row, direction in zip(filtered_df.iter_rows(named=True), directions):
+        q_type = row.get("question_type", "")
+        hidden_idx = row.get("hidden_word_index", -1)
+
         if direction == "l1_to_l2":
+            source = row["text_l1"]
+            target = row["text_l2"]
+            if q_type == "cloze_word_choice" and hidden_idx != -1:
+                source = row["text_l2"]
+                try:
+                    target = row["text_l2"].split()[hidden_idx]
+                except IndexError:
+                    target = row["text_l2"]
+
             prepared_rows.append(
                 {
                     "question_id": row["question_id"],
-                    "question_type": row.get("question_type", ""),
+                    "question_type": q_type,
                     "response_mode": row.get("response_mode"),
                     "difficulty": row["difficulty"],
                     "difficulty_str": row["difficulty_str"],
                     "direction": direction,
-                    "source": row.get("prompt_l1", row["text_l1"]),
+                    "source": source,
                     "source_hint": row.get("hint_l1"),
-                    "target": row["text_l2"],
+                    "target": target,
                     "accepted": row["accepted_l2"],
                     "words": row["word_pool_l2"],
-                    "hidden_word_index": row.get("hidden_word_index", -1),
+                    "hidden_word_index": hidden_idx,
                 }
             )
         else:
+            source = row["text_l2"]
+            target = row["text_l1"]
+            if q_type == "cloze_word_choice" and hidden_idx != -1:
+                source = row["text_l1"]
+                try:
+                    target = row["text_l1"].split()[hidden_idx]
+                except IndexError:
+                    target = row["text_l1"]
+
             prepared_rows.append(
                 {
                     "question_id": row["question_id"],
-                    "question_type": row.get("question_type", ""),
+                    "question_type": q_type,
                     "response_mode": row.get("response_mode"),
                     "difficulty": row["difficulty"],
                     "difficulty_str": row["difficulty_str"],
                     "direction": direction,
-                    "source": row.get("prompt_l2", row["text_l2"]),
+                    "source": source,
                     "source_hint": row.get("hint_l2"),
-                    "target": row["text_l1"],
+                    "target": target,
                     "accepted": row["accepted_l1"],
                     "words": row["word_pool_l1"],
-                    "hidden_word_index": row.get("hidden_word_index", -1),
+                    "hidden_word_index": hidden_idx,
                 }
             )
 
@@ -1403,15 +1428,24 @@ def _():
 
 @app.function
 def make_word_pool(lang_data: dict[str, Any]) -> list[str]:
-    pool = lang_data.get("word_pool")
-    if pool is not None:
-        return pool
-
-    words = lang_data.get("primary", "").split()
+    # We now construct the pool from `text` and `distractors`
+    words = lang_data.get("text", "").split()
     for accepted in lang_data.get("accepted", []):
         words.extend(accepted.split())
-    words.extend(lang_data.get("distraction_pool", []))
-    return list(dict.fromkeys(words))
+    words.extend(lang_data.get("distractors", []))
+
+    # Strip basic punctuation when deduplicating to avoid duplicates like "word" and "word,"
+    import re
+
+    cleaned_pool = []
+    seen = set()
+    for w in words:
+        clean_w = re.sub(r'[.,\/#!$%\^&\*;:{}=\-_`~()?"\']', "", w).lower()
+        if clean_w not in seen:
+            seen.add(clean_w)
+            cleaned_pool.append(w)
+
+    return cleaned_pool
 
 
 @app.function
@@ -1432,19 +1466,15 @@ def normalize_tags(raw_tags: Any) -> list[str]:
 @app.function
 def extract_translation_fields(lang_data: dict[str, Any]) -> dict[str, Any]:
     """Normalizes translation fields across schema versions."""
-    primary = lang_data.get("primary", "")
-    prompt = lang_data.get("prompt", primary)
-    answer = lang_data.get("answer", primary)
+    text = lang_data.get("text", "")
     hint = lang_data.get("hint")
 
-    if not isinstance(prompt, str):
-        prompt = str(prompt) if prompt is not None else ""
-    if not isinstance(answer, str):
-        answer = str(answer) if answer is not None else ""
+    if not isinstance(text, str):
+        text = str(text) if text is not None else ""
     if not isinstance(hint, str) or not hint.strip():
         hint = None
 
-    return {"prompt": prompt, "answer": answer, "hint": hint}
+    return {"text": text, "hint": hint}
 
 
 @app.function
@@ -1489,17 +1519,17 @@ def transform_to_canonical(
                     "language_1": language_1,
                     "language_2": language_2,
                     # Keep both sides aligned for cloze so direction does not drop rows.
-                    "prompt_l1": practice_fields["prompt"],
-                    "prompt_l2": practice_fields["prompt"],
-                    "text_l1": practice_fields["answer"],
-                    "text_l2": practice_fields["answer"],
+                    "prompt_l1": practice_fields["text"],
+                    "prompt_l2": practice_fields["text"],
+                    "text_l1": practice_fields["text"],
+                    "text_l2": practice_fields["text"],
                     "hint_l1": extract_translation_fields(
                         translations.get(language_1, {})
-                    ).get("prompt")
+                    ).get("text")
                     or practice_fields["hint"],
                     "hint_l2": extract_translation_fields(
                         translations.get(language_1, {})
-                    ).get("prompt")
+                    ).get("text")
                     or practice_fields["hint"],
                     "accepted_l1": practice_data.get("accepted", []),
                     "accepted_l2": practice_data.get("accepted", []),
@@ -1530,10 +1560,10 @@ def transform_to_canonical(
                 "tags": tags,
                 "language_1": language_1,
                 "language_2": language_2,
-                "prompt_l1": lang_1_fields["prompt"],
-                "prompt_l2": lang_2_fields["prompt"],
-                "text_l1": lang_1_fields["answer"],
-                "text_l2": lang_2_fields["answer"],
+                "prompt_l1": lang_1_fields["text"],
+                "prompt_l2": lang_2_fields["text"],
+                "text_l1": lang_1_fields["text"],
+                "text_l2": lang_2_fields["text"],
                 "hint_l1": lang_1_fields["hint"],
                 "hint_l2": lang_2_fields["hint"],
                 "accepted_l1": lang_1_data.get("accepted", []),

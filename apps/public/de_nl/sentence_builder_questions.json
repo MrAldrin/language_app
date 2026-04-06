@@ -11,48 +11,35 @@
         "accepted": [
           "Ich bin heute richtig froh"
         ],
-        "word_pool": [
-          "bin",
+        "text": "Ich bin heute sehr glücklich",
+        "distractors": [
           "böse",
           "er",
           "froh",
-          "glücklich",
-          "heute",
-          "ich",
           "Morgen",
           "richtig",
-          "sehr",
           "traurig",
           "war",
           "wir"
-        ],
-        "prompt": "Ich bin heute sehr glücklich",
-        "answer": "Ich bin heute sehr glücklich"
+        ]
       },
       "nl": {
         "accepted": [
           "Ik ben zeer gelukkig vandaag"
         ],
-        "word_pool": [
-          "ben",
-          "blij",
-          "erg",
+        "text": "Ik ben erg blij vandaag",
+        "distractors": [
           "gelukkig",
           "hij",
-          "ik",
           "is",
           "morgen",
-          "vandaag",
           "verdrietig",
           "was",
           "ze",
           "zeer"
-        ],
-        "prompt": "Ik ben erg blij vandaag",
-        "answer": "Ik ben erg blij vandaag"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -70,49 +57,34 @@
         "accepted": [
           "Sie liest gerade ein sehr gutes Buch"
         ],
-        "word_pool": [
-          "Buch",
+        "text": "Sie liest ein sehr gutes Buch",
+        "distractors": [
           "Bücher",
-          "ein",
           "er",
           "gerade",
-          "gutes",
           "las",
-          "liest",
           "schlecht",
-          "sehr",
-          "sie",
           "wir",
           "Zeitung"
-        ],
-        "prompt": "Sie liest ein sehr gutes Buch",
-        "answer": "Sie liest ein sehr gutes Buch"
+        ]
       },
       "nl": {
         "accepted": [
           "Zij leest een erg goed boek"
         ],
-        "word_pool": [
-          "boek",
+        "text": "Ze leest een heel goed boek",
+        "distractors": [
           "boeken",
-          "een",
           "erg",
-          "goed",
-          "heel",
           "hij",
           "krant",
-          "leest",
           "lezen",
           "slecht",
           "we",
-          "ze",
           "zij"
-        ],
-        "prompt": "Ze leest een heel goed boek",
-        "answer": "Ze leest een heel goed boek"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -130,46 +102,34 @@
         "accepted": [
           "Wir essen jetzt Abendessen"
         ],
-        "word_pool": [
-          "Abend",
+        "text": "Wir essen jetzt zu Abend",
+        "distractors": [
           "Abendessen",
           "aßen",
-          "Essen",
           "Frühstück",
           "immer",
-          "jetzt",
           "Mittagessen",
           "Morgen",
-          "sie",
-          "wir",
-          "zu"
-        ],
-        "prompt": "Wir essen jetzt zu Abend",
-        "answer": "Wir essen jetzt zu Abend"
+          "sie"
+        ]
       },
       "nl": {
         "accepted": [
           "Wij eten nu het avondeten"
         ],
-        "word_pool": [
+        "text": "We eten nu avondeten",
+        "distractors": [
           "altijd",
           "aten",
-          "avondeten",
-          "eten",
           "het",
           "lunch",
           "morgen",
-          "nu",
           "ontbijt",
-          "we",
           "wij",
           "ze"
-        ],
-        "prompt": "We eten nu avondeten",
-        "answer": "We eten nu avondeten"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -187,49 +147,35 @@
         "accepted": [
           "Sie laufen zum neuen Geschäft"
         ],
-        "word_pool": [
+        "text": "Sie gehen zum neuen Laden",
+        "distractors": [
           "alt",
           "Auto",
           "er",
           "fuhren",
-          "gehen",
           "Geschäft",
-          "Laden",
           "laufen",
-          "neuen",
-          "sie",
           "Supermarkt",
-          "wir",
-          "zum"
-        ],
-        "prompt": "Sie gehen zum neuen Laden",
-        "answer": "Sie gehen zum neuen Laden"
+          "wir"
+        ]
       },
       "nl": {
         "accepted": [
           "Zij wandelen naar de nieuwe winkel"
         ],
-        "word_pool": [
+        "text": "Ze lopen naar de nieuwe winkel",
+        "distractors": [
           "auto",
-          "de",
           "hij",
-          "lopen",
-          "naar",
-          "nieuwe",
           "oud",
           "renden",
           "supermarkt",
           "wandelen",
           "we",
-          "winkel",
-          "ze",
           "zij"
-        ],
-        "prompt": "Ze lopen naar de nieuwe winkel",
-        "answer": "Ze lopen naar de nieuwe winkel"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -245,44 +191,29 @@
     "translations": {
       "de": {
         "accepted": [],
-        "word_pool": [
-          "braun",
-          "der",
-          "groß",
-          "Hund",
+        "text": "Der Hund ist groß und braun",
+        "distractors": [
           "Hunde",
-          "ist",
           "Katze",
           "klein",
           "nicht",
           "schwarz",
-          "und",
           "war"
-        ],
-        "prompt": "Der Hund ist groß und braun",
-        "answer": "Der Hund ist groß und braun"
+        ]
       },
       "nl": {
         "accepted": [],
-        "word_pool": [
-          "bruin",
-          "de",
-          "en",
-          "groot",
-          "hond",
-          "is",
+        "text": "De hond is groot en bruin",
+        "distractors": [
           "kat",
           "katten",
           "klein",
           "niet",
           "was",
           "zwart"
-        ],
-        "prompt": "De hond is groot en bruin",
-        "answer": "De hond is groot en bruin"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -298,45 +229,29 @@
     "translations": {
       "de": {
         "accepted": [],
-        "word_pool": [
-          "den",
-          "die",
-          "ganzen",
+        "text": "Die kleine Katze schläft den ganzen Tag",
+        "distractors": [
           "groß",
           "Hund",
-          "Katze",
-          "kleine",
           "Nacht",
           "schlief",
-          "schläft",
           "sie",
-          "Tag",
           "wacht"
-        ],
-        "prompt": "Die kleine Katze schläft den ganzen Tag",
-        "answer": "Die kleine Katze schläft den ganzen Tag"
+        ]
       },
       "nl": {
         "accepted": [],
-        "word_pool": [
-          "dag",
-          "de",
+        "text": "De kleine kat slaapt de hele dag",
+        "distractors": [
           "groot",
-          "hele",
           "hond",
-          "kat",
-          "kleine",
           "nacht",
-          "slaapt",
           "sliep",
           "wordt wakker",
           "ze"
-        ],
-        "prompt": "De kleine kat slaapt de hele dag",
-        "answer": "De kleine kat slaapt de hele dag"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -353,48 +268,33 @@
         "accepted": [
           "Ich besitze ein schnelles rotes Auto"
         ],
-        "word_pool": [
-          "Auto",
+        "text": "Ich habe ein schnelles rotes Auto",
+        "distractors": [
           "besitze",
           "blau",
           "Bus",
-          "ein",
           "er",
-          "habe",
           "hatte",
-          "ich",
           "langsam",
-          "rotes",
-          "schnelles",
           "wir"
-        ],
-        "prompt": "Ich habe ein schnelles rotes Auto",
-        "answer": "Ich habe ein schnelles rotes Auto"
+        ]
       },
       "nl": {
         "accepted": [
           "Ik bezit een snelle rode auto"
         ],
-        "word_pool": [
-          "auto",
+        "text": "Ik heb een snelle rode auto",
+        "distractors": [
           "bezit",
           "blauw",
           "bus",
-          "een",
           "had",
-          "heb",
           "hij",
-          "ik",
           "langzaam",
-          "rode",
-          "snelle",
           "we"
-        ],
-        "prompt": "Ik heb een snelle rode auto",
-        "answer": "Ik heb een snelle rode auto"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -412,48 +312,33 @@
         "accepted": [
           "Er ist in einem großen Büro beschäftigt"
         ],
-        "word_pool": [
-          "arbeitet",
+        "text": "Er arbeitet in einem großen Büro",
+        "distractors": [
           "arbeitete",
           "beschäftigt",
-          "Büro",
           "draußen",
-          "einem",
-          "er",
           "Fabrik",
-          "großen",
-          "in",
           "ist",
           "klein",
           "sie",
           "wir"
-        ],
-        "prompt": "Er arbeitet in einem großen Büro",
-        "answer": "Er arbeitet in einem großen Büro"
+        ]
       },
       "nl": {
         "accepted": [
           "Hij werkt op een groot kantoor"
         ],
-        "word_pool": [
+        "text": "Hij werkt in een groot kantoor",
+        "distractors": [
           "buiten",
-          "een",
           "fabriek",
-          "groot",
-          "hij",
-          "in",
-          "kantoor",
           "klein",
           "op",
-          "werkt",
           "werkte",
           "ze"
-        ],
-        "prompt": "Hij werkt in een groot kantoor",
-        "answer": "Hij werkt in een groot kantoor"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -471,47 +356,34 @@
         "accepted": [
           "Sie sprechen sehr gut Deutsch"
         ],
-        "word_pool": [
-          "Deutsch",
-          "du",
+        "text": "Du sprichst sehr gut Deutsch",
+        "distractors": [
           "Englisch",
           "er",
-          "gut",
           "ich",
           "schlecht",
-          "sehr",
           "sie",
           "sprach",
           "sprechen",
-          "sprichst",
           "verstehst"
-        ],
-        "prompt": "Du sprichst sehr gut Deutsch",
-        "answer": "Du sprichst sehr gut Deutsch"
+        ]
       },
       "nl": {
         "accepted": [
           "U spreekt heel goed Duits"
         ],
-        "word_pool": [
+        "text": "Je spreekt heel goed Duits",
+        "distractors": [
           "begrijp",
-          "Duits",
           "Engels",
-          "goed",
-          "heel",
           "hij",
           "ik",
-          "je",
           "slecht",
           "sprak",
-          "spreekt",
           "u"
-        ],
-        "prompt": "Je spreekt heel goed Duits",
-        "answer": "Je spreekt heel goed Duits"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -529,50 +401,35 @@
         "accepted": [
           "Das Wetter ist heute sehr schön"
         ],
-        "word_pool": [
-          "das",
+        "text": "Das Wetter ist heute wirklich schön",
+        "distractors": [
           "gestern",
-          "heute",
-          "ist",
           "kalt",
           "Regen",
           "schlecht",
-          "schön",
           "sehr",
           "war",
-          "Wetter",
-          "wird",
-          "wirklich"
-        ],
-        "prompt": "Das Wetter ist heute wirklich schön",
-        "answer": "Das Wetter ist heute wirklich schön"
+          "wird"
+        ]
       },
       "nl": {
         "accepted": [
           "Het weer is heel erg mooi vandaag"
         ],
-        "word_pool": [
-          "echt",
+        "text": "Het weer is echt prachtig vandaag",
+        "distractors": [
           "erg",
           "gisteren",
           "heel",
-          "het",
-          "is",
           "koud",
           "mooi",
-          "prachtig",
           "regen",
           "slecht",
-          "vandaag",
           "was",
-          "weer",
           "zal"
-        ],
-        "prompt": "Het weer is echt prachtig vandaag",
-        "answer": "Het weer is echt prachtig vandaag"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -590,48 +447,33 @@
         "accepted": [
           "Mein kleiner Bruder ist sehr groß"
         ],
-        "word_pool": [
+        "text": "Mein junger Bruder ist sehr groß",
+        "distractors": [
           "alt",
-          "Bruder",
           "dein",
-          "groß",
-          "ist",
-          "junger",
           "kleiner",
           "kurz",
-          "mein",
           "Schwester",
-          "sehr",
           "sie",
           "war"
-        ],
-        "prompt": "Mein junger Bruder ist sehr groß",
-        "answer": "Mein junger Bruder ist sehr groß"
+        ]
       },
       "nl": {
         "accepted": [
           "Mijn broertje is erg lang"
         ],
-        "word_pool": [
-          "broer",
+        "text": "Mijn jonge broer is erg lang",
+        "distractors": [
           "broertje",
-          "erg",
-          "is",
-          "jonge",
           "jouw",
           "kort",
-          "lang",
-          "mijn",
           "oud",
           "was",
           "ze",
           "zus"
-        ],
-        "prompt": "Mijn jonge broer is erg lang",
-        "answer": "Mijn jonge broer is erg lang"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -649,48 +491,33 @@
         "accepted": [
           "Wir möchten ein neues Haus kaufen"
         ],
-        "word_pool": [
+        "text": "Wir wollen ein neues Haus kaufen",
+        "distractors": [
           "alt",
           "Auto",
-          "ein",
-          "Haus",
-          "kaufen",
           "möchten",
-          "neues",
           "sie",
           "verkaufen",
-          "wir",
           "Wohnung",
-          "wollen",
           "wollten"
-        ],
-        "prompt": "Wir wollen ein neues Haus kaufen",
-        "answer": "Wir wollen ein neues Haus kaufen"
+        ]
       },
       "nl": {
         "accepted": [
           "Wij willen een nieuw huis kopen"
         ],
-        "word_pool": [
+        "text": "We willen een nieuw huis kopen",
+        "distractors": [
           "appartement",
           "auto",
-          "een",
-          "huis",
-          "kopen",
-          "nieuw",
           "oud",
           "verkopen",
-          "we",
           "wij",
           "wilden",
-          "willen",
           "ze"
-        ],
-        "prompt": "We willen een nieuw huis kopen",
-        "answer": "We willen een nieuw huis kopen"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -707,53 +534,40 @@
         "accepted": [
           "Ich mag es schwarzen Kaffee zu trinken"
         ],
-        "word_pool": [
+        "text": "Ich trinke gerne schwarzen Kaffee",
+        "distractors": [
           "aß",
           "er",
           "es",
-          "gerne",
           "hasse",
-          "ich",
-          "Kaffee",
           "mag",
-          "schwarzen",
           "Tee",
-          "trinke",
           "trinken",
           "Wasser",
           "weiß",
           "zu"
-        ],
-        "prompt": "Ich trinke gerne schwarzen Kaffee",
-        "answer": "Ich trinke gerne schwarzen Kaffee"
+        ]
       },
       "nl": {
         "accepted": [
           "Ik hou ervan om zwarte koffie te drinken"
         ],
-        "word_pool": [
+        "text": "Ik drink graag zwarte koffie",
+        "distractors": [
           "at",
-          "drink",
           "drinken",
           "ervan",
-          "graag",
           "haat",
           "hij",
           "hou",
-          "ik",
-          "koffie",
           "om",
           "te",
           "thee",
           "water",
-          "wit",
-          "zwarte"
-        ],
-        "prompt": "Ik drink graag zwarte koffie",
-        "answer": "Ik drink graag zwarte koffie"
+          "wit"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -771,46 +585,33 @@
         "accepted": [
           "Oft reisen sie nach Spanien"
         ],
-        "word_pool": [
+        "text": "Sie reisen oft nach Spanien",
+        "distractors": [
           "Auto",
           "Deutschland",
           "flogen",
           "fuhren",
-          "nach",
           "nie",
-          "oft",
-          "reisen",
-          "sie",
-          "Spanien",
           "wir"
-        ],
-        "prompt": "Sie reisen oft nach Spanien",
-        "answer": "Sie reisen oft nach Spanien"
+        ]
       },
       "nl": {
         "accepted": [
           "Zij reizen dikwijls naar Spanje"
         ],
-        "word_pool": [
+        "text": "Ze reizen vaak naar Spanje",
+        "distractors": [
           "auto",
           "dikwijls",
           "Duitsland",
-          "naar",
           "nooit",
           "reden",
-          "reizen",
-          "Spanje",
-          "vaak",
           "vlogen",
           "we",
-          "ze",
           "zij"
-        ],
-        "prompt": "Ze reizen vaak naar Spanje",
-        "answer": "Ze reizen vaak naar Spanje"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -828,50 +629,35 @@
         "accepted": [
           "Die Mahlzeit ist kalt und schlecht"
         ],
-        "word_pool": [
-          "das",
+        "text": "Das Essen ist kalt und schlecht",
+        "distractors": [
           "die",
           "er",
-          "Essen",
           "gut",
           "heiß",
-          "ist",
-          "kalt",
           "Mahlzeit",
-          "schlecht",
-          "und",
           "war",
           "Wasser",
           "wir"
-        ],
-        "prompt": "Das Essen ist kalt und schlecht",
-        "answer": "Das Essen ist kalt und schlecht"
+        ]
       },
       "nl": {
         "accepted": [
           "De maaltijd is koud en slecht"
         ],
-        "word_pool": [
+        "text": "Het eten is koud en slecht",
+        "distractors": [
           "de",
-          "en",
-          "eten",
           "goed",
-          "het",
           "hij",
-          "is",
-          "koud",
           "maaltijd",
-          "slecht",
           "warm",
           "was",
           "water",
           "we"
-        ],
-        "prompt": "Het eten is koud en slecht",
-        "answer": "Het eten is koud en slecht"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -890,48 +676,33 @@
         "accepted": [
           "Der Schnellzug fährt jetzt ab"
         ],
-        "word_pool": [
-          "ab",
+        "text": "Der schnelle Zug fährt jetzt ab",
+        "distractors": [
           "Auto",
           "Bus",
-          "der",
-          "fährt",
-          "jetzt",
           "kommt",
           "langsam",
-          "schnelle",
           "Schnellzug",
           "später",
-          "wir",
-          "Zug"
-        ],
-        "prompt": "Der schnelle Zug fährt jetzt ab",
-        "answer": "Der schnelle Zug fährt jetzt ab"
+          "wir"
+        ]
       },
       "nl": {
         "accepted": [
           "De sneltrein vertrekt nu"
         ],
-        "word_pool": [
+        "text": "De snelle trein vertrekt nu meteen",
+        "distractors": [
           "auto",
           "bus",
-          "de",
           "komt",
           "langzaam",
           "later",
-          "meteen",
-          "nu",
-          "snelle",
           "sneltrein",
-          "trein",
-          "vertrekt",
           "we"
-        ],
-        "prompt": "De snelle trein vertrekt nu meteen",
-        "answer": "De snelle trein vertrekt nu meteen"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -947,30 +718,23 @@
     "translations": {
       "de": {
         "accepted": [],
-        "word_pool": [
-          "Abend",
-          "Fußball",
-          "jeden",
+        "text": "Wir spielen jeden Abend Fußball",
+        "distractors": [
           "Morgen",
           "nie",
           "sehen",
           "sie",
-          "spielen",
           "spielten",
-          "Tennis",
-          "wir"
-        ],
-        "prompt": "Wir spielen jeden Abend Fußball",
-        "answer": "Wir spielen jeden Abend Fußball"
+          "Tennis"
+        ]
       },
       "nl": {
         "accepted": [
           "Wij spelen elke avonds voetbal"
         ],
-        "word_pool": [
-          "avond",
+        "text": "We voetballen elke avond",
+        "distractors": [
           "avonds",
-          "elke",
           "kijken",
           "nooit",
           "ochtend",
@@ -978,16 +742,11 @@
           "spelen",
           "tennis",
           "voetbal",
-          "voetballen",
-          "we",
           "wij",
           "ze"
-        ],
-        "prompt": "We voetballen elke avond",
-        "answer": "We voetballen elke avond"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -1003,47 +762,32 @@
     "translations": {
       "de": {
         "accepted": [],
-        "word_pool": [
-          "Brief",
+        "text": "Sie schrieb gestern einen langen Brief",
+        "distractors": [
           "Buch",
-          "einen",
           "er",
-          "gestern",
           "kurz",
-          "langen",
           "las",
           "Morgen",
-          "schreibt",
-          "schrieb",
-          "sie"
-        ],
-        "prompt": "Sie schrieb gestern einen langen Brief",
-        "answer": "Sie schrieb gestern einen langen Brief"
+          "schreibt"
+        ]
       },
       "nl": {
         "accepted": [
           "Zij schreef gisteren een lange brief"
         ],
-        "word_pool": [
+        "text": "Ze schreef gisteren een lange brief",
+        "distractors": [
           "boek",
-          "brief",
-          "een",
-          "gisteren",
           "hij",
           "kort",
-          "lange",
           "lezen",
           "morgen",
-          "schreef",
           "schrijft",
-          "ze",
           "zij"
-        ],
-        "prompt": "Ze schreef gisteren een lange brief",
-        "answer": "Ze schreef gisteren een lange brief"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -1059,42 +803,29 @@
     "translations": {
       "de": {
         "accepted": [],
-        "word_pool": [
+        "text": "Er war gestern sehr müde",
+        "distractors": [
           "böse",
-          "er",
-          "gestern",
           "ist",
           "Morgen",
-          "müde",
-          "sehr",
           "sie",
           "wach",
-          "war",
           "wir"
-        ],
-        "prompt": "Er war gestern sehr müde",
-        "answer": "Er war gestern sehr müde"
+        ]
       },
       "nl": {
         "accepted": [],
-        "word_pool": [
+        "text": "Hij was gisteren erg moe",
+        "distractors": [
           "boos",
-          "erg",
-          "gisteren",
-          "hij",
           "is",
-          "moe",
           "morgen",
           "wakker",
-          "was",
           "we",
           "ze"
-        ],
-        "prompt": "Hij was gisteren erg moe",
-        "answer": "Hij was gisteren erg moe"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -1112,47 +843,34 @@
         "accepted": [
           "Ich verstehe Sie überhaupt nicht"
         ],
-        "word_pool": [
+        "text": "Ich verstehe dich überhaupt nicht",
+        "distractors": [
           "alles",
-          "dich",
           "er",
           "höre",
-          "ich",
           "ihn",
-          "nicht",
           "sie",
           "verstand",
-          "verstehe",
-          "weiß",
-          "überhaupt"
-        ],
-        "prompt": "Ich verstehe dich überhaupt nicht",
-        "answer": "Ich verstehe dich überhaupt nicht"
+          "weiß"
+        ]
       },
       "nl": {
         "accepted": [
           "Ik snap u helemaal niet"
         ],
-        "word_pool": [
+        "text": "Ik begrijp je helemaal niet",
+        "distractors": [
           "alles",
           "begreep",
-          "begrijp",
-          "helemaal",
           "hem",
           "hij",
           "horen",
-          "ik",
-          "je",
-          "niet",
           "snap",
           "u",
           "weten"
-        ],
-        "prompt": "Ik begrijp je helemaal niet",
-        "answer": "Ik begrijp je helemaal niet"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -1170,48 +888,33 @@
         "accepted": [
           "Der Lehrer besitzt einen blauen Stift"
         ],
-        "word_pool": [
+        "text": "Der Lehrer hat einen blauen Stift",
+        "distractors": [
           "besitzt",
-          "blauen",
           "Bleistift",
-          "der",
-          "einen",
           "er",
-          "hat",
           "hatte",
-          "Lehrer",
           "rot",
           "Schüler",
-          "Stift",
           "wir"
-        ],
-        "prompt": "Der Lehrer hat einen blauen Stift",
-        "answer": "Der Lehrer hat einen blauen Stift"
+        ]
       },
       "nl": {
         "accepted": [
           "De docent heeft een blauwe pen"
         ],
-        "word_pool": [
-          "blauwe",
-          "de",
+        "text": "De leraar heeft een blauwe pen",
+        "distractors": [
           "docent",
-          "een",
           "had",
-          "heeft",
           "hij",
-          "leraar",
-          "pen",
           "potlood",
           "rood",
           "student",
           "we"
-        ],
-        "prompt": "De leraar heeft een blauwe pen",
-        "answer": "De leraar heeft een blauwe pen"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -1229,46 +932,34 @@
         "accepted": [
           "Sie hören gerade laute Musik"
         ],
-        "word_pool": [
+        "text": "Sie hören laute Musik",
+        "distractors": [
           "er",
           "gerade",
-          "hören",
           "hörten",
-          "laute",
           "leise",
-          "Musik",
           "Radio",
-          "sie",
           "spielen",
           "wir"
-        ],
-        "prompt": "Sie hören laute Musik",
-        "answer": "Sie hören laute Musik"
+        ]
       },
       "nl": {
         "accepted": [
           "Zij luisteren naar luide muziek"
         ],
-        "word_pool": [
-          "harde",
+        "text": "Ze luisteren naar harde muziek",
+        "distractors": [
           "hij",
           "luide",
           "luisterden",
-          "luisteren",
-          "muziek",
-          "naar",
           "radio",
           "spelen",
           "we",
           "zacht",
-          "ze",
           "zij"
-        ],
-        "prompt": "Ze luisteren naar harde muziek",
-        "answer": "Ze luisteren naar harde muziek"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -1286,47 +977,34 @@
         "accepted": [
           "Sie hat ein gelbes Kleid an"
         ],
-        "word_pool": [
+        "text": "Sie trägt ein gelbes Kleid",
+        "distractors": [
           "an",
-          "ein",
           "er",
-          "gelbes",
           "grün",
           "hat",
           "hemd",
-          "Kleid",
           "Schuhe",
-          "sie",
-          "trug",
-          "trägt"
-        ],
-        "prompt": "Sie trägt ein gelbes Kleid",
-        "answer": "Sie trägt ein gelbes Kleid"
+          "trug"
+        ]
       },
       "nl": {
         "accepted": [
           "Zij heeft een gele jurk aan"
         ],
-        "word_pool": [
+        "text": "Ze draagt een gele jurk",
+        "distractors": [
           "aan",
-          "draagt",
           "droeg",
-          "een",
-          "gele",
           "groen",
           "heeft",
           "hij",
-          "jurk",
           "overhemd",
           "schoenen",
-          "ze",
           "zij"
-        ],
-        "prompt": "Ze draagt een gele jurk",
-        "answer": "Ze draagt een gele jurk"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -1344,50 +1022,34 @@
         "accepted": [
           "Nächste Woche fliege ich nach London"
         ],
-        "word_pool": [
+        "text": "Ich werde nächste Woche nach London fliegen",
+        "distractors": [
           "fahren",
           "fliege",
-          "fliegen",
           "flog",
-          "ich",
-          "London",
           "Monat",
-          "nach",
-          "nächste",
           "parijs",
           "sie",
-          "werde",
-          "wir",
-          "Woche"
-        ],
-        "prompt": "Ich werde nächste Woche nach London fliegen",
-        "answer": "Ich werde nächste Woche nach London fliegen"
+          "wir"
+        ]
       },
       "nl": {
         "accepted": [
           "Ik zal volgende week naar Londen vliegen"
         ],
-        "word_pool": [
-          "ik",
-          "Londen",
+        "text": "Ik vlieg volgende week naar Londen",
+        "distractors": [
           "maand",
-          "naar",
           "Parijs",
           "rijden",
-          "vlieg",
           "vliegen",
           "vloog",
-          "volgende",
           "we",
-          "week",
           "zal",
           "ze"
-        ],
-        "prompt": "Ik vlieg volgende week naar Londen",
-        "answer": "Ik vlieg volgende week naar Londen"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -1402,44 +1064,29 @@
     "translations": {
       "de": {
         "accepted": [],
-        "word_pool": [
-          "alt",
-          "Baum",
+        "text": "Der hohe Baum ist sehr alt",
+        "distractors": [
           "Blume",
-          "der",
           "er",
-          "hohe",
-          "ist",
           "jung",
           "kurz",
-          "sehr",
           "war",
           "wir"
-        ],
-        "prompt": "Der hohe Baum ist sehr alt",
-        "answer": "Der hohe Baum ist sehr alt"
+        ]
       },
       "nl": {
         "accepted": [],
-        "word_pool": [
+        "text": "De hoge boom is heel oud",
+        "distractors": [
           "bloem",
-          "boom",
-          "de",
-          "heel",
           "hij",
-          "hoge",
-          "is",
           "jong",
           "kort",
-          "oud",
           "was",
           "we"
-        ],
-        "prompt": "De hoge boom is heel oud",
-        "answer": "De hoge boom is heel oud"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -1457,45 +1104,30 @@
         "accepted": [
           "Die Großstadt ist immer belebt"
         ],
-        "word_pool": [
-          "belebt",
-          "die",
+        "text": "Die große Stadt ist immer belebt",
+        "distractors": [
           "dorf",
-          "große",
           "Großstadt",
-          "immer",
-          "ist",
           "klein",
           "nie",
           "ruhig",
-          "Stadt",
           "war",
           "wir"
-        ],
-        "prompt": "Die große Stadt ist immer belebt",
-        "answer": "Die große Stadt ist immer belebt"
+        ]
       },
       "nl": {
         "accepted": [],
-        "word_pool": [
-          "altijd",
-          "de",
+        "text": "De grote stad is altijd druk",
+        "distractors": [
           "dorp",
-          "druk",
-          "grote",
-          "is",
           "klein",
           "nooit",
           "rustig",
-          "stad",
           "was",
           "we"
-        ],
-        "prompt": "De grote stad is altijd druk",
-        "answer": "De grote stad is altijd druk"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -1513,44 +1145,31 @@
         "accepted": [
           "Sie macht einen leckeren Kuchen"
         ],
-        "word_pool": [
-          "backt",
+        "text": "Sie backt einen leckeren Kuchen",
+        "distractors": [
           "Brot",
-          "einen",
           "er",
           "ißt",
-          "Kuchen",
-          "leckeren",
           "macht",
           "schlecht",
-          "sie",
           "war"
-        ],
-        "prompt": "Sie backt einen leckeren Kuchen",
-        "answer": "Sie backt einen leckeren Kuchen"
+        ]
       },
       "nl": {
         "accepted": [
           "Ze bakt een heerlijke taart"
         ],
-        "word_pool": [
+        "text": "Ze maakt een heerlijke taart",
+        "distractors": [
           "bakt",
           "brood",
-          "een",
           "eten",
-          "heerlijke",
           "hij",
-          "maakt",
           "slecht",
-          "taart",
-          "was",
-          "ze"
-        ],
-        "prompt": "Ze maakt een heerlijke taart",
-        "answer": "Ze maakt een heerlijke taart"
+          "was"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -1567,42 +1186,29 @@
         "accepted": [
           "Ich sehe euch"
         ],
-        "word_pool": [
+        "text": "Ich sehe dich und ihn",
+        "distractors": [
           "alle",
-          "dich",
           "euch",
-          "ich",
-          "ihn",
           "ihnen",
           "nicht",
           "sah",
-          "sehe",
           "sie",
-          "und",
           "wir"
-        ],
-        "prompt": "Ich sehe dich und ihn",
-        "answer": "Ich sehe dich und ihn"
+        ]
       },
       "nl": {
         "accepted": [],
-        "word_pool": [
-          "en",
+        "text": "Ik zie jou en hem",
+        "distractors": [
           "haar",
-          "hem",
           "hen",
-          "ik",
-          "jou",
           "we",
           "zag",
-          "ze",
-          "zie"
-        ],
-        "prompt": "Ik zie jou en hem",
-        "answer": "Ik zie jou en hem"
+          "ze"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -1620,49 +1226,32 @@
         "accepted": [
           "Wir besuchen morgen meine Eltern"
         ],
-        "word_pool": [
-          "besuchen",
+        "text": "Wir werden morgen meine Eltern besuchen",
+        "distractors": [
           "besuchten",
-          "Eltern",
           "Freunde",
           "gestern",
           "Haus",
-          "meine",
-          "Morgen",
-          "sie",
-          "werden",
-          "wir"
-        ],
-        "prompt": "Wir werden morgen meine Eltern besuchen",
-        "answer": "Wir werden morgen meine Eltern besuchen"
+          "sie"
+        ]
       },
       "nl": {
         "accepted": [
           "Wij zullen morgen mijn ouders bezoeken"
         ],
-        "word_pool": [
+        "text": "We gaan morgen bij mijn ouders op bezoek",
+        "distractors": [
           "bezochten",
-          "bezoek",
           "bezoeken",
-          "bij",
-          "gaan",
           "gisteren",
           "huis",
-          "mijn",
-          "morgen",
-          "op",
-          "ouders",
           "vrienden",
-          "we",
           "wij",
           "ze",
           "zullen"
-        ],
-        "prompt": "We gaan morgen bij mijn ouders op bezoek",
-        "answer": "We gaan morgen bij mijn ouders op bezoek"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -1678,48 +1267,33 @@
     "translations": {
       "de": {
         "accepted": [],
-        "word_pool": [
-          "bist",
-          "du",
+        "text": "Warum bist du heute so traurig",
+        "distractors": [
           "er",
           "glücklich",
-          "heute",
           "ist",
           "Morgen",
-          "so",
-          "traurig",
           "war",
-          "warum",
           "wir"
-        ],
-        "prompt": "Warum bist du heute so traurig",
-        "answer": "Warum bist du heute so traurig"
+        ]
       },
       "nl": {
         "accepted": [
           "Waarom bent u vandaag zo verdrietig"
         ],
-        "word_pool": [
-          "ben",
+        "text": "Waarom ben je vandaag zo verdrietig",
+        "distractors": [
           "bent",
           "blij",
           "hij",
           "is",
-          "je",
           "morgen",
           "u",
-          "vandaag",
-          "verdrietig",
-          "waarom",
           "was",
-          "we",
-          "zo"
-        ],
-        "prompt": "Waarom ben je vandaag zo verdrietig",
-        "answer": "Waarom ben je vandaag zo verdrietig"
+          "we"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -1737,47 +1311,36 @@
         "accepted": [
           "Er braucht mehr Schlaf"
         ],
-        "word_pool": [
+        "text": "Er muss mehr schlafen",
+        "distractors": [
           "arbeiten",
           "braucht",
-          "er",
           "Essen",
-          "mehr",
-          "muss",
           "musste",
           "Schlaf",
-          "schlafen",
           "sie",
           "weniger",
           "will"
-        ],
-        "prompt": "Er muss mehr schlafen",
-        "answer": "Er muss mehr schlafen"
+        ]
       },
       "nl": {
         "accepted": [
           "Hij heeft meer slaap nodig"
         ],
-        "word_pool": [
+        "text": "Hij moet meer slapen",
+        "distractors": [
           "eten",
           "heeft",
-          "hij",
-          "meer",
           "minder",
           "moest",
-          "moet",
           "nodig",
           "slaap",
-          "slapen",
           "werken",
           "wil",
           "ze"
-        ],
-        "prompt": "Hij moet meer slapen",
-        "answer": "Hij moet meer slapen"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -1793,44 +1356,28 @@
     "translations": {
       "de": {
         "accepted": [],
-        "word_pool": [
+        "text": "Ich habe meine Schlüssel zu Hause vergessen",
+        "distractors": [
           "Brieftasche",
           "Büro",
           "erinnert",
           "fand",
-          "habe",
-          "Hause",
-          "ich",
           "mein",
-          "meine",
-          "Schlüssel",
-          "sie",
-          "vergessen",
-          "zu"
-        ],
-        "prompt": "Ich habe meine Schlüssel zu Hause vergessen",
-        "answer": "Ich habe meine Schlüssel zu Hause vergessen"
+          "sie"
+        ]
       },
       "nl": {
         "accepted": [],
-        "word_pool": [
-          "ben",
-          "ik",
+        "text": "Ik ben mijn sleutels thuis vergeten",
+        "distractors": [
           "kantoor",
-          "mijn",
           "onthouden",
           "portemonnee",
-          "sleutels",
-          "thuis",
-          "vergeten",
           "vond",
           "ze"
-        ],
-        "prompt": "Ik ben mijn sleutels thuis vergeten",
-        "answer": "Ik ben mijn sleutels thuis vergeten"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -1848,40 +1395,29 @@
         "accepted": [
           "Es regnet draußen"
         ],
-        "word_pool": [
-          "draußen",
+        "text": "Draußen regnet es gerade",
+        "distractors": [
           "drinnen",
-          "es",
-          "gerade",
           "gestern",
           "ist",
-          "regnet",
           "schneit",
           "Sonne",
           "war"
-        ],
-        "prompt": "Draußen regnet es gerade",
-        "answer": "Draußen regnet es gerade"
+        ]
       },
       "nl": {
         "accepted": [],
-        "word_pool": [
+        "text": "Het regent nu buiten",
+        "distractors": [
           "binnen",
-          "buiten",
           "gisteren",
-          "het",
           "is",
-          "nu",
-          "regent",
           "sneeuwt",
           "was",
           "zon"
-        ],
-        "prompt": "Het regent nu buiten",
-        "answer": "Het regent nu buiten"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -1899,46 +1435,34 @@
         "accepted": [
           "Was kostet die Fahrkarte"
         ],
-        "word_pool": [
+        "text": "Wie viel kostet die Fahrkarte",
+        "distractors": [
           "billiger",
-          "die",
-          "Fahrkarte",
           "ist",
           "kaufen",
-          "kostet",
           "Preis",
           "teuer",
-          "viel",
           "viele",
-          "was",
-          "wie"
-        ],
-        "prompt": "Wie viel kostet die Fahrkarte",
-        "answer": "Wie viel kostet die Fahrkarte"
+          "was"
+        ]
       },
       "nl": {
         "accepted": [
           "Wat kost het ticket"
         ],
-        "word_pool": [
+        "text": "Hoeveel kost het kaartje",
+        "distractors": [
           "duur",
           "goedkoper",
-          "het",
-          "hoeveel",
           "is",
-          "kaartje",
           "kopen",
-          "kost",
           "prijs",
           "ticket",
           "veel",
           "wat"
-        ],
-        "prompt": "Hoeveel kost het kaartje",
-        "answer": "Hoeveel kost het kaartje"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -1954,40 +1478,27 @@
     "translations": {
       "de": {
         "accepted": [],
-        "word_pool": [
-          "Auto",
+        "text": "Das rote Auto ist schnell",
+        "distractors": [
           "blau",
           "Bus",
-          "das",
-          "ist",
           "langsam",
           "nicht",
-          "rote",
-          "schnell",
           "war"
-        ],
-        "prompt": "Das rote Auto ist schnell",
-        "answer": "Das rote Auto ist schnell"
+        ]
       },
       "nl": {
         "accepted": [],
-        "word_pool": [
-          "auto",
+        "text": "De rode auto is snel",
+        "distractors": [
           "blauw",
           "bus",
-          "de",
-          "is",
           "langzaam",
           "niet",
-          "rode",
-          "snel",
           "was"
-        ],
-        "prompt": "De rode auto is snel",
-        "answer": "De rode auto is snel"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -2005,45 +1516,32 @@
         "accepted": [
           "Wie alt ist Ihre Schwester"
         ],
-        "word_pool": [
-          "alt",
+        "text": "Wie alt ist deine Schwester",
+        "distractors": [
           "Bruder",
-          "deine",
           "ihre",
-          "ist",
           "mein",
-          "Schwester",
           "viele",
           "war",
-          "wie",
           "wo"
-        ],
-        "prompt": "Wie alt ist deine Schwester",
-        "answer": "Wie alt ist deine Schwester"
+        ]
       },
       "nl": {
         "accepted": [
           "Hoe oud is uw zuster"
         ],
-        "word_pool": [
+        "text": "Hoe oud is je zus",
+        "distractors": [
           "broer",
-          "hoe",
-          "is",
-          "je",
           "mijn",
-          "oud",
           "uw",
           "veel",
           "waar",
           "was",
-          "zus",
           "zuster"
-        ],
-        "prompt": "Hoe oud is je zus",
-        "answer": "Hoe oud is je zus"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -2061,45 +1559,31 @@
         "accepted": [
           "Ich esse nicht gerne scharf"
         ],
-        "word_pool": [
+        "text": "Ich mag kein scharfes Essen",
+        "distractors": [
           "esse",
-          "Essen",
           "gerne",
           "heiß",
-          "ich",
-          "kein",
           "lecker",
-          "mag",
           "nicht",
           "scharf",
-          "scharfes",
           "sehr",
           "sie",
           "süß"
-        ],
-        "prompt": "Ich mag kein scharfes Essen",
-        "answer": "Ich mag kein scharfes Essen"
+        ]
       },
       "nl": {
         "accepted": [],
-        "word_pool": [
-          "eten",
+        "text": "Ik hou niet van pittig eten",
+        "distractors": [
           "heel",
           "heerlijk",
-          "hou",
-          "ik",
-          "niet",
-          "pittig",
-          "van",
           "warm",
           "ze",
           "zoet"
-        ],
-        "prompt": "Ik hou niet van pittig eten",
-        "answer": "Ik hou niet van pittig eten"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -2117,45 +1601,34 @@
         "accepted": [
           "Wo wohnen Sie jetzt"
         ],
-        "word_pool": [
+        "text": "Wo wohnst du jetzt",
+        "distractors": [
           "arbeiten",
           "bleiben",
-          "du",
           "hier",
-          "jetzt",
           "sie",
           "wann",
-          "wo",
           "wohnen",
-          "wohnst",
           "wohnte"
-        ],
-        "prompt": "Wo wohnst du jetzt",
-        "answer": "Wo wohnst du jetzt"
+        ]
       },
       "nl": {
         "accepted": [
           "Waar woont u nu"
         ],
-        "word_pool": [
+        "text": "Waar woon je nu",
+        "distractors": [
           "hier",
-          "je",
-          "nu",
           "u",
           "verblijven",
-          "waar",
           "wanneer",
           "werken",
-          "woon",
           "woonde",
           "woont",
           "ze"
-        ],
-        "prompt": "Waar woon je nu",
-        "answer": "Waar woon je nu"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -2170,42 +1643,29 @@
     "translations": {
       "de": {
         "accepted": [],
-        "word_pool": [
+        "text": "Ich habe zwei kleine Katzen",
+        "distractors": [
           "drei",
           "eine",
           "groß",
-          "habe",
           "hatte",
           "Hunde",
-          "ich",
-          "Katzen",
-          "kleine",
-          "wir",
-          "zwei"
-        ],
-        "prompt": "Ich habe zwei kleine Katzen",
-        "answer": "Ich habe zwei kleine Katzen"
+          "wir"
+        ]
       },
       "nl": {
         "accepted": [],
-        "word_pool": [
+        "text": "Ik heb twee kleine katten",
+        "distractors": [
           "drie",
           "groot",
           "had",
-          "heb",
           "honden",
-          "ik",
-          "katten",
-          "kleine",
           "n",
-          "twee",
           "we"
-        ],
-        "prompt": "Ik heb twee kleine katten",
-        "answer": "Ik heb twee kleine katten"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -2223,51 +1683,34 @@
         "accepted": [
           "Sie reiste letzten Sommer nach Norwegen"
         ],
-        "word_pool": [
+        "text": "Sie ist letzten Sommer nach Norwegen gereist",
+        "distractors": [
           "besuchen",
           "er",
-          "gereist",
           "ging",
-          "ist",
-          "letzten",
-          "nach",
-          "Norwegen",
           "Reise",
           "reiste",
-          "sie",
-          "Sommer",
           "winter",
           "wird"
-        ],
-        "prompt": "Sie ist letzten Sommer nach Norwegen gereist",
-        "answer": "Sie ist letzten Sommer nach Norwegen gereist"
+        ]
       },
       "nl": {
         "accepted": [
           "Zij reisde vorige zomer naar Noorwegen"
         ],
-        "word_pool": [
+        "text": "Ze is vorige zomer naar Noorwegen gereisd",
+        "distractors": [
           "bezoeken",
-          "gereisd",
           "ging",
           "hij",
-          "is",
-          "naar",
-          "Noorwegen",
           "reis",
           "reisde",
-          "vorige",
           "winter",
           "zal",
-          "ze",
-          "zij",
-          "zomer"
-        ],
-        "prompt": "Ze is vorige zomer naar Noorwegen gereisd",
-        "answer": "Ze is vorige zomer naar Noorwegen gereisd"
+          "zij"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -2285,50 +1728,35 @@
         "accepted": [
           "Er steht jeden Tag früh op"
         ],
-        "word_pool": [
-          "auf",
-          "er",
-          "früh",
+        "text": "Er wacht jeden Tag früh auf",
+        "distractors": [
           "immer",
-          "jeden",
           "Morgen",
           "op",
           "schläft",
           "sie",
           "spät",
           "steht",
-          "Tag",
-          "wacht",
           "wachte"
-        ],
-        "prompt": "Er wacht jeden Tag früh auf",
-        "answer": "Er wacht jeden Tag früh auf"
+        ]
       },
       "nl": {
         "accepted": [
           "Hij staat elke dag vroeg op"
         ],
-        "word_pool": [
+        "text": "Hij wordt elke dag vroeg wakker",
+        "distractors": [
           "altijd",
-          "dag",
-          "elke",
-          "hij",
           "laat",
           "ochtend",
           "op",
           "slaapt",
           "staat",
-          "vroeg",
-          "wakker",
           "werd wakker",
-          "wordt",
           "ze"
-        ],
-        "prompt": "Hij wordt elke dag vroeg wakker",
-        "answer": "Hij wordt elke dag vroeg wakker"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -2346,44 +1774,33 @@
         "accepted": [
           "Möchten Sie etwas Wasser"
         ],
-        "word_pool": [
+        "text": "Willst du etwas Wasser",
+        "distractors": [
           "brauchen",
-          "du",
-          "etwas",
           "Kaffee",
           "möchten",
           "sie",
           "trinken",
-          "war",
-          "Wasser",
-          "willst"
-        ],
-        "prompt": "Willst du etwas Wasser",
-        "answer": "Willst du etwas Wasser"
+          "war"
+        ]
       },
       "nl": {
         "accepted": [
           "Wilt u wat water"
         ],
-        "word_pool": [
+        "text": "Wil je wat water",
+        "distractors": [
           "drinken",
           "iets",
-          "je",
           "koffie",
           "nodig",
           "u",
           "was",
-          "wat",
-          "water",
-          "wil",
           "wilt",
           "ze"
-        ],
-        "prompt": "Wil je wat water",
-        "answer": "Wil je wat water"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -2401,11 +1818,10 @@
           "Wie heißen Sie",
           "Was ist dein Name"
         ],
-        "word_pool": [
+        "text": "Wie heißt du",
+        "distractors": [
           "dein",
-          "du",
           "heißen",
-          "heißt",
           "ist",
           "mein",
           "Name",
@@ -2413,22 +1829,17 @@
           "war",
           "was",
           "wer",
-          "wie",
           "wo"
-        ],
-        "prompt": "Wie heißt du",
-        "answer": "Wie heißt du"
+        ]
       },
       "nl": {
         "accepted": [
           "Hoe heet u",
           "Wat is je naam"
         ],
-        "word_pool": [
-          "heet",
-          "hoe",
+        "text": "Hoe heet je",
+        "distractors": [
           "is",
-          "je",
           "mijn",
           "naam",
           "u",
@@ -2436,12 +1847,9 @@
           "was",
           "wat",
           "wie"
-        ],
-        "prompt": "Hoe heet je",
-        "answer": "Hoe heet je"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -2459,51 +1867,38 @@
         "accepted": [
           "Wir warten an der Bushaltestelle"
         ],
-        "word_pool": [
+        "text": "Wir warten auf den Bus",
+        "distractors": [
           "an",
-          "auf",
-          "Bus",
           "Bushaltestelle",
-          "den",
           "der",
           "für",
           "sehen",
           "sie",
-          "warten",
           "warteten",
           "werden",
-          "wir",
           "Zug"
-        ],
-        "prompt": "Wir warten auf den Bus",
-        "answer": "Wir warten auf den Bus"
+        ]
       },
       "nl": {
         "accepted": [
           "Wij zijn aan het wachten op de bus"
         ],
-        "word_pool": [
+        "text": "We wachten op de bus",
+        "distractors": [
           "aan",
-          "bus",
-          "de",
           "het",
           "kijken",
-          "op",
           "trein",
           "voor",
-          "wachten",
           "wachtten",
-          "we",
           "wij",
           "ze",
           "zijn",
           "zullen"
-        ],
-        "prompt": "We wachten op de bus",
-        "answer": "We wachten op de bus"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -2521,49 +1916,33 @@
         "accepted": [
           "Unser neuer Garten ist wunderbar"
         ],
-        "word_pool": [
+        "text": "Unser neuer Garten ist sehr schön",
+        "distractors": [
           "alt",
-          "Garten",
           "Haus",
-          "ist",
           "klein",
-          "neuer",
           "nicht",
-          "schön",
-          "sehr",
           "sie",
-          "unser",
           "war",
           "wunderbar"
-        ],
-        "prompt": "Unser neuer Garten ist sehr schön",
-        "answer": "Unser neuer Garten ist sehr schön"
+        ]
       },
       "nl": {
         "accepted": [
           "Onze nieuwe tuin is prachtig"
         ],
-        "word_pool": [
-          "erg",
-          "heel",
+        "text": "Onze nieuwe tuin is heel erg mooi",
+        "distractors": [
           "huis",
-          "is",
           "klein",
-          "mooi",
           "niet",
-          "nieuwe",
-          "onze",
           "oud",
           "prachtig",
-          "tuin",
           "was",
           "ze"
-        ],
-        "prompt": "Onze nieuwe tuin is heel erg mooi",
-        "answer": "Onze nieuwe tuin is heel erg mooi"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -2581,53 +1960,35 @@
         "accepted": [
           "Ich glaube es ist wichtig Sprachen zu lernen"
         ],
-        "word_pool": [
+        "text": "Ich finde es wichtig Sprachen zu lernen",
+        "distractors": [
           "dachte",
           "dass",
-          "es",
-          "finde",
           "glaube",
-          "ich",
           "ist",
-          "lernen",
           "nutzlos",
           "sie",
-          "Sprachen",
           "sprechen",
-          "war",
-          "wichtig",
-          "zu"
-        ],
-        "prompt": "Ich finde es wichtig Sprachen zu lernen",
-        "answer": "Ich finde es wichtig Sprachen zu lernen"
+          "war"
+        ]
       },
       "nl": {
         "accepted": [
           "Ik geloof dat het belangrijk is om talen te leren"
         ],
-        "word_pool": [
-          "belangrijk",
+        "text": "Ik vind het belangrijk om talen te leren",
+        "distractors": [
           "dacht",
           "dat",
           "geloof",
-          "het",
-          "ik",
           "is",
-          "leren",
           "nutteloos",
-          "om",
           "spreken",
-          "talen",
-          "te",
-          "vind",
           "was",
           "ze"
-        ],
-        "prompt": "Ik vind het belangrijk om talen te leren",
-        "answer": "Ik vind het belangrijk om talen te leren"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -2645,49 +2006,34 @@
         "accepted": [
           "Normalerweise trinke ich morgens Tee"
         ],
-        "word_pool": [
+        "text": "Ich trinke normalerweise morgens Tee",
+        "distractors": [
           "Abend",
-          "ich",
           "immer",
           "Kaffee",
-          "morgens",
           "nie",
-          "normalerweise",
           "sie",
-          "Tee",
-          "trank",
-          "trinke"
-        ],
-        "prompt": "Ich trinke normalerweise morgens Tee",
-        "answer": "Ich trinke normalerweise morgens Tee"
+          "trank"
+        ]
       },
       "nl": {
         "accepted": [
           "Gewoonlijk drink ik thee 's ochtends"
         ],
-        "word_pool": [
+        "text": "Ik drink meestal thee in de ochtend",
+        "distractors": [
           "altijd",
           "avond",
-          "de",
-          "drink",
           "dronk",
           "gewoonlijk",
-          "ik",
-          "in",
           "koffie",
-          "meestal",
           "nooit",
-          "ochtend",
           "ochtends",
           "s",
-          "thee",
           "ze"
-        ],
-        "prompt": "Ik drink meestal thee in de ochtend",
-        "answer": "Ik drink meestal thee in de ochtend"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -2703,40 +2049,29 @@
     "translations": {
       "de": {
         "accepted": [],
-        "word_pool": [
-          "die",
+        "text": "Die Sonne scheint heute",
+        "distractors": [
           "gestern",
-          "heute",
           "Mond",
           "nicht",
           "Regen",
-          "scheint",
           "schien",
-          "Sonne",
           "war"
-        ],
-        "prompt": "Die Sonne scheint heute",
-        "answer": "Die Sonne scheint heute"
+        ]
       },
       "nl": {
         "accepted": [],
-        "word_pool": [
-          "de",
+        "text": "De zon schijnt vandaag",
+        "distractors": [
           "gisteren",
           "maan",
           "niet",
           "regen",
           "scheen",
-          "schijnt",
-          "vandaag",
-          "was",
-          "zon"
-        ],
-        "prompt": "De zon schijnt vandaag",
-        "answer": "De zon schijnt vandaag"
+          "was"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -2754,50 +2089,35 @@
         "accepted": [
           "Mein Rechner steht auf dem Tisch"
         ],
-        "word_pool": [
-          "auf",
-          "Computer",
-          "dem",
+        "text": "Mein Computer liegt auf dem Tisch",
+        "distractors": [
           "ist",
-          "liegt",
-          "mein",
           "Rechner",
           "sein",
           "steht",
           "Stuhl",
           "Telefon",
-          "Tisch",
           "unter",
           "war"
-        ],
-        "prompt": "Mein Computer liegt auf dem Tisch",
-        "answer": "Mein Computer liegt auf dem Tisch"
+        ]
       },
       "nl": {
         "accepted": [
           "Mijn laptop ligt op de tafel"
         ],
-        "word_pool": [
-          "computer",
-          "de",
+        "text": "Mijn computer staat op de tafel",
+        "distractors": [
           "is",
           "laptop",
           "ligt",
-          "mijn",
           "onder",
-          "op",
-          "staat",
           "stoel",
-          "tafel",
           "telefoon",
           "was",
           "zijn"
-        ],
-        "prompt": "Mijn computer staat op de tafel",
-        "answer": "Mijn computer staat op de tafel"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -2814,43 +2134,34 @@
         "accepted": [
           "Haben Sie Hunger"
         ],
-        "word_pool": [
-          "du",
+        "text": "Hast du Hunger",
+        "distractors": [
           "durst",
           "haben",
-          "hast",
-          "Hunger",
           "ist",
           "sie",
           "war",
           "wie",
           "wo"
-        ],
-        "prompt": "Hast du Hunger",
-        "answer": "Hast du Hunger"
+        ]
       },
       "nl": {
         "accepted": [
           "Heeft u honger"
         ],
-        "word_pool": [
+        "text": "Heb je honger",
+        "distractors": [
           "dorst",
-          "heb",
           "heeft",
           "hoe",
-          "honger",
           "is",
-          "je",
           "u",
           "waar",
           "was",
           "ze"
-        ],
-        "prompt": "Heb je honger",
-        "answer": "Heb je honger"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }

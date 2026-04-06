@@ -81,6 +81,14 @@ The logic specifically looks for the `hidden_word_index`.
 *   `target_answer` = `text_l2.split()[hidden_word_index]` **(Automatically extracted)**
 *   `hint` = `text_l1` *(Optionally displayed below the prompt)*
 
+### Decoupling Data from UX (`content.response_mode`)
+
+A critical part of this architecture is the preservation of the `content` block in the JSON schemas, specifically the `response_mode` field.
+
+*   **The Concept:** The underlying linguistic data for a "Sentence Builder" and a "Word Translation" exercise is structurally identical (a piece of text in L1 and its translation in L2). The only difference is the *user experience* (e.g., clicking chips in a sequence for a full sentence vs. selecting a single concept chip for a word).
+*   **The Implementation:** By keeping the `response_mode` separate from the raw translations, we decouple the *data* from the *presentation*.
+*   **Future Proofing:** This allows us to merge different translation-based question types into a single generic `"question_type": "translation"` in the future. The app logic can simply look at `"content": { "response_mode": "..." }` to decide whether the `QuestionWidget` should render as a chip sorter, a text input field, or a multiple-choice grid. It even enables randomly assigning different response modes to the same question to test the user in varied ways.
+
 ---
 
 ## 4. The UI Layer (`QuestionWidget`)

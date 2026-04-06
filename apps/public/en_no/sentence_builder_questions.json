@@ -11,46 +11,32 @@
         "accepted": [
           "I am very glad today"
         ],
-        "word_pool": [
-          "am",
+        "text": "I am very happy today",
+        "distractors": [
           "glad",
-          "happy",
           "he",
-          "I",
           "is",
           "sad",
           "they",
-          "today",
           "tomorrow",
-          "very",
           "was"
-        ],
-        "prompt": "I am very happy today",
-        "answer": "I am very happy today"
+        ]
       },
       "no": {
         "accepted": [
           "Jeg er utrolig glad i dag"
         ],
-        "word_pool": [
-          "dag",
+        "text": "Jeg er veldig glad i dag",
+        "distractors": [
           "de",
-          "er",
-          "glad",
           "han",
-          "i",
           "i morgen",
-          "jeg",
           "trist",
           "utrolig",
-          "var",
-          "veldig"
-        ],
-        "prompt": "Jeg er veldig glad i dag",
-        "answer": "Jeg er veldig glad i dag"
+          "var"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -68,52 +54,37 @@
         "accepted": [
           "She is reading a really good book"
         ],
-        "word_pool": [
-          "a",
+        "text": "She reads a really good book",
+        "distractors": [
           "bad",
-          "book",
           "books",
-          "good",
           "he",
           "is",
           "newspaper",
           "read",
           "reading",
-          "reads",
-          "really",
-          "she",
           "we"
-        ],
-        "prompt": "She reads a really good book",
-        "answer": "She reads a really good book"
+        ]
       },
       "no": {
         "accepted": [
           "Hun leser ei utrolig god bok",
           "Hun leser en veldig bra bok"
         ],
-        "word_pool": [
+        "text": "Hun leser en veldig god bok",
+        "distractors": [
           "avis",
-          "bok",
           "bra",
           "bøker",
           "dårlig",
           "ei",
-          "en",
-          "god",
           "han",
-          "hun",
-          "leser",
           "leste",
           "utrolig",
-          "veldig",
           "vi"
-        ],
-        "prompt": "Hun leser en veldig god bok",
-        "answer": "Hun leser en veldig god bok"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -131,42 +102,30 @@
         "accepted": [
           "We eat dinner now"
         ],
-        "word_pool": [
+        "text": "We are eating dinner now",
+        "distractors": [
           "always",
-          "are",
           "ate",
           "breakfast",
-          "dinner",
           "eat",
-          "eating",
           "lunch",
-          "now",
           "they",
-          "tomorrow",
-          "we"
-        ],
-        "prompt": "We are eating dinner now",
-        "answer": "We are eating dinner now"
+          "tomorrow"
+        ]
       },
       "no": {
         "accepted": [],
-        "word_pool": [
+        "text": "Vi spiser middag nå",
+        "distractors": [
           "alltid",
           "de",
           "frokost",
           "i morgen",
           "lunsj",
-          "middag",
-          "nå",
-          "spiser",
-          "spiste",
-          "vi"
-        ],
-        "prompt": "Vi spiser middag nå",
-        "answer": "Vi spiser middag nå"
+          "spiste"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -185,50 +144,35 @@
           "They are walking to the new shop",
           "They walk to the new shop"
         ],
-        "word_pool": [
+        "text": "They walk to the new store",
+        "distractors": [
           "are",
           "car",
           "he",
-          "new",
           "old",
           "ran",
           "shop",
-          "store",
           "supermarket",
-          "the",
-          "they",
-          "to",
-          "walk",
           "walking",
           "we"
-        ],
-        "prompt": "They walk to the new store",
-        "answer": "They walk to the new store"
+        ]
       },
       "no": {
         "accepted": [
           "De spaserer til den nye butikken"
         ],
-        "word_pool": [
+        "text": "De går til den nye butikken",
+        "distractors": [
           "bil",
-          "butikken",
-          "de",
-          "den",
           "gamle",
-          "går",
           "han",
           "løp",
-          "nye",
           "spaserer",
           "supermarkedet",
-          "til",
           "vi"
-        ],
-        "prompt": "De går til den nye butikken",
-        "answer": "De går til den nye butikken"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -244,46 +188,32 @@
     "translations": {
       "en": {
         "accepted": [],
-        "word_pool": [
-          "and",
-          "big",
+        "text": "The dog is big and brown",
+        "distractors": [
           "black",
-          "brown",
           "cat",
           "cats",
-          "dog",
-          "is",
           "not",
           "small",
-          "the",
           "was"
-        ],
-        "prompt": "The dog is big and brown",
-        "answer": "The dog is big and brown"
+        ]
       },
       "no": {
         "accepted": [
           "Hunden er diger og brun"
         ],
-        "word_pool": [
-          "brun",
+        "text": "Hunden er stor og brun",
+        "distractors": [
           "diger",
-          "er",
-          "hunden",
           "ikke",
           "katt",
           "katter",
           "liten",
-          "og",
-          "stor",
           "svart",
           "var"
-        ],
-        "prompt": "Hunden er stor og brun",
-        "answer": "Hunden er stor og brun"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -301,45 +231,30 @@
         "accepted": [
           "The little cat sleeps all day"
         ],
-        "word_pool": [
-          "all",
+        "text": "The small cat sleeps all day",
+        "distractors": [
           "big",
-          "cat",
-          "day",
           "dog",
           "little",
           "night",
-          "sleeps",
           "slept",
-          "small",
-          "the",
           "they",
           "wakes"
-        ],
-        "prompt": "The small cat sleeps all day",
-        "answer": "The small cat sleeps all day"
+        ]
       },
       "no": {
         "accepted": [],
-        "word_pool": [
-          "dagen",
+        "text": "Den lille katten sover hele dagen",
+        "distractors": [
           "de",
-          "den",
-          "hele",
           "hund",
-          "katten",
-          "lille",
           "natten",
           "sov",
-          "sover",
           "store",
           "våkner"
-        ],
-        "prompt": "Den lille katten sover hele dagen",
-        "answer": "Den lille katten sover hele dagen"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -356,49 +271,34 @@
         "accepted": [
           "I own a fast red car"
         ],
-        "word_pool": [
-          "a",
+        "text": "I have a fast red car",
+        "distractors": [
           "blue",
           "bus",
-          "car",
-          "fast",
           "had",
-          "have",
           "he",
-          "I",
           "own",
-          "red",
           "slow",
           "we"
-        ],
-        "prompt": "I have a fast red car",
-        "answer": "I have a fast red car"
+        ]
       },
       "no": {
         "accepted": [
           "Jeg eier en kjapp rød bil"
         ],
-        "word_pool": [
-          "bil",
+        "text": "Jeg har en rask rød bil",
+        "distractors": [
           "blå",
           "buss",
           "eier",
-          "en",
           "hadde",
           "han",
-          "har",
-          "jeg",
           "kjapp",
-          "rask",
-          "rød",
           "treg",
           "vi"
-        ],
-        "prompt": "Jeg har en rask rød bil",
-        "answer": "Jeg har en rask rød bil"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -416,49 +316,34 @@
         "accepted": [
           "He is working in a large office"
         ],
-        "word_pool": [
-          "a",
+        "text": "He works in a large office",
+        "distractors": [
           "factory",
-          "he",
-          "in",
           "is",
-          "large",
-          "office",
           "outside",
           "she",
           "small",
           "they",
           "worked",
-          "working",
-          "works"
-        ],
-        "prompt": "He works in a large office",
-        "answer": "He works in a large office"
+          "working"
+        ]
       },
       "no": {
         "accepted": [
           "Han arbeider på et stort kontor"
         ],
-        "word_pool": [
+        "text": "Han jobber på et stort kontor",
+        "distractors": [
           "arbeider",
           "de",
-          "et",
           "fabrikk",
-          "han",
           "hun",
-          "jobber",
           "jobbet",
-          "kontor",
           "lite",
-          "på",
-          "stort",
           "ute"
-        ],
-        "prompt": "Han jobber på et stort kontor",
-        "answer": "Han jobber på et stort kontor"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -476,48 +361,35 @@
         "accepted": [
           "You talk Norwegian very well"
         ],
-        "word_pool": [
+        "text": "You speak Norwegian very well",
+        "distractors": [
           "badly",
           "English",
           "he",
           "I",
-          "Norwegian",
-          "speak",
           "spoke",
           "talk",
-          "understand",
-          "very",
-          "well",
-          "you"
-        ],
-        "prompt": "You speak Norwegian very well",
-        "answer": "You speak Norwegian very well"
+          "understand"
+        ]
       },
       "no": {
         "accepted": [
           "Du snakker norsk veldig godt",
           "Du prater norsk veldig bra"
         ],
-        "word_pool": [
-          "bra",
-          "du",
+        "text": "Du snakker norsk veldig bra",
+        "distractors": [
           "dårlig",
           "engelsk",
           "forstår",
           "godt",
           "han",
           "jeg",
-          "norsk",
           "prater",
-          "snakker",
-          "snakket",
-          "veldig"
-        ],
-        "prompt": "Du snakker norsk veldig bra",
-        "answer": "Du snakker norsk veldig bra"
+          "snakket"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -535,50 +407,35 @@
         "accepted": [
           "The weather is very nice today"
         ],
-        "word_pool": [
+        "text": "The weather is really nice today",
+        "distractors": [
           "bad",
           "cold",
-          "is",
-          "nice",
           "rain",
-          "really",
-          "the",
-          "today",
           "very",
           "was",
-          "weather",
           "will",
           "yesterday"
-        ],
-        "prompt": "The weather is really nice today",
-        "answer": "The weather is really nice today"
+        ]
       },
       "no": {
         "accepted": [
           "Været er veldig pent i dag",
           "Været er veldig fint i dag"
         ],
-        "word_pool": [
-          "dag",
+        "text": "Været er skikkelig fint i dag",
+        "distractors": [
           "dårlig",
-          "er",
-          "fint",
-          "i",
           "i går",
           "kaldt",
           "pent",
           "regn",
           "skal",
-          "skikkelig",
           "var",
-          "veldig",
-          "været"
-        ],
-        "prompt": "Været er skikkelig fint i dag",
-        "answer": "Været er skikkelig fint i dag"
+          "veldig"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -596,48 +453,33 @@
         "accepted": [
           "My little brother is very tall"
         ],
-        "word_pool": [
-          "brother",
-          "is",
+        "text": "My young brother is very tall",
+        "distractors": [
           "little",
-          "my",
           "old",
           "she",
           "short",
           "sister",
-          "tall",
-          "very",
           "was",
-          "young",
           "your"
-        ],
-        "prompt": "My young brother is very tall",
-        "answer": "My young brother is very tall"
+        ]
       },
       "no": {
         "accepted": [
           "Min lillebror er veldig høy"
         ],
-        "word_pool": [
-          "bror",
+        "text": "Min unge bror er veldig høy",
+        "distractors": [
           "din",
-          "er",
           "gammel",
           "hun",
-          "høy",
           "kort",
           "lillebror",
-          "min",
           "søster",
-          "unge",
-          "var",
-          "veldig"
-        ],
-        "prompt": "Min unge bror er veldig høy",
-        "answer": "Min unge bror er veldig høy"
+          "var"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -655,50 +497,34 @@
         "accepted": [
           "We wish to buy a new house"
         ],
-        "word_pool": [
-          "a",
+        "text": "We want to buy a new house",
+        "distractors": [
           "apartment",
-          "buy",
           "car",
-          "house",
-          "new",
           "old",
           "sell",
           "they",
-          "to",
-          "want",
           "wanted",
-          "we",
           "wish"
-        ],
-        "prompt": "We want to buy a new house",
-        "answer": "We want to buy a new house"
+        ]
       },
       "no": {
         "accepted": [
           "Vi ønsker å kjøpe et nytt hus"
         ],
-        "word_pool": [
+        "text": "Vi vil kjøpe et nytt hus",
+        "distractors": [
           "bil",
           "de",
-          "et",
           "gammelt",
-          "hus",
-          "kjøpe",
           "leilighet",
-          "nytt",
           "selge",
-          "vi",
-          "vil",
           "ville",
           "å",
           "ønsker"
-        ],
-        "prompt": "Vi vil kjøpe et nytt hus",
-        "answer": "Vi vil kjøpe et nytt hus"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -715,49 +541,34 @@
         "accepted": [
           "I enjoy drinking black coffee"
         ],
-        "word_pool": [
+        "text": "I like to drink black coffee",
+        "distractors": [
           "ate",
-          "black",
-          "coffee",
-          "drink",
           "drinking",
           "enjoy",
           "hate",
           "he",
-          "I",
-          "like",
           "tea",
-          "to",
           "water",
           "white"
-        ],
-        "prompt": "I like to drink black coffee",
-        "answer": "I like to drink black coffee"
+        ]
       },
       "no": {
         "accepted": [
           "Jeg liker å drikke sort kaffe"
         ],
-        "word_pool": [
-          "drikke",
+        "text": "Jeg liker å drikke svart kaffe",
+        "distractors": [
           "han",
           "hater",
           "hvit",
-          "jeg",
-          "kaffe",
-          "liker",
           "sort",
           "spiste",
-          "svart",
           "te",
-          "vann",
-          "å"
-        ],
-        "prompt": "Jeg liker å drikke svart kaffe",
-        "answer": "Jeg liker å drikke svart kaffe"
+          "vann"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -775,42 +586,29 @@
         "accepted": [
           "They travel to Spain often"
         ],
-        "word_pool": [
+        "text": "They often travel to Spain",
+        "distractors": [
           "car",
           "drove",
           "flew",
           "Germany",
           "never",
-          "often",
-          "Spain",
-          "they",
-          "to",
-          "travel",
           "we"
-        ],
-        "prompt": "They often travel to Spain",
-        "answer": "They often travel to Spain"
+        ]
       },
       "no": {
         "accepted": [],
-        "word_pool": [
+        "text": "De reiser ofte til Spania",
+        "distractors": [
           "aldri",
           "bil",
-          "de",
           "fløy",
           "kjørte",
-          "ofte",
-          "reiser",
-          "Spania",
-          "til",
           "Tyskland",
           "vi"
-        ],
-        "prompt": "De reiser ofte til Spania",
-        "answer": "De reiser ofte til Spania"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -828,44 +626,30 @@
         "accepted": [
           "The meal is cold and bad"
         ],
-        "word_pool": [
-          "and",
-          "bad",
-          "cold",
-          "food",
+        "text": "The food is cold and bad",
+        "distractors": [
           "good",
           "he",
           "hot",
-          "is",
           "meal",
-          "the",
           "was",
           "water",
           "we"
-        ],
-        "prompt": "The food is cold and bad",
-        "answer": "The food is cold and bad"
+        ]
       },
       "no": {
         "accepted": [],
-        "word_pool": [
-          "dårlig",
-          "er",
+        "text": "Maten er kald og dårlig",
+        "distractors": [
           "god",
           "han",
-          "kald",
-          "maten",
-          "og",
           "vannet",
           "var",
           "varm",
           "vi"
-        ],
-        "prompt": "Maten er kald og dårlig",
-        "answer": "Maten er kald og dårlig"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -884,49 +668,34 @@
         "accepted": [
           "The fast train leaves right now"
         ],
-        "word_pool": [
+        "text": "The fast train departs right now",
+        "distractors": [
           "arrives",
           "bus",
           "car",
-          "departs",
-          "fast",
           "later",
           "leaves",
-          "now",
-          "right",
           "slow",
-          "the",
-          "train",
           "we"
-        ],
-        "prompt": "The fast train departs right now",
-        "answer": "The fast train departs right now"
+        ]
       },
       "no": {
         "accepted": [
           "Det kjappe toget drar akkurat nå"
         ],
-        "word_pool": [
-          "akkurat",
+        "text": "Det raske toget går akkurat nå",
+        "distractors": [
           "bil",
           "bussen",
-          "det",
           "drar",
-          "går",
           "kjappe",
           "kommer",
-          "nå",
-          "raske",
           "senere",
-          "toget",
           "trege",
           "vi"
-        ],
-        "prompt": "Det raske toget går akkurat nå",
-        "answer": "Det raske toget går akkurat nå"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -944,43 +713,30 @@
         "accepted": [
           "We play soccer every evening"
         ],
-        "word_pool": [
-          "evening",
-          "every",
-          "football",
+        "text": "We play football every evening",
+        "distractors": [
           "morning",
           "never",
-          "play",
           "played",
           "soccer",
           "tennis",
           "they",
-          "watch",
-          "we"
-        ],
-        "prompt": "We play football every evening",
-        "answer": "We play football every evening"
+          "watch"
+        ]
       },
       "no": {
         "accepted": [],
-        "word_pool": [
+        "text": "Vi spiller fotball hver kveld",
+        "distractors": [
           "aldri",
           "de",
-          "fotball",
-          "hver",
-          "kveld",
           "morgen",
           "ser",
-          "spiller",
           "spilte",
-          "tennis",
-          "vi"
-        ],
-        "prompt": "Vi spiller fotball hver kveld",
-        "answer": "Vi spiller fotball hver kveld"
+          "tennis"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -996,45 +752,29 @@
     "translations": {
       "en": {
         "accepted": [],
-        "word_pool": [
-          "a",
+        "text": "She wrote a long letter yesterday",
+        "distractors": [
           "book",
           "he",
-          "letter",
-          "long",
           "read",
-          "she",
           "short",
           "tomorrow",
-          "writes",
-          "wrote",
-          "yesterday"
-        ],
-        "prompt": "She wrote a long letter yesterday",
-        "answer": "She wrote a long letter yesterday"
+          "writes"
+        ]
       },
       "no": {
         "accepted": [],
-        "word_pool": [
+        "text": "Hun skrev et langt brev i går",
+        "distractors": [
           "bok",
-          "brev",
-          "et",
-          "går",
           "han",
-          "hun",
-          "i",
           "i morgen",
           "kort",
-          "langt",
           "leste",
-          "skrev",
           "skriver"
-        ],
-        "prompt": "Hun skrev et langt brev i går",
-        "answer": "Hun skrev et langt brev i går"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -1050,46 +790,32 @@
     "translations": {
       "en": {
         "accepted": [],
-        "word_pool": [
+        "text": "He was very tired yesterday",
+        "distractors": [
           "angry",
           "awake",
-          "he",
           "is",
           "she",
-          "tired",
           "tomorrow",
-          "very",
-          "was",
-          "we",
-          "yesterday"
-        ],
-        "prompt": "He was very tired yesterday",
-        "answer": "He was very tired yesterday"
+          "we"
+        ]
       },
       "no": {
         "accepted": [
           "Han var utrolig trøtt i går"
         ],
-        "word_pool": [
+        "text": "Han var veldig trøtt i går",
+        "distractors": [
           "er",
-          "går",
-          "han",
           "hun",
-          "i",
           "i morgen",
           "sint",
-          "trøtt",
           "utrolig",
-          "var",
-          "veldig",
           "vi",
           "våken"
-        ],
-        "prompt": "Han var veldig trøtt i går",
-        "answer": "Han var veldig trøtt i går"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -1107,51 +833,33 @@
         "accepted": [
           "I don't understand you at all"
         ],
-        "word_pool": [
-          "all",
-          "at",
-          "do",
+        "text": "I do not understand you at all",
+        "distractors": [
           "don't",
           "everything",
           "he",
           "hear",
           "him",
-          "I",
           "know",
-          "not",
-          "understand",
-          "understood",
-          "you"
-        ],
-        "prompt": "I do not understand you at all",
-        "answer": "I do not understand you at all"
+          "understood"
+        ]
       },
       "no": {
         "accepted": [
           "Jeg skjønner deg ikke i det hele tatt"
         ],
-        "word_pool": [
+        "text": "Jeg forstår deg ikke i det hele tatt",
+        "distractors": [
           "alt",
-          "deg",
-          "det",
           "forsto",
-          "forstår",
           "ham",
           "han",
-          "hele",
           "hører",
-          "i",
-          "ikke",
-          "jeg",
           "skjønner",
-          "tatt",
           "vet"
-        ],
-        "prompt": "Jeg forstår deg ikke i det hele tatt",
-        "answer": "Jeg forstår deg ikke i det hele tatt"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -1169,44 +877,30 @@
         "accepted": [
           "The instructor has a blue pen"
         ],
-        "word_pool": [
-          "a",
-          "blue",
+        "text": "The teacher has a blue pen",
+        "distractors": [
           "had",
-          "has",
           "he",
           "instructor",
-          "pen",
           "pencil",
           "red",
           "student",
-          "teacher",
-          "the",
           "we"
-        ],
-        "prompt": "The teacher has a blue pen",
-        "answer": "The teacher has a blue pen"
+        ]
       },
       "no": {
         "accepted": [],
-        "word_pool": [
+        "text": "Læreren har en blå penn",
+        "distractors": [
           "blyant",
-          "blå",
           "eleven",
-          "en",
           "hadde",
           "han",
-          "har",
-          "læreren",
-          "penn",
           "rød",
           "vi"
-        ],
-        "prompt": "Læreren har en blå penn",
-        "answer": "Læreren har en blå penn"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -1224,44 +918,31 @@
         "accepted": [
           "They are listening to loud music"
         ],
-        "word_pool": [
+        "text": "They listen to loud music",
+        "distractors": [
           "are",
           "he",
-          "listen",
           "listened",
           "listening",
-          "loud",
-          "music",
           "play",
           "quiet",
           "radio",
-          "they",
-          "to",
           "we"
-        ],
-        "prompt": "They listen to loud music",
-        "answer": "They listen to loud music"
+        ]
       },
       "no": {
         "accepted": [],
-        "word_pool": [
-          "de",
+        "text": "De hører på høy musikk",
+        "distractors": [
           "han",
-          "hører",
           "hørte",
-          "høy",
           "lav",
-          "musikk",
-          "på",
           "radio",
           "spiller",
           "vi"
-        ],
-        "prompt": "De hører på høy musikk",
-        "answer": "De hører på høy musikk"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -1279,49 +960,34 @@
         "accepted": [
           "She is wearing a yellow dress"
         ],
-        "word_pool": [
-          "a",
-          "dress",
+        "text": "She wears a yellow dress",
+        "distractors": [
           "green",
           "he",
           "is",
-          "she",
           "shirt",
           "shoes",
           "they",
           "wearing",
-          "wears",
-          "wore",
-          "yellow"
-        ],
-        "prompt": "She wears a yellow dress",
-        "answer": "She wears a yellow dress"
+          "wore"
+        ]
       },
       "no": {
         "accepted": [
           "Hun bærer en gul kjole"
         ],
-        "word_pool": [
+        "text": "Hun har på seg en gul kjole",
+        "distractors": [
           "bærer",
           "de",
-          "en",
           "grønn",
-          "gul",
           "hadde",
           "han",
-          "har",
-          "hun",
-          "kjole",
-          "på",
-          "seg",
           "skjorte",
           "sko"
-        ],
-        "prompt": "Hun har på seg en gul kjole",
-        "answer": "Hun har på seg en gul kjole"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -1337,49 +1003,32 @@
     "translations": {
       "en": {
         "accepted": [],
-        "word_pool": [
+        "text": "I will fly to London next week",
+        "distractors": [
           "drive",
           "flew",
-          "fly",
-          "I",
-          "London",
           "month",
-          "next",
           "Paris",
           "she",
-          "to",
-          "we",
-          "week",
-          "will"
-        ],
-        "prompt": "I will fly to London next week",
-        "answer": "I will fly to London next week"
+          "we"
+        ]
       },
       "no": {
         "accepted": [
           "Jeg vil fly til London neste uke"
         ],
-        "word_pool": [
-          "fly",
+        "text": "Jeg skal fly til London neste uke",
+        "distractors": [
           "fløy",
           "hun",
-          "jeg",
           "kjøre",
-          "London",
           "måned",
-          "neste",
           "Paris",
-          "skal",
-          "til",
-          "uke",
           "vi",
           "vil"
-        ],
-        "prompt": "Jeg skal fly til London neste uke",
-        "answer": "Jeg skal fly til London neste uke"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -1394,44 +1043,29 @@
     "translations": {
       "en": {
         "accepted": [],
-        "word_pool": [
+        "text": "The tall tree is very old",
+        "distractors": [
           "flower",
           "he",
-          "is",
-          "old",
           "short",
-          "tall",
-          "the",
-          "tree",
-          "very",
           "was",
           "we",
           "young"
-        ],
-        "prompt": "The tall tree is very old",
-        "answer": "The tall tree is very old"
+        ]
       },
       "no": {
         "accepted": [],
-        "word_pool": [
+        "text": "Det høye treet er veldig gammelt",
+        "distractors": [
           "blomsten",
-          "det",
-          "er",
-          "gammelt",
           "han",
-          "høye",
           "korte",
-          "treet",
           "ungt",
           "var",
-          "veldig",
           "vi"
-        ],
-        "prompt": "Det høye treet er veldig gammelt",
-        "answer": "Det høye treet er veldig gammelt"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -1449,48 +1083,33 @@
         "accepted": [
           "The large city is always busy"
         ],
-        "word_pool": [
-          "always",
-          "big",
-          "busy",
-          "city",
-          "is",
+        "text": "The big city is always busy",
+        "distractors": [
           "large",
           "never",
           "quiet",
           "small",
-          "the",
           "village",
           "was",
           "we"
-        ],
-        "prompt": "The big city is always busy",
-        "answer": "The big city is always busy"
+        ]
       },
       "no": {
         "accepted": [
           "Storbyen er alltid travel"
         ],
-        "word_pool": [
+        "text": "Den store byen er alltid travel",
+        "distractors": [
           "aldri",
-          "alltid",
-          "byen",
-          "den",
-          "er",
           "landsbyen",
           "lille",
           "stille",
           "storbyen",
-          "store",
-          "travel",
           "var",
           "vi"
-        ],
-        "prompt": "Den store byen er alltid travel",
-        "answer": "Den store byen er alltid travel"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -1509,51 +1128,37 @@
           "She makes a delicious cake",
           "She is baking a delicious cake"
         ],
-        "word_pool": [
-          "a",
+        "text": "She is making a delicious cake",
+        "distractors": [
           "bad",
           "baking",
           "bread",
-          "cake",
-          "delicious",
           "eating",
           "he",
-          "is",
           "makes",
-          "making",
-          "she",
           "they",
           "was"
-        ],
-        "prompt": "She is making a delicious cake",
-        "answer": "She is making a delicious cake"
+        ]
       },
       "no": {
         "accepted": [
           "Hun baker en nydelig kake",
           "Hun lager ei deilig kake"
         ],
-        "word_pool": [
+        "text": "Hun lager en deilig kake",
+        "distractors": [
           "baker",
           "brød",
           "de",
-          "deilig",
           "dårlig",
           "ei",
-          "en",
           "han",
-          "hun",
-          "kake",
-          "lager",
           "nydelig",
           "spiser",
           "var"
-        ],
-        "prompt": "Hun lager en deilig kake",
-        "answer": "Hun lager en deilig kake"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -1568,45 +1173,32 @@
     "translations": {
       "en": {
         "accepted": [],
-        "word_pool": [
-          "and",
+        "text": "I see you and him",
+        "distractors": [
           "her",
-          "him",
-          "I",
           "saw",
-          "see",
           "she",
           "them",
           "they",
-          "we",
-          "you"
-        ],
-        "prompt": "I see you and him",
-        "answer": "I see you and him"
+          "we"
+        ]
       },
       "no": {
         "accepted": [
           "Jeg ser deg og han"
         ],
-        "word_pool": [
+        "text": "Jeg ser deg og ham",
+        "distractors": [
           "de",
-          "deg",
           "dem",
-          "ham",
           "han",
           "henne",
           "hun",
-          "jeg",
-          "og",
-          "ser",
           "så",
           "vi"
-        ],
-        "prompt": "Jeg ser deg og ham",
-        "answer": "Jeg ser deg og ham"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -1624,48 +1216,32 @@
         "accepted": [
           "We are visiting my parents tomorrow"
         ],
-        "word_pool": [
+        "text": "We will visit my parents tomorrow",
+        "distractors": [
           "are",
           "friends",
           "home",
-          "my",
-          "parents",
           "they",
-          "tomorrow",
-          "visit",
           "visited",
           "visiting",
-          "we",
-          "will",
           "yesterday"
-        ],
-        "prompt": "We will visit my parents tomorrow",
-        "answer": "We will visit my parents tomorrow"
+        ]
       },
       "no": {
         "accepted": [
           "Vi vil besøke foreldrene mine i morgen"
         ],
-        "word_pool": [
-          "besøke",
+        "text": "Vi skal besøke foreldrene mine i morgen",
+        "distractors": [
           "besøkte",
           "de",
-          "foreldrene",
           "hjem",
-          "i",
           "i går",
-          "mine",
-          "morgen",
-          "skal",
           "venner",
-          "vi",
           "vil"
-        ],
-        "prompt": "Vi skal besøke foreldrene mine i morgen",
-        "answer": "Vi skal besøke foreldrene mine i morgen"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -1681,48 +1257,32 @@
     "translations": {
       "en": {
         "accepted": [],
-        "word_pool": [
-          "are",
+        "text": "Why are you so sad today",
+        "distractors": [
           "happy",
           "he",
           "is",
-          "sad",
-          "so",
-          "today",
           "tomorrow",
           "was",
-          "we",
-          "why",
-          "you"
-        ],
-        "prompt": "Why are you so sad today",
-        "answer": "Why are you so sad today"
+          "we"
+        ]
       },
       "no": {
         "accepted": [
           "Hvorfor er du så lei deg i dag"
         ],
-        "word_pool": [
-          "dag",
+        "text": "Hvorfor er du så trist i dag",
+        "distractors": [
           "deg",
-          "du",
-          "er",
           "glad",
           "han",
-          "hvorfor",
-          "i",
           "i morgen",
           "lei",
-          "så",
-          "trist",
           "var",
           "vi"
-        ],
-        "prompt": "Hvorfor er du så trist i dag",
-        "answer": "Hvorfor er du så trist i dag"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -1740,46 +1300,34 @@
         "accepted": [
           "He must sleep more"
         ],
-        "word_pool": [
+        "text": "He needs to sleep more",
+        "distractors": [
           "eat",
-          "he",
           "less",
-          "more",
           "must",
           "needed",
-          "needs",
           "she",
-          "sleep",
-          "to",
           "wants",
           "work"
-        ],
-        "prompt": "He needs to sleep more",
-        "answer": "He needs to sleep more"
+        ]
       },
       "no": {
         "accepted": [
           "Han trenger å sove mer"
         ],
-        "word_pool": [
-          "han",
+        "text": "Han må sove mer",
+        "distractors": [
           "hun",
           "jobbe",
-          "mer",
           "mindre",
-          "må",
-          "sove",
           "spise",
           "trenger",
           "trengte",
           "vil",
           "å"
-        ],
-        "prompt": "Han må sove mer",
-        "answer": "Han må sove mer"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -1795,41 +1343,27 @@
     "translations": {
       "en": {
         "accepted": [],
-        "word_pool": [
-          "at",
-          "forgot",
+        "text": "I forgot my keys at home",
+        "distractors": [
           "found",
-          "home",
-          "I",
-          "keys",
-          "my",
           "office",
           "remembered",
           "she",
           "wallet"
-        ],
-        "prompt": "I forgot my keys at home",
-        "answer": "I forgot my keys at home"
+        ]
       },
       "no": {
         "accepted": [],
-        "word_pool": [
+        "text": "Jeg glemte nøklene mine hjemme",
+        "distractors": [
           "fant",
-          "glemte",
-          "hjemme",
           "hun",
           "husket",
-          "jeg",
           "kontoret",
-          "lommeboka",
-          "mine",
-          "nøklene"
-        ],
-        "prompt": "Jeg glemte nøklene mine hjemme",
-        "answer": "Jeg glemte nøklene mine hjemme"
+          "lommeboka"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -1847,43 +1381,29 @@
         "accepted": [
           "It rains outside right now"
         ],
-        "word_pool": [
+        "text": "It is raining outside right now",
+        "distractors": [
           "inside",
-          "is",
-          "it",
-          "now",
-          "outside",
-          "raining",
           "rains",
-          "right",
           "snowing",
           "sun",
           "was",
           "yesterday"
-        ],
-        "prompt": "It is raining outside right now",
-        "answer": "It is raining outside right now"
+        ]
       },
       "no": {
         "accepted": [],
-        "word_pool": [
-          "akkurat",
-          "det",
+        "text": "Det regner ute akkurat nå",
+        "distractors": [
           "er",
           "i går",
           "inne",
-          "nå",
-          "regner",
           "snør",
           "sol",
-          "ute",
           "var"
-        ],
-        "prompt": "Det regner ute akkurat nå",
-        "answer": "Det regner ute akkurat nå"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -1899,45 +1419,32 @@
     "translations": {
       "en": {
         "accepted": [],
-        "word_pool": [
+        "text": "How much does the ticket cost",
+        "distractors": [
           "buy",
           "cheaper",
-          "cost",
-          "does",
           "expensive",
-          "how",
           "is",
           "many",
-          "much",
-          "price",
-          "the",
-          "ticket"
-        ],
-        "prompt": "How much does the ticket cost",
-        "answer": "How much does the ticket cost"
+          "price"
+        ]
       },
       "no": {
         "accepted": [
           "Hva koster billetten"
         ],
-        "word_pool": [
-          "billetten",
+        "text": "Hvor mye koster billetten",
+        "distractors": [
           "billigere",
           "dyrt",
           "er",
           "hva",
-          "hvor",
           "kjøpe",
-          "koster",
           "mange",
-          "mye",
           "pris"
-        ],
-        "prompt": "Hvor mye koster billetten",
-        "answer": "Hvor mye koster billetten"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -1953,43 +1460,30 @@
     "translations": {
       "en": {
         "accepted": [],
-        "word_pool": [
+        "text": "The red car is fast",
+        "distractors": [
           "blue",
           "bus",
-          "car",
-          "fast",
-          "is",
           "not",
-          "red",
           "slow",
-          "the",
           "was"
-        ],
-        "prompt": "The red car is fast",
-        "answer": "The red car is fast"
+        ]
       },
       "no": {
         "accepted": [
           "Den røde bilen er kjapp"
         ],
-        "word_pool": [
-          "bilen",
+        "text": "Den røde bilen er rask",
+        "distractors": [
           "blå",
           "bussen",
-          "den",
-          "er",
           "ikke",
           "kjapp",
-          "rask",
-          "røde",
           "treg",
           "var"
-        ],
-        "prompt": "Den røde bilen er rask",
-        "answer": "Den røde bilen er rask"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -2005,39 +1499,26 @@
     "translations": {
       "en": {
         "accepted": [],
-        "word_pool": [
+        "text": "How old is your sister",
+        "distractors": [
           "brother",
-          "how",
-          "is",
           "many",
           "my",
-          "old",
-          "sister",
           "was",
-          "where",
-          "your"
-        ],
-        "prompt": "How old is your sister",
-        "answer": "How old is your sister"
+          "where"
+        ]
       },
       "no": {
         "accepted": [],
-        "word_pool": [
+        "text": "Hvor gammel er søsteren din",
+        "distractors": [
           "bror",
-          "din",
-          "er",
-          "gammel",
-          "hvor",
           "mange",
           "min",
-          "søsteren",
           "var"
-        ],
-        "prompt": "Hvor gammel er søsteren din",
-        "answer": "Hvor gammel er søsteren din"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -2055,44 +1536,31 @@
         "accepted": [
           "I do not like spicy food"
         ],
-        "word_pool": [
+        "text": "I don't like spicy food",
+        "distractors": [
           "delicious",
           "do",
-          "don't",
           "eat",
-          "food",
           "hot",
-          "I",
-          "like",
           "not",
           "she",
-          "spicy",
           "sweet",
           "very"
-        ],
-        "prompt": "I don't like spicy food",
-        "answer": "I don't like spicy food"
+        ]
       },
       "no": {
         "accepted": [],
-        "word_pool": [
+        "text": "Jeg liker ikke sterk mat",
+        "distractors": [
           "deilig",
           "hun",
-          "ikke",
-          "jeg",
-          "liker",
-          "mat",
           "spise",
-          "sterk",
           "søt",
           "varm",
           "veldig"
-        ],
-        "prompt": "Jeg liker ikke sterk mat",
-        "answer": "Jeg liker ikke sterk mat"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -2110,43 +1578,31 @@
         "accepted": [
           "Where are you living now"
         ],
-        "word_pool": [
+        "text": "Where do you live now",
+        "distractors": [
           "are",
-          "do",
           "here",
-          "live",
           "lived",
           "living",
-          "now",
           "stay",
           "they",
           "when",
-          "where",
-          "work",
-          "you"
-        ],
-        "prompt": "Where do you live now",
-        "answer": "Where do you live now"
+          "work"
+        ]
       },
       "no": {
         "accepted": [],
-        "word_pool": [
+        "text": "Hvor bor du nå",
+        "distractors": [
           "blir",
           "bodde",
-          "bor",
           "de",
-          "du",
           "her",
-          "hvor",
           "jobber",
-          "nå",
           "når"
-        ],
-        "prompt": "Hvor bor du nå",
-        "answer": "Hvor bor du nå"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -2161,45 +1617,32 @@
     "translations": {
       "en": {
         "accepted": [],
-        "word_pool": [
+        "text": "I have two small cats",
+        "distractors": [
           "big",
-          "cats",
           "dogs",
           "had",
-          "have",
-          "I",
           "one",
-          "small",
           "three",
-          "two",
           "we"
-        ],
-        "prompt": "I have two small cats",
-        "answer": "I have two small cats"
+        ]
       },
       "no": {
         "accepted": [
           "Jeg eier to små katter"
         ],
-        "word_pool": [
+        "text": "Jeg har to små katter",
+        "distractors": [
           "eier",
           "en",
           "hadde",
-          "har",
           "hunder",
-          "jeg",
-          "katter",
-          "små",
           "store",
-          "to",
           "tre",
           "vi"
-        ],
-        "prompt": "Jeg har to små katter",
-        "answer": "Jeg har to små katter"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -2217,46 +1660,30 @@
         "accepted": [
           "She traveled to Norway last summer"
         ],
-        "word_pool": [
+        "text": "She travelled to Norway last summer",
+        "distractors": [
           "he",
-          "last",
-          "Norway",
-          "she",
-          "summer",
-          "to",
           "traveled",
-          "travelled",
           "trip",
           "visit",
           "went",
           "will",
           "winter"
-        ],
-        "prompt": "She travelled to Norway last summer",
-        "answer": "She travelled to Norway last summer"
+        ]
       },
       "no": {
         "accepted": [],
-        "word_pool": [
+        "text": "Hun reiste til Norge i fjor sommer",
+        "distractors": [
           "besøke",
           "dro",
-          "fjor",
           "han",
-          "hun",
-          "i",
-          "Norge",
-          "reiste",
           "skal",
-          "sommer",
-          "til",
           "tur",
           "vinter"
-        ],
-        "prompt": "Hun reiste til Norge i fjor sommer",
-        "answer": "Hun reiste til Norge i fjor sommer"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -2274,48 +1701,34 @@
         "accepted": [
           "He gets up early every day"
         ],
-        "word_pool": [
+        "text": "He wakes up early every day",
+        "distractors": [
           "always",
-          "day",
-          "early",
-          "every",
           "gets",
-          "he",
           "late",
           "morning",
           "she",
           "sleeps",
-          "up",
-          "wakes",
           "woke"
-        ],
-        "prompt": "He wakes up early every day",
-        "answer": "He wakes up early every day"
+        ]
       },
       "no": {
         "accepted": [
           "Han står opp tidlig hver dag"
         ],
-        "word_pool": [
+        "text": "Han våkner tidlig hver dag",
+        "distractors": [
           "alltid",
-          "dag",
-          "han",
           "hun",
-          "hver",
           "morgen",
           "opp",
           "sent",
           "sover",
           "står",
-          "tidlig",
-          "våkner",
           "våknet"
-        ],
-        "prompt": "Han våkner tidlig hver dag",
-        "answer": "Han våkner tidlig hver dag"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -2333,47 +1746,34 @@
         "accepted": [
           "Would you like some water"
         ],
-        "word_pool": [
+        "text": "Do you want some water",
+        "distractors": [
           "any",
           "coffee",
-          "do",
           "drink",
           "like",
           "need",
-          "some",
           "they",
-          "want",
           "was",
-          "water",
-          "would",
-          "you"
-        ],
-        "prompt": "Do you want some water",
-        "answer": "Do you want some water"
+          "would"
+        ]
       },
       "no": {
         "accepted": [
           "Ønsker du litt vann"
         ],
-        "word_pool": [
+        "text": "Vil du ha litt vann",
+        "distractors": [
           "de",
           "drikke",
-          "du",
-          "ha",
           "kaffe",
-          "litt",
           "noe",
           "trenger",
-          "vann",
           "var",
-          "vil",
           "ønsker"
-        ],
-        "prompt": "Vil du ha litt vann",
-        "answer": "Vil du ha litt vann"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -2390,43 +1790,33 @@
         "accepted": [
           "What's your name"
         ],
-        "word_pool": [
+        "text": "What is your name",
+        "distractors": [
           "how",
-          "is",
           "my",
-          "name",
           "was",
-          "what",
           "what's",
           "where",
-          "who",
-          "your"
-        ],
-        "prompt": "What is your name",
-        "answer": "What is your name"
+          "who"
+        ]
       },
       "no": {
         "accepted": [
           "Hva er navnet ditt"
         ],
-        "word_pool": [
+        "text": "Hva heter du",
+        "distractors": [
           "ditt",
-          "du",
           "er",
-          "heter",
-          "hva",
           "hvem",
           "hvor",
           "hvordan",
           "mitt",
           "navnet",
           "var"
-        ],
-        "prompt": "Hva heter du",
-        "answer": "Hva heter du"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -2444,42 +1834,29 @@
         "accepted": [
           "We wait for the bus"
         ],
-        "word_pool": [
-          "are",
-          "bus",
-          "for",
+        "text": "We are waiting for the bus",
+        "distractors": [
           "looking",
-          "the",
           "they",
           "train",
           "wait",
           "waited",
-          "waiting",
-          "we",
           "will"
-        ],
-        "prompt": "We are waiting for the bus",
-        "answer": "We are waiting for the bus"
+        ]
       },
       "no": {
         "accepted": [],
-        "word_pool": [
-          "bussen",
+        "text": "Vi venter på bussen",
+        "distractors": [
           "de",
           "etter",
-          "på",
           "ser",
           "skal",
           "toget",
-          "venter",
-          "ventet",
-          "vi"
-        ],
-        "prompt": "Vi venter på bussen",
-        "answer": "Vi venter på bussen"
+          "ventet"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -2497,51 +1874,36 @@
         "accepted": [
           "Our new garden is very pretty"
         ],
-        "word_pool": [
-          "beautiful",
-          "garden",
+        "text": "Our new garden is very beautiful",
+        "distractors": [
           "house",
-          "is",
-          "new",
           "not",
           "old",
-          "our",
           "pretty",
           "small",
           "they",
-          "very",
           "was"
-        ],
-        "prompt": "Our new garden is very beautiful",
-        "answer": "Our new garden is very beautiful"
+        ]
       },
       "no": {
         "accepted": [
           "Hagen vår er veldig fin",
           "Den nye hagen vår er veldig vakker"
         ],
-        "word_pool": [
+        "text": "Vår nye hage er veldig vakker",
+        "distractors": [
           "de",
           "den",
-          "er",
           "fin",
           "gammel",
-          "hage",
           "hagen",
           "hus",
           "ikke",
           "liten",
-          "nye",
-          "vakker",
-          "var",
-          "veldig",
-          "vår"
-        ],
-        "prompt": "Vår nye hage er veldig vakker",
-        "answer": "Vår nye hage er veldig vakker"
+          "var"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -2559,54 +1921,35 @@
         "accepted": [
           "I believe it is important to learn languages"
         ],
-        "word_pool": [
+        "text": "I think it is important to learn languages",
+        "distractors": [
           "believe",
-          "I",
-          "important",
-          "is",
-          "it",
-          "languages",
-          "learn",
           "speak",
           "that",
           "they",
-          "think",
           "thought",
-          "to",
           "useless",
           "was"
-        ],
-        "prompt": "I think it is important to learn languages",
-        "answer": "I think it is important to learn languages"
+        ]
       },
       "no": {
         "accepted": [
           "Jeg tror det er viktig å lære språk",
           "Jeg mener det er viktig å lære språk"
         ],
-        "word_pool": [
+        "text": "Jeg synes det er viktig å lære språk",
+        "distractors": [
           "at",
           "de",
-          "det",
-          "er",
-          "jeg",
-          "lære",
           "mener",
           "snakke",
-          "språk",
-          "synes",
           "syntes",
           "tror",
           "unødvendig",
-          "var",
-          "viktig",
-          "å"
-        ],
-        "prompt": "Jeg synes det er viktig å lære språk",
-        "answer": "Jeg synes det er viktig å lære språk"
+          "var"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -2624,51 +1967,35 @@
         "accepted": [
           "I normally drink tea in the morning"
         ],
-        "word_pool": [
+        "text": "I usually drink tea in the morning",
+        "distractors": [
           "always",
           "coffee",
           "drank",
-          "drink",
           "evening",
-          "I",
-          "in",
-          "morning",
           "never",
           "normally",
-          "she",
-          "tea",
-          "the",
-          "usually"
-        ],
-        "prompt": "I usually drink tea in the morning",
-        "answer": "I usually drink tea in the morning"
+          "she"
+        ]
       },
       "no": {
         "accepted": [
           "Jeg pleier å drikke te om morgenen"
         ],
-        "word_pool": [
+        "text": "Jeg drikker vanligvis te om morgenen",
+        "distractors": [
           "aldri",
           "alltid",
           "drakk",
           "drikke",
-          "drikker",
           "hun",
-          "jeg",
           "kaffe",
           "kvelden",
-          "morgenen",
-          "om",
           "pleier",
-          "te",
-          "vanligvis",
           "å"
-        ],
-        "prompt": "Jeg drikker vanligvis te om morgenen",
-        "answer": "Jeg drikker vanligvis te om morgenen"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -2684,44 +2011,32 @@
     "translations": {
       "en": {
         "accepted": [],
-        "word_pool": [
-          "is",
+        "text": "The sun is shining today",
+        "distractors": [
           "moon",
           "not",
           "rain",
-          "shining",
           "shone",
-          "sun",
-          "the",
-          "today",
           "was",
           "yesterday"
-        ],
-        "prompt": "The sun is shining today",
-        "answer": "The sun is shining today"
+        ]
       },
       "no": {
         "accepted": [
           "Sola skinner i dag"
         ],
-        "word_pool": [
-          "dag",
-          "i",
+        "text": "Solen skinner i dag",
+        "distractors": [
           "i går",
           "ikke",
           "månen",
           "regn",
-          "skinner",
           "skinte",
           "sola",
-          "solen",
           "var"
-        ],
-        "prompt": "Solen skinner i dag",
-        "answer": "Solen skinner i dag"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -2737,45 +2052,31 @@
     "translations": {
       "en": {
         "accepted": [],
-        "word_pool": [
+        "text": "My computer is on the table",
+        "distractors": [
           "chair",
-          "computer",
           "his",
-          "is",
-          "my",
-          "on",
           "phone",
-          "table",
-          "the",
           "under",
           "was"
-        ],
-        "prompt": "My computer is on the table",
-        "answer": "My computer is on the table"
+        ]
       },
       "no": {
         "accepted": [
           "PC-en min ligger på bordet"
         ],
-        "word_pool": [
-          "bordet",
-          "datamaskinen",
+        "text": "Datamaskinen min ligger på bordet",
+        "distractors": [
           "er",
           "hans",
-          "ligger",
-          "min",
           "pc-en",
-          "på",
           "stolen",
           "telefonen",
           "under",
           "var"
-        ],
-        "prompt": "Datamaskinen min ligger på bordet",
-        "answer": "Datamaskinen min ligger på bordet"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -2790,37 +2091,28 @@
     "translations": {
       "en": {
         "accepted": [],
-        "word_pool": [
-          "are",
+        "text": "Are you hungry",
+        "distractors": [
           "how",
-          "hungry",
           "is",
           "they",
           "thirsty",
           "was",
-          "where",
-          "you"
-        ],
-        "prompt": "Are you hungry",
-        "answer": "Are you hungry"
+          "where"
+        ]
       },
       "no": {
         "accepted": [],
-        "word_pool": [
+        "text": "Er du sulten",
+        "distractors": [
           "de",
-          "du",
-          "er",
           "hvor",
           "hvordan",
-          "sulten",
           "tørst",
           "var"
-        ],
-        "prompt": "Er du sulten",
-        "answer": "Er du sulten"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }

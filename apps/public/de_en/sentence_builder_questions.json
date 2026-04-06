@@ -11,47 +11,34 @@
         "accepted": [
           "Ich bin heute richtig froh"
         ],
-        "word_pool": [
-          "bin",
+        "text": "Ich bin heute sehr glücklich",
+        "distractors": [
           "böse",
           "er",
           "froh",
-          "glücklich",
-          "heute",
-          "ich",
           "Morgen",
           "richtig",
-          "sehr",
           "traurig",
           "war",
           "wir"
-        ],
-        "prompt": "Ich bin heute sehr glücklich",
-        "answer": "Ich bin heute sehr glücklich"
+        ]
       },
       "en": {
         "accepted": [
           "I am very glad today"
         ],
-        "word_pool": [
-          "am",
+        "text": "I am very happy today",
+        "distractors": [
           "glad",
-          "happy",
           "he",
-          "I",
           "is",
           "sad",
-          "today",
           "tomorrow",
-          "very",
           "was",
           "we"
-        ],
-        "prompt": "I am very happy today",
-        "answer": "I am very happy today"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -69,49 +56,34 @@
         "accepted": [
           "Sie liest gerade ein sehr gutes Buch"
         ],
-        "word_pool": [
-          "Buch",
+        "text": "Sie liest ein sehr gutes Buch",
+        "distractors": [
           "Bücher",
-          "ein",
           "er",
           "gerade",
-          "gutes",
           "las",
-          "liest",
           "schlecht",
-          "sehr",
-          "sie",
           "wir",
           "Zeitung"
-        ],
-        "prompt": "Sie liest ein sehr gutes Buch",
-        "answer": "Sie liest ein sehr gutes Buch"
+        ]
       },
       "en": {
         "accepted": [
           "She is reading a really good book"
         ],
-        "word_pool": [
-          "a",
+        "text": "She reads a really good book",
+        "distractors": [
           "bad",
-          "book",
           "books",
-          "good",
           "he",
           "is",
           "newspaper",
           "read",
           "reading",
-          "reads",
-          "really",
-          "she",
           "we"
-        ],
-        "prompt": "She reads a really good book",
-        "answer": "She reads a really good book"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -129,46 +101,33 @@
         "accepted": [
           "Wir essen jetzt Abendessen"
         ],
-        "word_pool": [
-          "Abend",
+        "text": "Wir essen jetzt zu Abend",
+        "distractors": [
           "Abendessen",
           "aßen",
-          "Essen",
           "Frühstück",
           "immer",
-          "jetzt",
           "Mittagessen",
           "Morgen",
-          "sie",
-          "wir",
-          "zu"
-        ],
-        "prompt": "Wir essen jetzt zu Abend",
-        "answer": "Wir essen jetzt zu Abend"
+          "sie"
+        ]
       },
       "en": {
         "accepted": [
           "We eat dinner now"
         ],
-        "word_pool": [
+        "text": "We are eating dinner now",
+        "distractors": [
           "always",
-          "are",
           "ate",
           "breakfast",
-          "dinner",
           "eat",
-          "eating",
           "lunch",
-          "now",
           "they",
-          "tomorrow",
-          "we"
-        ],
-        "prompt": "We are eating dinner now",
-        "answer": "We are eating dinner now"
+          "tomorrow"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -186,51 +145,37 @@
         "accepted": [
           "Sie laufen zum neuen Geschäft"
         ],
-        "word_pool": [
+        "text": "Sie gehen zum neuen Laden",
+        "distractors": [
           "alt",
           "Auto",
           "er",
           "fuhren",
-          "gehen",
           "Geschäft",
-          "Laden",
           "laufen",
-          "neuen",
-          "sie",
           "Supermarkt",
-          "wir",
-          "zum"
-        ],
-        "prompt": "Sie gehen zum neuen Laden",
-        "answer": "Sie gehen zum neuen Laden"
+          "wir"
+        ]
       },
       "en": {
         "accepted": [
           "They are walking to the new shop",
           "They walk to the new shop"
         ],
-        "word_pool": [
+        "text": "They walk to the new store",
+        "distractors": [
           "are",
           "car",
           "he",
-          "new",
           "old",
           "ran",
           "shop",
-          "store",
           "supermarket",
-          "the",
-          "they",
-          "to",
-          "walk",
           "walking",
           "we"
-        ],
-        "prompt": "They walk to the new store",
-        "answer": "They walk to the new store"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -246,44 +191,29 @@
     "translations": {
       "de": {
         "accepted": [],
-        "word_pool": [
-          "braun",
-          "der",
-          "groß",
-          "Hund",
+        "text": "Der Hund ist groß und braun",
+        "distractors": [
           "Hunde",
-          "ist",
           "Katze",
           "klein",
           "nicht",
           "schwarz",
-          "und",
           "war"
-        ],
-        "prompt": "Der Hund ist groß und braun",
-        "answer": "Der Hund ist groß und braun"
+        ]
       },
       "en": {
         "accepted": [],
-        "word_pool": [
-          "and",
-          "big",
+        "text": "The dog is big and brown",
+        "distractors": [
           "black",
-          "brown",
           "cat",
           "cats",
-          "dog",
-          "is",
           "not",
           "small",
-          "the",
           "was"
-        ],
-        "prompt": "The dog is big and brown",
-        "answer": "The dog is big and brown"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -299,48 +229,32 @@
     "translations": {
       "de": {
         "accepted": [],
-        "word_pool": [
-          "den",
-          "die",
-          "ganzen",
+        "text": "Die kleine Katze schläft den ganzen Tag",
+        "distractors": [
           "groß",
           "Hund",
-          "Katze",
-          "kleine",
           "Nacht",
           "schlief",
-          "schläft",
           "sie",
-          "Tag",
           "wacht"
-        ],
-        "prompt": "Die kleine Katze schläft den ganzen Tag",
-        "answer": "Die kleine Katze schläft den ganzen Tag"
+        ]
       },
       "en": {
         "accepted": [
           "The little cat sleeps all day"
         ],
-        "word_pool": [
-          "all",
+        "text": "The small cat sleeps all day",
+        "distractors": [
           "big",
-          "cat",
-          "day",
           "dog",
           "little",
           "night",
-          "sleeps",
           "slept",
-          "small",
-          "the",
           "they",
           "wakes"
-        ],
-        "prompt": "The small cat sleeps all day",
-        "answer": "The small cat sleeps all day"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -357,48 +271,33 @@
         "accepted": [
           "Ich besitze ein schnelles rotes Auto"
         ],
-        "word_pool": [
-          "Auto",
+        "text": "Ich habe ein schnelles rotes Auto",
+        "distractors": [
           "besitze",
           "blau",
           "Bus",
-          "ein",
           "er",
-          "habe",
           "hatte",
-          "ich",
           "langsam",
-          "rotes",
-          "schnelles",
           "wir"
-        ],
-        "prompt": "Ich habe ein schnelles rotes Auto",
-        "answer": "Ich habe ein schnelles rotes Auto"
+        ]
       },
       "en": {
         "accepted": [
           "I own a fast red car"
         ],
-        "word_pool": [
-          "a",
+        "text": "I have a fast red car",
+        "distractors": [
           "blue",
           "bus",
-          "car",
-          "fast",
           "had",
-          "have",
           "he",
-          "I",
           "own",
-          "red",
           "slow",
           "we"
-        ],
-        "prompt": "I have a fast red car",
-        "answer": "I have a fast red car"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -416,50 +315,35 @@
         "accepted": [
           "Er ist in einem großen Büro beschäftigt"
         ],
-        "word_pool": [
-          "arbeitet",
+        "text": "Er arbeitet in einem großen Büro",
+        "distractors": [
           "arbeitete",
           "beschäftigt",
-          "Büro",
           "draußen",
-          "einem",
-          "er",
           "Fabrik",
-          "großen",
-          "in",
           "ist",
           "klein",
           "sie",
           "wir"
-        ],
-        "prompt": "Er arbeitet in einem großen Büro",
-        "answer": "Er arbeitet in einem großen Büro"
+        ]
       },
       "en": {
         "accepted": [
           "He is working in a large office"
         ],
-        "word_pool": [
-          "a",
+        "text": "He works in a large office",
+        "distractors": [
           "factory",
-          "he",
-          "in",
           "is",
-          "large",
-          "office",
           "outside",
           "she",
           "small",
           "they",
           "worked",
-          "working",
-          "works"
-        ],
-        "prompt": "He works in a large office",
-        "answer": "He works in a large office"
+          "working"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -477,47 +361,34 @@
         "accepted": [
           "Sie sprechen sehr gut Deutsch"
         ],
-        "word_pool": [
-          "Deutsch",
-          "du",
+        "text": "Du sprichst sehr gut Deutsch",
+        "distractors": [
           "Englisch",
           "er",
-          "gut",
           "ich",
           "schlecht",
-          "sehr",
           "sie",
           "sprach",
           "sprechen",
-          "sprichst",
           "verstehst"
-        ],
-        "prompt": "Du sprichst sehr gut Deutsch",
-        "answer": "Du sprichst sehr gut Deutsch"
+        ]
       },
       "en": {
         "accepted": [
           "You talk German very well"
         ],
-        "word_pool": [
+        "text": "You speak German very well",
+        "distractors": [
           "badly",
           "English",
-          "German",
           "he",
           "I",
-          "speak",
           "spoke",
           "talk",
-          "understand",
-          "very",
-          "well",
-          "you"
-        ],
-        "prompt": "You speak German very well",
-        "answer": "You speak German very well"
+          "understand"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -535,48 +406,33 @@
         "accepted": [
           "Das Wetter ist heute sehr schön"
         ],
-        "word_pool": [
-          "das",
+        "text": "Das Wetter ist heute wirklich schön",
+        "distractors": [
           "gestern",
-          "heute",
-          "ist",
           "kalt",
           "Regen",
           "schlecht",
-          "schön",
           "sehr",
           "war",
-          "Wetter",
-          "wird",
-          "wirklich"
-        ],
-        "prompt": "Das Wetter ist heute wirklich schön",
-        "answer": "Das Wetter ist heute wirklich schön"
+          "wird"
+        ]
       },
       "en": {
         "accepted": [
           "The weather is very nice today"
         ],
-        "word_pool": [
+        "text": "The weather is really nice today",
+        "distractors": [
           "bad",
           "cold",
-          "is",
-          "nice",
           "rain",
-          "really",
-          "the",
-          "today",
           "very",
           "was",
-          "weather",
           "will",
           "yesterday"
-        ],
-        "prompt": "The weather is really nice today",
-        "answer": "The weather is really nice today"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -594,48 +450,33 @@
         "accepted": [
           "Mein kleiner Bruder ist sehr groß"
         ],
-        "word_pool": [
+        "text": "Mein junger Bruder ist sehr groß",
+        "distractors": [
           "alt",
-          "Bruder",
           "dein",
-          "groß",
-          "ist",
-          "junger",
           "kleiner",
           "kurz",
-          "mein",
           "Schwester",
-          "sehr",
           "sie",
           "war"
-        ],
-        "prompt": "Mein junger Bruder ist sehr groß",
-        "answer": "Mein junger Bruder ist sehr groß"
+        ]
       },
       "en": {
         "accepted": [
           "My little brother is very tall"
         ],
-        "word_pool": [
-          "brother",
-          "is",
+        "text": "My young brother is very tall",
+        "distractors": [
           "little",
-          "my",
           "old",
           "she",
           "short",
           "sister",
-          "tall",
-          "very",
           "was",
-          "young",
           "your"
-        ],
-        "prompt": "My young brother is very tall",
-        "answer": "My young brother is very tall"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -653,49 +494,33 @@
         "accepted": [
           "Wir möchten ein neues Haus kaufen"
         ],
-        "word_pool": [
+        "text": "Wir wollen ein neues Haus kaufen",
+        "distractors": [
           "alt",
           "Auto",
-          "ein",
-          "Haus",
-          "kaufen",
           "möchten",
-          "neues",
           "sie",
           "verkaufen",
-          "wir",
           "Wohnung",
-          "wollen",
           "wollten"
-        ],
-        "prompt": "Wir wollen ein neues Haus kaufen",
-        "answer": "Wir wollen ein neues Haus kaufen"
+        ]
       },
       "en": {
         "accepted": [
           "We wish to buy a new house"
         ],
-        "word_pool": [
-          "a",
+        "text": "We want to buy a new house",
+        "distractors": [
           "apartment",
-          "buy",
           "car",
-          "house",
-          "new",
           "old",
           "sell",
           "they",
-          "to",
-          "want",
           "wanted",
-          "we",
           "wish"
-        ],
-        "prompt": "We want to buy a new house",
-        "answer": "We want to buy a new house"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -712,51 +537,37 @@
         "accepted": [
           "Ich mag es schwarzen Kaffee zu trinken"
         ],
-        "word_pool": [
+        "text": "Ich trinke gerne schwarzen Kaffee",
+        "distractors": [
           "aß",
           "er",
           "es",
-          "gerne",
           "hasse",
-          "ich",
-          "Kaffee",
           "mag",
-          "schwarzen",
           "Tee",
-          "trinke",
           "trinken",
           "Wasser",
           "weiß",
           "zu"
-        ],
-        "prompt": "Ich trinke gerne schwarzen Kaffee",
-        "answer": "Ich trinke gerne schwarzen Kaffee"
+        ]
       },
       "en": {
         "accepted": [
           "I enjoy drinking black coffee"
         ],
-        "word_pool": [
+        "text": "I like to drink black coffee",
+        "distractors": [
           "ate",
-          "black",
-          "coffee",
-          "drink",
           "drinking",
           "enjoy",
           "hate",
           "he",
-          "I",
-          "like",
           "tea",
-          "to",
           "water",
           "white"
-        ],
-        "prompt": "I like to drink black coffee",
-        "answer": "I like to drink black coffee"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -774,44 +585,31 @@
         "accepted": [
           "Oft reisen sie nach Spanien"
         ],
-        "word_pool": [
+        "text": "Sie reisen oft nach Spanien",
+        "distractors": [
           "Auto",
           "Deutschland",
           "flogen",
           "fuhren",
-          "nach",
           "nie",
-          "oft",
-          "reisen",
-          "sie",
-          "Spanien",
           "wir"
-        ],
-        "prompt": "Sie reisen oft nach Spanien",
-        "answer": "Sie reisen oft nach Spanien"
+        ]
       },
       "en": {
         "accepted": [
           "They travel to Spain often"
         ],
-        "word_pool": [
+        "text": "They often travel to Spain",
+        "distractors": [
           "car",
           "drove",
           "flew",
           "Germany",
           "never",
-          "often",
-          "Spain",
-          "they",
-          "to",
-          "travel",
           "we"
-        ],
-        "prompt": "They often travel to Spain",
-        "answer": "They often travel to Spain"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -829,49 +627,34 @@
         "accepted": [
           "Die Mahlzeit ist kalt und schlecht"
         ],
-        "word_pool": [
-          "das",
+        "text": "Das Essen ist kalt und schlecht",
+        "distractors": [
           "die",
           "er",
-          "Essen",
           "gut",
           "heiß",
-          "ist",
-          "kalt",
           "Mahlzeit",
-          "schlecht",
-          "und",
           "war",
           "Wasser",
           "wir"
-        ],
-        "prompt": "Das Essen ist kalt und schlecht",
-        "answer": "Das Essen ist kalt und schlecht"
+        ]
       },
       "en": {
         "accepted": [
           "The meal is cold and bad"
         ],
-        "word_pool": [
-          "and",
-          "bad",
-          "cold",
-          "food",
+        "text": "The food is cold and bad",
+        "distractors": [
           "good",
           "he",
           "hot",
-          "is",
           "meal",
-          "the",
           "was",
           "water",
           "we"
-        ],
-        "prompt": "The food is cold and bad",
-        "answer": "The food is cold and bad"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -890,48 +673,33 @@
         "accepted": [
           "Der Schnellzug fährt jetzt ab"
         ],
-        "word_pool": [
-          "ab",
+        "text": "Der schnelle Zug fährt jetzt ab",
+        "distractors": [
           "Auto",
           "Bus",
-          "der",
-          "fährt",
-          "jetzt",
           "kommt",
           "langsam",
-          "schnelle",
           "Schnellzug",
           "später",
-          "wir",
-          "Zug"
-        ],
-        "prompt": "Der schnelle Zug fährt jetzt ab",
-        "answer": "Der schnelle Zug fährt jetzt ab"
+          "wir"
+        ]
       },
       "en": {
         "accepted": [
           "The fast train leaves right now"
         ],
-        "word_pool": [
+        "text": "The fast train departs right now",
+        "distractors": [
           "arrives",
           "bus",
           "car",
-          "departs",
-          "fast",
           "later",
           "leaves",
-          "now",
-          "right",
           "slow",
-          "the",
-          "train",
           "we"
-        ],
-        "prompt": "The fast train departs right now",
-        "answer": "The fast train departs right now"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -947,45 +715,32 @@
     "translations": {
       "de": {
         "accepted": [],
-        "word_pool": [
-          "Abend",
-          "Fußball",
-          "jeden",
+        "text": "Wir spielen jeden Abend Fußball",
+        "distractors": [
           "Morgen",
           "nie",
           "sehen",
           "sie",
-          "spielen",
           "spielten",
-          "Tennis",
-          "wir"
-        ],
-        "prompt": "Wir spielen jeden Abend Fußball",
-        "answer": "Wir spielen jeden Abend Fußball"
+          "Tennis"
+        ]
       },
       "en": {
         "accepted": [
           "We play soccer every evening"
         ],
-        "word_pool": [
-          "evening",
-          "every",
-          "football",
+        "text": "We play football every evening",
+        "distractors": [
           "morning",
           "never",
-          "play",
           "played",
           "soccer",
           "tennis",
           "they",
-          "watch",
-          "we"
-        ],
-        "prompt": "We play football every evening",
-        "answer": "We play football every evening"
+          "watch"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -1001,44 +756,29 @@
     "translations": {
       "de": {
         "accepted": [],
-        "word_pool": [
-          "Brief",
+        "text": "Sie schrieb gestern einen langen Brief",
+        "distractors": [
           "Buch",
-          "einen",
           "er",
-          "gestern",
           "kurz",
-          "langen",
           "las",
           "Morgen",
-          "schreibt",
-          "schrieb",
-          "sie"
-        ],
-        "prompt": "Sie schrieb gestern einen langen Brief",
-        "answer": "Sie schrieb gestern einen langen Brief"
+          "schreibt"
+        ]
       },
       "en": {
         "accepted": [],
-        "word_pool": [
-          "a",
+        "text": "She wrote a long letter yesterday",
+        "distractors": [
           "book",
           "he",
-          "letter",
-          "long",
           "read",
-          "she",
           "short",
           "tomorrow",
-          "writes",
-          "wrote",
-          "yesterday"
-        ],
-        "prompt": "She wrote a long letter yesterday",
-        "answer": "She wrote a long letter yesterday"
+          "writes"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -1054,42 +794,29 @@
     "translations": {
       "de": {
         "accepted": [],
-        "word_pool": [
+        "text": "Er war gestern sehr müde",
+        "distractors": [
           "böse",
-          "er",
-          "gestern",
           "ist",
           "Morgen",
-          "müde",
-          "sehr",
           "sie",
           "wach",
-          "war",
           "wir"
-        ],
-        "prompt": "Er war gestern sehr müde",
-        "answer": "Er war gestern sehr müde"
+        ]
       },
       "en": {
         "accepted": [],
-        "word_pool": [
+        "text": "He was very tired yesterday",
+        "distractors": [
           "angry",
           "awake",
-          "he",
           "is",
           "she",
-          "tired",
           "tomorrow",
-          "very",
-          "was",
-          "we",
-          "yesterday"
-        ],
-        "prompt": "He was very tired yesterday",
-        "answer": "He was very tired yesterday"
+          "we"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -1107,48 +834,33 @@
         "accepted": [
           "Ich verstehe Sie überhaupt nicht"
         ],
-        "word_pool": [
+        "text": "Ich verstehe dich überhaupt nicht",
+        "distractors": [
           "alles",
-          "dich",
           "er",
           "höre",
-          "ich",
           "ihn",
-          "nicht",
           "sie",
           "verstand",
-          "verstehe",
-          "weiß",
-          "überhaupt"
-        ],
-        "prompt": "Ich verstehe dich überhaupt nicht",
-        "answer": "Ich verstehe dich überhaupt nicht"
+          "weiß"
+        ]
       },
       "en": {
         "accepted": [
           "I don't understand you at all"
         ],
-        "word_pool": [
-          "all",
-          "at",
-          "do",
+        "text": "I do not understand you at all",
+        "distractors": [
           "don't",
           "everything",
           "he",
           "hear",
           "him",
-          "I",
           "know",
-          "not",
-          "understand",
-          "understood",
-          "you"
-        ],
-        "prompt": "I do not understand you at all",
-        "answer": "I do not understand you at all"
+          "understood"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -1166,48 +878,33 @@
         "accepted": [
           "Der Lehrer besitzt einen blauen Stift"
         ],
-        "word_pool": [
+        "text": "Der Lehrer hat einen blauen Stift",
+        "distractors": [
           "besitzt",
-          "blauen",
           "Bleistift",
-          "der",
-          "einen",
           "er",
-          "hat",
           "hatte",
-          "Lehrer",
           "rot",
           "Schüler",
-          "Stift",
           "wir"
-        ],
-        "prompt": "Der Lehrer hat einen blauen Stift",
-        "answer": "Der Lehrer hat einen blauen Stift"
+        ]
       },
       "en": {
         "accepted": [
           "The instructor has a blue pen"
         ],
-        "word_pool": [
-          "a",
-          "blue",
+        "text": "The teacher has a blue pen",
+        "distractors": [
           "had",
-          "has",
           "he",
           "instructor",
-          "pen",
           "pencil",
           "red",
           "student",
-          "teacher",
-          "the",
           "we"
-        ],
-        "prompt": "The teacher has a blue pen",
-        "answer": "The teacher has a blue pen"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -1225,46 +922,34 @@
         "accepted": [
           "Sie hören gerade laute Musik"
         ],
-        "word_pool": [
+        "text": "Sie hören laute Musik",
+        "distractors": [
           "er",
           "gerade",
-          "hören",
           "hörten",
-          "laute",
           "leise",
-          "Musik",
           "Radio",
-          "sie",
           "spielen",
           "wir"
-        ],
-        "prompt": "Sie hören laute Musik",
-        "answer": "Sie hören laute Musik"
+        ]
       },
       "en": {
         "accepted": [
           "They are listening to loud music"
         ],
-        "word_pool": [
+        "text": "They listen to loud music",
+        "distractors": [
           "are",
           "he",
-          "listen",
           "listened",
           "listening",
-          "loud",
-          "music",
           "play",
           "quiet",
           "radio",
-          "they",
-          "to",
           "we"
-        ],
-        "prompt": "They listen to loud music",
-        "answer": "They listen to loud music"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -1282,47 +967,34 @@
         "accepted": [
           "Sie hat ein gelbes Kleid an"
         ],
-        "word_pool": [
+        "text": "Sie trägt ein gelbes Kleid",
+        "distractors": [
           "an",
-          "ein",
           "er",
-          "gelbes",
           "grün",
           "hat",
           "hemd",
-          "Kleid",
           "Schuhe",
-          "sie",
-          "trug",
-          "trägt"
-        ],
-        "prompt": "Sie trägt ein gelbes Kleid",
-        "answer": "Sie trägt ein gelbes Kleid"
+          "trug"
+        ]
       },
       "en": {
         "accepted": [
           "She is wearing a yellow dress"
         ],
-        "word_pool": [
-          "a",
-          "dress",
+        "text": "She wears a yellow dress",
+        "distractors": [
           "green",
           "he",
           "is",
-          "she",
           "shirt",
           "shoes",
           "they",
           "wearing",
-          "wears",
-          "wore",
-          "yellow"
-        ],
-        "prompt": "She wears a yellow dress",
-        "answer": "She wears a yellow dress"
+          "wore"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -1340,47 +1012,30 @@
         "accepted": [
           "Nächste Woche fliege ich nach London"
         ],
-        "word_pool": [
+        "text": "Ich werde nächste Woche nach London fliegen",
+        "distractors": [
           "fahren",
           "fliege",
-          "fliegen",
           "flog",
-          "ich",
-          "London",
           "Monat",
-          "nach",
-          "nächste",
           "Paris",
           "sie",
-          "werde",
-          "wir",
-          "Woche"
-        ],
-        "prompt": "Ich werde nächste Woche nach London fliegen",
-        "answer": "Ich werde nächste Woche nach London fliegen"
+          "wir"
+        ]
       },
       "en": {
         "accepted": [],
-        "word_pool": [
+        "text": "I will fly to London next week",
+        "distractors": [
           "drive",
           "flew",
-          "fly",
-          "I",
-          "London",
           "month",
-          "next",
           "Paris",
           "she",
-          "to",
-          "we",
-          "week",
-          "will"
-        ],
-        "prompt": "I will fly to London next week",
-        "answer": "I will fly to London next week"
+          "we"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -1395,44 +1050,29 @@
     "translations": {
       "de": {
         "accepted": [],
-        "word_pool": [
-          "alt",
-          "Baum",
+        "text": "Der hohe Baum ist sehr alt",
+        "distractors": [
           "Blume",
-          "der",
           "er",
-          "hohe",
-          "ist",
           "jung",
           "kurz",
-          "sehr",
           "war",
           "wir"
-        ],
-        "prompt": "Der hohe Baum ist sehr alt",
-        "answer": "Der hohe Baum ist sehr alt"
+        ]
       },
       "en": {
         "accepted": [],
-        "word_pool": [
+        "text": "The tall tree is very old",
+        "distractors": [
           "flower",
           "he",
-          "is",
-          "old",
           "short",
-          "tall",
-          "the",
-          "tree",
-          "very",
           "was",
           "we",
           "young"
-        ],
-        "prompt": "The tall tree is very old",
-        "answer": "The tall tree is very old"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -1450,48 +1090,33 @@
         "accepted": [
           "Die Großstadt ist immer belebt"
         ],
-        "word_pool": [
-          "belebt",
-          "die",
+        "text": "Die große Stadt ist immer belebt",
+        "distractors": [
           "dorf",
-          "große",
           "Großstadt",
-          "immer",
-          "ist",
           "klein",
           "nie",
           "ruhig",
-          "Stadt",
           "war",
           "wir"
-        ],
-        "prompt": "Die große Stadt ist immer belebt",
-        "answer": "Die große Stadt ist immer belebt"
+        ]
       },
       "en": {
         "accepted": [
           "The large city is always busy"
         ],
-        "word_pool": [
-          "always",
-          "big",
-          "busy",
-          "city",
-          "is",
+        "text": "The big city is always busy",
+        "distractors": [
           "large",
           "never",
           "quiet",
           "small",
-          "the",
           "village",
           "was",
           "we"
-        ],
-        "prompt": "The big city is always busy",
-        "answer": "The big city is always busy"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -1509,48 +1134,34 @@
         "accepted": [
           "Sie macht einen leckeren Kuchen"
         ],
-        "word_pool": [
-          "backt",
+        "text": "Sie backt einen leckeren Kuchen",
+        "distractors": [
           "Brot",
-          "einen",
           "er",
           "ißt",
-          "Kuchen",
-          "leckeren",
           "macht",
           "schlecht",
-          "sie",
           "war"
-        ],
-        "prompt": "Sie backt einen leckeren Kuchen",
-        "answer": "Sie backt einen leckeren Kuchen"
+        ]
       },
       "en": {
         "accepted": [
           "She makes a delicious cake",
           "She is baking a delicious cake"
         ],
-        "word_pool": [
-          "a",
+        "text": "She is making a delicious cake",
+        "distractors": [
           "bad",
           "baking",
           "bread",
-          "cake",
-          "delicious",
           "eating",
           "he",
-          "is",
           "makes",
-          "making",
-          "she",
           "they",
           "was"
-        ],
-        "prompt": "She is making a delicious cake",
-        "answer": "She is making a delicious cake"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -1567,43 +1178,30 @@
         "accepted": [
           "Ich sehe euch"
         ],
-        "word_pool": [
+        "text": "Ich sehe dich und ihn",
+        "distractors": [
           "alle",
-          "dich",
           "euch",
-          "ich",
-          "ihn",
           "ihnen",
           "nicht",
           "sah",
-          "sehe",
           "sie",
-          "und",
           "wir"
-        ],
-        "prompt": "Ich sehe dich und ihn",
-        "answer": "Ich sehe dich und ihn"
+        ]
       },
       "en": {
         "accepted": [],
-        "word_pool": [
-          "and",
+        "text": "I see you and him",
+        "distractors": [
           "her",
-          "him",
-          "I",
           "saw",
-          "see",
           "she",
           "them",
           "they",
-          "we",
-          "you"
-        ],
-        "prompt": "I see you and him",
-        "answer": "I see you and him"
+          "we"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -1621,46 +1219,31 @@
         "accepted": [
           "Wir besuchen morgen meine Eltern"
         ],
-        "word_pool": [
-          "besuchen",
+        "text": "Wir werden morgen meine Eltern besuchen",
+        "distractors": [
           "besuchten",
-          "Eltern",
           "Freunde",
           "gestern",
           "Haus",
-          "meine",
-          "Morgen",
-          "sie",
-          "werden",
-          "wir"
-        ],
-        "prompt": "Wir werden morgen meine Eltern besuchen",
-        "answer": "Wir werden morgen meine Eltern besuchen"
+          "sie"
+        ]
       },
       "en": {
         "accepted": [
           "We are visiting my parents tomorrow"
         ],
-        "word_pool": [
+        "text": "We will visit my parents tomorrow",
+        "distractors": [
           "are",
           "friends",
           "home",
-          "my",
-          "parents",
           "they",
-          "tomorrow",
-          "visit",
           "visited",
           "visiting",
-          "we",
-          "will",
           "yesterday"
-        ],
-        "prompt": "We will visit my parents tomorrow",
-        "answer": "We will visit my parents tomorrow"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -1676,44 +1259,29 @@
     "translations": {
       "de": {
         "accepted": [],
-        "word_pool": [
-          "bist",
-          "du",
+        "text": "Warum bist du heute so traurig",
+        "distractors": [
           "er",
           "glücklich",
-          "heute",
           "ist",
           "Morgen",
-          "so",
-          "traurig",
           "war",
-          "warum",
           "wir"
-        ],
-        "prompt": "Warum bist du heute so traurig",
-        "answer": "Warum bist du heute so traurig"
+        ]
       },
       "en": {
         "accepted": [],
-        "word_pool": [
-          "are",
+        "text": "Why are you so sad today",
+        "distractors": [
           "happy",
           "he",
           "is",
-          "sad",
-          "so",
-          "today",
           "tomorrow",
           "was",
-          "we",
-          "why",
-          "you"
-        ],
-        "prompt": "Why are you so sad today",
-        "answer": "Why are you so sad today"
+          "we"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -1731,46 +1299,34 @@
         "accepted": [
           "Er braucht mehr Schlaf"
         ],
-        "word_pool": [
+        "text": "Er muss mehr schlafen",
+        "distractors": [
           "arbeiten",
           "braucht",
-          "er",
           "Essen",
-          "mehr",
-          "muss",
           "musste",
           "Schlaf",
-          "schlafen",
           "sie",
           "weniger",
           "will"
-        ],
-        "prompt": "Er muss mehr schlafen",
-        "answer": "Er muss mehr schlafen"
+        ]
       },
       "en": {
         "accepted": [
           "He must sleep more"
         ],
-        "word_pool": [
+        "text": "He needs to sleep more",
+        "distractors": [
           "eat",
-          "he",
           "less",
-          "more",
           "must",
           "needed",
-          "needs",
           "she",
-          "sleep",
-          "to",
           "wants",
           "work"
-        ],
-        "prompt": "He needs to sleep more",
-        "answer": "He needs to sleep more"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -1786,44 +1342,28 @@
     "translations": {
       "de": {
         "accepted": [],
-        "word_pool": [
+        "text": "Ich habe meine Schlüssel zu Hause vergessen",
+        "distractors": [
           "Brieftasche",
           "Büro",
           "erinnert",
           "fand",
-          "habe",
-          "Hause",
-          "ich",
           "mein",
-          "meine",
-          "Schlüssel",
-          "sie",
-          "vergessen",
-          "zu"
-        ],
-        "prompt": "Ich habe meine Schlüssel zu Hause vergessen",
-        "answer": "Ich habe meine Schlüssel zu Hause vergessen"
+          "sie"
+        ]
       },
       "en": {
         "accepted": [],
-        "word_pool": [
-          "at",
-          "forgot",
+        "text": "I forgot my keys at home",
+        "distractors": [
           "found",
-          "home",
-          "I",
-          "keys",
-          "my",
           "office",
           "remembered",
           "she",
           "wallet"
-        ],
-        "prompt": "I forgot my keys at home",
-        "answer": "I forgot my keys at home"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -1841,44 +1381,31 @@
         "accepted": [
           "Es regnet draußen"
         ],
-        "word_pool": [
-          "draußen",
+        "text": "Draußen regnet es gerade",
+        "distractors": [
           "drinnen",
-          "es",
-          "gerade",
           "gestern",
           "ist",
-          "regnet",
           "schneit",
           "Sonne",
           "war"
-        ],
-        "prompt": "Draußen regnet es gerade",
-        "answer": "Draußen regnet es gerade"
+        ]
       },
       "en": {
         "accepted": [
           "It rains outside right now"
         ],
-        "word_pool": [
+        "text": "It is raining outside right now",
+        "distractors": [
           "inside",
-          "is",
-          "it",
-          "now",
-          "outside",
-          "raining",
           "rains",
-          "right",
           "snowing",
           "sun",
           "was",
           "yesterday"
-        ],
-        "prompt": "It is raining outside right now",
-        "answer": "It is raining outside right now"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -1896,44 +1423,30 @@
         "accepted": [
           "Was kostet die Fahrkarte"
         ],
-        "word_pool": [
+        "text": "Wie viel kostet die Fahrkarte",
+        "distractors": [
           "billiger",
-          "die",
-          "Fahrkarte",
           "ist",
           "kaufen",
-          "kostet",
           "Preis",
           "teuer",
-          "viel",
           "viele",
-          "was",
-          "wie"
-        ],
-        "prompt": "Wie viel kostet die Fahrkarte",
-        "answer": "Wie viel kostet die Fahrkarte"
+          "was"
+        ]
       },
       "en": {
         "accepted": [],
-        "word_pool": [
+        "text": "How much does the ticket cost",
+        "distractors": [
           "buy",
           "cheaper",
-          "cost",
-          "does",
           "expensive",
-          "how",
           "is",
           "many",
-          "much",
-          "price",
-          "the",
-          "ticket"
-        ],
-        "prompt": "How much does the ticket cost",
-        "answer": "How much does the ticket cost"
+          "price"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -1949,40 +1462,27 @@
     "translations": {
       "de": {
         "accepted": [],
-        "word_pool": [
-          "Auto",
+        "text": "Das rote Auto ist schnell",
+        "distractors": [
           "blau",
           "Bus",
-          "das",
-          "ist",
           "langsam",
           "nicht",
-          "rote",
-          "schnell",
           "war"
-        ],
-        "prompt": "Das rote Auto ist schnell",
-        "answer": "Das rote Auto ist schnell"
+        ]
       },
       "en": {
         "accepted": [],
-        "word_pool": [
+        "text": "The red car is fast",
+        "distractors": [
           "blue",
           "bus",
-          "car",
-          "fast",
-          "is",
           "not",
-          "red",
           "slow",
-          "the",
           "was"
-        ],
-        "prompt": "The red car is fast",
-        "answer": "The red car is fast"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -2000,41 +1500,28 @@
         "accepted": [
           "Wie alt ist Ihre Schwester"
         ],
-        "word_pool": [
-          "alt",
+        "text": "Wie alt ist deine Schwester",
+        "distractors": [
           "Bruder",
-          "deine",
           "ihre",
-          "ist",
           "mein",
-          "Schwester",
           "viele",
           "war",
-          "wie",
           "wo"
-        ],
-        "prompt": "Wie alt ist deine Schwester",
-        "answer": "Wie alt ist deine Schwester"
+        ]
       },
       "en": {
         "accepted": [],
-        "word_pool": [
+        "text": "How old is your sister",
+        "distractors": [
           "brother",
-          "how",
-          "is",
           "many",
           "my",
-          "old",
-          "sister",
           "was",
-          "where",
-          "your"
-        ],
-        "prompt": "How old is your sister",
-        "answer": "How old is your sister"
+          "where"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -2052,49 +1539,36 @@
         "accepted": [
           "Ich esse nicht gerne scharf"
         ],
-        "word_pool": [
+        "text": "Ich mag kein scharfes Essen",
+        "distractors": [
           "esse",
-          "Essen",
           "gerne",
           "heiß",
-          "ich",
-          "kein",
           "lecker",
-          "mag",
           "nicht",
           "scharf",
-          "scharfes",
           "sehr",
           "sie",
           "süß"
-        ],
-        "prompt": "Ich mag kein scharfes Essen",
-        "answer": "Ich mag kein scharfes Essen"
+        ]
       },
       "en": {
         "accepted": [
           "I do not like spicy food"
         ],
-        "word_pool": [
+        "text": "I don't like spicy food",
+        "distractors": [
           "delicious",
           "do",
-          "don't",
           "eat",
-          "food",
           "hot",
-          "I",
-          "like",
           "not",
           "she",
-          "spicy",
           "sweet",
           "very"
-        ],
-        "prompt": "I don't like spicy food",
-        "answer": "I don't like spicy food"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -2112,46 +1586,34 @@
         "accepted": [
           "Wo wohnen Sie jetzt"
         ],
-        "word_pool": [
+        "text": "Wo wohnst du jetzt",
+        "distractors": [
           "arbeiten",
           "bleiben",
-          "du",
           "hier",
-          "jetzt",
           "sie",
           "wann",
-          "wo",
           "wohnen",
-          "wohnst",
           "wohnte"
-        ],
-        "prompt": "Wo wohnst du jetzt",
-        "answer": "Wo wohnst du jetzt"
+        ]
       },
       "en": {
         "accepted": [
           "Where are you living now"
         ],
-        "word_pool": [
+        "text": "Where do you live now",
+        "distractors": [
           "are",
-          "do",
           "here",
-          "live",
           "lived",
           "living",
-          "now",
           "stay",
           "they",
           "when",
-          "where",
-          "work",
-          "you"
-        ],
-        "prompt": "Where do you live now",
-        "answer": "Where do you live now"
+          "work"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -2166,42 +1628,29 @@
     "translations": {
       "de": {
         "accepted": [],
-        "word_pool": [
+        "text": "Ich habe zwei kleine Katzen",
+        "distractors": [
           "drei",
           "eine",
           "groß",
-          "habe",
           "hatte",
           "Hunde",
-          "ich",
-          "Katzen",
-          "kleine",
-          "wir",
-          "zwei"
-        ],
-        "prompt": "Ich habe zwei kleine Katzen",
-        "answer": "Ich habe zwei kleine Katzen"
+          "wir"
+        ]
       },
       "en": {
         "accepted": [],
-        "word_pool": [
+        "text": "I have two small cats",
+        "distractors": [
           "big",
-          "cats",
           "dogs",
           "had",
-          "have",
-          "I",
           "one",
-          "small",
           "three",
-          "two",
           "we"
-        ],
-        "prompt": "I have two small cats",
-        "answer": "I have two small cats"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -2219,49 +1668,33 @@
         "accepted": [
           "Sie reiste letzten Sommer nach Norwegen"
         ],
-        "word_pool": [
+        "text": "Sie ist letzten Sommer nach Norwegen gereist",
+        "distractors": [
           "besuchen",
           "er",
-          "gereist",
           "ging",
-          "ist",
-          "letzten",
-          "nach",
-          "Norwegen",
           "Reise",
           "reiste",
-          "sie",
-          "Sommer",
           "winter",
           "wird"
-        ],
-        "prompt": "Sie ist letzten Sommer nach Norwegen gereist",
-        "answer": "Sie ist letzten Sommer nach Norwegen gereist"
+        ]
       },
       "en": {
         "accepted": [
           "She traveled to Norway last summer"
         ],
-        "word_pool": [
+        "text": "She travelled to Norway last summer",
+        "distractors": [
           "he",
-          "last",
-          "Norway",
-          "she",
-          "summer",
-          "to",
           "traveled",
-          "travelled",
           "trip",
           "visit",
           "went",
           "will",
           "winter"
-        ],
-        "prompt": "She travelled to Norway last summer",
-        "answer": "She travelled to Norway last summer"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -2279,48 +1712,33 @@
         "accepted": [
           "Er steht jeden Tag früh auf"
         ],
-        "word_pool": [
-          "auf",
-          "er",
-          "früh",
+        "text": "Er wacht jeden Tag früh auf",
+        "distractors": [
           "immer",
-          "jeden",
           "Morgen",
           "schläft",
           "sie",
           "spät",
           "steht",
-          "Tag",
-          "wacht",
           "wachte"
-        ],
-        "prompt": "Er wacht jeden Tag früh auf",
-        "answer": "Er wacht jeden Tag früh auf"
+        ]
       },
       "en": {
         "accepted": [
           "He gets up early every day"
         ],
-        "word_pool": [
+        "text": "He wakes up early every day",
+        "distractors": [
           "always",
-          "day",
-          "early",
-          "every",
           "gets",
-          "he",
           "late",
           "morning",
           "she",
           "sleeps",
-          "up",
-          "wakes",
           "woke"
-        ],
-        "prompt": "He wakes up early every day",
-        "answer": "He wakes up early every day"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -2338,45 +1756,33 @@
         "accepted": [
           "Möchten Sie etwas Wasser"
         ],
-        "word_pool": [
+        "text": "Willst du etwas Wasser",
+        "distractors": [
           "brauchen",
-          "du",
-          "etwas",
           "Kaffee",
           "möchten",
           "sie",
           "trinken",
-          "war",
-          "Wasser",
-          "willst"
-        ],
-        "prompt": "Willst du etwas Wasser",
-        "answer": "Willst du etwas Wasser"
+          "war"
+        ]
       },
       "en": {
         "accepted": [
           "Would you like some water"
         ],
-        "word_pool": [
+        "text": "Do you want some water",
+        "distractors": [
           "any",
           "coffee",
-          "do",
           "drink",
           "like",
           "need",
-          "some",
           "they",
-          "want",
           "was",
-          "water",
-          "would",
-          "you"
-        ],
-        "prompt": "Do you want some water",
-        "answer": "Do you want some water"
+          "would"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -2394,11 +1800,10 @@
           "Wie heißen Sie",
           "Was ist dein Name"
         ],
-        "word_pool": [
+        "text": "Wie heißt du",
+        "distractors": [
           "dein",
-          "du",
           "heißen",
-          "heißt",
           "ist",
           "mein",
           "Name",
@@ -2406,33 +1811,24 @@
           "war",
           "was",
           "wer",
-          "wie",
           "wo"
-        ],
-        "prompt": "Wie heißt du",
-        "answer": "Wie heißt du"
+        ]
       },
       "en": {
         "accepted": [
           "What's your name"
         ],
-        "word_pool": [
+        "text": "What is your name",
+        "distractors": [
           "how",
-          "is",
           "my",
-          "name",
           "was",
-          "what",
           "what's",
           "where",
-          "who",
-          "your"
-        ],
-        "prompt": "What is your name",
-        "answer": "What is your name"
+          "who"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -2450,48 +1846,34 @@
         "accepted": [
           "Wir warten an der Bushaltestelle"
         ],
-        "word_pool": [
+        "text": "Wir warten auf den Bus",
+        "distractors": [
           "an",
-          "auf",
-          "Bus",
           "Bushaltestelle",
-          "den",
           "der",
           "für",
           "sehen",
           "sie",
-          "warten",
           "warteten",
           "werden",
-          "wir",
           "Zug"
-        ],
-        "prompt": "Wir warten auf den Bus",
-        "answer": "Wir warten auf den Bus"
+        ]
       },
       "en": {
         "accepted": [
           "We wait for the bus"
         ],
-        "word_pool": [
-          "are",
-          "bus",
-          "for",
+        "text": "We are waiting for the bus",
+        "distractors": [
           "looking",
-          "the",
           "they",
           "train",
           "wait",
           "waited",
-          "waiting",
-          "we",
           "will"
-        ],
-        "prompt": "We are waiting for the bus",
-        "answer": "We are waiting for the bus"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -2509,48 +1891,33 @@
         "accepted": [
           "Unser neuer Garten ist wunderbar"
         ],
-        "word_pool": [
+        "text": "Unser neuer Garten ist sehr schön",
+        "distractors": [
           "alt",
-          "Garten",
           "Haus",
-          "ist",
           "klein",
-          "neuer",
           "nicht",
-          "schön",
-          "sehr",
           "sie",
-          "unser",
           "war",
           "wunderbar"
-        ],
-        "prompt": "Unser neuer Garten ist sehr schön",
-        "answer": "Unser neuer Garten ist sehr schön"
+        ]
       },
       "en": {
         "accepted": [
           "Our new garden is very pretty"
         ],
-        "word_pool": [
-          "beautiful",
-          "garden",
+        "text": "Our new garden is very beautiful",
+        "distractors": [
           "house",
-          "is",
-          "new",
           "not",
           "old",
-          "our",
           "pretty",
           "small",
           "they",
-          "very",
           "was"
-        ],
-        "prompt": "Our new garden is very beautiful",
-        "answer": "Our new garden is very beautiful"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -2568,52 +1935,34 @@
         "accepted": [
           "Ich glaube es ist wichtig Sprachen zu lernen"
         ],
-        "word_pool": [
+        "text": "Ich finde es wichtig Sprachen zu lernen",
+        "distractors": [
           "dachte",
           "dass",
-          "es",
-          "finde",
           "glaube",
-          "ich",
           "ist",
-          "lernen",
           "nutzlos",
           "sie",
-          "Sprachen",
           "sprechen",
-          "war",
-          "wichtig",
-          "zu"
-        ],
-        "prompt": "Ich finde es wichtig Sprachen zu lernen",
-        "answer": "Ich finde es wichtig Sprachen zu lernen"
+          "war"
+        ]
       },
       "en": {
         "accepted": [
           "I believe it is important to learn languages"
         ],
-        "word_pool": [
+        "text": "I think it is important to learn languages",
+        "distractors": [
           "believe",
-          "I",
-          "important",
-          "is",
-          "it",
-          "languages",
-          "learn",
           "speak",
           "that",
           "they",
-          "think",
           "thought",
-          "to",
           "useless",
           "was"
-        ],
-        "prompt": "I think it is important to learn languages",
-        "answer": "I think it is important to learn languages"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -2631,47 +1980,32 @@
         "accepted": [
           "Normalerweise trinke ich morgens Tee"
         ],
-        "word_pool": [
+        "text": "Ich trinke normalerweise morgens Tee",
+        "distractors": [
           "Abend",
-          "ich",
           "immer",
           "Kaffee",
-          "morgens",
           "nie",
-          "normalerweise",
           "sie",
-          "Tee",
-          "trank",
-          "trinke"
-        ],
-        "prompt": "Ich trinke normalerweise morgens Tee",
-        "answer": "Ich trinke normalerweise morgens Tee"
+          "trank"
+        ]
       },
       "en": {
         "accepted": [
           "I normally drink tea in the morning"
         ],
-        "word_pool": [
+        "text": "I usually drink tea in the morning",
+        "distractors": [
           "always",
           "coffee",
           "drank",
-          "drink",
           "evening",
-          "I",
-          "in",
-          "morning",
           "never",
           "normally",
-          "she",
-          "tea",
-          "the",
-          "usually"
-        ],
-        "prompt": "I usually drink tea in the morning",
-        "answer": "I usually drink tea in the morning"
+          "she"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -2687,41 +2021,29 @@
     "translations": {
       "de": {
         "accepted": [],
-        "word_pool": [
-          "die",
+        "text": "Die Sonne scheint heute",
+        "distractors": [
           "gestern",
-          "heute",
           "Mond",
           "nicht",
           "Regen",
-          "scheint",
           "schien",
-          "Sonne",
           "war"
-        ],
-        "prompt": "Die Sonne scheint heute",
-        "answer": "Die Sonne scheint heute"
+        ]
       },
       "en": {
         "accepted": [],
-        "word_pool": [
-          "is",
+        "text": "The sun is shining today",
+        "distractors": [
           "moon",
           "not",
           "rain",
-          "shining",
           "shone",
-          "sun",
-          "the",
-          "today",
           "was",
           "yesterday"
-        ],
-        "prompt": "The sun is shining today",
-        "answer": "The sun is shining today"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -2739,45 +2061,30 @@
         "accepted": [
           "Mein Rechner steht auf dem Tisch"
         ],
-        "word_pool": [
-          "auf",
-          "Computer",
-          "dem",
+        "text": "Mein Computer liegt auf dem Tisch",
+        "distractors": [
           "ist",
-          "liegt",
-          "mein",
           "Rechner",
           "sein",
           "steht",
           "Stuhl",
           "Telefon",
-          "Tisch",
           "unter",
           "war"
-        ],
-        "prompt": "Mein Computer liegt auf dem Tisch",
-        "answer": "Mein Computer liegt auf dem Tisch"
+        ]
       },
       "en": {
         "accepted": [],
-        "word_pool": [
+        "text": "My computer is on the table",
+        "distractors": [
           "chair",
-          "computer",
           "his",
-          "is",
-          "my",
-          "on",
           "phone",
-          "table",
-          "the",
           "under",
           "was"
-        ],
-        "prompt": "My computer is on the table",
-        "answer": "My computer is on the table"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }
@@ -2794,39 +2101,30 @@
         "accepted": [
           "Haben Sie Hunger"
         ],
-        "word_pool": [
-          "du",
+        "text": "Hast du Hunger",
+        "distractors": [
           "durst",
           "haben",
-          "hast",
-          "Hunger",
           "ist",
           "sie",
           "war",
           "wie",
           "wo"
-        ],
-        "prompt": "Hast du Hunger",
-        "answer": "Hast du Hunger"
+        ]
       },
       "en": {
         "accepted": [],
-        "word_pool": [
-          "are",
+        "text": "Are you hungry",
+        "distractors": [
           "how",
-          "hungry",
           "is",
           "they",
           "thirsty",
           "was",
-          "where",
-          "you"
-        ],
-        "prompt": "Are you hungry",
-        "answer": "Are you hungry"
+          "where"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "token_sequence_choice"
     }

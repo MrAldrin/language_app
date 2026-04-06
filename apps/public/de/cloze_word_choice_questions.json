@@ -1,7 +1,6 @@
 [
   {
     "id": 7001,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 1,
     "tags": [
@@ -15,29 +14,26 @@
     },
     "translations": {
       "de": {
-        "prompt": "Ich habe einen Bruder. Er heißt Lukas.",
-        "answer": "Er",
         "accepted": [],
-        "word_pool": [
-          "Er",
+        "hidden_word_index": 4,
+        "text": "Ich habe einen Bruder. Er heißt Lukas.",
+        "distractors": [
           "Sie",
           "Es",
           "Wir",
           "Ihr"
-        ],
-        "hidden_word_index": 4
+        ]
       },
       "en": {
-        "prompt": "I have a brother. His name is Lucas."
+        "text": "I have a brother. His name is Lucas."
       },
       "no": {
-        "prompt": "Jeg har en bror. Han heter Lucas."
+        "text": "Jeg har en bror. Han heter Lucas."
       }
     }
   },
   {
     "id": 7002,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 2,
     "tags": [
@@ -52,29 +48,26 @@
     },
     "translations": {
       "de": {
-        "prompt": "Kannst du mir bitte helfen? Ich verstehe das nicht.",
-        "answer": "mir",
         "accepted": [],
-        "word_pool": [
-          "mir",
+        "hidden_word_index": 2,
+        "text": "Kannst du mir bitte helfen? Ich verstehe das nicht.",
+        "distractors": [
           "mich",
           "dir",
           "dich",
           "uns"
-        ],
-        "hidden_word_index": 2
+        ]
       },
       "en": {
-        "prompt": "Can you please help me? I don't understand this."
+        "text": "Can you please help me? I don't understand this."
       },
       "no": {
-        "prompt": "Kan du vær så snill å hjelpe meg? Jeg forstår ikke dette."
+        "text": "Kan du vær så snill å hjelpe meg? Jeg forstår ikke dette."
       }
     }
   },
   {
     "id": 7003,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 2,
     "tags": [
@@ -87,29 +80,26 @@
     },
     "translations": {
       "de": {
-        "prompt": "Das ist meine Schwester und das ist ihr Freund.",
-        "answer": "ihr",
         "accepted": [],
-        "word_pool": [
-          "ihr",
+        "hidden_word_index": 7,
+        "text": "Das ist meine Schwester und das ist ihr Freund.",
+        "distractors": [
           "sein",
           "mein",
           "dein",
           "unser"
-        ],
-        "hidden_word_index": 7
+        ]
       },
       "en": {
-        "prompt": "That is my sister and that is her boyfriend."
+        "text": "That is my sister and that is her boyfriend."
       },
       "no": {
-        "prompt": "Det er søsteren min og det er kjæresten hennes."
+        "text": "Det er søsteren min og det er kjæresten hennes."
       }
     }
   },
   {
     "id": 7004,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 2,
     "tags": [
@@ -122,29 +112,26 @@
     },
     "translations": {
       "de": {
-        "prompt": "Wir wohnen hier. Das ist unser Haus.",
-        "answer": "unser",
         "accepted": [],
-        "word_pool": [
-          "unser",
+        "hidden_word_index": 5,
+        "text": "Wir wohnen hier. Das ist unser Haus.",
+        "distractors": [
           "euer",
           "ihr",
           "mein",
           "sein"
-        ],
-        "hidden_word_index": 5
+        ]
       },
       "en": {
-        "prompt": "We live here. That is our house."
+        "text": "We live here. That is our house."
       },
       "no": {
-        "prompt": "Vi bor her. Det er huset vårt."
+        "text": "Vi bor her. Det er huset vårt."
       }
     }
   },
   {
     "id": 7005,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
@@ -158,29 +145,26 @@
     },
     "translations": {
       "de": {
-        "prompt": "Ich wasche mir jeden Morgen das Gesicht.",
-        "answer": "mir",
         "accepted": [],
-        "word_pool": [
-          "mir",
+        "hidden_word_index": 2,
+        "text": "Ich wasche mir jeden Morgen das Gesicht.",
+        "distractors": [
           "mich",
           "sich",
           "uns",
           "euch"
-        ],
-        "hidden_word_index": 2
+        ]
       },
       "en": {
-        "prompt": "I wash my face every morning."
+        "text": "I wash my face every morning."
       },
       "no": {
-        "prompt": "Jeg vasker ansiktet mitt hver morgen."
+        "text": "Jeg vasker ansiktet mitt hver morgen."
       }
     }
   },
   {
     "id": 7006,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
@@ -194,29 +178,26 @@
     },
     "translations": {
       "de": {
-        "prompt": "Beeilt euch bitte, wir kommen sonst zu spät!",
-        "answer": "euch",
         "accepted": [],
-        "word_pool": [
-          "euch",
+        "hidden_word_index": 1,
+        "text": "Beeilt euch bitte, wir kommen sonst zu spät!",
+        "distractors": [
           "uns",
           "sich",
           "dich",
           "mich"
-        ],
-        "hidden_word_index": 1
+        ]
       },
       "en": {
-        "prompt": "Please hurry up, otherwise we'll be late!"
+        "text": "Please hurry up, otherwise we'll be late!"
       },
       "no": {
-        "prompt": "Skynd dere snill, ellers kommer vi for sent!"
+        "text": "Skynd dere snill, ellers kommer vi for sent!"
       }
     }
   },
   {
     "id": 7007,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 4,
     "tags": [
@@ -230,29 +211,25 @@
     },
     "translations": {
       "de": {
-        "prompt": "Gefällt dir dieses Kleid? Nein, jenes dort finde ich schöner.",
-        "answer": "jenes",
         "accepted": [],
-        "word_pool": [
-          "jenes",
-          "dieses",
+        "hidden_word_index": 5,
+        "text": "Gefällt dir dieses Kleid? Nein, jenes dort finde ich schöner.",
+        "distractors": [
           "solches",
           "welches",
           "das"
-        ],
-        "hidden_word_index": 5
+        ]
       },
       "en": {
-        "prompt": "Do you like this dress? No, I find that one over there prettier."
+        "text": "Do you like this dress? No, I find that one over there prettier."
       },
       "no": {
-        "prompt": "Liker du denne kjolen? Nei, jeg synes den der borte er finere."
+        "text": "Liker du denne kjolen? Nei, jeg synes den der borte er finere."
       }
     }
   },
   {
     "id": 7008,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
@@ -266,29 +243,26 @@
     },
     "translations": {
       "de": {
-        "prompt": "Dieser Mann, den du dort siehst, ist mein Chef.",
-        "answer": "Dieser",
         "accepted": [],
-        "word_pool": [
-          "Dieser",
+        "hidden_word_index": 0,
+        "text": "Dieser Mann, den du dort siehst, ist mein Chef.",
+        "distractors": [
           "Jener",
           "Welcher",
           "Solcher",
           "Der"
-        ],
-        "hidden_word_index": 0
+        ]
       },
       "en": {
-        "prompt": "This man you see there is my boss."
+        "text": "This man you see there is my boss."
       },
       "no": {
-        "prompt": "Denne mannen du ser der er sjefen min."
+        "text": "Denne mannen du ser der er sjefen min."
       }
     }
   },
   {
     "id": 7009,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 4,
     "tags": [
@@ -302,29 +276,25 @@
     },
     "translations": {
       "de": {
-        "prompt": "Der Film, den wir gestern gesehen haben, war toll.",
-        "answer": "den",
         "accepted": [],
-        "word_pool": [
-          "den",
-          "der",
+        "hidden_word_index": 2,
+        "text": "Der Film, den wir gestern gesehen haben, war toll.",
+        "distractors": [
           "dem",
           "das",
           "die"
-        ],
-        "hidden_word_index": 2
+        ]
       },
       "en": {
-        "prompt": "The movie we saw yesterday was great."
+        "text": "The movie we saw yesterday was great."
       },
       "no": {
-        "prompt": "Filmen vi så i går var kjempebra."
+        "text": "Filmen vi så i går var kjempebra."
       }
     }
   },
   {
     "id": 7010,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 5,
     "tags": [
@@ -338,29 +308,25 @@
     },
     "translations": {
       "de": {
-        "prompt": "Das ist die Frau, deren Auto gestohlen wurde.",
-        "answer": "deren",
         "accepted": [],
-        "word_pool": [
-          "deren",
-          "die",
+        "hidden_word_index": 4,
+        "text": "Das ist die Frau, deren Auto gestohlen wurde.",
+        "distractors": [
           "der",
           "dessen",
           "welcher"
-        ],
-        "hidden_word_index": 4
+        ]
       },
       "en": {
-        "prompt": "That is the woman whose car was stolen."
+        "text": "That is the woman whose car was stolen."
       },
       "no": {
-        "prompt": "Det er kvinnen hvis bil ble stjålet."
+        "text": "Det er kvinnen hvis bil ble stjålet."
       }
     }
   },
   {
     "id": 7011,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
@@ -374,29 +340,26 @@
     },
     "translations": {
       "de": {
-        "prompt": "Wem gehört diese Tasche?",
-        "answer": "Wem",
         "accepted": [],
-        "word_pool": [
-          "Wem",
+        "hidden_word_index": 0,
+        "text": "Wem gehört diese Tasche?",
+        "distractors": [
           "Wer",
           "Wen",
           "Was",
           "Wie"
-        ],
-        "hidden_word_index": 0
+        ]
       },
       "en": {
-        "prompt": "Whose bag is this?"
+        "text": "Whose bag is this?"
       },
       "no": {
-        "prompt": "Hvem eier denne vesken?"
+        "text": "Hvem eier denne vesken?"
       }
     }
   },
   {
     "id": 7012,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
@@ -410,29 +373,26 @@
     },
     "translations": {
       "de": {
-        "prompt": "Welches von diesen Büchern möchtest du lesen?",
-        "answer": "Welches",
         "accepted": [],
-        "word_pool": [
-          "Welches",
+        "hidden_word_index": 0,
+        "text": "Welches von diesen Büchern möchtest du lesen?",
+        "distractors": [
           "Was",
           "Wer",
           "Wem",
           "Wie"
-        ],
-        "hidden_word_index": 0
+        ]
       },
       "en": {
-        "prompt": "Which of these books would you like to read?"
+        "text": "Which of these books would you like to read?"
       },
       "no": {
-        "prompt": "Hvilken av disse bøkene vil du lese?"
+        "text": "Hvilken av disse bøkene vil du lese?"
       }
     }
   },
   {
     "id": 7013,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 2,
     "tags": [
@@ -446,29 +406,26 @@
     },
     "translations": {
       "de": {
-        "prompt": "Gestern hat jemand für dich angerufen.",
-        "answer": "jemand",
         "accepted": [],
-        "word_pool": [
-          "jemand",
+        "hidden_word_index": 2,
+        "text": "Gestern hat jemand für dich angerufen.",
+        "distractors": [
           "niemand",
           "etwas",
           "nichts",
           "alles"
-        ],
-        "hidden_word_index": 2
+        ]
       },
       "en": {
-        "prompt": "Yesterday someone called for you."
+        "text": "Yesterday someone called for you."
       },
       "no": {
-        "prompt": "I går var det noen som ringte til deg."
+        "text": "I går var det noen som ringte til deg."
       }
     }
   },
   {
     "id": 7014,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 2,
     "tags": [
@@ -483,29 +440,26 @@
     },
     "translations": {
       "de": {
-        "prompt": "Ich habe Hunger, aber es ist nichts im Kühlschrank.",
-        "answer": "nichts",
         "accepted": [],
-        "word_pool": [
-          "nichts",
+        "hidden_word_index": 6,
+        "text": "Ich habe Hunger, aber es ist nichts im Kühlschrank.",
+        "distractors": [
           "etwas",
           "alles",
           "manches",
           "jedes"
-        ],
-        "hidden_word_index": 6
+        ]
       },
       "en": {
-        "prompt": "I am hungry, but there is nothing in the fridge."
+        "text": "I am hungry, but there is nothing in the fridge."
       },
       "no": {
-        "prompt": "Jeg er sulten, men det er ingenting i kjøleskapet."
+        "text": "Jeg er sulten, men det er ingenting i kjøleskapet."
       }
     }
   },
   {
     "id": 7015,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 1,
     "tags": [
@@ -519,29 +473,26 @@
     },
     "translations": {
       "de": {
-        "prompt": "Ich habe die ganze Nacht gearbeitet. Ich bin sehr müde.",
-        "answer": "Ich",
         "accepted": [],
-        "word_pool": [
-          "Ich",
+        "hidden_word_index": 6,
+        "text": "Ich habe die ganze Nacht gearbeitet. Ich bin sehr müde.",
+        "distractors": [
           "Du",
           "Er",
           "Wir",
           "Ihr"
-        ],
-        "hidden_word_index": 6
+        ]
       },
       "en": {
-        "prompt": "I worked all night. I am very tired."
+        "text": "I worked all night. I am very tired."
       },
       "no": {
-        "prompt": "Jeg jobbet hele natten. Jeg er veldig sliten."
+        "text": "Jeg jobbet hele natten. Jeg er veldig sliten."
       }
     }
   },
   {
     "id": 7016,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 1,
     "tags": [
@@ -555,29 +506,26 @@
     },
     "translations": {
       "de": {
-        "prompt": "Hallo Jan, woher kommst du?",
-        "answer": "du",
         "accepted": [],
-        "word_pool": [
-          "du",
+        "hidden_word_index": 4,
+        "text": "Hallo Jan, woher kommst du?",
+        "distractors": [
           "er",
           "sie",
           "ihr",
           "wir"
-        ],
-        "hidden_word_index": 4
+        ]
       },
       "en": {
-        "prompt": "Hi Jan, where do you come from?"
+        "text": "Hi Jan, where do you come from?"
       },
       "no": {
-        "prompt": "Hei Jan, hvor kommer du fra?"
+        "text": "Hei Jan, hvor kommer du fra?"
       }
     }
   },
   {
     "id": 7017,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 1,
     "tags": [
@@ -591,29 +539,25 @@
     },
     "translations": {
       "de": {
-        "prompt": "Wir haben einen tollen Urlaub. Uns geht es gut.",
-        "answer": "Uns",
         "accepted": [],
-        "word_pool": [
-          "Uns",
-          "Wir",
+        "hidden_word_index": 5,
+        "text": "Wir haben einen tollen Urlaub. Uns geht es gut.",
+        "distractors": [
           "Euch",
           "Ihnen",
           "Sie"
-        ],
-        "hidden_word_index": 5
+        ]
       },
       "en": {
-        "prompt": "We are having a great vacation. We are doing well."
+        "text": "We are having a great vacation. We are doing well."
       },
       "no": {
-        "prompt": "Vi har en flott ferie. Vi har det bra."
+        "text": "Vi har en flott ferie. Vi har det bra."
       }
     }
   },
   {
     "id": 7018,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 2,
     "tags": [
@@ -628,29 +572,26 @@
     },
     "translations": {
       "de": {
-        "prompt": "Du bist meine beste Freundin. Ich liebe dich.",
-        "answer": "dich",
         "accepted": [],
-        "word_pool": [
-          "dich",
+        "hidden_word_index": 7,
+        "text": "Du bist meine beste Freundin. Ich liebe dich.",
+        "distractors": [
           "dir",
           "mich",
           "mir",
           "ihn"
-        ],
-        "hidden_word_index": 7
+        ]
       },
       "en": {
-        "prompt": "You are my best friend. I love you."
+        "text": "You are my best friend. I love you."
       },
       "no": {
-        "prompt": "Du er min beste venninne. Jeg elsker deg."
+        "text": "Du er min beste venninne. Jeg elsker deg."
       }
     }
   },
   {
     "id": 7019,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 2,
     "tags": [
@@ -665,29 +606,26 @@
     },
     "translations": {
       "de": {
-        "prompt": "Ich stehe hier hinten. Können Sie mich sehen?",
-        "answer": "mich",
         "accepted": [],
-        "word_pool": [
-          "mich",
+        "hidden_word_index": 6,
+        "text": "Ich stehe hier hinten. Können Sie mich sehen?",
+        "distractors": [
           "mir",
           "dich",
           "dir",
           "uns"
-        ],
-        "hidden_word_index": 6
+        ]
       },
       "en": {
-        "prompt": "I am standing back here. Can you see me?"
+        "text": "I am standing back here. Can you see me?"
       },
       "no": {
-        "prompt": "Jeg står her bak. Kan du se meg?"
+        "text": "Jeg står her bak. Kan du se meg?"
       }
     }
   },
   {
     "id": 7020,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 2,
     "tags": [
@@ -702,29 +640,26 @@
     },
     "translations": {
       "de": {
-        "prompt": "Hallo ihr zwei! Ich besuche euch morgen.",
-        "answer": "euch",
         "accepted": [],
-        "word_pool": [
-          "euch",
+        "hidden_word_index": 5,
+        "text": "Hallo ihr zwei! Ich besuche euch morgen.",
+        "distractors": [
           "uns",
           "sie",
           "ihn",
           "dich"
-        ],
-        "hidden_word_index": 5
+        ]
       },
       "en": {
-        "prompt": "Hi you two! I'll visit you tomorrow."
+        "text": "Hi you two! I'll visit you tomorrow."
       },
       "no": {
-        "prompt": "Hei dere to! Jeg besøker dere i morgen."
+        "text": "Hei dere to! Jeg besøker dere i morgen."
       }
     }
   },
   {
     "id": 7021,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
@@ -739,29 +674,26 @@
     },
     "translations": {
       "de": {
-        "prompt": "Peter vermisst sein Buch. Das Buch gehört ihm.",
-        "answer": "ihm",
         "accepted": [],
-        "word_pool": [
-          "ihm",
+        "hidden_word_index": 7,
+        "text": "Peter vermisst sein Buch. Das Buch gehört ihm.",
+        "distractors": [
           "ihn",
           "ihr",
           "ihre",
           "denen"
-        ],
-        "hidden_word_index": 7
+        ]
       },
       "en": {
-        "prompt": "Peter misses his book. The book belongs to him."
+        "text": "Peter misses his book. The book belongs to him."
       },
       "no": {
-        "prompt": "Peter savner boken sin. Boken tilhører ham."
+        "text": "Peter savner boken sin. Boken tilhører ham."
       }
     }
   },
   {
     "id": 7022,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
@@ -776,29 +708,26 @@
     },
     "translations": {
       "de": {
-        "prompt": "Sehr geehrte Frau Müller, ich danke Ihnen herzlich für die Hilfe.",
-        "answer": "Ihnen",
         "accepted": [],
-        "word_pool": [
-          "Ihnen",
+        "hidden_word_index": 6,
+        "text": "Sehr geehrte Frau Müller, ich danke Ihnen herzlich für die Hilfe.",
+        "distractors": [
           "Sie",
           "Dir",
           "Euch",
           "Uns"
-        ],
-        "hidden_word_index": 6
+        ]
       },
       "en": {
-        "prompt": "Dear Mrs. Müller, I thank you very much for the help."
+        "text": "Dear Mrs. Müller, I thank you very much for the help."
       },
       "no": {
-        "prompt": "Kjære fru Müller, jeg takker Dem hjertelig for hjelpen."
+        "text": "Kjære fru Müller, jeg takker Dem hjertelig for hjelpen."
       }
     }
   },
   {
     "id": 7023,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 2,
     "tags": [
@@ -813,29 +742,26 @@
     },
     "translations": {
       "de": {
-        "prompt": "Hallo Sarah! Wie geht es dir heute?",
-        "answer": "dir",
         "accepted": [],
-        "word_pool": [
-          "dir",
+        "hidden_word_index": 5,
+        "text": "Hallo Sarah! Wie geht es dir heute?",
+        "distractors": [
           "dich",
           "euch",
           "ihr",
           "mir"
-        ],
-        "hidden_word_index": 5
+        ]
       },
       "en": {
-        "prompt": "Hi Sarah! How are you today?"
+        "text": "Hi Sarah! How are you today?"
       },
       "no": {
-        "prompt": "Hei Sarah! Hvordan har du det i dag?"
+        "text": "Hei Sarah! Hvordan har du det i dag?"
       }
     }
   },
   {
     "id": 7024,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 1,
     "tags": [
@@ -849,29 +775,26 @@
     },
     "translations": {
       "de": {
-        "prompt": "Das sind Peter und Maria. Sie sind meine Freunde.",
-        "answer": "Sie",
         "accepted": [],
-        "word_pool": [
-          "Sie",
+        "hidden_word_index": 5,
+        "text": "Das sind Peter und Maria. Sie sind meine Freunde.",
+        "distractors": [
           "Ihr",
           "Wir",
           "Er",
           "Es"
-        ],
-        "hidden_word_index": 5
+        ]
       },
       "en": {
-        "prompt": "These are Peter and Maria. They are my friends."
+        "text": "These are Peter and Maria. They are my friends."
       },
       "no": {
-        "prompt": "Dette er Peter og Maria. De er vennene mine."
+        "text": "Dette er Peter og Maria. De er vennene mine."
       }
     }
   },
   {
     "id": 7025,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 1,
     "tags": [
@@ -885,29 +808,26 @@
     },
     "translations": {
       "de": {
-        "prompt": "Mein Bruder liebt Autos. Er hat ein rotes Auto.",
-        "answer": "Er",
         "accepted": [],
-        "word_pool": [
-          "Er",
+        "hidden_word_index": 4,
+        "text": "Mein Bruder liebt Autos. Er hat ein rotes Auto.",
+        "distractors": [
           "Sie",
           "Es",
           "Ihr",
           "Wir"
-        ],
-        "hidden_word_index": 4
+        ]
       },
       "en": {
-        "prompt": "My brother loves cars. He has a red car."
+        "text": "My brother loves cars. He has a red car."
       },
       "no": {
-        "prompt": "Broren min elsker biler. Han har en rød bil."
+        "text": "Broren min elsker biler. Han har en rød bil."
       }
     }
   },
   {
     "id": 7026,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 1,
     "tags": [
@@ -921,29 +841,26 @@
     },
     "translations": {
       "de": {
-        "prompt": "Ich möchte ins Kino gehen. Hast du heute Zeit?",
-        "answer": "du",
         "accepted": [],
-        "word_pool": [
-          "du",
+        "hidden_word_index": 6,
+        "text": "Ich möchte ins Kino gehen. Hast du heute Zeit?",
+        "distractors": [
           "er",
           "ihr",
           "wir",
           "sie"
-        ],
-        "hidden_word_index": 6
+        ]
       },
       "en": {
-        "prompt": "I want to go to the movies. Do you have time today?"
+        "text": "I want to go to the movies. Do you have time today?"
       },
       "no": {
-        "prompt": "Jeg vil gå på kino. Har du tid i dag?"
+        "text": "Jeg vil gå på kino. Har du tid i dag?"
       }
     }
   },
   {
     "id": 7027,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 2,
     "tags": [
@@ -958,29 +875,26 @@
     },
     "translations": {
       "de": {
-        "prompt": "Dort oben sitzt ein Vogel. Ich sehe ihn sehr gut.",
-        "answer": "ihn",
         "accepted": [],
-        "word_pool": [
-          "ihn",
+        "hidden_word_index": 7,
+        "text": "Dort oben sitzt ein Vogel. Ich sehe ihn sehr gut.",
+        "distractors": [
           "ihm",
           "sie",
           "es",
           "mich"
-        ],
-        "hidden_word_index": 7
+        ]
       },
       "en": {
-        "prompt": "A bird is sitting up there. I see it very well."
+        "text": "A bird is sitting up there. I see it very well."
       },
       "no": {
-        "prompt": "Det sitter en fugl der oppe. Jeg ser den veldig godt."
+        "text": "Det sitter en fugl der oppe. Jeg ser den veldig godt."
       }
     }
   },
   {
     "id": 7028,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 2,
     "tags": [
@@ -993,29 +907,26 @@
     },
     "translations": {
       "de": {
-        "prompt": "Du hast etwas liegen lassen. Ist das dein Handy?",
-        "answer": "dein",
         "accepted": [],
-        "word_pool": [
-          "dein",
+        "hidden_word_index": 7,
+        "text": "Du hast etwas liegen lassen. Ist das dein Handy?",
+        "distractors": [
           "meine",
           "deine",
           "euer",
           "unser"
-        ],
-        "hidden_word_index": 7
+        ]
       },
       "en": {
-        "prompt": "You left something behind. Is that your phone?"
+        "text": "You left something behind. Is that your phone?"
       },
       "no": {
-        "prompt": "Du har lagt igjen noe. Er det mobilen din?"
+        "text": "Du har lagt igjen noe. Er det mobilen din?"
       }
     }
   },
   {
     "id": 7029,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 2,
     "tags": [
@@ -1028,29 +939,26 @@
     },
     "translations": {
       "de": {
-        "prompt": "Ich will gehen, aber ich kann die Tür nicht öffnen. Wo ist mein Schlüssel?",
-        "answer": "mein",
         "accepted": [],
-        "word_pool": [
-          "mein",
+        "hidden_word_index": 12,
+        "text": "Ich will gehen, aber ich kann die Tür nicht öffnen. Wo ist mein Schlüssel?",
+        "distractors": [
           "meine",
           "meinen",
           "meiner",
           "meinem"
-        ],
-        "hidden_word_index": 12
+        ]
       },
       "en": {
-        "prompt": "I want to go, but I can't open the door. Where is my key?"
+        "text": "I want to go, but I can't open the door. Where is my key?"
       },
       "no": {
-        "prompt": "Jeg vil gå, men jeg kan ikke åpne døren. Hvor er nøkkelen min?"
+        "text": "Jeg vil gå, men jeg kan ikke åpne døren. Hvor er nøkkelen min?"
       }
     }
   },
   {
     "id": 7030,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
@@ -1063,29 +971,26 @@
     },
     "translations": {
       "de": {
-        "prompt": "Maria ist schon weg, aber hier liegt noch etwas. Sie hat ihre Tasche vergessen.",
-        "answer": "ihre",
         "accepted": [],
-        "word_pool": [
-          "ihre",
+        "hidden_word_index": 11,
+        "text": "Maria ist schon weg, aber hier liegt noch etwas. Sie hat ihre Tasche vergessen.",
+        "distractors": [
           "ihr",
           "seine",
           "meine",
           "deine"
-        ],
-        "hidden_word_index": 11
+        ]
       },
       "en": {
-        "prompt": "Maria is already gone, but something is still lying here. She forgot her bag."
+        "text": "Maria is already gone, but something is still lying here. She forgot her bag."
       },
       "no": {
-        "prompt": "Maria er allerede gått, men her ligger det noe ennå. Hun glemte vesken sin."
+        "text": "Maria er allerede gått, men her ligger det noe ennå. Hun glemte vesken sin."
       }
     }
   },
   {
     "id": 7031,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
@@ -1098,29 +1003,26 @@
     },
     "translations": {
       "de": {
-        "prompt": "Der Hund ist weggelaufen. Er sucht seinen Hund jetzt überall.",
-        "answer": "seinen",
         "accepted": [],
-        "word_pool": [
-          "seinen",
+        "hidden_word_index": 6,
+        "text": "Der Hund ist weggelaufen. Er sucht seinen Hund jetzt überall.",
+        "distractors": [
           "sein",
           "ihren",
           "unseren",
           "deinen"
-        ],
-        "hidden_word_index": 6
+        ]
       },
       "en": {
-        "prompt": "The dog ran away. He is looking for his dog everywhere now."
+        "text": "The dog ran away. He is looking for his dog everywhere now."
       },
       "no": {
-        "prompt": "Hunden har løpt bort. Han leter etter hunden sin overalt nå."
+        "text": "Hunden har løpt bort. Han leter etter hunden sin overalt nå."
       }
     }
   },
   {
     "id": 7032,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
@@ -1133,29 +1035,26 @@
     },
     "translations": {
       "de": {
-        "prompt": "Wir wohnen schon lange in Berlin. Wir lieben unsere Stadt.",
-        "answer": "unsere",
         "accepted": [],
-        "word_pool": [
-          "unsere",
+        "hidden_word_index": 8,
+        "text": "Wir wohnen schon lange in Berlin. Wir lieben unsere Stadt.",
+        "distractors": [
           "unser",
           "euer",
           "eure",
           "ihre"
-        ],
-        "hidden_word_index": 8
+        ]
       },
       "en": {
-        "prompt": "We have lived in Berlin for a long time. We love our city."
+        "text": "We have lived in Berlin for a long time. We love our city."
       },
       "no": {
-        "prompt": "Vi har bodd i Berlin lenge. Vi elsker byen vår."
+        "text": "Vi har bodd i Berlin lenge. Vi elsker byen vår."
       }
     }
   },
   {
     "id": 7033,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
@@ -1168,29 +1067,26 @@
     },
     "translations": {
       "de": {
-        "prompt": "Kinder, es ist schon spät. Habt ihr eure Hausaufgaben gemacht?",
-        "answer": "eure",
         "accepted": [],
-        "word_pool": [
-          "eure",
+        "hidden_word_index": 7,
+        "text": "Kinder, es ist schon spät. Habt ihr eure Hausaufgaben gemacht?",
+        "distractors": [
           "euer",
           "unsere",
           "ihre",
           "meine"
-        ],
-        "hidden_word_index": 7
+        ]
       },
       "en": {
-        "prompt": "Children, it's already late. Have you done your homework?"
+        "text": "Children, it's already late. Have you done your homework?"
       },
       "no": {
-        "prompt": "Barn, det er allerede sent. Har dere gjort leksene deres?"
+        "text": "Barn, det er allerede sent. Har dere gjort leksene deres?"
       }
     }
   },
   {
     "id": 7034,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 4,
     "tags": [
@@ -1204,29 +1100,26 @@
     },
     "translations": {
       "de": {
-        "prompt": "Ich habe ein Problem. Ich spreche mit meinem Vater darüber.",
-        "answer": "meinem",
         "accepted": [],
-        "word_pool": [
-          "meinem",
+        "hidden_word_index": 7,
+        "text": "Ich habe ein Problem. Ich spreche mit meinem Vater darüber.",
+        "distractors": [
           "mein",
           "meine",
           "meinen",
           "meiner"
-        ],
-        "hidden_word_index": 7
+        ]
       },
       "en": {
-        "prompt": "I have a problem. I'm talking to my father about it."
+        "text": "I have a problem. I'm talking to my father about it."
       },
       "no": {
-        "prompt": "Jeg har et problem. Jeg snakker med faren min om det."
+        "text": "Jeg har et problem. Jeg snakker med faren min om det."
       }
     }
   },
   {
     "id": 7035,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 4,
     "tags": [
@@ -1240,29 +1133,26 @@
     },
     "translations": {
       "de": {
-        "prompt": "Sie ist im Krankenhaus. Besuchst du deine Tante heute?",
-        "answer": "deine",
         "accepted": [],
-        "word_pool": [
-          "deine",
+        "hidden_word_index": 6,
+        "text": "Sie ist im Krankenhaus. Besuchst du deine Tante heute?",
+        "distractors": [
           "dein",
           "deiner",
           "deinem",
           "deinen"
-        ],
-        "hidden_word_index": 6
+        ]
       },
       "en": {
-        "prompt": "She is in the hospital. Are you visiting your aunt today?"
+        "text": "She is in the hospital. Are you visiting your aunt today?"
       },
       "no": {
-        "prompt": "Hun er på sykehuset. Besøker du tanten din i dag?"
+        "text": "Hun er på sykehuset. Besøker du tanten din i dag?"
       }
     }
   },
   {
     "id": 7036,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 2,
     "tags": [
@@ -1275,29 +1165,26 @@
     },
     "translations": {
       "de": {
-        "prompt": "Peter hat ein neues Fahrzeug gekauft. Das ist sein Auto.",
-        "answer": "sein",
         "accepted": [],
-        "word_pool": [
-          "sein",
+        "hidden_word_index": 8,
+        "text": "Peter hat ein neues Fahrzeug gekauft. Das ist sein Auto.",
+        "distractors": [
           "seine",
           "ihr",
           "ihre",
           "meine"
-        ],
-        "hidden_word_index": 8
+        ]
       },
       "en": {
-        "prompt": "Peter has bought a new vehicle. That is his car."
+        "text": "Peter has bought a new vehicle. That is his car."
       },
       "no": {
-        "prompt": "Peter har kjøpt et nytt kjøretøy. Det er bilen hans."
+        "text": "Peter har kjøpt et nytt kjøretøy. Det er bilen hans."
       }
     }
   },
   {
     "id": 7037,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
@@ -1310,29 +1197,26 @@
     },
     "translations": {
       "de": {
-        "prompt": "Guten Tag, Herr Schmidt! Wie heißt Ihre Katze?",
-        "answer": "Ihre",
         "accepted": [],
-        "word_pool": [
-          "Ihre",
+        "hidden_word_index": 6,
+        "text": "Guten Tag, Herr Schmidt! Wie heißt Ihre Katze?",
+        "distractors": [
           "Ihr",
           "Seine",
           "Meine",
           "Deine"
-        ],
-        "hidden_word_index": 6
+        ]
       },
       "en": {
-        "prompt": "Good day, Mr. Schmidt! What is your cat's name?"
+        "text": "Good day, Mr. Schmidt! What is your cat's name?"
       },
       "no": {
-        "prompt": "God dag, herr Schmidt! Hva heter katten Deres?"
+        "text": "God dag, herr Schmidt! Hva heter katten Deres?"
       }
     }
   },
   {
     "id": 7038,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
@@ -1345,29 +1229,26 @@
     },
     "translations": {
       "de": {
-        "prompt": "Wir sind neu hier. Kennen Sie schon unseren Namen?",
-        "answer": "unseren",
         "accepted": [],
-        "word_pool": [
-          "unseren",
+        "hidden_word_index": 7,
+        "text": "Wir sind neu hier. Kennen Sie schon unseren Namen?",
+        "distractors": [
           "unser",
           "unsere",
           "euren",
           "ihren"
-        ],
-        "hidden_word_index": 7
+        ]
       },
       "en": {
-        "prompt": "We are new here. Do you already know our names?"
+        "text": "We are new here. Do you already know our names?"
       },
       "no": {
-        "prompt": "Vi er nye her. Kjenner du allerede navnet vårt?"
+        "text": "Vi er nye her. Kjenner du allerede navnet vårt?"
       }
     }
   },
   {
     "id": 7039,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 2,
     "tags": [
@@ -1380,29 +1261,26 @@
     },
     "translations": {
       "de": {
-        "prompt": "Es ist so leise im Haus. Wo sind deine Kinder eigentlich?",
-        "answer": "deine",
         "accepted": [],
-        "word_pool": [
-          "deine",
+        "hidden_word_index": 8,
+        "text": "Es ist so leise im Haus. Wo sind deine Kinder eigentlich?",
+        "distractors": [
           "dein",
           "eure",
           "unsere",
           "ihre"
-        ],
-        "hidden_word_index": 8
+        ]
       },
       "en": {
-        "prompt": "It is so quiet in the house. Where are your children, actually?"
+        "text": "It is so quiet in the house. Where are your children, actually?"
       },
       "no": {
-        "prompt": "Det er så stille i huset. Hvor er barna dine egentlig?"
+        "text": "Det er så stille i huset. Hvor er barna dine egentlig?"
       }
     }
   },
   {
     "id": 7040,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
@@ -1415,29 +1293,26 @@
     },
     "translations": {
       "de": {
-        "prompt": "Sein Portemonnaie ist weg. Er hat sein Geld verloren.",
-        "answer": "sein",
         "accepted": [],
-        "word_pool": [
-          "sein",
+        "hidden_word_index": 6,
+        "text": "Sein Portemonnaie ist weg. Er hat sein Geld verloren.",
+        "distractors": [
           "seine",
           "ihr",
           "mein",
           "dein"
-        ],
-        "hidden_word_index": 6
+        ]
       },
       "en": {
-        "prompt": "His wallet is gone. He has lost his money."
+        "text": "His wallet is gone. He has lost his money."
       },
       "no": {
-        "prompt": "Lommeboken hans er borte. Han har mistet pengene sine."
+        "text": "Lommeboken hans er borte. Han har mistet pengene sine."
       }
     }
   },
   {
     "id": 7041,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
@@ -1451,29 +1326,26 @@
     },
     "translations": {
       "de": {
-        "prompt": "Ich habe die Koffer schon gepackt. Ich freue mich auf den Urlaub.",
-        "answer": "mich",
         "accepted": [],
-        "word_pool": [
-          "mich",
+        "hidden_word_index": 8,
+        "text": "Ich habe die Koffer schon gepackt. Ich freue mich auf den Urlaub.",
+        "distractors": [
           "mir",
           "sich",
           "dich",
           "uns"
-        ],
-        "hidden_word_index": 8
+        ]
       },
       "en": {
-        "prompt": "I have already packed the suitcases. I'm looking forward to the vacation."
+        "text": "I have already packed the suitcases. I'm looking forward to the vacation."
       },
       "no": {
-        "prompt": "Jeg har allerede pakket koffertene. Jeg gleder meg til ferien."
+        "text": "Jeg har allerede pakket koffertene. Jeg gleder meg til ferien."
       }
     }
   },
   {
     "id": 7042,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
@@ -1487,29 +1359,25 @@
     },
     "translations": {
       "de": {
-        "prompt": "Nichts gefällt dir. Du beschwerst dich immer über alles.",
-        "answer": "dich",
         "accepted": [],
-        "word_pool": [
-          "dich",
-          "dir",
+        "hidden_word_index": 5,
+        "text": "Nichts gefällt dir. Du beschwerst dich immer über alles.",
+        "distractors": [
           "sich",
           "mich",
           "euch"
-        ],
-        "hidden_word_index": 5
+        ]
       },
       "en": {
-        "prompt": "Nothing pleases you. You always complain about everything."
+        "text": "Nothing pleases you. You always complain about everything."
       },
       "no": {
-        "prompt": "Ingenting gleder deg. Du klager alltid over alt."
+        "text": "Ingenting gleder deg. Du klager alltid over alt."
       }
     }
   },
   {
     "id": 7043,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
@@ -1523,29 +1391,26 @@
     },
     "translations": {
       "de": {
-        "prompt": "Vergiss den Termin nicht. Wir treffen uns um acht Uhr vor dem Kino.",
-        "answer": "uns",
         "accepted": [],
-        "word_pool": [
-          "uns",
+        "hidden_word_index": 6,
+        "text": "Vergiss den Termin nicht. Wir treffen uns um acht Uhr vor dem Kino.",
+        "distractors": [
           "euch",
           "sich",
           "mich",
           "dich"
-        ],
-        "hidden_word_index": 6
+        ]
       },
       "en": {
-        "prompt": "Don't forget the appointment. We are meeting at eight o'clock in front of the cinema."
+        "text": "Don't forget the appointment. We are meeting at eight o'clock in front of the cinema."
       },
       "no": {
-        "prompt": "Ikke glem avtalen. Vi møtes klokken åtte foran kinoen."
+        "text": "Ikke glem avtalen. Vi møtes klokken åtte foran kinoen."
       }
     }
   },
   {
     "id": 7044,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
@@ -1559,29 +1424,26 @@
     },
     "translations": {
       "de": {
-        "prompt": "Das Wetter ist herrlich. Sie sonnen sich am Strand.",
-        "answer": "sich",
         "accepted": [],
-        "word_pool": [
-          "sich",
+        "hidden_word_index": 6,
+        "text": "Das Wetter ist herrlich. Sie sonnen sich am Strand.",
+        "distractors": [
           "uns",
           "euch",
           "mich",
           "dich"
-        ],
-        "hidden_word_index": 6
+        ]
       },
       "en": {
-        "prompt": "The weather is lovely. They are sunbathing on the beach."
+        "text": "The weather is lovely. They are sunbathing on the beach."
       },
       "no": {
-        "prompt": "Været er nydelig. De soler seg på stranden."
+        "text": "Været er nydelig. De soler seg på stranden."
       }
     }
   },
   {
     "id": 7045,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 4,
     "tags": [
@@ -1595,29 +1457,26 @@
     },
     "translations": {
       "de": {
-        "prompt": "Mein alter Wagen ist kaputt. Ich kaufe mir ein neues Auto.",
-        "answer": "mir",
         "accepted": [],
-        "word_pool": [
-          "mir",
+        "hidden_word_index": 7,
+        "text": "Mein alter Wagen ist kaputt. Ich kaufe mir ein neues Auto.",
+        "distractors": [
           "mich",
           "dir",
           "sich",
           "uns"
-        ],
-        "hidden_word_index": 7
+        ]
       },
       "en": {
-        "prompt": "My old car is broken. I'm buying a new car."
+        "text": "My old car is broken. I'm buying a new car."
       },
       "no": {
-        "prompt": "Min gamle bil er ødelagt. Jeg kjøper meg en ny bil."
+        "text": "Min gamle bil er ødelagt. Jeg kjøper meg en ny bil."
       }
     }
   },
   {
     "id": 7046,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 4,
     "tags": [
@@ -1631,29 +1490,26 @@
     },
     "translations": {
       "de": {
-        "prompt": "Bevor du ins Bett gehst, putzt dir bitte die Zähne.",
-        "answer": "dir",
         "accepted": [],
-        "word_pool": [
-          "dir",
+        "hidden_word_index": 6,
+        "text": "Bevor du ins Bett gehst, putzt dir bitte die Zähne.",
+        "distractors": [
           "dich",
           "sich",
           "mir",
           "euch"
-        ],
-        "hidden_word_index": 6
+        ]
       },
       "en": {
-        "prompt": "Before you go to bed, please brush your teeth."
+        "text": "Before you go to bed, please brush your teeth."
       },
       "no": {
-        "prompt": "Før du legger deg, puss tennene dine snill."
+        "text": "Før du legger deg, puss tennene dine snill."
       }
     }
   },
   {
     "id": 7047,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 4,
     "tags": [
@@ -1667,29 +1523,26 @@
     },
     "translations": {
       "de": {
-        "prompt": "Er geht heute nicht zum Friseur. Er schneidet sich die Haare selbst.",
-        "answer": "sich",
         "accepted": [],
-        "word_pool": [
-          "sich",
+        "hidden_word_index": 8,
+        "text": "Er geht heute nicht zum Friseur. Er schneidet sich die Haare selbst.",
+        "distractors": [
           "ihm",
           "ihr",
           "uns",
           "euch"
-        ],
-        "hidden_word_index": 8
+        ]
       },
       "en": {
-        "prompt": "He is not going to the hairdresser today. He cuts his hair himself."
+        "text": "He is not going to the hairdresser today. He cuts his hair himself."
       },
       "no": {
-        "prompt": "Han går ikke til frisøren i dag. Han klipper håret sitt selv."
+        "text": "Han går ikke til frisøren i dag. Han klipper håret sitt selv."
       }
     }
   },
   {
     "id": 7048,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 4,
     "tags": [
@@ -1703,29 +1556,26 @@
     },
     "translations": {
       "de": {
-        "prompt": "Sie hat ein fantastisches Gedächtnis. Sie merkt sich alles sofort.",
-        "answer": "sich",
         "accepted": [],
-        "word_pool": [
-          "sich",
+        "hidden_word_index": 7,
+        "text": "Sie hat ein fantastisches Gedächtnis. Sie merkt sich alles sofort.",
+        "distractors": [
           "ihr",
           "uns",
           "euch",
           "mich"
-        ],
-        "hidden_word_index": 7
+        ]
       },
       "en": {
-        "prompt": "She has a fantastic memory. She notices everything immediately."
+        "text": "She has a fantastic memory. She notices everything immediately."
       },
       "no": {
-        "prompt": "Hun har en fantastisk hukommelse. Hun merker seg alt med en gang."
+        "text": "Hun har en fantastisk hukommelse. Hun merker seg alt med en gang."
       }
     }
   },
   {
     "id": 7049,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
@@ -1739,29 +1589,26 @@
     },
     "translations": {
       "de": {
-        "prompt": "Hier ist ein tolles Konzert. Interessieren Sie sich für Musik?",
-        "answer": "sich",
         "accepted": [],
-        "word_pool": [
-          "sich",
+        "hidden_word_index": 7,
+        "text": "Hier ist ein tolles Konzert. Interessieren Sie sich für Musik?",
+        "distractors": [
           "Ihnen",
           "uns",
           "euch",
           "mich"
-        ],
-        "hidden_word_index": 7
+        ]
       },
       "en": {
-        "prompt": "There is a great concert here. Are you interested in music?"
+        "text": "There is a great concert here. Are you interested in music?"
       },
       "no": {
-        "prompt": "Det er en flott konsert her. Er De interessert i musikk?"
+        "text": "Det er en flott konsert her. Er De interessert i musikk?"
       }
     }
   },
   {
     "id": 7050,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
@@ -1775,29 +1622,26 @@
     },
     "translations": {
       "de": {
-        "prompt": "Es gibt hier draußen nichts zu tun. Wir langweilen uns.",
-        "answer": "uns",
         "accepted": [],
-        "word_pool": [
-          "uns",
+        "hidden_word_index": 9,
+        "text": "Es gibt hier draußen nichts zu tun. Wir langweilen uns.",
+        "distractors": [
           "euch",
           "sich",
           "mich",
           "dich"
-        ],
-        "hidden_word_index": 9
+        ]
       },
       "en": {
-        "prompt": "There is nothing to do out here. We are bored."
+        "text": "There is nothing to do out here. We are bored."
       },
       "no": {
-        "prompt": "Det er ingenting å gjøre her ute. Vi kjeder oss."
+        "text": "Det er ingenting å gjøre her ute. Vi kjeder oss."
       }
     }
   },
   {
     "id": 7051,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
@@ -1811,29 +1655,26 @@
     },
     "translations": {
       "de": {
-        "prompt": "Euer Picknick wurde abgesagt. Ihr ärgert euch über den Regen.",
-        "answer": "euch",
         "accepted": [],
-        "word_pool": [
-          "euch",
+        "hidden_word_index": 6,
+        "text": "Euer Picknick wurde abgesagt. Ihr ärgert euch über den Regen.",
+        "distractors": [
           "uns",
           "sich",
           "dich",
           "mich"
-        ],
-        "hidden_word_index": 6
+        ]
       },
       "en": {
-        "prompt": "Your picnic was cancelled. You are annoyed about the rain."
+        "text": "Your picnic was cancelled. You are annoyed about the rain."
       },
       "no": {
-        "prompt": "Pikniken deres ble avlyst. Dere er sinte over regnet."
+        "text": "Pikniken deres ble avlyst. Dere er sinte over regnet."
       }
     }
   },
   {
     "id": 7052,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
@@ -1847,29 +1688,26 @@
     },
     "translations": {
       "de": {
-        "prompt": "Ich kenne deinen Namen noch nicht. Stell dich bitte vor.",
-        "answer": "dich",
         "accepted": [],
-        "word_pool": [
-          "dich",
+        "hidden_word_index": 7,
+        "text": "Ich kenne deinen Namen noch nicht. Stell dich bitte vor.",
+        "distractors": [
           "dir",
           "mich",
           "uns",
           "sich"
-        ],
-        "hidden_word_index": 7
+        ]
       },
       "en": {
-        "prompt": "I don't know your name yet. Please introduce yourself."
+        "text": "I don't know your name yet. Please introduce yourself."
       },
       "no": {
-        "prompt": "Jeg kjenner ikke navnet ditt ennå. Introduser deg snill."
+        "text": "Jeg kjenner ikke navnet ditt ennå. Introduser deg snill."
       }
     }
   },
   {
     "id": 7053,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 4,
     "tags": [
@@ -1883,29 +1721,26 @@
     },
     "translations": {
       "de": {
-        "prompt": "Das Leben wird in 100 Jahren ganz anders sein. Wir stellen uns die Zukunft vor.",
-        "answer": "uns",
         "accepted": [],
-        "word_pool": [
-          "uns",
+        "hidden_word_index": 11,
+        "text": "Das Leben wird in 100 Jahren ganz anders sein. Wir stellen uns die Zukunft vor.",
+        "distractors": [
           "euch",
           "sich",
           "mich",
           "dich"
-        ],
-        "hidden_word_index": 11
+        ]
       },
       "en": {
-        "prompt": "Life will be very different in 100 years. We imagine the future."
+        "text": "Life will be very different in 100 years. We imagine the future."
       },
       "no": {
-        "prompt": "Livet vil være helt annerledes om 100 år. Vi forestiller oss fremtiden."
+        "text": "Livet vil være helt annerledes om 100 år. Vi forestiller oss fremtiden."
       }
     }
   },
   {
     "id": 7054,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 4,
     "tags": [
@@ -1918,29 +1753,26 @@
     },
     "translations": {
       "de": {
-        "prompt": "Ich habe viele Bücher gelesen, aber Dieses Buch hier ist sehr spannend.",
-        "answer": "Dieses",
         "accepted": [],
-        "word_pool": [
-          "Dieses",
+        "hidden_word_index": 6,
+        "text": "Ich habe viele Bücher gelesen, aber Dieses Buch hier ist sehr spannend.",
+        "distractors": [
           "Jenes",
           "Solches",
           "Welches",
           "Das"
-        ],
-        "hidden_word_index": 6
+        ]
       },
       "en": {
-        "prompt": "I have read many books, but this book here is very exciting."
+        "text": "I have read many books, but this book here is very exciting."
       },
       "no": {
-        "prompt": "Jeg har lest mange bøker, men denne boken her er veldig spennende."
+        "text": "Jeg har lest mange bøker, men denne boken her er veldig spennende."
       }
     }
   },
   {
     "id": 7055,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 4,
     "tags": [
@@ -1953,29 +1785,26 @@
     },
     "translations": {
       "de": {
-        "prompt": "Dort drüben stehen Gäste. Kennst du diese Leute eigentlich?",
-        "answer": "diese",
         "accepted": [],
-        "word_pool": [
-          "diese",
+        "hidden_word_index": 6,
+        "text": "Dort drüben stehen Gäste. Kennst du diese Leute eigentlich?",
+        "distractors": [
           "dieser",
           "diesem",
           "diesen",
           "jener"
-        ],
-        "hidden_word_index": 6
+        ]
       },
       "en": {
-        "prompt": "There are guests standing over there. Do you actually know these people?"
+        "text": "There are guests standing over there. Do you actually know these people?"
       },
       "no": {
-        "prompt": "Det står gjester der borte. Kjenner du disse menneskene egentlig?"
+        "text": "Det står gjester der borte. Kjenner du disse menneskene egentlig?"
       }
     }
   },
   {
     "id": 7056,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 4,
     "tags": [
@@ -1988,29 +1817,25 @@
     },
     "translations": {
       "de": {
-        "prompt": "Diese Äpfel sind sauer. Ich mag solche Äpfel nicht.",
-        "answer": "solche",
         "accepted": [],
-        "word_pool": [
-          "solche",
+        "hidden_word_index": 6,
+        "text": "Diese Äpfel sind sauer. Ich mag solche Äpfel nicht.",
+        "distractors": [
           "welche",
-          "diese",
           "jene",
           "manche"
-        ],
-        "hidden_word_index": 6
+        ]
       },
       "en": {
-        "prompt": "These apples are sour. I don't like such apples."
+        "text": "These apples are sour. I don't like such apples."
       },
       "no": {
-        "prompt": "Disse eplene er sure. Jeg liker ikke slike epler."
+        "text": "Disse eplene er sure. Jeg liker ikke slike epler."
       }
     }
   },
   {
     "id": 7057,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 4,
     "tags": [
@@ -2023,29 +1848,26 @@
     },
     "translations": {
       "de": {
-        "prompt": "Jeder Tag ist wie der andere. Es ist immer dasselbe.",
-        "answer": "dasselbe",
         "accepted": [],
-        "word_pool": [
-          "dasselbe",
+        "hidden_word_index": 9,
+        "text": "Jeder Tag ist wie der andere. Es ist immer dasselbe.",
+        "distractors": [
           "dieselbe",
           "derselbe",
           "gleiche",
           "selbe"
-        ],
-        "hidden_word_index": 9
+        ]
       },
       "en": {
-        "prompt": "Every day is like any other. It is always the same."
+        "text": "Every day is like any other. It is always the same."
       },
       "no": {
-        "prompt": "Hver dag er som enhver annen. Det er alltid det samme."
+        "text": "Hver dag er som enhver annen. Det er alltid det samme."
       }
     }
   },
   {
     "id": 7058,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 4,
     "tags": [
@@ -2059,29 +1881,26 @@
     },
     "translations": {
       "de": {
-        "prompt": "Es gibt viele Sorten auf der Karte. Ich nehme diesen Wein hier.",
-        "answer": "diesen",
         "accepted": [],
-        "word_pool": [
-          "diesen",
+        "hidden_word_index": 9,
+        "text": "Es gibt viele Sorten auf der Karte. Ich nehme diesen Wein hier.",
+        "distractors": [
           "dieser",
           "diesem",
           "dieses",
           "jenen"
-        ],
-        "hidden_word_index": 9
+        ]
       },
       "en": {
-        "prompt": "There are many varieties on the menu. I'll have this wine here."
+        "text": "There are many varieties on the menu. I'll have this wine here."
       },
       "no": {
-        "prompt": "Det er mange sorter på kartet. Jeg tar denne vinen her."
+        "text": "Det er mange sorter på kartet. Jeg tar denne vinen her."
       }
     }
   },
   {
     "id": 7059,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 4,
     "tags": [
@@ -2095,29 +1914,26 @@
     },
     "translations": {
       "de": {
-        "prompt": "Wir haben gerade über ihn gesprochen. In diesem Moment kam er herein.",
-        "answer": "diesem",
         "accepted": [],
-        "word_pool": [
-          "diesem",
+        "hidden_word_index": 7,
+        "text": "Wir haben gerade über ihn gesprochen. In diesem Moment kam er herein.",
+        "distractors": [
           "diesen",
           "dieser",
           "dieses",
           "jenem"
-        ],
-        "hidden_word_index": 7
+        ]
       },
       "en": {
-        "prompt": "We were just talking about him. At that moment he came in."
+        "text": "We were just talking about him. At that moment he came in."
       },
       "no": {
-        "prompt": "Vi snakket nettopp om ham. I det øyeblikket kom han inn."
+        "text": "Vi snakket nettopp om ham. I det øyeblikket kom han inn."
       }
     }
   },
   {
     "id": 7060,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 4,
     "tags": [
@@ -2130,29 +1946,25 @@
     },
     "translations": {
       "de": {
-        "prompt": "Diese Idee ist gut, aber was hältst du von jener Idee dort drüben?",
-        "answer": "jener",
         "accepted": [],
-        "word_pool": [
-          "jener",
+        "hidden_word_index": 9,
+        "text": "Diese Idee ist gut, aber was hältst du von jener Idee dort drüben?",
+        "distractors": [
           "dieser",
           "solcher",
-          "welcher",
-          "jener"
-        ],
-        "hidden_word_index": 9
+          "welcher"
+        ]
       },
       "en": {
-        "prompt": "This idea is good, but what do you think of that idea over there?"
+        "text": "This idea is good, but what do you think of that idea over there?"
       },
       "no": {
-        "prompt": "Denne ideen er god, men hva synes du om den ideen der borte?"
+        "text": "Denne ideen er god, men hva synes du om den ideen der borte?"
       }
     }
   },
   {
     "id": 7061,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 4,
     "tags": [
@@ -2165,29 +1977,26 @@
     },
     "translations": {
       "de": {
-        "prompt": "Sie hat sich kaum verändert. Dieselbe Frau kenne ich schon lange.",
-        "answer": "Dieselbe",
         "accepted": [],
-        "word_pool": [
-          "Dieselbe",
+        "hidden_word_index": 5,
+        "text": "Sie hat sich kaum verändert. Dieselbe Frau kenne ich schon lange.",
+        "distractors": [
           "Derselbe",
           "Dasselbe",
           "Diese",
           "Jene"
-        ],
-        "hidden_word_index": 5
+        ]
       },
       "en": {
-        "prompt": "She has hardly changed. I've known the same woman for a long time."
+        "text": "She has hardly changed. I've known the same woman for a long time."
       },
       "no": {
-        "prompt": "Hun har nesten ikke forandret seg. Jeg har kjent den samme kvinnen lenge."
+        "text": "Hun har nesten ikke forandret seg. Jeg har kjent den samme kvinnen lenge."
       }
     }
   },
   {
     "id": 7062,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 4,
     "tags": [
@@ -2200,29 +2009,26 @@
     },
     "translations": {
       "de": {
-        "prompt": "Wir sind Nachbarn. Wir wohnen im selben Haus.",
-        "answer": "selben",
         "accepted": [],
-        "word_pool": [
-          "selben",
+        "hidden_word_index": 6,
+        "text": "Wir sind Nachbarn. Wir wohnen im selben Haus.",
+        "distractors": [
           "gleichen",
           "diesem",
           "jenem",
           "solchem"
-        ],
-        "hidden_word_index": 6
+        ]
       },
       "en": {
-        "prompt": "We are neighbors. We live in the same house."
+        "text": "We are neighbors. We live in the same house."
       },
       "no": {
-        "prompt": "Vi er naboer. Vi bor i samme hus."
+        "text": "Vi er naboer. Vi bor i samme hus."
       }
     }
   },
   {
     "id": 7063,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 4,
     "tags": [
@@ -2235,29 +2041,25 @@
     },
     "translations": {
       "de": {
-        "prompt": "Diese Schuhe sind billig, aber Jene Schuhe dort sind zu teuer.",
-        "answer": "Jene",
         "accepted": [],
-        "word_pool": [
-          "Jene",
-          "Diese",
+        "hidden_word_index": 5,
+        "text": "Diese Schuhe sind billig, aber Jene Schuhe dort sind zu teuer.",
+        "distractors": [
           "Solche",
           "Welche",
           "Manche"
-        ],
-        "hidden_word_index": 5
+        ]
       },
       "en": {
-        "prompt": "These shoes are cheap, but those shoes over there are too expensive."
+        "text": "These shoes are cheap, but those shoes over there are too expensive."
       },
       "no": {
-        "prompt": "Disse skoene er billige, men de skoene der borte er for dyre."
+        "text": "Disse skoene er billige, men de skoene der borte er for dyre."
       }
     }
   },
   {
     "id": 7064,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 4,
     "tags": [
@@ -2270,29 +2072,26 @@
     },
     "translations": {
       "de": {
-        "prompt": "Es regnet Bindfäden. Hast du schon mal solches Wetter erlebt?",
-        "answer": "solches",
         "accepted": [],
-        "word_pool": [
-          "solches",
+        "hidden_word_index": 7,
+        "text": "Es regnet Bindfäden. Hast du schon mal solches Wetter erlebt?",
+        "distractors": [
           "dieses",
           "jenes",
           "welches",
           "manches"
-        ],
-        "hidden_word_index": 7
+        ]
       },
       "en": {
-        "prompt": "It's raining cats and dogs. Have you ever experienced such weather?"
+        "text": "It's raining cats and dogs. Have you ever experienced such weather?"
       },
       "no": {
-        "prompt": "Det regner trollkjerringer. Har du noen gang opplevd slikt vær?"
+        "text": "Det regner trollkjerringer. Har du noen gang opplevd slikt vær?"
       }
     }
   },
   {
     "id": 7065,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 4,
     "tags": [
@@ -2305,29 +2104,26 @@
     },
     "translations": {
       "de": {
-        "prompt": "Bitte setzen Sie sich woanders hin. Dieser hier ist mein Platz.",
-        "answer": "Dieser",
         "accepted": [],
-        "word_pool": [
-          "Dieser",
+        "hidden_word_index": 6,
+        "text": "Bitte setzen Sie sich woanders hin. Dieser hier ist mein Platz.",
+        "distractors": [
           "Diese",
           "Dieses",
           "Jener",
           "Der"
-        ],
-        "hidden_word_index": 6
+        ]
       },
       "en": {
-        "prompt": "Please sit somewhere else. This here is my place."
+        "text": "Please sit somewhere else. This here is my place."
       },
       "no": {
-        "prompt": "Sitt et annet sted snill. Dette her er min plass."
+        "text": "Sitt et annet sted snill. Dette her er min plass."
       }
     }
   },
   {
     "id": 7066,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 4,
     "tags": [
@@ -2340,29 +2136,26 @@
     },
     "translations": {
       "de": {
-        "prompt": "Du hast Schwierigkeiten mit der Aufgabe? Ich habe gestern dasselbe Problem gelöst.",
-        "answer": "dasselbe",
         "accepted": [],
-        "word_pool": [
-          "dasselbe",
+        "hidden_word_index": 9,
+        "text": "Du hast Schwierigkeiten mit der Aufgabe? Ich habe gestern dasselbe Problem gelöst.",
+        "distractors": [
           "derselbe",
           "dieselbe",
           "dieses",
           "jenes"
-        ],
-        "hidden_word_index": 9
+        ]
       },
       "en": {
-        "prompt": "You have difficulties with the task? I solved the same problem yesterday."
+        "text": "You have difficulties with the task? I solved the same problem yesterday."
       },
       "no": {
-        "prompt": "Har du vanskeligheter med oppgaven? Jeg løste det samme problemet i går."
+        "text": "Har du vanskeligheter med oppgaven? Jeg løste det samme problemet i går."
       }
     }
   },
   {
     "id": 7067,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
@@ -2376,29 +2169,26 @@
     },
     "translations": {
       "de": {
-        "prompt": "Dort ist ein Bekannter. Der Mann, der dort steht, ist mein Onkel.",
-        "answer": "der",
         "accepted": [],
-        "word_pool": [
-          "der",
+        "hidden_word_index": 6,
+        "text": "Dort ist ein Bekannter. Der Mann, der dort steht, ist mein Onkel.",
+        "distractors": [
           "den",
           "dem",
           "dessen",
           "welcher"
-        ],
-        "hidden_word_index": 6
+        ]
       },
       "en": {
-        "prompt": "There is an acquaintance. The man standing there is my uncle."
+        "text": "There is an acquaintance. The man standing there is my uncle."
       },
       "no": {
-        "prompt": "Der er en bekjent. Mannen som står der er onkelen min."
+        "text": "Der er en bekjent. Mannen som står der er onkelen min."
       }
     }
   },
   {
     "id": 7068,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
@@ -2412,29 +2202,26 @@
     },
     "translations": {
       "de": {
-        "prompt": "Schau mal auf den Parkplatz. Das Auto, das dort parkt, ist neu.",
-        "answer": "das",
         "accepted": [],
-        "word_pool": [
-          "das",
+        "hidden_word_index": 7,
+        "text": "Schau mal auf den Parkplatz. Das Auto, das dort parkt, ist neu.",
+        "distractors": [
           "der",
           "die",
           "dessen",
           "welches"
-        ],
-        "hidden_word_index": 7
+        ]
       },
       "en": {
-        "prompt": "Look at the parking lot. The car parking there is new."
+        "text": "Look at the parking lot. The car parking there is new."
       },
       "no": {
-        "prompt": "Se på parkeringsplassen. Bilen som står der er ny."
+        "text": "Se på parkeringsplassen. Bilen som står der er ny."
       }
     }
   },
   {
     "id": 7069,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
@@ -2448,29 +2235,26 @@
     },
     "translations": {
       "de": {
-        "prompt": "Erinnerst du dich an den Besuch? Die Frau, die gestern hier war, ist Ärztin.",
-        "answer": "die",
         "accepted": [],
-        "word_pool": [
-          "die",
+        "hidden_word_index": 8,
+        "text": "Erinnerst du dich an den Besuch? Die Frau, die gestern hier war, ist Ärztin.",
+        "distractors": [
           "der",
           "das",
           "deren",
           "welche"
-        ],
-        "hidden_word_index": 8
+        ]
       },
       "en": {
-        "prompt": "Do you remember the visit? The woman who was here yesterday is a doctor."
+        "text": "Do you remember the visit? The woman who was here yesterday is a doctor."
       },
       "no": {
-        "prompt": "Husker du besøket? Kvinnen som var her i går er lege."
+        "text": "Husker du besøket? Kvinnen som var her i går er lege."
       }
     }
   },
   {
     "id": 7070,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 4,
     "tags": [
@@ -2484,29 +2268,25 @@
     },
     "translations": {
       "de": {
-        "prompt": "Ich kenne das Kind gut. Das ist das Kind, dem ich gestern geholfen habe.",
-        "answer": "dem",
         "accepted": [],
-        "word_pool": [
-          "dem",
+        "hidden_word_index": 9,
+        "text": "Ich kenne das Kind gut. Das ist das Kind, dem ich gestern geholfen habe.",
+        "distractors": [
           "den",
           "der",
-          "das",
           "welchem"
-        ],
-        "hidden_word_index": 9
+        ]
       },
       "en": {
-        "prompt": "I know the child well. That is the child I helped yesterday."
+        "text": "I know the child well. That is the child I helped yesterday."
       },
       "no": {
-        "prompt": "Jeg kjenner barnet godt. Det er barnet jeg hjalp i går."
+        "text": "Jeg kjenner barnet godt. Det er barnet jeg hjalp i går."
       }
     }
   },
   {
     "id": 7071,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 4,
     "tags": [
@@ -2520,29 +2300,25 @@
     },
     "translations": {
       "de": {
-        "prompt": "Wir haben im Park Wanderer getroffen. Die Leute, denen wir begegnet sind, waren nett.",
-        "answer": "denen",
         "accepted": [],
-        "word_pool": [
-          "denen",
-          "die",
+        "hidden_word_index": 8,
+        "text": "Wir haben im Park Wanderer getroffen. Die Leute, denen wir begegnet sind, waren nett.",
+        "distractors": [
           "den",
           "der",
           "welchen"
-        ],
-        "hidden_word_index": 8
+        ]
       },
       "en": {
-        "prompt": "We met hikers in the park. The people we encountered were nice."
+        "text": "We met hikers in the park. The people we encountered were nice."
       },
       "no": {
-        "prompt": "Vi møtte turgåere i parken. Folkene vi møtte var hyggelige."
+        "text": "Vi møtte turgåere i parken. Folkene vi møtte var hyggelige."
       }
     }
   },
   {
     "id": 7072,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 5,
     "tags": [
@@ -2556,29 +2332,25 @@
     },
     "translations": {
       "de": {
-        "prompt": "Das Werk ist fantastisch. Der Autor, dessen Buch ich gerade lese, ist weltberühmt.",
-        "answer": "dessen",
         "accepted": [],
-        "word_pool": [
-          "dessen",
-          "der",
+        "hidden_word_index": 6,
+        "text": "Das Werk ist fantastisch. Der Autor, dessen Buch ich gerade lese, ist weltberühmt.",
+        "distractors": [
           "den",
           "dem",
           "welches"
-        ],
-        "hidden_word_index": 6
+        ]
       },
       "en": {
-        "prompt": "The work is fantastic. The author whose book I am currently reading is world-famous."
+        "text": "The work is fantastic. The author whose book I am currently reading is world-famous."
       },
       "no": {
-        "prompt": "Verket er fantastisk. Forfatteren hvis bok jeg leser nå er verdenskjent."
+        "text": "Verket er fantastisk. Forfatteren hvis bok jeg leser nå er verdenskjent."
       }
     }
   },
   {
     "id": 7073,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 5,
     "tags": [
@@ -2592,29 +2364,25 @@
     },
     "translations": {
       "de": {
-        "prompt": "Ich liebe historische Orte. Die Stadt, deren Kirchen sehr alt sind, ist wunderschön.",
-        "answer": "deren",
         "accepted": [],
-        "word_pool": [
-          "deren",
-          "die",
+        "hidden_word_index": 6,
+        "text": "Ich liebe historische Orte. Die Stadt, deren Kirchen sehr alt sind, ist wunderschön.",
+        "distractors": [
           "der",
           "derer",
           "welcher"
-        ],
-        "hidden_word_index": 6
+        ]
       },
       "en": {
-        "prompt": "I love historical places. The city whose churches are very old is beautiful."
+        "text": "I love historical places. The city whose churches are very old is beautiful."
       },
       "no": {
-        "prompt": "Jeg elsker historiske steder. Byen hvis kirker er veldig gamle er vakker."
+        "text": "Jeg elsker historiske steder. Byen hvis kirker er veldig gamle er vakker."
       }
     }
   },
   {
     "id": 7074,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 4,
     "tags": [
@@ -2628,29 +2396,26 @@
     },
     "translations": {
       "de": {
-        "prompt": "Vielen Dank für das Geschenk! Das Buch, das du mir geschenkt hast, ist wirklich toll.",
-        "answer": "das",
         "accepted": [],
-        "word_pool": [
-          "das",
+        "hidden_word_index": 7,
+        "text": "Vielen Dank für das Geschenk! Das Buch, das du mir geschenkt hast, ist wirklich toll.",
+        "distractors": [
           "der",
           "dem",
           "dessen",
           "welches"
-        ],
-        "hidden_word_index": 7
+        ]
       },
       "en": {
-        "prompt": "Many thanks for the gift! The book you gave me is really great."
+        "text": "Many thanks for the gift! The book you gave me is really great."
       },
       "no": {
-        "prompt": "Tusen takk for gaven! Boken du ga meg er virkelig flott."
+        "text": "Tusen takk for gaven! Boken du ga meg er virkelig flott."
       }
     }
   },
   {
     "id": 7075,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 4,
     "tags": [
@@ -2664,29 +2429,26 @@
     },
     "translations": {
       "de": {
-        "prompt": "Ich feiere heute eine Party. Die Freunde, die ich eingeladen habe, kommen alle.",
-        "answer": "die",
         "accepted": [],
-        "word_pool": [
-          "die",
+        "hidden_word_index": 7,
+        "text": "Ich feiere heute eine Party. Die Freunde, die ich eingeladen habe, kommen alle.",
+        "distractors": [
           "denen",
           "der",
           "den",
           "welche"
-        ],
-        "hidden_word_index": 7
+        ]
       },
       "en": {
-        "prompt": "I am celebrating a party today. The friends I invited are all coming."
+        "text": "I am celebrating a party today. The friends I invited are all coming."
       },
       "no": {
-        "prompt": "Jeg feirer fest i dag. Vennene jeg har invitert kommer alle."
+        "text": "Jeg feirer fest i dag. Vennene jeg har invitert kommer alle."
       }
     }
   },
   {
     "id": 7076,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 4,
     "tags": [
@@ -2700,29 +2462,26 @@
     },
     "translations": {
       "de": {
-        "prompt": "Man sollte nicht nur nach dem Äußeren gehen. Alles, was glänzt, ist nicht Gold.",
-        "answer": "was",
         "accepted": [],
-        "word_pool": [
-          "was",
+        "hidden_word_index": 9,
+        "text": "Man sollte nicht nur nach dem Äußeren gehen. Alles, was glänzt, ist nicht Gold.",
+        "distractors": [
           "das",
           "welches",
           "der",
           "die"
-        ],
-        "hidden_word_index": 9
+        ]
       },
       "en": {
-        "prompt": "One shouldn't judge only by appearance. Everything that glitters is not gold."
+        "text": "One shouldn't judge only by appearance. Everything that glitters is not gold."
       },
       "no": {
-        "prompt": "Man bør ikke bare se på det ytre. Alt som glitrer er ikke gull."
+        "text": "Man bør ikke bare se på det ytre. Alt som glitrer er ikke gull."
       }
     }
   },
   {
     "id": 7077,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 4,
     "tags": [
@@ -2736,29 +2495,25 @@
     },
     "translations": {
       "de": {
-        "prompt": "Zwiebeln im Essen? Das ist etwas, was ich überhaupt nicht mag.",
-        "answer": "was",
         "accepted": [],
-        "word_pool": [
-          "was",
-          "das",
+        "hidden_word_index": 6,
+        "text": "Zwiebeln im Essen? Das ist etwas, was ich überhaupt nicht mag.",
+        "distractors": [
           "welches",
           "der",
           "die"
-        ],
-        "hidden_word_index": 6
+        ]
       },
       "en": {
-        "prompt": "Onions in the food? That is something I don't like at all."
+        "text": "Onions in the food? That is something I don't like at all."
       },
       "no": {
-        "prompt": "Løk i maten? Det er noe jeg overhodet ikke liker."
+        "text": "Løk i maten? Det er noe jeg overhodet ikke liker."
       }
     }
   },
   {
     "id": 7078,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 4,
     "tags": [
@@ -2772,29 +2527,25 @@
     },
     "translations": {
       "de": {
-        "prompt": "Ich kann ihn nicht finden. Der Brief, den ich gestern geschrieben habe, ist weg.",
-        "answer": "den",
         "accepted": [],
-        "word_pool": [
-          "den",
-          "der",
+        "hidden_word_index": 7,
+        "text": "Ich kann ihn nicht finden. Der Brief, den ich gestern geschrieben habe, ist weg.",
+        "distractors": [
           "dem",
           "das",
           "welcher"
-        ],
-        "hidden_word_index": 7
+        ]
       },
       "en": {
-        "prompt": "I can't find it. The letter I wrote yesterday is gone."
+        "text": "I can't find it. The letter I wrote yesterday is gone."
       },
       "no": {
-        "prompt": "Jeg finner den ikke. Brevet jeg skrev i går er borte."
+        "text": "Jeg finner den ikke. Brevet jeg skrev i går er borte."
       }
     }
   },
   {
     "id": 7079,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 4,
     "tags": [
@@ -2808,29 +2559,25 @@
     },
     "translations": {
       "de": {
-        "prompt": "Dort ist die Mutter. Die Frau, der das Kind gehört, ist gerade hier.",
-        "answer": "der",
         "accepted": [],
-        "word_pool": [
-          "der",
-          "die",
+        "hidden_word_index": 6,
+        "text": "Dort ist die Mutter. Die Frau, der das Kind gehört, ist gerade hier.",
+        "distractors": [
           "dem",
           "deren",
           "welcher"
-        ],
-        "hidden_word_index": 6
+        ]
       },
       "en": {
-        "prompt": "There is the mother. The woman the child belongs to is here right now."
+        "text": "There is the mother. The woman the child belongs to is here right now."
       },
       "no": {
-        "prompt": "Der er moren. Kvinnen barnet tilhører er her akkurat nå."
+        "text": "Der er moren. Kvinnen barnet tilhører er her akkurat nå."
       }
     }
   },
   {
     "id": 7080,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 2,
     "tags": [
@@ -2843,29 +2590,26 @@
     },
     "translations": {
       "de": {
-        "prompt": "Ich habe ein fremdes Objekt gefunden. Was ist das eigentlich?",
-        "answer": "Was",
         "accepted": [],
-        "word_pool": [
-          "Was",
+        "hidden_word_index": 6,
+        "text": "Ich habe ein fremdes Objekt gefunden. Was ist das eigentlich?",
+        "distractors": [
           "Wer",
           "Wie",
           "Warum",
           "Wann"
-        ],
-        "hidden_word_index": 6
+        ]
       },
       "en": {
-        "prompt": "I have found a strange object. What is that, actually?"
+        "text": "I have found a strange object. What is that, actually?"
       },
       "no": {
-        "prompt": "Jeg har funnet et fremmed objekt. Hva er det egentlig?"
+        "text": "Jeg har funnet et fremmed objekt. Hva er det egentlig?"
       }
     }
   },
   {
     "id": 7081,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 2,
     "tags": [
@@ -2878,29 +2622,26 @@
     },
     "translations": {
       "de": {
-        "prompt": "Hörst du das Geräusch? Wer klopft da an die Tür?",
-        "answer": "Wer",
         "accepted": [],
-        "word_pool": [
-          "Wer",
+        "hidden_word_index": 4,
+        "text": "Hörst du das Geräusch? Wer klopft da an die Tür?",
+        "distractors": [
           "Was",
           "Wie",
           "Wo",
           "Wann"
-        ],
-        "hidden_word_index": 4
+        ]
       },
       "en": {
-        "prompt": "Do you hear the noise? Who is knocking at the door?"
+        "text": "Do you hear the noise? Who is knocking at the door?"
       },
       "no": {
-        "prompt": "Hører du lyden? Hvem banker på døren?"
+        "text": "Hører du lyden? Hvem banker på døren?"
       }
     }
   },
   {
     "id": 7082,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
@@ -2914,29 +2655,26 @@
     },
     "translations": {
       "de": {
-        "prompt": "Du schaust dich so suchend um. Wen suchst du hier?",
-        "answer": "Wen",
         "accepted": [],
-        "word_pool": [
-          "Wen",
+        "hidden_word_index": 6,
+        "text": "Du schaust dich so suchend um. Wen suchst du hier?",
+        "distractors": [
           "Wer",
           "Wem",
           "Was",
           "Wie"
-        ],
-        "hidden_word_index": 6
+        ]
       },
       "en": {
-        "prompt": "You are looking around so searchingly. Who are you looking for here?"
+        "text": "You are looking around so searchingly. Who are you looking for here?"
       },
       "no": {
-        "prompt": "Du ser deg så søkende rundt. Hvem leter du etter her?"
+        "text": "Du ser deg så søkende rundt. Hvem leter du etter her?"
       }
     }
   },
   {
     "id": 7083,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
@@ -2950,29 +2688,26 @@
     },
     "translations": {
       "de": {
-        "prompt": "Du warst sehr höflich. Wem hast du gerade gedankt?",
-        "answer": "Wem",
         "accepted": [],
-        "word_pool": [
-          "Wem",
+        "hidden_word_index": 4,
+        "text": "Du warst sehr höflich. Wem hast du gerade gedankt?",
+        "distractors": [
           "Wer",
           "Wen",
           "Was",
           "Wie"
-        ],
-        "hidden_word_index": 4
+        ]
       },
       "en": {
-        "prompt": "You were very polite. Who did you just thank?"
+        "text": "You were very polite. Who did you just thank?"
       },
       "no": {
-        "prompt": "Du var veldig høflig. Hvem takket du nettopp?"
+        "text": "Du var veldig høflig. Hvem takket du nettopp?"
       }
     }
   },
   {
     "id": 7084,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
@@ -2985,29 +2720,26 @@
     },
     "translations": {
       "de": {
-        "prompt": "Hier sind Blau und Rot. Welche Farbe gefällt dir besser?",
-        "answer": "Welche",
         "accepted": [],
-        "word_pool": [
-          "Welche",
+        "hidden_word_index": 5,
+        "text": "Hier sind Blau und Rot. Welche Farbe gefällt dir besser?",
+        "distractors": [
           "Was",
           "Wer",
           "Wie",
           "Wo"
-        ],
-        "hidden_word_index": 5
+        ]
       },
       "en": {
-        "prompt": "Here are blue and red. Which color do you like better?"
+        "text": "Here are blue and red. Which color do you like better?"
       },
       "no": {
-        "prompt": "Her er blått og rødt. Hvilken farge liker du bedre?"
+        "text": "Her er blått og rødt. Hvilken farge liker du bedre?"
       }
     }
   },
   {
     "id": 7085,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
@@ -3020,29 +2752,26 @@
     },
     "translations": {
       "de": {
-        "prompt": "Das Cover sieht interessant aus. Was für ein Buch ist das genau?",
-        "answer": "Was",
         "accepted": [],
-        "word_pool": [
-          "Was",
+        "hidden_word_index": 5,
+        "text": "Das Cover sieht interessant aus. Was für ein Buch ist das genau?",
+        "distractors": [
           "Wer",
           "Wie",
           "Wo",
           "Welches"
-        ],
-        "hidden_word_index": 5
+        ]
       },
       "en": {
-        "prompt": "The cover looks interesting. What kind of book is that exactly?"
+        "text": "The cover looks interesting. What kind of book is that exactly?"
       },
       "no": {
-        "prompt": "Omslaget ser interessant ut. Hva slags bok er det nøyaktig?"
+        "text": "Omslaget ser interessant ut. Hva slags bok er det nøyaktig?"
       }
     }
   },
   {
     "id": 7086,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 4,
     "tags": [
@@ -3056,29 +2785,26 @@
     },
     "translations": {
       "de": {
-        "prompt": "Es steht in unserer Einfahrt. Wessen Auto ist das?",
-        "answer": "Wessen",
         "accepted": [],
-        "word_pool": [
-          "Wessen",
+        "hidden_word_index": 5,
+        "text": "Es steht in unserer Einfahrt. Wessen Auto ist das?",
+        "distractors": [
           "Wem",
           "Wen",
           "Wer",
           "Was"
-        ],
-        "hidden_word_index": 5
+        ]
       },
       "en": {
-        "prompt": "It is standing in our driveway. Whose car is that?"
+        "text": "It is standing in our driveway. Whose car is that?"
       },
       "no": {
-        "prompt": "Den står i vår oppkjørsel. Hvis bil er det?"
+        "text": "Den står i vår oppkjørsel. Hvis bil er det?"
       }
     }
   },
   {
     "id": 7087,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
@@ -3091,29 +2817,26 @@
     },
     "translations": {
       "de": {
-        "prompt": "Du bist so schmutzig! Was hast du im Garten gemacht?",
-        "answer": "Was",
         "accepted": [],
-        "word_pool": [
-          "Was",
+        "hidden_word_index": 4,
+        "text": "Du bist so schmutzig! Was hast du im Garten gemacht?",
+        "distractors": [
           "Wer",
           "Wie",
           "Wo",
           "Wann"
-        ],
-        "hidden_word_index": 4
+        ]
       },
       "en": {
-        "prompt": "You are so dirty! What have you been doing in the garden?"
+        "text": "You are so dirty! What have you been doing in the garden?"
       },
       "no": {
-        "prompt": "Du er så skitten! Hva har du gjort i hagen?"
+        "text": "Du er så skitten! Hva har du gjort i hagen?"
       }
     }
   },
   {
     "id": 7088,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
@@ -3126,29 +2849,26 @@
     },
     "translations": {
       "de": {
-        "prompt": "Ich habe den Tisch für drei Personen gedeckt. Wer kommt heute zu Besuch?",
-        "answer": "Wer",
         "accepted": [],
-        "word_pool": [
-          "Wer",
+        "hidden_word_index": 8,
+        "text": "Ich habe den Tisch für drei Personen gedeckt. Wer kommt heute zu Besuch?",
+        "distractors": [
           "Was",
           "Wie",
           "Wo",
           "Wen"
-        ],
-        "hidden_word_index": 8
+        ]
       },
       "en": {
-        "prompt": "I have set the table for three people. Who is coming to visit today?"
+        "text": "I have set the table for three people. Who is coming to visit today?"
       },
       "no": {
-        "prompt": "Jeg har dekket bordet til tre personer. Hvem kommer på besøk i dag?"
+        "text": "Jeg har dekket bordet til tre personer. Hvem kommer på besøk i dag?"
       }
     }
   },
   {
     "id": 7089,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
@@ -3162,29 +2882,26 @@
     },
     "translations": {
       "de": {
-        "prompt": "Deine Aussage ist etwas unklar. Wen meinst du genau damit?",
-        "answer": "Wen",
         "accepted": [],
-        "word_pool": [
-          "Wen",
+        "hidden_word_index": 5,
+        "text": "Deine Aussage ist etwas unklar. Wen meinst du genau damit?",
+        "distractors": [
           "Wer",
           "Was",
           "Wie",
           "Wem"
-        ],
-        "hidden_word_index": 5
+        ]
       },
       "en": {
-        "prompt": "Your statement is a bit unclear. Who exactly do you mean by that?"
+        "text": "Your statement is a bit unclear. Who exactly do you mean by that?"
       },
       "no": {
-        "prompt": "Din uttalelse er litt uklar. Hvem mener du nøyaktig med det?"
+        "text": "Din uttalelse er litt uklar. Hvem mener du nøyaktig med det?"
       }
     }
   },
   {
     "id": 7090,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
@@ -3198,29 +2915,26 @@
     },
     "translations": {
       "de": {
-        "prompt": "Das war eine wichtige Information. Wem hast du das alles gesagt?",
-        "answer": "Wem",
         "accepted": [],
-        "word_pool": [
-          "Wem",
+        "hidden_word_index": 5,
+        "text": "Das war eine wichtige Information. Wem hast du das alles gesagt?",
+        "distractors": [
           "Wer",
           "Wen",
           "Was",
           "Wie"
-        ],
-        "hidden_word_index": 5
+        ]
       },
       "en": {
-        "prompt": "That was an important piece of information. Who did you tell all that to?"
+        "text": "That was an important piece of information. Who did you tell all that to?"
       },
       "no": {
-        "prompt": "Det var viktig informasjon. Hvem fortalte du alt det til?"
+        "text": "Det var viktig informasjon. Hvem fortalte du alt det til?"
       }
     }
   },
   {
     "id": 7091,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
@@ -3233,29 +2947,26 @@
     },
     "translations": {
       "de": {
-        "prompt": "Ich habe mich verlaufen. Welcher Weg führt zum Bahnhof?",
-        "answer": "Welcher",
         "accepted": [],
-        "word_pool": [
-          "Welcher",
+        "hidden_word_index": 4,
+        "text": "Ich habe mich verlaufen. Welcher Weg führt zum Bahnhof?",
+        "distractors": [
           "Was",
           "Wer",
           "Wie",
           "Wo"
-        ],
-        "hidden_word_index": 4
+        ]
       },
       "en": {
-        "prompt": "I have gotten lost. Which way leads to the station?"
+        "text": "I have gotten lost. Which way leads to the station?"
       },
       "no": {
-        "prompt": "Jeg har gått meg bort. Hvilken vei fører til stasjonen?"
+        "text": "Jeg har gått meg bort. Hvilken vei fører til stasjonen?"
       }
     }
   },
   {
     "id": 7092,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
@@ -3268,29 +2979,26 @@
     },
     "translations": {
       "de": {
-        "prompt": "Dort stehen viele Fremde. Was für Leute sind das?",
-        "answer": "Was",
         "accepted": [],
-        "word_pool": [
-          "Was",
+        "hidden_word_index": 4,
+        "text": "Dort stehen viele Fremde. Was für Leute sind das?",
+        "distractors": [
           "Welche",
           "Wer",
           "Wie",
           "Wo"
-        ],
-        "hidden_word_index": 4
+        ]
       },
       "en": {
-        "prompt": "There are many strangers standing there. What kind of people are they?"
+        "text": "There are many strangers standing there. What kind of people are they?"
       },
       "no": {
-        "prompt": "Det står mange fremmede der. Hva slags folk er det?"
+        "text": "Det står mange fremmede der. Hva slags folk er det?"
       }
     }
   },
   {
     "id": 7093,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
@@ -3303,29 +3011,26 @@
     },
     "translations": {
       "de": {
-        "prompt": "Schau auf das Verbotsschild. Man darf hier im Gebäude nicht rauchen.",
-        "answer": "Man",
         "accepted": [],
-        "word_pool": [
-          "Man",
+        "hidden_word_index": 4,
+        "text": "Schau auf das Verbotsschild. Man darf hier im Gebäude nicht rauchen.",
+        "distractors": [
           "Jemand",
           "Niemand",
           "Alles",
           "Etwas"
-        ],
-        "hidden_word_index": 4
+        ]
       },
       "en": {
-        "prompt": "Look at the prohibition sign. One is not allowed to smoke here in the building."
+        "text": "Look at the prohibition sign. One is not allowed to smoke here in the building."
       },
       "no": {
-        "prompt": "Se på forbudsskiltet. Man får ikke røyke her i bygningen."
+        "text": "Se på forbudsskiltet. Man får ikke røyke her i bygningen."
       }
     }
   },
   {
     "id": 7094,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
@@ -3338,29 +3043,26 @@
     },
     "translations": {
       "de": {
-        "prompt": "Ich war einen Moment weg. Hast du jemanden in meinem Büro gesehen?",
-        "answer": "jemanden",
         "accepted": [],
-        "word_pool": [
-          "jemanden",
+        "hidden_word_index": 7,
+        "text": "Ich war einen Moment weg. Hast du jemanden in meinem Büro gesehen?",
+        "distractors": [
           "niemand",
           "etwas",
           "alles",
           "manches"
-        ],
-        "hidden_word_index": 7
+        ]
       },
       "en": {
-        "prompt": "I was away for a moment. Have you seen anyone in my office?"
+        "text": "I was away for a moment. Have you seen anyone in my office?"
       },
       "no": {
-        "prompt": "Jeg var borte et øyeblikk. Har du sett noen på kontoret mitt?"
+        "text": "Jeg var borte et øyeblikk. Har du sett noen på kontoret mitt?"
       }
     }
   },
   {
     "id": 7095,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
@@ -3373,29 +3075,26 @@
     },
     "translations": {
       "de": {
-        "prompt": "Es war vollkommen still im Wald. Ich habe nichts gehört.",
-        "answer": "nichts",
         "accepted": [],
-        "word_pool": [
-          "nichts",
+        "hidden_word_index": 8,
+        "text": "Es war vollkommen still im Wald. Ich habe nichts gehört.",
+        "distractors": [
           "etwas",
           "alles",
           "jemand",
           "niemand"
-        ],
-        "hidden_word_index": 8
+        ]
       },
       "en": {
-        "prompt": "It was completely silent in the forest. I haven't heard anything."
+        "text": "It was completely silent in the forest. I haven't heard anything."
       },
       "no": {
-        "prompt": "Det var fullstendig stille i skogen. Jeg har ikke hørt noe."
+        "text": "Det var fullstendig stille i skogen. Jeg har ikke hørt noe."
       }
     }
   },
   {
     "id": 7096,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
@@ -3408,29 +3107,25 @@
     },
     "translations": {
       "de": {
-        "prompt": "Mit harter Arbeit kann man alles schaffen. Nichts ist wirklich unmöglich.",
-        "answer": "Nichts",
         "accepted": [],
-        "word_pool": [
-          "Nichts",
-          "Alles",
+        "hidden_word_index": 7,
+        "text": "Mit harter Arbeit kann man alles schaffen. Nichts ist wirklich unmöglich.",
+        "distractors": [
           "Etwas",
           "Manches",
           "Jedes"
-        ],
-        "hidden_word_index": 7
+        ]
       },
       "en": {
-        "prompt": "With hard work one can achieve everything. Nothing is really impossible."
+        "text": "With hard work one can achieve everything. Nothing is really impossible."
       },
       "no": {
-        "prompt": "Med hardt arbeid kan man oppnå alt. Ingenting er virkelig umulig."
+        "text": "Med hardt arbeid kan man oppnå alt. Ingenting er virkelig umulig."
       }
     }
   },
   {
     "id": 7097,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
@@ -3443,29 +3138,26 @@
     },
     "translations": {
       "de": {
-        "prompt": "Das ist eine bekannte Tatsache. Fast Jeder weiß das heute.",
-        "answer": "Jeder",
         "accepted": [],
-        "word_pool": [
-          "Jeder",
+        "hidden_word_index": 6,
+        "text": "Das ist eine bekannte Tatsache. Fast Jeder weiß das heute.",
+        "distractors": [
           "Alle",
           "Mancher",
           "Keiner",
           "Jemand"
-        ],
-        "hidden_word_index": 6
+        ]
       },
       "en": {
-        "prompt": "That is a known fact. Almost everyone knows that today."
+        "text": "That is a known fact. Almost everyone knows that today."
       },
       "no": {
-        "prompt": "Det er et kjent faktum. Nesten alle vet det i dag."
+        "text": "Det er et kjent faktum. Nesten alle vet det i dag."
       }
     }
   },
   {
     "id": 7098,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
@@ -3478,29 +3170,26 @@
     },
     "translations": {
       "de": {
-        "prompt": "Ich habe viele Leute eingeladen. Einige sind gekommen.",
-        "answer": "Einige",
         "accepted": [],
-        "word_pool": [
-          "Einige",
+        "hidden_word_index": 5,
+        "text": "Ich habe viele Leute eingeladen. Einige sind gekommen.",
+        "distractors": [
           "Manche",
           "Alle",
           "Jeder",
           "Keiner"
-        ],
-        "hidden_word_index": 5
+        ]
       },
       "en": {
-        "prompt": "I have invited many people. Some have come."
+        "text": "I have invited many people. Some have come."
       },
       "no": {
-        "prompt": "Jeg har invitert mange mennesker. Noen har kommet."
+        "text": "Jeg har invitert mange mennesker. Noen har kommet."
       }
     }
   },
   {
     "id": 7099,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
@@ -3513,29 +3202,26 @@
     },
     "translations": {
       "de": {
-        "prompt": "Ich habe Hunger. Ich möchte etwas essen.",
-        "answer": "etwas",
         "accepted": [],
-        "word_pool": [
-          "etwas",
+        "hidden_word_index": 5,
+        "text": "Ich habe Hunger. Ich möchte etwas essen.",
+        "distractors": [
           "nichts",
           "alles",
           "manches",
           "jedes"
-        ],
-        "hidden_word_index": 5
+        ]
       },
       "en": {
-        "prompt": "I am hungry. I want to eat something."
+        "text": "I am hungry. I want to eat something."
       },
       "no": {
-        "prompt": "Jeg er sulten. Jeg vil spise noe."
+        "text": "Jeg er sulten. Jeg vil spise noe."
       }
     }
   },
   {
     "id": 7100,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
@@ -3548,28 +3234,25 @@
     },
     "translations": {
       "de": {
-        "prompt": "Alle standen nur rum. Niemand hat geholfen.",
-        "answer": "Niemand",
         "accepted": [],
-        "word_pool": [
-          "Niemand",
+        "hidden_word_index": 4,
+        "text": "Alle standen nur rum. Niemand hat geholfen.",
+        "distractors": [
           "Jemand",
           "Alles",
           "Keiner"
-        ],
-        "hidden_word_index": 4
+        ]
       },
       "en": {
-        "prompt": "Everyone was just standing around. No one helped."
+        "text": "Everyone was just standing around. No one helped."
       },
       "no": {
-        "prompt": "Alle sto bare rundt. Ingen hjalp."
+        "text": "Alle sto bare rundt. Ingen hjalp."
       }
     }
   },
   {
     "id": 7101,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
@@ -3582,29 +3265,26 @@
     },
     "translations": {
       "de": {
-        "prompt": "Die Prüfung ist schwer. Manche haben Angst davor.",
-        "answer": "Manche",
         "accepted": [],
-        "word_pool": [
-          "Manche",
+        "hidden_word_index": 4,
+        "text": "Die Prüfung ist schwer. Manche haben Angst davor.",
+        "distractors": [
           "Einige",
           "Alle",
           "Jeder",
           "Keiner"
-        ],
-        "hidden_word_index": 4
+        ]
       },
       "en": {
-        "prompt": "The exam is difficult. Some are afraid of it."
+        "text": "The exam is difficult. Some are afraid of it."
       },
       "no": {
-        "prompt": "Eksamen er vanskelig. Noen er redde for den."
+        "text": "Eksamen er vanskelig. Noen er redde for den."
       }
     }
   },
   {
     "id": 7102,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
@@ -3617,29 +3297,26 @@
     },
     "translations": {
       "de": {
-        "prompt": "Diese Tasche ist sehr schwer. Kann mir jemand helfen?",
-        "answer": "jemand",
         "accepted": [],
-        "word_pool": [
-          "jemand",
+        "hidden_word_index": 7,
+        "text": "Diese Tasche ist sehr schwer. Kann mir jemand helfen?",
+        "distractors": [
           "niemand",
           "etwas",
           "alles",
           "jeder"
-        ],
-        "hidden_word_index": 7
+        ]
       },
       "en": {
-        "prompt": "This bag is very heavy. Can someone help me?"
+        "text": "This bag is very heavy. Can someone help me?"
       },
       "no": {
-        "prompt": "Denne vesken er veldig tung. Kan noen hjelpe meg?"
+        "text": "Denne vesken er veldig tung. Kan noen hjelpe meg?"
       }
     }
   },
   {
     "id": 7103,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
@@ -3652,29 +3329,26 @@
     },
     "translations": {
       "de": {
-        "prompt": "Mach dir keine Sorgen. Alles ist in Ordnung.",
-        "answer": "Alles",
         "accepted": [],
-        "word_pool": [
-          "Alles",
+        "hidden_word_index": 4,
+        "text": "Mach dir keine Sorgen. Alles ist in Ordnung.",
+        "distractors": [
           "Nichts",
           "Etwas",
           "Manches",
           "Jedes"
-        ],
-        "hidden_word_index": 4
+        ]
       },
       "en": {
-        "prompt": "Don't worry. Everything is in order."
+        "text": "Don't worry. Everything is in order."
       },
       "no": {
-        "prompt": "Ikke bekymre deg. Alt er i orden."
+        "text": "Ikke bekymre deg. Alt er i orden."
       }
     }
   },
   {
     "id": 7104,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
@@ -3687,29 +3361,26 @@
     },
     "translations": {
       "de": {
-        "prompt": "Er schweigt beharrlich. Er hat nichts zu sagen.",
-        "answer": "nichts",
         "accepted": [],
-        "word_pool": [
-          "nichts",
+        "hidden_word_index": 5,
+        "text": "Er schweigt beharrlich. Er hat nichts zu sagen.",
+        "distractors": [
           "etwas",
           "alles",
           "manches",
           "jedes"
-        ],
-        "hidden_word_index": 5
+        ]
       },
       "en": {
-        "prompt": "He remains persistently silent. He has nothing to say."
+        "text": "He remains persistently silent. He has nothing to say."
       },
       "no": {
-        "prompt": "Han tier iherdig. Han har ingenting å si."
+        "text": "Han tier iherdig. Han har ingenting å si."
       }
     }
   },
   {
     "id": 7105,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
@@ -3722,23 +3393,21 @@
     },
     "translations": {
       "de": {
-        "prompt": "Beeilt euch! Wir haben nur noch wenig Zeit.",
-        "answer": "wenig",
         "accepted": [],
-        "word_pool": [
-          "wenig",
+        "hidden_word_index": 6,
+        "text": "Beeilt euch! Wir haben nur noch wenig Zeit.",
+        "distractors": [
           "viel",
           "manche",
           "einige",
           "alle"
-        ],
-        "hidden_word_index": 6
+        ]
       },
       "en": {
-        "prompt": "Hurry up! We only have a little time left."
+        "text": "Hurry up! We only have a little time left."
       },
       "no": {
-        "prompt": "Skynd dere! Vi har bare lite tid igjen."
+        "text": "Skynd dere! Vi har bare lite tid igjen."
       }
     }
   }

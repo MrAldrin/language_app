@@ -11,34 +11,29 @@
     "translations": {
       "de": {
         "accepted": [],
-        "word_pool": [
-          "ich",
+        "text": "ich",
+        "distractors": [
           "mich",
           "mir",
           "du",
           "er",
           "wir",
           "sie"
-        ],
-        "prompt": "ich",
-        "answer": "ich"
+        ]
       },
       "no": {
         "accepted": [],
-        "word_pool": [
-          "jeg",
+        "text": "jeg",
+        "distractors": [
           "meg",
           "min",
           "du",
           "han",
           "vi",
           "hun"
-        ],
-        "prompt": "jeg",
-        "answer": "jeg"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "single_token_choice"
     }
@@ -55,34 +50,29 @@
     "translations": {
       "de": {
         "accepted": [],
-        "word_pool": [
-          "wir",
+        "text": "wir",
+        "distractors": [
           "uns",
           "ihr",
           "sie",
           "du",
           "Sie",
           "euch"
-        ],
-        "prompt": "wir",
-        "answer": "wir"
+        ]
       },
       "no": {
         "accepted": [],
-        "word_pool": [
-          "vi",
+        "text": "vi",
+        "distractors": [
           "oss",
           "dere",
           "de",
           "du",
           "deg",
           "dere"
-        ],
-        "prompt": "vi",
-        "answer": "vi"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "single_token_choice"
     }
@@ -106,8 +96,8 @@
           "meinem",
           "meiner"
         ],
-        "word_pool": [
-          "mein",
+        "text": "mein",
+        "distractors": [
           "meine",
           "meinen",
           "meinem",
@@ -117,9 +107,7 @@
           "sein",
           "ihr",
           "unser"
-        ],
-        "prompt": "mein",
-        "answer": "mein"
+        ]
       },
       "no": {
         "accepted": [
@@ -127,8 +115,8 @@
           "mitt",
           "mine"
         ],
-        "word_pool": [
-          "min",
+        "text": "min",
+        "distractors": [
           "mi",
           "mitt",
           "mine",
@@ -138,12 +126,9 @@
           "dine",
           "sin",
           "vår"
-        ],
-        "prompt": "min",
-        "answer": "min"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "single_token_choice"
     }
@@ -160,34 +145,29 @@
     "translations": {
       "de": {
         "accepted": [],
-        "word_pool": [
-          "du",
+        "text": "du",
+        "distractors": [
           "dich",
           "dir",
           "ich",
           "er",
           "sie",
           "wir"
-        ],
-        "prompt": "du",
-        "answer": "du"
+        ]
       },
       "no": {
         "accepted": [],
-        "word_pool": [
-          "du",
+        "text": "du",
+        "distractors": [
           "deg",
           "din",
           "jeg",
           "han",
           "hun",
           "vi"
-        ],
-        "prompt": "du",
-        "answer": "du"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "single_token_choice"
     }
@@ -205,34 +185,29 @@
     "translations": {
       "de": {
         "accepted": [],
-        "word_pool": [
-          "er",
+        "text": "er",
+        "distractors": [
           "ihn",
           "ihm",
           "sie",
           "es",
           "wir",
           "man"
-        ],
-        "prompt": "er",
-        "answer": "er"
+        ]
       },
       "no": {
         "accepted": [],
-        "word_pool": [
-          "han",
+        "text": "han",
+        "distractors": [
           "ham",
           "hans",
           "hun",
           "det",
           "vi",
           "en"
-        ],
-        "prompt": "han",
-        "answer": "han"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "single_token_choice"
     }
@@ -250,35 +225,30 @@
     "translations": {
       "de": {
         "accepted": [],
-        "word_pool": [
-          "sie",
+        "hint": "singular",
+        "text": "sie",
+        "distractors": [
           "ihr",
           "ihre",
           "er",
           "es",
           "wir",
           "man"
-        ],
-        "prompt": "sie",
-        "answer": "sie",
-        "hint": "singular"
+        ]
       },
       "no": {
         "accepted": [],
-        "word_pool": [
-          "hun",
+        "text": "hun",
+        "distractors": [
           "henne",
           "hennes",
           "han",
           "det",
           "vi",
           "en"
-        ],
-        "prompt": "hun",
-        "answer": "hun"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "single_token_choice"
     }
@@ -296,36 +266,31 @@
     "translations": {
       "de": {
         "accepted": [],
-        "word_pool": [
-          "es",
+        "text": "es",
+        "distractors": [
           "er",
           "sie",
           "ihn",
           "ihm",
           "man",
           "wir"
-        ],
-        "prompt": "es",
-        "answer": "es"
+        ]
       },
       "no": {
         "accepted": [
           "den"
         ],
-        "word_pool": [
-          "det",
+        "text": "det",
+        "distractors": [
           "den",
           "han",
           "hun",
           "ham",
           "vi",
           "de"
-        ],
-        "prompt": "det",
-        "answer": "det"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "single_token_choice"
     }
@@ -342,35 +307,30 @@
     "translations": {
       "de": {
         "accepted": [],
-        "word_pool": [
-          "ihr",
+        "hint": "plural",
+        "text": "ihr",
+        "distractors": [
           "euch",
           "wir",
           "sie",
           "Sie",
           "du",
           "dein"
-        ],
-        "prompt": "ihr",
-        "answer": "ihr",
-        "hint": "plural"
+        ]
       },
       "no": {
         "accepted": [],
-        "word_pool": [
-          "dere",
+        "text": "dere",
+        "distractors": [
           "vi",
           "de",
           "du",
           "deg",
           "din",
           "oss"
-        ],
-        "prompt": "dere",
-        "answer": "dere"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "single_token_choice"
     }
@@ -387,35 +347,30 @@
     "translations": {
       "de": {
         "accepted": [],
-        "word_pool": [
-          "sie",
+        "hint": "plural",
+        "text": "sie",
+        "distractors": [
           "ihnen",
           "ihre",
           "ihr",
           "wir",
           "es",
           "man"
-        ],
-        "prompt": "sie",
-        "answer": "sie",
-        "hint": "plural"
+        ]
       },
       "no": {
         "accepted": [],
-        "word_pool": [
-          "de",
+        "text": "de",
+        "distractors": [
           "dem",
           "deres",
           "dere",
           "vi",
           "det",
           "den"
-        ],
-        "prompt": "de",
-        "answer": "de"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "single_token_choice"
     }
@@ -431,38 +386,31 @@
     "translations": {
       "de": {
         "accepted": [],
-        "word_pool": [
-          "Sie",
+        "hint": "formell",
+        "text": "Sie",
+        "distractors": [
           "Ihnen",
           "Ihr",
           "du",
           "ihr",
-          "sie",
           "wir"
-        ],
-        "prompt": "Sie",
-        "answer": "Sie",
-        "hint": "formell"
+        ]
       },
       "no": {
         "accepted": [
           "dere"
         ],
-        "word_pool": [
-          "De",
+        "hint": "formelt",
+        "text": "De",
+        "distractors": [
           "Dem",
           "Deres",
           "du",
           "dere",
-          "de",
           "vi"
-        ],
-        "prompt": "De",
-        "answer": "De",
-        "hint": "formelt"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "single_token_choice"
     }
@@ -479,34 +427,29 @@
     "translations": {
       "de": {
         "accepted": [],
-        "word_pool": [
-          "mich",
+        "text": "mich",
+        "distractors": [
           "mir",
           "ich",
           "dich",
           "ihn",
           "uns",
           "sich"
-        ],
-        "prompt": "mich",
-        "answer": "mich"
+        ]
       },
       "no": {
         "accepted": [],
-        "word_pool": [
-          "meg",
+        "text": "meg",
+        "distractors": [
           "jeg",
           "deg",
           "ham",
           "oss",
           "seg",
           "min"
-        ],
-        "prompt": "meg",
-        "answer": "meg"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "single_token_choice"
     }
@@ -523,34 +466,29 @@
     "translations": {
       "de": {
         "accepted": [],
-        "word_pool": [
-          "dich",
+        "text": "dich",
+        "distractors": [
           "dir",
           "du",
           "mich",
           "ihn",
           "euch",
           "sich"
-        ],
-        "prompt": "dich",
-        "answer": "dich"
+        ]
       },
       "no": {
         "accepted": [],
-        "word_pool": [
-          "deg",
+        "text": "deg",
+        "distractors": [
           "du",
           "meg",
           "ham",
           "dere",
           "seg",
           "din"
-        ],
-        "prompt": "deg",
-        "answer": "deg"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "single_token_choice"
     }
@@ -568,36 +506,31 @@
     "translations": {
       "de": {
         "accepted": [],
-        "word_pool": [
-          "ihn",
+        "text": "ihn",
+        "distractors": [
           "ihm",
           "er",
           "sie",
           "es",
           "mich",
           "sich"
-        ],
-        "prompt": "ihn",
-        "answer": "ihn"
+        ]
       },
       "no": {
         "accepted": [
           "han"
         ],
-        "word_pool": [
-          "ham",
+        "text": "ham",
+        "distractors": [
           "han",
           "henne",
           "det",
           "meg",
           "seg",
           "hans"
-        ],
-        "prompt": "ham",
-        "answer": "ham"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "single_token_choice"
     }
@@ -615,35 +548,30 @@
     "translations": {
       "de": {
         "accepted": [],
-        "word_pool": [
-          "sie",
+        "hint": "Objekt, fem.",
+        "text": "sie",
+        "distractors": [
           "ihr",
           "ihre",
           "ihn",
           "mich",
           "uns",
           "sich"
-        ],
-        "prompt": "sie",
-        "answer": "sie",
-        "hint": "Objekt, fem."
+        ]
       },
       "no": {
         "accepted": [],
-        "word_pool": [
-          "henne",
+        "text": "henne",
+        "distractors": [
           "hun",
           "ham",
           "meg",
           "oss",
           "seg",
           "hennes"
-        ],
-        "prompt": "henne",
-        "answer": "henne"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "single_token_choice"
     }
@@ -660,34 +588,29 @@
     "translations": {
       "de": {
         "accepted": [],
-        "word_pool": [
-          "uns",
+        "text": "uns",
+        "distractors": [
           "wir",
           "euch",
           "ihnen",
           "mich",
           "sich",
           "unser"
-        ],
-        "prompt": "uns",
-        "answer": "uns"
+        ]
       },
       "no": {
         "accepted": [],
-        "word_pool": [
-          "oss",
+        "text": "oss",
+        "distractors": [
           "vi",
           "dere",
           "dem",
           "meg",
           "seg",
           "vår"
-        ],
-        "prompt": "oss",
-        "answer": "oss"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "single_token_choice"
     }
@@ -704,35 +627,30 @@
     "translations": {
       "de": {
         "accepted": [],
-        "word_pool": [
-          "euch",
+        "text": "euch",
+        "distractors": [
           "ihr",
           "uns",
           "ihnen",
           "dich",
           "sich",
           "euer"
-        ],
-        "prompt": "euch",
-        "answer": "euch"
+        ]
       },
       "no": {
         "accepted": [],
-        "word_pool": [
-          "dere",
+        "hint": "objekt",
+        "text": "dere",
+        "distractors": [
           "oss",
           "dem",
           "deg",
           "seg",
           "deres",
           "vi"
-        ],
-        "prompt": "dere",
-        "answer": "dere",
-        "hint": "objekt"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "single_token_choice"
     }
@@ -749,35 +667,30 @@
     "translations": {
       "de": {
         "accepted": [],
-        "word_pool": [
-          "sie",
+        "hint": "Objekt, plural",
+        "text": "sie",
+        "distractors": [
           "ihnen",
           "ihre",
           "euch",
           "uns",
           "sich",
           "wir"
-        ],
-        "prompt": "sie",
-        "answer": "sie",
-        "hint": "Objekt, plural"
+        ]
       },
       "no": {
         "accepted": [],
-        "word_pool": [
-          "dem",
+        "text": "dem",
+        "distractors": [
           "de",
           "deres",
           "dere",
           "oss",
           "seg",
           "vi"
-        ],
-        "prompt": "dem",
-        "answer": "dem"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "single_token_choice"
     }
@@ -794,22 +707,21 @@
     "translations": {
       "de": {
         "accepted": [],
-        "word_pool": [
-          "mir",
+        "text": "mir",
+        "distractors": [
           "mich",
           "ich",
           "dir",
           "ihm",
           "uns",
           "meinem"
-        ],
-        "prompt": "mir",
-        "answer": "mir"
+        ]
       },
       "no": {
         "accepted": [],
-        "word_pool": [
-          "meg",
+        "hint": "indirekte",
+        "text": "meg",
+        "distractors": [
           "jeg",
           "deg",
           "ham",
@@ -817,13 +729,9 @@
           "min",
           "mitt",
           "en"
-        ],
-        "prompt": "meg",
-        "answer": "meg",
-        "hint": "indirekte"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "single_token_choice"
     }
@@ -840,35 +748,30 @@
     "translations": {
       "de": {
         "accepted": [],
-        "word_pool": [
-          "dir",
+        "text": "dir",
+        "distractors": [
           "dich",
           "du",
           "mir",
           "ihm",
           "euch",
           "deinem"
-        ],
-        "prompt": "dir",
-        "answer": "dir"
+        ]
       },
       "no": {
         "accepted": [],
-        "word_pool": [
-          "deg",
+        "hint": "indirekte",
+        "text": "deg",
+        "distractors": [
           "du",
           "meg",
           "ham",
           "dere",
           "din",
           "ditt"
-        ],
-        "prompt": "deg",
-        "answer": "deg",
-        "hint": "indirekte"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "single_token_choice"
     }
@@ -886,37 +789,32 @@
     "translations": {
       "de": {
         "accepted": [],
-        "word_pool": [
-          "ihm",
+        "text": "ihm",
+        "distractors": [
           "ihn",
           "er",
           "ihr",
           "ihnen",
           "uns",
           "seinem"
-        ],
-        "prompt": "ihm",
-        "answer": "ihm"
+        ]
       },
       "no": {
         "accepted": [
           "han"
         ],
-        "word_pool": [
-          "ham",
+        "hint": "indirekte",
+        "text": "ham",
+        "distractors": [
           "han",
           "henne",
           "dem",
           "oss",
           "hans",
           "sin"
-        ],
-        "prompt": "ham",
-        "answer": "ham",
-        "hint": "indirekte"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "single_token_choice"
     }
@@ -940,8 +838,8 @@
           "deinem",
           "deiner"
         ],
-        "word_pool": [
-          "dein",
+        "text": "dein",
+        "distractors": [
           "deine",
           "deinen",
           "mein",
@@ -950,9 +848,7 @@
           "unser",
           "deinem",
           "deiner"
-        ],
-        "prompt": "dein",
-        "answer": "dein"
+        ]
       },
       "no": {
         "accepted": [
@@ -960,20 +856,17 @@
           "ditt",
           "dine"
         ],
-        "word_pool": [
-          "din",
+        "text": "din",
+        "distractors": [
           "di",
           "ditt",
           "dine",
           "min",
           "sin",
           "deres"
-        ],
-        "prompt": "din",
-        "answer": "din"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "single_token_choice"
     }
@@ -996,8 +889,8 @@
           "seinem",
           "seiner"
         ],
-        "word_pool": [
-          "sein",
+        "text": "sein",
+        "distractors": [
           "seine",
           "seinen",
           "ihr",
@@ -1006,9 +899,7 @@
           "unser",
           "seinem",
           "seiner"
-        ],
-        "prompt": "sein",
-        "answer": "sein"
+        ]
       },
       "no": {
         "accepted": [
@@ -1017,20 +908,17 @@
           "sitt",
           "sine"
         ],
-        "word_pool": [
-          "hans",
+        "text": "hans",
+        "distractors": [
           "sin",
           "si",
           "sitt",
           "sine",
           "hennes",
           "min"
-        ],
-        "prompt": "hans",
-        "answer": "hans"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "single_token_choice"
     }
@@ -1053,8 +941,9 @@
           "ihrem",
           "ihrer"
         ],
-        "word_pool": [
-          "ihr",
+        "hint": "Possessiv, fem.",
+        "text": "ihr",
+        "distractors": [
           "ihre",
           "ihren",
           "sein",
@@ -1063,10 +952,7 @@
           "unser",
           "ihrem",
           "ihrer"
-        ],
-        "prompt": "ihr",
-        "answer": "ihr",
-        "hint": "Possessiv, fem."
+        ]
       },
       "no": {
         "accepted": [
@@ -1075,20 +961,17 @@
           "sitt",
           "sine"
         ],
-        "word_pool": [
-          "hennes",
+        "text": "hennes",
+        "distractors": [
           "sin",
           "si",
           "sitt",
           "sine",
           "hans",
           "min"
-        ],
-        "prompt": "hennes",
-        "answer": "hennes"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "single_token_choice"
     }
@@ -1110,8 +993,8 @@
           "unserem",
           "unserer"
         ],
-        "word_pool": [
-          "unser",
+        "text": "unser",
+        "distractors": [
           "unsere",
           "wir",
           "uns",
@@ -1121,29 +1004,24 @@
           "unseren",
           "unserem",
           "unserer"
-        ],
-        "prompt": "unser",
-        "answer": "unser"
+        ]
       },
       "no": {
         "accepted": [
           "vårt",
           "våre"
         ],
-        "word_pool": [
-          "vår",
+        "text": "vår",
+        "distractors": [
           "vårt",
           "våre",
           "vi",
           "oss",
           "deres",
           "min"
-        ],
-        "prompt": "vår",
-        "answer": "vår"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "single_token_choice"
     }
@@ -1165,8 +1043,8 @@
           "eurem",
           "eurer"
         ],
-        "word_pool": [
-          "euer",
+        "text": "euer",
+        "distractors": [
           "eure",
           "ihr",
           "euch",
@@ -1176,27 +1054,22 @@
           "euren",
           "eurem",
           "eurer"
-        ],
-        "prompt": "euer",
-        "answer": "euer"
+        ]
       },
       "no": {
         "accepted": [],
-        "word_pool": [
-          "deres",
+        "hint": "flertall",
+        "text": "deres",
+        "distractors": [
           "dere",
           "vår",
           "min",
           "din",
           "sin",
           "vi"
-        ],
-        "prompt": "deres",
-        "answer": "deres",
-        "hint": "flertall"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "single_token_choice"
     }
@@ -1218,8 +1091,9 @@
           "ihrem",
           "ihrer"
         ],
-        "word_pool": [
-          "ihr",
+        "hint": "Possessiv, Plural",
+        "text": "ihr",
+        "distractors": [
           "ihre",
           "ihren",
           "unser",
@@ -1228,28 +1102,22 @@
           "mein",
           "ihrem",
           "ihrer"
-        ],
-        "prompt": "ihr",
-        "answer": "ihr",
-        "hint": "Possessiv, Plural"
+        ]
       },
       "no": {
         "accepted": [],
-        "word_pool": [
-          "deres",
+        "hint": "de sin",
+        "text": "deres",
+        "distractors": [
           "de",
           "dem",
           "vår",
           "hennes",
           "hans",
           "min"
-        ],
-        "prompt": "deres",
-        "answer": "deres",
-        "hint": "de sin"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "single_token_choice"
     }
@@ -1265,34 +1133,29 @@
     "translations": {
       "de": {
         "accepted": [],
-        "word_pool": [
-          "sich",
+        "text": "sich",
+        "distractors": [
           "mich",
           "dich",
           "uns",
           "euch",
           "selbst",
           "ihn"
-        ],
-        "prompt": "sich",
-        "answer": "sich"
+        ]
       },
       "no": {
         "accepted": [],
-        "word_pool": [
-          "seg",
+        "text": "seg",
+        "distractors": [
           "meg",
           "deg",
           "oss",
           "dere",
           "selv",
           "ham"
-        ],
-        "prompt": "seg",
-        "answer": "seg"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "single_token_choice"
     }
@@ -1308,34 +1171,29 @@
     "translations": {
       "de": {
         "accepted": [],
-        "word_pool": [
-          "wer",
+        "text": "wer",
+        "distractors": [
           "was",
           "wie",
           "wo",
           "wann",
           "warum",
           "wen"
-        ],
-        "prompt": "wer",
-        "answer": "wer"
+        ]
       },
       "no": {
         "accepted": [],
-        "word_pool": [
-          "hvem",
+        "text": "hvem",
+        "distractors": [
           "hva",
           "hvordan",
           "hvor",
           "når",
           "hvorfor",
           "hvis"
-        ],
-        "prompt": "hvem",
-        "answer": "hvem"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "single_token_choice"
     }
@@ -1351,34 +1209,29 @@
     "translations": {
       "de": {
         "accepted": [],
-        "word_pool": [
-          "was",
+        "text": "was",
+        "distractors": [
           "wer",
           "wie",
           "wo",
           "wann",
           "warum",
           "welches"
-        ],
-        "prompt": "was",
-        "answer": "was"
+        ]
       },
       "no": {
         "accepted": [],
-        "word_pool": [
-          "hva",
+        "text": "hva",
+        "distractors": [
           "hvem",
           "hvordan",
           "hvor",
           "når",
           "hvorfor",
           "hvilket"
-        ],
-        "prompt": "hva",
-        "answer": "hva"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "single_token_choice"
     }
@@ -1396,36 +1249,31 @@
         "accepted": [
           "jemand"
         ],
-        "word_pool": [
-          "man",
+        "text": "man",
+        "distractors": [
           "jemand",
           "niemand",
           "alle",
           "einer",
           "jeder",
           "wir"
-        ],
-        "prompt": "man",
-        "answer": "man"
+        ]
       },
       "no": {
         "accepted": [
           "en"
         ],
-        "word_pool": [
-          "man",
+        "text": "man",
+        "distractors": [
           "en",
           "noen",
           "ingen",
           "alle",
           "hver",
           "vi"
-        ],
-        "prompt": "man",
-        "answer": "man"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "single_token_choice"
     }
@@ -1442,34 +1290,29 @@
     "translations": {
       "de": {
         "accepted": [],
-        "word_pool": [
-          "dieser",
+        "text": "dieser",
+        "distractors": [
           "diese",
           "dieses",
           "jener",
           "derer",
           "unser",
           "euer"
-        ],
-        "prompt": "dieser",
-        "answer": "dieser"
+        ]
       },
       "no": {
         "accepted": [],
-        "word_pool": [
-          "denne",
+        "text": "denne",
+        "distractors": [
           "dette",
           "disse",
           "den",
           "det",
           "de",
           "vår"
-        ],
-        "prompt": "denne",
-        "answer": "denne"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "single_token_choice"
     }
@@ -1486,34 +1329,29 @@
     "translations": {
       "de": {
         "accepted": [],
-        "word_pool": [
-          "dieses",
+        "text": "dieses",
+        "distractors": [
           "dieser",
           "diese",
           "jener",
           "was",
           "das",
           "es"
-        ],
-        "prompt": "dieses",
-        "answer": "dieses"
+        ]
       },
       "no": {
         "accepted": [],
-        "word_pool": [
-          "dette",
+        "text": "dette",
+        "distractors": [
           "denne",
           "disse",
           "det",
           "den",
           "noe",
           "alt"
-        ],
-        "prompt": "dette",
-        "answer": "dette"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "single_token_choice"
     }
@@ -1530,35 +1368,30 @@
     "translations": {
       "de": {
         "accepted": [],
-        "word_pool": [
-          "diese",
+        "hint": "plural",
+        "text": "diese",
+        "distractors": [
           "dieser",
           "dieses",
           "jene",
           "alle",
           "viele",
           "wir"
-        ],
-        "prompt": "diese",
-        "answer": "diese",
-        "hint": "plural"
+        ]
       },
       "no": {
         "accepted": [],
-        "word_pool": [
-          "disse",
+        "text": "disse",
+        "distractors": [
           "denne",
           "dette",
           "de",
           "alle",
           "mange",
           "vi"
-        ],
-        "prompt": "disse",
-        "answer": "disse"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "single_token_choice"
     }
@@ -1578,38 +1411,33 @@
           "jene",
           "jenes"
         ],
-        "word_pool": [
-          "jener",
+        "text": "jener",
+        "distractors": [
           "jene",
           "jenes",
           "dieser",
           "der",
           "welcher",
           "man"
-        ],
-        "prompt": "jener",
-        "answer": "jener"
+        ]
       },
       "no": {
         "accepted": [
           "det",
           "de"
         ],
-        "word_pool": [
-          "den",
+        "hint": "der borte",
+        "text": "den",
+        "distractors": [
           "det",
           "de",
           "denne",
           "dette",
           "hvilken",
           "en"
-        ],
-        "prompt": "den",
-        "answer": "den",
-        "hint": "der borte"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "single_token_choice"
     }
@@ -1626,35 +1454,30 @@
     "translations": {
       "de": {
         "accepted": [],
-        "word_pool": [
-          "der",
+        "hint": "relativ",
+        "text": "der",
+        "distractors": [
           "den",
           "dem",
           "dessen",
           "welcher",
           "wer",
           "er"
-        ],
-        "prompt": "der",
-        "answer": "der",
-        "hint": "relativ"
+        ]
       },
       "no": {
         "accepted": [],
-        "word_pool": [
-          "som",
+        "text": "som",
+        "distractors": [
           "hvem",
           "hva",
           "den",
           "det",
           "er",
           "han"
-        ],
-        "prompt": "som",
-        "answer": "som"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "single_token_choice"
     }
@@ -1671,36 +1494,31 @@
     "translations": {
       "de": {
         "accepted": [],
-        "word_pool": [
-          "die",
+        "hint": "relativ",
+        "text": "die",
+        "distractors": [
           "der",
           "deren",
           "welche",
           "sie",
           "wer",
           "wir"
-        ],
-        "prompt": "die",
-        "answer": "die",
-        "hint": "relativ"
+        ]
       },
       "no": {
         "accepted": [],
-        "word_pool": [
-          "som",
+        "hint": "relativ",
+        "text": "som",
+        "distractors": [
           "hvem",
           "hun",
           "den",
           "de",
           "vi",
           "en"
-        ],
-        "prompt": "som",
-        "answer": "som",
-        "hint": "relativ"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "single_token_choice"
     }
@@ -1717,36 +1535,31 @@
     "translations": {
       "de": {
         "accepted": [],
-        "word_pool": [
-          "das",
+        "hint": "relativ",
+        "text": "das",
+        "distractors": [
           "dem",
           "dessen",
           "welches",
           "es",
           "was",
           "man"
-        ],
-        "prompt": "das",
-        "answer": "das",
-        "hint": "relativ"
+        ]
       },
       "no": {
         "accepted": [],
-        "word_pool": [
-          "som",
+        "hint": "nøytrum",
+        "text": "som",
+        "distractors": [
           "hva",
           "det",
           "den",
           "noe",
           "alt",
           "en"
-        ],
-        "prompt": "som",
-        "answer": "som",
-        "hint": "nøytrum"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "single_token_choice"
     }
@@ -1762,35 +1575,30 @@
     "translations": {
       "de": {
         "accepted": [],
-        "word_pool": [
-          "jemand",
+        "text": "jemand",
+        "distractors": [
           "niemand",
           "man",
           "einer",
           "wer",
           "alle",
           "wir"
-        ],
-        "prompt": "jemand",
-        "answer": "jemand"
+        ]
       },
       "no": {
         "accepted": [],
-        "word_pool": [
-          "noen",
+        "hint": "person",
+        "text": "noen",
+        "distractors": [
           "ingen",
           "man",
           "en",
           "hvem",
           "alle",
           "vi"
-        ],
-        "prompt": "noen",
-        "answer": "noen",
-        "hint": "person"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "single_token_choice"
     }
@@ -1806,34 +1614,29 @@
     "translations": {
       "de": {
         "accepted": [],
-        "word_pool": [
-          "niemand",
+        "text": "niemand",
+        "distractors": [
           "jemand",
           "man",
           "keiner",
           "nie",
           "nichts",
           "wir"
-        ],
-        "prompt": "niemand",
-        "answer": "niemand"
+        ]
       },
       "no": {
         "accepted": [],
-        "word_pool": [
-          "ingen",
+        "text": "ingen",
+        "distractors": [
           "noen",
           "man",
           "aldri",
           "ingenting",
           "vi",
           "en"
-        ],
-        "prompt": "ingen",
-        "answer": "ingen"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "single_token_choice"
     }
@@ -1849,34 +1652,29 @@
     "translations": {
       "de": {
         "accepted": [],
-        "word_pool": [
-          "etwas",
+        "text": "etwas",
+        "distractors": [
           "nichts",
           "alles",
           "welches",
           "das",
           "was",
           "man"
-        ],
-        "prompt": "etwas",
-        "answer": "etwas"
+        ]
       },
       "no": {
         "accepted": [],
-        "word_pool": [
-          "noe",
+        "text": "noe",
+        "distractors": [
           "ingenting",
           "alt",
           "hvilket",
           "det",
           "hva",
           "en"
-        ],
-        "prompt": "noe",
-        "answer": "noe"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "single_token_choice"
     }
@@ -1892,34 +1690,29 @@
     "translations": {
       "de": {
         "accepted": [],
-        "word_pool": [
-          "nichts",
+        "text": "nichts",
+        "distractors": [
           "etwas",
           "alles",
           "nie",
           "keiner",
           "man",
           "es"
-        ],
-        "prompt": "nichts",
-        "answer": "nichts"
+        ]
       },
       "no": {
         "accepted": [],
-        "word_pool": [
-          "ingenting",
+        "text": "ingenting",
+        "distractors": [
           "noe",
           "alt",
           "aldri",
           "ingen",
           "man",
           "det"
-        ],
-        "prompt": "ingenting",
-        "answer": "ingenting"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "single_token_choice"
     }
@@ -1938,36 +1731,31 @@
           "jedes",
           "jede"
         ],
-        "word_pool": [
-          "jeder",
+        "text": "jeder",
+        "distractors": [
           "jedes",
           "jede",
           "alle",
           "man",
           "einer",
           "wir"
-        ],
-        "prompt": "jeder",
-        "answer": "jeder"
+        ]
       },
       "no": {
         "accepted": [
           "hvert"
         ],
-        "word_pool": [
-          "hver",
+        "text": "hver",
+        "distractors": [
           "hvert",
           "alle",
           "man",
           "en",
           "begge",
           "vi"
-        ],
-        "prompt": "hver",
-        "answer": "hver"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "single_token_choice"
     }
@@ -1983,34 +1771,29 @@
     "translations": {
       "de": {
         "accepted": [],
-        "word_pool": [
-          "alles",
+        "text": "alles",
+        "distractors": [
           "etwas",
           "nichts",
           "alle",
           "ganz",
           "man",
           "es"
-        ],
-        "prompt": "alles",
-        "answer": "alles"
+        ]
       },
       "no": {
         "accepted": [],
-        "word_pool": [
-          "alt",
+        "text": "alt",
+        "distractors": [
           "noe",
           "ingenting",
           "alle",
           "helt",
           "man",
           "det"
-        ],
-        "prompt": "alt",
-        "answer": "alt"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "single_token_choice"
     }
@@ -2026,34 +1809,29 @@
     "translations": {
       "de": {
         "accepted": [],
-        "word_pool": [
-          "alle",
+        "text": "alle",
+        "distractors": [
           "jeder",
           "viele",
           "manche",
           "wenige",
           "wir",
           "sie"
-        ],
-        "prompt": "alle",
-        "answer": "alle"
+        ]
       },
       "no": {
         "accepted": [],
-        "word_pool": [
-          "alle",
+        "text": "alle",
+        "distractors": [
           "hver",
           "mange",
           "noen",
           "få",
           "vi",
           "de"
-        ],
-        "prompt": "alle",
-        "answer": "alle"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "single_token_choice"
     }
@@ -2071,25 +1849,24 @@
         "accepted": [
           "einige"
         ],
-        "word_pool": [
-          "manche",
+        "text": "manche",
+        "distractors": [
           "einige",
           "viele",
           "alle",
           "etwas",
           "mehr",
           "wir"
-        ],
-        "prompt": "manche",
-        "answer": "manche"
+        ]
       },
       "no": {
         "accepted": [
           "enkelte",
           "noen få"
         ],
-        "word_pool": [
-          "noen",
+        "hint": "flere",
+        "text": "noen",
+        "distractors": [
           "enkelte",
           "få",
           "mange",
@@ -2097,13 +1874,9 @@
           "noe",
           "mer",
           "vi"
-        ],
-        "prompt": "noen",
-        "answer": "noen",
-        "hint": "flere"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "single_token_choice"
     }
@@ -2119,34 +1892,29 @@
     "translations": {
       "de": {
         "accepted": [],
-        "word_pool": [
-          "viele",
+        "text": "viele",
+        "distractors": [
           "wenige",
           "alle",
           "manche",
           "mehr",
           "sie",
           "wir"
-        ],
-        "prompt": "viele",
-        "answer": "viele"
+        ]
       },
       "no": {
         "accepted": [],
-        "word_pool": [
-          "mange",
+        "text": "mange",
+        "distractors": [
           "få",
           "alle",
           "noen",
           "mer",
           "de",
           "vi"
-        ],
-        "prompt": "mange",
-        "answer": "mange"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "single_token_choice"
     }
@@ -2162,34 +1930,29 @@
     "translations": {
       "de": {
         "accepted": [],
-        "word_pool": [
-          "wenige",
+        "text": "wenige",
+        "distractors": [
           "viele",
           "alle",
           "manche",
           "keiner",
           "sie",
           "wir"
-        ],
-        "prompt": "wenige",
-        "answer": "wenige"
+        ]
       },
       "no": {
         "accepted": [],
-        "word_pool": [
-          "få",
+        "text": "få",
+        "distractors": [
           "mange",
           "alle",
           "noen",
           "ingen",
           "de",
           "vi"
-        ],
-        "prompt": "få",
-        "answer": "få"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "single_token_choice"
     }
@@ -2205,34 +1968,29 @@
     "translations": {
       "de": {
         "accepted": [],
-        "word_pool": [
-          "wie",
+        "text": "wie",
+        "distractors": [
           "wo",
           "wann",
           "warum",
           "was",
           "welcher",
           "wer"
-        ],
-        "prompt": "wie",
-        "answer": "wie"
+        ]
       },
       "no": {
         "accepted": [],
-        "word_pool": [
-          "hvordan",
+        "text": "hvordan",
+        "distractors": [
           "hvor",
           "når",
           "hvorfor",
           "hva",
           "hvilken",
           "hvem"
-        ],
-        "prompt": "hvordan",
-        "answer": "hvordan"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "single_token_choice"
     }
@@ -2248,34 +2006,29 @@
     "translations": {
       "de": {
         "accepted": [],
-        "word_pool": [
-          "wo",
+        "text": "wo",
+        "distractors": [
           "wie",
           "wann",
           "warum",
           "woher",
           "wohin",
           "was"
-        ],
-        "prompt": "wo",
-        "answer": "wo"
+        ]
       },
       "no": {
         "accepted": [],
-        "word_pool": [
-          "hvor",
+        "text": "hvor",
+        "distractors": [
           "hvordan",
           "når",
           "hvorfor",
           "hvorfra",
           "hvorhen",
           "hva"
-        ],
-        "prompt": "hvor",
-        "answer": "hvor"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "single_token_choice"
     }
@@ -2291,34 +2044,29 @@
     "translations": {
       "de": {
         "accepted": [],
-        "word_pool": [
-          "wann",
+        "text": "wann",
+        "distractors": [
           "wie",
           "wo",
           "warum",
           "jetzt",
           "dann",
           "was"
-        ],
-        "prompt": "wann",
-        "answer": "wann"
+        ]
       },
       "no": {
         "accepted": [],
-        "word_pool": [
-          "når",
+        "text": "når",
+        "distractors": [
           "hvordan",
           "hvor",
           "hvorfor",
           "nå",
           "da",
           "hva"
-        ],
-        "prompt": "når",
-        "answer": "når"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "single_token_choice"
     }
@@ -2337,34 +2085,29 @@
           "weshalb",
           "wieso"
         ],
-        "word_pool": [
-          "warum",
+        "text": "warum",
+        "distractors": [
           "weshalb",
           "wieso",
           "weil",
           "wie",
           "wo",
           "wann"
-        ],
-        "prompt": "warum",
-        "answer": "warum"
+        ]
       },
       "no": {
         "accepted": [],
-        "word_pool": [
-          "hvorfor",
+        "text": "hvorfor",
+        "distractors": [
           "fordi",
           "hvordan",
           "hvor",
           "når",
           "hva",
           "hvem"
-        ],
-        "prompt": "hvorfor",
-        "answer": "hvorfor"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "single_token_choice"
     }
@@ -2384,37 +2127,32 @@
           "welche",
           "welches"
         ],
-        "word_pool": [
-          "welcher",
+        "text": "welcher",
+        "distractors": [
           "welche",
           "welches",
           "wer",
           "was",
           "wie",
           "jeder"
-        ],
-        "prompt": "welcher",
-        "answer": "welcher"
+        ]
       },
       "no": {
         "accepted": [
           "hvilket",
           "hvilke"
         ],
-        "word_pool": [
-          "hvilken",
+        "text": "hvilken",
+        "distractors": [
           "hvilket",
           "hvilke",
           "hvem",
           "hva",
           "hvordan",
           "hver"
-        ],
-        "prompt": "hvilken",
-        "answer": "hvilken"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "single_token_choice"
     }
@@ -2430,24 +2168,23 @@
     "translations": {
       "de": {
         "accepted": [],
-        "word_pool": [
-          "wessen",
+        "text": "wessen",
+        "distractors": [
           "wem",
           "wen",
           "wer",
           "dessen",
           "meiner",
           "ihrer"
-        ],
-        "prompt": "wessen",
-        "answer": "wessen"
+        ]
       },
       "no": {
         "accepted": [
           "hvem sin"
         ],
-        "word_pool": [
-          "hvis",
+        "hint": "eie",
+        "text": "hvis",
+        "distractors": [
           "hvem",
           "sin",
           "hva",
@@ -2455,13 +2192,9 @@
           "hans",
           "hennes",
           "deres"
-        ],
-        "prompt": "hvis",
-        "answer": "hvis",
-        "hint": "eie"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "single_token_choice"
     }
@@ -2477,34 +2210,29 @@
     "translations": {
       "de": {
         "accepted": [],
-        "word_pool": [
-          "einander",
+        "text": "einander",
+        "distractors": [
           "sich",
           "alleine",
           "wir",
           "uns",
           "zusammen",
           "miteinander"
-        ],
-        "prompt": "einander",
-        "answer": "einander"
+        ]
       },
       "no": {
         "accepted": [],
-        "word_pool": [
-          "hverandre",
+        "text": "hverandre",
+        "distractors": [
           "seg",
           "alene",
           "vi",
           "oss",
           "sammen",
           "dem"
-        ],
-        "prompt": "hverandre",
-        "answer": "hverandre"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "single_token_choice"
     }
@@ -2522,36 +2250,31 @@
         "accepted": [
           "selber"
         ],
-        "word_pool": [
-          "selbst",
+        "text": "selbst",
+        "distractors": [
           "selber",
           "sich",
           "mich",
           "dich",
           "allein",
           "man"
-        ],
-        "prompt": "selbst",
-        "answer": "selbst"
+        ]
       },
       "no": {
         "accepted": [
           "sjøl"
         ],
-        "word_pool": [
-          "selv",
+        "text": "selv",
+        "distractors": [
           "sjøl",
           "seg",
           "meg",
           "deg",
           "alene",
           "man"
-        ],
-        "prompt": "selv",
-        "answer": "selv"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "single_token_choice"
     }
@@ -2567,34 +2290,29 @@
     "translations": {
       "de": {
         "accepted": [],
-        "word_pool": [
-          "beide",
+        "text": "beide",
+        "distractors": [
           "alle",
           "zwei",
           "manche",
           "einer",
           "jeder",
           "wir"
-        ],
-        "prompt": "beide",
-        "answer": "beide"
+        ]
       },
       "no": {
         "accepted": [],
-        "word_pool": [
-          "begge",
+        "text": "begge",
+        "distractors": [
           "alle",
           "to",
           "noen",
           "en",
           "hver",
           "vi"
-        ],
-        "prompt": "begge",
-        "answer": "begge"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "single_token_choice"
     }
@@ -2615,40 +2333,33 @@
           "Ihrem",
           "Ihren"
         ],
-        "word_pool": [
-          "Ihr",
+        "hint": "formell",
+        "text": "Ihr",
+        "distractors": [
           "Ihre",
-          "Ihr",
           "dein",
           "euer",
           "Sie",
           "mein",
           "Ihrem",
           "Ihren"
-        ],
-        "prompt": "Ihr",
-        "answer": "Ihr",
-        "hint": "formell"
+        ]
       },
       "no": {
         "accepted": [
           "dere"
         ],
-        "word_pool": [
-          "Deres",
+        "hint": "formelt",
+        "text": "Deres",
+        "distractors": [
           "De",
           "Dem",
           "din",
-          "deres",
           "dere",
           "vi"
-        ],
-        "prompt": "Deres",
-        "answer": "Deres",
-        "hint": "formelt"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "single_token_choice"
     }
@@ -2665,38 +2376,33 @@
     "translations": {
       "de": {
         "accepted": [],
-        "word_pool": [
-          "Ihnen",
+        "hint": "formell",
+        "text": "Ihnen",
+        "distractors": [
           "Sie",
           "Ihr",
           "euch",
           "dir",
           "mir",
           "uns"
-        ],
-        "prompt": "Ihnen",
-        "answer": "Ihnen",
-        "hint": "formell"
+        ]
       },
       "no": {
         "accepted": [
           "dere"
         ],
-        "word_pool": [
-          "Dem",
+        "hint": "formelt",
+        "text": "Dem",
+        "distractors": [
           "De",
           "Deres",
           "dere",
           "deg",
           "meg",
           "oss"
-        ],
-        "prompt": "Dem",
-        "answer": "Dem",
-        "hint": "formelt"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "single_token_choice"
     }
@@ -2712,35 +2418,30 @@
     "translations": {
       "de": {
         "accepted": [],
-        "word_pool": [
-          "wen",
+        "text": "wen",
+        "distractors": [
           "wer",
           "wem",
           "was",
           "den",
           "ihn",
           "dich"
-        ],
-        "prompt": "wen",
-        "answer": "wen"
+        ]
       },
       "no": {
         "accepted": [],
-        "word_pool": [
-          "hvem",
+        "hint": "objekt",
+        "text": "hvem",
+        "distractors": [
           "hva",
           "han",
           "ham",
           "deg",
           "meg",
           "hvis"
-        ],
-        "prompt": "hvem",
-        "answer": "hvem",
-        "hint": "objekt"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "single_token_choice"
     }
@@ -2756,35 +2457,30 @@
     "translations": {
       "de": {
         "accepted": [],
-        "word_pool": [
-          "wem",
+        "text": "wem",
+        "distractors": [
           "wer",
           "wen",
           "was",
           "dem",
           "ihm",
           "dir"
-        ],
-        "prompt": "wem",
-        "answer": "wem"
+        ]
       },
       "no": {
         "accepted": [],
-        "word_pool": [
-          "hvem",
+        "hint": "indirekte",
+        "text": "hvem",
+        "distractors": [
           "hva",
           "han",
           "ham",
           "deg",
           "meg",
           "hvis"
-        ],
-        "prompt": "hvem",
-        "answer": "hvem",
-        "hint": "indirekte"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "single_token_choice"
     }
@@ -2802,35 +2498,30 @@
     "translations": {
       "de": {
         "accepted": [],
-        "word_pool": [
-          "diese",
+        "text": "diese",
+        "distractors": [
           "dieser",
           "dieses",
           "jene",
           "welche",
           "meine",
           "deine"
-        ],
-        "prompt": "diese",
-        "answer": "diese"
+        ]
       },
       "no": {
         "accepted": [],
-        "word_pool": [
-          "denne",
+        "hint": "hunkjønn",
+        "text": "denne",
+        "distractors": [
           "dette",
           "disse",
           "den",
           "det",
           "mi",
           "di"
-        ],
-        "prompt": "denne",
-        "answer": "denne",
-        "hint": "hunkjønn"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "single_token_choice"
     }
@@ -2847,37 +2538,32 @@
     "translations": {
       "de": {
         "accepted": [],
-        "word_pool": [
-          "welche",
+        "text": "welche",
+        "distractors": [
           "welcher",
           "welches",
           "jene",
           "diese",
           "wer",
           "was"
-        ],
-        "prompt": "welche",
-        "answer": "welche"
+        ]
       },
       "no": {
         "accepted": [
           "hvilke"
         ],
-        "word_pool": [
-          "hvilken",
+        "hint": "hunkjønn",
+        "text": "hvilken",
+        "distractors": [
           "hvilket",
           "hvilke",
           "denne",
           "dette",
           "hvem",
           "hva"
-        ],
-        "prompt": "hvilken",
-        "answer": "hvilken",
-        "hint": "hunkjønn"
+        ]
       }
     },
-    "schema_version": 2,
     "content": {
       "response_mode": "single_token_choice"
     }

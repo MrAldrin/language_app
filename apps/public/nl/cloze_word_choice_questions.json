@@ -1,7 +1,6 @@
 [
   {
     "id": 8001,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 1,
     "tags": [
@@ -15,32 +14,28 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Ik heb een broer. Hij heet Lucas.",
-        "answer": "Ik",
         "accepted": [],
-        "word_pool": [
-          "Ik",
+        "hidden_word_index": 0,
+        "text": "Ik heb een broer. Hij heet Lucas.",
+        "distractors": [
           "Jij",
-          "Hij",
           "Wij",
           "Jullie"
-        ],
-        "hidden_word_index": 0
+        ]
       },
       "en": {
-        "prompt": "I have a brother. His name is Lucas."
+        "text": "I have a brother. His name is Lucas."
       },
       "no": {
-        "prompt": "Jeg har en bror. Han heter Lucas."
+        "text": "Jeg har en bror. Han heter Lucas."
       },
       "de": {
-        "prompt": "Ich habe einen Bruder. Er heißt Lucas."
+        "text": "Ich habe einen Bruder. Er heißt Lucas."
       }
     }
   },
   {
     "id": 8002,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 1,
     "tags": [
@@ -54,34 +49,31 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Hoi Jan, waar kom jij vandaan?",
-        "answer": "jij",
         "accepted": [
           "je"
         ],
-        "word_pool": [
-          "jij",
+        "hidden_word_index": 4,
+        "text": "Hoi Jan, waar kom jij vandaan?",
+        "distractors": [
           "je",
           "hij",
           "zij",
           "wij"
-        ],
-        "hidden_word_index": 4
+        ]
       },
       "en": {
-        "prompt": "Hi Jan, where do you come from?"
+        "text": "Hi Jan, where do you come from?"
       },
       "no": {
-        "prompt": "Hei Jan, hvor kommer du fra?"
+        "text": "Hei Jan, hvor kommer du fra?"
       },
       "de": {
-        "prompt": "Hallo Jan, wo kommst du her?"
+        "text": "Hallo Jan, wo kommst du her?"
       }
     }
   },
   {
     "id": 8003,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 1,
     "tags": [
@@ -95,32 +87,29 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Mijn opa is hongerig. Hij gaat naar de winkel.",
-        "answer": "Hij",
         "accepted": [],
-        "word_pool": [
-          "Hij",
+        "hidden_word_index": 4,
+        "text": "Mijn opa is hongerig. Hij gaat naar de winkel.",
+        "distractors": [
           "Zij",
           "Het",
           "Wij",
           "Jullie"
-        ],
-        "hidden_word_index": 4
+        ]
       },
       "en": {
-        "prompt": "My grandfather is hungry. He is going to the store."
+        "text": "My grandfather is hungry. He is going to the store."
       },
       "no": {
-        "prompt": "Bestefaren min er sulten. Han går til butikken."
+        "text": "Bestefaren min er sulten. Han går til butikken."
       },
       "de": {
-        "prompt": "Mein Opa ist hungrig. Er geht in den Laden."
+        "text": "Mein Opa ist hungrig. Er geht in den Laden."
       }
     }
   },
   {
     "id": 8004,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 1,
     "tags": [
@@ -134,34 +123,30 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Mijn vrienden en ik hebben een huis. Wij wonen in Amsterdam.",
-        "answer": "Wij",
         "accepted": [
           "We"
         ],
-        "word_pool": [
-          "Wij",
+        "hidden_word_index": 7,
+        "text": "Mijn vrienden en ik hebben een huis. Wij wonen in Amsterdam.",
+        "distractors": [
           "We",
           "Zij",
-          "Jullie",
-          "Ik"
-        ],
-        "hidden_word_index": 7
+          "Jullie"
+        ]
       },
       "en": {
-        "prompt": "My friends and I have a house. We live in Amsterdam."
+        "text": "My friends and I have a house. We live in Amsterdam."
       },
       "no": {
-        "prompt": "Vennene mine og jeg har et hus. Vi bor i Amsterdam."
+        "text": "Vennene mine og jeg har et hus. Vi bor i Amsterdam."
       },
       "de": {
-        "prompt": "Meine Freunde und ich haben ein Haus. Wir wohnen in Amsterdam."
+        "text": "Meine Freunde und ich haben ein Haus. Wir wohnen in Amsterdam."
       }
     }
   },
   {
     "id": 8005,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 1,
     "tags": [
@@ -175,32 +160,29 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Hé jongens, komen jullie ook naar het feest?",
-        "answer": "jullie",
         "accepted": [],
-        "word_pool": [
-          "jullie",
+        "hidden_word_index": 3,
+        "text": "Hé jongens, komen jullie ook naar het feest?",
+        "distractors": [
           "wij",
           "zij",
           "ik",
           "hij"
-        ],
-        "hidden_word_index": 3
+        ]
       },
       "en": {
-        "prompt": "Hey guys, are you coming to the party too?"
+        "text": "Hey guys, are you coming to the party too?"
       },
       "no": {
-        "prompt": "Hei gutter, kommer dere også på festen?"
+        "text": "Hei gutter, kommer dere også på festen?"
       },
       "de": {
-        "prompt": "Hey Leute, kommt ihr auch zur Party?"
+        "text": "Hey Leute, kommt ihr auch zur Party?"
       }
     }
   },
   {
     "id": 8006,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 1,
     "tags": [
@@ -214,34 +196,31 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Ik draag zware tassen. Kun je mij even helpen?",
-        "answer": "mij",
         "accepted": [
           "me"
         ],
-        "word_pool": [
-          "mij",
+        "hidden_word_index": 6,
+        "text": "Ik draag zware tassen. Kun je mij even helpen?",
+        "distractors": [
           "me",
           "jou",
           "hem",
           "ons"
-        ],
-        "hidden_word_index": 6
+        ]
       },
       "en": {
-        "prompt": "I am carrying heavy bags. Can you help me for a moment?"
+        "text": "I am carrying heavy bags. Can you help me for a moment?"
       },
       "no": {
-        "prompt": "Jeg bærer tunge vesker. Kan du hjelpe meg litt?"
+        "text": "Jeg bærer tunge vesker. Kan du hjelpe meg litt?"
       },
       "de": {
-        "prompt": "Ich trage schwere Taschen. Kannst du mir mal kurz helfen?"
+        "text": "Ich trage schwere Taschen. Kannst du mir mal kurz helfen?"
       }
     }
   },
   {
     "id": 8007,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 1,
     "tags": [
@@ -255,34 +234,31 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Tot morgen, Jan! Ik zie jou morgen op kantoor.",
-        "answer": "jou",
         "accepted": [
           "je"
         ],
-        "word_pool": [
-          "jou",
+        "hidden_word_index": 5,
+        "text": "Tot morgen, Jan! Ik zie jou morgen op kantoor.",
+        "distractors": [
           "je",
           "hem",
           "haar",
           "ons"
-        ],
-        "hidden_word_index": 5
+        ]
       },
       "en": {
-        "prompt": "See you tomorrow, Jan! I'll see you at the office tomorrow."
+        "text": "See you tomorrow, Jan! I'll see you at the office tomorrow."
       },
       "no": {
-        "prompt": "Sees i morgen, Jan! Jeg ser deg på kontoret i morgen."
+        "text": "Sees i morgen, Jan! Jeg ser deg på kontoret i morgen."
       },
       "de": {
-        "prompt": "Bis morgen, Jan! Ich sehe dich morgen im Büro."
+        "text": "Bis morgen, Jan! Ich sehe dich morgen im Büro."
       }
     }
   },
   {
     "id": 8008,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 2,
     "tags": [
@@ -296,32 +272,29 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Peter is ziek. Heb je hem gesproken?",
-        "answer": "hem",
         "accepted": [],
-        "word_pool": [
-          "hem",
+        "hidden_word_index": 5,
+        "text": "Peter is ziek. Heb je hem gesproken?",
+        "distractors": [
           "haar",
           "ons",
           "jullie",
           "hen"
-        ],
-        "hidden_word_index": 5
+        ]
       },
       "en": {
-        "prompt": "Peter is sick. Have you spoken to him?"
+        "text": "Peter is sick. Have you spoken to him?"
       },
       "no": {
-        "prompt": "Peter er syk. Har du snakket med ham?"
+        "text": "Peter er syk. Har du snakket med ham?"
       },
       "de": {
-        "prompt": "Peter ist krank. Hast du mit ihm gesprochen?"
+        "text": "Peter ist krank. Hast du mit ihm gesprochen?"
       }
     }
   },
   {
     "id": 8009,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 2,
     "tags": [
@@ -335,32 +308,29 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Het meisje is jarig. We hebben haar een cadeau gegeven.",
-        "answer": "haar",
         "accepted": [],
-        "word_pool": [
-          "haar",
+        "hidden_word_index": 6,
+        "text": "Het meisje is jarig. We hebben haar een cadeau gegeven.",
+        "distractors": [
           "hem",
           "ons",
           "hen",
           "hun"
-        ],
-        "hidden_word_index": 6
+        ]
       },
       "en": {
-        "prompt": "It's the girl's birthday. We gave her a present."
+        "text": "It's the girl's birthday. We gave her a present."
       },
       "no": {
-        "prompt": "Jenta har bursdag. Vi har gitt henne en gave."
+        "text": "Jenta har bursdag. Vi har gitt henne en gave."
       },
       "de": {
-        "prompt": "Das Mädchen hat Geburtstag. Wir haben ihr ein Geschenk gegeben."
+        "text": "Das Mädchen hat Geburtstag. Wir haben ihr ein Geschenk gegeben."
       }
     }
   },
   {
     "id": 8010,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 2,
     "tags": [
@@ -374,32 +344,29 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Wij zijn thuis. Kom je bij ons eten?",
-        "answer": "ons",
         "accepted": [],
-        "word_pool": [
-          "ons",
+        "hidden_word_index": 6,
+        "text": "Wij zijn thuis. Kom je bij ons eten?",
+        "distractors": [
           "mij",
           "jou",
           "haar",
           "jullie"
-        ],
-        "hidden_word_index": 6
+        ]
       },
       "en": {
-        "prompt": "We are at home. Are you coming to eat with us?"
+        "text": "We are at home. Are you coming to eat with us?"
       },
       "no": {
-        "prompt": "Vi er hjemme. Kommer du for å spise hos oss?"
+        "text": "Vi er hjemme. Kommer du for å spise hos oss?"
       },
       "de": {
-        "prompt": "Wir sind zu Hause. Kommst du zu uns zum Essen?"
+        "text": "Wir sind zu Hause. Kommst du zu uns zum Essen?"
       }
     }
   },
   {
     "id": 8011,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 2,
     "tags": [
@@ -413,32 +380,29 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Hé Jan en Eva! Ik bel jullie straks wel.",
-        "answer": "jullie",
         "accepted": [],
-        "word_pool": [
-          "jullie",
+        "hidden_word_index": 6,
+        "text": "Hé Jan en Eva! Ik bel jullie straks wel.",
+        "distractors": [
           "hen",
           "hun",
           "zij",
           "ons"
-        ],
-        "hidden_word_index": 6
+        ]
       },
       "en": {
-        "prompt": "Hey Jan and Eva! I'll call you later."
+        "text": "Hey Jan and Eva! I'll call you later."
       },
       "no": {
-        "prompt": "Hei Jan og Eva! Jeg ringer dere senere."
+        "text": "Hei Jan og Eva! Jeg ringer dere senere."
       },
       "de": {
-        "prompt": "Hey Jan und Eva! Ich rufe euch später mal an."
+        "text": "Hey Jan und Eva! Ich rufe euch später mal an."
       }
     }
   },
   {
     "id": 8012,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 2,
     "tags": [
@@ -452,34 +416,31 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Al je vrienden komen morgen. Heb je hen al uitgenodigd?",
-        "answer": "hen",
         "accepted": [
           "hun"
         ],
-        "word_pool": [
-          "hen",
+        "hidden_word_index": 7,
+        "text": "Al je vrienden komen morgen. Heb je hen al uitgenodigd?",
+        "distractors": [
           "hun",
           "zij",
           "haar",
           "hem"
-        ],
-        "hidden_word_index": 7
+        ]
       },
       "en": {
-        "prompt": "All your friends are coming tomorrow. Have you invited them already?"
+        "text": "All your friends are coming tomorrow. Have you invited them already?"
       },
       "no": {
-        "prompt": "Alle vennene dine kommer i morgen. Har du allerede invitert dem?"
+        "text": "Alle vennene dine kommer i morgen. Har du allerede invitert dem?"
       },
       "de": {
-        "prompt": "Alle deine Freunde kommen morgen. Hast du sie schon eingeladen?"
+        "text": "Alle deine Freunde kommen morgen. Hast du sie schon eingeladen?"
       }
     }
   },
   {
     "id": 8013,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 1,
     "tags": [
@@ -494,32 +455,29 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Goedenavond, meneer Jansen. Hoe gaat het met u?",
-        "answer": "u",
         "accepted": [],
-        "word_pool": [
-          "u",
+        "hidden_word_index": 7,
+        "text": "Goedenavond, meneer Jansen. Hoe gaat het met u?",
+        "distractors": [
           "jij",
           "je",
           "hij",
           "zij"
-        ],
-        "hidden_word_index": 7
+        ]
       },
       "en": {
-        "prompt": "Good evening, Mr. Jansen. How are you?"
+        "text": "Good evening, Mr. Jansen. How are you?"
       },
       "no": {
-        "prompt": "God kveld, herr Jansen. Hvordan går det med Dem?"
+        "text": "God kveld, herr Jansen. Hvordan går det med Dem?"
       },
       "de": {
-        "prompt": "Guten Abend, Herr Jansen. Wie geht es Ihnen?"
+        "text": "Guten Abend, Herr Jansen. Wie geht es Ihnen?"
       }
     }
   },
   {
     "id": 8014,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 1,
     "tags": [
@@ -533,32 +491,29 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Het regent het vandaag.",
-        "answer": "Het",
         "accepted": [],
-        "word_pool": [
-          "Het",
+        "hidden_word_index": 0,
+        "text": "Het regent het vandaag.",
+        "distractors": [
           "Hij",
           "Zij",
           "Wij",
           "Jullie"
-        ],
-        "hidden_word_index": 0
+        ]
       },
       "en": {
-        "prompt": "It's raining today."
+        "text": "It's raining today."
       },
       "no": {
-        "prompt": "Det regner i dag."
+        "text": "Det regner i dag."
       },
       "de": {
-        "prompt": "Es regnet heute."
+        "text": "Es regnet heute."
       }
     }
   },
   {
     "id": 8015,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 2,
     "tags": [
@@ -572,35 +527,32 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Jan en Eva zijn aardig. Zij zijn mijn beste vrienden.",
-        "answer": "Zij",
         "accepted": [
           "Ze"
         ],
-        "word_pool": [
-          "Zij",
+        "hidden_word_index": 5,
+        "text": "Jan en Eva zijn aardig. Zij zijn mijn beste vrienden.",
+        "distractors": [
           "Ze",
           "Hij",
           "Wij",
           "Het",
           "Jullie"
-        ],
-        "hidden_word_index": 5
+        ]
       },
       "en": {
-        "prompt": "Jan and Eva are nice. They are my best friends."
+        "text": "Jan and Eva are nice. They are my best friends."
       },
       "no": {
-        "prompt": "Jan og Eva er hyggelige. De er mine beste venner."
+        "text": "Jan og Eva er hyggelige. De er mine beste venner."
       },
       "de": {
-        "prompt": "Jan und Eva sind nett. Sie sind meine besten Freunde."
+        "text": "Jan und Eva sind nett. Sie sind meine besten Freunde."
       }
     }
   },
   {
     "id": 8016,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 2,
     "tags": [
@@ -613,32 +565,29 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Ik rijd in dit voertuig. Dat is mijn auto.",
-        "answer": "mijn",
         "accepted": [],
-        "word_pool": [
-          "mijn",
+        "hidden_word_index": 7,
+        "text": "Ik rijd in dit voertuig. Dat is mijn auto.",
+        "distractors": [
           "jouw",
           "zijn",
           "haar",
           "onze"
-        ],
-        "hidden_word_index": 7
+        ]
       },
       "en": {
-        "prompt": "I drive in this vehicle. That is my car."
+        "text": "I drive in this vehicle. That is my car."
       },
       "no": {
-        "prompt": "Jeg kjører i dette kjøretøyet. Det er min bil."
+        "text": "Jeg kjører i dette kjøretøyet. Det er min bil."
       },
       "de": {
-        "prompt": "Ich fahre in diesem Fahrzeug. Das ist mein Auto."
+        "text": "Ich fahre in diesem Fahrzeug. Das ist mein Auto."
       }
     }
   },
   {
     "id": 8017,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 2,
     "tags": [
@@ -651,34 +600,31 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Hé Jan, is dit jouw boek?",
-        "answer": "jouw",
         "accepted": [
           "je"
         ],
-        "word_pool": [
-          "jouw",
+        "hidden_word_index": 4,
+        "text": "Hé Jan, is dit jouw boek?",
+        "distractors": [
           "je",
           "zijn",
           "haar",
           "onze"
-        ],
-        "hidden_word_index": 4
+        ]
       },
       "en": {
-        "prompt": "Hey Jan, is this your book?"
+        "text": "Hey Jan, is this your book?"
       },
       "no": {
-        "prompt": "Hei Jan, er dette din bok?"
+        "text": "Hei Jan, er dette din bok?"
       },
       "de": {
-        "prompt": "Hey Jan, ist das dein Buch?"
+        "text": "Hey Jan, ist das dein Buch?"
       }
     }
   },
   {
     "id": 8018,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 2,
     "tags": [
@@ -691,32 +637,28 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Mijn zus is haar tas kwijt. Zij zoekt haar sleutels.",
-        "answer": "haar",
         "accepted": [],
-        "word_pool": [
-          "haar",
+        "hidden_word_index": 8,
+        "text": "Mijn zus is haar tas kwijt. Zij zoekt haar sleutels.",
+        "distractors": [
           "zijn",
-          "mijn",
           "jouw",
           "onze"
-        ],
-        "hidden_word_index": 8
+        ]
       },
       "en": {
-        "prompt": "My sister has lost her bag. She is looking for her keys."
+        "text": "My sister has lost her bag. She is looking for her keys."
       },
       "no": {
-        "prompt": "Søsteren min har mistet vesken sin. Hun leter etter nøklene sine."
+        "text": "Søsteren min har mistet vesken sin. Hun leter etter nøklene sine."
       },
       "de": {
-        "prompt": "Meine Schwester hat ihre Tasche verloren. Sie sucht ihre Schlüssel."
+        "text": "Meine Schwester hat ihre Tasche verloren. Sie sucht ihre Schlüssel."
       }
     }
   },
   {
     "id": 8019,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 2,
     "tags": [
@@ -729,32 +671,28 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Mijn broer gaat naar buiten. Hij heeft zijn jas aan.",
-        "answer": "zijn",
         "accepted": [],
-        "word_pool": [
-          "zijn",
+        "hidden_word_index": 7,
+        "text": "Mijn broer gaat naar buiten. Hij heeft zijn jas aan.",
+        "distractors": [
           "haar",
-          "mijn",
           "jouw",
           "hun"
-        ],
-        "hidden_word_index": 7
+        ]
       },
       "en": {
-        "prompt": "My brother is going outside. He has his coat on."
+        "text": "My brother is going outside. He has his coat on."
       },
       "no": {
-        "prompt": "Broren min går ut. Han har på seg jakken sin."
+        "text": "Broren min går ut. Han har på seg jakken sin."
       },
       "de": {
-        "prompt": "Mein Bruder geht nach draußen. Er hat seine Jacke an."
+        "text": "Mein Bruder geht nach draußen. Er hat seine Jacke an."
       }
     }
   },
   {
     "id": 8020,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 2,
     "tags": [
@@ -767,32 +705,28 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Mijn vrouw en ik wonen hier. Dit is ons huis.",
-        "answer": "ons",
         "accepted": [],
-        "word_pool": [
-          "ons",
+        "hidden_word_index": 8,
+        "text": "Mijn vrouw en ik wonen hier. Dit is ons huis.",
+        "distractors": [
           "onze",
-          "mijn",
           "jouw",
           "zijn"
-        ],
-        "hidden_word_index": 8
+        ]
       },
       "en": {
-        "prompt": "My wife and I live here. This is our house."
+        "text": "My wife and I live here. This is our house."
       },
       "no": {
-        "prompt": "Min kone og jeg bor her. Dette er vårt hus."
+        "text": "Min kone og jeg bor her. Dette er vårt hus."
       },
       "de": {
-        "prompt": "Meine Frau und ich wohnen hier. Das ist unser Haus."
+        "text": "Meine Frau und ich wohnen hier. Das ist unser Haus."
       }
     }
   },
   {
     "id": 8021,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 2,
     "tags": [
@@ -805,32 +739,29 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Wij hebben een grote buitenruimte. Dit is onze tuin.",
-        "answer": "onze",
         "accepted": [],
-        "word_pool": [
-          "onze",
+        "hidden_word_index": 7,
+        "text": "Wij hebben een grote buitenruimte. Dit is onze tuin.",
+        "distractors": [
           "ons",
           "mijn",
           "jouw",
           "hun"
-        ],
-        "hidden_word_index": 7
+        ]
       },
       "en": {
-        "prompt": "We have a large outdoor space. This is our garden."
+        "text": "We have a large outdoor space. This is our garden."
       },
       "no": {
-        "prompt": "Vi har et stort uteområde. Dette er vår hage."
+        "text": "Vi har et stort uteområde. Dette er vår hage."
       },
       "de": {
-        "prompt": "Wir haben einen großen Außenbereich. Das ist unser Garten."
+        "text": "Wir haben einen großen Außenbereich. Das ist unser Garten."
       }
     }
   },
   {
     "id": 8022,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 2,
     "tags": [
@@ -843,34 +774,31 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Hebben jullie jullie huiswerk gedaan?",
-        "answer": "jullie",
         "accepted": [
           "je"
         ],
-        "word_pool": [
-          "jullie",
+        "hidden_word_index": 2,
+        "text": "Hebben jullie jullie huiswerk gedaan?",
+        "distractors": [
           "je",
           "onze",
           "hun",
           "zijn"
-        ],
-        "hidden_word_index": 2
+        ]
       },
       "en": {
-        "prompt": "Did you do your homework?"
+        "text": "Did you do your homework?"
       },
       "no": {
-        "prompt": "Har dere gjort leksene deres?"
+        "text": "Har dere gjort leksene deres?"
       },
       "de": {
-        "prompt": "Habt ihr eure Hausaufgaben gemacht?"
+        "text": "Habt ihr eure Hausaufgaben gemacht?"
       }
     }
   },
   {
     "id": 8023,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 2,
     "tags": [
@@ -883,32 +811,29 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Mijn buren wonen daar. Dat is hun huis.",
-        "answer": "hun",
         "accepted": [],
-        "word_pool": [
-          "hun",
+        "hidden_word_index": 6,
+        "text": "Mijn buren wonen daar. Dat is hun huis.",
+        "distractors": [
           "haar",
           "zijn",
           "onze",
           "jullie"
-        ],
-        "hidden_word_index": 6
+        ]
       },
       "en": {
-        "prompt": "My neighbors live there. That is their house."
+        "text": "My neighbors live there. That is their house."
       },
       "no": {
-        "prompt": "Naboene mine bor der. Det er deres hus."
+        "text": "Naboene mine bor der. Det er deres hus."
       },
       "de": {
-        "prompt": "Meine Nachbarn wohnen dort. Das ist ihr Haus."
+        "text": "Meine Nachbarn wohnen dort. Das ist ihr Haus."
       }
     }
   },
   {
     "id": 8024,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
@@ -922,32 +847,29 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Is dit uw tas, mevrouw?",
-        "answer": "uw",
         "accepted": [],
-        "word_pool": [
-          "uw",
+        "hidden_word_index": 2,
+        "text": "Is dit uw tas, mevrouw?",
+        "distractors": [
           "jouw",
           "mijn",
           "haar",
           "zijn"
-        ],
-        "hidden_word_index": 2
+        ]
       },
       "en": {
-        "prompt": "Is this your bag, ma'am?"
+        "text": "Is this your bag, ma'am?"
       },
       "no": {
-        "prompt": "Er dette vesken Deres, frue?"
+        "text": "Er dette vesken Deres, frue?"
       },
       "de": {
-        "prompt": "Ist das Ihre Tasche, Frau ...?"
+        "text": "Ist das Ihre Tasche, Frau ...?"
       }
     }
   },
   {
     "id": 8025,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 4,
     "tags": [
@@ -961,32 +883,29 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Is deze fiets van jou? Nee, die is de mijne.",
-        "answer": "mijne",
         "accepted": [],
-        "word_pool": [
-          "mijne",
+        "hidden_word_index": 9,
+        "text": "Is deze fiets van jou? Nee, die is de mijne.",
+        "distractors": [
           "jouwe",
           "zijne",
           "hare",
           "onze"
-        ],
-        "hidden_word_index": 9
+        ]
       },
       "en": {
-        "prompt": "Is this bike yours? No, it's mine."
+        "text": "Is this bike yours? No, it's mine."
       },
       "no": {
-        "prompt": "Er denne sykkelen din? Nei, den er min."
+        "text": "Er denne sykkelen din? Nei, den er min."
       },
       "de": {
-        "prompt": "Ist das dein Fahrrad? Nein, das ist meins."
+        "text": "Ist das dein Fahrrad? Nein, das ist meins."
       }
     }
   },
   {
     "id": 8026,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 4,
     "tags": [
@@ -1000,32 +919,29 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Vraag het aan Jan. Dit boek is niet van mij; het is het jouwe.",
-        "answer": "jouwe",
         "accepted": [],
-        "word_pool": [
-          "jouwe",
+        "hidden_word_index": 13,
+        "text": "Vraag het aan Jan. Dit boek is niet van mij; het is het jouwe.",
+        "distractors": [
           "mijne",
           "zijne",
           "hare",
           "hunne"
-        ],
-        "hidden_word_index": 13
+        ]
       },
       "en": {
-        "prompt": "Ask Jan. This book isn't mine; it's yours."
+        "text": "Ask Jan. This book isn't mine; it's yours."
       },
       "no": {
-        "prompt": "Spør Jan. Denne boken er ikke min; den er din."
+        "text": "Spør Jan. Denne boken er ikke min; den er din."
       },
       "de": {
-        "prompt": "Frag Jan. Dieses Buch gehört nicht mir; es ist deins."
+        "text": "Frag Jan. Dieses Buch gehört nicht mir; es ist deins."
       }
     }
   },
   {
     "id": 8027,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 4,
     "tags": [
@@ -1039,32 +955,29 @@
     },
     "translations": {
       "nl": {
-        "prompt": "De man heeft een koffer. Deze koffer is de zijne.",
-        "answer": "zijne",
         "accepted": [],
-        "word_pool": [
-          "zijne",
+        "hidden_word_index": 9,
+        "text": "De man heeft een koffer. Deze koffer is de zijne.",
+        "distractors": [
           "hare",
           "mijne",
           "jouwe",
           "onze"
-        ],
-        "hidden_word_index": 9
+        ]
       },
       "en": {
-        "prompt": "The man has a suitcase. This suitcase is his."
+        "text": "The man has a suitcase. This suitcase is his."
       },
       "no": {
-        "prompt": "Mannen har en koffert. Denne kofferten er hans."
+        "text": "Mannen har en koffert. Denne kofferten er hans."
       },
       "de": {
-        "prompt": "Der Mann hat einen Koffer. Dieser Koffer ist seiner."
+        "text": "Der Mann hat einen Koffer. Dieser Koffer ist seiner."
       }
     }
   },
   {
     "id": 8028,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 4,
     "tags": [
@@ -1078,32 +991,29 @@
     },
     "translations": {
       "nl": {
-        "prompt": "De vrouw heeft een tas. Die tas is de hare.",
-        "answer": "hare",
         "accepted": [],
-        "word_pool": [
-          "hare",
+        "hidden_word_index": 9,
+        "text": "De vrouw heeft een tas. Die tas is de hare.",
+        "distractors": [
           "zijne",
           "hunne",
           "mijne",
           "jouwe"
-        ],
-        "hidden_word_index": 9
+        ]
       },
       "en": {
-        "prompt": "The woman has a bag. That bag is hers."
+        "text": "The woman has a bag. That bag is hers."
       },
       "no": {
-        "prompt": "Kvinnen har en veske. Den vesken er hennes."
+        "text": "Kvinnen har en veske. Den vesken er hennes."
       },
       "de": {
-        "prompt": "Die Frau hat eine Tasche. Diese Tasche ist ihre."
+        "text": "Die Frau hat eine Tasche. Diese Tasche ist ihre."
       }
     }
   },
   {
     "id": 8029,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 4,
     "tags": [
@@ -1117,32 +1027,29 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Zij bezitten dat gebouw. Dit huis is het hunne.",
-        "answer": "hunne",
         "accepted": [],
-        "word_pool": [
-          "hunne",
+        "hidden_word_index": 8,
+        "text": "Zij bezitten dat gebouw. Dit huis is het hunne.",
+        "distractors": [
           "onze",
           "mijne",
           "jouwe",
           "zijne"
-        ],
-        "hidden_word_index": 8
+        ]
       },
       "en": {
-        "prompt": "They own that building. This house is theirs."
+        "text": "They own that building. This house is theirs."
       },
       "no": {
-        "prompt": "De eier den bygningen. Dette huset er deres."
+        "text": "De eier den bygningen. Dette huset er deres."
       },
       "de": {
-        "prompt": "Ihnen gehört dieses Gebäude. Dieses Haus ist ihres."
+        "text": "Ihnen gehört dieses Gebäude. Dieses Haus ist ihres."
       }
     }
   },
   {
     "id": 8030,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 4,
     "tags": [
@@ -1156,32 +1063,29 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Wij zijn de ouders. Deze kinderen zijn de onze.",
-        "answer": "onze",
         "accepted": [],
-        "word_pool": [
-          "onze",
+        "hidden_word_index": 8,
+        "text": "Wij zijn de ouders. Deze kinderen zijn de onze.",
+        "distractors": [
           "hunne",
           "zijne",
           "hare",
           "mijne"
-        ],
-        "hidden_word_index": 8
+        ]
       },
       "en": {
-        "prompt": "We are the parents. These children are ours."
+        "text": "We are the parents. These children are ours."
       },
       "no": {
-        "prompt": "Vi er foreldrene. Disse barna er våre."
+        "text": "Vi er foreldrene. Disse barna er våre."
       },
       "de": {
-        "prompt": "Wir sind die Eltern. Diese Kinder sind unsere."
+        "text": "Wir sind die Eltern. Diese Kinder sind unsere."
       }
     }
   },
   {
     "id": 8031,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
@@ -1194,34 +1098,31 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Ik herinner me dat niet.",
-        "answer": "me",
         "accepted": [
           "mij"
         ],
-        "word_pool": [
-          "me",
+        "hidden_word_index": 2,
+        "text": "Ik herinner me dat niet.",
+        "distractors": [
           "mij",
           "je",
           "zich",
           "ons"
-        ],
-        "hidden_word_index": 2
+        ]
       },
       "en": {
-        "prompt": "I don't remember that."
+        "text": "I don't remember that."
       },
       "no": {
-        "prompt": "Jeg husker ikke det."
+        "text": "Jeg husker ikke det."
       },
       "de": {
-        "prompt": "Daran erinnere ich mich nicht."
+        "text": "Daran erinnere ich mich nicht."
       }
     }
   },
   {
     "id": 8032,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
@@ -1234,32 +1135,29 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Je moet je niet te druk maken.",
-        "answer": "je",
         "accepted": [],
-        "word_pool": [
-          "je",
+        "hidden_word_index": 2,
+        "text": "Je moet je niet te druk maken.",
+        "distractors": [
           "me",
           "zich",
           "ons",
           "u"
-        ],
-        "hidden_word_index": 2
+        ]
       },
       "en": {
-        "prompt": "You shouldn't worry too much."
+        "text": "You shouldn't worry too much."
       },
       "no": {
-        "prompt": "Du må ikke bekymre deg for mye."
+        "text": "Du må ikke bekymre deg for mye."
       },
       "de": {
-        "prompt": "Du solltest dich nicht zu sehr aufregen."
+        "text": "Du solltest dich nicht zu sehr aufregen."
       }
     }
   },
   {
     "id": 8033,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
@@ -1272,32 +1170,29 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Hij wast zich elke ochtend.",
-        "answer": "zich",
         "accepted": [],
-        "word_pool": [
-          "zich",
+        "hidden_word_index": 2,
+        "text": "Hij wast zich elke ochtend.",
+        "distractors": [
           "me",
           "je",
           "ons",
           "hem"
-        ],
-        "hidden_word_index": 2
+        ]
       },
       "en": {
-        "prompt": "He washes himself every morning."
+        "text": "He washes himself every morning."
       },
       "no": {
-        "prompt": "Han vasker seg hver morgen."
+        "text": "Han vasker seg hver morgen."
       },
       "de": {
-        "prompt": "Er wäscht sich jeden Morgen."
+        "text": "Er wäscht sich jeden Morgen."
       }
     }
   },
   {
     "id": 8034,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
@@ -1310,32 +1205,29 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Zij gedraagt zich altijd goed.",
-        "answer": "zich",
         "accepted": [],
-        "word_pool": [
-          "zich",
+        "hidden_word_index": 2,
+        "text": "Zij gedraagt zich altijd goed.",
+        "distractors": [
           "haar",
           "me",
           "je",
           "ons"
-        ],
-        "hidden_word_index": 2
+        ]
       },
       "en": {
-        "prompt": "She always behaves well."
+        "text": "She always behaves well."
       },
       "no": {
-        "prompt": "Hun oppfører seg alltid bra."
+        "text": "Hun oppfører seg alltid bra."
       },
       "de": {
-        "prompt": "Sie benimmt sich immer gut."
+        "text": "Sie benimmt sich immer gut."
       }
     }
   },
   {
     "id": 8035,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
@@ -1348,32 +1240,29 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Wij amuseren ons prima op vakantie.",
-        "answer": "ons",
         "accepted": [],
-        "word_pool": [
-          "ons",
+        "hidden_word_index": 2,
+        "text": "Wij amuseren ons prima op vakantie.",
+        "distractors": [
           "me",
           "je",
           "zich",
           "jullie"
-        ],
-        "hidden_word_index": 2
+        ]
       },
       "en": {
-        "prompt": "We enjoy ourselves very much on vacation."
+        "text": "We enjoy ourselves very much on vacation."
       },
       "no": {
-        "prompt": "Vi koser oss masse på ferie."
+        "text": "Vi koser oss masse på ferie."
       },
       "de": {
-        "prompt": "Wir amüsieren uns prächtig im Urlaub."
+        "text": "Wir amüsieren uns prächtig im Urlaub."
       }
     }
   },
   {
     "id": 8036,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
@@ -1386,32 +1275,28 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Hé jongens, jullie vergissen je.",
-        "answer": "je",
         "accepted": [],
-        "word_pool": [
-          "je",
-          "jullie",
+        "hidden_word_index": 4,
+        "text": "Hé jongens, jullie vergissen je.",
+        "distractors": [
           "me",
           "zich",
           "ons"
-        ],
-        "hidden_word_index": 4
+        ]
       },
       "en": {
-        "prompt": "Hey guys, you are mistaken."
+        "text": "Hey guys, you are mistaken."
       },
       "no": {
-        "prompt": "Hei gutter, dere tar feil."
+        "text": "Hei gutter, dere tar feil."
       },
       "de": {
-        "prompt": "Hey Leute, ihr irrt euch."
+        "text": "Hey Leute, ihr irrt euch."
       }
     }
   },
   {
     "id": 8037,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
@@ -1424,32 +1309,28 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Zij schamen zich voor hun fouten.",
-        "answer": "zich",
         "accepted": [],
-        "word_pool": [
-          "zich",
-          "hun",
+        "hidden_word_index": 2,
+        "text": "Zij schamen zich voor hun fouten.",
+        "distractors": [
           "hen",
           "ons",
           "je"
-        ],
-        "hidden_word_index": 2
+        ]
       },
       "en": {
-        "prompt": "They are ashamed of their mistakes."
+        "text": "They are ashamed of their mistakes."
       },
       "no": {
-        "prompt": "De skammer seg over feilene sine."
+        "text": "De skammer seg over feilene sine."
       },
       "de": {
-        "prompt": "Sie schämen sich für ihre Fehler."
+        "text": "Sie schämen sich für ihre Fehler."
       }
     }
   },
   {
     "id": 8038,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
@@ -1462,34 +1343,31 @@
     },
     "translations": {
       "nl": {
-        "prompt": "U moet u even voorstellen, meneer.",
-        "answer": "u",
         "accepted": [
           "zich"
         ],
-        "word_pool": [
-          "u",
+        "hidden_word_index": 2,
+        "text": "U moet u even voorstellen, meneer.",
+        "distractors": [
           "zich",
           "je",
           "me",
           "ons"
-        ],
-        "hidden_word_index": 2
+        ]
       },
       "en": {
-        "prompt": "You should introduce yourself, sir."
+        "text": "You should introduce yourself, sir."
       },
       "no": {
-        "prompt": "De må presentere Dem, herre."
+        "text": "De må presentere Dem, herre."
       },
       "de": {
-        "prompt": "Sie müssen sich kurz vorstellen, mein Herr."
+        "text": "Sie müssen sich kurz vorstellen, mein Herr."
       }
     }
   },
   {
     "id": 8039,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 4,
     "tags": [
@@ -1502,34 +1380,31 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Ik scheer me elke dag.",
-        "answer": "me",
         "accepted": [
           "mij"
         ],
-        "word_pool": [
-          "me",
+        "hidden_word_index": 2,
+        "text": "Ik scheer me elke dag.",
+        "distractors": [
           "mij",
           "je",
           "zich",
           "ons"
-        ],
-        "hidden_word_index": 2
+        ]
       },
       "en": {
-        "prompt": "I shave every day."
+        "text": "I shave every day."
       },
       "no": {
-        "prompt": "Jeg barberer meg hver dag."
+        "text": "Jeg barberer meg hver dag."
       },
       "de": {
-        "prompt": "Ich rasiere mich jeden Tag."
+        "text": "Ich rasiere mich jeden Tag."
       }
     }
   },
   {
     "id": 8040,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 4,
     "tags": [
@@ -1542,32 +1417,29 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Het kind verveelt zich nooit.",
-        "answer": "zich",
         "accepted": [],
-        "word_pool": [
-          "zich",
+        "hidden_word_index": 3,
+        "text": "Het kind verveelt zich nooit.",
+        "distractors": [
           "me",
           "je",
           "ons",
           "hem"
-        ],
-        "hidden_word_index": 3
+        ]
       },
       "en": {
-        "prompt": "The child is never bored."
+        "text": "The child is never bored."
       },
       "no": {
-        "prompt": "Barnet kjeder seg aldri."
+        "text": "Barnet kjeder seg aldri."
       },
       "de": {
-        "prompt": "Das Kind langweilt sich nie."
+        "text": "Das Kind langweilt sich nie."
       }
     }
   },
   {
     "id": 8041,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 4,
     "tags": [
@@ -1580,32 +1452,29 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Wij haasten ons naar station.",
-        "answer": "ons",
         "accepted": [],
-        "word_pool": [
-          "ons",
+        "hidden_word_index": 2,
+        "text": "Wij haasten ons naar station.",
+        "distractors": [
           "me",
           "je",
           "zich",
           "jullie"
-        ],
-        "hidden_word_index": 2
+        ]
       },
       "en": {
-        "prompt": "We are hurrying to the station."
+        "text": "We are hurrying to the station."
       },
       "no": {
-        "prompt": "Vi skynder oss til stasjonen."
+        "text": "Vi skynder oss til stasjonen."
       },
       "de": {
-        "prompt": "Wir beeilen uns zum Bahnhof."
+        "text": "Wir beeilen uns zum Bahnhof."
       }
     }
   },
   {
     "id": 8042,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 4,
     "tags": [
@@ -1618,34 +1487,31 @@
     },
     "translations": {
       "nl": {
-        "prompt": "U heeft u gisteren niet gemeld.",
-        "answer": "u",
         "accepted": [
           "zich"
         ],
-        "word_pool": [
-          "u",
+        "hidden_word_index": 2,
+        "text": "U heeft u gisteren niet gemeld.",
+        "distractors": [
           "zich",
           "je",
           "me",
           "ons"
-        ],
-        "hidden_word_index": 2
+        ]
       },
       "en": {
-        "prompt": "You didn't report yesterday."
+        "text": "You didn't report yesterday."
       },
       "no": {
-        "prompt": "De meldte Dem ikke i går."
+        "text": "De meldte Dem ikke i går."
       },
       "de": {
-        "prompt": "Sie haben sich gestern nicht gemeldet."
+        "text": "Sie haben sich gestern nicht gemeldet."
       }
     }
   },
   {
     "id": 8043,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 4,
     "tags": [
@@ -1658,32 +1524,29 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Zij interesseren zich voor kunst.",
-        "answer": "zich",
         "accepted": [],
-        "word_pool": [
-          "zich",
+        "hidden_word_index": 2,
+        "text": "Zij interesseren zich voor kunst.",
+        "distractors": [
           "ons",
           "jullie",
           "me",
           "je"
-        ],
-        "hidden_word_index": 2
+        ]
       },
       "en": {
-        "prompt": "They are interested in art."
+        "text": "They are interested in art."
       },
       "no": {
-        "prompt": "De interesserer seg for kunst."
+        "text": "De interesserer seg for kunst."
       },
       "de": {
-        "prompt": "Sie interessieren sich für Kunst."
+        "text": "Sie interessieren sich für Kunst."
       }
     }
   },
   {
     "id": 8044,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 4,
     "tags": [
@@ -1696,32 +1559,29 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Bereid je goed voor op het examen.",
-        "answer": "je",
         "accepted": [],
-        "word_pool": [
-          "je",
+        "hidden_word_index": 1,
+        "text": "Bereid je goed voor op het examen.",
+        "distractors": [
           "me",
           "ons",
           "u",
           "zich"
-        ],
-        "hidden_word_index": 1
+        ]
       },
       "en": {
-        "prompt": "Prepare well for the exam."
+        "text": "Prepare well for the exam."
       },
       "no": {
-        "prompt": "Forbered deg godt til eksamen."
+        "text": "Forbered deg godt til eksamen."
       },
       "de": {
-        "prompt": "Bereite dich gut auf die Prüfung vor."
+        "text": "Bereite dich gut auf die Prüfung vor."
       }
     }
   },
   {
     "id": 8045,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 4,
     "tags": [
@@ -1734,34 +1594,31 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Ik maak me zorgen over de toekomst.",
-        "answer": "me",
         "accepted": [
           "mij"
         ],
-        "word_pool": [
-          "me",
+        "hidden_word_index": 2,
+        "text": "Ik maak me zorgen over de toekomst.",
+        "distractors": [
           "mij",
           "je",
           "zich",
           "ons"
-        ],
-        "hidden_word_index": 2
+        ]
       },
       "en": {
-        "prompt": "I am worried about the future."
+        "text": "I am worried about the future."
       },
       "no": {
-        "prompt": "Jeg bekymrer meg for fremtiden."
+        "text": "Jeg bekymrer meg for fremtiden."
       },
       "de": {
-        "prompt": "Ich mache mir Sorgen um die Zukunft."
+        "text": "Ich mache mir Sorgen um die Zukunft."
       }
     }
   },
   {
     "id": 8046,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 2,
     "tags": [
@@ -1774,32 +1631,29 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Dit boek hier is erg spannend.",
-        "answer": "Dit",
         "accepted": [],
-        "word_pool": [
-          "Dit",
+        "hidden_word_index": 0,
+        "text": "Dit boek hier is erg spannend.",
+        "distractors": [
           "Dat",
           "Deze",
           "Die",
           "Wat"
-        ],
-        "hidden_word_index": 0
+        ]
       },
       "en": {
-        "prompt": "This book here is very exciting."
+        "text": "This book here is very exciting."
       },
       "no": {
-        "prompt": "Denne boken her er veldig spennende."
+        "text": "Denne boken her er veldig spennende."
       },
       "de": {
-        "prompt": "Dieses Buch hier ist sehr spannend."
+        "text": "Dieses Buch hier ist sehr spannend."
       }
     }
   },
   {
     "id": 8047,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 2,
     "tags": [
@@ -1812,32 +1666,29 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Wil je die krant daar even aangeven?",
-        "answer": "die",
         "accepted": [],
-        "word_pool": [
-          "die",
+        "hidden_word_index": 2,
+        "text": "Wil je die krant daar even aangeven?",
+        "distractors": [
           "deze",
           "dit",
           "dat",
           "welke"
-        ],
-        "hidden_word_index": 2
+        ]
       },
       "en": {
-        "prompt": "Would you mind handing me that newspaper over there?"
+        "text": "Would you mind handing me that newspaper over there?"
       },
       "no": {
-        "prompt": "Vil du gi meg den avisen der borte?"
+        "text": "Vil du gi meg den avisen der borte?"
       },
       "de": {
-        "prompt": "Willst du mir die Zeitung dort drüben mal kurz geben?"
+        "text": "Willst du mir die Zeitung dort drüben mal kurz geben?"
       }
     }
   },
   {
     "id": 8048,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 2,
     "tags": [
@@ -1850,32 +1701,29 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Deze schoenen hier zitten erg lekker.",
-        "answer": "Deze",
         "accepted": [],
-        "word_pool": [
-          "Deze",
+        "hidden_word_index": 0,
+        "text": "Deze schoenen hier zitten erg lekker.",
+        "distractors": [
           "Die",
           "Dit",
           "Dat",
           "Wat"
-        ],
-        "hidden_word_index": 0
+        ]
       },
       "en": {
-        "prompt": "These shoes here are very comfortable."
+        "text": "These shoes here are very comfortable."
       },
       "no": {
-        "prompt": "Disse skoene her er veldig behagelige."
+        "text": "Disse skoene her er veldig behagelige."
       },
       "de": {
-        "prompt": "Diese Schuhe hier sind sehr bequem."
+        "text": "Diese Schuhe hier sind sehr bequem."
       }
     }
   },
   {
     "id": 8049,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 2,
     "tags": [
@@ -1888,32 +1736,29 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Kijk naar dat vliegtuig daar in de lucht.",
-        "answer": "dat",
         "accepted": [],
-        "word_pool": [
-          "dat",
+        "hidden_word_index": 2,
+        "text": "Kijk naar dat vliegtuig daar in de lucht.",
+        "distractors": [
           "dit",
           "deze",
           "die",
           "wat"
-        ],
-        "hidden_word_index": 2
+        ]
       },
       "en": {
-        "prompt": "Look at that airplane there in the sky."
+        "text": "Look at that airplane there in the sky."
       },
       "no": {
-        "prompt": "Se på det flyet der oppe i luften."
+        "text": "Se på det flyet der oppe i luften."
       },
       "de": {
-        "prompt": "Schau dir das Flugzeug dort oben am Himmel an."
+        "text": "Schau dir das Flugzeug dort oben am Himmel an."
       }
     }
   },
   {
     "id": 8050,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
@@ -1926,34 +1771,31 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Dit hier zijn mijn favoriete bloemen.",
-        "answer": "Dit",
         "accepted": [
           "Deze"
         ],
-        "word_pool": [
-          "Dit",
+        "hidden_word_index": 0,
+        "text": "Dit hier zijn mijn favoriete bloemen.",
+        "distractors": [
           "Deze",
           "Dat",
           "Die",
           "Wat"
-        ],
-        "hidden_word_index": 0
+        ]
       },
       "en": {
-        "prompt": "These here are my favorite flowers."
+        "text": "These here are my favorite flowers."
       },
       "no": {
-        "prompt": "Dette her er mine favorittblomster."
+        "text": "Dette her er mine favorittblomster."
       },
       "de": {
-        "prompt": "Dies hier sind meine Lieblingsblumen."
+        "text": "Dies hier sind meine Lieblingsblumen."
       }
     }
   },
   {
     "id": 8051,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
@@ -1966,34 +1808,31 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Dat waren de mooiste dagen van mijn leven.",
-        "answer": "Dat",
         "accepted": [
           "Die"
         ],
-        "word_pool": [
-          "Dat",
+        "hidden_word_index": 0,
+        "text": "Dat waren de mooiste dagen van mijn leven.",
+        "distractors": [
           "Die",
           "Dit",
           "Deze",
           "Wat"
-        ],
-        "hidden_word_index": 0
+        ]
       },
       "en": {
-        "prompt": "Those were the most beautiful days of my life."
+        "text": "Those were the most beautiful days of my life."
       },
       "no": {
-        "prompt": "Det var de vakreste dagene i mitt liv."
+        "text": "Det var de vakreste dagene i mitt liv."
       },
       "de": {
-        "prompt": "Das waren die schönsten Tage meines Lebens."
+        "text": "Das waren die schönsten Tage meines Lebens."
       }
     }
   },
   {
     "id": 8052,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
@@ -2006,32 +1845,29 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Ik kies voor deze hier.",
-        "answer": "deze",
         "accepted": [],
-        "word_pool": [
-          "deze",
+        "hidden_word_index": 3,
+        "text": "Ik kies voor deze hier.",
+        "distractors": [
           "die",
           "dit",
           "dat",
           "welke"
-        ],
-        "hidden_word_index": 3
+        ]
       },
       "en": {
-        "prompt": "I choose this one here."
+        "text": "I choose this one here."
       },
       "no": {
-        "prompt": "Jeg velger denne her."
+        "text": "Jeg velger denne her."
       },
       "de": {
-        "prompt": "Ich entscheide mich für diese hier."
+        "text": "Ich entscheide mich für diese hier."
       }
     }
   },
   {
     "id": 8053,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
@@ -2044,32 +1880,29 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Heb je dat al gezien?",
-        "answer": "dat",
         "accepted": [],
-        "word_pool": [
-          "dat",
+        "hidden_word_index": 2,
+        "text": "Heb je dat al gezien?",
+        "distractors": [
           "dit",
           "deze",
           "die",
           "wat"
-        ],
-        "hidden_word_index": 2
+        ]
       },
       "en": {
-        "prompt": "Have you seen that already?"
+        "text": "Have you seen that already?"
       },
       "no": {
-        "prompt": "Har du sett det allerede?"
+        "text": "Har du sett det allerede?"
       },
       "de": {
-        "prompt": "Hast du das schon gesehen?"
+        "text": "Hast du das schon gesehen?"
       }
     }
   },
   {
     "id": 8054,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 4,
     "tags": [
@@ -2082,32 +1915,29 @@
     },
     "translations": {
       "nl": {
-        "prompt": "In die ver vervlogen tijd was alles anders.",
-        "answer": "die",
         "accepted": [],
-        "word_pool": [
-          "die",
+        "hidden_word_index": 1,
+        "text": "In die ver vervlogen tijd was alles anders.",
+        "distractors": [
           "deze",
           "dat",
           "dit",
           "wat"
-        ],
-        "hidden_word_index": 1
+        ]
       },
       "en": {
-        "prompt": "In that long-gone time, everything was different."
+        "text": "In that long-gone time, everything was different."
       },
       "no": {
-        "prompt": "I den fjerne fortiden var alt annerledes."
+        "text": "I den fjerne fortiden var alt annerledes."
       },
       "de": {
-        "prompt": "In jener längst vergangenen Zeit war alles anders."
+        "text": "In jener längst vergangenen Zeit war alles anders."
       }
     }
   },
   {
     "id": 8055,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 4,
     "tags": [
@@ -2120,32 +1950,29 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Deze keer had hij geluk.",
-        "answer": "Deze",
         "accepted": [],
-        "word_pool": [
-          "Deze",
+        "hidden_word_index": 0,
+        "text": "Deze keer had hij geluk.",
+        "distractors": [
           "Die",
           "Dit",
           "Dat",
           "Wat"
-        ],
-        "hidden_word_index": 0
+        ]
       },
       "en": {
-        "prompt": "This time he was lucky."
+        "text": "This time he was lucky."
       },
       "no": {
-        "prompt": "Denne gangen hadde han flaks."
+        "text": "Denne gangen hadde han flaks."
       },
       "de": {
-        "prompt": "Diesmal hatte er Glück."
+        "text": "Diesmal hatte er Glück."
       }
     }
   },
   {
     "id": 8056,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 4,
     "tags": [
@@ -2158,32 +1985,29 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Ik heb twee appels. Welke van de twee wil je?",
-        "answer": "Welke",
         "accepted": [],
-        "word_pool": [
-          "Welke",
+        "hidden_word_index": 4,
+        "text": "Ik heb twee appels. Welke van de twee wil je?",
+        "distractors": [
           "Deze",
           "Die",
           "Dit",
           "Dat"
-        ],
-        "hidden_word_index": 4
+        ]
       },
       "en": {
-        "prompt": "I have two apples. Which of the two do you want?"
+        "text": "I have two apples. Which of the two do you want?"
       },
       "no": {
-        "prompt": "Jeg har to epler. Hvilket av de to vil du ha?"
+        "text": "Jeg har to epler. Hvilket av de to vil du ha?"
       },
       "de": {
-        "prompt": "Ich habe zwei Äpfel. Welchen von beiden willst du?"
+        "text": "Ich habe zwei Äpfel. Welchen von beiden willst du?"
       }
     }
   },
   {
     "id": 8057,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 5,
     "tags": [
@@ -2196,32 +2020,29 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Hij houdt zich aan deze afspraak.",
-        "answer": "deze",
         "accepted": [],
-        "word_pool": [
-          "deze",
+        "hidden_word_index": 4,
+        "text": "Hij houdt zich aan deze afspraak.",
+        "distractors": [
           "die",
           "dit",
           "dat",
           "wat"
-        ],
-        "hidden_word_index": 4
+        ]
       },
       "en": {
-        "prompt": "He keeps to this agreement."
+        "text": "He keeps to this agreement."
       },
       "no": {
-        "prompt": "Han holder seg til denne avtalen."
+        "text": "Han holder seg til denne avtalen."
       },
       "de": {
-        "prompt": "Er hält sich an diese Vereinbarung."
+        "text": "Er hält sich an diese Vereinbarung."
       }
     }
   },
   {
     "id": 8058,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 5,
     "tags": [
@@ -2234,32 +2055,29 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Ik kan niet leven met die gedachte.",
-        "answer": "die",
         "accepted": [],
-        "word_pool": [
-          "die",
+        "hidden_word_index": 5,
+        "text": "Ik kan niet leven met die gedachte.",
+        "distractors": [
           "deze",
           "dat",
           "dit",
           "wat"
-        ],
-        "hidden_word_index": 5
+        ]
       },
       "en": {
-        "prompt": "I can't live with that thought."
+        "text": "I can't live with that thought."
       },
       "no": {
-        "prompt": "Jeg kan ikke leve med den tanken."
+        "text": "Jeg kan ikke leve med den tanken."
       },
       "de": {
-        "prompt": "Ich kann mit diesem Gedanken nicht leben."
+        "text": "Ich kann mit diesem Gedanken nicht leben."
       }
     }
   },
   {
     "id": 8059,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 5,
     "tags": [
@@ -2272,32 +2090,27 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Dat is precies wat ik bedoelde.",
-        "answer": "precies",
         "accepted": [],
-        "word_pool": [
-          "precies",
-          "dat",
+        "hidden_word_index": 2,
+        "text": "Dat is precies wat ik bedoelde.",
+        "distractors": [
           "dit",
-          "wat",
           "die"
-        ],
-        "hidden_word_index": 2
+        ]
       },
       "en": {
-        "prompt": "That is exactly what I meant."
+        "text": "That is exactly what I meant."
       },
       "no": {
-        "prompt": "Det er akkurat det jeg mente."
+        "text": "Det er akkurat det jeg mente."
       },
       "de": {
-        "prompt": "Das ist genau das, was ich meinte."
+        "text": "Das ist genau das, was ich meinte."
       }
     }
   },
   {
     "id": 8060,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 5,
     "tags": [
@@ -2310,34 +2123,31 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Hier op tafel liggen ze. Dit zijn de feiten.",
-        "answer": "Dit",
         "accepted": [
           "Dit"
         ],
-        "word_pool": [
-          "Dit",
+        "hidden_word_index": 5,
+        "text": "Hier op tafel liggen ze. Dit zijn de feiten.",
+        "distractors": [
           "Deze",
           "Dat",
           "Die",
           "Wat"
-        ],
-        "hidden_word_index": 5
+        ]
       },
       "en": {
-        "prompt": "Here on the table they lie. These are the facts."
+        "text": "Here on the table they lie. These are the facts."
       },
       "no": {
-        "prompt": "Her på bordet ligger de. Dette er faktaene."
+        "text": "Her på bordet ligger de. Dette er faktaene."
       },
       "de": {
-        "prompt": "Hier auf dem Tisch liegen sie. Das sind die Fakten."
+        "text": "Hier auf dem Tisch liegen sie. Das sind die Fakten."
       }
     }
   },
   {
     "id": 8061,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
@@ -2350,32 +2160,29 @@
     },
     "translations": {
       "nl": {
-        "prompt": "De man die daar loopt, is mijn leraar.",
-        "answer": "die",
         "accepted": [],
-        "word_pool": [
-          "die",
+        "hidden_word_index": 2,
+        "text": "De man die daar loopt, is mijn leraar.",
+        "distractors": [
           "dat",
           "wie",
           "welke",
           "wat"
-        ],
-        "hidden_word_index": 2
+        ]
       },
       "en": {
-        "prompt": "The man walking there is my teacher."
+        "text": "The man walking there is my teacher."
       },
       "no": {
-        "prompt": "Mannen som går der, er læreren min."
+        "text": "Mannen som går der, er læreren min."
       },
       "de": {
-        "prompt": "Der Mann, der dort läuft, ist mein Lehrer."
+        "text": "Der Mann, der dort läuft, ist mein Lehrer."
       }
     }
   },
   {
     "id": 8062,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
@@ -2388,32 +2195,29 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Het boek dat op tafel ligt, is van mij.",
-        "answer": "dat",
         "accepted": [],
-        "word_pool": [
-          "dat",
+        "hidden_word_index": 2,
+        "text": "Het boek dat op tafel ligt, is van mij.",
+        "distractors": [
           "die",
           "wat",
           "wie",
           "welk"
-        ],
-        "hidden_word_index": 2
+        ]
       },
       "en": {
-        "prompt": "The book lying on the table is mine."
+        "text": "The book lying on the table is mine."
       },
       "no": {
-        "prompt": "Boken som ligger på bordet er min."
+        "text": "Boken som ligger på bordet er min."
       },
       "de": {
-        "prompt": "Das Buch, das auf dem Tisch liegt, gehört mir."
+        "text": "Das Buch, das auf dem Tisch liegt, gehört mir."
       }
     }
   },
   {
     "id": 8063,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
@@ -2426,32 +2230,29 @@
     },
     "translations": {
       "nl": {
-        "prompt": "De mensen die we gisteren zagen, waren erg aardig.",
-        "answer": "die",
         "accepted": [],
-        "word_pool": [
-          "die",
+        "hidden_word_index": 2,
+        "text": "De mensen die we gisteren zagen, waren erg aardig.",
+        "distractors": [
           "dat",
           "wie",
           "wat",
           "welke"
-        ],
-        "hidden_word_index": 2
+        ]
       },
       "en": {
-        "prompt": "The people we saw yesterday were very nice."
+        "text": "The people we saw yesterday were very nice."
       },
       "no": {
-        "prompt": "Menneskene vi så i går var veldig hyggelige."
+        "text": "Menneskene vi så i går var veldig hyggelige."
       },
       "de": {
-        "prompt": "Die Leute, die wir gestern gesehen haben, waren sehr nett."
+        "text": "Die Leute, die wir gestern gesehen haben, waren sehr nett."
       }
     }
   },
   {
     "id": 8064,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 4,
     "tags": [
@@ -2464,32 +2265,28 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Dat is alles wat ik weet.",
-        "answer": "wat",
         "accepted": [],
-        "word_pool": [
-          "wat",
-          "dat",
+        "hidden_word_index": 3,
+        "text": "Dat is alles wat ik weet.",
+        "distractors": [
           "die",
           "wie",
           "welk"
-        ],
-        "hidden_word_index": 3
+        ]
       },
       "en": {
-        "prompt": "That is all I know."
+        "text": "That is all I know."
       },
       "no": {
-        "prompt": "Det er alt jeg vet."
+        "text": "Det er alt jeg vet."
       },
       "de": {
-        "prompt": "Das ist alles, was ich weiß."
+        "text": "Das ist alles, was ich weiß."
       }
     }
   },
   {
     "id": 8065,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 4,
     "tags": [
@@ -2502,34 +2299,31 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Het is niet goud wat er blinkt.",
-        "answer": "wat",
         "accepted": [
           "dat"
         ],
-        "word_pool": [
-          "wat",
+        "hidden_word_index": 4,
+        "text": "Het is niet goud wat er blinkt.",
+        "distractors": [
           "dat",
           "die",
           "wie",
           "welk"
-        ],
-        "hidden_word_index": 4
+        ]
       },
       "en": {
-        "prompt": "All that glitters is not gold."
+        "text": "All that glitters is not gold."
       },
       "no": {
-        "prompt": "Det er ikke gull alt som glimrer."
+        "text": "Det er ikke gull alt som glimrer."
       },
       "de": {
-        "prompt": "Es ist nicht alles Gold, was glänzt."
+        "text": "Es ist nicht alles Gold, was glänzt."
       }
     }
   },
   {
     "id": 8066,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 4,
     "tags": [
@@ -2542,32 +2336,29 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Dit is de man wiens zoon bij ons werkt.",
-        "answer": "wiens",
         "accepted": [],
-        "word_pool": [
-          "wiens",
+        "hidden_word_index": 4,
+        "text": "Dit is de man wiens zoon bij ons werkt.",
+        "distractors": [
           "wier",
           "wie",
           "die",
           "dat"
-        ],
-        "hidden_word_index": 4
+        ]
       },
       "en": {
-        "prompt": "This is the man whose son works with us."
+        "text": "This is the man whose son works with us."
       },
       "no": {
-        "prompt": "Dette er mannen hvis sønn jobber hos oss."
+        "text": "Dette er mannen hvis sønn jobber hos oss."
       },
       "de": {
-        "prompt": "Dies ist der Mann, dessen Sohn bei uns arbeitet."
+        "text": "Dies ist der Mann, dessen Sohn bei uns arbeitet."
       }
     }
   },
   {
     "id": 8067,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 4,
     "tags": [
@@ -2580,34 +2371,30 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Dat is de vrouw wier auto gestolen is.",
-        "answer": "wier",
         "accepted": [
           "wiens"
         ],
-        "word_pool": [
-          "wier",
+        "hidden_word_index": 4,
+        "text": "Dat is de vrouw wier auto gestolen is.",
+        "distractors": [
           "wiens",
           "wie",
-          "die",
-          "dat"
-        ],
-        "hidden_word_index": 4
+          "die"
+        ]
       },
       "en": {
-        "prompt": "That is the woman whose car was stolen."
+        "text": "That is the woman whose car was stolen."
       },
       "no": {
-        "prompt": "Det er kvinnen hvis bil ble stjålet."
+        "text": "Det er kvinnen hvis bil ble stjålet."
       },
       "de": {
-        "prompt": "Das ist die Frau, deren Auto gestohlen wurde."
+        "text": "Das ist die Frau, deren Auto gestohlen wurde."
       }
     }
   },
   {
     "id": 8068,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 4,
     "tags": [
@@ -2620,34 +2407,30 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Dat is degene die ik het meest vertrouw.",
-        "answer": "die",
         "accepted": [
           "wie"
         ],
-        "word_pool": [
-          "die",
+        "hidden_word_index": 3,
+        "text": "Dat is degene die ik het meest vertrouw.",
+        "distractors": [
           "wie",
-          "dat",
           "wat",
           "welke"
-        ],
-        "hidden_word_index": 3
+        ]
       },
       "en": {
-        "prompt": "That is the person I trust the most."
+        "text": "That is the person I trust the most."
       },
       "no": {
-        "prompt": "Det er den personen jeg stoler mest på."
+        "text": "Det er den personen jeg stoler mest på."
       },
       "de": {
-        "prompt": "Das ist derjenige, dem ich am meisten vertraue."
+        "text": "Das ist derjenige, dem ich am meisten vertraue."
       }
     }
   },
   {
     "id": 8069,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 4,
     "tags": [
@@ -2660,32 +2443,29 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Het huis waarvan dak lekt, moet gerepareerd worden.",
-        "answer": "waarvan",
         "accepted": [],
-        "word_pool": [
-          "waarvan",
+        "hidden_word_index": 2,
+        "text": "Het huis waarvan dak lekt, moet gerepareerd worden.",
+        "distractors": [
           "waarin",
           "waarmee",
           "waaroor",
           "waaruit"
-        ],
-        "hidden_word_index": 2
+        ]
       },
       "en": {
-        "prompt": "The house whose roof is leaking must be repaired."
+        "text": "The house whose roof is leaking must be repaired."
       },
       "no": {
-        "prompt": "Huset hvis tak lekker, må repareres."
+        "text": "Huset hvis tak lekker, må repareres."
       },
       "de": {
-        "prompt": "Das Haus, dessen Dach leckt, muss repariert werden."
+        "text": "Das Haus, dessen Dach leckt, muss repariert werden."
       }
     }
   },
   {
     "id": 8070,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 4,
     "tags": [
@@ -2698,32 +2478,29 @@
     },
     "translations": {
       "nl": {
-        "prompt": "De pen waarmee ik schrijf, is nieuw.",
-        "answer": "waarmee",
         "accepted": [],
-        "word_pool": [
-          "waarmee",
+        "hidden_word_index": 2,
+        "text": "De pen waarmee ik schrijf, is nieuw.",
+        "distractors": [
           "waarin",
           "waaruit",
           "waarover",
           "waaraan"
-        ],
-        "hidden_word_index": 2
+        ]
       },
       "en": {
-        "prompt": "The pen I am writing with is new."
+        "text": "The pen I am writing with is new."
       },
       "no": {
-        "prompt": "Pennen jeg skriver med er ny."
+        "text": "Pennen jeg skriver med er ny."
       },
       "de": {
-        "prompt": "Der Stift, mit dem ich schreibe, ist neu."
+        "text": "Der Stift, mit dem ich schreibe, ist neu."
       }
     }
   },
   {
     "id": 8071,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 4,
     "tags": [
@@ -2736,34 +2513,31 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Dit is iets waar ik me zorgen om maak.",
-        "answer": "waar",
         "accepted": [
           "wat"
         ],
-        "word_pool": [
-          "waar",
+        "hidden_word_index": 3,
+        "text": "Dit is iets waar ik me zorgen om maak.",
+        "distractors": [
           "wat",
           "dat",
           "die",
           "wie"
-        ],
-        "hidden_word_index": 3
+        ]
       },
       "en": {
-        "prompt": "This is something I'm worried about."
+        "text": "This is something I'm worried about."
       },
       "no": {
-        "prompt": "Dette er noe jeg bekymrer meg for."
+        "text": "Dette er noe jeg bekymrer meg for."
       },
       "de": {
-        "prompt": "Das ist etwas, worüber ich mir Sorgen mache."
+        "text": "Das ist etwas, worüber ich mir Sorgen mache."
       }
     }
   },
   {
     "id": 8072,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 5,
     "tags": [
@@ -2776,32 +2550,29 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Degene die dit gedaan heeft, moet zich melden.",
-        "answer": "die",
         "accepted": [],
-        "word_pool": [
-          "die",
+        "hidden_word_index": 1,
+        "text": "Degene die dit gedaan heeft, moet zich melden.",
+        "distractors": [
           "wie",
           "welke",
           "dat",
           "wat"
-        ],
-        "hidden_word_index": 1
+        ]
       },
       "en": {
-        "prompt": "The one who did this should report themselves."
+        "text": "The one who did this should report themselves."
       },
       "no": {
-        "prompt": "Den som har gjort dette, må melde seg."
+        "text": "Den som har gjort dette, må melde seg."
       },
       "de": {
-        "prompt": "Derjenige, der das getan hat, muss sich melden."
+        "text": "Derjenige, der das getan hat, muss sich melden."
       }
     }
   },
   {
     "id": 8073,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 5,
     "tags": [
@@ -2814,32 +2585,29 @@
     },
     "translations": {
       "nl": {
-        "prompt": "De plaats waar wij wonen, is erg klein.",
-        "answer": "waar",
         "accepted": [],
-        "word_pool": [
-          "waar",
+        "hidden_word_index": 2,
+        "text": "De plaats waar wij wonen, is erg klein.",
+        "distractors": [
           "welke",
           "waarin",
           "die",
           "dat"
-        ],
-        "hidden_word_index": 2
+        ]
       },
       "en": {
-        "prompt": "The place where we live is very small."
+        "text": "The place where we live is very small."
       },
       "no": {
-        "prompt": "Stedet hvor vi bor er veldig lite."
+        "text": "Stedet hvor vi bor er veldig lite."
       },
       "de": {
-        "prompt": "Der Ort, an dem wir wohnen, ist sehr klein."
+        "text": "Der Ort, an dem wir wohnen, ist sehr klein."
       }
     }
   },
   {
     "id": 8074,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 5,
     "tags": [
@@ -2852,32 +2620,29 @@
     },
     "translations": {
       "nl": {
-        "prompt": "De reden waarom hij niet kwam, is onbekend.",
-        "answer": "waarom",
         "accepted": [],
-        "word_pool": [
-          "waarom",
+        "hidden_word_index": 2,
+        "text": "De reden waarom hij niet kwam, is onbekend.",
+        "distractors": [
           "waarover",
           "waaraan",
           "waarin",
           "waaruit"
-        ],
-        "hidden_word_index": 2
+        ]
       },
       "en": {
-        "prompt": "The reason why he didn't come is unknown."
+        "text": "The reason why he didn't come is unknown."
       },
       "no": {
-        "prompt": "Grunnen til at han ikke kom er ukjent."
+        "text": "Grunnen til at han ikke kom er ukjent."
       },
       "de": {
-        "prompt": "Der Grund, warum er nicht kam, ist unbekannt."
+        "text": "Der Grund, warum er nicht kam, ist unbekannt."
       }
     }
   },
   {
     "id": 8075,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 5,
     "tags": [
@@ -2890,34 +2655,31 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Het is de mooiste film die ik ooit heb gezien.",
-        "answer": "die",
         "accepted": [
           "wat"
         ],
-        "word_pool": [
-          "die",
+        "hidden_word_index": 5,
+        "text": "Het is de mooiste film die ik ooit heb gezien.",
+        "distractors": [
           "dat",
           "wat",
           "wie",
           "welke"
-        ],
-        "hidden_word_index": 5
+        ]
       },
       "en": {
-        "prompt": "It's the most beautiful movie I've ever seen."
+        "text": "It's the most beautiful movie I've ever seen."
       },
       "no": {
-        "prompt": "Det er den vakreste filmen jeg noen gang har sett."
+        "text": "Det er den vakreste filmen jeg noen gang har sett."
       },
       "de": {
-        "prompt": "Es ist der schönste Film, den ich je gesehen habe."
+        "text": "Es ist der schönste Film, den ich je gesehen habe."
       }
     }
   },
   {
     "id": 8076,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 2,
     "tags": [
@@ -2930,32 +2692,29 @@
     },
     "translations": {
       "nl": {
-        "prompt": "De klas wacht. Wie is de leraar?",
-        "answer": "Wie",
         "accepted": [],
-        "word_pool": [
-          "Wie",
+        "hidden_word_index": 3,
+        "text": "De klas wacht. Wie is de leraar?",
+        "distractors": [
           "Wat",
           "Welke",
           "Waar",
           "Wanneer"
-        ],
-        "hidden_word_index": 3
+        ]
       },
       "en": {
-        "prompt": "The class is waiting. Who is the teacher?"
+        "text": "The class is waiting. Who is the teacher?"
       },
       "no": {
-        "prompt": "Klassen venter. Hvem er læreren?"
+        "text": "Klassen venter. Hvem er læreren?"
       },
       "de": {
-        "prompt": "Die Klasse wartet. Wer ist der Lehrer?"
+        "text": "Die Klasse wartet. Wer ist der Lehrer?"
       }
     }
   },
   {
     "id": 8077,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 2,
     "tags": [
@@ -2968,32 +2727,29 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Wat heb je gedaan?",
-        "answer": "Wat",
         "accepted": [],
-        "word_pool": [
-          "Wat",
+        "hidden_word_index": 0,
+        "text": "Wat heb je gedaan?",
+        "distractors": [
           "Wie",
           "Welke",
           "Waar",
           "Wanneer"
-        ],
-        "hidden_word_index": 0
+        ]
       },
       "en": {
-        "prompt": "What did you do?"
+        "text": "What did you do?"
       },
       "no": {
-        "prompt": "Hva har du gjort?"
+        "text": "Hva har du gjort?"
       },
       "de": {
-        "prompt": "Was hast du getan?"
+        "text": "Was hast du getan?"
       }
     }
   },
   {
     "id": 8078,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 2,
     "tags": [
@@ -3006,34 +2762,31 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Wiens jas is dit?",
-        "answer": "Wiens",
         "accepted": [
           "Wier"
         ],
-        "word_pool": [
-          "Wiens",
+        "hidden_word_index": 0,
+        "text": "Wiens jas is dit?",
+        "distractors": [
           "Wier",
           "Welke",
           "Wat",
           "Wie"
-        ],
-        "hidden_word_index": 0
+        ]
       },
       "en": {
-        "prompt": "Whose coat is this?"
+        "text": "Whose coat is this?"
       },
       "no": {
-        "prompt": "Hvis jakke er dette?"
+        "text": "Hvis jakke er dette?"
       },
       "de": {
-        "prompt": "Wessen Jacke ist das?"
+        "text": "Wessen Jacke ist das?"
       }
     }
   },
   {
     "id": 8079,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 2,
     "tags": [
@@ -3046,32 +2799,29 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Welke van deze boeken wil je lezen?",
-        "answer": "Welke",
         "accepted": [],
-        "word_pool": [
-          "Welke",
+        "hidden_word_index": 0,
+        "text": "Welke van deze boeken wil je lezen?",
+        "distractors": [
           "Wat",
           "Wie",
           "Wiens",
           "Wier"
-        ],
-        "hidden_word_index": 0
+        ]
       },
       "en": {
-        "prompt": "Which of these books do you want to read?"
+        "text": "Which of these books do you want to read?"
       },
       "no": {
-        "prompt": "Hvilken av disse bøkene vil du lese?"
+        "text": "Hvilken av disse bøkene vil du lese?"
       },
       "de": {
-        "prompt": "Welches dieser Bücher willst du lesen?"
+        "text": "Welches dieser Bücher willst du lesen?"
       }
     }
   },
   {
     "id": 8080,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
@@ -3084,32 +2834,29 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Wat voor auto heb je gekocht?",
-        "answer": "Wat",
         "accepted": [],
-        "word_pool": [
-          "Wat",
+        "hidden_word_index": 0,
+        "text": "Wat voor auto heb je gekocht?",
+        "distractors": [
           "Welke",
           "Wie",
           "Hoe",
           "Waar"
-        ],
-        "hidden_word_index": 0
+        ]
       },
       "en": {
-        "prompt": "What kind of car did you buy?"
+        "text": "What kind of car did you buy?"
       },
       "no": {
-        "prompt": "Hva slags bil har du kjøpt?"
+        "text": "Hva slags bil har du kjøpt?"
       },
       "de": {
-        "prompt": "Was für ein Auto hast du gekauft?"
+        "text": "Was für ein Auto hast du gekauft?"
       }
     }
   },
   {
     "id": 8081,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
@@ -3122,32 +2869,29 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Tegen wie heb je dat gezegd?",
-        "answer": "wie",
         "accepted": [],
-        "word_pool": [
-          "wie",
+        "hidden_word_index": 1,
+        "text": "Tegen wie heb je dat gezegd?",
+        "distractors": [
           "wat",
           "welke",
           "wiens",
           "wier"
-        ],
-        "hidden_word_index": 1
+        ]
       },
       "en": {
-        "prompt": "Who did you say that to?"
+        "text": "Who did you say that to?"
       },
       "no": {
-        "prompt": "Til hvem har du sagt det?"
+        "text": "Til hvem har du sagt det?"
       },
       "de": {
-        "prompt": "Zu wem hast du das gesagt?"
+        "text": "Zu wem hast du das gesagt?"
       }
     }
   },
   {
     "id": 8082,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
@@ -3160,32 +2904,29 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Wie van jullie gaat er mee?",
-        "answer": "Wie",
         "accepted": [],
-        "word_pool": [
-          "Wie",
+        "hidden_word_index": 0,
+        "text": "Wie van jullie gaat er mee?",
+        "distractors": [
           "Wat",
           "Welke",
           "Wiens",
           "Wier"
-        ],
-        "hidden_word_index": 0
+        ]
       },
       "en": {
-        "prompt": "Which of you is coming along?"
+        "text": "Which of you is coming along?"
       },
       "no": {
-        "prompt": "Hvem av dere blir med?"
+        "text": "Hvem av dere blir med?"
       },
       "de": {
-        "prompt": "Wer von euch geht mit?"
+        "text": "Wer von euch geht mit?"
       }
     }
   },
   {
     "id": 8083,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
@@ -3198,34 +2939,31 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Wat is je lievelingskleur?",
-        "answer": "Wat",
         "accepted": [
           "Welke"
         ],
-        "word_pool": [
-          "Wat",
+        "hidden_word_index": 0,
+        "text": "Wat is je lievelingskleur?",
+        "distractors": [
           "Welke",
           "Wie",
           "Waar",
           "Wanneer"
-        ],
-        "hidden_word_index": 0
+        ]
       },
       "en": {
-        "prompt": "What is your favorite color?"
+        "text": "What is your favorite color?"
       },
       "no": {
-        "prompt": "Hva er din yndlingsfarge?"
+        "text": "Hva er din yndlingsfarge?"
       },
       "de": {
-        "prompt": "Was ist deine Lieblingsfarbe?"
+        "text": "Was ist deine Lieblingsfarbe?"
       }
     }
   },
   {
     "id": 8084,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 4,
     "tags": [
@@ -3238,32 +2976,29 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Wat is de hoofdstad van Nederland?",
-        "answer": "Wat",
         "accepted": [],
-        "word_pool": [
-          "Wat",
+        "hidden_word_index": 0,
+        "text": "Wat is de hoofdstad van Nederland?",
+        "distractors": [
           "Welke",
           "Wie",
           "Waar",
           "Hoe"
-        ],
-        "hidden_word_index": 0
+        ]
       },
       "en": {
-        "prompt": "What is the capital of the Netherlands?"
+        "text": "What is the capital of the Netherlands?"
       },
       "no": {
-        "prompt": "Hva er hovedstaden i Nederland?"
+        "text": "Hva er hovedstaden i Nederland?"
       },
       "de": {
-        "prompt": "Was ist die Hauptstadt der Niederlande?"
+        "text": "Was ist die Hauptstadt der Niederlande?"
       }
     }
   },
   {
     "id": 8085,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 4,
     "tags": [
@@ -3276,32 +3011,29 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Met wie ben je naar de film geweest?",
-        "answer": "wie",
         "accepted": [],
-        "word_pool": [
-          "wie",
+        "hidden_word_index": 1,
+        "text": "Met wie ben je naar de film geweest?",
+        "distractors": [
           "wat",
           "welke",
           "wiens",
           "wier"
-        ],
-        "hidden_word_index": 1
+        ]
       },
       "en": {
-        "prompt": "Who did you go to the movie with?"
+        "text": "Who did you go to the movie with?"
       },
       "no": {
-        "prompt": "Hvem var du på kino med?"
+        "text": "Hvem var du på kino med?"
       },
       "de": {
-        "prompt": "Mit wem bist du im Kino gewesen?"
+        "text": "Mit wem bist du im Kino gewesen?"
       }
     }
   },
   {
     "id": 8086,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 4,
     "tags": [
@@ -3314,34 +3046,31 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Wiens zijn deze sleutels?",
-        "answer": "Wiens",
         "accepted": [
           "Wier"
         ],
-        "word_pool": [
-          "Wiens",
+        "hidden_word_index": 0,
+        "text": "Wiens zijn deze sleutels?",
+        "distractors": [
           "Wier",
           "Welke",
           "Wat",
           "Wie"
-        ],
-        "hidden_word_index": 0
+        ]
       },
       "en": {
-        "prompt": "Whose keys are these?"
+        "text": "Whose keys are these?"
       },
       "no": {
-        "prompt": "Hvis er disse nøklene?"
+        "text": "Hvis er disse nøklene?"
       },
       "de": {
-        "prompt": "Wessen sind diese Schlüssel?"
+        "text": "Wessen sind diese Schlüssel?"
       }
     }
   },
   {
     "id": 8087,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 4,
     "tags": [
@@ -3354,32 +3083,29 @@
     },
     "translations": {
       "nl": {
-        "prompt": "In welk jaar is hij geboren?",
-        "answer": "welk",
         "accepted": [],
-        "word_pool": [
-          "welk",
+        "hidden_word_index": 1,
+        "text": "In welk jaar is hij geboren?",
+        "distractors": [
           "welke",
           "wat",
           "wie",
           "waar"
-        ],
-        "hidden_word_index": 1
+        ]
       },
       "en": {
-        "prompt": "In what year was he born?"
+        "text": "In what year was he born?"
       },
       "no": {
-        "prompt": "I hvilket år ble han født?"
+        "text": "I hvilket år ble han født?"
       },
       "de": {
-        "prompt": "In welchem Jahr ist er geboren?"
+        "text": "In welchem Jahr ist er geboren?"
       }
     }
   },
   {
     "id": 8088,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 5,
     "tags": [
@@ -3392,34 +3118,31 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Over wie hebben jullie het?",
-        "answer": "wie",
         "accepted": [
           "wat"
         ],
-        "word_pool": [
-          "wie",
+        "hidden_word_index": 1,
+        "text": "Over wie hebben jullie het?",
+        "distractors": [
           "wat",
           "welke",
           "wiens",
           "wier"
-        ],
-        "hidden_word_index": 1
+        ]
       },
       "en": {
-        "prompt": "Who are you all talking about?"
+        "text": "Who are you all talking about?"
       },
       "no": {
-        "prompt": "Hvem er det dere snakker om?"
+        "text": "Hvem er det dere snakker om?"
       },
       "de": {
-        "prompt": "Über wen redet ihr?"
+        "text": "Über wen redet ihr?"
       }
     }
   },
   {
     "id": 8089,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 5,
     "tags": [
@@ -3432,34 +3155,31 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Welke van de twee is groter?",
-        "answer": "Welke",
         "accepted": [
           "Wie"
         ],
-        "word_pool": [
-          "Welke",
+        "hidden_word_index": 0,
+        "text": "Welke van de twee is groter?",
+        "distractors": [
           "Wie",
           "Wat",
           "Wiens",
           "Hoe"
-        ],
-        "hidden_word_index": 0
+        ]
       },
       "en": {
-        "prompt": "Which of the two is larger?"
+        "text": "Which of the two is larger?"
       },
       "no": {
-        "prompt": "Hvilken av de to er større?"
+        "text": "Hvilken av de to er større?"
       },
       "de": {
-        "prompt": "Welcher von beiden ist größer?"
+        "text": "Welcher von beiden ist größer?"
       }
     }
   },
   {
     "id": 8090,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 5,
     "tags": [
@@ -3472,34 +3192,31 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Aan wie denk je?",
-        "answer": "wie",
         "accepted": [
           "wat"
         ],
-        "word_pool": [
-          "wie",
+        "hidden_word_index": 1,
+        "text": "Aan wie denk je?",
+        "distractors": [
           "wat",
           "welke",
           "wiens",
           "wier"
-        ],
-        "hidden_word_index": 1
+        ]
       },
       "en": {
-        "prompt": "Who are you thinking of?"
+        "text": "Who are you thinking of?"
       },
       "no": {
-        "prompt": "Hvem tenker du på?"
+        "text": "Hvem tenker du på?"
       },
       "de": {
-        "prompt": "An wen denkst du?"
+        "text": "An wen denkst du?"
       }
     }
   },
   {
     "id": 8091,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 2,
     "tags": [
@@ -3512,34 +3229,31 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Men moet hier voorzichtig zijn.",
-        "answer": "Men",
         "accepted": [
           "Je"
         ],
-        "word_pool": [
-          "Men",
+        "hidden_word_index": 0,
+        "text": "Men moet hier voorzichtig zijn.",
+        "distractors": [
           "Je",
           "We",
           "Iemand",
           "Iedereen"
-        ],
-        "hidden_word_index": 0
+        ]
       },
       "en": {
-        "prompt": "One must be careful here."
+        "text": "One must be careful here."
       },
       "no": {
-        "prompt": "Man må være forsiktig her."
+        "text": "Man må være forsiktig her."
       },
       "de": {
-        "prompt": "Man muss hier vorsichtig sein."
+        "text": "Man muss hier vorsichtig sein."
       }
     }
   },
   {
     "id": 8092,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 2,
     "tags": [
@@ -3552,32 +3266,29 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Er klopt iemand aan de deur.",
-        "answer": "iemand",
         "accepted": [],
-        "word_pool": [
-          "iemand",
+        "hidden_word_index": 2,
+        "text": "Er klopt iemand aan de deur.",
+        "distractors": [
           "niemand",
           "iedereen",
           "iets",
           "niets"
-        ],
-        "hidden_word_index": 2
+        ]
       },
       "en": {
-        "prompt": "Someone is knocking at the door."
+        "text": "Someone is knocking at the door."
       },
       "no": {
-        "prompt": "Det banker noen på døren."
+        "text": "Det banker noen på døren."
       },
       "de": {
-        "prompt": "Es klopft jemand an der Tür."
+        "text": "Es klopft jemand an der Tür."
       }
     }
   },
   {
     "id": 8093,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 2,
     "tags": [
@@ -3590,32 +3301,29 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Niemand heeft de telefoon opgenomen.",
-        "answer": "Niemand",
         "accepted": [],
-        "word_pool": [
-          "Niemand",
+        "hidden_word_index": 0,
+        "text": "Niemand heeft de telefoon opgenomen.",
+        "distractors": [
           "Iemand",
           "Iedereen",
           "Iets",
           "Niets"
-        ],
-        "hidden_word_index": 0
+        ]
       },
       "en": {
-        "prompt": "No one answered the phone."
+        "text": "No one answered the phone."
       },
       "no": {
-        "prompt": "Ingen tok telefonen."
+        "text": "Ingen tok telefonen."
       },
       "de": {
-        "prompt": "Niemand hat den Hörer abgenommen."
+        "text": "Niemand hat den Hörer abgenommen."
       }
     }
   },
   {
     "id": 8094,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 2,
     "tags": [
@@ -3628,32 +3336,29 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Wil je iets eten?",
-        "answer": "iets",
         "accepted": [],
-        "word_pool": [
-          "iets",
+        "hidden_word_index": 2,
+        "text": "Wil je iets eten?",
+        "distractors": [
           "niets",
           "alles",
           "wat",
           "iemand"
-        ],
-        "hidden_word_index": 2
+        ]
       },
       "en": {
-        "prompt": "Would you like to eat something?"
+        "text": "Would you like to eat something?"
       },
       "no": {
-        "prompt": "Vil du ha noe å spise?"
+        "text": "Vil du ha noe å spise?"
       },
       "de": {
-        "prompt": "Willst du etwas essen?"
+        "text": "Willst du etwas essen?"
       }
     }
   },
   {
     "id": 8095,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 2,
     "tags": [
@@ -3666,32 +3371,29 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Ik heb niets gehoord.",
-        "answer": "niets",
         "accepted": [],
-        "word_pool": [
-          "niets",
+        "hidden_word_index": 2,
+        "text": "Ik heb niets gehoord.",
+        "distractors": [
           "iets",
           "alles",
           "wat",
           "niemand"
-        ],
-        "hidden_word_index": 2
+        ]
       },
       "en": {
-        "prompt": "I haven't heard anything."
+        "text": "I haven't heard anything."
       },
       "no": {
-        "prompt": "Jeg har ikke hørt noe."
+        "text": "Jeg har ikke hørt noe."
       },
       "de": {
-        "prompt": "Ich habe nichts gehört."
+        "text": "Ich habe nichts gehört."
       }
     }
   },
   {
     "id": 8096,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
@@ -3704,34 +3406,31 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Iedereen is welkom op het feest.",
-        "answer": "Iedereen",
         "accepted": [
           "Ieder"
         ],
-        "word_pool": [
-          "Iedereen",
+        "hidden_word_index": 0,
+        "text": "Iedereen is welkom op het feest.",
+        "distractors": [
           "Ieder",
           "Iemand",
           "Niemand",
           "Alles"
-        ],
-        "hidden_word_index": 0
+        ]
       },
       "en": {
-        "prompt": "Everyone is welcome at the party."
+        "text": "Everyone is welcome at the party."
       },
       "no": {
-        "prompt": "Alle er velkomne på festen."
+        "text": "Alle er velkomne på festen."
       },
       "de": {
-        "prompt": "Jeder ist auf der Party willkommen."
+        "text": "Jeder ist auf der Party willkommen."
       }
     }
   },
   {
     "id": 8097,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
@@ -3744,34 +3443,31 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Alles komt goed.",
-        "answer": "Alles",
         "accepted": [
           "Het"
         ],
-        "word_pool": [
-          "Alles",
+        "hidden_word_index": 0,
+        "text": "Alles komt goed.",
+        "distractors": [
           "Niets",
           "Iets",
           "Wat",
           "Iedereen"
-        ],
-        "hidden_word_index": 0
+        ]
       },
       "en": {
-        "prompt": "Everything will be fine."
+        "text": "Everything will be fine."
       },
       "no": {
-        "prompt": "Alt går bra."
+        "text": "Alt går bra."
       },
       "de": {
-        "prompt": "Alles wird gut."
+        "text": "Alles wird gut."
       }
     }
   },
   {
     "id": 8098,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
@@ -3784,34 +3480,31 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Sommige mensen houden van regen.",
-        "answer": "Sommige",
         "accepted": [
           "Sommigen"
         ],
-        "word_pool": [
-          "Sommige",
+        "hidden_word_index": 0,
+        "text": "Sommige mensen houden van regen.",
+        "distractors": [
           "Vele",
           "Alle",
           "Geen",
           "Iedere"
-        ],
-        "hidden_word_index": 0
+        ]
       },
       "en": {
-        "prompt": "Some people like rain."
+        "text": "Some people like rain."
       },
       "no": {
-        "prompt": "Noen mennesker liker regn."
+        "text": "Noen mennesker liker regn."
       },
       "de": {
-        "prompt": "Manche Menschen mögen Regen."
+        "text": "Manche Menschen mögen Regen."
       }
     }
   },
   {
     "id": 8099,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
@@ -3824,34 +3517,31 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Er zijn vele oplossingen mogelijk.",
-        "answer": "vele",
         "accepted": [
           "veel"
         ],
-        "word_pool": [
-          "vele",
+        "hidden_word_index": 2,
+        "text": "Er zijn vele oplossingen mogelijk.",
+        "distractors": [
           "sommige",
           "alle",
           "geen",
           "iedere"
-        ],
-        "hidden_word_index": 2
+        ]
       },
       "en": {
-        "prompt": "There are many solutions possible."
+        "text": "There are many solutions possible."
       },
       "no": {
-        "prompt": "Det er mange løsninger mulige."
+        "text": "Det er mange løsninger mulige."
       },
       "de": {
-        "prompt": "Es sind viele Lösungen möglich."
+        "text": "Es sind viele Lösungen möglich."
       }
     }
   },
   {
     "id": 8100,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 3,
     "tags": [
@@ -3864,32 +3554,29 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Heeft iemand mijn bril gezien?",
-        "answer": "iemand",
         "accepted": [],
-        "word_pool": [
-          "iemand",
+        "hidden_word_index": 1,
+        "text": "Heeft iemand mijn bril gezien?",
+        "distractors": [
           "niemand",
           "iedereen",
           "iets",
           "niets"
-        ],
-        "hidden_word_index": 1
+        ]
       },
       "en": {
-        "prompt": "Has anyone seen my glasses?"
+        "text": "Has anyone seen my glasses?"
       },
       "no": {
-        "prompt": "Har noen sett brillene mine?"
+        "text": "Har noen sett brillene mine?"
       },
       "de": {
-        "prompt": "Hat jemand meine Brille gesehen?"
+        "text": "Hat jemand meine Brille gesehen?"
       }
     }
   },
   {
     "id": 8101,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 4,
     "tags": [
@@ -3902,32 +3589,29 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Ik heb niets te verbergen.",
-        "answer": "niets",
         "accepted": [],
-        "word_pool": [
-          "niets",
+        "hidden_word_index": 2,
+        "text": "Ik heb niets te verbergen.",
+        "distractors": [
           "iets",
           "alles",
           "wat",
           "niemand"
-        ],
-        "hidden_word_index": 2
+        ]
       },
       "en": {
-        "prompt": "I have nothing to hide."
+        "text": "I have nothing to hide."
       },
       "no": {
-        "prompt": "Jeg har ingenting å skjule."
+        "text": "Jeg har ingenting å skjule."
       },
       "de": {
-        "prompt": "Ich habe nichts zu verbergen."
+        "text": "Ich habe nichts zu verbergen."
       }
     }
   },
   {
     "id": 8102,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 4,
     "tags": [
@@ -3940,32 +3624,29 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Niemand weet wat de toekomst brengt.",
-        "answer": "Niemand",
         "accepted": [],
-        "word_pool": [
-          "Niemand",
+        "hidden_word_index": 0,
+        "text": "Niemand weet wat de toekomst brengt.",
+        "distractors": [
           "Iemand",
           "Iedereen",
           "Iets",
           "Niets"
-        ],
-        "hidden_word_index": 0
+        ]
       },
       "en": {
-        "prompt": "No one knows what the future brings."
+        "text": "No one knows what the future brings."
       },
       "no": {
-        "prompt": "Ingen vet hva fremtiden bringer."
+        "text": "Ingen vet hva fremtiden bringer."
       },
       "de": {
-        "prompt": "Niemand weiß, was die Zukunft bringt."
+        "text": "Niemand weiß, was die Zukunft bringt."
       }
     }
   },
   {
     "id": 8103,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 4,
     "tags": [
@@ -3978,34 +3659,31 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Hij heeft veel meegemaakt.",
-        "answer": "veel",
         "accepted": [
           "velerlei"
         ],
-        "word_pool": [
-          "veel",
+        "hidden_word_index": 2,
+        "text": "Hij heeft veel meegemaakt.",
+        "distractors": [
           "weinig",
           "iets",
           "niets",
           "alles"
-        ],
-        "hidden_word_index": 2
+        ]
       },
       "en": {
-        "prompt": "He has been through a lot."
+        "text": "He has been through a lot."
       },
       "no": {
-        "prompt": "Han har opplevd mye."
+        "text": "Han har opplevd mye."
       },
       "de": {
-        "prompt": "Er hat viel mitgemacht."
+        "text": "Er hat viel mitgemacht."
       }
     }
   },
   {
     "id": 8104,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 4,
     "tags": [
@@ -4018,34 +3696,31 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Er is weinig tijd meer.",
-        "answer": "weinig",
         "accepted": [
           "geen"
         ],
-        "word_pool": [
-          "weinig",
+        "hidden_word_index": 2,
+        "text": "Er is weinig tijd meer.",
+        "distractors": [
           "veel",
           "iets",
           "niets",
           "alles"
-        ],
-        "hidden_word_index": 2
+        ]
       },
       "en": {
-        "prompt": "There is little time left."
+        "text": "There is little time left."
       },
       "no": {
-        "prompt": "Det er lite tid igjen."
+        "text": "Det er lite tid igjen."
       },
       "de": {
-        "prompt": "Es ist nur noch wenig Zeit übrig."
+        "text": "Es ist nur noch wenig Zeit übrig."
       }
     }
   },
   {
     "id": 8105,
-    "schema_version": 2,
     "question_type": "cloze_word_choice",
     "difficulty": 4,
     "tags": [
@@ -4058,28 +3733,26 @@
     },
     "translations": {
       "nl": {
-        "prompt": "Geen van hen kwam opdagen.",
-        "answer": "Geen",
         "accepted": [
           "Niemand"
         ],
-        "word_pool": [
-          "Geen",
+        "hidden_word_index": 0,
+        "text": "Geen van hen kwam opdagen.",
+        "distractors": [
           "Niemand",
           "Iemand",
           "Iedereen",
           "Alle"
-        ],
-        "hidden_word_index": 0
+        ]
       },
       "en": {
-        "prompt": "None of them showed up."
+        "text": "None of them showed up."
       },
       "no": {
-        "prompt": "Ingen av dem møtte opp."
+        "text": "Ingen av dem møtte opp."
       },
       "de": {
-        "prompt": "Keiner von ihnen ist aufgetaucht."
+        "text": "Keiner von ihnen ist aufgetaucht."
       }
     }
   }
