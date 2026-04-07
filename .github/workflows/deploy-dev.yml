@@ -1,12 +1,12 @@
-# This workflow builds and deploys marimo notebooks to GitHub Pages
-# It runs automatically when changes are pushed to the main branch or can be triggered manually
+# This workflow builds and deploys marimo notebooks to GitHub Pages for the dev environment
+# It runs automatically when changes are pushed to the dev branch or can be triggered manually
 
-name: Deploy to GitHub Pages
+name: Deploy to GitHub Pages (Dev)
 
 # Defines when the workflow will run
 on:
   push:
-    branches: ['main']  # Trigger on pushes to main branch
+    branches: ['dev']  # Trigger on pushes to dev branch
   workflow_dispatch:    # Allow manual triggering from the GitHub UI
 
 # Concurrency settings to manage multiple workflow runs
@@ -21,6 +21,7 @@ env:
 jobs:
   # The build job exports marimo notebooks to static HTML/WebAssembly
   build:
+    if: github.repository == 'MrAldrin/language_app_dev'
     runs-on: ubuntu-latest  # Use the latest Ubuntu runner
     steps:
       # Check out the repository code
@@ -47,6 +48,7 @@ jobs:
   # The deploy job publishes the built site to GitHub Pages
   deploy:
     needs: build  # This job depends on the build job completing successfully
+    if: github.repository == 'MrAldrin/language_app_dev'
 
     # Required permissions for the GitHub Pages deployment
     permissions:
