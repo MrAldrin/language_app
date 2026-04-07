@@ -30,15 +30,13 @@ jobs:
       - name: 🚀 Install uv
         uses: astral-sh/setup-uv@v7
 
-      # Run the build script to export notebooks to WebAssembly
-      - name: 🛠️ Export notebooks
+      # Export the language app directly as index.html and copy public assets
+      - name: 🛠️ Export app
         run: |
-          # todo: Ultimately this function should not be part of this repo
-          # It should very much be an action such that other repos
-          # can use it without forking or copying it
-          # No, it should not be an action. As otherwise can't run before push
-          uv run .github/scripts/build.py  # This script exports all notebooks to the _site directory
-          tree _site                       # Display the exported files
+          mkdir -p _site
+          uv run marimo export html-wasm apps/language_app.py --mode run --no-show-code --sandbox -o _site/index.html
+          cp -r apps/public _site/
+          tree _site
     
       # Upload the generated site as an artifact for the deploy job
       - name: 📤 Upload artifact
