@@ -1,85 +1,101 @@
-# Language Learning App (MVP)
+# Language Learning App
 
-This project is a Marimo-based language learning app focused on fast, targeted grammar and vocabulary practice.  
-Question content is JSON-driven, and the runtime adapts interaction behavior from each question type.  
-The current implementation prioritizes a functional MVP: filterable practice sessions, clear answer feedback, and lightweight session-level scoring.
+Marimo-based language learning app for targeted vocabulary and grammar practice.  
+The app is JSON-driven and deployed as a WebAssembly (WASM) static site on GitHub Pages.
 
-## What The App Currently Supports
+## Quick Start
 
-- Source and target language selection from available pair data
-- Question set selection (`sentence_builder`, `word_translation`, `cloze`)
-- Difficulty filtering with mapped bands:
-  - `1-3`: easy
-  - `4-7`: medium
-  - `8-10`: hard
-- Direction control (`Both`, `L1 -> L2`, `L2 -> L1`) for non-cloze sets
-- Family/subtype tag filtering when `family:*` tags exist in the selected dataset
-- Question navigation (`Previous` / `Next`) inside a session
-- In-question `Check`, `Clear`, and `Reveal answer` interaction flow
-- Session summary with total questions, attempts, correct/incorrect, and accuracy
-
-## Question Types And Interaction Model
-
-- `sentence_builder_multiple_choice`
-  - Learner builds a full answer from a token pool
-  - Selected tokens can be reordered in the answer area
-- `word_translation`
-  - Learner selects a single token answer from a pool
-  - Uses the same check/reveal flow as other sets
-- `cloze_word_choice`
-  - Learner fills one blank in a sentence from a token pool
-  - Direction selector is disabled/not applicable for this type
-
-## Question Data Files (Current Inventory)
-
-Data is stored under `apps/public/` in two layouts:
-
-- Pair files: `apps/public/<lang1>_<lang2>/`
-- Language files: `apps/public/<lang>/`
-
-Current inventory in this repo:
-
-- `sentence_builder`: 6 files x 50 questions each
-  - `de_en`, `de_nl`, `de_no`, `en_nl`, `en_no`, `nl_no`
-- `word_translation`: 2 files
-  - `apps/public/de_no/word_translation_questions.json` (62)
-  - `apps/public/nl_no/word_translation_questions.json` (60)
-- `cloze_word_choice`: 2 files
-  - `apps/public/de/cloze_word_choice_questions.json` (105)
-  - `apps/public/nl/cloze_word_choice_questions.json` (105)
-
-## Data Schema Snapshot (Schema v2)
-
-Each question object uses the shared schema:
-
-- `id`: integer identifier
-- `schema_version`: current schema version (`2`)
-- `question_type`: interaction discriminator
-- `difficulty`: integer `1-10`
-- `tags`: canonical namespaced labels in `namespace:value` format
-- `content`: type-specific interaction settings (for example `response_mode`)
-- `translations`: per-language payload with prompt/answer/accepted/word pool (+ optional hint)
-
-## How To Run
-
-Run locally:
+Run the app locally:
 
 ```bash
 uv run apps/language_app.py
 ```
 
-This repository also includes a GitHub Pages export/deploy workflow inherited from the template. That workflow builds marimo notebooks/apps into `_site` via `.github/scripts/build.py`, but the primary project here is the language app in `apps/language_app.py`.
+Build a local static WASM export (same flow used for Pages deployment):
 
-## Roadmap
+```bash
+scripts/build.sh
+```
 
-Short term:
-- Content expansion
-  - Add more question files, expand language coverage, and increase per-set question volume
-- Authoring and tooling
-  - Strengthen validation and generation workflows for question quality and schema consistency
+Alternative (explicit `uv` command):
 
-Long term:
-- Persistence and analytics
-  - Move beyond in-memory session stats to stored session history and progress tracking
-- UX and learning flow
-  - Add review mode, adaptive repeats, and error-driven practice loops
+```bash
+uv run marimo export html-wasm apps/language_app.py --mode run --no-show-code --sandbox -o _site/index.html
+cp -r apps/public _site/
+```
+
+Serve the exported site:
+
+```bash
+python -m http.server -d _site
+```
+
+Or with `uv`:
+
+```bash
+uv run -m http.server -d _site
+```
+
+## Deploy (GitHub Pages + WASM)
+
+- Production deploy workflow: `.github/workflows/deploy-main.yml`
+- Dev deploy workflow: `.github/workflows/deploy-dev.yml`
+- Both workflows export `apps/language_app.py` with `marimo export html-wasm` and publish `_site/`
+
+## How The App Works
+
+- You choose a language pair (or language for cloze), question set, difficulty, and direction where applicable.
+- Session questions are filtered from JSON curriculum, transformed into a canonical in-memory format, then shuffled into a practice set.
+- During each question, you can `Check`, `Clear`, and `Reveal answer`, and the session tracks attempts/correctness with a summary at the end.
+
+## What The App Currently Supports
+
+- Source/target language selection from available dataset folders.
+- Question set selection (`sentence_builder`, `word_translation`, `cloze`).
+- Difficulty filters with mapped bands: `1-3` (easy), `4-7` (medium), `8-10` (hard).
+- Direction control (`Both`, `L1 -> L2`, `L2 -> L1`) for non-cloze sets.
+- Tag-based focus filtering when canonical tags (for example `family:*`) are present.
+- In-question flow: `Check`, `Clear`, `Reveal answer`, plus `Previous`/`Next` navigation.
+- Session summary with attempts, correct/incorrect totals, and accuracy.
+
+## Question Types And Interaction Model
+
+- `sentence_builder_multiple_choice`: build a full answer from a token pool; selected tokens can be reordered.
+- `word_translation`: choose a single-token translation from options.
+- `cloze_word_choice`: fill one blank from options; direction control is not applicable.
+
+## Curriculum Data
+
+Curriculum JSON lives under `apps/public/`:
+
+- Pair-based datasets: `apps/public/<lang1>_<lang2>/`
+- Language-based cloze datasets: `apps/public/<lang>/`
+
+Common question shape:
+
+- Top-level: `id`, `question_type`, `difficulty`, `tags`, `content`, `translations`
+- Per-language translation payload: `text`, optional `accepted`, optional `distractors`
+- Cloze rows: `content.practice_language` + `translations[practice_language].hidden_word_index`
+
+Legacy fields from older schema versions are migrated by `scripts/migrate_schema.py`.
+
+## Project Layout
+
+Core project files:
+
+- App runtime: `apps/language_app.py`
+- Curriculum content: `apps/public/**`
+- Local export helper: `scripts/build.sh`
+
+Reference/background files:
+
+- Architecture notes: `ARCHITECTURE.md`
+- Content generation docs: `docs/**`
+- Template-origin readmes: `origin_repo_readmes/**`
+
+## Architecture (Short)
+
+The app separates content storage from runtime logic: JSON files are adapted into a canonical in-memory shape, then rendered by a question UI layer.  
+This keeps question authoring flexible while keeping interaction logic consistent across question types.
+
+See `ARCHITECTURE.md` for details.
