@@ -1869,22 +1869,19 @@ def _(
                     caption="Correct answers",
                 ),
                 render_stat_box(
-                    value=str(incorrect),
-                    label="Incorrect",
-                    caption="Needs review",
-                ),
-                render_stat_box(
                     value=accuracy,
                     label="Accuracy",
                     caption="Session result",
                 ),
             ],
             widths="equal",
+            wrap=True,
         )
 
         actions = mo.hstack(
             [button_restart_session, button_back_to_settings],
             justify="center",
+            wrap=True,
         )
 
         return mo.vstack(
