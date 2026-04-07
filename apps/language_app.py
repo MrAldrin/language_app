@@ -166,8 +166,13 @@ class QuestionWidget(anywidget.AnyWidget):
                         }
                     } else {
                         // SENTENCE BUILDER RENDERING: Standard chip area
+                        const isLocked = phase === "correct";
                         answerHtml = answerIndices.map(i =>
-                            `<button class="control chip answer-chip" data-idx="${i}">${words[i]}</button>`
+                            `<button
+                                class="control chip answer-chip ${isLocked ? "chip-disabled" : ""}"
+                                data-idx="${i}"
+                                ${isLocked ? "disabled" : ""}
+                            >${words[i]}</button>`
                         ).join("");
                         if (!answerHtml) {
                             answerHtml = "<span class='hint'>Click words below to build your answer</span>";
@@ -415,6 +420,11 @@ class QuestionWidget(anywidget.AnyWidget):
         .answer-chip:active {
             cursor: grabbing;
         }
+        .answer-chip[disabled],
+        .answer-chip.chip-disabled,
+        .answer-chip.chip-disabled:active {
+            cursor: default;
+        }
         .chip:hover:not(.chip-disabled) {
             background: var(--la-accent-primary-soft, #e8f6f4);
         }
@@ -474,7 +484,7 @@ class QuestionWidget(anywidget.AnyWidget):
             align-items: center;
             justify-content: center;
         }
-        .action-btn:hover:not([disabled]), .reveal-toggle-btn:hover {
+        .action-btn:hover:not([disabled]), .reveal-toggle-btn:hover:not([disabled]) {
             background: var(--la-accent-secondary-soft, #f1f5f9);
         }
         .reveal-toggle-btn {
