@@ -7,19 +7,15 @@ requires-python = ">=3.13"
 dependencies = [
     "anywidget>=0.9.21",
     "marimo>=0.21.1",
-    "numpy>=2.4.3",
     "polars>=1.39.2",
-    "python-lsp-server>=1.14.0",
-    "pyyaml>=6.0.3",
-    "pyzmq>=27.1.0",
-    "ruff>=0.15.7",
     "traitlets>=5.14.3",
-    "ty>=0.0.24",
 ]
 
 [dependency-groups]
 dev = [
     "python-lsp-ruff>=2.3.0",
     "python-lsp-server>=1.14.0",
+    "ruff>=0.15.8",
+    "ty>=0.0.29",
     "websockets>=16.0",
 ]
