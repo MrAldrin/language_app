@@ -1,0 +1,75 @@
+:root {
+  /* Light theme (default) */
+  --la-bg-surface: #ffffff;
+  --la-border-subtle: #d8e0ea;
+  --la-accent-primary-soft: #e8f6f4;
+  --la-accent-secondary-soft: #eef4ff;
+  --la-success-border: #2e8b57;
+  --la-success-bg: #e5f7ee;
+  --la-success-fg: #145339;
+  --la-warning-border: #c97b0e;
+  --la-warning-bg: #fff0d8;
+  --la-warning-fg: #704010;
+  --la-neutral-border: #8ea3b8;
+  --la-neutral-bg: #eaf0f6;
+  --la-neutral-fg: #243548;
+  --la-radius-md: 0.75rem;
+  --la-radius-lg: 1rem;
+  --la-radius-pool: 0.85rem;
+  --la-space-section: 0.8rem;
+  --la-space-card-margin: 0.35rem;
+  --la-text-main: #1e293b;
+  --la-text-muted: #64748b;
+}
+
+/* Dark theme specifically when Marimo or the user toggles it */
+[data-theme="dark"] {
+  --la-bg-surface: #1e293b;
+  --la-border-subtle: #334155;
+  --la-accent-primary-soft: #134e4a;
+  --la-accent-secondary-soft: #1e3a8a;
+  --la-success-border: #065f46;
+  --la-success-bg: #064e3b;
+  --la-success-fg: #6ee7b7;
+  --la-warning-border: #92400e;
+  --la-warning-bg: #78350f;
+  --la-warning-fg: #fcd34d;
+  --la-neutral-border: #475569;
+  --la-neutral-bg: #1e293b;
+  --la-neutral-fg: #cbd5e1;
+  --la-text-main: #f8fafc;
+  --la-text-muted: #94a3b8;
+}
+
+/* Explicit light theme override if Marimo forces it */
+[data-theme="light"] {
+  --la-bg-surface: #ffffff;
+  --la-border-subtle: #d8e0ea;
+  --la-accent-primary-soft: #e8f6f4;
+  --la-accent-secondary-soft: #eef4ff;
+  --la-success-border: #2e8b57;
+  --la-success-bg: #e5f7ee;
+  --la-success-fg: #145339;
+  --la-warning-border: #c97b0e;
+  --la-warning-bg: #fff0d8;
+  --la-warning-fg: #704010;
+  --la-neutral-border: #8ea3b8;
+  --la-neutral-bg: #eaf0f6;
+  --la-neutral-fg: #243548;
+  --la-text-main: #1e293b;
+  --la-text-muted: #64748b;
+}
+
+/* Keep all menu controls visually consistent across widget types. */
+[data-testid="mo-output"] marimo-dropdown,
+[data-testid="mo-output"] marimo-multiselect {
+  --background: var(--la-bg-surface);
+}
+[data-testid="mo-output"] select,
+[data-testid="mo-output"] select:focus,
+[data-testid="mo-output"] [role="combobox"],
+[data-testid="mo-output"] [aria-haspopup="listbox"] {
+  background: var(--la-bg-surface) !important;
+  background-color: var(--la-bg-surface) !important;
+  color: var(--la-text-main) !important;
+}
