@@ -25,9 +25,11 @@ with app.setup:
 
     # Session-scoped score cache keyed by start_session_id.
     SESSION_SCORE_STORE: dict[int, dict[str, Any]] = {}
+    SESSION_PENDING_LIFETIME_STORE: dict[int, dict[str, Any]] = {}
     LIFETIME_STATS_DEFAULT = {
         "total_attempts": 0,
         "total_correct": 0,
+        "by_target_language": {},
         "available": False,
         "loaded": False,
         "error": "",
@@ -602,12 +604,28 @@ class LifetimeStatsStore(anywidget.AnyWidget):
         const DB_VERSION = 1;
         const STORE_NAME = "kv";
         const STATS_KEY = "lifetime_stats";
-        const DEFAULT_STATS = { total_attempts: 0, total_correct: 0 };
+        const DEFAULT_STATS = {
+            total_attempts: 0,
+            total_correct: 0,
+            by_target_language: {},
+        };
 
         function cloneStats(stats) {
+            const rawByTargetLanguage =
+                stats?.by_target_language && typeof stats.by_target_language === "object"
+                    ? stats.by_target_language
+                    : {};
+            const byTargetLanguage = {};
+            for (const [language, counts] of Object.entries(rawByTargetLanguage)) {
+                byTargetLanguage[String(language)] = {
+                    attempts: Number(counts?.attempts || 0),
+                    correct: Number(counts?.correct || 0),
+                };
+            }
             return {
                 total_attempts: Number(stats?.total_attempts || 0),
                 total_correct: Number(stats?.total_correct || 0),
+                by_target_language: byTargetLanguage,
             };
         }
 
@@ -714,10 +732,30 @@ class LifetimeStatsStore(anywidget.AnyWidget):
                         const db = await getDb();
                         let nextStats = await readStats(db);
 
-                        if (commandType === "record_attempt") {
-                            nextStats.total_attempts += 1;
-                            if (Boolean(command.is_correct)) {
-                                nextStats.total_correct += 1;
+                        if (commandType === "flush_session_stats") {
+                            const deltaTotalAttempts = Number(command.delta_total_attempts || 0);
+                            const deltaTotalCorrect = Number(command.delta_total_correct || 0);
+                            const deltaByTargetLanguage =
+                                command.delta_by_target_language &&
+                                typeof command.delta_by_target_language === "object"
+                                    ? command.delta_by_target_language
+                                    : {};
+
+                            nextStats.total_attempts += deltaTotalAttempts;
+                            nextStats.total_correct += deltaTotalCorrect;
+
+                            for (const [targetLanguage, counts] of Object.entries(deltaByTargetLanguage)) {
+                                const languageKey = String(targetLanguage || "").trim();
+                                if (!languageKey) continue;
+                                const currentLanguageStats =
+                                    nextStats.by_target_language[languageKey] || {
+                                        attempts: 0,
+                                        correct: 0,
+                                    };
+                                currentLanguageStats.attempts += Number(counts?.attempts || 0);
+                                currentLanguageStats.correct += Number(counts?.correct || 0);
+                                nextStats.by_target_language[languageKey] =
+                                    currentLanguageStats;
                             }
                         } else if (commandType === "reset") {
                             nextStats = { ...DEFAULT_STATS };
@@ -936,7 +974,7 @@ def _(button_next, button_prev, row_number, start_session_id):
 
 
 @app.cell
-def _(active_question_key, start_session_id, widget):
+def _(active_question_key, start_session_id, target_language, widget):
     session_state = SESSION_SCORE_STORE.setdefault(
         start_session_id,
         {
@@ -968,6 +1006,28 @@ def _(active_question_key, start_session_id, widget):
         processed_new_attempt = True
         processed_attempt_correct = last_check_correct
 
+        session_pending_stats = SESSION_PENDING_LIFETIME_STORE.setdefault(
+            start_session_id,
+            {
+                "pending_total_attempts": 0,
+                "pending_total_correct": 0,
+                "pending_by_target_language": {},
+                "last_flushed_event_key": "",
+            },
+        )
+        session_pending_stats["pending_total_attempts"] += 1
+        if last_check_correct:
+            session_pending_stats["pending_total_correct"] += 1
+        target_key = str(target_language or "").strip()
+        if target_key:
+            per_language = session_pending_stats["pending_by_target_language"].setdefault(
+                target_key,
+                {"attempts": 0, "correct": 0},
+            )
+            per_language["attempts"] += 1
+            if last_check_correct:
+                per_language["correct"] += 1
+
     session_score = {
         "attempts": session_state["attempts"],
         "correct": session_state["correct"],
@@ -980,30 +1040,79 @@ def _(active_question_key, start_session_id, widget):
 
 
 @app.cell
-def _(lifetime_reset_nonce, lifetime_stats_widget, session_score):
+def _(
+    button_back_to_settings,
+    button_next,
+    button_prev,
+    button_restart_session,
+    lifetime_reset_nonce,
+    lifetime_stats_widget,
+    show_summary_page,
+    start_session_id,
+):
     widget_payload = (
         lifetime_stats_widget.value if isinstance(lifetime_stats_widget.value, dict) else {}
     )
     last_applied_nonce = int(widget_payload.get("last_applied_nonce", 0) or 0)
-    record_nonce = int(session_score["attempts"] or 0)
     reset_command_nonce = 1_000_000 + int(lifetime_reset_nonce)
+    flush_event_nonce = (
+        int(button_next.value or 0)
+        + int(button_prev.value or 0)
+        + int(button_back_to_settings.value or 0)
+        + int(button_restart_session.value or 0)
+        + (1 if show_summary_page else 0)
+    )
+    flush_command_nonce = 2_000_000 + (int(start_session_id or 0) * 10_000) + flush_event_nonce
+    pending_lifetime_buffer = SESSION_PENDING_LIFETIME_STORE.setdefault(
+        start_session_id,
+        {
+            "pending_total_attempts": 0,
+            "pending_total_correct": 0,
+            "pending_by_target_language": {},
+            "last_flushed_event_key": "",
+        },
+    )
+    flush_event_key = (
+        f"{button_next.value}:{button_prev.value}:{button_back_to_settings.value}:"
+        f"{button_restart_session.value}:{1 if show_summary_page else 0}"
+    )
+    has_pending = (
+        int(pending_lifetime_buffer.get("pending_total_attempts", 0) or 0) > 0
+        or any(
+            int((counts or {}).get("attempts", 0) or 0) > 0
+            for counts in pending_lifetime_buffer.get("pending_by_target_language", {}).values()
+        )
+    )
 
     if lifetime_reset_nonce > 0 and last_applied_nonce != reset_command_nonce:
+        pending_lifetime_buffer["pending_total_attempts"] = 0
+        pending_lifetime_buffer["pending_total_correct"] = 0
+        pending_lifetime_buffer["pending_by_target_language"] = {}
+        pending_lifetime_buffer["last_flushed_event_key"] = ""
         lifetime_stats_command = {
             "type": "reset",
             "nonce": reset_command_nonce,
         }
     elif (
-        bool(session_score.get("processed_new_attempt", False))
-        and record_nonce > 0
-        and last_applied_nonce != record_nonce
+        has_pending
+        and flush_event_key != pending_lifetime_buffer.get("last_flushed_event_key", "")
+        and flush_command_nonce != last_applied_nonce
     ):
         lifetime_stats_command = {
-            "type": "record_attempt",
-            "nonce": record_nonce,
-            "is_correct": bool(session_score.get("processed_attempt_correct", False)),
+            "type": "flush_session_stats",
+            "nonce": flush_command_nonce,
+            "delta_total_attempts": int(pending_lifetime_buffer["pending_total_attempts"] or 0),
+            "delta_total_correct": int(pending_lifetime_buffer["pending_total_correct"] or 0),
+            "delta_by_target_language": dict(
+                pending_lifetime_buffer.get("pending_by_target_language", {})
+            ),
         }
+        pending_lifetime_buffer["last_flushed_event_key"] = flush_event_key
     else:
+        if flush_command_nonce == last_applied_nonce and has_pending:
+            pending_lifetime_buffer["pending_total_attempts"] = 0
+            pending_lifetime_buffer["pending_total_correct"] = 0
+            pending_lifetime_buffer["pending_by_target_language"] = {}
         lifetime_stats_command = {"type": "noop", "nonce": 0}
     return (lifetime_stats_command,)
 
@@ -1035,6 +1144,7 @@ def _(lifetime_stats_widget):
         lifetime_stats = dict(LIFETIME_STATS_CACHE)
     else:
         lifetime_stats = normalized_stats
+    lifetime_stats = overlay_pending_lifetime_stats(lifetime_stats)
     return (lifetime_stats,)
 
 
@@ -2074,9 +2184,24 @@ def normalize_lifetime_stats(state: dict[str, Any] | None) -> dict[str, Any]:
     raw = state if isinstance(state, dict) else {}
     if isinstance(raw.get("state"), dict):
         raw = raw["state"]
+    raw_by_target_language = (
+        raw.get("by_target_language")
+        if isinstance(raw.get("by_target_language"), dict)
+        else {}
+    )
+    by_target_language = {}
+    for language, counts in raw_by_target_language.items():
+        if not isinstance(language, str) or not language.strip():
+            continue
+        normalized_counts = counts if isinstance(counts, dict) else {}
+        by_target_language[language] = {
+            "attempts": int(normalized_counts.get("attempts", 0) or 0),
+            "correct": int(normalized_counts.get("correct", 0) or 0),
+        }
     return {
         "total_attempts": int(raw.get("total_attempts", 0) or 0),
         "total_correct": int(raw.get("total_correct", 0) or 0),
+        "by_target_language": by_target_language,
         "available": bool(raw.get("available", False)),
         "loaded": bool(raw.get("loaded", False)),
         "error": str(raw.get("error", "") or ""),
@@ -2088,6 +2213,70 @@ def render_lifetime_accuracy(total_correct: int, total_attempts: int) -> str:
     if total_attempts <= 0:
         return "0%"
     return f"{(total_correct / total_attempts * 100):.0f}%"
+
+
+@app.function
+def get_sorted_lifetime_language_rows(
+    lifetime_stats: dict[str, Any], lang_map: dict[str, str]
+) -> list[dict[str, Any]]:
+    rows = []
+    by_target_language = lifetime_stats.get("by_target_language", {})
+    if not isinstance(by_target_language, dict):
+        return rows
+
+    for language_code, counts in by_target_language.items():
+        if not isinstance(counts, dict):
+            continue
+        attempts = int(counts.get("attempts", 0) or 0)
+        correct = int(counts.get("correct", 0) or 0)
+        rows.append(
+            {
+                "language_code": language_code,
+                "language_name": lang_map.get(language_code, language_code),
+                "attempts": attempts,
+                "correct": correct,
+                "accuracy": render_lifetime_accuracy(correct, attempts),
+            }
+        )
+
+    return sorted(
+        rows,
+        key=lambda row: (-row["attempts"], row["language_name"].lower()),
+    )
+
+
+@app.function
+def overlay_pending_lifetime_stats(base_stats: dict[str, Any]) -> dict[str, Any]:
+    merged = {
+        "total_attempts": int(base_stats.get("total_attempts", 0) or 0),
+        "total_correct": int(base_stats.get("total_correct", 0) or 0),
+        "by_target_language": {
+            str(language): {
+                "attempts": int((counts or {}).get("attempts", 0) or 0),
+                "correct": int((counts or {}).get("correct", 0) or 0),
+            }
+            for language, counts in base_stats.get("by_target_language", {}).items()
+            if isinstance(language, str)
+        },
+        "available": bool(base_stats.get("available", False)),
+        "loaded": bool(base_stats.get("loaded", False)),
+        "error": str(base_stats.get("error", "") or ""),
+    }
+
+    for pending in SESSION_PENDING_LIFETIME_STORE.values():
+        merged["total_attempts"] += int(pending.get("pending_total_attempts", 0) or 0)
+        merged["total_correct"] += int(pending.get("pending_total_correct", 0) or 0)
+        for language, counts in pending.get("pending_by_target_language", {}).items():
+            if not isinstance(language, str) or not language.strip():
+                continue
+            row = merged["by_target_language"].setdefault(
+                language,
+                {"attempts": 0, "correct": 0},
+            )
+            row["attempts"] += int((counts or {}).get("attempts", 0) or 0)
+            row["correct"] += int((counts or {}).get("correct", 0) or 0)
+
+    return merged
 
 
 @app.cell(hide_code=True)
@@ -2212,6 +2401,7 @@ def _(button_back_to_settings):
 
 @app.cell
 def _(
+    LANG_MAP,
     button_cancel_reset_lifetime,
     button_confirm_reset_lifetime,
     button_request_reset_lifetime,
@@ -2223,6 +2413,7 @@ def _(
         lifetime_attempts = lifetime_stats["total_attempts"]
         lifetime_correct = lifetime_stats["total_correct"]
         accuracy = render_lifetime_accuracy(lifetime_correct, lifetime_attempts)
+        language_rows = get_sorted_lifetime_language_rows(lifetime_stats, LANG_MAP)
 
         status_text = "Stored in this browser"
         if not lifetime_stats["loaded"]:
@@ -2256,6 +2447,39 @@ def _(
             ),
             mo.md(status_text).center(),
         ]
+
+        if language_rows:
+            elements.append(mo.md("#### By target language").center())
+            for row in language_rows:
+                elements.append(
+                    mo.vstack(
+                        [
+                            mo.md(f"**{row['language_name']}**").center(),
+                            mo.hstack(
+                                [
+                                    render_stat_box(
+                                        value=str(row["attempts"]),
+                                        label="Attempts",
+                                        caption="All sessions",
+                                    ),
+                                    render_stat_box(
+                                        value=str(row["correct"]),
+                                        label="Correct",
+                                        caption="All sessions",
+                                    ),
+                                    render_stat_box(
+                                        value=row["accuracy"],
+                                        label="Accuracy",
+                                        caption="Derived",
+                                    ),
+                                ],
+                                widths="equal",
+                                wrap=True,
+                            ),
+                        ],
+                        gap=0.5,
+                    )
+                )
 
         if lifetime_stats["error"]:
             elements.append(
