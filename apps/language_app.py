@@ -40,7 +40,6 @@ def _(
     app_theme_styles,
     current_sentence,
     in_question_view,
-    render_footer,
     render_interaction_section,
     render_options_section,
     render_summary_section,
@@ -72,7 +71,6 @@ def _(
                 mo_elems.append(render_interaction_section())
             else:
                 mo_elems.append(render_no_questions_element())
-            mo_elems.append(render_footer())
         return mo.vstack(mo_elems, gap=0)
 
     return (render_main_ui,)
@@ -213,28 +211,30 @@ class QuestionWidget(anywidget.AnyWidget):
                     const revealDisabled = isLocked ? "disabled" : "";
 
                     el.innerHTML = `
-                        ${questionAreaHtml}
-                        <div class="surface answer-area ${questionType === "cloze_word_choice" ? "answer-area-cloze" : ""}">
-                            ${answerHtml}
-                        </div>
-                        <div class="surface pool-area">
-                            ${poolHtml}
-                        </div>
-                        <div class="button-row">
-                            <button class="control action-btn clear-btn" id="clear-btn" ${clearDisabled}>Clear</button>
-                            <button class="control action-btn check-btn" id="check-btn" ${checkDisabled}>${checkLabel}</button>
-                        </div>
-                        ${feedbackHtml}
-                        <div class="reveal-container">
-                            <button class="reveal-toggle-btn" id="reveal-btn" ${revealDisabled}>
-                                ${revealed 
-                                    ? `<div class="reveal-content">
-                                         <div class="reveal-main">${target}</div>
-                                         ${accepted.length > 0 ? `<div class="reveal-sub">Also: ${accepted.join(", ")}</div>` : ""}
-                                       </div>` 
-                                    : "Reveal answer"
-                                }
-                            </button>
+                        <div class="question-shell">
+                            ${questionAreaHtml}
+                            <div class="surface answer-area ${questionType === "cloze_word_choice" ? "answer-area-cloze" : ""}">
+                                ${answerHtml}
+                            </div>
+                            <div class="surface pool-area">
+                                ${poolHtml}
+                            </div>
+                            <div class="button-row">
+                                <button class="control action-btn clear-btn" id="clear-btn" ${clearDisabled}>Clear</button>
+                                <button class="control action-btn check-btn" id="check-btn" ${checkDisabled}>${checkLabel}</button>
+                            </div>
+                            ${feedbackHtml}
+                            <div class="reveal-container">
+                                <button class="reveal-toggle-btn" id="reveal-btn" ${revealDisabled}>
+                                    ${revealed 
+                                        ? `<div class="reveal-content">
+                                             <div class="reveal-main">${target}</div>
+                                             ${accepted.length > 0 ? `<div class="reveal-sub">Also: ${accepted.join(", ")}</div>` : ""}
+                                           </div>` 
+                                        : "Reveal answer"
+                                    }
+                                </button>
+                            </div>
                         </div>
                     `;
 
@@ -348,11 +348,22 @@ class QuestionWidget(anywidget.AnyWidget):
     _css = """
         .question-container {
             text-align: center;
-            margin-bottom: 0;
-            margin-top: 1rem;
+            width: 100%;
+            margin: 1rem auto 0;
+            box-sizing: border-box;
         }
         .question-container-translation {
             margin-bottom: 0.2rem;
+        }
+        .question-shell {
+            width: 100%;
+            max-width: var(--la-max-width-interaction, 100%);
+            margin-left: auto;
+            margin-right: auto;
+            box-sizing: border-box;
+        }
+        .question-shell > * {
+            box-sizing: border-box;
         }
         .question-text {
             font-size: 1.25rem;
@@ -365,6 +376,21 @@ class QuestionWidget(anywidget.AnyWidget):
             font-size: 0.95rem;
             color: var(--la-text-muted, #64748b);
             margin-top: 0;
+        }
+        .question-shell .question-text,
+        .question-shell .question-hint,
+        .question-shell .surface,
+        .question-shell .button-row {
+            width: 100%;
+            max-width: var(--la-max-width-controls, 100%);
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .question-shell .question-text {
+            max-width: 34rem;
+        }
+        .question-shell .question-hint {
+            max-width: 30rem;
         }
         .surface {
             border-radius: 0.75rem;
@@ -381,6 +407,9 @@ class QuestionWidget(anywidget.AnyWidget):
             display: flex;
             align-items: center;
             justify-content: center;
+        }
+        .question-shell .answer-area {
+            max-width: min(var(--la-max-width-controls, 100%), 38rem);
         }
         .answer-area-cloze {
             flex-direction: column;
@@ -402,6 +431,9 @@ class QuestionWidget(anywidget.AnyWidget):
         }
         .pool-area {
             background: var(--la-accent-primary-soft, #e8f6f4);
+        }
+        .question-shell .pool-area {
+            max-width: min(var(--la-max-width-controls, 100%), 44rem);
         }
         .control {
             height: 2.25rem;
@@ -456,7 +488,7 @@ class QuestionWidget(anywidget.AnyWidget):
             min-height: 2rem;
             box-sizing: border-box;
             width: 100%;
-            max-width: 22rem;
+            max-width: min(var(--la-max-width-controls, 100%), 28rem);
             margin-left: auto;
             margin-right: auto;
         }
@@ -479,7 +511,7 @@ class QuestionWidget(anywidget.AnyWidget):
             margin: 0.35rem auto 0;
             width: 100%;
             display: flex;
-            max-width: 22rem;
+            max-width: min(var(--la-max-width-controls, 100%), 28rem);
             justify-content: center;
         }
         .action-btn, .reveal-toggle-btn {
@@ -519,6 +551,7 @@ class QuestionWidget(anywidget.AnyWidget):
         .button-row {
             display: flex;
             justify-content: center;
+            flex-wrap: wrap;
             gap: 0.5rem;
             margin-top: 0.55rem;
         }
@@ -1070,7 +1103,7 @@ def _():
     button_back_to_settings = mo.ui.button(
         value=0,
         on_click=bump,
-        label="↩ Back to settings",
+        label="Main menu",
     )
     button_restart_session = mo.ui.button(
         value=0,
@@ -1101,7 +1134,7 @@ def _(start_session_id):
         return c + 1
 
 
-    button_prev = mo.ui.button(value=0, on_click=handle_navigation, label="◀ Previous")
+    button_prev = mo.ui.button(value=0, on_click=handle_navigation, label="◀ Prev")
     button_next = mo.ui.button(value=0, on_click=handle_navigation, label="Next ▶")
     return button_next, button_prev
 
@@ -1596,16 +1629,22 @@ def style_card(
     accent_edge: str | None = None,
 ) -> dict[str, str]:
     style = {
-        "padding": "var(--la-space-section)",
-        "margin": "var(--la-space-card-margin)",
+        "width": "100%",
+        "max-width": "var(--la-max-width-card)",
+        "padding": "var(--la-space-card-padding)",
+        "margin": "var(--la-space-card-margin) auto",
         "border-radius": "var(--la-radius-lg)",
-        "background": "var(--la-bg-surface)",
-        "border": "1px solid var(--la-border-subtle)",
+        "background": "var(--la-card-shell-bg)",
+        "border": "var(--la-card-border-width) solid var(--la-card-shell-edge)",
         "box-sizing": "border-box",
     }
     if accent_edge:
-        style["border-right"] = f"5px solid {accent_edge}"
-        style["border-bottom"] = f"5px solid {accent_edge}"
+        style["border-right"] = (
+            f"var(--la-card-accent-width) solid {accent_edge}"
+        )
+        style["border-bottom"] = (
+            f"var(--la-card-accent-width) solid {accent_edge}"
+        )
     return style
 
 
@@ -1619,6 +1658,7 @@ def style_stat_box() -> dict[str, str]:
         "border": "1px solid var(--la-border-subtle)",
         "box-sizing": "border-box",
         "text-align": "center",
+        "box-shadow": "var(--la-stat-shadow)",
     }
 
 
@@ -1818,9 +1858,14 @@ def _(current_sentence, df, row_number, session_score):
 
 
 @app.cell
-def _(button_next, button_prev):
+def _(button_back_to_settings, button_next, button_prev):
     def render_navigation_buttons():
-        return mo.hstack([button_prev, button_next]).style({"margin-top": "1rem"})
+        return mo.hstack(
+            [button_prev, button_back_to_settings, button_next],
+            justify="center",
+            wrap=True,
+            gap=0.4,
+        ).style({"margin-top": "1rem"})
 
     return (render_navigation_buttons,)
 
@@ -1854,7 +1899,7 @@ def _(button_back_to_settings):
             )
         )
 
-    return (render_footer,)
+    return
 
 
 @app.cell

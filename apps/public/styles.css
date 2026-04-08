@@ -18,8 +18,17 @@
   --la-radius-pool: 0.85rem;
   --la-space-section: 0.8rem;
   --la-space-card-margin: 0.35rem;
+  --la-space-card-padding: 0.8rem;
   --la-text-main: #1e293b;
   --la-text-muted: #64748b;
+  --la-max-width-card: 100%;
+  --la-max-width-interaction: 100%;
+  --la-max-width-controls: 100%;
+  --la-card-border-width: 1px;
+  --la-card-accent-width: 5px;
+  --la-card-shell-bg: var(--la-bg-surface);
+  --la-card-shell-edge: var(--la-border-subtle);
+  --la-stat-shadow: 2px 2px 0 rgba(142, 163, 184, 0.45);
 }
 
 /* Dark theme specifically when Marimo or the user toggles it */
@@ -39,6 +48,7 @@
   --la-neutral-fg: #cbd5e1;
   --la-text-main: #f8fafc;
   --la-text-muted: #94a3b8;
+  --la-stat-shadow: 2px 2px 0 rgba(71, 85, 105, 0.45);
 }
 
 /* Explicit light theme override if Marimo forces it */
@@ -88,7 +98,24 @@
   text-align: center;
 }
 
+@media (min-width: 960px) {
+  :root {
+    --la-max-width-card: 68rem;
+    --la-max-width-interaction: 46rem;
+    --la-max-width-controls: 58rem;
+  }
+}
+
 @media (max-width: 768px) {
+  :root {
+    --la-space-card-margin: 0;
+    --la-space-card-padding: 0.65rem;
+    --la-card-border-width: 0;
+    --la-card-accent-width: 0;
+    --la-card-shell-bg: transparent;
+    --la-card-shell-edge: transparent;
+  }
+
   .question-active-marker + .app-title {
     display: none;
   }
