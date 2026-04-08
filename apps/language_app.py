@@ -25,6 +25,14 @@ with app.setup:
 
     # Session-scoped score cache keyed by start_session_id.
     SESSION_SCORE_STORE: dict[int, dict[str, Any]] = {}
+    LIFETIME_STATS_DEFAULT = {
+        "total_attempts": 0,
+        "total_correct": 0,
+        "available": False,
+        "loaded": False,
+        "error": "",
+    }
+    LIFETIME_STATS_CACHE: dict[str, Any] = LIFETIME_STATS_DEFAULT.copy()
 
 
 @app.cell(hide_code=True)
@@ -41,6 +49,7 @@ def _(
     current_sentence,
     in_question_view,
     render_interaction_section,
+    render_lifetime_stats_section,
     render_options_section,
     render_summary_section,
     show_summary_page,
@@ -64,8 +73,10 @@ def _(
         mo_elems = [app_theme_styles, *question_active_marker, app_header]
         if not in_question_view:
             mo_elems.append(render_options_section())
+            mo_elems.append(render_lifetime_stats_section())
         elif show_summary_page:
             mo_elems.append(render_summary_section())
+            mo_elems.append(render_lifetime_stats_section())
         else:
             if current_sentence:
                 mo_elems.append(render_interaction_section())
@@ -584,6 +595,179 @@ class QuestionWidget(anywidget.AnyWidget):
     last_check_question_id = traitlets.Unicode("").tag(sync=True)
 
 
+@app.class_definition
+class LifetimeStatsStore(anywidget.AnyWidget):
+    _esm = r"""
+        const DB_NAME = "language-app-stats";
+        const DB_VERSION = 1;
+        const STORE_NAME = "kv";
+        const STATS_KEY = "lifetime_stats";
+        const DEFAULT_STATS = { total_attempts: 0, total_correct: 0 };
+
+        function cloneStats(stats) {
+            return {
+                total_attempts: Number(stats?.total_attempts || 0),
+                total_correct: Number(stats?.total_correct || 0),
+            };
+        }
+
+        function setState(model, patch) {
+            const current = model.get("state") || {};
+            model.set("state", { ...current, ...patch });
+            model.save_changes();
+        }
+
+        async function openDb() {
+            if (!("indexedDB" in globalThis)) {
+                throw new Error("IndexedDB is not available in this browser.");
+            }
+
+            return await new Promise((resolve, reject) => {
+                const request = indexedDB.open(DB_NAME, DB_VERSION);
+                request.onupgradeneeded = () => {
+                    const db = request.result;
+                    if (!db.objectStoreNames.contains(STORE_NAME)) {
+                        db.createObjectStore(STORE_NAME);
+                    }
+                };
+                request.onsuccess = () => resolve(request.result);
+                request.onerror = () =>
+                    reject(request.error || new Error("Failed to open IndexedDB."));
+            });
+        }
+
+        async function readStats(db) {
+            return await new Promise((resolve, reject) => {
+                const tx = db.transaction(STORE_NAME, "readonly");
+                const store = tx.objectStore(STORE_NAME);
+                const request = store.get(STATS_KEY);
+                request.onsuccess = () => {
+                    resolve(cloneStats(request.result || DEFAULT_STATS));
+                };
+                request.onerror = () =>
+                    reject(request.error || new Error("Failed to read lifetime stats."));
+            });
+        }
+
+        async function writeStats(db, stats) {
+            return await new Promise((resolve, reject) => {
+                const tx = db.transaction(STORE_NAME, "readwrite");
+                const store = tx.objectStore(STORE_NAME);
+                const nextStats = cloneStats(stats);
+                const request = store.put(nextStats, STATS_KEY);
+                request.onsuccess = () => resolve(nextStats);
+                request.onerror = () =>
+                    reject(request.error || new Error("Failed to write lifetime stats."));
+            });
+        }
+
+        function render({ model, el }) {
+            el.style.display = "none";
+            let dbPromise = null;
+            let applying = false;
+            let pending = false;
+
+            async function getDb() {
+                if (!dbPromise) {
+                    dbPromise = openDb();
+                }
+                return await dbPromise;
+            }
+
+            async function loadInitialState() {
+                try {
+                    const db = await getDb();
+                    const stats = await readStats(db);
+                    setState(model, {
+                        ...stats,
+                        available: true,
+                        loaded: true,
+                        error: "",
+                    });
+                } catch (error) {
+                    setState(model, {
+                        ...DEFAULT_STATS,
+                        available: false,
+                        loaded: true,
+                        error: error?.message || "Unable to use IndexedDB.",
+                    });
+                }
+            }
+
+            async function applyCommand() {
+                if (applying) {
+                    pending = true;
+                    return;
+                }
+                applying = true;
+                try {
+                    const command = model.get("command") || {};
+                    const commandType = String(command.type || "noop");
+                    const commandNonce = Number(command.nonce || 0);
+                    const lastAppliedNonce = Number(model.get("last_applied_nonce") || 0);
+
+                    if (commandNonce <= 0 || commandNonce === lastAppliedNonce) {
+                        return;
+                    }
+
+                    try {
+                        const db = await getDb();
+                        let nextStats = await readStats(db);
+
+                        if (commandType === "record_attempt") {
+                            nextStats.total_attempts += 1;
+                            if (Boolean(command.is_correct)) {
+                                nextStats.total_correct += 1;
+                            }
+                        } else if (commandType === "reset") {
+                            nextStats = { ...DEFAULT_STATS };
+                        } else {
+                            model.set("last_applied_nonce", commandNonce);
+                            model.save_changes();
+                            return;
+                        }
+
+                        const savedStats = await writeStats(db, nextStats);
+                        model.set("last_applied_nonce", commandNonce);
+                        setState(model, {
+                            ...savedStats,
+                            available: true,
+                            loaded: true,
+                            error: "",
+                        });
+                    } catch (error) {
+                        model.set("last_applied_nonce", commandNonce);
+                        setState(model, {
+                            ...(model.get("state") || DEFAULT_STATS),
+                            loaded: true,
+                            available: false,
+                            error: error?.message || "IndexedDB update failed.",
+                        });
+                    }
+                } finally {
+                    applying = false;
+                    if (pending) {
+                        pending = false;
+                        void applyCommand();
+                    }
+                }
+            }
+
+            model.on("change:command", () => {
+                void applyCommand();
+            });
+
+            void loadInitialState();
+        }
+
+        export default { render };
+    """
+
+    state = traitlets.Dict(LIFETIME_STATS_DEFAULT.copy()).tag(sync=True)
+    command = traitlets.Dict({"type": "noop", "nonce": 0}).tag(sync=True)
+    last_applied_nonce = traitlets.Int(0).tag(sync=True)
+
+
 @app.cell
 def _(current_sentence, pool_words):
     if current_sentence is None:
@@ -770,6 +954,8 @@ def _(active_question_key, start_session_id, widget):
     last_check_question_id = str(widget_state.get("last_check_question_id", "") or "")
     event_question_key = last_check_question_id or active_question_key
     event_key = f"{event_question_key}:{check_nonce}"
+    processed_new_attempt = False
+    processed_attempt_correct = False
 
     if check_nonce > 0 and event_key not in session_state["processed_event_keys"]:
         session_state["attempts"] += 1
@@ -779,14 +965,77 @@ def _(active_question_key, start_session_id, widget):
         session_state["processed_event_keys"].add(event_key)
         counts = session_state["question_attempt_counts"]
         counts[event_question_key] = counts.get(event_question_key, 0) + 1
+        processed_new_attempt = True
+        processed_attempt_correct = last_check_correct
 
     session_score = {
         "attempts": session_state["attempts"],
         "correct": session_state["correct"],
         "last_processed_check_nonce": session_state["last_processed_check_nonce"],
+        "processed_new_attempt": processed_new_attempt,
+        "processed_attempt_correct": processed_attempt_correct,
     }
     question_attempt_counts = dict(session_state["question_attempt_counts"])
     return (session_score,)
+
+
+@app.cell
+def _(lifetime_reset_nonce, lifetime_stats_widget, session_score):
+    widget_payload = (
+        lifetime_stats_widget.value if isinstance(lifetime_stats_widget.value, dict) else {}
+    )
+    last_applied_nonce = int(widget_payload.get("last_applied_nonce", 0) or 0)
+    record_nonce = int(session_score["attempts"] or 0)
+    reset_command_nonce = 1_000_000 + int(lifetime_reset_nonce)
+
+    if lifetime_reset_nonce > 0 and last_applied_nonce != reset_command_nonce:
+        lifetime_stats_command = {
+            "type": "reset",
+            "nonce": reset_command_nonce,
+        }
+    elif (
+        bool(session_score.get("processed_new_attempt", False))
+        and record_nonce > 0
+        and last_applied_nonce != record_nonce
+    ):
+        lifetime_stats_command = {
+            "type": "record_attempt",
+            "nonce": record_nonce,
+            "is_correct": bool(session_score.get("processed_attempt_correct", False)),
+        }
+    else:
+        lifetime_stats_command = {"type": "noop", "nonce": 0}
+    return (lifetime_stats_command,)
+
+
+@app.cell
+def _():
+    lifetime_stats_store = LifetimeStatsStore()
+    lifetime_stats_widget = mo.ui.anywidget(lifetime_stats_store)
+    return lifetime_stats_store, lifetime_stats_widget
+
+
+@app.cell
+def _(lifetime_stats_command, lifetime_stats_store):
+    lifetime_stats_store.command = lifetime_stats_command
+    return
+
+
+@app.cell
+def _(lifetime_stats_widget):
+    normalized_stats = normalize_lifetime_stats(lifetime_stats_widget.value)
+
+    # Marimo reruns can briefly surface the widget's default trait values before the
+    # browser-side anywidget re-syncs its latest IndexedDB-backed state. Keep the
+    # last good loaded snapshot to avoid flashing back to zeros between syncs.
+    if normalized_stats["loaded"]:
+        LIFETIME_STATS_CACHE.update(normalized_stats)
+        lifetime_stats = dict(LIFETIME_STATS_CACHE)
+    elif LIFETIME_STATS_CACHE["loaded"]:
+        lifetime_stats = dict(LIFETIME_STATS_CACHE)
+    else:
+        lifetime_stats = normalized_stats
+    return (lifetime_stats,)
 
 
 @app.cell
@@ -1110,9 +1359,29 @@ def _():
         on_click=bump,
         label="Start new session",
     )
+    button_request_reset_lifetime = mo.ui.button(
+        value=0,
+        on_click=bump,
+        label="Reset lifetime stats",
+        kind="warn",
+    )
+    button_confirm_reset_lifetime = mo.ui.button(
+        value=0,
+        on_click=bump,
+        label="Confirm reset",
+        kind="danger",
+    )
+    button_cancel_reset_lifetime = mo.ui.button(
+        value=0,
+        on_click=bump,
+        label="Cancel",
+    )
     mo.hstack([button_start_questions, button_restart_session, button_back_to_settings])
     return (
         button_back_to_settings,
+        button_cancel_reset_lifetime,
+        button_confirm_reset_lifetime,
+        button_request_reset_lifetime,
         button_restart_session,
         button_start_questions,
     )
@@ -1123,6 +1392,23 @@ def _(button_back_to_settings, button_restart_session, button_start_questions):
     start_session_id = button_start_questions.value + button_restart_session.value
     in_question_view = start_session_id > button_back_to_settings.value
     return in_question_view, start_session_id
+
+
+@app.cell
+def _(
+    button_cancel_reset_lifetime,
+    button_confirm_reset_lifetime,
+    button_request_reset_lifetime,
+):
+    show_lifetime_reset_confirmation = (
+        button_request_reset_lifetime.value
+        > max(
+            button_cancel_reset_lifetime.value,
+            button_confirm_reset_lifetime.value,
+        )
+    )
+    lifetime_reset_nonce = button_confirm_reset_lifetime.value
+    return lifetime_reset_nonce, show_lifetime_reset_confirmation
 
 
 @app.cell
@@ -1783,6 +2069,27 @@ def render_progress(current_idx: int, total_count: int) -> mo.Html:
     )
 
 
+@app.function
+def normalize_lifetime_stats(state: dict[str, Any] | None) -> dict[str, Any]:
+    raw = state if isinstance(state, dict) else {}
+    if isinstance(raw.get("state"), dict):
+        raw = raw["state"]
+    return {
+        "total_attempts": int(raw.get("total_attempts", 0) or 0),
+        "total_correct": int(raw.get("total_correct", 0) or 0),
+        "available": bool(raw.get("available", False)),
+        "loaded": bool(raw.get("loaded", False)),
+        "error": str(raw.get("error", "") or ""),
+    }
+
+
+@app.function
+def render_lifetime_accuracy(total_correct: int, total_attempts: int) -> str:
+    if total_attempts <= 0:
+        return "0%"
+    return f"{(total_correct / total_attempts * 100):.0f}%"
+
+
 @app.cell(hide_code=True)
 def _():
     mo.md(r"""
@@ -1852,6 +2159,7 @@ def _(current_sentence, df, row_number, session_score):
                 render_progress(current_idx=row_number, total_count=len(df)),
             ],
             widths="equal",
+            wrap=True,
         )
 
     return (render_stats,)
@@ -1900,6 +2208,93 @@ def _(button_back_to_settings):
         )
 
     return
+
+
+@app.cell
+def _(
+    button_cancel_reset_lifetime,
+    button_confirm_reset_lifetime,
+    button_request_reset_lifetime,
+    lifetime_stats,
+    lifetime_stats_widget,
+    show_lifetime_reset_confirmation,
+):
+    def render_lifetime_stats_section() -> mo.Html:
+        lifetime_attempts = lifetime_stats["total_attempts"]
+        lifetime_correct = lifetime_stats["total_correct"]
+        accuracy = render_lifetime_accuracy(lifetime_correct, lifetime_attempts)
+
+        status_text = "Stored in this browser"
+        if not lifetime_stats["loaded"]:
+            status_text = "Loading lifetime stats..."
+        elif not lifetime_stats["available"]:
+            status_text = "Lifetime stats unavailable in this browser"
+
+        elements: list[Any] = [
+            lifetime_stats_widget,
+            mo.md("### Lifetime progress").center(),
+            mo.hstack(
+                [
+                    render_stat_box(
+                        value=str(lifetime_attempts),
+                        label="Attempts",
+                        caption="All sessions",
+                    ),
+                    render_stat_box(
+                        value=str(lifetime_correct),
+                        label="Correct",
+                        caption="All sessions",
+                    ),
+                    render_stat_box(
+                        value=accuracy,
+                        label="Accuracy",
+                        caption="Derived",
+                    ),
+                ],
+                widths="equal",
+                wrap=True,
+            ),
+            mo.md(status_text).center(),
+        ]
+
+        if lifetime_stats["error"]:
+            elements.append(
+                mo.callout(lifetime_stats["error"], kind="warn")
+            )
+
+        if show_lifetime_reset_confirmation:
+            elements.append(
+                mo.callout(
+                    mo.vstack(
+                        [
+                            mo.md(
+                                "Reset lifetime stats on this browser and device?"
+                            ),
+                            mo.hstack(
+                                [
+                                    button_confirm_reset_lifetime,
+                                    button_cancel_reset_lifetime,
+                                ],
+                                justify="center",
+                                wrap=True,
+                            ),
+                        ],
+                        gap=0.6,
+                    ),
+                    kind="warn",
+                )
+            )
+        else:
+            elements.append(button_request_reset_lifetime.center())
+
+        return mo.vstack(elements, gap=0.8).style(
+            {
+                **style_card(accent_edge="var(--la-accent-primary-soft)"),
+                "text-align": "center",
+            }
+        )
+
+    return (render_lifetime_stats_section,)
 
 
 @app.cell
