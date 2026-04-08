@@ -49,11 +49,20 @@ def _(
     def render_main_ui() -> mo.Html:
         """Assembles the final application layout."""
 
-        app_header = (
-            mo.md("# Schipper mag ik overvaren?").center().style({"padding": ".5rem"})
+        app_header = mo.Html(
+            """
+            <div class="app-title">
+              <h1>Schipper mag ik overvaren?</h1>
+            </div>
+            """
+        )
+        question_active_marker = (
+            [mo.Html('<div class="question-active-marker" aria-hidden="true"></div>')]
+            if in_question_view and not show_summary_page
+            else []
         )
 
-        mo_elems = [app_theme_styles, app_header]
+        mo_elems = [app_theme_styles, *question_active_marker, app_header]
         if not in_question_view:
             mo_elems.append(render_options_section())
         elif show_summary_page:

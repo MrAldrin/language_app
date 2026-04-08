@@ -73,3 +73,23 @@
   background-color: var(--la-bg-surface) !important;
   color: var(--la-text-main) !important;
 }
+
+.app-title {
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.app-title h1 {
+  margin: 0;
+  color: var(--la-text-main);
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .question-active-marker + .app-title {
+    display: none;
+  }
+}
