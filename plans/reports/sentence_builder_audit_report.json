@@ -2,9 +2,9 @@
   "totals": {
     "files_scanned": 6,
     "questions_scanned": 300,
-    "findings": 128,
-    "errors": 3,
-    "warnings": 125
+    "findings": 113,
+    "errors": 0,
+    "warnings": 113
   },
   "reports": [
     {
@@ -48,22 +48,6 @@
           "finding_type": "accepted_policy_warning",
           "file": "apps/public/de_en/sentence_builder.json",
           "question_id": 8,
-          "language": "en",
-          "message": "accepted appears to introduce a likely tense/aspect shift vs text."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_en/sentence_builder.json",
-          "question_id": 20,
-          "language": "en",
-          "message": "accepted appears to be a contraction/non-contraction variant of text."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_en/sentence_builder.json",
-          "question_id": 20,
           "language": "en",
           "message": "accepted appears to introduce a likely tense/aspect shift vs text."
         },
@@ -128,22 +112,6 @@
           "finding_type": "accepted_policy_warning",
           "file": "apps/public/de_en/sentence_builder.json",
           "question_id": 33,
-          "language": "en",
-          "message": "accepted appears to introduce a likely tense/aspect shift vs text."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_en/sentence_builder.json",
-          "question_id": 37,
-          "language": "en",
-          "message": "accepted appears to be a contraction/non-contraction variant of text."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_en/sentence_builder.json",
-          "question_id": 37,
           "language": "en",
           "message": "accepted appears to introduce a likely tense/aspect shift vs text."
         },
@@ -330,14 +298,6 @@
           "message": "accepted appears to introduce a likely tense/aspect shift vs text."
         },
         {
-          "severity": "error",
-          "finding_type": "token_pool_error",
-          "file": "apps/public/de_nl/sentence_builder.json",
-          "question_id": 47,
-          "language": "nl",
-          "message": "accepted cannot be built from text+distractors tokens; missing/overused tokens: [\"'s\"]"
-        },
-        {
           "severity": "warning",
           "finding_type": "accepted_policy_warning",
           "file": "apps/public/de_nl/sentence_builder.json",
@@ -497,22 +457,6 @@
           "severity": "warning",
           "finding_type": "accepted_policy_warning",
           "file": "apps/public/en_nl/sentence_builder.json",
-          "question_id": 20,
-          "language": "en",
-          "message": "accepted appears to be a contraction/non-contraction variant of text."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_nl/sentence_builder.json",
-          "question_id": 20,
-          "language": "en",
-          "message": "accepted appears to introduce a likely tense/aspect shift vs text."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_nl/sentence_builder.json",
           "question_id": 22,
           "language": "en",
           "message": "accepted appears to introduce a likely tense/aspect shift vs text."
@@ -585,22 +529,6 @@
           "severity": "warning",
           "finding_type": "accepted_policy_warning",
           "file": "apps/public/en_nl/sentence_builder.json",
-          "question_id": 37,
-          "language": "en",
-          "message": "accepted appears to be a contraction/non-contraction variant of text."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_nl/sentence_builder.json",
-          "question_id": 37,
-          "language": "en",
-          "message": "accepted appears to introduce a likely tense/aspect shift vs text."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_nl/sentence_builder.json",
           "question_id": 38,
           "language": "en",
           "message": "accepted appears to introduce a likely tense/aspect shift vs text."
@@ -660,14 +588,6 @@
           "question_id": 46,
           "language": "nl",
           "message": "accepted appears to introduce a likely tense/aspect shift vs text."
-        },
-        {
-          "severity": "error",
-          "finding_type": "token_pool_error",
-          "file": "apps/public/en_nl/sentence_builder.json",
-          "question_id": 47,
-          "language": "nl",
-          "message": "accepted cannot be built from text+distractors tokens; missing/overused tokens: [\"'s\"]"
         },
         {
           "severity": "warning",
@@ -735,22 +655,6 @@
           "severity": "warning",
           "finding_type": "accepted_policy_warning",
           "file": "apps/public/en_no/sentence_builder.json",
-          "question_id": 20,
-          "language": "en",
-          "message": "accepted appears to be a contraction/non-contraction variant of text."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_no/sentence_builder.json",
-          "question_id": 20,
-          "language": "en",
-          "message": "accepted appears to introduce a likely tense/aspect shift vs text."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_no/sentence_builder.json",
           "question_id": 22,
           "language": "en",
           "message": "accepted appears to introduce a likely tense/aspect shift vs text."
@@ -808,22 +712,6 @@
           "finding_type": "accepted_policy_warning",
           "file": "apps/public/en_no/sentence_builder.json",
           "question_id": 33,
-          "language": "en",
-          "message": "accepted appears to introduce a likely tense/aspect shift vs text."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_no/sentence_builder.json",
-          "question_id": 37,
-          "language": "en",
-          "message": "accepted appears to be a contraction/non-contraction variant of text."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_no/sentence_builder.json",
-          "question_id": 37,
           "language": "en",
           "message": "accepted appears to introduce a likely tense/aspect shift vs text."
         },
@@ -1048,14 +936,6 @@
           "question_id": 46,
           "language": "nl",
           "message": "accepted appears to introduce a likely tense/aspect shift vs text."
-        },
-        {
-          "severity": "error",
-          "finding_type": "token_pool_error",
-          "file": "apps/public/nl_no/sentence_builder.json",
-          "question_id": 47,
-          "language": "nl",
-          "message": "accepted cannot be built from text+distractors tokens; missing/overused tokens: [\"'s\"]"
         },
         {
           "severity": "warning",

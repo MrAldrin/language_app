@@ -846,12 +846,10 @@
         ]
       },
       "en": {
-        "accepted": [
-          "I don't understand you at all"
-        ],
+        "accepted": [],
         "text": "I do not understand you at all",
         "distractors": [
-          "don't",
+          "say",
           "everything",
           "he",
           "hear",
@@ -1553,10 +1551,8 @@
         ]
       },
       "en": {
-        "accepted": [
-          "I do not like spicy food"
-        ],
-        "text": "I don't like spicy food",
+        "accepted": [],
+        "text": "I do not like spicy food",
         "distractors": [
           "delicious",
           "do",

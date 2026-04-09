@@ -42,11 +42,11 @@ Use this as the live tracker while we execute `plans/sentence_builder_dataset_au
 - [x] 8. Re-run reports and finalize audit tool (v2)
   - Confirm stable output and practical severity levels.
 
-- [ ] 9. Create cleanup backlog from report
+- [x] 9. Create cleanup backlog from report
   - `plans/sentence_builder_cleanup_backlog.md`
   - Group by file and priority.
 
-- [ ] 10. Start cleanup pass 1 (hard errors first)
+- [x] 10. Start cleanup pass 1 (hard errors first)
   - Make minimal edits.
   - Re-run audit after each file or small batch.
 
@@ -67,7 +67,7 @@ Use this as the live tracker while we execute `plans/sentence_builder_dataset_au
 ## Live Progress Log
 
 - Status: `In progress`
-- Current step: `9`
+- Current step: `11`
 - Notes:
   - Step 1 complete: detected 6 sentence-builder files.
   - Step 1 complete: each file currently has 50 questions (300 total).
@@ -86,3 +86,9 @@ Use this as the live tracker while we execute `plans/sentence_builder_dataset_au
   - Follow-up captured as Step 14 to redesign and re-enable lexical-substitution heuristic later.
   - Step 8 complete: warnings reduced from 588 to 125 after disabling lexical heuristic.
   - Current warning mix is focused: 119 tense/aspect + 6 contraction/non-contraction.
+  - Step 9 complete: generated `plans/sentence_builder_cleanup_backlog.md` from current audit report.
+  - Backlog totals: 128 items (P0: 3, P1: 125, P2: 0).
+  - Step 10 complete: fixed all 3 P0 token-pool errors for `id=47` on Dutch side in `de_nl`, `en_nl`, `nl_no`.
+  - Current audit status: errors=0, warnings=125.
+  - Step 11 batch 1 complete: resolved all 6 contraction/non-contraction warnings (files `de_en`, `en_nl`, `en_no`, ids `20` and `37` on `en` side).
+  - Current audit status after batch 1: errors=0, warnings=113 (all are tense/aspect warnings).
