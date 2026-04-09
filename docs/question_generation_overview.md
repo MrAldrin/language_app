@@ -16,11 +16,14 @@ Each question object must include:
 
 Common translation payload fields:
 
-- `prompt`: text shown to learner
-- `answer`: canonical correctness target
-- `accepted`: alternative correct answers
-- `word_pool`: options used by selection-style interactions
-- `hint` (optional): display-only disambiguation
+- `text`: canonical text in that language
+- `accepted`: alternative correct texts (full sentence or single token, depending on question type)
+- `distractors`: extra tokens used to build the selectable pool for choice-style interactions
+
+Type-specific payload fields may also exist (examples):
+
+- `hint` (display-only disambiguation, used by `word_translation`)
+- `hidden_word_index` (used by `cloze_word_choice`)
 
 Legacy compatibility during migration:
 
@@ -76,7 +79,9 @@ General namespace intent:
 - Do not replace language-specific characters with ASCII approximations.
 - Prefer natural, modern phrasing.
 - Keep distractors plausible (near-miss, not nonsense).
-- Never use `hint` for correctness checks.
+- Prefer controlling the selectable pool via `distractors` over growing `accepted`.
+- Keep `accepted` small and avoid free-form paraphrases; put type-specific acceptance rules in the corresponding type spec.
+- Never use display-only hint fields for correctness checks.
 
 ## File Families and Naming
 
