@@ -1,0 +1,16 @@
+{
+  "totals": {
+    "files_scanned": 1,
+    "questions_scanned": 50,
+    "findings": 0,
+    "errors": 0,
+    "warnings": 0
+  },
+  "reports": [
+    {
+      "file": "apps/public/en_no/sentence_builder.json",
+      "question_count": 50,
+      "findings": []
+    }
+  ]
+}
