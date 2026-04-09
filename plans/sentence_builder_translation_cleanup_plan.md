@@ -25,7 +25,7 @@ So the rules should stay as language-agnostic as possible, with only a few langu
 
 ## Main Problems In The Current File
 
-In [sentence_builder_questions.json](/home/hsa/projects/language_app_workspace_2/apps/public/en_no/sentence_builder_questions.json), `accepted` is currently doing too many jobs.
+In [sentence_builder.json](/home/hsa/projects/language_app_workspace_2/apps/public/en_no/sentence_builder.json), `accepted` is currently doing too many jobs.
 
 Good use:
 
@@ -122,23 +122,7 @@ If yes:
 
 ## What To Update
 
-Use the current file schema for now:
-
-- `text`
-- `accepted`
-- `distractors`
-
-Future naming convention (do not rename now, document only):
-
-- sentence builder files should use `sentence_builder`
-- word translation files should use `single_word_translation`
-- cloze files should use `cloze_word`
-
-Recommended order:
-
-1. tighten the sentence-builder rules in [sentence_builder_rules.md](/home/hsa/projects/language_app_workspace_2/docs/sentence_builder_rules.md)
-2. make sure the updated rules are written for Norwegian, English, Dutch, and German without overfitting to one language
-3. review [sentence_builder_questions.json](/home/hsa/projects/language_app_workspace_2/apps/public/en_no/sentence_builder_questions.json) using the bidirectional check above
+review [sentence_builder.json](/home/hsa/projects/language_app_workspace_2/apps/public/en_no/sentence_builder.json) using the bidirectional check above
 
 ## Review Checklist
 

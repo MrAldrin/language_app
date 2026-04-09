@@ -7,7 +7,7 @@ These rules should work across the language pairs used in the app, especially No
 
 ## Schema
 
-Use the current JSON file schema in `apps/public/*/word_translation_questions.json`.
+Use the current JSON file schema in `apps/public/*/single_word_translation.json`.
 
 Each question object must contain:
 

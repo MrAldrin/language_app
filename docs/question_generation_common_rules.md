@@ -84,14 +84,14 @@ General namespace intent:
 
 Stored under `apps/public/<lang1>_<lang2>/`:
 
-- `sentence_builder_questions.json`
-- `word_translation_questions.json`
+- `sentence_builder.json`
+- `single_word_translation.json`
 
 ### Language-based files (monolingual)
 
 Stored under `apps/public/<lang>/`:
 
-- `cloze_word_choice_questions.json`
+- `cloze_word.json`
 
 For cloze, each row must include the translation entry for `content.practice_language`; additional translation languages can be included for translated hints.
 

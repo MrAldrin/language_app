@@ -856,15 +856,15 @@ def _():
 @app.cell
 def _(raw_pairs):
     pyodide_question_files_by_pair = {
-        pair: ["sentence_builder_questions.json"] for pair in raw_pairs
+        pair: ["sentence_builder.json"] for pair in raw_pairs
     }
     pyodide_question_files_by_pair["de_no"] = [
-        "sentence_builder_questions.json",
-        "word_translation_questions.json",
+        "sentence_builder.json",
+        "single_word_translation.json",
     ]
     pyodide_question_files_by_pair["nl_no"] = [
-        "sentence_builder_questions.json",
-        "word_translation_questions.json",
+        "sentence_builder.json",
+        "single_word_translation.json",
     ]
     return (pyodide_question_files_by_pair,)
 
@@ -873,8 +873,8 @@ def _(raw_pairs):
 def _():
     # Mirror language-level files available in deployment (pyodide mode).
     pyodide_question_files_by_language = {
-        "de": ["cloze_word_choice_questions.json"],
-        "nl": ["cloze_word_choice_questions.json"],
+        "de": ["cloze_word.json"],
+        "nl": ["cloze_word.json"],
     }
     return (pyodide_question_files_by_language,)
 
@@ -1250,8 +1250,8 @@ def _(
     file_names = sorted(set(file_names + cloze_files))
 
     default_file = (
-        "sentence_builder_questions.json"
-        if "sentence_builder_questions.json" in file_names
+        "sentence_builder.json"
+        if "sentence_builder.json" in file_names
         else file_names[0]
     )
     default_file_option = humanize_question_file_name(default_file)
@@ -1270,7 +1270,7 @@ def _(
 @app.cell
 def _(dropdown_question_file):
     selected_question_file = dropdown_question_file.value or ""
-    direction_applicable = selected_question_file != "cloze_word_choice_questions.json"
+    direction_applicable = selected_question_file != "cloze_word.json"
     return (direction_applicable,)
 
 
@@ -1609,12 +1609,12 @@ def list_question_files(
 ) -> list[str]:
     """Lists selectable JSON files for a language pair with safe fallbacks."""
     if not pair:
-        return ["sentence_builder_questions.json"]
+        return ["sentence_builder.json"]
 
     if "pyodide" in sys.modules:
-        files = pyodide_files_by_pair.get(pair, ["sentence_builder_questions.json"])
+        files = pyodide_files_by_pair.get(pair, ["sentence_builder.json"])
         unique_files = sorted(set(files))
-        return unique_files or ["sentence_builder_questions.json"]
+        return unique_files or ["sentence_builder.json"]
 
     pair_dir = mo.notebook_location() / "public" / pair
     if pair_dir.exists():
@@ -1624,7 +1624,7 @@ def list_question_files(
         if file_names:
             return file_names
 
-    return ["sentence_builder_questions.json"]
+    return ["sentence_builder.json"]
 
 
 @app.function
@@ -1663,9 +1663,7 @@ def load_json_data(
     pair: str | None, filename: str, target_language: str | None = None
 ) -> list[dict[str, Any]]:
     """Loads curriculum JSON data from Pyodide or local filesystem."""
-    use_language_path = (
-        filename == "cloze_word_choice_questions.json" and target_language
-    )
+    use_language_path = filename == "cloze_word.json" and target_language
 
     if "pyodide" in sys.modules:
         from pyodide.http import open_url

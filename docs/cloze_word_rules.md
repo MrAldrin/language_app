@@ -11,12 +11,12 @@ The learner sees one sentence in the practice language with one blank and select
 
 Cloze uses one file per language (not per language pair):
 
-- `apps/public/<lang>/cloze_word_choice_questions.json`
+- `apps/public/<lang>/cloze_word.json`
 
 Examples:
 
-- `apps/public/nl/cloze_word_choice_questions.json`
-- `apps/public/de/cloze_word_choice_questions.json`
+- `apps/public/nl/cloze_word.json`
+- `apps/public/de/cloze_word.json`
 
 ## 3. Schema
 
