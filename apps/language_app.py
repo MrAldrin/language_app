@@ -10,7 +10,7 @@
 
 import marimo
 
-__generated_with = "0.22.4"
+__generated_with = "0.23.0"
 app = marimo.App(width="full", layout_file="layouts/language_app.grid.json")
 
 with app.setup:
@@ -1062,7 +1062,9 @@ def _(
         + int(button_restart_session.value or 0)
         + (1 if show_summary_page else 0)
     )
-    flush_command_nonce = 2_000_000 + (int(start_session_id or 0) * 10_000) + flush_event_nonce
+    flush_command_nonce = (
+        2_000_000 + (int(start_session_id or 0) * 10_000) + flush_event_nonce
+    )
     pending_lifetime_buffer = SESSION_PENDING_LIFETIME_STORE.setdefault(
         start_session_id,
         {
@@ -1076,12 +1078,11 @@ def _(
         f"{button_next.value}:{button_prev.value}:{button_back_to_settings.value}:"
         f"{button_restart_session.value}:{1 if show_summary_page else 0}"
     )
-    has_pending = (
-        int(pending_lifetime_buffer.get("pending_total_attempts", 0) or 0) > 0
-        or any(
-            int((counts or {}).get("attempts", 0) or 0) > 0
-            for counts in pending_lifetime_buffer.get("pending_by_target_language", {}).values()
-        )
+    has_pending = int(
+        pending_lifetime_buffer.get("pending_total_attempts", 0) or 0
+    ) > 0 or any(
+        int((counts or {}).get("attempts", 0) or 0) > 0
+        for counts in pending_lifetime_buffer.get("pending_by_target_language", {}).values()
     )
 
     if lifetime_reset_nonce > 0 and last_applied_nonce != reset_command_nonce:
@@ -1101,8 +1102,12 @@ def _(
         lifetime_stats_command = {
             "type": "flush_session_stats",
             "nonce": flush_command_nonce,
-            "delta_total_attempts": int(pending_lifetime_buffer["pending_total_attempts"] or 0),
-            "delta_total_correct": int(pending_lifetime_buffer["pending_total_correct"] or 0),
+            "delta_total_attempts": int(
+                pending_lifetime_buffer["pending_total_attempts"] or 0
+            ),
+            "delta_total_correct": int(
+                pending_lifetime_buffer["pending_total_correct"] or 0
+            ),
             "delta_by_target_language": dict(
                 pending_lifetime_buffer.get("pending_by_target_language", {})
             ),
@@ -1386,7 +1391,7 @@ def _(
 @app.cell
 def _(dropdown_focus_attributes, dropdown_focus_family, has_family_tags):
     if has_family_tags and dropdown_focus_family is not None:
-        focus_filter_controls = mo.vstack(
+        focus_filter_controls = mo.hstack(
             [dropdown_focus_family, dropdown_focus_attributes], gap=0.5
         )
     else:
@@ -1434,7 +1439,12 @@ def _(
         lower_level_controls.append(focus_filter_controls)
 
     if lower_level_controls:
-        lower_level_settings = mo.vstack(lower_level_controls, gap=0.5)
+        lower_level_settings = mo.hstack(
+            lower_level_controls,
+            justify="center",
+            wrap=False,
+            gap=0.7,
+        )
     else:
         lower_level_settings = None
     return (lower_level_settings,)
@@ -1510,12 +1520,9 @@ def _(
     button_confirm_reset_lifetime,
     button_request_reset_lifetime,
 ):
-    show_lifetime_reset_confirmation = (
-        button_request_reset_lifetime.value
-        > max(
-            button_cancel_reset_lifetime.value,
-            button_confirm_reset_lifetime.value,
-        )
+    show_lifetime_reset_confirmation = button_request_reset_lifetime.value > max(
+        button_cancel_reset_lifetime.value,
+        button_confirm_reset_lifetime.value,
     )
     lifetime_reset_nonce = button_confirm_reset_lifetime.value
     return lifetime_reset_nonce, show_lifetime_reset_confirmation
@@ -2035,12 +2042,8 @@ def style_card(
         "box-sizing": "border-box",
     }
     if accent_edge:
-        style["border-right"] = (
-            f"var(--la-card-accent-width) solid {accent_edge}"
-        )
-        style["border-bottom"] = (
-            f"var(--la-card-accent-width) solid {accent_edge}"
-        )
+        style["border-right"] = f"var(--la-card-accent-width) solid {accent_edge}"
+        style["border-bottom"] = f"var(--la-card-accent-width) solid {accent_edge}"
     return style
 
 
@@ -2301,7 +2304,7 @@ def _(
         instruction_text = mo.md(
             "Choose source and target language, question set, and difficulty, then press start."
         ).center()
-
+        core_heading = mo.md("**Settings**").center()
         top_level_options_row = mo.hstack(
             [
                 dropdown_source_language,
@@ -2312,10 +2315,23 @@ def _(
             justify="space-between",
             wrap=True,
         )
+        core_settings_section = mo.vstack(
+            [core_heading, top_level_options_row], gap=0.4, align="center"
+        )
 
-        sections: list[Any] = [instruction_text, top_level_options_row]
+        section_divider = mo.Html(
+            '<div class="menu-section-divider" aria-hidden="true"></div>'
+        )
+        sections: list[Any] = [instruction_text, core_settings_section]
         if lower_level_settings is not None:
-            sections.append(lower_level_settings)
+            sections.append(section_divider)
+            advanced_heading = mo.md("**Advanced settings**").center()
+            advanced_settings_section = mo.vstack(
+                [advanced_heading, lower_level_settings], gap=0.4, align="center"
+            )
+            sections.append(advanced_settings_section)
+
+        sections.append(section_divider)
         sections.append(button_start_questions.center())
 
         return mo.vstack(
@@ -2482,18 +2498,14 @@ def _(
                 )
 
         if lifetime_stats["error"]:
-            elements.append(
-                mo.callout(lifetime_stats["error"], kind="warn")
-            )
+            elements.append(mo.callout(lifetime_stats["error"], kind="warn"))
 
         if show_lifetime_reset_confirmation:
             elements.append(
                 mo.callout(
                     mo.vstack(
                         [
-                            mo.md(
-                                "Reset lifetime stats on this browser and device?"
-                            ),
+                            mo.md("Reset lifetime stats on this browser and device?"),
                             mo.hstack(
                                 [
                                     button_confirm_reset_lifetime,

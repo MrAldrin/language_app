@@ -28,6 +28,9 @@
   --la-card-accent-width: 5px;
   --la-card-shell-bg: var(--la-bg-surface);
   --la-card-shell-edge: var(--la-border-subtle);
+  --la-menu-divider: #dce4ee;
+  --la-menu-advanced-border: #cfdae6;
+  --la-menu-advanced-bg: #f7fafc;
   --la-stat-shadow: 2px 2px 0 rgba(142, 163, 184, 0.45);
 }
 
@@ -48,6 +51,9 @@
   --la-neutral-fg: #cbd5e1;
   --la-text-main: #f8fafc;
   --la-text-muted: #94a3b8;
+  --la-menu-divider: #334155;
+  --la-menu-advanced-border: #3c4f65;
+  --la-menu-advanced-bg: #1a2535;
   --la-stat-shadow: 2px 2px 0 rgba(71, 85, 105, 0.45);
 }
 
@@ -68,6 +74,9 @@
   --la-neutral-fg: #243548;
   --la-text-main: #1e293b;
   --la-text-muted: #64748b;
+  --la-menu-divider: #dce4ee;
+  --la-menu-advanced-border: #cfdae6;
+  --la-menu-advanced-bg: #f7fafc;
 }
 
 /* Keep all menu controls visually consistent across widget types. */
@@ -96,6 +105,35 @@
   font-weight: 700;
   line-height: 1.2;
   text-align: center;
+}
+
+.menu-section-label {
+  color: var(--la-text-main);
+  font-size: 0.95rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  text-transform: none;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 0.2rem;
+}
+
+.menu-section-label-advanced {
+  font-weight: 800;
+}
+
+.menu-section-divider {
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    var(--la-menu-divider) 12%,
+    var(--la-menu-divider) 88%,
+    transparent 100%
+  );
+  opacity: 0.95;
+  margin: 0.1rem 0;
 }
 
 @media (min-width: 960px) {
