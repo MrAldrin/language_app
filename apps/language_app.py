@@ -1041,7 +1041,7 @@ def _(active_question_key, start_session_id, target_language, widget):
 
 @app.cell
 def _(
-    button_back_to_settings,
+    button_main_menu,
     button_next,
     button_prev,
     button_restart_session,
@@ -1058,7 +1058,7 @@ def _(
     flush_event_nonce = (
         int(button_next.value or 0)
         + int(button_prev.value or 0)
-        + int(button_back_to_settings.value or 0)
+        + int(button_main_menu.value or 0)
         + int(button_restart_session.value or 0)
         + (1 if show_summary_page else 0)
     )
@@ -1075,7 +1075,7 @@ def _(
         },
     )
     flush_event_key = (
-        f"{button_next.value}:{button_prev.value}:{button_back_to_settings.value}:"
+        f"{button_next.value}:{button_prev.value}:{button_main_menu.value}:"
         f"{button_restart_session.value}:{1 if show_summary_page else 0}"
     )
     has_pending = int(
@@ -1469,7 +1469,7 @@ def _():
         on_click=bump,
         label="Start questions",
     )
-    button_back_to_settings = mo.ui.button(
+    button_main_menu = mo.ui.button(
         value=0,
         on_click=bump,
         label="Main menu",
@@ -1496,11 +1496,11 @@ def _():
         on_click=bump,
         label="Cancel",
     )
-    mo.hstack([button_start_questions, button_restart_session, button_back_to_settings])
+    mo.hstack([button_start_questions, button_restart_session, button_main_menu])
     return (
-        button_back_to_settings,
         button_cancel_reset_lifetime,
         button_confirm_reset_lifetime,
+        button_main_menu,
         button_request_reset_lifetime,
         button_restart_session,
         button_start_questions,
@@ -1508,9 +1508,9 @@ def _():
 
 
 @app.cell
-def _(button_back_to_settings, button_restart_session, button_start_questions):
+def _(button_main_menu, button_restart_session, button_start_questions):
     start_session_id = button_start_questions.value + button_restart_session.value
-    in_question_view = start_session_id > button_back_to_settings.value
+    in_question_view = start_session_id > button_main_menu.value
     return in_question_view, start_session_id
 
 
@@ -1652,7 +1652,10 @@ def list_language_question_files(
 @app.function
 def humanize_question_file_name(filename: str) -> str:
     stem = filename.removesuffix(".json")
-    return stem.replace("_", " ")
+    label = stem.replace("_", " ")
+    if label.endswith(" questions"):
+        label = label[: -len(" questions")]
+    return label
 
 
 @app.function
@@ -2371,10 +2374,10 @@ def _(current_sentence, df, row_number, session_score):
 
 
 @app.cell
-def _(button_back_to_settings, button_next, button_prev):
+def _(button_main_menu, button_next, button_prev):
     def render_navigation_buttons():
         return mo.hstack(
-            [button_prev, button_back_to_settings, button_next],
+            [button_prev, button_main_menu, button_next],
             justify="center",
             wrap=True,
             gap=0.4,
@@ -2404,9 +2407,9 @@ def _(render_navigation_buttons, render_stats, widget):
 
 
 @app.cell
-def _(button_back_to_settings):
+def _(button_main_menu):
     def render_footer() -> mo.Html:
-        return mo.vstack([button_back_to_settings.center()]).style(
+        return mo.vstack([button_main_menu.center()]).style(
             style_card(
                 accent_edge="var(--la-accent-secondary-soft)",
             )
@@ -2535,7 +2538,7 @@ def _(
 
 @app.cell
 def _(
-    button_back_to_settings,
+    button_main_menu,
     button_restart_session,
     session_score,
     total_questions,
@@ -2574,7 +2577,7 @@ def _(
         )
 
         actions = mo.hstack(
-            [button_restart_session, button_back_to_settings],
+            [button_restart_session, button_main_menu],
             justify="center",
             wrap=True,
         )
