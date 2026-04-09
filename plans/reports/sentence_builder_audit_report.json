@@ -2,9 +2,9 @@
   "totals": {
     "files_scanned": 6,
     "questions_scanned": 300,
-    "findings": 591,
+    "findings": 128,
     "errors": 3,
-    "warnings": 588
+    "warnings": 125
   },
   "reports": [
     {
@@ -15,49 +15,9 @@
           "severity": "warning",
           "finding_type": "accepted_policy_warning",
           "file": "apps/public/de_en/sentence_builder.json",
-          "question_id": 1,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_en/sentence_builder.json",
-          "question_id": 1,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_en/sentence_builder.json",
-          "question_id": 2,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_en/sentence_builder.json",
           "question_id": 2,
           "language": "en",
           "message": "accepted appears to introduce a likely tense/aspect shift vs text."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_en/sentence_builder.json",
-          "question_id": 2,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_en/sentence_builder.json",
-          "question_id": 3,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
         },
         {
           "severity": "warning",
@@ -71,65 +31,9 @@
           "severity": "warning",
           "finding_type": "accepted_policy_warning",
           "file": "apps/public/de_en/sentence_builder.json",
-          "question_id": 3,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_en/sentence_builder.json",
-          "question_id": 4,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_en/sentence_builder.json",
           "question_id": 4,
           "language": "en",
           "message": "accepted appears to introduce a likely tense/aspect shift vs text."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_en/sentence_builder.json",
-          "question_id": 4,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_en/sentence_builder.json",
-          "question_id": 4,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_en/sentence_builder.json",
-          "question_id": 6,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_en/sentence_builder.json",
-          "question_id": 7,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_en/sentence_builder.json",
-          "question_id": 7,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
         },
         {
           "severity": "warning",
@@ -144,152 +48,8 @@
           "finding_type": "accepted_policy_warning",
           "file": "apps/public/de_en/sentence_builder.json",
           "question_id": 8,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_en/sentence_builder.json",
-          "question_id": 8,
           "language": "en",
           "message": "accepted appears to introduce a likely tense/aspect shift vs text."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_en/sentence_builder.json",
-          "question_id": 8,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_en/sentence_builder.json",
-          "question_id": 9,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_en/sentence_builder.json",
-          "question_id": 9,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_en/sentence_builder.json",
-          "question_id": 10,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_en/sentence_builder.json",
-          "question_id": 10,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_en/sentence_builder.json",
-          "question_id": 11,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_en/sentence_builder.json",
-          "question_id": 11,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_en/sentence_builder.json",
-          "question_id": 12,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_en/sentence_builder.json",
-          "question_id": 12,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_en/sentence_builder.json",
-          "question_id": 13,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_en/sentence_builder.json",
-          "question_id": 13,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_en/sentence_builder.json",
-          "question_id": 15,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_en/sentence_builder.json",
-          "question_id": 15,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_en/sentence_builder.json",
-          "question_id": 16,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_en/sentence_builder.json",
-          "question_id": 16,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_en/sentence_builder.json",
-          "question_id": 17,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_en/sentence_builder.json",
-          "question_id": 20,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
         },
         {
           "severity": "warning",
@@ -311,41 +71,9 @@
           "severity": "warning",
           "finding_type": "accepted_policy_warning",
           "file": "apps/public/de_en/sentence_builder.json",
-          "question_id": 20,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_en/sentence_builder.json",
           "question_id": 21,
           "language": "de",
           "message": "accepted appears to introduce a likely tense/aspect shift vs text."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_en/sentence_builder.json",
-          "question_id": 21,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_en/sentence_builder.json",
-          "question_id": 21,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_en/sentence_builder.json",
-          "question_id": 22,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
         },
         {
           "severity": "warning",
@@ -359,25 +87,9 @@
           "severity": "warning",
           "finding_type": "accepted_policy_warning",
           "file": "apps/public/de_en/sentence_builder.json",
-          "question_id": 22,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_en/sentence_builder.json",
           "question_id": 23,
           "language": "de",
           "message": "accepted appears to introduce a likely tense/aspect shift vs text."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_en/sentence_builder.json",
-          "question_id": 23,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
         },
         {
           "severity": "warning",
@@ -391,73 +103,9 @@
           "severity": "warning",
           "finding_type": "accepted_policy_warning",
           "file": "apps/public/de_en/sentence_builder.json",
-          "question_id": 23,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_en/sentence_builder.json",
-          "question_id": 24,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_en/sentence_builder.json",
-          "question_id": 26,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_en/sentence_builder.json",
-          "question_id": 26,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_en/sentence_builder.json",
-          "question_id": 27,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_en/sentence_builder.json",
           "question_id": 27,
           "language": "en",
           "message": "accepted appears to introduce a likely tense/aspect shift vs text."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_en/sentence_builder.json",
-          "question_id": 27,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_en/sentence_builder.json",
-          "question_id": 27,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_en/sentence_builder.json",
-          "question_id": 28,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
         },
         {
           "severity": "warning",
@@ -472,54 +120,6 @@
           "finding_type": "accepted_policy_warning",
           "file": "apps/public/de_en/sentence_builder.json",
           "question_id": 29,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_en/sentence_builder.json",
-          "question_id": 29,
-          "language": "en",
-          "message": "accepted appears to introduce a likely tense/aspect shift vs text."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_en/sentence_builder.json",
-          "question_id": 29,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_en/sentence_builder.json",
-          "question_id": 31,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_en/sentence_builder.json",
-          "question_id": 31,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_en/sentence_builder.json",
-          "question_id": 33,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_en/sentence_builder.json",
-          "question_id": 33,
           "language": "en",
           "message": "accepted appears to introduce a likely tense/aspect shift vs text."
         },
@@ -529,23 +129,7 @@
           "file": "apps/public/de_en/sentence_builder.json",
           "question_id": 33,
           "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_en/sentence_builder.json",
-          "question_id": 34,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_en/sentence_builder.json",
-          "question_id": 36,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
+          "message": "accepted appears to introduce a likely tense/aspect shift vs text."
         },
         {
           "severity": "warning",
@@ -567,33 +151,9 @@
           "severity": "warning",
           "finding_type": "accepted_policy_warning",
           "file": "apps/public/de_en/sentence_builder.json",
-          "question_id": 37,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_en/sentence_builder.json",
-          "question_id": 38,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_en/sentence_builder.json",
           "question_id": 38,
           "language": "en",
           "message": "accepted appears to introduce a likely tense/aspect shift vs text."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_en/sentence_builder.json",
-          "question_id": 38,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
         },
         {
           "severity": "warning",
@@ -607,65 +167,9 @@
           "severity": "warning",
           "finding_type": "accepted_policy_warning",
           "file": "apps/public/de_en/sentence_builder.json",
-          "question_id": 40,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_en/sentence_builder.json",
-          "question_id": 40,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_en/sentence_builder.json",
-          "question_id": 41,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_en/sentence_builder.json",
-          "question_id": 41,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_en/sentence_builder.json",
-          "question_id": 42,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_en/sentence_builder.json",
           "question_id": 42,
           "language": "en",
           "message": "accepted appears to introduce a likely tense/aspect shift vs text."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_en/sentence_builder.json",
-          "question_id": 42,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_en/sentence_builder.json",
-          "question_id": 43,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
         },
         {
           "severity": "warning",
@@ -682,14 +186,6 @@
           "question_id": 43,
           "language": "en",
           "message": "accepted appears to introduce a likely tense/aspect shift vs text."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_en/sentence_builder.json",
-          "question_id": 43,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
         },
         {
           "severity": "warning",
@@ -703,73 +199,9 @@
           "severity": "warning",
           "finding_type": "accepted_policy_warning",
           "file": "apps/public/de_en/sentence_builder.json",
-          "question_id": 44,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_en/sentence_builder.json",
-          "question_id": 45,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_en/sentence_builder.json",
-          "question_id": 45,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_en/sentence_builder.json",
           "question_id": 46,
           "language": "de",
           "message": "accepted appears to introduce a likely tense/aspect shift vs text."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_en/sentence_builder.json",
-          "question_id": 46,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_en/sentence_builder.json",
-          "question_id": 46,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_en/sentence_builder.json",
-          "question_id": 47,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_en/sentence_builder.json",
-          "question_id": 49,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_en/sentence_builder.json",
-          "question_id": 50,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
         }
       ]
     },
@@ -781,249 +213,9 @@
           "severity": "warning",
           "finding_type": "accepted_policy_warning",
           "file": "apps/public/de_nl/sentence_builder.json",
-          "question_id": 1,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_nl/sentence_builder.json",
-          "question_id": 1,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_nl/sentence_builder.json",
-          "question_id": 2,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_nl/sentence_builder.json",
-          "question_id": 2,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_nl/sentence_builder.json",
-          "question_id": 3,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_nl/sentence_builder.json",
-          "question_id": 3,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_nl/sentence_builder.json",
-          "question_id": 4,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_nl/sentence_builder.json",
-          "question_id": 4,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_nl/sentence_builder.json",
-          "question_id": 7,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_nl/sentence_builder.json",
-          "question_id": 7,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_nl/sentence_builder.json",
           "question_id": 8,
           "language": "de",
           "message": "accepted appears to introduce a likely tense/aspect shift vs text."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_nl/sentence_builder.json",
-          "question_id": 8,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_nl/sentence_builder.json",
-          "question_id": 8,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_nl/sentence_builder.json",
-          "question_id": 9,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_nl/sentence_builder.json",
-          "question_id": 9,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_nl/sentence_builder.json",
-          "question_id": 10,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_nl/sentence_builder.json",
-          "question_id": 10,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_nl/sentence_builder.json",
-          "question_id": 11,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_nl/sentence_builder.json",
-          "question_id": 11,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_nl/sentence_builder.json",
-          "question_id": 12,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_nl/sentence_builder.json",
-          "question_id": 12,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_nl/sentence_builder.json",
-          "question_id": 13,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_nl/sentence_builder.json",
-          "question_id": 13,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_nl/sentence_builder.json",
-          "question_id": 14,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_nl/sentence_builder.json",
-          "question_id": 15,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_nl/sentence_builder.json",
-          "question_id": 15,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_nl/sentence_builder.json",
-          "question_id": 16,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_nl/sentence_builder.json",
-          "question_id": 16,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_nl/sentence_builder.json",
-          "question_id": 18,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_nl/sentence_builder.json",
-          "question_id": 20,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_nl/sentence_builder.json",
-          "question_id": 20,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
         },
         {
           "severity": "warning",
@@ -1037,49 +229,9 @@
           "severity": "warning",
           "finding_type": "accepted_policy_warning",
           "file": "apps/public/de_nl/sentence_builder.json",
-          "question_id": 21,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_nl/sentence_builder.json",
-          "question_id": 21,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_nl/sentence_builder.json",
-          "question_id": 22,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_nl/sentence_builder.json",
-          "question_id": 22,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_nl/sentence_builder.json",
           "question_id": 23,
           "language": "de",
           "message": "accepted appears to introduce a likely tense/aspect shift vs text."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_nl/sentence_builder.json",
-          "question_id": 23,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
         },
         {
           "severity": "warning",
@@ -1093,65 +245,9 @@
           "severity": "warning",
           "finding_type": "accepted_policy_warning",
           "file": "apps/public/de_nl/sentence_builder.json",
-          "question_id": 23,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_nl/sentence_builder.json",
-          "question_id": 24,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_nl/sentence_builder.json",
           "question_id": 24,
           "language": "nl",
           "message": "accepted appears to introduce a likely tense/aspect shift vs text."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_nl/sentence_builder.json",
-          "question_id": 24,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_nl/sentence_builder.json",
-          "question_id": 26,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_nl/sentence_builder.json",
-          "question_id": 27,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_nl/sentence_builder.json",
-          "question_id": 27,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_nl/sentence_builder.json",
-          "question_id": 28,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
         },
         {
           "severity": "warning",
@@ -1166,38 +262,6 @@
           "finding_type": "accepted_policy_warning",
           "file": "apps/public/de_nl/sentence_builder.json",
           "question_id": 29,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_nl/sentence_builder.json",
-          "question_id": 29,
-          "language": "nl",
-          "message": "accepted appears to introduce a likely tense/aspect shift vs text."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_nl/sentence_builder.json",
-          "question_id": 30,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_nl/sentence_builder.json",
-          "question_id": 31,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_nl/sentence_builder.json",
-          "question_id": 31,
           "language": "nl",
           "message": "accepted appears to introduce a likely tense/aspect shift vs text."
         },
@@ -1207,63 +271,7 @@
           "file": "apps/public/de_nl/sentence_builder.json",
           "question_id": 31,
           "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_nl/sentence_builder.json",
-          "question_id": 33,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_nl/sentence_builder.json",
-          "question_id": 34,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_nl/sentence_builder.json",
-          "question_id": 34,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_nl/sentence_builder.json",
-          "question_id": 36,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_nl/sentence_builder.json",
-          "question_id": 36,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_nl/sentence_builder.json",
-          "question_id": 38,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_nl/sentence_builder.json",
-          "question_id": 38,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
+          "message": "accepted appears to introduce a likely tense/aspect shift vs text."
         },
         {
           "severity": "warning",
@@ -1278,64 +286,8 @@
           "finding_type": "accepted_policy_warning",
           "file": "apps/public/de_nl/sentence_builder.json",
           "question_id": 40,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_nl/sentence_builder.json",
-          "question_id": 40,
           "language": "nl",
           "message": "accepted appears to introduce a likely tense/aspect shift vs text."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_nl/sentence_builder.json",
-          "question_id": 40,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_nl/sentence_builder.json",
-          "question_id": 41,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_nl/sentence_builder.json",
-          "question_id": 41,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_nl/sentence_builder.json",
-          "question_id": 42,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_nl/sentence_builder.json",
-          "question_id": 42,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_nl/sentence_builder.json",
-          "question_id": 43,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
         },
         {
           "severity": "warning",
@@ -1351,23 +303,7 @@
           "file": "apps/public/de_nl/sentence_builder.json",
           "question_id": 43,
           "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_nl/sentence_builder.json",
-          "question_id": 43,
-          "language": "nl",
           "message": "accepted appears to introduce a likely tense/aspect shift vs text."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_nl/sentence_builder.json",
-          "question_id": 43,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
         },
         {
           "severity": "warning",
@@ -1381,30 +317,6 @@
           "severity": "warning",
           "finding_type": "accepted_policy_warning",
           "file": "apps/public/de_nl/sentence_builder.json",
-          "question_id": 44,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_nl/sentence_builder.json",
-          "question_id": 45,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_nl/sentence_builder.json",
-          "question_id": 45,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_nl/sentence_builder.json",
           "question_id": 46,
           "language": "de",
           "message": "accepted appears to introduce a likely tense/aspect shift vs text."
@@ -1414,24 +326,8 @@
           "finding_type": "accepted_policy_warning",
           "file": "apps/public/de_nl/sentence_builder.json",
           "question_id": 46,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_nl/sentence_builder.json",
-          "question_id": 46,
           "language": "nl",
           "message": "accepted appears to introduce a likely tense/aspect shift vs text."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_nl/sentence_builder.json",
-          "question_id": 46,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
         },
         {
           "severity": "error",
@@ -1445,41 +341,9 @@
           "severity": "warning",
           "finding_type": "accepted_policy_warning",
           "file": "apps/public/de_nl/sentence_builder.json",
-          "question_id": 49,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_nl/sentence_builder.json",
-          "question_id": 49,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_nl/sentence_builder.json",
-          "question_id": 50,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_nl/sentence_builder.json",
           "question_id": 50,
           "language": "nl",
           "message": "accepted appears to introduce a likely tense/aspect shift vs text."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_nl/sentence_builder.json",
-          "question_id": 50,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
         }
       ]
     },
@@ -1491,78 +355,6 @@
           "severity": "warning",
           "finding_type": "accepted_policy_warning",
           "file": "apps/public/de_no/sentence_builder.json",
-          "question_id": 1,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_no/sentence_builder.json",
-          "question_id": 1,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_no/sentence_builder.json",
-          "question_id": 3,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_no/sentence_builder.json",
-          "question_id": 3,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_no/sentence_builder.json",
-          "question_id": 4,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_no/sentence_builder.json",
-          "question_id": 4,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_no/sentence_builder.json",
-          "question_id": 5,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_no/sentence_builder.json",
-          "question_id": 5,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_no/sentence_builder.json",
-          "question_id": 5,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_no/sentence_builder.json",
           "question_id": 7,
           "language": "de",
           "message": "accepted appears to introduce a likely tense/aspect shift vs text."
@@ -1572,56 +364,8 @@
           "finding_type": "accepted_policy_warning",
           "file": "apps/public/de_no/sentence_builder.json",
           "question_id": 7,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_no/sentence_builder.json",
-          "question_id": 7,
           "language": "no",
           "message": "accepted appears to introduce a likely tense/aspect shift vs text."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_no/sentence_builder.json",
-          "question_id": 7,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_no/sentence_builder.json",
-          "question_id": 8,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_no/sentence_builder.json",
-          "question_id": 8,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_no/sentence_builder.json",
-          "question_id": 8,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_no/sentence_builder.json",
-          "question_id": 9,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
         },
         {
           "severity": "warning",
@@ -1635,206 +379,6 @@
           "severity": "warning",
           "finding_type": "accepted_policy_warning",
           "file": "apps/public/de_no/sentence_builder.json",
-          "question_id": 9,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_no/sentence_builder.json",
-          "question_id": 10,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_no/sentence_builder.json",
-          "question_id": 10,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_no/sentence_builder.json",
-          "question_id": 11,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_no/sentence_builder.json",
-          "question_id": 11,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_no/sentence_builder.json",
-          "question_id": 11,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_no/sentence_builder.json",
-          "question_id": 12,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_no/sentence_builder.json",
-          "question_id": 12,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_no/sentence_builder.json",
-          "question_id": 13,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_no/sentence_builder.json",
-          "question_id": 13,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_no/sentence_builder.json",
-          "question_id": 14,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_no/sentence_builder.json",
-          "question_id": 14,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_no/sentence_builder.json",
-          "question_id": 14,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_no/sentence_builder.json",
-          "question_id": 15,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_no/sentence_builder.json",
-          "question_id": 15,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_no/sentence_builder.json",
-          "question_id": 16,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_no/sentence_builder.json",
-          "question_id": 16,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_no/sentence_builder.json",
-          "question_id": 17,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_no/sentence_builder.json",
-          "question_id": 17,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_no/sentence_builder.json",
-          "question_id": 18,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_no/sentence_builder.json",
-          "question_id": 18,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_no/sentence_builder.json",
-          "question_id": 19,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_no/sentence_builder.json",
-          "question_id": 19,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_no/sentence_builder.json",
-          "question_id": 20,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_no/sentence_builder.json",
-          "question_id": 20,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_no/sentence_builder.json",
           "question_id": 21,
           "language": "de",
           "message": "accepted appears to introduce a likely tense/aspect shift vs text."
@@ -1844,144 +388,8 @@
           "finding_type": "accepted_policy_warning",
           "file": "apps/public/de_no/sentence_builder.json",
           "question_id": 21,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_no/sentence_builder.json",
-          "question_id": 21,
           "language": "no",
           "message": "accepted appears to introduce a likely tense/aspect shift vs text."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_no/sentence_builder.json",
-          "question_id": 21,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_no/sentence_builder.json",
-          "question_id": 22,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_no/sentence_builder.json",
-          "question_id": 22,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_no/sentence_builder.json",
-          "question_id": 23,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_no/sentence_builder.json",
-          "question_id": 23,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_no/sentence_builder.json",
-          "question_id": 24,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_no/sentence_builder.json",
-          "question_id": 24,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_no/sentence_builder.json",
-          "question_id": 25,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_no/sentence_builder.json",
-          "question_id": 25,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_no/sentence_builder.json",
-          "question_id": 26,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_no/sentence_builder.json",
-          "question_id": 26,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_no/sentence_builder.json",
-          "question_id": 27,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_no/sentence_builder.json",
-          "question_id": 27,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_no/sentence_builder.json",
-          "question_id": 27,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_no/sentence_builder.json",
-          "question_id": 28,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_no/sentence_builder.json",
-          "question_id": 28,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
         },
         {
           "severity": "warning",
@@ -1996,96 +404,8 @@
           "finding_type": "accepted_policy_warning",
           "file": "apps/public/de_no/sentence_builder.json",
           "question_id": 29,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_no/sentence_builder.json",
-          "question_id": 29,
           "language": "no",
           "message": "accepted appears to introduce a likely tense/aspect shift vs text."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_no/sentence_builder.json",
-          "question_id": 29,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_no/sentence_builder.json",
-          "question_id": 30,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_no/sentence_builder.json",
-          "question_id": 31,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_no/sentence_builder.json",
-          "question_id": 31,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_no/sentence_builder.json",
-          "question_id": 33,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_no/sentence_builder.json",
-          "question_id": 34,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_no/sentence_builder.json",
-          "question_id": 34,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_no/sentence_builder.json",
-          "question_id": 35,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_no/sentence_builder.json",
-          "question_id": 36,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_no/sentence_builder.json",
-          "question_id": 38,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
         },
         {
           "severity": "warning",
@@ -2099,14 +419,6 @@
           "severity": "warning",
           "finding_type": "accepted_policy_warning",
           "file": "apps/public/de_no/sentence_builder.json",
-          "question_id": 39,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_no/sentence_builder.json",
           "question_id": 40,
           "language": "de",
           "message": "accepted appears to introduce a likely tense/aspect shift vs text."
@@ -2115,38 +427,6 @@
           "severity": "warning",
           "finding_type": "accepted_policy_warning",
           "file": "apps/public/de_no/sentence_builder.json",
-          "question_id": 40,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_no/sentence_builder.json",
-          "question_id": 41,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_no/sentence_builder.json",
-          "question_id": 41,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_no/sentence_builder.json",
-          "question_id": 42,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_no/sentence_builder.json",
           "question_id": 42,
           "language": "no",
           "message": "accepted appears to introduce a likely tense/aspect shift vs text."
@@ -2155,22 +435,6 @@
           "severity": "warning",
           "finding_type": "accepted_policy_warning",
           "file": "apps/public/de_no/sentence_builder.json",
-          "question_id": 42,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_no/sentence_builder.json",
-          "question_id": 43,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_no/sentence_builder.json",
           "question_id": 43,
           "language": "de",
           "message": "accepted appears to introduce a likely tense/aspect shift vs text."
@@ -2187,105 +451,9 @@
           "severity": "warning",
           "finding_type": "accepted_policy_warning",
           "file": "apps/public/de_no/sentence_builder.json",
-          "question_id": 43,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_no/sentence_builder.json",
-          "question_id": 45,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_no/sentence_builder.json",
-          "question_id": 45,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_no/sentence_builder.json",
-          "question_id": 45,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_no/sentence_builder.json",
           "question_id": 46,
           "language": "de",
           "message": "accepted appears to introduce a likely tense/aspect shift vs text."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_no/sentence_builder.json",
-          "question_id": 46,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_no/sentence_builder.json",
-          "question_id": 46,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_no/sentence_builder.json",
-          "question_id": 46,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_no/sentence_builder.json",
-          "question_id": 47,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_no/sentence_builder.json",
-          "question_id": 48,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_no/sentence_builder.json",
-          "question_id": 49,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_no/sentence_builder.json",
-          "question_id": 49,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/de_no/sentence_builder.json",
-          "question_id": 50,
-          "language": "de",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
         }
       ]
     },
@@ -2297,41 +465,9 @@
           "severity": "warning",
           "finding_type": "accepted_policy_warning",
           "file": "apps/public/en_nl/sentence_builder.json",
-          "question_id": 1,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_nl/sentence_builder.json",
-          "question_id": 1,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_nl/sentence_builder.json",
           "question_id": 2,
           "language": "en",
           "message": "accepted appears to introduce a likely tense/aspect shift vs text."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_nl/sentence_builder.json",
-          "question_id": 2,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_nl/sentence_builder.json",
-          "question_id": 2,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
         },
         {
           "severity": "warning",
@@ -2345,22 +481,6 @@
           "severity": "warning",
           "finding_type": "accepted_policy_warning",
           "file": "apps/public/en_nl/sentence_builder.json",
-          "question_id": 3,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_nl/sentence_builder.json",
-          "question_id": 3,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_nl/sentence_builder.json",
           "question_id": 4,
           "language": "en",
           "message": "accepted appears to introduce a likely tense/aspect shift vs text."
@@ -2369,209 +489,9 @@
           "severity": "warning",
           "finding_type": "accepted_policy_warning",
           "file": "apps/public/en_nl/sentence_builder.json",
-          "question_id": 4,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_nl/sentence_builder.json",
-          "question_id": 4,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_nl/sentence_builder.json",
-          "question_id": 4,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_nl/sentence_builder.json",
-          "question_id": 6,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_nl/sentence_builder.json",
-          "question_id": 7,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_nl/sentence_builder.json",
-          "question_id": 7,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_nl/sentence_builder.json",
           "question_id": 8,
           "language": "en",
           "message": "accepted appears to introduce a likely tense/aspect shift vs text."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_nl/sentence_builder.json",
-          "question_id": 8,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_nl/sentence_builder.json",
-          "question_id": 8,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_nl/sentence_builder.json",
-          "question_id": 9,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_nl/sentence_builder.json",
-          "question_id": 9,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_nl/sentence_builder.json",
-          "question_id": 10,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_nl/sentence_builder.json",
-          "question_id": 10,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_nl/sentence_builder.json",
-          "question_id": 11,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_nl/sentence_builder.json",
-          "question_id": 11,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_nl/sentence_builder.json",
-          "question_id": 12,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_nl/sentence_builder.json",
-          "question_id": 12,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_nl/sentence_builder.json",
-          "question_id": 13,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_nl/sentence_builder.json",
-          "question_id": 13,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_nl/sentence_builder.json",
-          "question_id": 14,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_nl/sentence_builder.json",
-          "question_id": 15,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_nl/sentence_builder.json",
-          "question_id": 15,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_nl/sentence_builder.json",
-          "question_id": 16,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_nl/sentence_builder.json",
-          "question_id": 16,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_nl/sentence_builder.json",
-          "question_id": 17,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_nl/sentence_builder.json",
-          "question_id": 18,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
         },
         {
           "severity": "warning",
@@ -2593,57 +513,9 @@
           "severity": "warning",
           "finding_type": "accepted_policy_warning",
           "file": "apps/public/en_nl/sentence_builder.json",
-          "question_id": 20,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_nl/sentence_builder.json",
-          "question_id": 20,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_nl/sentence_builder.json",
-          "question_id": 21,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_nl/sentence_builder.json",
-          "question_id": 21,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_nl/sentence_builder.json",
           "question_id": 22,
           "language": "en",
           "message": "accepted appears to introduce a likely tense/aspect shift vs text."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_nl/sentence_builder.json",
-          "question_id": 22,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_nl/sentence_builder.json",
-          "question_id": 22,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
         },
         {
           "severity": "warning",
@@ -2658,24 +530,8 @@
           "finding_type": "accepted_policy_warning",
           "file": "apps/public/en_nl/sentence_builder.json",
           "question_id": 23,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_nl/sentence_builder.json",
-          "question_id": 23,
           "language": "nl",
           "message": "accepted appears to introduce a likely tense/aspect shift vs text."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_nl/sentence_builder.json",
-          "question_id": 23,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
         },
         {
           "severity": "warning",
@@ -2689,49 +545,9 @@
           "severity": "warning",
           "finding_type": "accepted_policy_warning",
           "file": "apps/public/en_nl/sentence_builder.json",
-          "question_id": 24,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_nl/sentence_builder.json",
-          "question_id": 26,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_nl/sentence_builder.json",
           "question_id": 27,
           "language": "en",
           "message": "accepted appears to introduce a likely tense/aspect shift vs text."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_nl/sentence_builder.json",
-          "question_id": 27,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_nl/sentence_builder.json",
-          "question_id": 27,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_nl/sentence_builder.json",
-          "question_id": 27,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
         },
         {
           "severity": "warning",
@@ -2746,38 +562,6 @@
           "finding_type": "accepted_policy_warning",
           "file": "apps/public/en_nl/sentence_builder.json",
           "question_id": 29,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_nl/sentence_builder.json",
-          "question_id": 29,
-          "language": "nl",
-          "message": "accepted appears to introduce a likely tense/aspect shift vs text."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_nl/sentence_builder.json",
-          "question_id": 30,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_nl/sentence_builder.json",
-          "question_id": 31,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_nl/sentence_builder.json",
-          "question_id": 31,
           "language": "nl",
           "message": "accepted appears to introduce a likely tense/aspect shift vs text."
         },
@@ -2787,7 +571,7 @@
           "file": "apps/public/en_nl/sentence_builder.json",
           "question_id": 31,
           "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
+          "message": "accepted appears to introduce a likely tense/aspect shift vs text."
         },
         {
           "severity": "warning",
@@ -2796,30 +580,6 @@
           "question_id": 33,
           "language": "en",
           "message": "accepted appears to introduce a likely tense/aspect shift vs text."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_nl/sentence_builder.json",
-          "question_id": 33,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_nl/sentence_builder.json",
-          "question_id": 34,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_nl/sentence_builder.json",
-          "question_id": 36,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
         },
         {
           "severity": "warning",
@@ -2841,41 +601,9 @@
           "severity": "warning",
           "finding_type": "accepted_policy_warning",
           "file": "apps/public/en_nl/sentence_builder.json",
-          "question_id": 37,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_nl/sentence_builder.json",
           "question_id": 38,
           "language": "en",
           "message": "accepted appears to introduce a likely tense/aspect shift vs text."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_nl/sentence_builder.json",
-          "question_id": 38,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_nl/sentence_builder.json",
-          "question_id": 38,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_nl/sentence_builder.json",
-          "question_id": 40,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
         },
         {
           "severity": "warning",
@@ -2889,30 +617,6 @@
           "severity": "warning",
           "finding_type": "accepted_policy_warning",
           "file": "apps/public/en_nl/sentence_builder.json",
-          "question_id": 40,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_nl/sentence_builder.json",
-          "question_id": 41,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_nl/sentence_builder.json",
-          "question_id": 41,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_nl/sentence_builder.json",
           "question_id": 42,
           "language": "en",
           "message": "accepted appears to introduce a likely tense/aspect shift vs text."
@@ -2921,22 +625,6 @@
           "severity": "warning",
           "finding_type": "accepted_policy_warning",
           "file": "apps/public/en_nl/sentence_builder.json",
-          "question_id": 42,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_nl/sentence_builder.json",
-          "question_id": 42,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_nl/sentence_builder.json",
           "question_id": 43,
           "language": "en",
           "message": "accepted appears to introduce a likely tense/aspect shift vs text."
@@ -2946,32 +634,8 @@
           "finding_type": "accepted_policy_warning",
           "file": "apps/public/en_nl/sentence_builder.json",
           "question_id": 43,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_nl/sentence_builder.json",
-          "question_id": 43,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_nl/sentence_builder.json",
-          "question_id": 43,
           "language": "nl",
           "message": "accepted appears to introduce a likely tense/aspect shift vs text."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_nl/sentence_builder.json",
-          "question_id": 43,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
         },
         {
           "severity": "warning",
@@ -2986,54 +650,6 @@
           "finding_type": "accepted_policy_warning",
           "file": "apps/public/en_nl/sentence_builder.json",
           "question_id": 44,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_nl/sentence_builder.json",
-          "question_id": 44,
-          "language": "nl",
-          "message": "accepted appears to introduce a likely tense/aspect shift vs text."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_nl/sentence_builder.json",
-          "question_id": 44,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_nl/sentence_builder.json",
-          "question_id": 45,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_nl/sentence_builder.json",
-          "question_id": 45,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_nl/sentence_builder.json",
-          "question_id": 46,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_nl/sentence_builder.json",
-          "question_id": 46,
           "language": "nl",
           "message": "accepted appears to introduce a likely tense/aspect shift vs text."
         },
@@ -3043,15 +659,7 @@
           "file": "apps/public/en_nl/sentence_builder.json",
           "question_id": 46,
           "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_nl/sentence_builder.json",
-          "question_id": 47,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
+          "message": "accepted appears to introduce a likely tense/aspect shift vs text."
         },
         {
           "severity": "error",
@@ -3065,25 +673,9 @@
           "severity": "warning",
           "finding_type": "accepted_policy_warning",
           "file": "apps/public/en_nl/sentence_builder.json",
-          "question_id": 49,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_nl/sentence_builder.json",
           "question_id": 50,
           "language": "nl",
           "message": "accepted appears to introduce a likely tense/aspect shift vs text."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_nl/sentence_builder.json",
-          "question_id": 50,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
         }
       ]
     },
@@ -3095,49 +687,9 @@
           "severity": "warning",
           "finding_type": "accepted_policy_warning",
           "file": "apps/public/en_no/sentence_builder.json",
-          "question_id": 1,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_no/sentence_builder.json",
-          "question_id": 1,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_no/sentence_builder.json",
           "question_id": 2,
           "language": "en",
           "message": "accepted appears to introduce a likely tense/aspect shift vs text."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_no/sentence_builder.json",
-          "question_id": 2,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_no/sentence_builder.json",
-          "question_id": 2,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_no/sentence_builder.json",
-          "question_id": 2,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
         },
         {
           "severity": "warning",
@@ -3151,65 +703,9 @@
           "severity": "warning",
           "finding_type": "accepted_policy_warning",
           "file": "apps/public/en_no/sentence_builder.json",
-          "question_id": 3,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_no/sentence_builder.json",
           "question_id": 4,
           "language": "en",
           "message": "accepted appears to introduce a likely tense/aspect shift vs text."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_no/sentence_builder.json",
-          "question_id": 4,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_no/sentence_builder.json",
-          "question_id": 4,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_no/sentence_builder.json",
-          "question_id": 4,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_no/sentence_builder.json",
-          "question_id": 5,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_no/sentence_builder.json",
-          "question_id": 6,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_no/sentence_builder.json",
-          "question_id": 7,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
         },
         {
           "severity": "warning",
@@ -3223,14 +719,6 @@
           "severity": "warning",
           "finding_type": "accepted_policy_warning",
           "file": "apps/public/en_no/sentence_builder.json",
-          "question_id": 7,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_no/sentence_builder.json",
           "question_id": 8,
           "language": "en",
           "message": "accepted appears to introduce a likely tense/aspect shift vs text."
@@ -3239,161 +727,9 @@
           "severity": "warning",
           "finding_type": "accepted_policy_warning",
           "file": "apps/public/en_no/sentence_builder.json",
-          "question_id": 8,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_no/sentence_builder.json",
-          "question_id": 8,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_no/sentence_builder.json",
-          "question_id": 9,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_no/sentence_builder.json",
-          "question_id": 9,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_no/sentence_builder.json",
-          "question_id": 9,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_no/sentence_builder.json",
-          "question_id": 10,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_no/sentence_builder.json",
-          "question_id": 10,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_no/sentence_builder.json",
-          "question_id": 10,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_no/sentence_builder.json",
-          "question_id": 11,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_no/sentence_builder.json",
-          "question_id": 11,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_no/sentence_builder.json",
-          "question_id": 12,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_no/sentence_builder.json",
           "question_id": 12,
           "language": "no",
           "message": "accepted appears to introduce a likely tense/aspect shift vs text."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_no/sentence_builder.json",
-          "question_id": 12,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_no/sentence_builder.json",
-          "question_id": 13,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_no/sentence_builder.json",
-          "question_id": 13,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_no/sentence_builder.json",
-          "question_id": 15,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_no/sentence_builder.json",
-          "question_id": 16,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_no/sentence_builder.json",
-          "question_id": 16,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_no/sentence_builder.json",
-          "question_id": 17,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_no/sentence_builder.json",
-          "question_id": 19,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
         },
         {
           "severity": "warning",
@@ -3415,30 +751,6 @@
           "severity": "warning",
           "finding_type": "accepted_policy_warning",
           "file": "apps/public/en_no/sentence_builder.json",
-          "question_id": 20,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_no/sentence_builder.json",
-          "question_id": 20,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_no/sentence_builder.json",
-          "question_id": 21,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_no/sentence_builder.json",
           "question_id": 22,
           "language": "en",
           "message": "accepted appears to introduce a likely tense/aspect shift vs text."
@@ -3447,14 +759,6 @@
           "severity": "warning",
           "finding_type": "accepted_policy_warning",
           "file": "apps/public/en_no/sentence_builder.json",
-          "question_id": 22,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_no/sentence_builder.json",
           "question_id": 23,
           "language": "en",
           "message": "accepted appears to introduce a likely tense/aspect shift vs text."
@@ -3464,24 +768,8 @@
           "finding_type": "accepted_policy_warning",
           "file": "apps/public/en_no/sentence_builder.json",
           "question_id": 23,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_no/sentence_builder.json",
-          "question_id": 23,
           "language": "no",
           "message": "accepted appears to introduce a likely tense/aspect shift vs text."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_no/sentence_builder.json",
-          "question_id": 23,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
         },
         {
           "severity": "warning",
@@ -3495,73 +783,9 @@
           "severity": "warning",
           "finding_type": "accepted_policy_warning",
           "file": "apps/public/en_no/sentence_builder.json",
-          "question_id": 24,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_no/sentence_builder.json",
-          "question_id": 26,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_no/sentence_builder.json",
-          "question_id": 26,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_no/sentence_builder.json",
           "question_id": 27,
           "language": "en",
           "message": "accepted appears to introduce a likely tense/aspect shift vs text."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_no/sentence_builder.json",
-          "question_id": 27,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_no/sentence_builder.json",
-          "question_id": 27,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_no/sentence_builder.json",
-          "question_id": 27,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_no/sentence_builder.json",
-          "question_id": 27,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_no/sentence_builder.json",
-          "question_id": 28,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
         },
         {
           "severity": "warning",
@@ -3576,55 +800,7 @@
           "finding_type": "accepted_policy_warning",
           "file": "apps/public/en_no/sentence_builder.json",
           "question_id": 29,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_no/sentence_builder.json",
-          "question_id": 29,
           "language": "no",
-          "message": "accepted appears to introduce a likely tense/aspect shift vs text."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_no/sentence_builder.json",
-          "question_id": 29,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_no/sentence_builder.json",
-          "question_id": 30,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_no/sentence_builder.json",
-          "question_id": 31,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_no/sentence_builder.json",
-          "question_id": 31,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_no/sentence_builder.json",
-          "question_id": 33,
-          "language": "en",
           "message": "accepted appears to introduce a likely tense/aspect shift vs text."
         },
         {
@@ -3633,23 +809,7 @@
           "file": "apps/public/en_no/sentence_builder.json",
           "question_id": 33,
           "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_no/sentence_builder.json",
-          "question_id": 34,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_no/sentence_builder.json",
-          "question_id": 35,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
+          "message": "accepted appears to introduce a likely tense/aspect shift vs text."
         },
         {
           "severity": "warning",
@@ -3671,25 +831,9 @@
           "severity": "warning",
           "finding_type": "accepted_policy_warning",
           "file": "apps/public/en_no/sentence_builder.json",
-          "question_id": 37,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_no/sentence_builder.json",
           "question_id": 38,
           "language": "en",
           "message": "accepted appears to introduce a likely tense/aspect shift vs text."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_no/sentence_builder.json",
-          "question_id": 38,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
         },
         {
           "severity": "warning",
@@ -3703,38 +847,6 @@
           "severity": "warning",
           "finding_type": "accepted_policy_warning",
           "file": "apps/public/en_no/sentence_builder.json",
-          "question_id": 39,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_no/sentence_builder.json",
-          "question_id": 40,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_no/sentence_builder.json",
-          "question_id": 41,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_no/sentence_builder.json",
-          "question_id": 41,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_no/sentence_builder.json",
           "question_id": 42,
           "language": "en",
           "message": "accepted appears to introduce a likely tense/aspect shift vs text."
@@ -3744,24 +856,8 @@
           "finding_type": "accepted_policy_warning",
           "file": "apps/public/en_no/sentence_builder.json",
           "question_id": 42,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_no/sentence_builder.json",
-          "question_id": 42,
           "language": "no",
           "message": "accepted appears to introduce a likely tense/aspect shift vs text."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_no/sentence_builder.json",
-          "question_id": 42,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
         },
         {
           "severity": "warning",
@@ -3776,24 +872,8 @@
           "finding_type": "accepted_policy_warning",
           "file": "apps/public/en_no/sentence_builder.json",
           "question_id": 43,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_no/sentence_builder.json",
-          "question_id": 43,
           "language": "no",
           "message": "accepted appears to introduce a likely tense/aspect shift vs text."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_no/sentence_builder.json",
-          "question_id": 43,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
         },
         {
           "severity": "warning",
@@ -3802,94 +882,6 @@
           "question_id": 44,
           "language": "en",
           "message": "accepted appears to introduce a likely tense/aspect shift vs text."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_no/sentence_builder.json",
-          "question_id": 44,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_no/sentence_builder.json",
-          "question_id": 45,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_no/sentence_builder.json",
-          "question_id": 45,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_no/sentence_builder.json",
-          "question_id": 45,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_no/sentence_builder.json",
-          "question_id": 46,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_no/sentence_builder.json",
-          "question_id": 46,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_no/sentence_builder.json",
-          "question_id": 46,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_no/sentence_builder.json",
-          "question_id": 47,
-          "language": "en",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_no/sentence_builder.json",
-          "question_id": 47,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_no/sentence_builder.json",
-          "question_id": 48,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/en_no/sentence_builder.json",
-          "question_id": 49,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
         }
       ]
     },
@@ -3901,169 +893,9 @@
           "severity": "warning",
           "finding_type": "accepted_policy_warning",
           "file": "apps/public/nl_no/sentence_builder.json",
-          "question_id": 1,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/nl_no/sentence_builder.json",
-          "question_id": 1,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/nl_no/sentence_builder.json",
-          "question_id": 2,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/nl_no/sentence_builder.json",
-          "question_id": 2,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/nl_no/sentence_builder.json",
-          "question_id": 3,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/nl_no/sentence_builder.json",
-          "question_id": 3,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/nl_no/sentence_builder.json",
-          "question_id": 4,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/nl_no/sentence_builder.json",
-          "question_id": 4,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/nl_no/sentence_builder.json",
-          "question_id": 6,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/nl_no/sentence_builder.json",
-          "question_id": 7,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/nl_no/sentence_builder.json",
           "question_id": 7,
           "language": "no",
           "message": "accepted appears to introduce a likely tense/aspect shift vs text."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/nl_no/sentence_builder.json",
-          "question_id": 7,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/nl_no/sentence_builder.json",
-          "question_id": 8,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/nl_no/sentence_builder.json",
-          "question_id": 8,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/nl_no/sentence_builder.json",
-          "question_id": 9,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/nl_no/sentence_builder.json",
-          "question_id": 9,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/nl_no/sentence_builder.json",
-          "question_id": 10,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/nl_no/sentence_builder.json",
-          "question_id": 10,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/nl_no/sentence_builder.json",
-          "question_id": 11,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/nl_no/sentence_builder.json",
-          "question_id": 11,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/nl_no/sentence_builder.json",
-          "question_id": 12,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
         },
         {
           "severity": "warning",
@@ -4077,134 +909,6 @@
           "severity": "warning",
           "finding_type": "accepted_policy_warning",
           "file": "apps/public/nl_no/sentence_builder.json",
-          "question_id": 12,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/nl_no/sentence_builder.json",
-          "question_id": 13,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/nl_no/sentence_builder.json",
-          "question_id": 13,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/nl_no/sentence_builder.json",
-          "question_id": 14,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/nl_no/sentence_builder.json",
-          "question_id": 14,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/nl_no/sentence_builder.json",
-          "question_id": 15,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/nl_no/sentence_builder.json",
-          "question_id": 15,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/nl_no/sentence_builder.json",
-          "question_id": 16,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/nl_no/sentence_builder.json",
-          "question_id": 16,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/nl_no/sentence_builder.json",
-          "question_id": 16,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/nl_no/sentence_builder.json",
-          "question_id": 17,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/nl_no/sentence_builder.json",
-          "question_id": 18,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/nl_no/sentence_builder.json",
-          "question_id": 19,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/nl_no/sentence_builder.json",
-          "question_id": 20,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/nl_no/sentence_builder.json",
-          "question_id": 20,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/nl_no/sentence_builder.json",
-          "question_id": 21,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/nl_no/sentence_builder.json",
           "question_id": 21,
           "language": "no",
           "message": "accepted appears to introduce a likely tense/aspect shift vs text."
@@ -4213,30 +917,6 @@
           "severity": "warning",
           "finding_type": "accepted_policy_warning",
           "file": "apps/public/nl_no/sentence_builder.json",
-          "question_id": 21,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/nl_no/sentence_builder.json",
-          "question_id": 22,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/nl_no/sentence_builder.json",
-          "question_id": 22,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/nl_no/sentence_builder.json",
           "question_id": 23,
           "language": "nl",
           "message": "accepted appears to introduce a likely tense/aspect shift vs text."
@@ -4246,39 +926,7 @@
           "finding_type": "accepted_policy_warning",
           "file": "apps/public/nl_no/sentence_builder.json",
           "question_id": 23,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/nl_no/sentence_builder.json",
-          "question_id": 23,
           "language": "no",
-          "message": "accepted appears to introduce a likely tense/aspect shift vs text."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/nl_no/sentence_builder.json",
-          "question_id": 23,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/nl_no/sentence_builder.json",
-          "question_id": 23,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/nl_no/sentence_builder.json",
-          "question_id": 24,
-          "language": "nl",
           "message": "accepted appears to introduce a likely tense/aspect shift vs text."
         },
         {
@@ -4287,7 +935,7 @@
           "file": "apps/public/nl_no/sentence_builder.json",
           "question_id": 24,
           "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
+          "message": "accepted appears to introduce a likely tense/aspect shift vs text."
         },
         {
           "severity": "warning",
@@ -4303,55 +951,7 @@
           "file": "apps/public/nl_no/sentence_builder.json",
           "question_id": 24,
           "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/nl_no/sentence_builder.json",
-          "question_id": 24,
-          "language": "no",
           "message": "accepted appears to introduce a likely tense/aspect shift vs text."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/nl_no/sentence_builder.json",
-          "question_id": 24,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/nl_no/sentence_builder.json",
-          "question_id": 26,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/nl_no/sentence_builder.json",
-          "question_id": 27,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/nl_no/sentence_builder.json",
-          "question_id": 27,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/nl_no/sentence_builder.json",
-          "question_id": 28,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
         },
         {
           "severity": "warning",
@@ -4373,49 +973,9 @@
           "severity": "warning",
           "finding_type": "accepted_policy_warning",
           "file": "apps/public/nl_no/sentence_builder.json",
-          "question_id": 29,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/nl_no/sentence_builder.json",
-          "question_id": 30,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/nl_no/sentence_builder.json",
-          "question_id": 30,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/nl_no/sentence_builder.json",
           "question_id": 31,
           "language": "nl",
           "message": "accepted appears to introduce a likely tense/aspect shift vs text."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/nl_no/sentence_builder.json",
-          "question_id": 31,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/nl_no/sentence_builder.json",
-          "question_id": 31,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
         },
         {
           "severity": "warning",
@@ -4429,89 +989,9 @@
           "severity": "warning",
           "finding_type": "accepted_policy_warning",
           "file": "apps/public/nl_no/sentence_builder.json",
-          "question_id": 32,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/nl_no/sentence_builder.json",
-          "question_id": 33,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/nl_no/sentence_builder.json",
-          "question_id": 34,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/nl_no/sentence_builder.json",
-          "question_id": 34,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/nl_no/sentence_builder.json",
-          "question_id": 35,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/nl_no/sentence_builder.json",
-          "question_id": 36,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/nl_no/sentence_builder.json",
-          "question_id": 36,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/nl_no/sentence_builder.json",
           "question_id": 37,
           "language": "no",
           "message": "accepted appears to introduce a likely tense/aspect shift vs text."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/nl_no/sentence_builder.json",
-          "question_id": 37,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/nl_no/sentence_builder.json",
-          "question_id": 38,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/nl_no/sentence_builder.json",
-          "question_id": 38,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
         },
         {
           "severity": "warning",
@@ -4525,57 +1005,9 @@
           "severity": "warning",
           "finding_type": "accepted_policy_warning",
           "file": "apps/public/nl_no/sentence_builder.json",
-          "question_id": 39,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/nl_no/sentence_builder.json",
           "question_id": 40,
           "language": "nl",
           "message": "accepted appears to introduce a likely tense/aspect shift vs text."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/nl_no/sentence_builder.json",
-          "question_id": 40,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/nl_no/sentence_builder.json",
-          "question_id": 40,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/nl_no/sentence_builder.json",
-          "question_id": 41,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/nl_no/sentence_builder.json",
-          "question_id": 41,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/nl_no/sentence_builder.json",
-          "question_id": 42,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
         },
         {
           "severity": "warning",
@@ -4589,22 +1021,6 @@
           "severity": "warning",
           "finding_type": "accepted_policy_warning",
           "file": "apps/public/nl_no/sentence_builder.json",
-          "question_id": 42,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/nl_no/sentence_builder.json",
-          "question_id": 43,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/nl_no/sentence_builder.json",
           "question_id": 43,
           "language": "nl",
           "message": "accepted appears to introduce a likely tense/aspect shift vs text."
@@ -4614,31 +1030,7 @@
           "finding_type": "accepted_policy_warning",
           "file": "apps/public/nl_no/sentence_builder.json",
           "question_id": 43,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/nl_no/sentence_builder.json",
-          "question_id": 43,
           "language": "no",
-          "message": "accepted appears to introduce a likely tense/aspect shift vs text."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/nl_no/sentence_builder.json",
-          "question_id": 43,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/nl_no/sentence_builder.json",
-          "question_id": 44,
-          "language": "nl",
           "message": "accepted appears to introduce a likely tense/aspect shift vs text."
         },
         {
@@ -4647,46 +1039,6 @@
           "file": "apps/public/nl_no/sentence_builder.json",
           "question_id": 44,
           "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/nl_no/sentence_builder.json",
-          "question_id": 44,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/nl_no/sentence_builder.json",
-          "question_id": 45,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/nl_no/sentence_builder.json",
-          "question_id": 45,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/nl_no/sentence_builder.json",
-          "question_id": 45,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/nl_no/sentence_builder.json",
-          "question_id": 46,
-          "language": "nl",
           "message": "accepted appears to introduce a likely tense/aspect shift vs text."
         },
         {
@@ -4695,23 +1047,7 @@
           "file": "apps/public/nl_no/sentence_builder.json",
           "question_id": 46,
           "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/nl_no/sentence_builder.json",
-          "question_id": 46,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/nl_no/sentence_builder.json",
-          "question_id": 46,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
+          "message": "accepted appears to introduce a likely tense/aspect shift vs text."
         },
         {
           "severity": "error",
@@ -4725,49 +1061,9 @@
           "severity": "warning",
           "finding_type": "accepted_policy_warning",
           "file": "apps/public/nl_no/sentence_builder.json",
-          "question_id": 47,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/nl_no/sentence_builder.json",
-          "question_id": 48,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/nl_no/sentence_builder.json",
-          "question_id": 49,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/nl_no/sentence_builder.json",
-          "question_id": 49,
-          "language": "no",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/nl_no/sentence_builder.json",
           "question_id": 50,
           "language": "nl",
           "message": "accepted appears to introduce a likely tense/aspect shift vs text."
-        },
-        {
-          "severity": "warning",
-          "finding_type": "accepted_policy_warning",
-          "file": "apps/public/nl_no/sentence_builder.json",
-          "question_id": 50,
-          "language": "nl",
-          "message": "accepted appears to introduce lexical substitution rather than pure word-order change."
         }
       ]
     }

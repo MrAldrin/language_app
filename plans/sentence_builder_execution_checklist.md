@@ -39,7 +39,7 @@ Use this as the live tracker while we execute `plans/sentence_builder_dataset_au
   - Likely tense/aspect shifts.
   - Likely lexical/synonym alternates.
 
-- [ ] 8. Re-run reports and finalize audit tool (v2)
+- [x] 8. Re-run reports and finalize audit tool (v2)
   - Confirm stable output and practical severity levels.
 
 - [ ] 9. Create cleanup backlog from report
@@ -60,10 +60,14 @@ Use this as the live tracker while we execute `plans/sentence_builder_dataset_au
 - [ ] 13. Final verification
   - Re-run audit and confirm Definition of Done criteria.
 
+- [ ] 14. Follow-up: redesign lexical-substitution heuristic
+  - Reduce false positives while still catching true synonym/lexical swaps.
+  - Re-enable only after validation on a representative sample.
+
 ## Live Progress Log
 
 - Status: `In progress`
-- Current step: `8`
+- Current step: `9`
 - Notes:
   - Step 1 complete: detected 6 sentence-builder files.
   - Step 1 complete: each file currently has 50 questions (300 total).
@@ -78,3 +82,7 @@ Use this as the live tracker while we execute `plans/sentence_builder_dataset_au
   - Step 6 complete: confirmed token-pool findings are true positives (apostrophe token issue).
   - Step 7 complete: added heuristic warnings (contraction variants, likely tense/aspect shifts, likely lexical substitutions).
   - Current heuristic output is very noisy: 588 warnings (463 lexical-substitution, 119 tense/aspect, 6 contraction).
+  - Step 8 calibration in progress: lexical-substitution warnings disabled temporarily due to high false-positive rate.
+  - Follow-up captured as Step 14 to redesign and re-enable lexical-substitution heuristic later.
+  - Step 8 complete: warnings reduced from 588 to 125 after disabling lexical heuristic.
+  - Current warning mix is focused: 119 tense/aspect + 6 contraction/non-contraction.

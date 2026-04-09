@@ -455,20 +455,8 @@ def validate_question(
                                     ),
                                 )
                             )
-                        if likely_lexical_swap(text, item):
-                            findings.append(
-                                Finding(
-                                    severity="warning",
-                                    finding_type="accepted_policy_warning",
-                                    file=str(file_path),
-                                    question_id=question_id,
-                                    language=lang,
-                                    message=(
-                                        "accepted appears to introduce lexical substitution "
-                                        "rather than pure word-order change."
-                                    ),
-                                )
-                            )
+                        # NOTE: lexical-swap heuristic intentionally disabled for now.
+                        # It currently over-flags and will be redesigned in a later phase.
 
         if isinstance(distractors, list):
             seen: set[str] = set()
