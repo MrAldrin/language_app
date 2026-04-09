@@ -110,13 +110,23 @@
   :root {
     --la-space-card-margin: 0;
     --la-space-card-padding: 0.65rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .app-title {
+    padding: 0.25rem 0.5rem;
+  }
+
+  .app-title h1 {
+    font-size: clamp(1.15rem, 6.6vw, 1.55rem);
+    line-height: 1.15;
+  }
+
+  .question-active-marker ~ * {
     --la-card-border-width: 0;
     --la-card-accent-width: 0;
     --la-card-shell-bg: transparent;
     --la-card-shell-edge: transparent;
-  }
-
-  .question-active-marker + .app-title {
-    display: none;
   }
 }
