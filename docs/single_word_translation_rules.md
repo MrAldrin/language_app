@@ -1,7 +1,7 @@
 # Word Translation Question Rules (Schema v2)
 
 This document is the type-specific spec for `word_translation`.
-For shared rules across all question types, see `docs/question_generation_overview.md`.
+For shared rules across all question types, see `docs/question_generation_common_rules.md`.
 
 ## Schema
 
@@ -11,7 +11,7 @@ Each question object must contain:
 - `schema_version`: must be `2`
 - `question_type`: must be `word_translation`
 - `difficulty`: integer `1-10`
-- `tags`: canonical namespaced tags (`namespace:value`), following shared rules in `docs/question_generation_overview.md`
+- `tags`: canonical namespaced tags (`namespace:value`), following shared rules in `docs/question_generation_common_rules.md`
 - `content`:
   - `response_mode`: must be `single_token_choice`
 - `translations`: keyed by language code (`en`, `de`, `no`, `nl`)

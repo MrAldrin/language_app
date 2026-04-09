@@ -26,7 +26,7 @@ Each question object must contain:
 - `schema_version`: must be `2`
 - `question_type`: must be `cloze_word_choice`
 - `difficulty`: integer `1-10`
-- `tags`: canonical namespaced tags (`namespace:value`), following shared rules in `docs/question_generation_overview.md`
+- `tags`: canonical namespaced tags (`namespace:value`), following shared rules in `docs/question_generation_common_rules.md`
 - `content`:
   - `response_mode`: must be `single_token_choice`
   - `blank_token`: placeholder string, default `___`

@@ -1,4 +1,4 @@
-# Question Generation Overview
+# Question Generation Common Rules
 
 This is the shared, high-level ruleset for all question generation in the language app.
 
@@ -102,6 +102,6 @@ For cloze, rows should use one translation language only and set `content.practi
 
 ## Type-Specific Specs
 
-- Sentence builder: `docs/content_generation_rules.md`
-- Word translation: `docs/targeted_questions.md`
-- Cloze word choice: `docs/cloze_questions.md`
+- Sentence builder: `docs/sentence_builder_rules.md`
+- Word translation: `docs/single_word_translation_rules.md`
+- Cloze word choice: `docs/cloze_word_rules.md`
