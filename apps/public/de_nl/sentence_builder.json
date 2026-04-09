@@ -309,9 +309,7 @@
     ],
     "translations": {
       "de": {
-        "accepted": [
-          "Er ist in einem großen Büro beschäftigt"
-        ],
+        "accepted": [],
         "text": "Er arbeitet in einem großen Büro",
         "distractors": [
           "arbeitete",
@@ -885,9 +883,7 @@
     ],
     "translations": {
       "de": {
-        "accepted": [
-          "Der Lehrer besitzt einen blauen Stift"
-        ],
+        "accepted": [],
         "text": "Der Lehrer hat einen blauen Stift",
         "distractors": [
           "besitzt",
@@ -974,9 +970,7 @@
     ],
     "translations": {
       "de": {
-        "accepted": [
-          "Sie hat ein gelbes Kleid an"
-        ],
+        "accepted": [],
         "text": "Sie trägt ein gelbes Kleid",
         "distractors": [
           "an",
@@ -989,9 +983,7 @@
         ]
       },
       "nl": {
-        "accepted": [
-          "Zij heeft een gele jurk aan"
-        ],
+        "accepted": [],
         "text": "Ze draagt een gele jurk",
         "distractors": [
           "aan",
@@ -1034,9 +1026,7 @@
         ]
       },
       "nl": {
-        "accepted": [
-          "Ik zal volgende week naar Londen vliegen"
-        ],
+        "accepted": [],
         "text": "Ik vlieg volgende week naar Londen",
         "distractors": [
           "maand",
@@ -1223,9 +1213,7 @@
     ],
     "translations": {
       "de": {
-        "accepted": [
-          "Wir besuchen morgen meine Eltern"
-        ],
+        "accepted": [],
         "text": "Wir werden morgen meine Eltern besuchen",
         "distractors": [
           "besuchten",
@@ -1236,9 +1224,7 @@
         ]
       },
       "nl": {
-        "accepted": [
-          "Wij zullen morgen mijn ouders bezoeken"
-        ],
+        "accepted": [],
         "text": "We gaan morgen bij mijn ouders op bezoek",
         "distractors": [
           "bezochten",
@@ -1324,9 +1310,7 @@
         ]
       },
       "nl": {
-        "accepted": [
-          "Hij heeft meer slaap nodig"
-        ],
+        "accepted": [],
         "text": "Hij moet meer slapen",
         "distractors": [
           "eten",
@@ -1680,9 +1664,7 @@
     ],
     "translations": {
       "de": {
-        "accepted": [
-          "Sie reiste letzten Sommer nach Norwegen"
-        ],
+        "accepted": [],
         "text": "Sie ist letzten Sommer nach Norwegen gereist",
         "distractors": [
           "besuchen",
@@ -1695,9 +1677,7 @@
         ]
       },
       "nl": {
-        "accepted": [
-          "Zij reisde vorige zomer naar Noorwegen"
-        ],
+        "accepted": [],
         "text": "Ze is vorige zomer naar Noorwegen gereisd",
         "distractors": [
           "bezoeken",
@@ -1815,8 +1795,7 @@
     "translations": {
       "de": {
         "accepted": [
-          "Wie heißen Sie",
-          "Was ist dein Name"
+          "Wie heißen Sie"
         ],
         "text": "Wie heißt du",
         "distractors": [
@@ -1834,8 +1813,7 @@
       },
       "nl": {
         "accepted": [
-          "Hoe heet u",
-          "Wat is je naam"
+          "Hoe heet u"
         ],
         "text": "Hoe heet je",
         "distractors": [
@@ -1881,9 +1859,7 @@
         ]
       },
       "nl": {
-        "accepted": [
-          "Wij zijn aan het wachten op de bus"
-        ],
+        "accepted": [],
         "text": "We wachten op de bus",
         "distractors": [
           "aan",
@@ -1957,9 +1933,7 @@
     ],
     "translations": {
       "de": {
-        "accepted": [
-          "Ich glaube es ist wichtig Sprachen zu lernen"
-        ],
+        "accepted": [],
         "text": "Ich finde es wichtig Sprachen zu lernen",
         "distractors": [
           "dachte",
@@ -1973,9 +1947,7 @@
         ]
       },
       "nl": {
-        "accepted": [
-          "Ik geloof dat het belangrijk is om talen te leren"
-        ],
+        "accepted": [],
         "text": "Ik vind het belangrijk om talen te leren",
         "distractors": [
           "dacht",
@@ -2146,9 +2118,7 @@
         ]
       },
       "nl": {
-        "accepted": [
-          "Heeft u honger"
-        ],
+        "accepted": [],
         "text": "Heb je honger",
         "distractors": [
           "dorst",

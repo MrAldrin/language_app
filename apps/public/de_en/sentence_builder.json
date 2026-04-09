@@ -68,9 +68,7 @@
         ]
       },
       "en": {
-        "accepted": [
-          "She is reading a really good book"
-        ],
+        "accepted": [],
         "text": "She reads a really good book",
         "distractors": [
           "bad",
@@ -113,9 +111,7 @@
         ]
       },
       "en": {
-        "accepted": [
-          "We eat dinner now"
-        ],
+        "accepted": [],
         "text": "We are eating dinner now",
         "distractors": [
           "always",
@@ -159,7 +155,6 @@
       },
       "en": {
         "accepted": [
-          "They are walking to the new shop",
           "They walk to the new shop"
         ],
         "text": "They walk to the new store",
@@ -312,9 +307,7 @@
     ],
     "translations": {
       "de": {
-        "accepted": [
-          "Er ist in einem großen Büro beschäftigt"
-        ],
+        "accepted": [],
         "text": "Er arbeitet in einem großen Büro",
         "distractors": [
           "arbeitete",
@@ -328,9 +321,7 @@
         ]
       },
       "en": {
-        "accepted": [
-          "He is working in a large office"
-        ],
+        "accepted": [],
         "text": "He works in a large office",
         "distractors": [
           "factory",
@@ -873,9 +864,7 @@
     ],
     "translations": {
       "de": {
-        "accepted": [
-          "Der Lehrer besitzt einen blauen Stift"
-        ],
+        "accepted": [],
         "text": "Der Lehrer hat einen blauen Stift",
         "distractors": [
           "besitzt",
@@ -932,9 +921,7 @@
         ]
       },
       "en": {
-        "accepted": [
-          "They are listening to loud music"
-        ],
+        "accepted": [],
         "text": "They listen to loud music",
         "distractors": [
           "are",
@@ -962,9 +949,7 @@
     ],
     "translations": {
       "de": {
-        "accepted": [
-          "Sie hat ein gelbes Kleid an"
-        ],
+        "accepted": [],
         "text": "Sie trägt ein gelbes Kleid",
         "distractors": [
           "an",
@@ -977,9 +962,7 @@
         ]
       },
       "en": {
-        "accepted": [
-          "She is wearing a yellow dress"
-        ],
+        "accepted": [],
         "text": "She wears a yellow dress",
         "distractors": [
           "green",
@@ -1144,7 +1127,6 @@
       },
       "en": {
         "accepted": [
-          "She makes a delicious cake",
           "She is baking a delicious cake"
         ],
         "text": "She is making a delicious cake",
@@ -1214,9 +1196,7 @@
     ],
     "translations": {
       "de": {
-        "accepted": [
-          "Wir besuchen morgen meine Eltern"
-        ],
+        "accepted": [],
         "text": "Wir werden morgen meine Eltern besuchen",
         "distractors": [
           "besuchten",
@@ -1227,9 +1207,7 @@
         ]
       },
       "en": {
-        "accepted": [
-          "We are visiting my parents tomorrow"
-        ],
+        "accepted": [],
         "text": "We will visit my parents tomorrow",
         "distractors": [
           "are",
@@ -1390,9 +1368,7 @@
         ]
       },
       "en": {
-        "accepted": [
-          "It rains outside right now"
-        ],
+        "accepted": [],
         "text": "It is raining outside right now",
         "distractors": [
           "inside",
@@ -1594,9 +1570,7 @@
         ]
       },
       "en": {
-        "accepted": [
-          "Where are you living now"
-        ],
+        "accepted": [],
         "text": "Where do you live now",
         "distractors": [
           "are",
@@ -1661,9 +1635,7 @@
     ],
     "translations": {
       "de": {
-        "accepted": [
-          "Sie reiste letzten Sommer nach Norwegen"
-        ],
+        "accepted": [],
         "text": "Sie ist letzten Sommer nach Norwegen gereist",
         "distractors": [
           "besuchen",
@@ -1763,9 +1735,7 @@
         ]
       },
       "en": {
-        "accepted": [
-          "Would you like some water"
-        ],
+        "accepted": [],
         "text": "Do you want some water",
         "distractors": [
           "any",
@@ -1793,8 +1763,7 @@
     "translations": {
       "de": {
         "accepted": [
-          "Wie heißen Sie",
-          "Was ist dein Name"
+          "Wie heißen Sie"
         ],
         "text": "Wie heißt du",
         "distractors": [
@@ -1811,9 +1780,7 @@
         ]
       },
       "en": {
-        "accepted": [
-          "What's your name"
-        ],
+        "accepted": [],
         "text": "What is your name",
         "distractors": [
           "how",
@@ -1856,9 +1823,7 @@
         ]
       },
       "en": {
-        "accepted": [
-          "We wait for the bus"
-        ],
+        "accepted": [],
         "text": "We are waiting for the bus",
         "distractors": [
           "looking",
@@ -1928,9 +1893,7 @@
     ],
     "translations": {
       "de": {
-        "accepted": [
-          "Ich glaube es ist wichtig Sprachen zu lernen"
-        ],
+        "accepted": [],
         "text": "Ich finde es wichtig Sprachen zu lernen",
         "distractors": [
           "dachte",

@@ -50,14 +50,14 @@ Use this as the live tracker while we execute `plans/sentence_builder_dataset_au
   - Make minimal edits.
   - Re-run audit after each file or small batch.
 
-- [ ] 11. Cleanup pass 2 (high-confidence policy fixes)
+- [x] 11. Cleanup pass 2 (high-confidence policy fixes)
   - Remove/replace distractors that create unwanted alternates.
   - Keep `accepted` minimal and intentional.
 
 - [ ] 12. Manual language-quality pass
   - Review naturalness and direct translation quality.
 
-- [ ] 13. Final verification
+- [x] 13. Final verification
   - Re-run audit and confirm Definition of Done criteria.
 
 - [ ] 14. Follow-up: redesign lexical-substitution heuristic
@@ -67,7 +67,7 @@ Use this as the live tracker while we execute `plans/sentence_builder_dataset_au
 ## Live Progress Log
 
 - Status: `In progress`
-- Current step: `11`
+- Current step: `12`
 - Notes:
   - Step 1 complete: detected 6 sentence-builder files.
   - Step 1 complete: each file currently has 50 questions (300 total).
@@ -92,3 +92,8 @@ Use this as the live tracker while we execute `plans/sentence_builder_dataset_au
   - Current audit status: errors=0, warnings=125.
   - Step 11 batch 1 complete: resolved all 6 contraction/non-contraction warnings (files `de_en`, `en_nl`, `en_no`, ids `20` and `37` on `en` side).
   - Current audit status after batch 1: errors=0, warnings=113 (all are tense/aspect warnings).
+  - Step 11 batch 2 complete: resolved tense/aspect warnings for `id=2,3,4` on `en` side in `de_en`, `en_nl`, and `en_no`.
+  - Current audit status after batch 2: errors=0, warnings=104.
+  - Step 11 final cleanup complete: removed remaining tense/aspect-shift `accepted` entries across all six files.
+  - Bulk cleanup impact: 104 `accepted` items removed across 6 files.
+  - Step 13 final verification complete: current audit result is errors=0, warnings=0.

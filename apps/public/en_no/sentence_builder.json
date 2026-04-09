@@ -51,9 +51,7 @@
     ],
     "translations": {
       "en": {
-        "accepted": [
-          "She is reading a really good book"
-        ],
+        "accepted": [],
         "text": "She reads a really good book",
         "distractors": [
           "bad",
@@ -99,9 +97,7 @@
     ],
     "translations": {
       "en": {
-        "accepted": [
-          "We eat dinner now"
-        ],
+        "accepted": [],
         "text": "We are eating dinner now",
         "distractors": [
           "always",
@@ -141,7 +137,6 @@
     "translations": {
       "en": {
         "accepted": [
-          "They are walking to the new shop",
           "They walk to the new shop"
         ],
         "text": "They walk to the new store",
@@ -283,9 +278,7 @@
         ]
       },
       "no": {
-        "accepted": [
-          "Jeg eier en kjapp rød bil"
-        ],
+        "accepted": [],
         "text": "Jeg har en rask rød bil",
         "distractors": [
           "blå",
@@ -313,9 +306,7 @@
     ],
     "translations": {
       "en": {
-        "accepted": [
-          "He is working in a large office"
-        ],
+        "accepted": [],
         "text": "He works in a large office",
         "distractors": [
           "factory",
@@ -509,9 +500,7 @@
         ]
       },
       "no": {
-        "accepted": [
-          "Vi ønsker å kjøpe et nytt hus"
-        ],
+        "accepted": [],
         "text": "Vi vil kjøpe et nytt hus",
         "distractors": [
           "bil",
@@ -913,9 +902,7 @@
     ],
     "translations": {
       "en": {
-        "accepted": [
-          "They are listening to loud music"
-        ],
+        "accepted": [],
         "text": "They listen to loud music",
         "distractors": [
           "are",
@@ -955,9 +942,7 @@
     ],
     "translations": {
       "en": {
-        "accepted": [
-          "She is wearing a yellow dress"
-        ],
+        "accepted": [],
         "text": "She wears a yellow dress",
         "distractors": [
           "green",
@@ -971,9 +956,7 @@
         ]
       },
       "no": {
-        "accepted": [
-          "Hun bærer en gul kjole"
-        ],
+        "accepted": [],
         "text": "Hun har på seg en gul kjole",
         "distractors": [
           "bærer",
@@ -1012,9 +995,7 @@
         ]
       },
       "no": {
-        "accepted": [
-          "Jeg vil fly til London neste uke"
-        ],
+        "accepted": [],
         "text": "Jeg skal fly til London neste uke",
         "distractors": [
           "fløy",
@@ -1123,7 +1104,6 @@
     "translations": {
       "en": {
         "accepted": [
-          "She makes a delicious cake",
           "She is baking a delicious cake"
         ],
         "text": "She is making a delicious cake",
@@ -1211,9 +1191,7 @@
     ],
     "translations": {
       "en": {
-        "accepted": [
-          "We are visiting my parents tomorrow"
-        ],
+        "accepted": [],
         "text": "We will visit my parents tomorrow",
         "distractors": [
           "are",
@@ -1226,9 +1204,7 @@
         ]
       },
       "no": {
-        "accepted": [
-          "Vi vil besøke foreldrene mine i morgen"
-        ],
+        "accepted": [],
         "text": "Vi skal besøke foreldrene mine i morgen",
         "distractors": [
           "besøkte",
@@ -1376,9 +1352,7 @@
     ],
     "translations": {
       "en": {
-        "accepted": [
-          "It rains outside right now"
-        ],
+        "accepted": [],
         "text": "It is raining outside right now",
         "distractors": [
           "inside",
@@ -1571,9 +1545,7 @@
     ],
     "translations": {
       "en": {
-        "accepted": [
-          "Where are you living now"
-        ],
+        "accepted": [],
         "text": "Where do you live now",
         "distractors": [
           "are",
@@ -1624,9 +1596,7 @@
         ]
       },
       "no": {
-        "accepted": [
-          "Jeg eier to små katter"
-        ],
+        "accepted": [],
         "text": "Jeg har to små katter",
         "distractors": [
           "eier",
@@ -1739,9 +1709,7 @@
     ],
     "translations": {
       "en": {
-        "accepted": [
-          "Would you like some water"
-        ],
+        "accepted": [],
         "text": "Do you want some water",
         "distractors": [
           "any",
@@ -1755,9 +1723,7 @@
         ]
       },
       "no": {
-        "accepted": [
-          "Ønsker du litt vann"
-        ],
+        "accepted": [],
         "text": "Vil du ha litt vann",
         "distractors": [
           "de",
@@ -1783,9 +1749,7 @@
     ],
     "translations": {
       "en": {
-        "accepted": [
-          "What's your name"
-        ],
+        "accepted": [],
         "text": "What is your name",
         "distractors": [
           "how",
@@ -1797,9 +1761,7 @@
         ]
       },
       "no": {
-        "accepted": [
-          "Hva er navnet ditt"
-        ],
+        "accepted": [],
         "text": "Hva heter du",
         "distractors": [
           "ditt",
@@ -1827,9 +1789,7 @@
     ],
     "translations": {
       "en": {
-        "accepted": [
-          "We wait for the bus"
-        ],
+        "accepted": [],
         "text": "We are waiting for the bus",
         "distractors": [
           "looking",

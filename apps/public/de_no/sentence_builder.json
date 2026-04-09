@@ -265,9 +265,7 @@
     ],
     "translations": {
       "de": {
-        "accepted": [
-          "Sie werden morgen nach England reisen"
-        ],
+        "accepted": [],
         "text": "Sie reisen morgen nach England",
         "distractors": [
           "Auto",
@@ -280,9 +278,7 @@
         ]
       },
       "no": {
-        "accepted": [
-          "De skal reise til England i morgen"
-        ],
+        "accepted": [],
         "text": "De reiser til England i morgen",
         "distractors": [
           "bil",
@@ -373,9 +369,7 @@
         ]
       },
       "no": {
-        "accepted": [
-          "Han vil kjøpe en ny bil"
-        ],
+        "accepted": [],
         "text": "Han ønsker å kjøpe en ny bil",
         "distractors": [
           "gammel",
@@ -900,9 +894,7 @@
     ],
     "translations": {
       "de": {
-        "accepted": [
-          "Das Essen ist wirklich lecker"
-        ],
+        "accepted": [],
         "text": "Das Essen schmeckt wirklich gut",
         "distractors": [
           "er",
@@ -916,9 +908,7 @@
         ]
       },
       "no": {
-        "accepted": [
-          "Maten er virkelig god"
-        ],
+        "accepted": [],
         "text": "Maten smaker virkelig utmerket",
         "distractors": [
           "dårlig",
@@ -1258,9 +1248,7 @@
     ],
     "translations": {
       "de": {
-        "accepted": [
-          "Wir besuchen morgen meine Eltern"
-        ],
+        "accepted": [],
         "text": "Wir werden morgen meine Eltern besuchen",
         "distractors": [
           "besuchten",
@@ -1271,9 +1259,7 @@
         ]
       },
       "no": {
-        "accepted": [
-          "Vi vil besøke foreldrene mine i morgen"
-        ],
+        "accepted": [],
         "text": "Vi skal besøke foreldrene mine i morgen",
         "distractors": [
           "besøkte",
@@ -1679,9 +1665,7 @@
         ]
       },
       "no": {
-        "accepted": [
-          "Jeg eier to små katter"
-        ],
+        "accepted": [],
         "text": "Jeg har to små katter",
         "distractors": [
           "eier",
@@ -1708,9 +1692,7 @@
     ],
     "translations": {
       "de": {
-        "accepted": [
-          "Sie reiste letzten Sommer nach Norwegen"
-        ],
+        "accepted": [],
         "text": "Sie ist letzten Sommer nach Norwegen gereist",
         "distractors": [
           "besuchen",
@@ -1808,9 +1790,7 @@
         ]
       },
       "no": {
-        "accepted": [
-          "Ønsker du litt vann"
-        ],
+        "accepted": [],
         "text": "Vil du ha litt vann",
         "distractors": [
           "de",
@@ -1837,8 +1817,7 @@
     "translations": {
       "de": {
         "accepted": [
-          "Wie heißen Sie",
-          "Was ist dein Name"
+          "Wie heißen Sie"
         ],
         "text": "Wie heißt du",
         "distractors": [
@@ -1855,9 +1834,7 @@
         ]
       },
       "no": {
-        "accepted": [
-          "Hva er navnet ditt"
-        ],
+        "accepted": [],
         "text": "Hva heter du",
         "distractors": [
           "ditt",
@@ -1975,9 +1952,7 @@
     ],
     "translations": {
       "de": {
-        "accepted": [
-          "Ich glaube es ist wichtig Sprachen zu lernen"
-        ],
+        "accepted": [],
         "text": "Ich finde es wichtig Sprachen zu lernen",
         "distractors": [
           "dachte",

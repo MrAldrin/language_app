@@ -53,9 +53,7 @@
     ],
     "translations": {
       "en": {
-        "accepted": [
-          "She is reading a really good book"
-        ],
+        "accepted": [],
         "text": "She reads a really good book",
         "distractors": [
           "bad",
@@ -99,9 +97,7 @@
     ],
     "translations": {
       "en": {
-        "accepted": [
-          "We eat dinner now"
-        ],
+        "accepted": [],
         "text": "We are eating dinner now",
         "distractors": [
           "always",
@@ -145,7 +141,6 @@
     "translations": {
       "en": {
         "accepted": [
-          "They are walking to the new shop",
           "They walk to the new shop"
         ],
         "text": "They walk to the new store",
@@ -314,9 +309,7 @@
     ],
     "translations": {
       "en": {
-        "accepted": [
-          "He is working in a large office"
-        ],
+        "accepted": [],
         "text": "He works in a large office",
         "distractors": [
           "factory",
@@ -931,9 +924,7 @@
     ],
     "translations": {
       "en": {
-        "accepted": [
-          "They are listening to loud music"
-        ],
+        "accepted": [],
         "text": "They listen to loud music",
         "distractors": [
           "are",
@@ -977,9 +968,7 @@
     ],
     "translations": {
       "en": {
-        "accepted": [
-          "She is wearing a yellow dress"
-        ],
+        "accepted": [],
         "text": "She wears a yellow dress",
         "distractors": [
           "green",
@@ -993,9 +982,7 @@
         ]
       },
       "nl": {
-        "accepted": [
-          "Zij heeft een gele jurk aan"
-        ],
+        "accepted": [],
         "text": "Ze draagt een gele jurk",
         "distractors": [
           "aan",
@@ -1035,9 +1022,7 @@
         ]
       },
       "nl": {
-        "accepted": [
-          "Ik zal volgende week naar Londen vliegen"
-        ],
+        "accepted": [],
         "text": "Ik vlieg volgende week naar Londen",
         "distractors": [
           "maand",
@@ -1144,7 +1129,6 @@
     "translations": {
       "en": {
         "accepted": [
-          "She makes a delicious cake",
           "She is baking a delicious cake"
         ],
         "text": "She is making a delicious cake",
@@ -1224,9 +1208,7 @@
     ],
     "translations": {
       "en": {
-        "accepted": [
-          "We are visiting my parents tomorrow"
-        ],
+        "accepted": [],
         "text": "We will visit my parents tomorrow",
         "distractors": [
           "are",
@@ -1239,9 +1221,7 @@
         ]
       },
       "nl": {
-        "accepted": [
-          "Wij zullen morgen mijn ouders bezoeken"
-        ],
+        "accepted": [],
         "text": "We gaan morgen bij mijn ouders op bezoek",
         "distractors": [
           "bezochten",
@@ -1326,9 +1306,7 @@
         ]
       },
       "nl": {
-        "accepted": [
-          "Hij heeft meer slaap nodig"
-        ],
+        "accepted": [],
         "text": "Hij moet meer slapen",
         "distractors": [
           "eten",
@@ -1393,9 +1371,7 @@
     ],
     "translations": {
       "en": {
-        "accepted": [
-          "It rains outside right now"
-        ],
+        "accepted": [],
         "text": "It is raining outside right now",
         "distractors": [
           "inside",
@@ -1590,9 +1566,7 @@
     ],
     "translations": {
       "en": {
-        "accepted": [
-          "Where are you living now"
-        ],
+        "accepted": [],
         "text": "Where do you live now",
         "distractors": [
           "are",
@@ -1688,9 +1662,7 @@
         ]
       },
       "nl": {
-        "accepted": [
-          "Zij reisde vorige zomer naar Noorwegen"
-        ],
+        "accepted": [],
         "text": "Ze is vorige zomer naar Noorwegen gereisd",
         "distractors": [
           "bezoeken",
@@ -1763,9 +1735,7 @@
     ],
     "translations": {
       "en": {
-        "accepted": [
-          "Would you like some water"
-        ],
+        "accepted": [],
         "text": "Do you want some water",
         "distractors": [
           "any",
@@ -1808,9 +1778,7 @@
     ],
     "translations": {
       "en": {
-        "accepted": [
-          "What's your name"
-        ],
+        "accepted": [],
         "text": "What is your name",
         "distractors": [
           "how",
@@ -1823,8 +1791,7 @@
       },
       "nl": {
         "accepted": [
-          "Hoe heet u",
-          "Wat is je naam"
+          "Hoe heet u"
         ],
         "text": "Hoe heet je",
         "distractors": [
@@ -1853,9 +1820,7 @@
     ],
     "translations": {
       "en": {
-        "accepted": [
-          "We wait for the bus"
-        ],
+        "accepted": [],
         "text": "We are waiting for the bus",
         "distractors": [
           "looking",
@@ -1867,9 +1832,7 @@
         ]
       },
       "nl": {
-        "accepted": [
-          "Wij zijn aan het wachten op de bus"
-        ],
+        "accepted": [],
         "text": "We wachten op de bus",
         "distractors": [
           "aan",
@@ -1958,9 +1921,7 @@
         ]
       },
       "nl": {
-        "accepted": [
-          "Ik geloof dat het belangrijk is om talen te leren"
-        ],
+        "accepted": [],
         "text": "Ik vind het belangrijk om talen te leren",
         "distractors": [
           "dacht",
@@ -2124,9 +2085,7 @@
         ]
       },
       "nl": {
-        "accepted": [
-          "Heeft u honger"
-        ],
+        "accepted": [],
         "text": "Heb je honger",
         "distractors": [
           "dorst",

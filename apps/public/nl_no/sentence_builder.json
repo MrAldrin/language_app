@@ -281,9 +281,7 @@
         ]
       },
       "no": {
-        "accepted": [
-          "Jeg eier en rask rød bil"
-        ],
+        "accepted": [],
         "text": "Jeg har en rask rød bil",
         "distractors": [
           "blå",
@@ -502,9 +500,7 @@
         ]
       },
       "no": {
-        "accepted": [
-          "Vi ønsker å kjøpe et nytt hus"
-        ],
+        "accepted": [],
         "text": "Vi vil kjøpe et nytt hus",
         "distractors": [
           "bil",
@@ -914,9 +910,7 @@
         ]
       },
       "no": {
-        "accepted": [
-          "Læreren eier en blå penn"
-        ],
+        "accepted": [],
         "text": "Læreren har en blå penn",
         "distractors": [
           "blyant",
@@ -989,9 +983,7 @@
     ],
     "translations": {
       "nl": {
-        "accepted": [
-          "Zij heeft een gele jurk aan"
-        ],
+        "accepted": [],
         "text": "Ze draagt een gele jurk",
         "distractors": [
           "aan",
@@ -1006,7 +998,6 @@
       },
       "no": {
         "accepted": [
-          "Hun bruker en gul kjole",
           "Hun har på seg ei gul kåpe"
         ],
         "text": "Hun har på seg en gul kjole",
@@ -1037,9 +1028,7 @@
     ],
     "translations": {
       "nl": {
-        "accepted": [
-          "Ik zal volgende week naar Londen vliegen"
-        ],
+        "accepted": [],
         "text": "Ik vlieg volgende week naar Londen",
         "distractors": [
           "maand",
@@ -1053,10 +1042,7 @@
         ]
       },
       "no": {
-        "accepted": [
-          "Jeg skal fly til London neste uke",
-          "Jeg vil fly til London neste uke"
-        ],
+        "accepted": [],
         "text": "Jeg flyr til London neste uke",
         "distractors": [
           "fly",
@@ -1248,9 +1234,7 @@
     ],
     "translations": {
       "nl": {
-        "accepted": [
-          "Wij zullen morgen mijn ouders bezoeken"
-        ],
+        "accepted": [],
         "text": "We gaan morgen bij mijn ouders op bezoek",
         "distractors": [
           "bezochten",
@@ -1264,9 +1248,7 @@
         ]
       },
       "no": {
-        "accepted": [
-          "Vi vil besøke foreldrene mine i morgen"
-        ],
+        "accepted": [],
         "text": "Vi skal besøke foreldrene mine i morgen",
         "distractors": [
           "besøkte",
@@ -1337,9 +1319,7 @@
     ],
     "translations": {
       "nl": {
-        "accepted": [
-          "Hij heeft meer slaap nodig"
-        ],
+        "accepted": [],
         "text": "Hij moet meer slapen",
         "distractors": [
           "eten",
@@ -1395,9 +1375,7 @@
         ]
       },
       "no": {
-        "accepted": [
-          "Jeg har glemt nøklene mine hjemme"
-        ],
+        "accepted": [],
         "text": "Jeg glemte nøklene mine hjemme",
         "distractors": [
           "fant",
@@ -1602,9 +1580,7 @@
         ]
       },
       "no": {
-        "accepted": [
-          "Jeg er ikke glad i sterk mat"
-        ],
+        "accepted": [],
         "text": "Jeg liker ikke sterk mat",
         "distractors": [
           "deilig",
@@ -1690,9 +1666,7 @@
         ]
       },
       "no": {
-        "accepted": [
-          "Jeg eier to små katter"
-        ],
+        "accepted": [],
         "text": "Jeg har to små katter",
         "distractors": [
           "eier",
@@ -1719,9 +1693,7 @@
     ],
     "translations": {
       "nl": {
-        "accepted": [
-          "Zij reisde vorige zomer naar Noorwegen"
-        ],
+        "accepted": [],
         "text": "Ze is vorige zomer naar Noorwegen gereisd",
         "distractors": [
           "bezoeken",
@@ -1825,9 +1797,7 @@
         ]
       },
       "no": {
-        "accepted": [
-          "Ønsker du litt vann"
-        ],
+        "accepted": [],
         "text": "Vil du ha litt vann",
         "distractors": [
           "de",
@@ -1854,8 +1824,7 @@
     "translations": {
       "nl": {
         "accepted": [
-          "Hoe heet u",
-          "Wat is je naam"
+          "Hoe heet u"
         ],
         "text": "Hoe heet je",
         "distractors": [
@@ -1870,9 +1839,7 @@
         ]
       },
       "no": {
-        "accepted": [
-          "Hva er navnet ditt"
-        ],
+        "accepted": [],
         "text": "Hva heter du",
         "distractors": [
           "ditt",
@@ -1900,9 +1867,7 @@
     ],
     "translations": {
       "nl": {
-        "accepted": [
-          "Wij zijn aan het wachten op de bus"
-        ],
+        "accepted": [],
         "text": "We wachten op de bus",
         "distractors": [
           "aan",
@@ -1995,9 +1960,7 @@
     ],
     "translations": {
       "nl": {
-        "accepted": [
-          "Ik geloof dat het belangrijk is om talen te leren"
-        ],
+        "accepted": [],
         "text": "Ik vind het belangrijk om talen te leren",
         "distractors": [
           "dacht",
@@ -2175,9 +2138,7 @@
     ],
     "translations": {
       "nl": {
-        "accepted": [
-          "Heeft u honger"
-        ],
+        "accepted": [],
         "text": "Heb je honger",
         "distractors": [
           "dorst",
