@@ -3,6 +3,8 @@
 This document is the type-specific spec for `sentence_builder_multiple_choice`.
 For shared rules across all question types, see `docs/question_generation_overview.md`.
 
+These rules should work across the language pairs used in the app, especially Norwegian, English, Dutch, and German.
+
 ## Schema
 
 Each question object must contain:
@@ -18,10 +20,9 @@ Each question object must contain:
 
 Each `translations.<lang>` object must contain:
 
-- `prompt`: source text shown to learner
-- `answer`: canonical target text for checking
-- `accepted`: natural alternative correct answers
-- `word_pool`: answer tokens + distractors
+- `text`: canonical sentence for that language
+- `accepted`: other accepted full-sentence answers
+- `distractors`: extra tokens added to test the learner
 
 Optional fields:
 
@@ -30,11 +31,68 @@ Optional fields:
 
 ## Type-Specific Authoring Rules
 
-- Keep sentence pairs directly equivalent in meaning.
+- Treat the two `text` fields as the main translation pair. Each `text` should be the most direct natural translation of the paired `text`.
+- Sentence builder is bidirectional. Each side should be reviewed against the other side.
+- The selectable words for one language are the tokens from that language's `text` plus that language's `distractors`.
 - Include enough distractors to make word order and grammar meaningful.
-- Avoid clues from punctuation/capitalization in `word_pool`.
-- Distractors should be plausible alternatives from same concept cluster.
+- Avoid clues from punctuation or capitalization in the available token set.
+- Distractors should be plausible, but should not create many extra valid full-sentence translations.
+- Prefer replacing a distractor over expanding `accepted`.
 - For sentence-builder tagging, prioritize `topic:*` and add `pos:*`, `grammar:*`, and `tense:*` only when they improve targeting precision.
+
+## Rules For `distractors`
+
+Distractors should mainly test:
+
+- tense
+- agreement
+- pronouns
+- noun choice
+- adjective choice
+- adverb choice
+- time or place phrases
+
+Distractors should usually avoid:
+
+- near-synonyms of target words
+- equally natural paraphrases
+- alternate lexical choices that would also be good translations
+- contraction variants when the non-contracted form is already used
+
+General rule:
+
+- if we do not want to accept a wording, we should not include the needed replacement token in `distractors`
+
+## Rules For `accepted`
+
+`accepted` is derived from the available token set on the other side.
+
+For language B, `accepted` should only contain other meaningful translations of language A `text` that can be built from:
+
+- language B `text`
+- language B `distractors`
+
+In practice, `accepted` should usually be limited to:
+
+- valid alternate word order
+
+`accepted` should usually not include:
+
+- synonym swaps
+- tense or aspect changes
+- contraction vs non-contraction
+- register shifts
+- alternate lexical choices introduced by distractors
+
+## Review Check
+
+For each question and each language:
+
+1. Is `text` the most direct natural translation of the paired `text`?
+2. Do the available words create another meaningful translation?
+3. If yes, is it a case we intentionally want to accept?
+4. If not, should a distractor be replaced or removed?
+
 
 ## Example
 
@@ -49,17 +107,15 @@ Optional fields:
     "response_mode": "token_sequence_choice"
   },
   "translations": {
-    "no": {
-      "prompt": "Hvor er boka?",
-      "answer": "Hvor er boka?",
-      "accepted": ["Hvor er boken?"],
-      "word_pool": ["hva", "hvem", "når", "var", "brevet", "avisa", "hvor", "er", "boka"]
+    "en": {
+      "text": "They often travel to Spain",
+      "accepted": ["They travel to Spain often"],
+      "distractors": ["Germany", "never", "drove", "flew", "we", "car"]
     },
-    "de": {
-      "prompt": "Wo ist das Buch?",
-      "answer": "Wo ist das Buch?",
+    "no": {
+      "text": "De reiser ofte til Spania",
       "accepted": [],
-      "word_pool": ["was", "wer", "wann", "Zeitung", "bist", "bin", "wo", "ist", "das", "Buch"]
+      "distractors": ["Tyskland", "aldri", "kjørte", "fløy", "vi", "bil"]
     }
   }
 }

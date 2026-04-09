@@ -1,4 +1,4 @@
-# Question Generation Overview (Schema v2)
+# Question Generation Overview
 
 This is the shared, high-level ruleset for all question generation in the language app.
 
@@ -72,6 +72,8 @@ General namespace intent:
 ## Shared Authoring Rules
 
 - Keep grammar and spelling correct in every language.
+- Use correct written characters and orthography for each language (for example `kjørte`, not `kjorte`; `fløy`, not `floy`).
+- Do not replace language-specific characters with ASCII approximations.
 - Prefer natural, modern phrasing.
 - Keep distractors plausible (near-miss, not nonsense).
 - Never use `hint` for correctness checks.
