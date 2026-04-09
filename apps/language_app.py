@@ -2294,19 +2294,23 @@ def _():
 
 
 @app.cell
+def _():
+    def render_options_intro() -> mo.Html:
+        return mo.md(
+            "Choose source and target language, question set, and difficulty, then press start."
+        ).center()
+
+    return (render_options_intro,)
+
+
+@app.cell
 def _(
-    button_start_questions,
     dropdown_difficulty,
     dropdown_question_file,
     dropdown_source_language,
     dropdown_target_language,
-    lower_level_settings,
 ):
-    def render_options_section() -> mo.Html:
-        """Renders the initial configuration UI."""
-        instruction_text = mo.md(
-            "Choose source and target language, question set, and difficulty, then press start."
-        ).center()
+    def render_core_settings_section() -> mo.Html:
         core_heading = mo.md("**Settings**").center()
         top_level_options_row = mo.hstack(
             [
@@ -2318,25 +2322,42 @@ def _(
             justify="space-between",
             wrap=True,
         )
-        core_settings_section = mo.vstack(
-            [core_heading, top_level_options_row], gap=0.4, align="center"
+        return mo.vstack([core_heading, top_level_options_row], gap=0.4, align="center")
+
+    return (render_core_settings_section,)
+
+
+@app.cell
+def _(lower_level_settings):
+    def render_advanced_settings_section() -> mo.Html | None:
+        if lower_level_settings is None:
+            return None
+        advanced_heading = mo.md("**Advanced settings**").center()
+        return mo.vstack(
+            [advanced_heading, lower_level_settings], gap=0.4, align="center"
         )
 
+    return (render_advanced_settings_section,)
+
+
+@app.cell
+def _(
+    button_start_questions,
+    render_advanced_settings_section,
+    render_core_settings_section,
+    render_options_intro,
+):
+    def render_options_section() -> mo.Html:
         section_divider = mo.Html(
             '<div class="menu-section-divider" aria-hidden="true"></div>'
         )
-        sections: list[Any] = [instruction_text, core_settings_section]
-        if lower_level_settings is not None:
+        sections: list[Any] = [render_options_intro(), render_core_settings_section()]
+        advanced_settings_section = render_advanced_settings_section()
+        if advanced_settings_section is not None:
             sections.append(section_divider)
-            advanced_heading = mo.md("**Advanced settings**").center()
-            advanced_settings_section = mo.vstack(
-                [advanced_heading, lower_level_settings], gap=0.4, align="center"
-            )
             sections.append(advanced_settings_section)
-
         sections.append(section_divider)
         sections.append(button_start_questions.center())
-
         return mo.vstack(
             sections,
             gap=1,
