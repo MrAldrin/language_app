@@ -1,4 +1,4 @@
-# Sentence Builder Question Rules (Schema v2)
+# Sentence Builder Question Rules
 
 This document is the type-specific spec for `sentence_builder_multiple_choice`.
 For shared rules across all question types, see `docs/question_generation_common_rules.md`.
@@ -10,7 +10,6 @@ These rules should work across the language pairs used in the app, especially No
 Each question object must contain:
 
 - `id`: sequential integer
-- `schema_version`: must be `2`
 - `question_type`: must be `sentence_builder_multiple_choice`
 - `difficulty`: integer `1-10`
 - `tags`: canonical namespaced tags (`namespace:value`), following shared rules in `docs/question_generation_common_rules.md`
@@ -27,7 +26,6 @@ Each `translations.<lang>` object must contain:
 Optional fields:
 
 - `hint`: display-only metadata (rare for this type)
-- `primary`: legacy field, deprecated
 
 ## Type-Specific Authoring Rules
 
@@ -99,7 +97,6 @@ For each question and each language:
 ```json
 {
   "id": 1,
-  "schema_version": 2,
   "question_type": "sentence_builder_multiple_choice",
   "difficulty": 1,
   "tags": ["grammar:question", "topic:school"],

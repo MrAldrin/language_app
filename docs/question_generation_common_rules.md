@@ -7,7 +7,6 @@ This is the shared, high-level ruleset for all question generation in the langua
 Each question object must include:
 
 - `id`: sequential integer
-- `schema_version`: `2`
 - `question_type`: discriminator for interaction type
 - `difficulty`: integer `1-10`
 - `tags`: canonical namespaced labels (`namespace:value`)
@@ -24,10 +23,6 @@ Type-specific payload fields may also exist (examples):
 
 - `hint` (display-only disambiguation, used by `word_translation`)
 - `hidden_word_index` (used by `cloze_word_choice`)
-
-Legacy compatibility during migration:
-
-- `primary` may still exist, but is deprecated.
 
 ## Canonical Tag System
 
@@ -98,7 +93,7 @@ Stored under `apps/public/<lang>/`:
 
 - `cloze_word_choice_questions.json`
 
-For cloze, rows should use one translation language only and set `content.practice_language` to that same language.
+For cloze, each row must include the translation entry for `content.practice_language`; additional translation languages can be included for translated hints.
 
 ## Type-Specific Specs
 

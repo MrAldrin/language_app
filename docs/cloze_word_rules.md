@@ -1,4 +1,4 @@
-# Cloze Question Rules (Schema v2)
+# Cloze Question Rules
 
 This document defines rules for generating `cloze_word_choice` questions.
 
@@ -16,53 +16,45 @@ Cloze uses one file per language (not per language pair):
 Examples:
 
 - `apps/public/nl/cloze_word_choice_questions.json`
-- `apps/public/no/cloze_word_choice_questions.json`
+- `apps/public/de/cloze_word_choice_questions.json`
 
 ## 3. Schema
 
 Each question object must contain:
 
 - `id`: sequential integer
-- `schema_version`: must be `2`
 - `question_type`: must be `cloze_word_choice`
 - `difficulty`: integer `1-10`
 - `tags`: canonical namespaced tags (`namespace:value`), following shared rules in `docs/question_generation_common_rules.md`
 - `content`:
   - `response_mode`: must be `single_token_choice`
-  - `blank_token`: placeholder string, default `___`
   - `practice_language`: language code for this file (for example `nl`)
 - `translations`: a dictionary of language codes. Must contain at least one language entry matching `content.practice_language`. Other languages can optionally be added to provide translated hints.
 
 For the `translations.<lang>` object matching the `practice_language` (the target learning language), it must contain:
 
-- `prompt`: sentence containing exactly one blank token (for example `Ik zie ___ hond in het park.`)
-- `answer`: expected missing token
+- `text`: full sentence in the practice language
+- `hidden_word_index`: zero-based index of the hidden token in the practice-language sentence
 - `accepted`: optional alternative valid tokens
-- `word_pool`: includes `answer`, all `accepted`, and distractors
+- `distractors`: selectable distractor tokens shown as alternatives
 
 For other languages in `translations` (the user's source language hints), they only require:
-- `hint_translation` to show the full translated sentence.
-
-Optional fields:
-
-- `hint`: display-only guidance
-- `primary`: legacy compatibility field (deprecated)
+- `text` to show the translated sentence.
 
 ## 4. Authoring Rules
 
-- Exactly one blank per prompt.
-- `answer` must be selectable from `word_pool`.
-- `word_pool` should contain plausible near-miss distractors.
+- The hidden token is defined by `hidden_word_index` inside `translations.<practice_language>.text`.
+- `hidden_word_index` must point to a valid token position in the practice-language sentence.
+- `distractors` should contain plausible near-miss options from the same grammar family when possible.
 - Keep prompts natural and pedagogically focused.
 - Cloze should never require filling blanks in the learner's mother tongue.
 - For pronoun-focused cloze files, include `family:pronoun` and at least one discriminative subtype/slice (for example `pronoun_type:*`, `case:*`, or `role:*`).
 
 ## 5. Validation Rules
 
-- Correctness compares selected token to `answer` or a value in `accepted`.
-- `hint` must never affect correctness.
-- `blank_token` must appear exactly once in `prompt`.
+- Correctness compares selected token to the hidden token from `text` or a value in `accepted`.
 - `content.practice_language` must map to a valid language key inside `translations` (this key defines the primary exercise).
+- `hidden_word_index` must be present for the practice-language translation object.
 
 ## 6. Examples
 
@@ -71,52 +63,54 @@ Optional fields:
 ```json
 {
   "id": 5001,
-  "schema_version": 2,
   "question_type": "cloze_word_choice",
   "difficulty": 2,
   "tags": ["topic:animals", "number:singular"],
   "content": {
     "response_mode": "single_token_choice",
-    "blank_token": "___",
     "practice_language": "nl"
   },
   "translations": {
     "nl": {
-      "prompt": "Ik zie ___ hond in het park.",
-      "answer": "een",
+      "text": "Ik zie een hond in het park.",
+      "hidden_word_index": 2,
       "accepted": [],
-      "word_pool": ["een", "de", "het", "die", "dat"]
+      "distractors": ["de", "het", "die", "dat"]
     },
     "no": {
-      "hint_translation": "Jeg ser en hund i parken."
+      "text": "Jeg ser en hund i parken."
     },
     "en": {
-      "hint_translation": "I see a dog in the park."
+      "text": "I see a dog in the park."
     }
   }
 }
 ```
 
-### Norwegian practice cloze (no hints)
+### German practice cloze with language hints
 
 ```json
 {
-  "id": 6001,
-  "schema_version": 2,
+  "id": 7002,
   "question_type": "cloze_word_choice",
   "difficulty": 2,
-  "tags": ["topic:animals", "number:singular"],
+  "tags": ["case:dative", "family:pronoun", "pronoun_type:personal", "role:object"],
   "content": {
     "response_mode": "single_token_choice",
-    "blank_token": "___",
-    "practice_language": "no"
+    "practice_language": "de"
   },
   "translations": {
-    "no": {
-      "prompt": "Jeg ser ___ hund i parken.",
-      "answer": "en",
+    "de": {
+      "text": "Kannst du mir bitte helfen? Ich verstehe das nicht.",
+      "hidden_word_index": 2,
       "accepted": [],
-      "word_pool": ["en", "ei", "et", "den", "det"]
+      "distractors": ["mich", "dir", "dich", "uns"]
+    },
+    "en": {
+      "text": "Can you please help me? I don't understand this."
+    },
+    "no": {
+      "text": "Kan du vær så snill å hjelpe meg? Jeg forstår ikke dette."
     }
   }
 }
