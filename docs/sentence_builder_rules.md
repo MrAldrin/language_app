@@ -64,6 +64,11 @@ General rule:
 
 - if we do not want to accept a wording, we should not include the needed replacement token in `distractors`
 
+For sentence builder specifically:
+
+- prefer clearly wrong-but-plausible distractors over synonym distractors
+- distractors should test meaning/grammar knowledge without creating multiple equally valid synonym answers
+
 ## Rules For `accepted`
 
 `accepted` is derived from the available token set on the other side.
@@ -77,6 +82,11 @@ In practice, `accepted` should usually be limited to:
 
 - valid alternate word order
 - intentional direct-valid alternates that are less common but still acceptable (and fully token-pool-supported)
+
+For sentence builder specifically:
+
+- `accepted` should not be used as a catch-all for synonym variants
+- if a synonym variant appears only because of distractors, remove/replace the distractor rather than keeping the synonym in `accepted`
 
 `accepted` should usually not include:
 
@@ -92,6 +102,8 @@ Every non-empty `accepted` entry should be classifiable as one of:
 - `direct_alt`
 
 If an accepted item cannot be justified by one of these reasons, remove it or adjust distractors.
+
+`direct_alt` should be rare and should represent a deliberate structural alternate, not simple synonym substitution.
 
 
 ## Review Check

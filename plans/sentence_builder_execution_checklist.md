@@ -114,3 +114,5 @@ Use this as the live tracker while we execute `plans/sentence_builder_dataset_au
   - Step 15 complete: applied minor shared-rule alignment in `docs/question_generation_common_rules.md` (no orthographic trap distractors).
   - Step 8.1 complete: audit script now outputs accepted inventory JSON/MD reports with `question_ids_by_accepted_count` and `accepted_by_reason`.
   - Current accepted inventory totals: 300 questions, 228 with accepted, 372 accepted items, explicit reason counts currently all `unknown` (expected before manual labeling).
+  - Step 12 started with file-by-file workflow.
+  - Completed first file pass: `apps/public/en_nl/sentence_builder.json` logged in `plans/reports/sentence_builder_manual_review_log.md` (52 accepted items reviewed).
