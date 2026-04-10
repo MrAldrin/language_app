@@ -42,6 +42,11 @@ Use this as the live tracker while we execute `plans/sentence_builder_dataset_au
 - [x] 8. Re-run reports and finalize audit tool (v2)
   - Confirm stable output and practical severity levels.
 
+- [ ] 8.1 Add accepted-inventory reporting
+  - `plans/reports/sentence_builder_accepted_inventory.json`
+  - `plans/reports/sentence_builder_accepted_inventory.md`
+  - Include `question_ids_by_accepted_count` and `accepted_by_reason`.
+
 - [x] 9. Create cleanup backlog from report
   - `plans/sentence_builder_cleanup_backlog.md`
   - Group by file and priority.
@@ -55,7 +60,9 @@ Use this as the live tracker while we execute `plans/sentence_builder_dataset_au
   - Keep `accepted` minimal and intentional.
 
 - [ ] 12. Manual language-quality pass
+  - Accepted-first review: all non-empty `accepted` entries are reason-labeled (`word_order` / `direct_alt` / `unknown`).
   - Review naturalness and direct translation quality.
+  - Confirm distractors test language knowledge (not only word shuffling).
 
 - [x] 13. Final verification
   - Re-run audit and confirm Definition of Done criteria.
@@ -63,6 +70,11 @@ Use this as the live tracker while we execute `plans/sentence_builder_dataset_au
 - [ ] 14. Follow-up: redesign lexical-substitution heuristic
   - Reduce false positives while still catching true synonym/lexical swaps.
   - Re-enable only after validation on a representative sample.
+
+- [ ] 15. Docs alignment pass
+  - Update `docs/sentence_builder_rules.md` to match accepted-reason policy and accepted complexity tracking.
+  - Update `docs/question_generation_common_rules.md` only if shared wording needs alignment.
+  - Confirm no policy conflict between `docs/` and `plans/`.
 
 ## Live Progress Log
 
@@ -97,3 +109,4 @@ Use this as the live tracker while we execute `plans/sentence_builder_dataset_au
   - Step 11 final cleanup complete: removed remaining tense/aspect-shift `accepted` entries across all six files.
   - Bulk cleanup impact: 104 `accepted` items removed across 6 files.
   - Step 13 final verification complete: current audit result is errors=0, warnings=0.
+  - Checklist aligned with `plans/sentence_builder_step12_step14_plan.md` (accepted-inventory, accepted-first manual review, docs alignment step).
