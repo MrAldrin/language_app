@@ -28,6 +28,9 @@ Before executing Step 12 and Step 14, use this contract:
 ## Future-Proof Tracking (Accepted Complexity)
 
 Because `accepted` entries are highest-risk during cleanup, every run must produce explicit accepted-complexity metrics.
+Tracking details and required output formats are maintained in:
+
+- `plans/sentence_builder_tracking_guidance.md`
 
 ## Metrics To Record Each Run
 

@@ -74,6 +74,7 @@ General namespace intent:
 - Do not replace language-specific characters with ASCII approximations.
 - Prefer natural, modern phrasing.
 - Keep distractors plausible (near-miss, not nonsense).
+- Do not use misspellings or orthographic traps as distractors.
 - Prefer controlling the selectable pool via `distractors` over growing `accepted`.
 - Keep `accepted` small and avoid free-form paraphrases; put type-specific acceptance rules in the corresponding type spec.
 - Never use display-only hint fields for correctness checks.

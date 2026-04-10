@@ -32,6 +32,12 @@ EXPECTED_QUESTION_TYPE = "sentence_builder_multiple_choice"
 EXPECTED_RESPONSE_MODE = "token_sequence_choice"
 DEFAULT_REPORT_JSON = Path("plans/reports/sentence_builder_audit_report.json")
 DEFAULT_SUMMARY_MD = Path("plans/reports/sentence_builder_audit_summary.md")
+DEFAULT_ACCEPTED_INVENTORY_JSON = Path(
+    "plans/reports/sentence_builder_accepted_inventory.json"
+)
+DEFAULT_ACCEPTED_INVENTORY_MD = Path(
+    "plans/reports/sentence_builder_accepted_inventory.md"
+)
 TOKEN_RE = re.compile(r"[^\s]+")
 
 
@@ -94,6 +100,217 @@ def build_summary_markdown(
         lines.append(f"- Warnings: {warn_count}")
         if not file_findings:
             lines.append("- Findings: none")
+        lines.append("")
+
+    return "\n".join(lines) + "\n"
+
+
+def group_question_ids_by_accepted_count(
+    accepted_count_by_question: dict[int | str, int],
+) -> dict[str, list[int | str]]:
+    groups: dict[str, list[int | str]] = {}
+    for qid, count in accepted_count_by_question.items():
+        if count <= 0:
+            continue
+        key = str(count)
+        groups.setdefault(key, []).append(qid)
+
+    for key in groups:
+        # Keep stable numeric ordering when possible.
+        groups[key] = sorted(
+            groups[key],
+            key=lambda v: (0, int(v)) if isinstance(v, int) else (1, str(v)),
+        )
+    return groups
+
+
+def build_accepted_inventory_for_file(file_path: Path) -> dict[str, Any]:
+    raw = json.loads(file_path.read_text(encoding="utf-8"))
+    if not isinstance(raw, list):
+        return {
+            "file": str(file_path),
+            "questions_total": 0,
+            "questions_with_accepted": 0,
+            "accepted_coverage_pct": 0.0,
+            "accepted_items_total": 0,
+            "avg_accepted_items_per_question": 0.0,
+            "questions_with_2plus_accepted": 0,
+            "question_ids_by_accepted_count": {},
+            "accepted_by_reason": {"word_order": 0, "direct_alt": 0, "unknown": 0},
+            "accepted_by_reason_estimated": {
+                "word_order": 0,
+                "direct_alt": 0,
+                "unknown": 0,
+            },
+        }
+
+    questions_total = len(raw)
+    questions_with_accepted = 0
+    accepted_items_total = 0
+    questions_with_2plus_accepted = 0
+    accepted_count_by_question: dict[int | str, int] = {}
+
+    # Current schema has no explicit accepted-reason labels, so explicit reason is unknown.
+    accepted_by_reason = {"word_order": 0, "direct_alt": 0, "unknown": 0}
+    # Optional estimate based on token-set equality, to support future manual review targeting.
+    accepted_by_reason_estimated = {"word_order": 0, "direct_alt": 0, "unknown": 0}
+
+    for idx, question in enumerate(raw, start=1):
+        if not isinstance(question, dict):
+            continue
+        qid = question.get("id", f"index:{idx}")
+        translations = question.get("translations", {})
+        if not isinstance(translations, dict):
+            continue
+
+        question_accepted_count = 0
+        for _lang, payload in translations.items():
+            if not isinstance(payload, dict):
+                continue
+            text = payload.get("text")
+            accepted = payload.get("accepted")
+            if not isinstance(accepted, list):
+                continue
+
+            str_accepted = [a for a in accepted if isinstance(a, str)]
+            if str_accepted:
+                question_accepted_count += len(str_accepted)
+
+            for item in str_accepted:
+                accepted_by_reason["unknown"] += 1
+                if isinstance(text, str):
+                    if token_set(item) == token_set(text):
+                        accepted_by_reason_estimated["word_order"] += 1
+                    else:
+                        accepted_by_reason_estimated["direct_alt"] += 1
+                else:
+                    accepted_by_reason_estimated["unknown"] += 1
+
+        if question_accepted_count > 0:
+            questions_with_accepted += 1
+            accepted_items_total += question_accepted_count
+            accepted_count_by_question[qid] = question_accepted_count
+            if question_accepted_count >= 2:
+                questions_with_2plus_accepted += 1
+
+    accepted_coverage_pct = (
+        (questions_with_accepted / questions_total) if questions_total > 0 else 0.0
+    )
+    avg_accepted_items_per_question = (
+        (accepted_items_total / questions_total) if questions_total > 0 else 0.0
+    )
+
+    return {
+        "file": str(file_path),
+        "questions_total": questions_total,
+        "questions_with_accepted": questions_with_accepted,
+        "accepted_coverage_pct": round(accepted_coverage_pct, 4),
+        "accepted_items_total": accepted_items_total,
+        "avg_accepted_items_per_question": round(avg_accepted_items_per_question, 4),
+        "questions_with_2plus_accepted": questions_with_2plus_accepted,
+        "question_ids_by_accepted_count": group_question_ids_by_accepted_count(
+            accepted_count_by_question
+        ),
+        "accepted_by_reason": accepted_by_reason,
+        "accepted_by_reason_estimated": accepted_by_reason_estimated,
+    }
+
+
+def build_accepted_inventory(reports: list[dict[str, Any]]) -> dict[str, Any]:
+    per_file: list[dict[str, Any]] = []
+    totals = {
+        "questions_total": 0,
+        "questions_with_accepted": 0,
+        "accepted_items_total": 0,
+        "questions_with_2plus_accepted": 0,
+        "accepted_by_reason": {"word_order": 0, "direct_alt": 0, "unknown": 0},
+        "accepted_by_reason_estimated": {"word_order": 0, "direct_alt": 0, "unknown": 0},
+    }
+
+    for report in reports:
+        file_path = Path(report["file"])
+        inv = build_accepted_inventory_for_file(file_path)
+        per_file.append(inv)
+        totals["questions_total"] += inv["questions_total"]
+        totals["questions_with_accepted"] += inv["questions_with_accepted"]
+        totals["accepted_items_total"] += inv["accepted_items_total"]
+        totals["questions_with_2plus_accepted"] += inv["questions_with_2plus_accepted"]
+        for key in ("word_order", "direct_alt", "unknown"):
+            totals["accepted_by_reason"][key] += inv["accepted_by_reason"][key]
+            totals["accepted_by_reason_estimated"][key] += inv[
+                "accepted_by_reason_estimated"
+            ][key]
+
+    totals["accepted_coverage_pct"] = round(
+        (totals["questions_with_accepted"] / totals["questions_total"])
+        if totals["questions_total"] > 0
+        else 0.0,
+        4,
+    )
+    totals["avg_accepted_items_per_question"] = round(
+        (totals["accepted_items_total"] / totals["questions_total"])
+        if totals["questions_total"] > 0
+        else 0.0,
+        4,
+    )
+
+    return {"totals": totals, "files": per_file}
+
+
+def build_accepted_inventory_markdown(inventory: dict[str, Any]) -> str:
+    totals = inventory["totals"]
+    lines: list[str] = []
+    lines.append("# Sentence Builder Accepted Inventory")
+    lines.append("")
+    lines.append("## Totals")
+    lines.append("")
+    lines.append(f"- Questions total: {totals['questions_total']}")
+    lines.append(f"- Questions with accepted: {totals['questions_with_accepted']}")
+    lines.append(f"- Accepted coverage pct: {totals['accepted_coverage_pct']}")
+    lines.append(f"- Accepted items total: {totals['accepted_items_total']}")
+    lines.append(
+        f"- Avg accepted items per question: {totals['avg_accepted_items_per_question']}"
+    )
+    lines.append(
+        f"- Questions with 2+ accepted: {totals['questions_with_2plus_accepted']}"
+    )
+    lines.append(
+        f"- Accepted by reason (explicit): {totals['accepted_by_reason']}"
+    )
+    lines.append(
+        f"- Accepted by reason (estimated): {totals['accepted_by_reason_estimated']}"
+    )
+    lines.append("")
+    lines.append("## Per File")
+    lines.append("")
+
+    for inv in inventory["files"]:
+        lines.append(f"### `{inv['file']}`")
+        lines.append(f"- Questions total: {inv['questions_total']}")
+        lines.append(f"- Questions with accepted: {inv['questions_with_accepted']}")
+        lines.append(f"- Accepted coverage pct: {inv['accepted_coverage_pct']}")
+        lines.append(f"- Accepted items total: {inv['accepted_items_total']}")
+        lines.append(
+            f"- Avg accepted items per question: {inv['avg_accepted_items_per_question']}"
+        )
+        lines.append(
+            f"- Questions with 2+ accepted: {inv['questions_with_2plus_accepted']}"
+        )
+        lines.append(
+            f"- Accepted by reason (explicit): {inv['accepted_by_reason']}"
+        )
+        lines.append(
+            f"- Accepted by reason (estimated): {inv['accepted_by_reason_estimated']}"
+        )
+        lines.append("- Question IDs by accepted count:")
+        if inv["question_ids_by_accepted_count"]:
+            for count, ids in sorted(
+                inv["question_ids_by_accepted_count"].items(),
+                key=lambda kv: int(kv[0]),
+            ):
+                lines.append(f"  - {count}: {ids}")
+        else:
+            lines.append("  - none")
         lines.append("")
 
     return "\n".join(lines) + "\n"
@@ -559,6 +776,16 @@ def main() -> int:
         default=str(DEFAULT_SUMMARY_MD),
         help="Path for human-readable markdown summary.",
     )
+    parser.add_argument(
+        "--accepted-inventory-json",
+        default=str(DEFAULT_ACCEPTED_INVENTORY_JSON),
+        help="Path for accepted-inventory JSON report.",
+    )
+    parser.add_argument(
+        "--accepted-inventory-md",
+        default=str(DEFAULT_ACCEPTED_INVENTORY_MD),
+        help="Path for accepted-inventory markdown report.",
+    )
     args = parser.parse_args()
 
     files = find_target_files(args.file)
@@ -601,8 +828,12 @@ def main() -> int:
 
     report_json_path = Path(args.report_json)
     summary_md_path = Path(args.summary_md)
+    accepted_inventory_json_path = Path(args.accepted_inventory_json)
+    accepted_inventory_md_path = Path(args.accepted_inventory_md)
     report_json_path.parent.mkdir(parents=True, exist_ok=True)
     summary_md_path.parent.mkdir(parents=True, exist_ok=True)
+    accepted_inventory_json_path.parent.mkdir(parents=True, exist_ok=True)
+    accepted_inventory_md_path.parent.mkdir(parents=True, exist_ok=True)
 
     full_report = {
         "totals": {
@@ -629,8 +860,19 @@ def main() -> int:
         ),
         encoding="utf-8",
     )
+    accepted_inventory = build_accepted_inventory(all_reports)
+    accepted_inventory_json_path.write_text(
+        json.dumps(accepted_inventory, indent=2, ensure_ascii=False) + "\n",
+        encoding="utf-8",
+    )
+    accepted_inventory_md_path.write_text(
+        build_accepted_inventory_markdown(accepted_inventory),
+        encoding="utf-8",
+    )
     print(f"\nWrote report JSON: {report_json_path}")
     print(f"Wrote summary MD: {summary_md_path}")
+    print(f"Wrote accepted inventory JSON: {accepted_inventory_json_path}")
+    print(f"Wrote accepted inventory MD: {accepted_inventory_md_path}")
 
     return 1 if total_errors > 0 else 0
 

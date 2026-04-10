@@ -42,7 +42,7 @@ Use this as the live tracker while we execute `plans/sentence_builder_dataset_au
 - [x] 8. Re-run reports and finalize audit tool (v2)
   - Confirm stable output and practical severity levels.
 
-- [ ] 8.1 Add accepted-inventory reporting
+- [x] 8.1 Add accepted-inventory reporting
   - `plans/reports/sentence_builder_accepted_inventory.json`
   - `plans/reports/sentence_builder_accepted_inventory.md`
   - Include `question_ids_by_accepted_count` and `accepted_by_reason`.
@@ -71,7 +71,7 @@ Use this as the live tracker while we execute `plans/sentence_builder_dataset_au
   - Reduce false positives while still catching true synonym/lexical swaps.
   - Re-enable only after validation on a representative sample.
 
-- [ ] 15. Docs alignment pass
+- [x] 15. Docs alignment pass
   - Update `docs/sentence_builder_rules.md` to match accepted-reason policy and accepted complexity tracking.
   - Update `docs/question_generation_common_rules.md` only if shared wording needs alignment.
   - Confirm no policy conflict between `docs/` and `plans/`.
@@ -110,3 +110,7 @@ Use this as the live tracker while we execute `plans/sentence_builder_dataset_au
   - Bulk cleanup impact: 104 `accepted` items removed across 6 files.
   - Step 13 final verification complete: current audit result is errors=0, warnings=0.
   - Checklist aligned with `plans/sentence_builder_step12_step14_plan.md` (accepted-inventory, accepted-first manual review, docs alignment step).
+  - Step 15 complete: updated `docs/sentence_builder_rules.md` to reflect accepted reason policy, distractor intent, and accepted tracking guidance.
+  - Step 15 complete: applied minor shared-rule alignment in `docs/question_generation_common_rules.md` (no orthographic trap distractors).
+  - Step 8.1 complete: audit script now outputs accepted inventory JSON/MD reports with `question_ids_by_accepted_count` and `accepted_by_reason`.
+  - Current accepted inventory totals: 300 questions, 228 with accepted, 372 accepted items, explicit reason counts currently all `unknown` (expected before manual labeling).
