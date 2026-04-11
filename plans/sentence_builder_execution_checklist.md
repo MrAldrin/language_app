@@ -60,9 +60,10 @@ Use this as the live tracker while we execute `plans/sentence_builder_dataset_au
   - Keep `accepted` minimal and intentional.
 
 - [ ] 12. Manual language-quality pass
-  - Accepted-first review: all non-empty `accepted` entries are reason-labeled (`word_order` / `direct_alt` / `unknown`).
+  - Accepted-first review: all non-empty `accepted` entries are reason-labeled (`word_order` / `text_subset` / `unknown`).
   - Review naturalness and direct translation quality.
   - Confirm distractors test language knowledge (not only word shuffling).
+  - STRICT CHECK: Confirm no `accepted` items use words from the `distractors` pool.
 
 - [x] 13. Final verification
   - Re-run audit and confirm Definition of Done criteria.
@@ -71,8 +72,8 @@ Use this as the live tracker while we execute `plans/sentence_builder_dataset_au
   - Reduce false positives while still catching true synonym/lexical swaps.
   - Re-enable only after validation on a representative sample.
 
-- [x] 15. Docs alignment pass
-  - Update `docs/sentence_builder_rules.md` to match accepted-reason policy and accepted complexity tracking.
+- [ ] 15. Docs alignment pass
+  - Update `docs/sentence_builder_rules.md` to match accepted-reason policy (word_order/text_subset) and accepted complexity tracking.
   - Update `docs/question_generation_common_rules.md` only if shared wording needs alignment.
   - Confirm no policy conflict between `docs/` and `plans/`.
 

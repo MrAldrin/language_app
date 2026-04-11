@@ -61,8 +61,8 @@ Derived from `docs/sentence_builder_rules.md`:
 - `text` should not be duplicated inside `accepted`
 
 3. Token-pool consistency
-- each `accepted` sentence must be constructible from `text + distractors` token multiset
-- flag tokens in `accepted` that are not present in the available token pool
+- each `accepted` sentence must be constructible ONLY from the `text` token multiset (not using distractors).
+- if an `accepted` sentence uses a distractor, flag it as a policy violation: the distractor must be replaced to invalidate the alternate answer.
 
 4. Heuristic policy warnings (not hard errors)
 - `accepted` looks like synonym/lexical swap rather than word-order variant

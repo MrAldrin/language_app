@@ -24,7 +24,7 @@ For each file and the total dataset:
   - continue for higher counts if present
 - `accepted_by_reason`:
   - `word_order`
-  - `direct_alt`
+  - `text_subset`
   - `unknown`
 
 ## Report Artifacts
@@ -43,5 +43,5 @@ Generate and maintain:
 
 ## Notes
 
-- `accepted` reason labels (`word_order` / `direct_alt`) should be logged during manual review.
+- `accepted` reason labels (`word_order` / `text_subset`) should be logged during manual review.
 - `unknown` should be treated as mandatory follow-up.

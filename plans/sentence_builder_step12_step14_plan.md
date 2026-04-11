@@ -16,13 +16,14 @@ Before executing Step 12 and Step 14, use this contract:
 2. `distractors` policy
 - Distractors should make the task a real language decision task, not only token reordering.
 - Distractors should increase difficulty without tricking users.
-- Do not rely on misspellings, orthographic traps, or noisy decoys.
+- NEVER include: misspellings, synonyms, contractions, or orthographic trap options.
 - Prefer plausible alternatives that test grammar and meaning.
 - Where appropriate, prefer distractors from the same semantic class as target words, so learners must identify correct meaning (not just grammar shape).
 
 3. `accepted` policy (only two allowed reasons)
-- Primary reason: alternative valid sentence from the same token pool, most often alternate word order.
-- Secondary reason: intentional direct-valid alternate phrasing that is less common but still acceptable, with required tokens present in the pool.
+- Primary reason: `word_order` (alternative valid sentence from the same tokens as the canonical `text`).
+- Secondary reason: `text_subset` (a valid translation formed by a subset of the words from the canonical `text`).
+- STRICT RULE: `accepted` items MUST NOT use tokens from the `distractors` pool. If a distractor enables an alternate translation, replace the distractor instead of adding to `accepted`.
 - If an accepted variant does not fit one of these reasons, remove it.
 
 ## Future-Proof Tracking (Accepted Complexity)
@@ -49,7 +50,7 @@ For each file and total dataset:
   - continue for higher counts if present
 - `accepted_by_reason`:
   - `word_order`
-  - `direct_alt`
+  - `text_subset`
   - `unknown` (must be reviewed)
 
 ## Artifacts
@@ -94,9 +95,10 @@ For each language side (`translations.<lang>`):
 - Is register level appropriate for the target learner level?
 
 2. `accepted` validity
-- Is each accepted item explicitly `word_order` or `direct_alt`?
-- Is each accepted item constructible from `text + distractors`?
-- If not, either remove accepted item or repair token pool.
+- Is each accepted item explicitly `word_order` or `text_subset`?
+- Is each accepted item constructible ONLY from the `text` tokens?
+- If not, either remove accepted item or repair token pool by replacing the distractor.
+
 
 3. `distractors` quality
 - Do distractors test grammar and/or meaning without introducing confusion?
@@ -125,7 +127,7 @@ Log format per reviewed item:
 - file path
 - question id
 - language side
-- accepted reason: `word_order`, `direct_alt`, `none`, `unknown`
+- accepted reason: `word_order`, `text_subset`, `none`, `unknown`
 - decision: `keep`, `restore_alt`, `adjust_distractor`, `rewrite_text`, `remove_accepted`
 - rationale (1-2 lines)
 - status: `done`
@@ -159,7 +161,7 @@ Token-difference-only logic over-flags because it cannot reliably separate:
 1. Precision over recall.
 2. Language-aware gating.
 3. Multi-signal detection (no single-rule warning).
-4. Alignment with accepted reasons (`word_order`, `direct_alt`).
+4. Alignment with accepted reasons (`word_order`, `text_subset`).
 
 ## Proposed Detection Pipeline
 
@@ -178,7 +180,7 @@ Emit lexical warning only when all gates pass:
 - lexical change affects content words (not only function words).
 
 5. Accepted-reason gate
-- suppress warning if candidate is labeled as intentional `direct_alt`.
+- suppress warning if candidate is labeled as intentional `text_subset`.
 
 6. Confidence gate
 - score exceeds calibrated threshold.
@@ -187,7 +189,7 @@ Emit lexical warning only when all gates pass:
 
 1. Build gold set
 - Create `plans/reports/lexical_heuristic_goldset.json`.
-- Include true positives, true negatives, and intentional `direct_alt` examples.
+- Include true positives, true negatives, and intentional `text_subset` examples.
 
 2. Add explainable scoring
 - For each lexical warning, log gate decisions and confidence contributors.
