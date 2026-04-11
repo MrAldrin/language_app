@@ -1,7 +1,7 @@
 {
   "totals": {
-    "files_scanned": 1,
-    "questions_scanned": 50,
+    "files_scanned": 6,
+    "questions_scanned": 300,
     "findings": 0,
     "errors": 0,
     "warnings": 0
@@ -9,6 +9,31 @@
   "reports": [
     {
       "file": "apps/public/de_en/sentence_builder.json",
+      "question_count": 50,
+      "findings": []
+    },
+    {
+      "file": "apps/public/de_nl/sentence_builder.json",
+      "question_count": 50,
+      "findings": []
+    },
+    {
+      "file": "apps/public/de_no/sentence_builder.json",
+      "question_count": 50,
+      "findings": []
+    },
+    {
+      "file": "apps/public/en_nl/sentence_builder.json",
+      "question_count": 50,
+      "findings": []
+    },
+    {
+      "file": "apps/public/en_no/sentence_builder.json",
+      "question_count": 50,
+      "findings": []
+    },
+    {
+      "file": "apps/public/nl_no/sentence_builder.json",
       "question_count": 50,
       "findings": []
     }

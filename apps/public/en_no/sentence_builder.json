@@ -11,7 +11,7 @@
         "accepted": [],
         "text": "I am very happy today",
         "distractors": [
-          "glad",
+          "tired",
           "he",
           "is",
           "sad",
@@ -28,7 +28,7 @@
           "han",
           "i morgen",
           "trist",
-          "utrolig",
+          "mett",
           "var"
         ]
       }
@@ -56,7 +56,7 @@
           "is",
           "newspaper",
           "read",
-          "reading",
+          "writing",
           "we"
         ]
       },
@@ -65,13 +65,13 @@
         "text": "Hun leser en veldig god bok",
         "distractors": [
           "avis",
-          "bra",
+          "ny",
           "bøker",
           "dårlig",
           "ei",
           "han",
           "leste",
-          "utrolig",
+          "spennende",
           "vi"
         ]
       }
@@ -151,7 +151,7 @@
           "gamle",
           "han",
           "løp",
-          "spaserer",
+          "kjører",
           "supermarkedet",
           "vi"
         ]
@@ -186,7 +186,7 @@
         "accepted": [],
         "text": "Hunden er stor og brun",
         "distractors": [
-          "diger",
+          "mett",
           "ikke",
           "katt",
           "katter",
@@ -231,7 +231,7 @@
           "natten",
           "sov",
           "store",
-          "våkner"
+          "leker"
         ]
       }
     },
@@ -255,7 +255,7 @@
           "bus",
           "had",
           "he",
-          "own",
+          "bought",
           "slow",
           "we"
         ]
@@ -266,10 +266,10 @@
         "distractors": [
           "blå",
           "buss",
-          "eier",
+          "ser",
           "hadde",
           "han",
-          "kjapp",
+          "ny",
           "treg",
           "vi"
         ]
@@ -306,12 +306,12 @@
         "accepted": [],
         "text": "Han jobber på et stort kontor",
         "distractors": [
-          "arbeider",
+          "bor",
           "de",
           "fabrikk",
           "hun",
           "jobbet",
-          "lite",
+          "gammelt",
           "ute"
         ]
       }
@@ -338,7 +338,7 @@
           "he",
           "I",
           "spoke",
-          "talk",
+          "write",
           "understand"
         ]
       },
@@ -349,10 +349,10 @@
           "dårlig",
           "engelsk",
           "forstår",
-          "godt",
+          "ofte",
           "han",
           "jeg",
-          "prater",
+          "skriver",
           "snakket"
         ]
       }
@@ -390,11 +390,11 @@
           "dårlig",
           "i går",
           "kaldt",
-          "pent",
+          "ofte",
           "regn",
           "skal",
           "var",
-          "veldig"
+          "alltid"
         ]
       }
     },
@@ -473,9 +473,9 @@
           "gammelt",
           "leilighet",
           "selge",
-          "ville",
+          "må",
           "å",
-          "ønsker"
+          "kan"
         ]
       }
     },
@@ -511,8 +511,8 @@
         "distractors": [
           "han",
           "hater",
-          "hvit",
-          "sort",
+          "kald",
+          "ofte",
           "spiste",
           "te",
           "vann"
@@ -744,17 +744,18 @@
       },
       "no": {
         "accepted": [],
-        "text": "Han var veldig trøtt i går",
+        "text": "Du ser veldig trøtt ut i dag",
         "distractors": [
-          "er",
-          "hun",
-          "i morgen",
-          "sint",
-          "utrolig",
+          "han",
+          "hvile",
+          "i går",
+          "jeg",
           "vi",
+          "høres",
           "våken"
         ]
       }
+
     },
     "content": {
       "response_mode": "token_sequence_choice"
@@ -791,7 +792,7 @@
           "ham",
           "han",
           "hører",
-          "skjønner",
+          "liker",
           "vet"
         ]
       }
@@ -898,7 +899,7 @@
           "shirt",
           "shoes",
           "they",
-          "wearing",
+          "buying",
           "wore"
         ]
       },
@@ -906,7 +907,7 @@
         "accepted": [],
         "text": "Hun har på seg en gul kjole",
         "distractors": [
-          "bærer",
+          "kjøper",
           "de",
           "grønn",
           "hadde",
@@ -1026,7 +1027,7 @@
           "landsbyen",
           "lille",
           "stille",
-          "storbyen",
+          "bygda",
           "var",
           "vi"
         ]
@@ -1069,7 +1070,7 @@
           "dårlig",
           "ei",
           "han",
-          "nydelig",
+          "søt",
           "spiser",
           "var"
         ]
@@ -1185,11 +1186,13 @@
           "glad",
           "han",
           "i morgen",
-          "lei",
+          "sint",
           "var",
           "vi"
         ]
       }
+
+
     },
     "content": {
       "response_mode": "token_sequence_choice"
@@ -1219,18 +1222,19 @@
       },
       "no": {
         "accepted": [],
-        "text": "Han må sove mer",
+        "text": "Jeg er veldig glad i dag",
         "distractors": [
-          "hun",
-          "jobbe",
-          "mindre",
-          "spise",
-          "trenger",
-          "trengte",
-          "vil",
-          "å"
+          "han",
+          "i morgen",
+          "mett",
+          "sint",
+          "ofte",
+          "trist",
+          "var",
+          "vi"
         ]
       }
+
     },
     "content": {
       "response_mode": "token_sequence_choice"
@@ -1336,7 +1340,7 @@
         "text": "Hvor mye koster billetten",
         "distractors": [
           "billigere",
-          "dyrt",
+          "tungt",
           "er",
           "hva",
           "kjøpe",
@@ -1376,7 +1380,7 @@
           "blå",
           "bussen",
           "ikke",
-          "kjapp",
+          "stor",
           "treg",
           "var"
         ]
@@ -1452,7 +1456,7 @@
           "hun",
           "spise",
           "søt",
-          "varm",
+          "kald",
           "veldig"
         ]
       }
@@ -1523,17 +1527,18 @@
       },
       "no": {
         "accepted": [],
-        "text": "Jeg har to små katter",
+        "text": "De har kjøpt et stort hus",
         "distractors": [
-          "eier",
-          "en",
+          "bygd",
           "hadde",
-          "hunder",
-          "store",
+          "leilighet",
+          "lite",
+          "selge",
           "tre",
           "vi"
         ]
       }
+
     },
     "content": {
       "response_mode": "token_sequence_choice"
@@ -1566,7 +1571,7 @@
         "text": "Hun reiste til Norge i fjor sommer",
         "distractors": [
           "besøke",
-          "dro",
+          "gikk",
           "han",
           "skal",
           "tur",
@@ -1807,10 +1812,10 @@
         "distractors": [
           "at",
           "de",
-          "mener",
+          "kan",
           "snakke",
           "syntes",
-          "tror",
+          "vet",
           "unødvendig",
           "var"
         ]
@@ -1853,7 +1858,7 @@
           "hun",
           "kaffe",
           "kvelden",
-          "pleier",
+          "må",
           "å"
         ]
       }
@@ -1892,7 +1897,7 @@
           "månen",
           "regn",
           "skinte",
-          "sola",
+          "skyen",
           "var"
         ]
       }
@@ -1927,7 +1932,7 @@
         "distractors": [
           "er",
           "hans",
-          "pc-en",
+          "veien",
           "stolen",
           "telefonen",
           "under",

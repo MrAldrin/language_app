@@ -15,7 +15,7 @@
           "gelb",
           "nicht",
           "Orange",
-          "richtig",
+          "hungrig",
           "sauer",
           "war"
         ]
@@ -28,7 +28,7 @@
           "den",
           "gult",
           "ikke",
-          "skikkelig",
+          "mett",
           "surt",
           "var"
         ]
@@ -92,10 +92,10 @@
           "es",
           "Essen",
           "kalt",
-          "mag",
+          "suche",
           "Tee",
           "trank",
-          "trinken",
+          "kochen",
           "Wasser",
           "zu"
         ]
@@ -106,7 +106,7 @@
         "distractors": [
           "drakk",
           "drikker",
-          "gjerne",
+          "ofte",
           "han",
           "kald",
           "spise",
@@ -135,10 +135,9 @@
           "Buch",
           "er",
           "kurz",
-          "liest",
+          "kennt",
           "Morgen",
-          "schrieb",
-          "verfasst"
+          "schreibt"
         ]
       },
       "no": {
@@ -146,7 +145,7 @@
         "text": "Hun skriver et langt brev",
         "distractors": [
           "bok",
-          "forfatter",
+          "ser",
           "han",
           "i morgen",
           "kort",
@@ -177,7 +176,7 @@
           "schlecht",
           "sie",
           "sprach",
-          "sprechen",
+          "verstehen",
           "verstehst"
         ]
       },
@@ -185,7 +184,7 @@
         "accepted": [],
         "text": "Du snakker veldig godt tysk",
         "distractors": [
-          "bra",
+          "ofte",
           "dårlig",
           "engelsk",
           "forstår",
@@ -297,7 +296,7 @@
           "kalt",
           "Regen",
           "schlecht",
-          "schön",
+          "immer",
           "sehr",
           "war"
         ]
@@ -310,8 +309,8 @@
           "dårlig",
           "i går",
           "kaldt",
-          "kjempefint",
-          "pent",
+          "altid",
+          "ofte",
           "regn",
           "var",
           "veldig"
@@ -339,7 +338,7 @@
           "Fahrrad",
           "sie",
           "verkaufen",
-          "will",
+          "muss",
           "wir",
           "wollte"
         ]
@@ -353,7 +352,7 @@
           "selge",
           "sykkel",
           "vi",
-          "vil",
+          "må",
           "ønsket"
         ]
       }
@@ -380,7 +379,7 @@
           "ich",
           "lauwarm",
           "nicht",
-          "richtig",
+          "nie",
           "war"
         ]
       },
@@ -392,7 +391,7 @@
           "ild",
           "jeg",
           "lunkent",
-          "skikkelig",
+          "aldri",
           "var",
           "varmt"
         ]
@@ -416,9 +415,9 @@
         "distractors": [
           "böse",
           "er",
-          "froh",
+          "hungrig",
           "Morgen",
-          "richtig",
+          "spät",
           "traurig",
           "war",
           "wir"
@@ -430,9 +429,9 @@
         "distractors": [
           "han",
           "i morgen",
-          "lykkelig",
+          "mett",
           "sint",
-          "skikkelig",
+          "sent",
           "trist",
           "var",
           "vi"
@@ -457,7 +456,7 @@
         "text": "Wir lesen ein spannendes Buch",
         "distractors": [
           "er",
-          "interessantes",
+          "neues",
           "langweilig",
           "lasen",
           "schreiben",
@@ -472,7 +471,7 @@
           "avis",
           "de",
           "han",
-          "interessant",
+          "ny",
           "kjedelig",
           "leste",
           "skriver"
@@ -500,7 +499,7 @@
           "nicht",
           "schlecht",
           "Schule",
-          "Studenten",
+          "Kinder",
           "verstanden",
           "wir"
         ]
@@ -510,11 +509,11 @@
         "text": "Eleven forstår læreren godt",
         "distractors": [
           "dårlig",
-          "elevene",
+          "barna",
           "forsto",
-          "hører",
+          "ser",
           "ikke",
-          "skjønner",
+          "hører",
           "skole",
           "vi"
         ]
@@ -540,12 +539,12 @@
           "Auto",
           "Bus",
           "gestern",
-          "gleich",
+          "jetzt",
           "in",
           "kommt",
-          "kürze",
+          "oft",
           "langsam",
-          "Schnellzug",
+          "Flugzeug",
           "wir"
         ]
       },
@@ -555,10 +554,10 @@
         "distractors": [
           "bil",
           "bussen",
-          "drar",
-          "hurtigtoget",
+          "stanser",
+          "flyet",
           "i går",
-          "kjappe",
+          "store",
           "kommer",
           "trege",
           "vi"
@@ -582,7 +581,7 @@
         "accepted": [],
         "text": "Ich brauche dringend deine Hilfe",
         "distractors": [
-          "benötige",
+          "suche",
           "brauchte",
           "Geld",
           "helfen",
@@ -596,12 +595,12 @@
         "text": "Jeg trenger din hjelp strak",
         "distractors": [
           "aldri",
-          "behøver",
+          "søker",
           "hans",
           "hjelpe",
           "penger",
           "trengte",
-          "umiddelbart",
+          "ofte",
           "vi"
         ]
       }
@@ -623,10 +622,10 @@
         "accepted": [],
         "text": "Die graue Katze schläft",
         "distractors": [
-          "aus",
+          "liegt",
           "er",
           "Hund",
-          "ruht",
+          "da",
           "schlief",
           "schwarz",
           "sich",
@@ -640,7 +639,7 @@
         "distractors": [
           "han",
           "hunden",
-          "hviler",
+          "ligger",
           "sov",
           "svart",
           "vi",
@@ -666,7 +665,7 @@
         "text": "Sie haben ein großes Haus gekauft",
         "distractors": [
           "Baum",
-          "erworben",
+          "gebaut",
           "hatten",
           "klein",
           "verkaufen",
@@ -678,7 +677,7 @@
         "accepted": [],
         "text": "De har kjøpt et stort hus",
         "distractors": [
-          "anskaffet",
+          "bygd",
           "hadde",
           "leilighet",
           "lite",
@@ -708,7 +707,7 @@
           "gelb",
           "Morgen",
           "Nacht",
-          "richtig",
+          "nicht",
           "schwarz",
           "war",
           "wir"
@@ -721,7 +720,7 @@
           "gul",
           "i morgen",
           "natten",
-          "skikkelig",
+          "ikke",
           "svart",
           "var",
           "vi"
@@ -745,9 +744,9 @@
         "accepted": [],
         "text": "Wir essen pünktlich zu Abend",
         "distractors": [
-          "Abendessen",
-          "aßen",
           "Frühstück",
+          "aßen",
+          "Mittagessen",
           "Kaffee",
           "Morgen",
           "sie",
@@ -762,7 +761,7 @@
           "frokost",
           "i morgen",
           "kaffe",
-          "på",
+          "morgen",
           "sent",
           "spiste",
           "tiden"
@@ -790,7 +789,7 @@
           "Büro",
           "draußen",
           "Mutter",
-          "Papa",
+          "Bruder",
           "sie",
           "wir"
         ]
@@ -803,7 +802,7 @@
           "jobbet",
           "kontor",
           "mor",
-          "pappaen",
+          "broren",
           "ute",
           "vi"
         ]
@@ -842,7 +841,7 @@
         "distractors": [
           "dårlig",
           "er",
-          "god",
+          "ofte",
           "han",
           "ikke",
           "smakte",
@@ -869,7 +868,7 @@
         "text": "Ich sehe einen gelben Vogel",
         "distractors": [
           "er",
-          "erblicke",
+          "suche",
           "grün",
           "Hund",
           "sah",
@@ -881,15 +880,15 @@
         "accepted": [],
         "text": "Jeg ser en gul fugl",
         "distractors": [
-          "får",
+          "ser",
           "grønn",
           "han",
           "hund",
-          "på",
+          "etter",
           "synge",
           "så",
           "vi",
-          "øye"
+          "vei"
         ]
       }
     },
@@ -915,7 +914,7 @@
           "Gedicht",
           "hässlich",
           "sang",
-          "tolles",
+          "neues",
           "wir"
         ]
       },
@@ -925,7 +924,7 @@
         "distractors": [
           "bror",
           "dikt",
-          "fin",
+          "ny",
           "han",
           "stygg",
           "søsteren",
@@ -954,7 +953,7 @@
           "er",
           "gestern",
           "ich",
-          "sehen",
+          "wirkt",
           "sie",
           "wach",
           "wir"
@@ -969,7 +968,7 @@
           "i går",
           "jeg",
           "vi",
-          "virker",
+          "høres",
           "våken"
         ]
       }
@@ -991,7 +990,7 @@
         "accepted": [],
         "text": "Ihr älterer Bruder ist ziemlich groß",
         "distractors": [
-          "großer",
+          "lieber",
           "klein",
           "lterer",
           "mein",
@@ -1008,7 +1007,7 @@
           "hun",
           "lav",
           "min",
-          "storebroren",
+          "naboen",
           "søster",
           "var",
           "vi"
@@ -1033,7 +1032,7 @@
         "text": "Die große Stadt ist immer belebt",
         "distractors": [
           "dorf",
-          "Großstadt",
+          "Dorf",
           "klein",
           "nie",
           "ruhig",
@@ -1049,7 +1048,7 @@
           "landsbyen",
           "lille",
           "stille",
-          "storbyen",
+          "bygda",
           "var",
           "vi"
         ]
@@ -1089,7 +1088,7 @@
           "dårlig",
           "ei",
           "han",
-          "lager",
+          "kjøper",
           "spiser",
           "var"
         ]
@@ -1130,7 +1129,7 @@
           "henne",
           "hun",
           "så",
-          "vi"
+          "oss"
         ]
       }
     },
@@ -1167,7 +1166,7 @@
           "hjem",
           "i går",
           "venner",
-          "vil"
+          "må"
         ]
       }
     },
@@ -1204,7 +1203,7 @@
           "glad",
           "han",
           "i morgen",
-          "lei",
+          "sint",
           "var",
           "vi"
         ]
@@ -1228,7 +1227,7 @@
         "text": "Er muss mehr schlafen",
         "distractors": [
           "arbeiten",
-          "braucht",
+          "sucht",
           "Essen",
           "musste",
           "Schlaf",
@@ -1245,7 +1244,7 @@
           "jobbe",
           "mindre",
           "spise",
-          "trenger",
+          "søker",
           "trengte",
           "vil",
           "å"
@@ -1352,7 +1351,7 @@
           "Preis",
           "teuer",
           "viele",
-          "was"
+          "wo"
         ]
       },
       "no": {
@@ -1362,7 +1361,7 @@
           "billigere",
           "dyrt",
           "er",
-          "hva",
+          "hvor",
           "kjøpe",
           "mange",
           "pris"
@@ -1400,7 +1399,7 @@
           "blå",
           "bussen",
           "ikke",
-          "kjapp",
+          "stor",
           "treg",
           "var"
         ]
@@ -1459,7 +1458,7 @@
         "accepted": [],
         "text": "Ich mag kein scharfes Essen",
         "distractors": [
-          "esse",
+          "koche",
           "gerne",
           "heiß",
           "lecker",
@@ -1476,7 +1475,7 @@
         "distractors": [
           "deilig",
           "hun",
-          "spise",
+          "koke",
           "søt",
           "varm",
           "veldig"
@@ -1503,18 +1502,19 @@
           "arbeiten",
           "bleiben",
           "hier",
-          "sie",
+          "er",
           "wann",
-          "wohnen",
+          "kommen",
           "wohnte"
         ]
       },
+
       "no": {
         "accepted": [],
         "text": "Hvor bor du nå",
         "distractors": [
           "blir",
-          "bodde",
+          "jobbet",
           "de",
           "her",
           "jobber",
@@ -1591,7 +1591,7 @@
         "text": "Hun reiste til Norge i fjor sommer",
         "distractors": [
           "besøke",
-          "dro",
+          "gikk",
           "han",
           "skal",
           "tur",
@@ -1621,7 +1621,7 @@
           "schläft",
           "sie",
           "spät",
-          "steht",
+          "geht",
           "wachte"
         ]
       },
@@ -1635,7 +1635,7 @@
           "opp",
           "sent",
           "sover",
-          "står",
+          "går",
           "våknet"
         ]
       }
@@ -1659,7 +1659,7 @@
         "distractors": [
           "brauchen",
           "Kaffee",
-          "möchten",
+          "haben",
           "sie",
           "trinken",
           "war"
@@ -1675,7 +1675,7 @@
           "noe",
           "trenger",
           "var",
-          "ønsker"
+          "har"
         ]
       }
     },
@@ -1739,8 +1739,8 @@
         "accepted": [],
         "text": "Wir warten auf den Bus",
         "distractors": [
-          "an",
-          "Bushaltestelle",
+          "hinter",
+          "Park",
           "der",
           "für",
           "sehen",
@@ -1759,7 +1759,7 @@
           "ser",
           "skal",
           "toget",
-          "ventet"
+          "sitter"
         ]
       }
     },
@@ -1794,10 +1794,10 @@
         "text": "Vår nye hage er veldig vakker",
         "distractors": [
           "de",
-          "den",
+          "det",
           "fin",
           "gammel",
-          "hagen",
+          "huset",
           "hus",
           "ikke",
           "liten",
@@ -1838,10 +1838,10 @@
         "distractors": [
           "at",
           "de",
-          "mener",
+          "vet",
           "snakke",
           "syntes",
-          "tror",
+          "mener",
           "unødvendig",
           "var"
         ]
@@ -1885,7 +1885,7 @@
           "hun",
           "kaffe",
           "kvelden",
-          "pleier",
+          "må",
           "å"
         ]
       }
@@ -1924,7 +1924,7 @@
           "månen",
           "regn",
           "skinte",
-          "sola",
+          "skyen",
           "var"
         ]
       }
@@ -1947,13 +1947,13 @@
         "text": "Mein Computer liegt auf dem Tisch",
         "distractors": [
           "ist",
-          "Rechner",
+          "stuhl",
           "sein",
           "steht",
           "Stuhl",
           "Telefon",
           "unter",
-          "war"
+          "var"
         ]
       },
       "no": {
@@ -1962,13 +1962,14 @@
         "distractors": [
           "er",
           "hans",
-          "pc-en",
           "stolen",
+          "veien",
           "telefonen",
           "under",
           "var"
         ]
       }
+
     },
     "content": {
       "response_mode": "token_sequence_choice"
@@ -1989,7 +1990,7 @@
           "durst",
           "haben",
           "ist",
-          "sie",
+          "wir",
           "war",
           "wie",
           "wo"
@@ -1999,13 +2000,15 @@
         "accepted": [],
         "text": "Er du sulten",
         "distractors": [
-          "de",
-          "hvor",
-          "hvordan",
           "tørst",
+          "er",
+          "oss",
+          "blir",
+          "hvor",
           "var"
         ]
       }
+
     },
     "content": {
       "response_mode": "token_sequence_choice"

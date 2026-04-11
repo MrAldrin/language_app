@@ -11,7 +11,7 @@
         "accepted": [],
         "text": "I am very happy today",
         "distractors": [
-          "glad",
+          "tired",
           "he",
           "is",
           "sad",
@@ -24,14 +24,14 @@
         "accepted": [],
         "text": "Ik ben erg blij vandaag",
         "distractors": [
-          "gelukkig",
+          "moe",
           "hij",
           "is",
           "morgen",
           "verdrietig",
           "was",
           "ze",
-          "zeer"
+          "laat"
         ]
       }
     },
@@ -58,7 +58,7 @@
           "is",
           "newspaper",
           "read",
-          "reading",
+          "writing",
           "we"
         ]
       },
@@ -67,7 +67,7 @@
         "text": "Ze leest een heel goed boek",
         "distractors": [
           "boeken",
-          "erg",
+          "vaak",
           "hij",
           "krant",
           "lezen",
@@ -109,7 +109,7 @@
         "distractors": [
           "altijd",
           "aten",
-          "het",
+          "de",
           "lunch",
           "morgen",
           "ontbijt",
@@ -140,9 +140,9 @@
           "he",
           "old",
           "ran",
-          "shop",
+          "office",
           "supermarket",
-          "walking",
+          "running",
           "we"
         ]
       },
@@ -155,7 +155,7 @@
           "oud",
           "renden",
           "supermarkt",
-          "wandelen",
+          "kantoor",
           "we",
           "zij"
         ]
@@ -218,7 +218,7 @@
         "distractors": [
           "big",
           "dog",
-          "little",
+          "fast",
           "night",
           "slept",
           "they",
@@ -231,12 +231,13 @@
         "distractors": [
           "groot",
           "hond",
-          "nacht",
+          "ochtend",
           "sliep",
-          "wordt wakker",
+          "gaat",
           "ze"
         ]
       }
+
     },
     "content": {
       "response_mode": "token_sequence_choice"
@@ -258,7 +259,7 @@
           "bus",
           "had",
           "he",
-          "own",
+          "bought",
           "slow",
           "we"
         ]
@@ -267,7 +268,7 @@
         "accepted": [],
         "text": "Ik heb een snelle rode auto",
         "distractors": [
-          "bezit",
+          "zie",
           "blauw",
           "bus",
           "had",
@@ -300,8 +301,8 @@
           "she",
           "small",
           "they",
-          "worked",
-          "working"
+          "lived",
+          "living"
         ]
       },
       "nl": {
@@ -312,10 +313,11 @@
           "fabriek",
           "klein",
           "op",
-          "werkte",
+          "woont",
           "ze"
         ]
       }
+
     },
     "content": {
       "response_mode": "token_sequence_choice"
@@ -339,7 +341,7 @@
           "he",
           "I",
           "spoke",
-          "talk",
+          "write",
           "understand"
         ]
       },
@@ -377,7 +379,7 @@
           "bad",
           "cold",
           "rain",
-          "very",
+          "always",
           "was",
           "will",
           "yesterday"
@@ -387,11 +389,11 @@
         "accepted": [],
         "text": "Het weer is echt prachtig vandaag",
         "distractors": [
-          "erg",
+          "vaak",
           "gisteren",
-          "heel",
+          "altijd",
           "koud",
-          "mooi",
+          "lelijk",
           "regen",
           "slecht",
           "was",
@@ -416,7 +418,7 @@
         "accepted": [],
         "text": "My young brother is very tall",
         "distractors": [
-          "little",
+          "best",
           "old",
           "she",
           "short",
@@ -429,7 +431,7 @@
         "accepted": [],
         "text": "Mijn jonge broer is erg lang",
         "distractors": [
-          "broertje",
+          "onze",
           "jouw",
           "kort",
           "oud",
@@ -462,7 +464,7 @@
           "sell",
           "they",
           "wanted",
-          "wish"
+          "need"
         ]
       },
       "nl": {
@@ -473,7 +475,7 @@
           "auto",
           "oud",
           "verkopen",
-          "wij",
+          "jullie",
           "wilden",
           "ze"
         ]
@@ -496,8 +498,8 @@
         "text": "I like to drink black coffee",
         "distractors": [
           "ate",
-          "drinking",
-          "enjoy",
+          "making",
+          "want",
           "hate",
           "he",
           "tea",
@@ -510,13 +512,13 @@
         "text": "Ik drink graag zwarte koffie",
         "distractors": [
           "at",
-          "drinken",
-          "ervan",
+          "zoek",
+          "bij",
           "haat",
           "hij",
-          "hou",
-          "om",
-          "te",
+          "het",
+          "koken",
+          "ervoor",
           "thee",
           "water",
           "wit"
@@ -555,13 +557,13 @@
         "text": "Ze reizen vaak naar Spanje",
         "distractors": [
           "auto",
-          "dikwijls",
+          "altijd",
           "Duitsland",
           "nooit",
           "reden",
           "vlogen",
           "we",
-          "zij"
+          "jullie"
         ]
       }
     },
@@ -585,7 +587,7 @@
           "good",
           "he",
           "hot",
-          "meal",
+          "drink",
           "was",
           "water",
           "we"
@@ -598,7 +600,7 @@
           "de",
           "goed",
           "hij",
-          "maaltijd",
+          "drankje",
           "warm",
           "was",
           "water",
@@ -628,7 +630,7 @@
           "bus",
           "car",
           "later",
-          "leaves",
+          "waits",
           "slow",
           "we"
         ]
@@ -642,7 +644,7 @@
           "komt",
           "langzaam",
           "later",
-          "sneltrein",
+          "vliegtuig",
           "we"
         ]
       }
@@ -667,7 +669,7 @@
           "morning",
           "never",
           "played",
-          "soccer",
+          "basketball",
           "tennis",
           "they",
           "watch"
@@ -677,15 +679,13 @@
         "accepted": [],
         "text": "We voetballen elke avond",
         "distractors": [
-          "avonds",
+          "morgens",
           "kijken",
           "nooit",
           "ochtend",
           "speelden",
-          "spelen",
           "tennis",
-          "voetbal",
-          "wij",
+          "jullie",
           "ze"
         ]
       }
@@ -725,7 +725,7 @@
           "lezen",
           "morgen",
           "schrijft",
-          "zij"
+          "jullie"
         ]
       }
     },
@@ -761,7 +761,7 @@
           "boos",
           "is",
           "morgen",
-          "wakker",
+          "jullie",
           "we",
           "ze"
         ]
@@ -802,8 +802,7 @@
           "hem",
           "hij",
           "horen",
-          "snap",
-          "u",
+          "jullie",
           "weten"
         ]
       }
@@ -827,7 +826,7 @@
         "distractors": [
           "had",
           "he",
-          "instructor",
+          "doctor",
           "pencil",
           "red",
           "student",
@@ -838,7 +837,7 @@
         "accepted": [],
         "text": "De leraar heeft een blauwe pen",
         "distractors": [
-          "docent",
+          "arts",
           "had",
           "hij",
           "potlood",
@@ -880,13 +879,13 @@
         "text": "Ze luisteren naar harde muziek",
         "distractors": [
           "hij",
-          "luide",
+          "stille",
           "luisterden",
           "radio",
           "spelen",
           "we",
           "zacht",
-          "zij"
+          "jullie"
         ]
       }
     },
@@ -913,7 +912,7 @@
           "shirt",
           "shoes",
           "they",
-          "wearing",
+          "buying",
           "wore"
         ]
       },
@@ -928,7 +927,7 @@
           "hij",
           "overhemd",
           "schoenen",
-          "zij"
+          "jullie"
         ]
       }
     },
@@ -967,7 +966,7 @@
           "vliegen",
           "vloog",
           "we",
-          "zal",
+          "kom",
           "ze"
         ]
       }
@@ -991,7 +990,7 @@
           "flower",
           "he",
           "short",
-          "was",
+          "often",
           "we",
           "young"
         ]
@@ -1003,7 +1002,7 @@
           "bloem",
           "hij",
           "jong",
-          "kort",
+          "vaak",
           "was",
           "we"
         ]
@@ -1026,7 +1025,7 @@
         "accepted": [],
         "text": "The big city is always busy",
         "distractors": [
-          "large",
+          "old",
           "never",
           "quiet",
           "small",
@@ -1047,6 +1046,7 @@
           "we"
         ]
       }
+
     },
     "content": {
       "response_mode": "token_sequence_choice"
@@ -1066,7 +1066,7 @@
         "text": "She is making a delicious cake",
         "distractors": [
           "bad",
-          "baking",
+          "buying",
           "bread",
           "eating",
           "he",
@@ -1079,7 +1079,7 @@
         "accepted": [],
         "text": "Ze maakt een heerlijke taart",
         "distractors": [
-          "bakt",
+          "koopt",
           "brood",
           "eten",
           "hij",
@@ -1145,7 +1145,7 @@
           "friends",
           "home",
           "they",
-          "visited",
+          "called",
           "visiting",
           "yesterday"
         ]
@@ -1155,13 +1155,13 @@
         "text": "We gaan morgen bij mijn ouders op bezoek",
         "distractors": [
           "bezochten",
-          "bezoeken",
+          "bekijken",
           "gisteren",
           "huis",
           "vrienden",
           "wij",
           "ze",
-          "zullen"
+          "moeten"
         ]
       }
     },
@@ -1194,12 +1194,11 @@
         "accepted": [],
         "text": "Waarom ben je vandaag zo verdrietig",
         "distractors": [
-          "bent",
-          "blij",
+          "boos",
           "hij",
           "is",
           "morgen",
-          "u",
+          "jullie",
           "was",
           "we"
         ]
@@ -1224,7 +1223,7 @@
         "distractors": [
           "eat",
           "less",
-          "must",
+          "can",
           "needed",
           "she",
           "wants",
@@ -1239,8 +1238,8 @@
           "heeft",
           "minder",
           "moest",
-          "nodig",
-          "slaap",
+          "brood",
+          "zoekt",
           "werken",
           "wil",
           "ze"
@@ -1355,9 +1354,9 @@
           "is",
           "kopen",
           "prijs",
-          "ticket",
+          "reis",
           "veel",
-          "wat"
+          "waar"
         ]
       }
     },
@@ -1427,11 +1426,11 @@
         "distractors": [
           "broer",
           "mijn",
-          "uw",
+          "onze",
           "veel",
           "waar",
           "was",
-          "zuster"
+          "vriendin"
         ]
       }
     },
@@ -1506,13 +1505,13 @@
         "text": "Waar woon je nu",
         "distractors": [
           "hier",
-          "u",
+          "jullie",
           "verblijven",
           "wanneer",
           "werken",
           "woonde",
-          "woont",
-          "ze"
+          "staat",
+          "komen"
         ]
       }
     },
@@ -1612,7 +1611,7 @@
         "text": "He wakes up early every day",
         "distractors": [
           "always",
-          "gets",
+          "comes",
           "late",
           "morning",
           "she",
@@ -1629,7 +1628,7 @@
           "ochtend",
           "op",
           "slaapt",
-          "staat",
+          "gaat",
           "werd wakker",
           "ze"
         ]
@@ -1667,12 +1666,12 @@
         "text": "Wil je wat water",
         "distractors": [
           "drinken",
-          "iets",
+          "veel",
           "koffie",
           "nodig",
-          "u",
+          "jullie",
           "was",
-          "wilt",
+          "zoekt",
           "ze"
         ]
       }
@@ -1708,7 +1707,7 @@
           "is",
           "mijn",
           "naam",
-          "u",
+          "jullie",
           "waar",
           "was",
           "wat",
@@ -1792,7 +1791,7 @@
           "klein",
           "niet",
           "oud",
-          "prachtig",
+          "groot",
           "was",
           "ze"
         ]
@@ -1815,7 +1814,7 @@
         "accepted": [],
         "text": "I think it is important to learn languages",
         "distractors": [
-          "believe",
+          "know",
           "speak",
           "that",
           "they",
@@ -1830,7 +1829,7 @@
         "distractors": [
           "dacht",
           "dat",
-          "geloof",
+          "weet",
           "is",
           "nutteloos",
           "spreken",
@@ -1838,6 +1837,7 @@
           "ze"
         ]
       }
+
     },
     "content": {
       "response_mode": "token_sequence_choice"
@@ -1861,7 +1861,7 @@
           "drank",
           "evening",
           "never",
-          "normally",
+          "quickly",
           "she"
         ]
       },
@@ -1872,7 +1872,7 @@
           "altijd",
           "avond",
           "dronk",
-          "gewoonlijk",
+          "snel",
           "koffie",
           "nooit",
           "ochtends",
@@ -1948,8 +1948,8 @@
         "text": "Mijn computer staat op de tafel",
         "distractors": [
           "is",
-          "laptop",
-          "ligt",
+          "sleutels",
+          "valt",
           "onder",
           "stoel",
           "telefoon",
@@ -1990,10 +1990,10 @@
           "heeft",
           "hoe",
           "is",
-          "u",
+          "jullie",
           "waar",
           "was",
-          "ze"
+          "we"
         ]
       }
     },

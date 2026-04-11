@@ -11,14 +11,14 @@
         "accepted": [],
         "text": "Ik ben erg blij vandaag",
         "distractors": [
-          "gelukkig",
+          "hongerig",
           "hij",
           "is",
           "morgen",
           "verdrietig",
           "was",
           "ze",
-          "zeer"
+          "laat"
         ]
       },
       "no": {
@@ -28,7 +28,7 @@
           "de",
           "han",
           "i morgen",
-          "kjempeglad",
+          "mett",
           "trist",
           "var"
         ]
@@ -70,7 +70,7 @@
           "dårlig",
           "en",
           "han",
-          "lese",
+          "ny",
           "vi"
         ]
       }
@@ -138,7 +138,7 @@
           "oud",
           "renden",
           "supermarkt",
-          "wandelen",
+          "kantoor",
           "we",
           "zij"
         ]
@@ -152,7 +152,7 @@
           "han",
           "løp",
           "supermarked",
-          "vandrer",
+          "kjører",
           "vi"
         ]
       }
@@ -191,7 +191,7 @@
           "katten",
           "liten",
           "svart",
-          "var"
+          "mett"
         ]
       }
     },
@@ -251,7 +251,7 @@
         "accepted": [],
         "text": "Ik heb een snelle rode auto",
         "distractors": [
-          "bezit",
+          "zie",
           "blauw",
           "bus",
           "had",
@@ -266,7 +266,7 @@
         "distractors": [
           "blå",
           "buss",
-          "eier",
+          "ser",
           "hadde",
           "han",
           "treg",
@@ -295,7 +295,7 @@
           "fabriek",
           "klein",
           "op",
-          "werkte",
+          "woont",
           "ze"
         ]
       },
@@ -303,7 +303,7 @@
         "accepted": [],
         "text": "Han jobber på et stort kontor",
         "distractors": [
-          "arbeider",
+          "bor",
           "fabrikk",
           "hun",
           "jobbet",
@@ -348,7 +348,7 @@
           "forstår",
           "han",
           "jeg",
-          "kjempebra",
+          "ofte",
           "snakket"
         ]
       }
@@ -388,7 +388,7 @@
           "dårlig",
           "i går",
           "kaldt",
-          "kjempefint",
+          "ofte",
           "regn",
           "var",
           "vil"
@@ -425,11 +425,11 @@
         "accepted": [],
         "text": "Min unge bror er veldig høy",
         "distractors": [
-          "din",
+          "min",
           "gammel",
           "hun",
           "kort",
-          "lillebroren",
+          "naboen",
           "søster",
           "var"
         ]
@@ -457,7 +457,7 @@
           "oud",
           "verkopen",
           "wij",
-          "wilden",
+          "moeten",
           "ze"
         ]
       },
@@ -470,9 +470,9 @@
           "gammelt",
           "leilighet",
           "selge",
-          "ville",
+          "må",
           "å",
-          "ønsker"
+          "kan"
         ]
       }
     },
@@ -497,7 +497,7 @@
           "ervan",
           "haat",
           "hij",
-          "hou",
+          "ervoor",
           "om",
           "te",
           "thee",
@@ -514,12 +514,14 @@
           "han",
           "hater",
           "hvit",
-          "liker",
+          "ofte",
+          "kald",
           "te",
           "vann",
           "å"
         ]
       }
+
     },
     "content": {
       "response_mode": "token_sequence_choice"
@@ -582,7 +584,7 @@
           "de",
           "goed",
           "hij",
-          "maaltijd",
+          "drankje",
           "warm",
           "was",
           "water",
@@ -596,7 +598,7 @@
           "god",
           "han",
           "kaldt",
-          "måltidet",
+          "brød",
           "vann",
           "var",
           "varm",
@@ -637,7 +639,7 @@
         "distractors": [
           "bil",
           "buss",
-          "hurtigtoget",
+          "flyet",
           "kjappe",
           "kommer",
           "senere",
@@ -720,7 +722,7 @@
         "text": "Hun skrev et langt brev i går",
         "distractors": [
           "bok",
-          "ei",
+          "ark",
           "han",
           "i morgen",
           "kort",
@@ -765,7 +767,7 @@
           "hun",
           "i morgen",
           "sint",
-          "sliten",
+          "mett",
           "vi",
           "våken"
         ]
@@ -807,7 +809,7 @@
           "ham",
           "han",
           "hører",
-          "skjønner",
+          "liker",
           "tro"
         ]
       }
@@ -843,7 +845,7 @@
         "text": "Læreren har en blå penn",
         "distractors": [
           "blyant",
-          "eier",
+          "ser",
           "eleven",
           "hadde",
           "han",
@@ -886,9 +888,9 @@
           "han",
           "hørte",
           "lav",
-          "lytter",
-          "radio",
           "spiller",
+          "radio",
+          "synger",
           "til",
           "vi"
         ]
@@ -925,17 +927,16 @@
         "accepted": [],
         "text": "Hun har på seg en gul kjole",
         "distractors": [
-          "bruker",
+          "kjøper",
           "de",
-          "ei",
           "grønn",
           "hadde",
           "han",
-          "kåpe",
           "skjorte",
           "sko"
         ]
       }
+
     },
     "content": {
       "response_mode": "token_sequence_choice"
@@ -976,7 +977,7 @@
           "Paris",
           "skal",
           "vi",
-          "vil"
+          "kan"
         ]
       }
     },
@@ -1049,7 +1050,7 @@
           "aldri",
           "byen",
           "den",
-          "landsbyen",
+          "bygda",
           "liten",
           "stille",
           "store",
@@ -1093,10 +1094,12 @@
           "dårlig",
           "ei",
           "han",
-          "spise",
+          "søt",
+          "spiser",
           "var"
         ]
       }
+
     },
     "content": {
       "response_mode": "token_sequence_choice"
@@ -1210,7 +1213,7 @@
           "glad",
           "han",
           "i morgen",
-          "lei",
+          "sint",
           "var",
           "vi"
         ]
@@ -1288,10 +1291,10 @@
         "text": "Jeg glemte nøklene mine hjemme",
         "distractors": [
           "fant",
-          "glemt",
+          "husket",
           "har",
           "hun",
-          "husket",
+          "vet",
           "kontoret",
           "lommeboka"
         ]
@@ -1693,7 +1696,7 @@
           "noe",
           "trenger",
           "var",
-          "ønsker"
+          "har"
         ]
       }
     },
@@ -1776,7 +1779,7 @@
           "og",
           "ser",
           "skal",
-          "står",
+          "sitter",
           "toget",
           "ventet"
         ]
@@ -1803,7 +1806,7 @@
           "klein",
           "niet",
           "oud",
-          "prachtig",
+          "groot",
           "was",
           "ze"
         ]
@@ -1857,10 +1860,10 @@
         "distractors": [
           "at",
           "de",
-          "mener",
+          "vet",
           "snakke",
           "syntes",
-          "tror",
+          "kan",
           "unødvendig",
           "var"
         ]
@@ -1902,13 +1905,14 @@
           "alltid",
           "drakk",
           "drikke",
-          "hun",
+          "han",
           "kaffe",
           "kvelden",
-          "pleier",
+          "må",
           "å"
         ]
       }
+
     },
     "content": {
       "response_mode": "token_sequence_choice"
@@ -1982,7 +1986,7 @@
         "distractors": [
           "er",
           "hans",
-          "pc-en",
+          "veien",
           "stolen",
           "telefonen",
           "under",

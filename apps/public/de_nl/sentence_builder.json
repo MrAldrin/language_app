@@ -13,9 +13,9 @@
         "distractors": [
           "böse",
           "er",
-          "froh",
+          "hungrig",
           "Morgen",
-          "richtig",
+          "spät",
           "traurig",
           "war",
           "wir"
@@ -25,14 +25,14 @@
         "accepted": [],
         "text": "Ik ben erg blij vandaag",
         "distractors": [
-          "gelukkig",
+          "hongerig",
           "hij",
           "is",
           "morgen",
           "verdrietig",
           "was",
           "ze",
-          "zeer"
+          "laat"
         ]
       }
     },
@@ -55,7 +55,7 @@
         "distractors": [
           "Bücher",
           "er",
-          "gerade",
+          "oft",
           "las",
           "schlecht",
           "wir",
@@ -67,7 +67,7 @@
         "text": "Ze leest een heel goed boek",
         "distractors": [
           "boeken",
-          "erg",
+          "vaak",
           "hij",
           "krant",
           "lezen",
@@ -94,7 +94,7 @@
         "accepted": [],
         "text": "Wir essen jetzt zu Abend",
         "distractors": [
-          "Abendessen",
+          "Küche",
           "aßen",
           "Frühstück",
           "immer",
@@ -109,7 +109,7 @@
         "distractors": [
           "altijd",
           "aten",
-          "het",
+          "keuken",
           "lunch",
           "morgen",
           "ontbijt",
@@ -139,8 +139,8 @@
           "Auto",
           "er",
           "fuhren",
-          "Geschäft",
-          "laufen",
+          "Büro",
+          "fahren",
           "Supermarkt",
           "wir"
         ]
@@ -154,9 +154,9 @@
           "oud",
           "renden",
           "supermarkt",
-          "wandelen",
+          "kantoor",
           "we",
-          "zij"
+          "rijden"
         ]
       }
     },
@@ -252,7 +252,7 @@
         "accepted": [],
         "text": "Ich habe ein schnelles rotes Auto",
         "distractors": [
-          "besitze",
+          "sehe",
           "blau",
           "Bus",
           "er",
@@ -265,7 +265,7 @@
         "accepted": [],
         "text": "Ik heb een snelle rode auto",
         "distractors": [
-          "bezit",
+          "zie",
           "blauw",
           "bus",
           "had",
@@ -293,7 +293,7 @@
         "text": "Er arbeitet in einem großen Büro",
         "distractors": [
           "arbeitete",
-          "beschäftigt",
+          "wohnt",
           "draußen",
           "Fabrik",
           "ist",
@@ -338,7 +338,7 @@
           "schlecht",
           "sie",
           "sprach",
-          "sprechen",
+          "schreibst",
           "verstehst"
         ]
       },
@@ -352,7 +352,7 @@
           "ik",
           "slecht",
           "sprak",
-          "u"
+          "jullie"
         ]
       }
     },
@@ -377,7 +377,7 @@
           "kalt",
           "Regen",
           "schlecht",
-          "sehr",
+          "immer",
           "war",
           "wird"
         ]
@@ -386,11 +386,11 @@
         "accepted": [],
         "text": "Het weer is echt prachtig vandaag",
         "distractors": [
-          "erg",
+          "vaak",
           "gisteren",
-          "heel",
+          "altijd",
           "koud",
-          "mooi",
+          "snel",
           "regen",
           "slecht",
           "was",
@@ -417,7 +417,7 @@
         "distractors": [
           "alt",
           "dein",
-          "kleiner",
+          "lieber",
           "kurz",
           "Schwester",
           "sie",
@@ -428,7 +428,7 @@
         "accepted": [],
         "text": "Mijn jonge broer is erg lang",
         "distractors": [
-          "broertje",
+          "lievelings",
           "jouw",
           "kort",
           "oud",
@@ -457,7 +457,7 @@
         "distractors": [
           "alt",
           "Auto",
-          "möchten",
+          "müssen",
           "sie",
           "verkaufen",
           "Wohnung",
@@ -472,7 +472,7 @@
           "auto",
           "oud",
           "verkopen",
-          "wij",
+          "jullie",
           "wilden",
           "ze"
         ]
@@ -496,14 +496,14 @@
         "distractors": [
           "aß",
           "er",
-          "es",
+          "das",
           "hasse",
-          "mag",
+          "suche",
           "Tee",
-          "trinken",
+          "kochen",
           "Wasser",
           "weiß",
-          "zu"
+          "am"
         ]
       },
       "nl": {
@@ -511,13 +511,13 @@
         "text": "Ik drink graag zwarte koffie",
         "distractors": [
           "at",
-          "drinken",
-          "ervan",
+          "zoek",
+          "bij",
           "haat",
           "hij",
-          "hou",
-          "om",
-          "te",
+          "het",
+          "koken",
+          "ervoor",
           "thee",
           "water",
           "wit"
@@ -556,13 +556,13 @@
         "text": "Ze reizen vaak naar Spanje",
         "distractors": [
           "auto",
-          "dikwijls",
+          "altijd",
           "Duitsland",
           "nooit",
           "reden",
           "vlogen",
           "we",
-          "zij"
+          "jullie"
         ]
       }
     },
@@ -587,7 +587,7 @@
           "er",
           "gut",
           "heiß",
-          "Mahlzeit",
+          "Getränk",
           "war",
           "Wasser",
           "wir"
@@ -600,7 +600,7 @@
           "de",
           "goed",
           "hij",
-          "maaltijd",
+          "drankje",
           "warm",
           "was",
           "water",
@@ -630,7 +630,7 @@
           "Bus",
           "kommt",
           "langsam",
-          "Schnellzug",
+          "Flugzeug",
           "später",
           "wir"
         ]
@@ -644,7 +644,7 @@
           "komt",
           "langzaam",
           "later",
-          "sneltrein",
+          "vliegtuig",
           "we"
         ]
       }
@@ -678,15 +678,13 @@
         "accepted": [],
         "text": "We voetballen elke avond",
         "distractors": [
-          "avonds",
+          "morgens",
           "kijken",
           "nooit",
           "ochtend",
           "speelden",
-          "spelen",
           "tennis",
-          "voetbal",
-          "wij",
+          "jullie",
           "ze"
         ]
       }
@@ -726,7 +724,7 @@
           "lezen",
           "morgen",
           "schrijft",
-          "zij"
+          "jullie"
         ]
       }
     },
@@ -789,7 +787,7 @@
           "er",
           "höre",
           "ihn",
-          "sie",
+          "uns",
           "verstand",
           "weiß"
         ]
@@ -803,8 +801,7 @@
           "hem",
           "hij",
           "horen",
-          "snap",
-          "u",
+          "jullie",
           "weten"
         ]
       }
@@ -826,7 +823,7 @@
         "accepted": [],
         "text": "Der Lehrer hat einen blauen Stift",
         "distractors": [
-          "besitzt",
+          "kauft",
           "Bleistift",
           "er",
           "hatte",
@@ -839,7 +836,7 @@
         "accepted": [],
         "text": "De leraar heeft een blauwe pen",
         "distractors": [
-          "docent",
+          "arts",
           "had",
           "hij",
           "potlood",
@@ -867,7 +864,7 @@
         "text": "Sie hören laute Musik",
         "distractors": [
           "er",
-          "gerade",
+          "oft",
           "hörten",
           "leise",
           "Radio",
@@ -880,13 +877,13 @@
         "text": "Ze luisteren naar harde muziek",
         "distractors": [
           "hij",
-          "luide",
+          "stille",
           "luisterden",
           "radio",
           "spelen",
           "we",
           "zacht",
-          "zij"
+          "jullie"
         ]
       }
     },
@@ -927,7 +924,7 @@
           "hij",
           "overhemd",
           "schoenen",
-          "zij"
+          "jullie"
         ]
       }
     },
@@ -949,7 +946,7 @@
         "text": "Ich werde nächste Woche nach London fliegen",
         "distractors": [
           "fahren",
-          "fliege",
+          "schwimme",
           "flog",
           "Monat",
           "parijs",
@@ -967,7 +964,7 @@
           "vliegen",
           "vloog",
           "we",
-          "zal",
+          "kom",
           "ze"
         ]
       }
@@ -1027,7 +1024,7 @@
         "text": "Die große Stadt ist immer belebt",
         "distractors": [
           "dorf",
-          "Großstadt",
+          "Straße",
           "klein",
           "nie",
           "ruhig",
@@ -1068,7 +1065,7 @@
           "Brot",
           "er",
           "ißt",
-          "macht",
+          "kauft",
           "schlecht",
           "war"
         ]
@@ -1077,7 +1074,7 @@
         "accepted": [],
         "text": "Ze maakt een heerlijke taart",
         "distractors": [
-          "bakt",
+          "koopt",
           "brood",
           "eten",
           "hij",
@@ -1103,7 +1100,7 @@
         "text": "Ich sehe dich und ihn",
         "distractors": [
           "alle",
-          "euch",
+          "uns",
           "ihnen",
           "nicht",
           "sah",
@@ -1152,13 +1149,13 @@
         "text": "We gaan morgen bij mijn ouders op bezoek",
         "distractors": [
           "bezochten",
-          "bezoeken",
+          "bekijken",
           "gisteren",
           "huis",
           "vrienden",
           "wij",
           "ze",
-          "zullen"
+          "moeten"
         ]
       }
     },
@@ -1191,12 +1188,12 @@
         "accepted": [],
         "text": "Waarom ben je vandaag zo verdrietig",
         "distractors": [
-          "bent",
-          "blij",
+          "vaak",
+          "boos",
           "hij",
           "is",
           "morgen",
-          "u",
+          "jullie",
           "was",
           "we"
         ]
@@ -1220,10 +1217,10 @@
         "text": "Er muss mehr schlafen",
         "distractors": [
           "arbeiten",
-          "braucht",
+          "sucht",
           "Essen",
           "musste",
-          "Schlaf",
+          "Brot",
           "sie",
           "weniger",
           "will"
@@ -1237,8 +1234,8 @@
           "heeft",
           "minder",
           "moest",
-          "nodig",
-          "slaap",
+          "brood",
+          "zoekt",
           "werken",
           "wil",
           "ze"
@@ -1345,7 +1342,7 @@
           "Preis",
           "teuer",
           "viele",
-          "was"
+          "wo"
         ]
       },
       "nl": {
@@ -1357,9 +1354,9 @@
           "is",
           "kopen",
           "prijs",
-          "ticket",
+          "reis",
           "veel",
-          "wat"
+          "waar"
         ]
       }
     },
@@ -1417,7 +1414,7 @@
         "text": "Wie alt ist deine Schwester",
         "distractors": [
           "Bruder",
-          "ihre",
+          "unsere",
           "mein",
           "viele",
           "war",
@@ -1430,11 +1427,11 @@
         "distractors": [
           "broer",
           "mijn",
-          "uw",
+          "onze",
           "veel",
           "waar",
           "was",
-          "zuster"
+          "vriendin"
         ]
       }
     },
@@ -1455,8 +1452,8 @@
         "accepted": [],
         "text": "Ich mag kein scharfes Essen",
         "distractors": [
-          "esse",
-          "gerne",
+          "koche",
+          "immer",
           "heiß",
           "lecker",
           "nicht",
@@ -1498,9 +1495,9 @@
           "arbeiten",
           "bleiben",
           "hier",
-          "sie",
+          "er",
           "wann",
-          "wohnen",
+          "kommen",
           "wohnte"
         ]
       },
@@ -1509,13 +1506,13 @@
         "text": "Waar woon je nu",
         "distractors": [
           "hier",
-          "u",
+          "jullie",
           "verblijven",
           "wanneer",
           "werken",
           "woonde",
-          "woont",
-          "ze"
+          "staat",
+          "komen"
         ]
       }
     },
@@ -1620,7 +1617,7 @@
           "schläft",
           "sie",
           "spät",
-          "steht",
+          "geht",
           "wachte"
         ]
       },
@@ -1633,7 +1630,7 @@
           "ochtend",
           "op",
           "slaapt",
-          "staat",
+          "gaat",
           "werd wakker",
           "ze"
         ]
@@ -1658,8 +1655,8 @@
         "distractors": [
           "brauchen",
           "Kaffee",
-          "möchten",
-          "sie",
+          "suchen",
+          "wir",
           "trinken",
           "war"
         ]
@@ -1669,12 +1666,12 @@
         "text": "Wil je wat water",
         "distractors": [
           "drinken",
-          "iets",
+          "veel",
           "koffie",
           "nodig",
-          "u",
+          "jullie",
           "was",
-          "wilt",
+          "zoekt",
           "ze"
         ]
       }
@@ -1696,11 +1693,11 @@
         "text": "Wie heißt du",
         "distractors": [
           "dein",
-          "heißen",
+          "suchen",
           "ist",
           "mein",
           "Name",
-          "sie",
+          "er",
           "war",
           "was",
           "wer",
@@ -1714,7 +1711,7 @@
           "is",
           "mijn",
           "naam",
-          "u",
+          "jullie",
           "waar",
           "was",
           "wat",
@@ -1739,8 +1736,8 @@
         "accepted": [],
         "text": "Wir warten auf den Bus",
         "distractors": [
-          "an",
-          "Bushaltestelle",
+          "hinter",
+          "Park",
           "der",
           "für",
           "sehen",
@@ -1790,7 +1787,7 @@
           "nicht",
           "sie",
           "war",
-          "wunderbar"
+          "groß"
         ]
       },
       "nl": {
@@ -1801,7 +1798,7 @@
           "klein",
           "niet",
           "oud",
-          "prachtig",
+          "groot",
           "was",
           "ze"
         ]
@@ -1883,7 +1880,7 @@
           "altijd",
           "avond",
           "dronk",
-          "gewoonlijk",
+          "snel",
           "koffie",
           "nooit",
           "ochtends",
@@ -1948,9 +1945,9 @@
         "text": "Mein Computer liegt auf dem Tisch",
         "distractors": [
           "ist",
-          "Rechner",
+          "Schlüssel",
           "sein",
-          "steht",
+          "fällt",
           "Stuhl",
           "Telefon",
           "unter",
@@ -1962,8 +1959,8 @@
         "text": "Mijn computer staat op de tafel",
         "distractors": [
           "is",
-          "laptop",
-          "ligt",
+          "sleutels",
+          "valt",
           "onder",
           "stoel",
           "telefoon",
@@ -1991,7 +1988,7 @@
           "durst",
           "haben",
           "ist",
-          "sie",
+          "ich",
           "war",
           "wie",
           "wo"
@@ -2005,10 +2002,10 @@
           "heeft",
           "hoe",
           "is",
-          "u",
+          "jullie",
           "waar",
           "was",
-          "ze"
+          "we"
         ]
       }
     },

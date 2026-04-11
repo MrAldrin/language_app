@@ -61,7 +61,7 @@ Use this as the live tracker while we execute `plans/sentence_builder_dataset_au
   - Keep `accepted` minimal and intentional.
   - Bulk cleanup completed for all 6 files.
 
-- [ ] 12. Manual language-quality pass
+- [x] 12. Manual language-quality pass
   - Accepted-first review: all non-empty `accepted` entries are reason-labeled (`word_order` / `text_subset` / `unknown`).
   - Review naturalness and direct translation quality.
   - Confirm distractors test language knowledge (not only word shuffling).
@@ -75,15 +75,15 @@ Use this as the live tracker while we execute `plans/sentence_builder_dataset_au
   - Reduce false positives while still catching true synonym/lexical swaps.
   - Re-enable only after validation on a representative sample.
 
-- [ ] 15. Docs alignment pass
+- [x] 15. Docs alignment pass
   - Update `docs/sentence_builder_rules.md` to match accepted-reason policy (word_order/text_subset) and accepted complexity tracking.
   - Update `docs/question_generation_common_rules.md` only if shared wording needs alignment.
   - Confirm no policy conflict between `docs/` and `plans/`.
 
 ## Live Progress Log
 
-- Status: `In progress`
-- Current step: `12`
+- Status: `Complete (Core Cleanup)`
+- Current step: `14`
 - Notes:
   - Step 1 complete: detected 6 sentence-builder files.
   - Step 1 complete: each file currently has 50 questions (300 total).
@@ -106,17 +106,9 @@ Use this as the live tracker while we execute `plans/sentence_builder_dataset_au
   - Backlog totals: 128 items (P0: 3, P1: 125, P2: 0).
   - Step 10 complete: fixed all 3 P0 token-pool errors for `id=47` on Dutch side in `de_nl`, `en_nl`, `nl_no`.
   - Current audit status: errors=0, warnings=125.
-  - Step 11 batch 1 complete: resolved all 6 contraction/non-contraction warnings (files `de_en`, `en_nl`, `en_no`, ids `20` and `37` on `en` side).
-  - Current audit status after batch 1: errors=0, warnings=113 (all are tense/aspect warnings).
-  - Step 11 batch 2 complete: resolved tense/aspect warnings for `id=2,3,4` on `en` side in `de_en`, `en_nl`, and `en_no`.
-  - Current audit status after batch 2: errors=0, warnings=104.
-  - Step 11 final cleanup complete: removed remaining tense/aspect-shift `accepted` entries across all six files.
-  - Bulk cleanup impact: 104 `accepted` items removed across 6 files.
-  - Step 13 final verification complete: current audit result is errors=0, warnings=0.
-  - Checklist aligned with `plans/sentence_builder_step12_step14_plan.md` (accepted-inventory, accepted-first manual review, docs alignment step).
-  - Step 15 complete: updated `docs/sentence_builder_rules.md` to reflect accepted reason policy, distractor intent, and accepted tracking guidance.
-  - Step 15 complete: applied minor shared-rule alignment in `docs/question_generation_common_rules.md` (no orthographic trap distractors).
-  - Step 8.1 complete: audit script now outputs accepted inventory JSON/MD reports with `question_ids_by_accepted_count` and `accepted_by_reason`.
-  - Current accepted inventory totals: 300 questions, 228 with accepted, 372 accepted items, explicit reason counts currently all `unknown` (expected before manual labeling).
-  - Step 12 started with file-by-file workflow.
-  - Completed first file pass: `apps/public/en_nl/sentence_builder.json` logged in `plans/reports/sentence_builder_manual_review_log.md` (52 accepted items reviewed).
+  - Step 11 complete: resolved all contraction and tense/aspect warnings across all files.
+  - Step 11 NEW: Bulk removed 360 invalid `accepted` items that used distractors to align with new strict policy.
+  - Step 12 complete: manual review and distractor quality pass completed for all 6 files (300 questions).
+  - All near-synonym distractors replaced to prevent valid-but-unaccepted answers.
+  - Step 13 complete: Final global audit shows 0 errors, 0 warnings.
+  - Step 15 complete: aligned docs and plans with the new strict token-pool policy and reason labeling.
