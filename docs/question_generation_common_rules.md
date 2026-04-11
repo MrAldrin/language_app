@@ -2,7 +2,8 @@
 
 This is the shared, high-level ruleset for all question generation in the language app.
 
-## Core Contract (All Question Types)
+
+## Schema
 
 Each question object must include:
 
@@ -10,19 +11,64 @@ Each question object must include:
 - `question_type`: discriminator for interaction type
 - `difficulty`: integer `1-10`
 - `tags`: canonical namespaced labels (`namespace:value`)
-- `content`: type-specific interaction settings
 - `translations`: language payload(s) used by that question type
 
 Common translation payload fields:
 
+Each `translations.<lang>` object must contain:
 - `text`: canonical text in that language
-- `accepted`: alternative correct texts (full sentence or single token, depending on question type)
-- `distractors`: extra tokens used to build the selectable pool for choice-style interactions
+- `accepted`: alternative correct translations that are never used as questions
+- `distractors`: 3-6 in clearly wrong-but-plausible distractors
 
-Type-specific payload fields may also exist (examples):
+Type-specific payload fields:
 
-- `hint` (display-only disambiguation, used by `word_translation`)
-- `hidden_word_index` (used by `cloze_word_choice`)
+- `hint`: used by `word_translation`
+- `content`: used by `cloze_word_choice`
+- `hidden_word_index`: used by `cloze_word_choice`
+
+
+## General authoring Rules
+
+- Keep grammar and spelling correct in every language.
+- Use correct written characters and orthography for each language (for example `kjørte`, not `kjorte`; `fløy`, not `floy`).
+- Do not replace language-specific characters with ASCII approximations.
+- Prefer natural, modern phrasing.
+
+
+## Definitions:
+- Token set: All the possible words the user can choose from.
+  - sentence building and word translation: all the words of "text" and "distractors"
+  - cloze: the word in the sentence with the index listed + "distractors"
+
+
+## Detailed description of the fields
+This part explains the intent of the fields and the rules they have to follow
+
+
+### distractors:
+Distractors are:
+  - extra tokens so to make the learner chose the correct answer among other alternatives. 
+  - Should be 3-6 in total
+  - Should contain alternatives that tests the users knowledge of the words in the "tags". 
+  - Should always contain clearly wrong-but-plausible distractors
+  - Avoid clues from punctuation or capitalization in the available token set.
+
+Distractors should NEVER contain:
+
+- misspellings 
+- synonyms
+- contractions
+- orthographic trap options
+
+
+### accepted:
+
+Valid translations of the "text" field in the other language that can be created from the token set.
+
+This should only be due to:
+- valid alternate word order
+- a subset of the words from "text" could also be a valid translation
+
 
 ## Canonical Tag System
 
@@ -41,23 +87,8 @@ Recommended namespaces:
 
 Tag policy notes:
 
-- Do not use unscoped legacy tags like `pronoun`, `relative`, `food`, `past_tense`.
 - Keep tags concise and high-signal; avoid redundant synonyms when one canonical tag already captures meaning.
 
-## Tagging By Question Type
-
-Use the same canonical system across all files, but prioritize different namespaces by interaction type:
-
-- `cloze_word_choice`:
-  - Primary focus: `family:*`, `pronoun_type:*`, plus grammar slices like `case:*`, `role:*`, `number:*`, `gender:*`, `register:*`.
-  - Typical example: `["family:pronoun", "pronoun_type:relative", "case:genitive"]`
-- `word_translation`:
-  - Primary focus: `family:*`, `pronoun_type:*`, with disambiguators such as `person:*`, `number:*`, `role:*`, `gender:*`, `case:*`, `deixis:*`.
-  - Optional semantic refiners can use `feature:*` when they materially improve targeting.
-- `sentence_builder_multiple_choice`:
-  - Primary focus: `topic:*` for scenario/theme, optionally combined with `pos:*`, `grammar:*`, and `tense:*`.
-  - Tense/time labeling must use only `tense:*` (map legacy `past`/`future` to `tense:past`/`tense:future`).
-  - Do not use low-signal broad tags like `basics`.
 
 General namespace intent:
 
@@ -67,17 +98,6 @@ General namespace intent:
 - `tense:*` = tense dimension (`tense:present`, `tense:past`, `tense:future`)
 - `feature:*` = non-topic semantic distinctions used when they add targeting value
 
-## Shared Authoring Rules
-
-- Keep grammar and spelling correct in every language.
-- Use correct written characters and orthography for each language (for example `kjørte`, not `kjorte`; `fløy`, not `floy`).
-- Do not replace language-specific characters with ASCII approximations.
-- Prefer natural, modern phrasing.
-- Keep distractors plausible (near-miss, not nonsense).
-- Do not use misspellings or orthographic traps as distractors.
-- Prefer controlling the selectable pool via `distractors` over growing `accepted`.
-- Keep `accepted` small and avoid free-form paraphrases; put type-specific acceptance rules in the corresponding type spec.
-- Never use display-only hint fields for correctness checks.
 
 ## File Families and Naming
 
@@ -88,13 +108,13 @@ Stored under `apps/public/<lang1>_<lang2>/`:
 - `sentence_builder.json`
 - `single_word_translation.json`
 
+
 ### Language-based files (monolingual)
 
 Stored under `apps/public/<lang>/`:
 
 - `cloze_word.json`
 
-For cloze, each row must include the translation entry for `content.practice_language`; additional translation languages can be included for translated hints.
 
 ## Type-Specific Specs
 

@@ -2,59 +2,52 @@
 
 This document defines rules for generating `cloze_word_choice` questions.
 
-## 1. Purpose
+## Purpose
 
 Cloze questions are target-language production drills.
 The learner sees one sentence in the practice language with one blank and selects the correct token from a word pool in that same language.
 
-## 2. File Layout
+## File Layout
 
 Cloze uses one file per language (not per language pair):
 
 - `apps/public/<lang>/cloze_word.json`
 
-Examples:
 
-- `apps/public/nl/cloze_word.json`
-- `apps/public/de/cloze_word.json`
-
-## 3. Schema
+## Specific schema rules
 
 Each question object must contain:
 
-- `id`: sequential integer
 - `question_type`: must be `cloze_word_choice`
-- `difficulty`: integer `1-10`
-- `tags`: canonical namespaced tags (`namespace:value`), following shared rules in `docs/question_generation_common_rules.md`
 - `content`:
   - `response_mode`: must be `single_token_choice`
-  - `practice_language`: language code for this file (for example `nl`)
-- `translations`: a dictionary of language codes. Must contain at least one language entry matching `content.practice_language`. Other languages can optionally be added to provide translated hints.
+  - `practice_language`: language code for this file
+- `translations`: a dictionary of language codes. Must contain at least one language entry matching `content.practice_language`.
 
-For the `translations.<lang>` object matching the `practice_language` (the target learning language), it must contain:
+The `translations.<lang>` object matching the `practice_language` must contain:
 
 - `text`: full sentence in the practice language
 - `hidden_word_index`: zero-based index of the hidden token in the practice-language sentence
-- `accepted`: optional alternative valid tokens
-- `distractors`: selectable distractor tokens shown as alternatives
+- `accepted`: is not used and is always empty
 
-For other languages in `translations` (the user's source language hints), they only require:
+Other languages in `translations` only require:
 - `text` to show the translated sentence.
 
-## 4. Authoring Rules
+
+## Generationg logic:
+When generating this type of question, follow these steps:
+  1. Create a sentence targeting the wanted topic or learning issue
+  2. Identify the word to be removed with the "hidden_word_index". This word should be the  focuse of the task.
+  3. Create distractors in "distractors" that are not valid as alternatives in the given sentense
+  
+
+## Type-Specific Authoring Rules
 
 - The hidden token is defined by `hidden_word_index` inside `translations.<practice_language>.text`.
-- `hidden_word_index` must point to a valid token position in the practice-language sentence.
-- `distractors` should contain plausible near-miss options from the same grammar family when possible.
-- Keep prompts natural and pedagogically focused.
-- Cloze should never require filling blanks in the learner's mother tongue.
-- For pronoun-focused cloze files, include `family:pronoun` and at least one discriminative subtype/slice (for example `pronoun_type:*`, `case:*`, or `role:*`).
+- `hidden_word_index`:
+  - must point to a valid token position in the practice-language sentence.
+  - should only be used for the practice_language
 
-## 5. Validation Rules
-
-- Correctness compares selected token to the hidden token from `text` or a value in `accepted`.
-- `content.practice_language` must map to a valid language key inside `translations` (this key defines the primary exercise).
-- `hidden_word_index` must be present for the practice-language translation object.
 
 ## 6. Examples
 
