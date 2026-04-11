@@ -136,10 +136,10 @@ def build_accepted_inventory_for_file(file_path: Path) -> dict[str, Any]:
             "avg_accepted_items_per_question": 0.0,
             "questions_with_2plus_accepted": 0,
             "question_ids_by_accepted_count": {},
-            "accepted_by_reason": {"word_order": 0, "direct_alt": 0, "unknown": 0},
+            "accepted_by_reason": {"word_order": 0, "text_subset": 0, "unknown": 0},
             "accepted_by_reason_estimated": {
                 "word_order": 0,
-                "direct_alt": 0,
+                "text_subset": 0,
                 "unknown": 0,
             },
         }
@@ -151,9 +151,9 @@ def build_accepted_inventory_for_file(file_path: Path) -> dict[str, Any]:
     accepted_count_by_question: dict[int | str, int] = {}
 
     # Current schema has no explicit accepted-reason labels, so explicit reason is unknown.
-    accepted_by_reason = {"word_order": 0, "direct_alt": 0, "unknown": 0}
+    accepted_by_reason = {"word_order": 0, "text_subset": 0, "unknown": 0}
     # Optional estimate based on token-set equality, to support future manual review targeting.
-    accepted_by_reason_estimated = {"word_order": 0, "direct_alt": 0, "unknown": 0}
+    accepted_by_reason_estimated = {"word_order": 0, "text_subset": 0, "unknown": 0}
 
     for idx, question in enumerate(raw, start=1):
         if not isinstance(question, dict):
@@ -182,7 +182,7 @@ def build_accepted_inventory_for_file(file_path: Path) -> dict[str, Any]:
                     if token_set(item) == token_set(text):
                         accepted_by_reason_estimated["word_order"] += 1
                     else:
-                        accepted_by_reason_estimated["direct_alt"] += 1
+                        accepted_by_reason_estimated["text_subset"] += 1
                 else:
                     accepted_by_reason_estimated["unknown"] += 1
 
@@ -223,8 +223,12 @@ def build_accepted_inventory(reports: list[dict[str, Any]]) -> dict[str, Any]:
         "questions_with_accepted": 0,
         "accepted_items_total": 0,
         "questions_with_2plus_accepted": 0,
-        "accepted_by_reason": {"word_order": 0, "direct_alt": 0, "unknown": 0},
-        "accepted_by_reason_estimated": {"word_order": 0, "direct_alt": 0, "unknown": 0},
+        "accepted_by_reason": {"word_order": 0, "text_subset": 0, "unknown": 0},
+        "accepted_by_reason_estimated": {
+            "word_order": 0,
+            "text_subset": 0,
+            "unknown": 0,
+        },
     }
 
     for report in reports:
@@ -235,7 +239,7 @@ def build_accepted_inventory(reports: list[dict[str, Any]]) -> dict[str, Any]:
         totals["questions_with_accepted"] += inv["questions_with_accepted"]
         totals["accepted_items_total"] += inv["accepted_items_total"]
         totals["questions_with_2plus_accepted"] += inv["questions_with_2plus_accepted"]
-        for key in ("word_order", "direct_alt", "unknown"):
+        for key in ("word_order", "text_subset", "unknown"):
             totals["accepted_by_reason"][key] += inv["accepted_by_reason"][key]
             totals["accepted_by_reason_estimated"][key] += inv[
                 "accepted_by_reason_estimated"
@@ -274,9 +278,7 @@ def build_accepted_inventory_markdown(inventory: dict[str, Any]) -> str:
     lines.append(
         f"- Questions with 2+ accepted: {totals['questions_with_2plus_accepted']}"
     )
-    lines.append(
-        f"- Accepted by reason (explicit): {totals['accepted_by_reason']}"
-    )
+    lines.append(f"- Accepted by reason (explicit): {totals['accepted_by_reason']}")
     lines.append(
         f"- Accepted by reason (estimated): {totals['accepted_by_reason_estimated']}"
     )
@@ -296,9 +298,7 @@ def build_accepted_inventory_markdown(inventory: dict[str, Any]) -> str:
         lines.append(
             f"- Questions with 2+ accepted: {inv['questions_with_2plus_accepted']}"
         )
-        lines.append(
-            f"- Accepted by reason (explicit): {inv['accepted_by_reason']}"
-        )
+        lines.append(f"- Accepted by reason (explicit): {inv['accepted_by_reason']}")
         lines.append(
             f"- Accepted by reason (estimated): {inv['accepted_by_reason_estimated']}"
         )
@@ -322,7 +322,7 @@ def is_non_empty_string(value: Any) -> bool:
 
 def normalize_token(token: str) -> str:
     # Keep inner apostrophes/hyphens; remove surrounding punctuation and lowercase.
-    return token.strip(".,!?;:\"()[]{}").lower()
+    return token.strip('.,!?;:"()[]{}').lower()
 
 
 def tokenize_text(text: str) -> list[str]:
@@ -340,7 +340,9 @@ def build_available_token_multiset(text: str, distractors: list[str]) -> dict[st
     return counts
 
 
-def find_missing_tokens(candidate_sentence: str, available_counts: dict[str, int]) -> list[str]:
+def find_missing_tokens(
+    candidate_sentence: str, available_counts: dict[str, int]
+) -> list[str]:
     missing: list[str] = []
     used: dict[str, int] = {}
     for token in tokenize_text(candidate_sentence):
@@ -624,12 +626,15 @@ def validate_question(
                 )
 
             if isinstance(text, str) and isinstance(distractors, list):
-                available_counts = build_available_token_multiset(text, distractors)
+                text_counts = build_available_token_multiset(text, [])
+                full_pool_counts = build_available_token_multiset(text, distractors)
                 for item in accepted:
                     if not isinstance(item, str):
                         continue
-                    missing = find_missing_tokens(item, available_counts)
-                    if missing:
+
+                    # 1. Hard check: Is it even constructible from the full pool?
+                    missing_from_pool = find_missing_tokens(item, full_pool_counts)
+                    if missing_from_pool:
                         findings.append(
                             Finding(
                                 severity="error",
@@ -639,7 +644,26 @@ def validate_question(
                                 language=lang,
                                 message=(
                                     "accepted cannot be built from text+distractors tokens; "
-                                    f"missing/overused tokens: {missing}"
+                                    f"missing/overused tokens: {missing_from_pool}"
+                                ),
+                            )
+                        )
+                        continue
+
+                    # 2. Policy check: Does it use distractors?
+                    missing_from_text = find_missing_tokens(item, text_counts)
+                    if missing_from_text:
+                        findings.append(
+                            Finding(
+                                severity="error",
+                                finding_type="accepted_policy_error",
+                                file=str(file_path),
+                                question_id=question_id,
+                                language=lang,
+                                message=(
+                                    "accepted uses tokens from the distractors pool; "
+                                    f"tokens involved: {missing_from_text}. "
+                                    "Replace the distractor instead of adding to accepted."
                                 ),
                             )
                         )
@@ -806,11 +830,15 @@ def main() -> int:
         total_questions += report["question_count"]
         total_findings += len(report["findings"])
         total_errors += sum(1 for f in report["findings"] if f["severity"] == "error")
-        total_warnings += sum(1 for f in report["findings"] if f["severity"] == "warning")
+        total_warnings += sum(
+            1 for f in report["findings"] if f["severity"] == "warning"
+        )
 
     print(f"Files scanned: {len(files)}")
     print(f"Questions scanned: {total_questions}")
-    print(f"Findings: {total_findings} (errors={total_errors}, warnings={total_warnings})")
+    print(
+        f"Findings: {total_findings} (errors={total_errors}, warnings={total_warnings})"
+    )
 
     for report in all_reports:
         if report["findings"]:

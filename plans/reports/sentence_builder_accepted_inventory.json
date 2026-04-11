@@ -6,12 +6,12 @@
     "questions_with_2plus_accepted": 130,
     "accepted_by_reason": {
       "word_order": 0,
-      "direct_alt": 0,
+      "text_subset": 0,
       "unknown": 372
     },
     "accepted_by_reason_estimated": {
       "word_order": 8,
-      "direct_alt": 364,
+      "text_subset": 364,
       "unknown": 0
     },
     "accepted_coverage_pct": 0.76,
@@ -72,12 +72,12 @@
       },
       "accepted_by_reason": {
         "word_order": 0,
-        "direct_alt": 0,
+        "text_subset": 0,
         "unknown": 55
       },
       "accepted_by_reason_estimated": {
         "word_order": 3,
-        "direct_alt": 52,
+        "text_subset": 52,
         "unknown": 0
       }
     },
@@ -135,12 +135,12 @@
       },
       "accepted_by_reason": {
         "word_order": 0,
-        "direct_alt": 0,
+        "text_subset": 0,
         "unknown": 63
       },
       "accepted_by_reason_estimated": {
         "word_order": 2,
-        "direct_alt": 61,
+        "text_subset": 61,
         "unknown": 0
       }
     },
@@ -206,12 +206,12 @@
       },
       "accepted_by_reason": {
         "word_order": 0,
-        "direct_alt": 0,
+        "text_subset": 0,
         "unknown": 79
       },
       "accepted_by_reason_estimated": {
         "word_order": 1,
-        "direct_alt": 78,
+        "text_subset": 78,
         "unknown": 0
       }
     },
@@ -266,12 +266,12 @@
       },
       "accepted_by_reason": {
         "word_order": 0,
-        "direct_alt": 0,
+        "text_subset": 0,
         "unknown": 52
       },
       "accepted_by_reason_estimated": {
         "word_order": 1,
-        "direct_alt": 51,
+        "text_subset": 51,
         "unknown": 0
       }
     },
@@ -326,12 +326,12 @@
       },
       "accepted_by_reason": {
         "word_order": 0,
-        "direct_alt": 0,
+        "text_subset": 0,
         "unknown": 53
       },
       "accepted_by_reason_estimated": {
         "word_order": 1,
-        "direct_alt": 52,
+        "text_subset": 52,
         "unknown": 0
       }
     },
@@ -395,12 +395,12 @@
       },
       "accepted_by_reason": {
         "word_order": 0,
-        "direct_alt": 0,
+        "text_subset": 0,
         "unknown": 70
       },
       "accepted_by_reason_estimated": {
         "word_order": 0,
-        "direct_alt": 70,
+        "text_subset": 70,
         "unknown": 0
       }
     }
