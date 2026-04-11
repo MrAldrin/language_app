@@ -8,9 +8,7 @@
     ],
     "translations": {
       "en": {
-        "accepted": [
-          "I am very glad today"
-        ],
+        "accepted": [],
         "text": "I am very happy today",
         "distractors": [
           "glad",
@@ -23,9 +21,7 @@
         ]
       },
       "no": {
-        "accepted": [
-          "Jeg er utrolig glad i dag"
-        ],
+        "accepted": [],
         "text": "Jeg er veldig glad i dag",
         "distractors": [
           "de",
@@ -65,10 +61,7 @@
         ]
       },
       "no": {
-        "accepted": [
-          "Hun leser ei utrolig god bok",
-          "Hun leser en veldig bra bok"
-        ],
+        "accepted": [],
         "text": "Hun leser en veldig god bok",
         "distractors": [
           "avis",
@@ -136,9 +129,7 @@
     ],
     "translations": {
       "en": {
-        "accepted": [
-          "They walk to the new shop"
-        ],
+        "accepted": [],
         "text": "They walk to the new store",
         "distractors": [
           "are",
@@ -153,9 +144,7 @@
         ]
       },
       "no": {
-        "accepted": [
-          "De spaserer til den nye butikken"
-        ],
+        "accepted": [],
         "text": "De går til den nye butikken",
         "distractors": [
           "bil",
@@ -194,9 +183,7 @@
         ]
       },
       "no": {
-        "accepted": [
-          "Hunden er diger og brun"
-        ],
+        "accepted": [],
         "text": "Hunden er stor og brun",
         "distractors": [
           "diger",
@@ -223,9 +210,7 @@
     ],
     "translations": {
       "en": {
-        "accepted": [
-          "The little cat sleeps all day"
-        ],
+        "accepted": [],
         "text": "The small cat sleeps all day",
         "distractors": [
           "big",
@@ -263,9 +248,7 @@
     ],
     "translations": {
       "en": {
-        "accepted": [
-          "I own a fast red car"
-        ],
+        "accepted": [],
         "text": "I have a fast red car",
         "distractors": [
           "blue",
@@ -320,9 +303,7 @@
         ]
       },
       "no": {
-        "accepted": [
-          "Han arbeider på et stort kontor"
-        ],
+        "accepted": [],
         "text": "Han jobber på et stort kontor",
         "distractors": [
           "arbeider",
@@ -349,9 +330,7 @@
     ],
     "translations": {
       "en": {
-        "accepted": [
-          "You talk Norwegian very well"
-        ],
+        "accepted": [],
         "text": "You speak Norwegian very well",
         "distractors": [
           "badly",
@@ -364,10 +343,7 @@
         ]
       },
       "no": {
-        "accepted": [
-          "Du snakker norsk veldig godt",
-          "Du prater norsk veldig bra"
-        ],
+        "accepted": [],
         "text": "Du snakker norsk veldig bra",
         "distractors": [
           "dårlig",
@@ -395,9 +371,7 @@
     ],
     "translations": {
       "en": {
-        "accepted": [
-          "The weather is very nice today"
-        ],
+        "accepted": [],
         "text": "The weather is really nice today",
         "distractors": [
           "bad",
@@ -410,10 +384,7 @@
         ]
       },
       "no": {
-        "accepted": [
-          "Været er veldig pent i dag",
-          "Været er veldig fint i dag"
-        ],
+        "accepted": [],
         "text": "Været er skikkelig fint i dag",
         "distractors": [
           "dårlig",
@@ -441,9 +412,7 @@
     ],
     "translations": {
       "en": {
-        "accepted": [
-          "My little brother is very tall"
-        ],
+        "accepted": [],
         "text": "My young brother is very tall",
         "distractors": [
           "little",
@@ -456,9 +425,7 @@
         ]
       },
       "no": {
-        "accepted": [
-          "Min lillebror er veldig høy"
-        ],
+        "accepted": [],
         "text": "Min unge bror er veldig høy",
         "distractors": [
           "din",
@@ -485,9 +452,7 @@
     ],
     "translations": {
       "en": {
-        "accepted": [
-          "We wish to buy a new house"
-        ],
+        "accepted": [],
         "text": "We want to buy a new house",
         "distractors": [
           "apartment",
@@ -527,9 +492,7 @@
     ],
     "translations": {
       "en": {
-        "accepted": [
-          "I enjoy drinking black coffee"
-        ],
+        "accepted": [],
         "text": "I like to drink black coffee",
         "distractors": [
           "ate",
@@ -543,9 +506,7 @@
         ]
       },
       "no": {
-        "accepted": [
-          "Jeg liker å drikke sort kaffe"
-        ],
+        "accepted": [],
         "text": "Jeg liker å drikke svart kaffe",
         "distractors": [
           "han",
@@ -612,9 +573,7 @@
     ],
     "translations": {
       "en": {
-        "accepted": [
-          "The meal is cold and bad"
-        ],
+        "accepted": [],
         "text": "The food is cold and bad",
         "distractors": [
           "good",
@@ -654,9 +613,7 @@
     ],
     "translations": {
       "en": {
-        "accepted": [
-          "The fast train leaves right now"
-        ],
+        "accepted": [],
         "text": "The fast train departs right now",
         "distractors": [
           "arrives",
@@ -669,9 +626,7 @@
         ]
       },
       "no": {
-        "accepted": [
-          "Det kjappe toget drar akkurat nå"
-        ],
+        "accepted": [],
         "text": "Det raske toget går akkurat nå",
         "distractors": [
           "bil",
@@ -699,9 +654,7 @@
     ],
     "translations": {
       "en": {
-        "accepted": [
-          "We play soccer every evening"
-        ],
+        "accepted": [],
         "text": "We play football every evening",
         "distractors": [
           "morning",
@@ -790,9 +743,7 @@
         ]
       },
       "no": {
-        "accepted": [
-          "Han var utrolig trøtt i går"
-        ],
+        "accepted": [],
         "text": "Han var veldig trøtt i går",
         "distractors": [
           "er",
@@ -832,9 +783,7 @@
         ]
       },
       "no": {
-        "accepted": [
-          "Jeg skjønner deg ikke i det hele tatt"
-        ],
+        "accepted": [],
         "text": "Jeg forstår deg ikke i det hele tatt",
         "distractors": [
           "alt",
@@ -861,9 +810,7 @@
     ],
     "translations": {
       "en": {
-        "accepted": [
-          "The instructor has a blue pen"
-        ],
+        "accepted": [],
         "text": "The teacher has a blue pen",
         "distractors": [
           "had",
@@ -1059,9 +1006,7 @@
     ],
     "translations": {
       "en": {
-        "accepted": [
-          "The large city is always busy"
-        ],
+        "accepted": [],
         "text": "The big city is always busy",
         "distractors": [
           "large",
@@ -1074,9 +1019,7 @@
         ]
       },
       "no": {
-        "accepted": [
-          "Storbyen er alltid travel"
-        ],
+        "accepted": [],
         "text": "Den store byen er alltid travel",
         "distractors": [
           "aldri",
@@ -1103,9 +1046,7 @@
     ],
     "translations": {
       "en": {
-        "accepted": [
-          "She is baking a delicious cake"
-        ],
+        "accepted": [],
         "text": "She is making a delicious cake",
         "distractors": [
           "bad",
@@ -1119,10 +1060,7 @@
         ]
       },
       "no": {
-        "accepted": [
-          "Hun baker en nydelig kake",
-          "Hun lager ei deilig kake"
-        ],
+        "accepted": [],
         "text": "Hun lager en deilig kake",
         "distractors": [
           "baker",
@@ -1162,9 +1100,7 @@
         ]
       },
       "no": {
-        "accepted": [
-          "Jeg ser deg og han"
-        ],
+        "accepted": [],
         "text": "Jeg ser deg og ham",
         "distractors": [
           "de",
@@ -1242,9 +1178,7 @@
         ]
       },
       "no": {
-        "accepted": [
-          "Hvorfor er du så lei deg i dag"
-        ],
+        "accepted": [],
         "text": "Hvorfor er du så trist i dag",
         "distractors": [
           "deg",
@@ -1271,9 +1205,7 @@
     ],
     "translations": {
       "en": {
-        "accepted": [
-          "He must sleep more"
-        ],
+        "accepted": [],
         "text": "He needs to sleep more",
         "distractors": [
           "eat",
@@ -1286,9 +1218,7 @@
         ]
       },
       "no": {
-        "accepted": [
-          "Han trenger å sove mer"
-        ],
+        "accepted": [],
         "text": "Han må sove mer",
         "distractors": [
           "hun",
@@ -1402,9 +1332,7 @@
         ]
       },
       "no": {
-        "accepted": [
-          "Hva koster billetten"
-        ],
+        "accepted": [],
         "text": "Hvor mye koster billetten",
         "distractors": [
           "billigere",
@@ -1442,9 +1370,7 @@
         ]
       },
       "no": {
-        "accepted": [
-          "Den røde bilen er kjapp"
-        ],
+        "accepted": [],
         "text": "Den røde bilen er rask",
         "distractors": [
           "blå",
@@ -1623,9 +1549,7 @@
     ],
     "translations": {
       "en": {
-        "accepted": [
-          "She traveled to Norway last summer"
-        ],
+        "accepted": [],
         "text": "She travelled to Norway last summer",
         "distractors": [
           "he",
@@ -1664,9 +1588,7 @@
     ],
     "translations": {
       "en": {
-        "accepted": [
-          "He gets up early every day"
-        ],
+        "accepted": [],
         "text": "He wakes up early every day",
         "distractors": [
           "always",
@@ -1679,9 +1601,7 @@
         ]
       },
       "no": {
-        "accepted": [
-          "Han står opp tidlig hver dag"
-        ],
+        "accepted": [],
         "text": "Han våkner tidlig hver dag",
         "distractors": [
           "alltid",
@@ -1827,9 +1747,7 @@
     ],
     "translations": {
       "en": {
-        "accepted": [
-          "Our new garden is very pretty"
-        ],
+        "accepted": [],
         "text": "Our new garden is very beautiful",
         "distractors": [
           "house",
@@ -1842,10 +1760,7 @@
         ]
       },
       "no": {
-        "accepted": [
-          "Hagen vår er veldig fin",
-          "Den nye hagen vår er veldig vakker"
-        ],
+        "accepted": [],
         "text": "Vår nye hage er veldig vakker",
         "distractors": [
           "de",
@@ -1874,9 +1789,7 @@
     ],
     "translations": {
       "en": {
-        "accepted": [
-          "I believe it is important to learn languages"
-        ],
+        "accepted": [],
         "text": "I think it is important to learn languages",
         "distractors": [
           "believe",
@@ -1889,10 +1802,7 @@
         ]
       },
       "no": {
-        "accepted": [
-          "Jeg tror det er viktig å lære språk",
-          "Jeg mener det er viktig å lære språk"
-        ],
+        "accepted": [],
         "text": "Jeg synes det er viktig å lære språk",
         "distractors": [
           "at",
@@ -1920,9 +1830,7 @@
     ],
     "translations": {
       "en": {
-        "accepted": [
-          "I normally drink tea in the morning"
-        ],
+        "accepted": [],
         "text": "I usually drink tea in the morning",
         "distractors": [
           "always",
@@ -1935,9 +1843,7 @@
         ]
       },
       "no": {
-        "accepted": [
-          "Jeg pleier å drikke te om morgenen"
-        ],
+        "accepted": [],
         "text": "Jeg drikker vanligvis te om morgenen",
         "distractors": [
           "aldri",
@@ -1978,9 +1884,7 @@
         ]
       },
       "no": {
-        "accepted": [
-          "Sola skinner i dag"
-        ],
+        "accepted": [],
         "text": "Solen skinner i dag",
         "distractors": [
           "i går",
@@ -2018,9 +1922,7 @@
         ]
       },
       "no": {
-        "accepted": [
-          "PC-en min ligger på bordet"
-        ],
+        "accepted": [],
         "text": "Datamaskinen min ligger på bordet",
         "distractors": [
           "er",

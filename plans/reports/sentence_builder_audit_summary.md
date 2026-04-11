@@ -4,39 +4,45 @@
 
 - Files scanned: 6
 - Questions scanned: 300
-- Findings: 360
-- Errors: 360
+- Findings: 0
+- Errors: 0
 - Warnings: 0
 
 ## Findings By File
 
 ### `apps/public/de_en/sentence_builder.json`
 - Questions: 50
-- Errors: 51
+- Errors: 0
 - Warnings: 0
+- Findings: none
 
 ### `apps/public/de_nl/sentence_builder.json`
 - Questions: 50
-- Errors: 60
+- Errors: 0
 - Warnings: 0
+- Findings: none
 
 ### `apps/public/de_no/sentence_builder.json`
 - Questions: 50
-- Errors: 77
+- Errors: 0
 - Warnings: 0
+- Findings: none
 
 ### `apps/public/en_nl/sentence_builder.json`
 - Questions: 50
-- Errors: 51
+- Errors: 0
 - Warnings: 0
+- Findings: none
 
 ### `apps/public/en_no/sentence_builder.json`
 - Questions: 50
-- Errors: 52
+- Errors: 0
 - Warnings: 0
+- Findings: none
 
 ### `apps/public/nl_no/sentence_builder.json`
 - Questions: 50
-- Errors: 69
+- Errors: 0
 - Warnings: 0
+- Findings: none
 

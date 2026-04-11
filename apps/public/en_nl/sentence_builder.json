@@ -8,9 +8,7 @@
     ],
     "translations": {
       "en": {
-        "accepted": [
-          "I am very glad today"
-        ],
+        "accepted": [],
         "text": "I am very happy today",
         "distractors": [
           "glad",
@@ -23,9 +21,7 @@
         ]
       },
       "nl": {
-        "accepted": [
-          "Ik ben zeer gelukkig vandaag"
-        ],
+        "accepted": [],
         "text": "Ik ben erg blij vandaag",
         "distractors": [
           "gelukkig",
@@ -67,9 +63,7 @@
         ]
       },
       "nl": {
-        "accepted": [
-          "Zij leest een erg goed boek"
-        ],
+        "accepted": [],
         "text": "Ze leest een heel goed boek",
         "distractors": [
           "boeken",
@@ -110,9 +104,7 @@
         ]
       },
       "nl": {
-        "accepted": [
-          "Wij eten nu het avondeten"
-        ],
+        "accepted": [],
         "text": "We eten nu avondeten",
         "distractors": [
           "altijd",
@@ -140,9 +132,7 @@
     ],
     "translations": {
       "en": {
-        "accepted": [
-          "They walk to the new shop"
-        ],
+        "accepted": [],
         "text": "They walk to the new store",
         "distractors": [
           "are",
@@ -157,9 +147,7 @@
         ]
       },
       "nl": {
-        "accepted": [
-          "Zij wandelen naar de nieuwe winkel"
-        ],
+        "accepted": [],
         "text": "Ze lopen naar de nieuwe winkel",
         "distractors": [
           "auto",
@@ -225,9 +213,7 @@
     ],
     "translations": {
       "en": {
-        "accepted": [
-          "The little cat sleeps all day"
-        ],
+        "accepted": [],
         "text": "The small cat sleeps all day",
         "distractors": [
           "big",
@@ -265,9 +251,7 @@
     ],
     "translations": {
       "en": {
-        "accepted": [
-          "I own a fast red car"
-        ],
+        "accepted": [],
         "text": "I have a fast red car",
         "distractors": [
           "blue",
@@ -280,9 +264,7 @@
         ]
       },
       "nl": {
-        "accepted": [
-          "Ik bezit een snelle rode auto"
-        ],
+        "accepted": [],
         "text": "Ik heb een snelle rode auto",
         "distractors": [
           "bezit",
@@ -323,9 +305,7 @@
         ]
       },
       "nl": {
-        "accepted": [
-          "Hij werkt op een groot kantoor"
-        ],
+        "accepted": [],
         "text": "Hij werkt in een groot kantoor",
         "distractors": [
           "buiten",
@@ -351,9 +331,7 @@
     ],
     "translations": {
       "en": {
-        "accepted": [
-          "You talk Dutch very well"
-        ],
+        "accepted": [],
         "text": "You speak Dutch very well",
         "distractors": [
           "badly",
@@ -366,9 +344,7 @@
         ]
       },
       "nl": {
-        "accepted": [
-          "U spreekt heel goed Nederlands"
-        ],
+        "accepted": [],
         "text": "Je spreekt heel goed Nederlands",
         "distractors": [
           "begrijp",
@@ -395,9 +371,7 @@
     ],
     "translations": {
       "en": {
-        "accepted": [
-          "The weather is very nice today"
-        ],
+        "accepted": [],
         "text": "The weather is really nice today",
         "distractors": [
           "bad",
@@ -410,9 +384,7 @@
         ]
       },
       "nl": {
-        "accepted": [
-          "Het weer is heel erg mooi vandaag"
-        ],
+        "accepted": [],
         "text": "Het weer is echt prachtig vandaag",
         "distractors": [
           "erg",
@@ -441,9 +413,7 @@
     ],
     "translations": {
       "en": {
-        "accepted": [
-          "My little brother is very tall"
-        ],
+        "accepted": [],
         "text": "My young brother is very tall",
         "distractors": [
           "little",
@@ -456,9 +426,7 @@
         ]
       },
       "nl": {
-        "accepted": [
-          "Mijn broertje is erg lang"
-        ],
+        "accepted": [],
         "text": "Mijn jonge broer is erg lang",
         "distractors": [
           "broertje",
@@ -485,9 +453,7 @@
     ],
     "translations": {
       "en": {
-        "accepted": [
-          "We wish to buy a new house"
-        ],
+        "accepted": [],
         "text": "We want to buy a new house",
         "distractors": [
           "apartment",
@@ -500,9 +466,7 @@
         ]
       },
       "nl": {
-        "accepted": [
-          "Wij willen een nieuw huis kopen"
-        ],
+        "accepted": [],
         "text": "We willen een nieuw huis kopen",
         "distractors": [
           "appartement",
@@ -528,9 +492,7 @@
     ],
     "translations": {
       "en": {
-        "accepted": [
-          "I enjoy drinking black coffee"
-        ],
+        "accepted": [],
         "text": "I like to drink black coffee",
         "distractors": [
           "ate",
@@ -544,9 +506,7 @@
         ]
       },
       "nl": {
-        "accepted": [
-          "Ik hou ervan om zwarte koffie te drinken"
-        ],
+        "accepted": [],
         "text": "Ik drink graag zwarte koffie",
         "distractors": [
           "at",
@@ -591,9 +551,7 @@
         ]
       },
       "nl": {
-        "accepted": [
-          "Zij reizen dikwijls naar Spanje"
-        ],
+        "accepted": [],
         "text": "Ze reizen vaak naar Spanje",
         "distractors": [
           "auto",
@@ -621,9 +579,7 @@
     ],
     "translations": {
       "en": {
-        "accepted": [
-          "The meal is cold and bad"
-        ],
+        "accepted": [],
         "text": "The food is cold and bad",
         "distractors": [
           "good",
@@ -636,9 +592,7 @@
         ]
       },
       "nl": {
-        "accepted": [
-          "De maaltijd is koud en slecht"
-        ],
+        "accepted": [],
         "text": "Het eten is koud en slecht",
         "distractors": [
           "de",
@@ -667,9 +621,7 @@
     ],
     "translations": {
       "en": {
-        "accepted": [
-          "The fast train leaves right now"
-        ],
+        "accepted": [],
         "text": "The fast train departs right now",
         "distractors": [
           "arrives",
@@ -682,9 +634,7 @@
         ]
       },
       "nl": {
-        "accepted": [
-          "De sneltrein vertrekt nu"
-        ],
+        "accepted": [],
         "text": "De snelle trein vertrekt nu meteen",
         "distractors": [
           "auto",
@@ -711,9 +661,7 @@
     ],
     "translations": {
       "en": {
-        "accepted": [
-          "We play soccer every evening"
-        ],
+        "accepted": [],
         "text": "We play football every evening",
         "distractors": [
           "morning",
@@ -726,9 +674,7 @@
         ]
       },
       "nl": {
-        "accepted": [
-          "Wij spelen elke avonds voetbal"
-        ],
+        "accepted": [],
         "text": "We voetballen elke avond",
         "distractors": [
           "avonds",
@@ -770,9 +716,7 @@
         ]
       },
       "nl": {
-        "accepted": [
-          "Zij schreef gisteren een lange brief"
-        ],
+        "accepted": [],
         "text": "Ze schreef gisteren een lange brief",
         "distractors": [
           "boek",
@@ -850,9 +794,7 @@
         ]
       },
       "nl": {
-        "accepted": [
-          "Ik snap u helemaal niet"
-        ],
+        "accepted": [],
         "text": "Ik begrijp je helemaal niet",
         "distractors": [
           "alles",
@@ -880,9 +822,7 @@
     ],
     "translations": {
       "en": {
-        "accepted": [
-          "The instructor has a blue pen"
-        ],
+        "accepted": [],
         "text": "The teacher has a blue pen",
         "distractors": [
           "had",
@@ -895,9 +835,7 @@
         ]
       },
       "nl": {
-        "accepted": [
-          "De docent heeft een blauwe pen"
-        ],
+        "accepted": [],
         "text": "De leraar heeft een blauwe pen",
         "distractors": [
           "docent",
@@ -938,9 +876,7 @@
         ]
       },
       "nl": {
-        "accepted": [
-          "Zij luisteren naar luide muziek"
-        ],
+        "accepted": [],
         "text": "Ze luisteren naar harde muziek",
         "distractors": [
           "hij",
@@ -1087,9 +1023,7 @@
     ],
     "translations": {
       "en": {
-        "accepted": [
-          "The large city is always busy"
-        ],
+        "accepted": [],
         "text": "The big city is always busy",
         "distractors": [
           "large",
@@ -1128,9 +1062,7 @@
     ],
     "translations": {
       "en": {
-        "accepted": [
-          "She is baking a delicious cake"
-        ],
+        "accepted": [],
         "text": "She is making a delicious cake",
         "distractors": [
           "bad",
@@ -1144,9 +1076,7 @@
         ]
       },
       "nl": {
-        "accepted": [
-          "Ze bakt een heerlijke taart"
-        ],
+        "accepted": [],
         "text": "Ze maakt een heerlijke taart",
         "distractors": [
           "bakt",
@@ -1261,9 +1191,7 @@
         ]
       },
       "nl": {
-        "accepted": [
-          "Waarom bent u vandaag zo verdrietig"
-        ],
+        "accepted": [],
         "text": "Waarom ben je vandaag zo verdrietig",
         "distractors": [
           "bent",
@@ -1291,9 +1219,7 @@
     ],
     "translations": {
       "en": {
-        "accepted": [
-          "He must sleep more"
-        ],
+        "accepted": [],
         "text": "He needs to sleep more",
         "distractors": [
           "eat",
@@ -1421,9 +1347,7 @@
         ]
       },
       "nl": {
-        "accepted": [
-          "Wat kost het ticket"
-        ],
+        "accepted": [],
         "text": "Hoeveel kost het kaartje",
         "distractors": [
           "duur",
@@ -1498,9 +1422,7 @@
         ]
       },
       "nl": {
-        "accepted": [
-          "Hoe oud is uw zuster"
-        ],
+        "accepted": [],
         "text": "Hoe oud is je zus",
         "distractors": [
           "broer",
@@ -1580,9 +1502,7 @@
         ]
       },
       "nl": {
-        "accepted": [
-          "Waar woont u nu"
-        ],
+        "accepted": [],
         "text": "Waar woon je nu",
         "distractors": [
           "hier",
@@ -1647,9 +1567,7 @@
     ],
     "translations": {
       "en": {
-        "accepted": [
-          "She traveled to Norway last summer"
-        ],
+        "accepted": [],
         "text": "She travelled to Norway last summer",
         "distractors": [
           "he",
@@ -1690,9 +1608,7 @@
     ],
     "translations": {
       "en": {
-        "accepted": [
-          "He gets up early every day"
-        ],
+        "accepted": [],
         "text": "He wakes up early every day",
         "distractors": [
           "always",
@@ -1705,9 +1621,7 @@
         ]
       },
       "nl": {
-        "accepted": [
-          "Hij staat elke dag vroeg op"
-        ],
+        "accepted": [],
         "text": "Hij wordt elke dag vroeg wakker",
         "distractors": [
           "altijd",
@@ -1749,9 +1663,7 @@
         ]
       },
       "nl": {
-        "accepted": [
-          "Wilt u wat water"
-        ],
+        "accepted": [],
         "text": "Wil je wat water",
         "distractors": [
           "drinken",
@@ -1790,9 +1702,7 @@
         ]
       },
       "nl": {
-        "accepted": [
-          "Hoe heet u"
-        ],
+        "accepted": [],
         "text": "Hoe heet je",
         "distractors": [
           "is",
@@ -1862,9 +1772,7 @@
     ],
     "translations": {
       "en": {
-        "accepted": [
-          "Our new garden is very pretty"
-        ],
+        "accepted": [],
         "text": "Our new garden is very beautiful",
         "distractors": [
           "house",
@@ -1877,9 +1785,7 @@
         ]
       },
       "nl": {
-        "accepted": [
-          "Onze nieuwe tuin is prachtig"
-        ],
+        "accepted": [],
         "text": "Onze nieuwe tuin is heel erg mooi",
         "distractors": [
           "huis",
@@ -1906,9 +1812,7 @@
     ],
     "translations": {
       "en": {
-        "accepted": [
-          "I believe it is important to learn languages"
-        ],
+        "accepted": [],
         "text": "I think it is important to learn languages",
         "distractors": [
           "believe",
@@ -1949,9 +1853,7 @@
     ],
     "translations": {
       "en": {
-        "accepted": [
-          "I normally drink tea in the morning"
-        ],
+        "accepted": [],
         "text": "I usually drink tea in the morning",
         "distractors": [
           "always",
@@ -1964,9 +1866,7 @@
         ]
       },
       "nl": {
-        "accepted": [
-          "Gewoonlijk drink ik thee s ochtends"
-        ],
+        "accepted": [],
         "text": "Ik drink meestal thee in de ochtend",
         "distractors": [
           "altijd",
@@ -2044,9 +1944,7 @@
         ]
       },
       "nl": {
-        "accepted": [
-          "Mijn laptop ligt op de tafel"
-        ],
+        "accepted": [],
         "text": "Mijn computer staat op de tafel",
         "distractors": [
           "is",

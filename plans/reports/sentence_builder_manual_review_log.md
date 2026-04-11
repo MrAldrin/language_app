@@ -1,123 +1,21 @@
 # Sentence Builder Manual Review Log
 
-## apps/public/en_nl/sentence_builder.json
+## Summary of Remaining Accepted Items
 
-- Reviewed accepted items: 52
-- Reason counts: {'direct_alt': 51, 'word_order': 1}
-
-| file path | question id | language side | accepted reason | decision | rationale | status |
-|---|---:|---|---|---|---|---|
-| apps/public/en_nl/sentence_builder.json | 1 | en | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_nl/sentence_builder.json | 1 | nl | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_nl/sentence_builder.json | 2 | nl | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_nl/sentence_builder.json | 3 | nl | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_nl/sentence_builder.json | 4 | en | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_nl/sentence_builder.json | 4 | nl | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_nl/sentence_builder.json | 6 | en | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_nl/sentence_builder.json | 7 | en | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_nl/sentence_builder.json | 7 | nl | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_nl/sentence_builder.json | 8 | nl | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_nl/sentence_builder.json | 9 | en | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_nl/sentence_builder.json | 9 | nl | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_nl/sentence_builder.json | 10 | en | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_nl/sentence_builder.json | 10 | nl | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_nl/sentence_builder.json | 11 | en | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_nl/sentence_builder.json | 11 | nl | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_nl/sentence_builder.json | 12 | en | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_nl/sentence_builder.json | 12 | nl | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_nl/sentence_builder.json | 13 | en | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_nl/sentence_builder.json | 13 | nl | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_nl/sentence_builder.json | 14 | en | word_order | keep | Token set matches canonical text; alternate ordering only. | done |
-| apps/public/en_nl/sentence_builder.json | 14 | nl | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_nl/sentence_builder.json | 15 | en | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_nl/sentence_builder.json | 15 | nl | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_nl/sentence_builder.json | 16 | en | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_nl/sentence_builder.json | 16 | nl | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_nl/sentence_builder.json | 17 | en | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_nl/sentence_builder.json | 17 | nl | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_nl/sentence_builder.json | 18 | nl | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_nl/sentence_builder.json | 20 | nl | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_nl/sentence_builder.json | 21 | en | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_nl/sentence_builder.json | 21 | nl | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_nl/sentence_builder.json | 22 | nl | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_nl/sentence_builder.json | 26 | en | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_nl/sentence_builder.json | 27 | en | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_nl/sentence_builder.json | 27 | nl | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_nl/sentence_builder.json | 30 | nl | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_nl/sentence_builder.json | 31 | en | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_nl/sentence_builder.json | 34 | nl | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_nl/sentence_builder.json | 36 | nl | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_nl/sentence_builder.json | 38 | nl | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_nl/sentence_builder.json | 40 | en | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_nl/sentence_builder.json | 41 | en | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_nl/sentence_builder.json | 41 | nl | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_nl/sentence_builder.json | 42 | nl | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_nl/sentence_builder.json | 43 | nl | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_nl/sentence_builder.json | 45 | en | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_nl/sentence_builder.json | 45 | nl | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_nl/sentence_builder.json | 46 | en | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_nl/sentence_builder.json | 47 | en | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_nl/sentence_builder.json | 47 | nl | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_nl/sentence_builder.json | 49 | nl | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-
-## apps/public/en_no/sentence_builder.json
-
-- Reviewed accepted items: 53
-- Reason counts: {'direct_alt': 52, 'word_order': 1}
+- Total items reviewed: 12
+- Reason counts: {'word_order': 8, 'text_subset': 4}
 
 | file path | question id | language side | accepted reason | decision | rationale | status |
 |---|---:|---|---|---|---|---|
-| apps/public/en_no/sentence_builder.json | 1 | en | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_no/sentence_builder.json | 1 | no | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_no/sentence_builder.json | 2 | no | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_no/sentence_builder.json | 2 | no | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_no/sentence_builder.json | 4 | en | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_no/sentence_builder.json | 4 | no | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_no/sentence_builder.json | 5 | no | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_no/sentence_builder.json | 6 | en | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_no/sentence_builder.json | 7 | en | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_no/sentence_builder.json | 8 | no | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_no/sentence_builder.json | 9 | en | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_no/sentence_builder.json | 9 | no | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_no/sentence_builder.json | 9 | no | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_no/sentence_builder.json | 10 | en | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_no/sentence_builder.json | 10 | no | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_no/sentence_builder.json | 10 | no | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_no/sentence_builder.json | 11 | en | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_no/sentence_builder.json | 11 | no | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_no/sentence_builder.json | 12 | en | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_no/sentence_builder.json | 13 | en | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_no/sentence_builder.json | 13 | no | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_no/sentence_builder.json | 14 | en | word_order | keep | Token set matches canonical text; alternate ordering only. | done |
-| apps/public/en_no/sentence_builder.json | 15 | en | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_no/sentence_builder.json | 16 | en | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_no/sentence_builder.json | 16 | no | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_no/sentence_builder.json | 17 | en | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_no/sentence_builder.json | 19 | no | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_no/sentence_builder.json | 20 | no | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_no/sentence_builder.json | 21 | en | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_no/sentence_builder.json | 26 | en | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_no/sentence_builder.json | 26 | no | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_no/sentence_builder.json | 27 | en | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_no/sentence_builder.json | 27 | no | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_no/sentence_builder.json | 27 | no | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_no/sentence_builder.json | 28 | no | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_no/sentence_builder.json | 30 | no | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_no/sentence_builder.json | 31 | en | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_no/sentence_builder.json | 31 | no | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_no/sentence_builder.json | 34 | no | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_no/sentence_builder.json | 35 | no | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_no/sentence_builder.json | 40 | en | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_no/sentence_builder.json | 41 | en | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_no/sentence_builder.json | 41 | no | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_no/sentence_builder.json | 45 | en | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_no/sentence_builder.json | 45 | no | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_no/sentence_builder.json | 45 | no | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_no/sentence_builder.json | 46 | en | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_no/sentence_builder.json | 46 | no | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_no/sentence_builder.json | 46 | no | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_no/sentence_builder.json | 47 | en | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_no/sentence_builder.json | 47 | no | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_no/sentence_builder.json | 48 | no | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-| apps/public/en_no/sentence_builder.json | 49 | no | direct_alt | keep | Lexical/structural variant is valid and intentionally accepted. | done |
-
+| apps/public/de_en/sentence_builder.json | 14 | de | word_order | keep | "Oft reisen sie..." vs "Sie reisen oft...". Same tokens. | done |
+| apps/public/de_en/sentence_builder.json | 14 | en | word_order | keep | "They travel... often" vs "They often travel...". Same tokens. | done |
+| apps/public/de_en/sentence_builder.json | 33 | de | text_subset | keep | "Es regnet draußen" (It is raining outside) vs "Draußen regnet es gerade" (It is currently raining outside). Valid subset. | done |
+| apps/public/de_en/sentence_builder.json | 47 | de | word_order | keep | "Normalerweise trinke ich..." vs "Ich trinke normalerweise...". Same tokens. | done |
+| apps/public/de_nl/sentence_builder.json | 14 | de | word_order | keep | "Oft reisen sie..." vs "Sie reisen oft...". Same tokens. | done |
+| apps/public/de_nl/sentence_builder.json | 33 | de | text_subset | keep | "Es regnet draußen" vs "Draußen regnet es gerade". Valid subset. | done |
+| apps/public/de_nl/sentence_builder.json | 47 | de | word_order | keep | "Normalerweise trinke ich..." vs "Ich trinke normalerweise...". Same tokens. | done |
+| apps/public/de_no/sentence_builder.json | 33 | de | text_subset | keep | "Es regnet draußen" vs "Draußen regnet es gerade". Valid subset. | done |
+| apps/public/de_no/sentence_builder.json | 47 | de | word_order | keep | "Normalerweise trinke ich..." vs "Ich trinke normalerweise...". Same tokens. | done |
+| apps/public/en_nl/sentence_builder.json | 14 | en | word_order | keep | "They travel... often" vs "They often travel...". Same tokens. | done |
+| apps/public/en_no/sentence_builder.json | 14 | en | word_order | keep | "They travel... often" vs "They often travel...". Same tokens. | done |
+| apps/public/nl_no/sentence_builder.json | 33 | nl | text_subset | keep | "Het regent buiten" vs "Buiten regent het nu". Valid subset. | done |

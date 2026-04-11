@@ -8,9 +8,7 @@
     ],
     "translations": {
       "de": {
-        "accepted": [
-          "Ich bin heute richtig froh"
-        ],
+        "accepted": [],
         "text": "Ich bin heute sehr glücklich",
         "distractors": [
           "böse",
@@ -24,9 +22,7 @@
         ]
       },
       "en": {
-        "accepted": [
-          "I am very glad today"
-        ],
+        "accepted": [],
         "text": "I am very happy today",
         "distractors": [
           "glad",
@@ -53,9 +49,7 @@
     ],
     "translations": {
       "de": {
-        "accepted": [
-          "Sie liest gerade ein sehr gutes Buch"
-        ],
+        "accepted": [],
         "text": "Sie liest ein sehr gutes Buch",
         "distractors": [
           "Bücher",
@@ -96,9 +90,7 @@
     ],
     "translations": {
       "de": {
-        "accepted": [
-          "Wir essen jetzt Abendessen"
-        ],
+        "accepted": [],
         "text": "Wir essen jetzt zu Abend",
         "distractors": [
           "Abendessen",
@@ -138,9 +130,7 @@
     ],
     "translations": {
       "de": {
-        "accepted": [
-          "Sie laufen zum neuen Geschäft"
-        ],
+        "accepted": [],
         "text": "Sie gehen zum neuen Laden",
         "distractors": [
           "alt",
@@ -154,9 +144,7 @@
         ]
       },
       "en": {
-        "accepted": [
-          "They walk to the new shop"
-        ],
+        "accepted": [],
         "text": "They walk to the new store",
         "distractors": [
           "are",
@@ -235,9 +223,7 @@
         ]
       },
       "en": {
-        "accepted": [
-          "The little cat sleeps all day"
-        ],
+        "accepted": [],
         "text": "The small cat sleeps all day",
         "distractors": [
           "big",
@@ -263,9 +249,7 @@
     ],
     "translations": {
       "de": {
-        "accepted": [
-          "Ich besitze ein schnelles rotes Auto"
-        ],
+        "accepted": [],
         "text": "Ich habe ein schnelles rotes Auto",
         "distractors": [
           "besitze",
@@ -278,9 +262,7 @@
         ]
       },
       "en": {
-        "accepted": [
-          "I own a fast red car"
-        ],
+        "accepted": [],
         "text": "I have a fast red car",
         "distractors": [
           "blue",
@@ -349,9 +331,7 @@
     ],
     "translations": {
       "de": {
-        "accepted": [
-          "Sie sprechen sehr gut Deutsch"
-        ],
+        "accepted": [],
         "text": "Du sprichst sehr gut Deutsch",
         "distractors": [
           "Englisch",
@@ -365,9 +345,7 @@
         ]
       },
       "en": {
-        "accepted": [
-          "You talk German very well"
-        ],
+        "accepted": [],
         "text": "You speak German very well",
         "distractors": [
           "badly",
@@ -394,9 +372,7 @@
     ],
     "translations": {
       "de": {
-        "accepted": [
-          "Das Wetter ist heute sehr schön"
-        ],
+        "accepted": [],
         "text": "Das Wetter ist heute wirklich schön",
         "distractors": [
           "gestern",
@@ -409,9 +385,7 @@
         ]
       },
       "en": {
-        "accepted": [
-          "The weather is very nice today"
-        ],
+        "accepted": [],
         "text": "The weather is really nice today",
         "distractors": [
           "bad",
@@ -438,9 +412,7 @@
     ],
     "translations": {
       "de": {
-        "accepted": [
-          "Mein kleiner Bruder ist sehr groß"
-        ],
+        "accepted": [],
         "text": "Mein junger Bruder ist sehr groß",
         "distractors": [
           "alt",
@@ -453,9 +425,7 @@
         ]
       },
       "en": {
-        "accepted": [
-          "My little brother is very tall"
-        ],
+        "accepted": [],
         "text": "My young brother is very tall",
         "distractors": [
           "little",
@@ -482,9 +452,7 @@
     ],
     "translations": {
       "de": {
-        "accepted": [
-          "Wir möchten ein neues Haus kaufen"
-        ],
+        "accepted": [],
         "text": "Wir wollen ein neues Haus kaufen",
         "distractors": [
           "alt",
@@ -497,9 +465,7 @@
         ]
       },
       "en": {
-        "accepted": [
-          "We wish to buy a new house"
-        ],
+        "accepted": [],
         "text": "We want to buy a new house",
         "distractors": [
           "apartment",
@@ -525,9 +491,7 @@
     ],
     "translations": {
       "de": {
-        "accepted": [
-          "Ich mag es schwarzen Kaffee zu trinken"
-        ],
+        "accepted": [],
         "text": "Ich trinke gerne schwarzen Kaffee",
         "distractors": [
           "aß",
@@ -543,9 +507,7 @@
         ]
       },
       "en": {
-        "accepted": [
-          "I enjoy drinking black coffee"
-        ],
+        "accepted": [],
         "text": "I like to drink black coffee",
         "distractors": [
           "ate",
@@ -615,9 +577,7 @@
     ],
     "translations": {
       "de": {
-        "accepted": [
-          "Die Mahlzeit ist kalt und schlecht"
-        ],
+        "accepted": [],
         "text": "Das Essen ist kalt und schlecht",
         "distractors": [
           "die",
@@ -631,9 +591,7 @@
         ]
       },
       "en": {
-        "accepted": [
-          "The meal is cold and bad"
-        ],
+        "accepted": [],
         "text": "The food is cold and bad",
         "distractors": [
           "good",
@@ -661,9 +619,7 @@
     ],
     "translations": {
       "de": {
-        "accepted": [
-          "Der Schnellzug fährt jetzt ab"
-        ],
+        "accepted": [],
         "text": "Der schnelle Zug fährt jetzt ab",
         "distractors": [
           "Auto",
@@ -676,9 +632,7 @@
         ]
       },
       "en": {
-        "accepted": [
-          "The fast train leaves right now"
-        ],
+        "accepted": [],
         "text": "The fast train departs right now",
         "distractors": [
           "arrives",
@@ -717,9 +671,7 @@
         ]
       },
       "en": {
-        "accepted": [
-          "We play soccer every evening"
-        ],
+        "accepted": [],
         "text": "We play football every evening",
         "distractors": [
           "morning",
@@ -822,9 +774,7 @@
     ],
     "translations": {
       "de": {
-        "accepted": [
-          "Ich verstehe Sie überhaupt nicht"
-        ],
+        "accepted": [],
         "text": "Ich verstehe dich überhaupt nicht",
         "distractors": [
           "alles",
@@ -877,9 +827,7 @@
         ]
       },
       "en": {
-        "accepted": [
-          "The instructor has a blue pen"
-        ],
+        "accepted": [],
         "text": "The teacher has a blue pen",
         "distractors": [
           "had",
@@ -906,9 +854,7 @@
     ],
     "translations": {
       "de": {
-        "accepted": [
-          "Sie hören gerade laute Musik"
-        ],
+        "accepted": [],
         "text": "Sie hören laute Musik",
         "distractors": [
           "er",
@@ -990,9 +936,7 @@
     ],
     "translations": {
       "de": {
-        "accepted": [
-          "Nächste Woche fliege ich nach London"
-        ],
+        "accepted": [],
         "text": "Ich werde nächste Woche nach London fliegen",
         "distractors": [
           "fahren",
@@ -1068,9 +1012,7 @@
     ],
     "translations": {
       "de": {
-        "accepted": [
-          "Die Großstadt ist immer belebt"
-        ],
+        "accepted": [],
         "text": "Die große Stadt ist immer belebt",
         "distractors": [
           "dorf",
@@ -1083,9 +1025,7 @@
         ]
       },
       "en": {
-        "accepted": [
-          "The large city is always busy"
-        ],
+        "accepted": [],
         "text": "The big city is always busy",
         "distractors": [
           "large",
@@ -1112,9 +1052,7 @@
     ],
     "translations": {
       "de": {
-        "accepted": [
-          "Sie macht einen leckeren Kuchen"
-        ],
+        "accepted": [],
         "text": "Sie backt einen leckeren Kuchen",
         "distractors": [
           "Brot",
@@ -1126,9 +1064,7 @@
         ]
       },
       "en": {
-        "accepted": [
-          "She is baking a delicious cake"
-        ],
+        "accepted": [],
         "text": "She is making a delicious cake",
         "distractors": [
           "bad",
@@ -1155,9 +1091,7 @@
     ],
     "translations": {
       "de": {
-        "accepted": [
-          "Ich sehe euch"
-        ],
+        "accepted": [],
         "text": "Ich sehe dich und ihn",
         "distractors": [
           "alle",
@@ -1272,9 +1206,7 @@
     ],
     "translations": {
       "de": {
-        "accepted": [
-          "Er braucht mehr Schlaf"
-        ],
+        "accepted": [],
         "text": "Er muss mehr schlafen",
         "distractors": [
           "arbeiten",
@@ -1288,9 +1220,7 @@
         ]
       },
       "en": {
-        "accepted": [
-          "He must sleep more"
-        ],
+        "accepted": [],
         "text": "He needs to sleep more",
         "distractors": [
           "eat",
@@ -1394,9 +1324,7 @@
     ],
     "translations": {
       "de": {
-        "accepted": [
-          "Was kostet die Fahrkarte"
-        ],
+        "accepted": [],
         "text": "Wie viel kostet die Fahrkarte",
         "distractors": [
           "billiger",
@@ -1471,9 +1399,7 @@
     ],
     "translations": {
       "de": {
-        "accepted": [
-          "Wie alt ist Ihre Schwester"
-        ],
+        "accepted": [],
         "text": "Wie alt ist deine Schwester",
         "distractors": [
           "Bruder",
@@ -1510,9 +1436,7 @@
     ],
     "translations": {
       "de": {
-        "accepted": [
-          "Ich esse nicht gerne scharf"
-        ],
+        "accepted": [],
         "text": "Ich mag kein scharfes Essen",
         "distractors": [
           "esse",
@@ -1555,9 +1479,7 @@
     ],
     "translations": {
       "de": {
-        "accepted": [
-          "Wo wohnen Sie jetzt"
-        ],
+        "accepted": [],
         "text": "Wo wohnst du jetzt",
         "distractors": [
           "arbeiten",
@@ -1648,9 +1570,7 @@
         ]
       },
       "en": {
-        "accepted": [
-          "She traveled to Norway last summer"
-        ],
+        "accepted": [],
         "text": "She travelled to Norway last summer",
         "distractors": [
           "he",
@@ -1677,9 +1597,7 @@
     ],
     "translations": {
       "de": {
-        "accepted": [
-          "Er steht jeden Tag früh auf"
-        ],
+        "accepted": [],
         "text": "Er wacht jeden Tag früh auf",
         "distractors": [
           "immer",
@@ -1692,9 +1610,7 @@
         ]
       },
       "en": {
-        "accepted": [
-          "He gets up early every day"
-        ],
+        "accepted": [],
         "text": "He wakes up early every day",
         "distractors": [
           "always",
@@ -1721,9 +1637,7 @@
     ],
     "translations": {
       "de": {
-        "accepted": [
-          "Möchten Sie etwas Wasser"
-        ],
+        "accepted": [],
         "text": "Willst du etwas Wasser",
         "distractors": [
           "brauchen",
@@ -1762,9 +1676,7 @@
     ],
     "translations": {
       "de": {
-        "accepted": [
-          "Wie heißen Sie"
-        ],
+        "accepted": [],
         "text": "Wie heißt du",
         "distractors": [
           "dein",
@@ -1806,9 +1718,7 @@
     ],
     "translations": {
       "de": {
-        "accepted": [
-          "Wir warten an der Bushaltestelle"
-        ],
+        "accepted": [],
         "text": "Wir warten auf den Bus",
         "distractors": [
           "an",
@@ -1849,9 +1759,7 @@
     ],
     "translations": {
       "de": {
-        "accepted": [
-          "Unser neuer Garten ist wunderbar"
-        ],
+        "accepted": [],
         "text": "Unser neuer Garten ist sehr schön",
         "distractors": [
           "alt",
@@ -1864,9 +1772,7 @@
         ]
       },
       "en": {
-        "accepted": [
-          "Our new garden is very pretty"
-        ],
+        "accepted": [],
         "text": "Our new garden is very beautiful",
         "distractors": [
           "house",
@@ -1907,9 +1813,7 @@
         ]
       },
       "en": {
-        "accepted": [
-          "I believe it is important to learn languages"
-        ],
+        "accepted": [],
         "text": "I think it is important to learn languages",
         "distractors": [
           "believe",
@@ -1950,9 +1854,7 @@
         ]
       },
       "en": {
-        "accepted": [
-          "I normally drink tea in the morning"
-        ],
+        "accepted": [],
         "text": "I usually drink tea in the morning",
         "distractors": [
           "always",
@@ -2017,9 +1919,7 @@
     ],
     "translations": {
       "de": {
-        "accepted": [
-          "Mein Rechner steht auf dem Tisch"
-        ],
+        "accepted": [],
         "text": "Mein Computer liegt auf dem Tisch",
         "distractors": [
           "ist",
@@ -2057,9 +1957,7 @@
     ],
     "translations": {
       "de": {
-        "accepted": [
-          "Haben Sie Hunger"
-        ],
+        "accepted": [],
         "text": "Hast du Hunger",
         "distractors": [
           "durst",
