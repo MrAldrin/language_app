@@ -13,9 +13,9 @@
         "distractors": [
           "böse",
           "er",
-          "froh",
+          "hungrig",
           "Morgen",
-          "richtig",
+          "spät",
           "traurig",
           "war",
           "wir"
@@ -25,7 +25,7 @@
         "accepted": [],
         "text": "I am very happy today",
         "distractors": [
-          "glad",
+          "tired",
           "he",
           "is",
           "sad",
@@ -54,7 +54,7 @@
         "distractors": [
           "Bücher",
           "er",
-          "gerade",
+          "oft",
           "las",
           "schlecht",
           "wir",
@@ -71,7 +71,7 @@
           "is",
           "newspaper",
           "read",
-          "reading",
+          "writing",
           "we"
         ]
       }
@@ -93,7 +93,7 @@
         "accepted": [],
         "text": "Wir essen jetzt zu Abend",
         "distractors": [
-          "Abendessen",
+          "Küche",
           "aßen",
           "Frühstück",
           "immer",
@@ -137,8 +137,8 @@
           "Auto",
           "er",
           "fuhren",
-          "Geschäft",
-          "laufen",
+          "Büro",
+          "fahren",
           "Supermarkt",
           "wir"
         ]
@@ -152,9 +152,9 @@
           "he",
           "old",
           "ran",
-          "shop",
+          "office",
           "supermarket",
-          "walking",
+          "running",
           "we"
         ]
       }
@@ -228,7 +228,7 @@
         "distractors": [
           "big",
           "dog",
-          "little",
+          "fast",
           "night",
           "slept",
           "they",
@@ -252,7 +252,7 @@
         "accepted": [],
         "text": "Ich habe ein schnelles rotes Auto",
         "distractors": [
-          "besitze",
+          "sehe",
           "blau",
           "Bus",
           "er",
@@ -269,7 +269,7 @@
           "bus",
           "had",
           "he",
-          "own",
+          "bought",
           "slow",
           "we"
         ]
@@ -293,7 +293,7 @@
         "text": "Er arbeitet in einem großen Büro",
         "distractors": [
           "arbeitete",
-          "beschäftigt",
+          "wohnt",
           "draußen",
           "Fabrik",
           "ist",
@@ -353,7 +353,7 @@
           "he",
           "I",
           "spoke",
-          "talk",
+          "write",
           "understand"
         ]
       }
@@ -379,7 +379,7 @@
           "kalt",
           "Regen",
           "schlecht",
-          "sehr",
+          "immer",
           "war",
           "wird"
         ]
@@ -391,7 +391,7 @@
           "bad",
           "cold",
           "rain",
-          "very",
+          "always",
           "was",
           "will",
           "yesterday"
@@ -417,7 +417,7 @@
         "distractors": [
           "alt",
           "dein",
-          "kleiner",
+          "lieber",
           "kurz",
           "Schwester",
           "sie",
@@ -428,7 +428,7 @@
         "accepted": [],
         "text": "My young brother is very tall",
         "distractors": [
-          "little",
+          "best",
           "old",
           "she",
           "short",
@@ -457,7 +457,7 @@
         "distractors": [
           "alt",
           "Auto",
-          "möchten",
+          "müssen",
           "sie",
           "verkaufen",
           "Wohnung",
@@ -474,7 +474,7 @@
           "sell",
           "they",
           "wanted",
-          "wish"
+          "need"
         ]
       }
     },
@@ -498,9 +498,9 @@
           "er",
           "es",
           "hasse",
-          "mag",
+          "suche",
           "Tee",
-          "trinken",
+          "kochen",
           "Wasser",
           "weiß",
           "zu"
@@ -511,8 +511,8 @@
         "text": "I like to drink black coffee",
         "distractors": [
           "ate",
-          "drinking",
-          "enjoy",
+          "making",
+          "want",
           "hate",
           "he",
           "tea",
@@ -584,7 +584,7 @@
           "er",
           "gut",
           "heiß",
-          "Mahlzeit",
+          "Getränk",
           "war",
           "Wasser",
           "wir"
@@ -597,7 +597,7 @@
           "good",
           "he",
           "hot",
-          "meal",
+          "drink",
           "was",
           "water",
           "we"
@@ -626,7 +626,7 @@
           "Bus",
           "kommt",
           "langsam",
-          "Schnellzug",
+          "Flugzeug",
           "später",
           "wir"
         ]
@@ -639,7 +639,7 @@
           "bus",
           "car",
           "later",
-          "leaves",
+          "waits",
           "slow",
           "we"
         ]
@@ -677,7 +677,7 @@
           "morning",
           "never",
           "played",
-          "soccer",
+          "basketball",
           "tennis",
           "they",
           "watch"
@@ -781,7 +781,7 @@
           "er",
           "höre",
           "ihn",
-          "sie",
+          "uns",
           "verstand",
           "weiß"
         ]
@@ -817,22 +817,23 @@
         "accepted": [],
         "text": "Der Lehrer hat einen blauen Stift",
         "distractors": [
-          "besitzt",
-          "Bleistift",
+          "Durst",
+          "essen",
           "er",
-          "hatte",
-          "rot",
-          "Schüler",
+          "hatten",
+          "ich",
+          "war",
           "wir"
         ]
       },
+
       "en": {
         "accepted": [],
         "text": "The teacher has a blue pen",
         "distractors": [
           "had",
           "he",
-          "instructor",
+          "doctor",
           "pencil",
           "red",
           "student",
@@ -858,7 +859,7 @@
         "text": "Sie hören laute Musik",
         "distractors": [
           "er",
-          "gerade",
+          "oft",
           "hörten",
           "leise",
           "Radio",
@@ -917,7 +918,7 @@
           "shirt",
           "shoes",
           "they",
-          "wearing",
+          "buying",
           "wore"
         ]
       }
@@ -940,7 +941,7 @@
         "text": "Ich werde nächste Woche nach London fliegen",
         "distractors": [
           "fahren",
-          "fliege",
+          "schwimme",
           "flog",
           "Monat",
           "Paris",
@@ -1016,7 +1017,7 @@
         "text": "Die große Stadt ist immer belebt",
         "distractors": [
           "dorf",
-          "Großstadt",
+          "Straße",
           "klein",
           "nie",
           "ruhig",
@@ -1028,7 +1029,7 @@
         "accepted": [],
         "text": "The big city is always busy",
         "distractors": [
-          "large",
+          "old",
           "never",
           "quiet",
           "small",
@@ -1058,7 +1059,7 @@
           "Brot",
           "er",
           "ißt",
-          "macht",
+          "kauft",
           "schlecht",
           "war"
         ]
@@ -1068,7 +1069,7 @@
         "text": "She is making a delicious cake",
         "distractors": [
           "bad",
-          "baking",
+          "buying",
           "bread",
           "eating",
           "he",
@@ -1095,7 +1096,7 @@
         "text": "Ich sehe dich und ihn",
         "distractors": [
           "alle",
-          "euch",
+          "uns",
           "ihnen",
           "nicht",
           "sah",
@@ -1210,10 +1211,10 @@
         "text": "Er muss mehr schlafen",
         "distractors": [
           "arbeiten",
-          "braucht",
+          "sucht",
           "Essen",
           "musste",
-          "Schlaf",
+          "Brot",
           "sie",
           "weniger",
           "will"
@@ -1225,7 +1226,7 @@
         "distractors": [
           "eat",
           "less",
-          "must",
+          "can",
           "needed",
           "she",
           "wants",
@@ -1333,7 +1334,7 @@
           "Preis",
           "teuer",
           "viele",
-          "was"
+          "wo"
         ]
       },
       "en": {
@@ -1403,7 +1404,7 @@
         "text": "Wie alt ist deine Schwester",
         "distractors": [
           "Bruder",
-          "ihre",
+          "unsere",
           "mein",
           "viele",
           "war",
@@ -1439,8 +1440,8 @@
         "accepted": [],
         "text": "Ich mag kein scharfes Essen",
         "distractors": [
-          "esse",
-          "gerne",
+          "koche",
+          "immer",
           "heiß",
           "lecker",
           "nicht",
@@ -1485,9 +1486,9 @@
           "arbeiten",
           "bleiben",
           "hier",
-          "sie",
+          "er",
           "wann",
-          "wohnen",
+          "kommen",
           "wohnte"
         ]
       },
@@ -1574,7 +1575,7 @@
         "text": "She travelled to Norway last summer",
         "distractors": [
           "he",
-          "traveled",
+          "moved",
           "trip",
           "visit",
           "went",
@@ -1605,7 +1606,7 @@
           "schläft",
           "sie",
           "spät",
-          "steht",
+          "geht",
           "wachte"
         ]
       },
@@ -1614,7 +1615,7 @@
         "text": "He wakes up early every day",
         "distractors": [
           "always",
-          "gets",
+          "comes",
           "late",
           "morning",
           "she",
@@ -1642,8 +1643,8 @@
         "distractors": [
           "brauchen",
           "Kaffee",
-          "möchten",
-          "sie",
+          "suchen",
+          "wir",
           "trinken",
           "war"
         ]
@@ -1680,11 +1681,11 @@
         "text": "Wie heißt du",
         "distractors": [
           "dein",
-          "heißen",
+          "suchen",
           "ist",
           "mein",
           "Name",
-          "sie",
+          "er",
           "war",
           "was",
           "wer",
@@ -1721,8 +1722,8 @@
         "accepted": [],
         "text": "Wir warten auf den Bus",
         "distractors": [
-          "an",
-          "Bushaltestelle",
+          "hinter",
+          "Park",
           "der",
           "für",
           "sehen",
@@ -1768,7 +1769,7 @@
           "nicht",
           "sie",
           "war",
-          "wunderbar"
+          "groß"
         ]
       },
       "en": {
@@ -1778,7 +1779,7 @@
           "house",
           "not",
           "old",
-          "pretty",
+          "big",
           "small",
           "they",
           "was"
@@ -1816,7 +1817,7 @@
         "accepted": [],
         "text": "I think it is important to learn languages",
         "distractors": [
-          "believe",
+          "know",
           "speak",
           "that",
           "they",
@@ -1862,7 +1863,7 @@
           "drank",
           "evening",
           "never",
-          "normally",
+          "quickly",
           "she"
         ]
       }
@@ -1923,9 +1924,9 @@
         "text": "Mein Computer liegt auf dem Tisch",
         "distractors": [
           "ist",
-          "Rechner",
+          "Schlüssel",
           "sein",
-          "steht",
+          "fällt",
           "Stuhl",
           "Telefon",
           "unter",

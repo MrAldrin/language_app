@@ -54,16 +54,19 @@ Use this as the live tracker while we execute `plans/sentence_builder_dataset_au
 - [x] 10. Start cleanup pass 1 (hard errors first)
   - Make minimal edits.
   - Re-run audit after each file or small batch.
+  - NEW: Bulk removed 360 `accepted` items that used distractors to align with new strict policy.
 
 - [x] 11. Cleanup pass 2 (high-confidence policy fixes)
   - Remove/replace distractors that create unwanted alternates.
   - Keep `accepted` minimal and intentional.
+  - Bulk cleanup completed for all 6 files.
 
 - [ ] 12. Manual language-quality pass
   - Accepted-first review: all non-empty `accepted` entries are reason-labeled (`word_order` / `text_subset` / `unknown`).
   - Review naturalness and direct translation quality.
   - Confirm distractors test language knowledge (not only word shuffling).
   - STRICT CHECK: Confirm no `accepted` items use words from the `distractors` pool.
+  - NEW: Replace near-synonym distractors identified during bulk cleanup to prevent "valid but unaccepted" answers.
 
 - [x] 13. Final verification
   - Re-run audit and confirm Definition of Done criteria.

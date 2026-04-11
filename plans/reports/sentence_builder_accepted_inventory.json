@@ -1,21 +1,21 @@
 {
   "totals": {
-    "questions_total": 300,
-    "questions_with_accepted": 11,
-    "accepted_items_total": 12,
+    "questions_total": 50,
+    "questions_with_accepted": 3,
+    "accepted_items_total": 4,
     "questions_with_2plus_accepted": 1,
     "accepted_by_reason": {
       "word_order": 0,
       "text_subset": 0,
-      "unknown": 12
+      "unknown": 4
     },
     "accepted_by_reason_estimated": {
-      "word_order": 8,
-      "text_subset": 4,
+      "word_order": 3,
+      "text_subset": 1,
       "unknown": 0
     },
-    "accepted_coverage_pct": 0.0367,
-    "avg_accepted_items_per_question": 0.04
+    "accepted_coverage_pct": 0.06,
+    "avg_accepted_items_per_question": 0.08
   },
   "files": [
     {
@@ -42,129 +42,6 @@
       },
       "accepted_by_reason_estimated": {
         "word_order": 3,
-        "text_subset": 1,
-        "unknown": 0
-      }
-    },
-    {
-      "file": "apps/public/de_nl/sentence_builder.json",
-      "questions_total": 50,
-      "questions_with_accepted": 3,
-      "accepted_coverage_pct": 0.06,
-      "accepted_items_total": 3,
-      "avg_accepted_items_per_question": 0.06,
-      "questions_with_2plus_accepted": 0,
-      "question_ids_by_accepted_count": {
-        "1": [
-          14,
-          33,
-          47
-        ]
-      },
-      "accepted_by_reason": {
-        "word_order": 0,
-        "text_subset": 0,
-        "unknown": 3
-      },
-      "accepted_by_reason_estimated": {
-        "word_order": 2,
-        "text_subset": 1,
-        "unknown": 0
-      }
-    },
-    {
-      "file": "apps/public/de_no/sentence_builder.json",
-      "questions_total": 50,
-      "questions_with_accepted": 2,
-      "accepted_coverage_pct": 0.04,
-      "accepted_items_total": 2,
-      "avg_accepted_items_per_question": 0.04,
-      "questions_with_2plus_accepted": 0,
-      "question_ids_by_accepted_count": {
-        "1": [
-          33,
-          47
-        ]
-      },
-      "accepted_by_reason": {
-        "word_order": 0,
-        "text_subset": 0,
-        "unknown": 2
-      },
-      "accepted_by_reason_estimated": {
-        "word_order": 1,
-        "text_subset": 1,
-        "unknown": 0
-      }
-    },
-    {
-      "file": "apps/public/en_nl/sentence_builder.json",
-      "questions_total": 50,
-      "questions_with_accepted": 1,
-      "accepted_coverage_pct": 0.02,
-      "accepted_items_total": 1,
-      "avg_accepted_items_per_question": 0.02,
-      "questions_with_2plus_accepted": 0,
-      "question_ids_by_accepted_count": {
-        "1": [
-          14
-        ]
-      },
-      "accepted_by_reason": {
-        "word_order": 0,
-        "text_subset": 0,
-        "unknown": 1
-      },
-      "accepted_by_reason_estimated": {
-        "word_order": 1,
-        "text_subset": 0,
-        "unknown": 0
-      }
-    },
-    {
-      "file": "apps/public/en_no/sentence_builder.json",
-      "questions_total": 50,
-      "questions_with_accepted": 1,
-      "accepted_coverage_pct": 0.02,
-      "accepted_items_total": 1,
-      "avg_accepted_items_per_question": 0.02,
-      "questions_with_2plus_accepted": 0,
-      "question_ids_by_accepted_count": {
-        "1": [
-          14
-        ]
-      },
-      "accepted_by_reason": {
-        "word_order": 0,
-        "text_subset": 0,
-        "unknown": 1
-      },
-      "accepted_by_reason_estimated": {
-        "word_order": 1,
-        "text_subset": 0,
-        "unknown": 0
-      }
-    },
-    {
-      "file": "apps/public/nl_no/sentence_builder.json",
-      "questions_total": 50,
-      "questions_with_accepted": 1,
-      "accepted_coverage_pct": 0.02,
-      "accepted_items_total": 1,
-      "avg_accepted_items_per_question": 0.02,
-      "questions_with_2plus_accepted": 0,
-      "question_ids_by_accepted_count": {
-        "1": [
-          33
-        ]
-      },
-      "accepted_by_reason": {
-        "word_order": 0,
-        "text_subset": 0,
-        "unknown": 1
-      },
-      "accepted_by_reason_estimated": {
-        "word_order": 0,
         "text_subset": 1,
         "unknown": 0
       }
