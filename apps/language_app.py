@@ -1,7 +1,8 @@
 # /// script
 # requires-python = ">=3.12"
 # dependencies = [
-#     "marimo",
+#     "marimo==0.22.5",
+#     "narwhals==2.19.0",
 #     "polars",
 #     "anywidget",
 #     "traitlets",
@@ -881,7 +882,9 @@ def _():
 
 @app.cell
 def _(raw_pairs):
-    available_languages = sorted({lang for pair in raw_pairs for lang in pair.split("_")})
+    available_languages = sorted(
+        {lang for pair in raw_pairs for lang in pair.split("_")}
+    )
     return (available_languages,)
 
 
@@ -941,10 +944,8 @@ def _(df, row_number, start_session_id):
     _ = start_session_id
     current_sentence = get_sentence(df=df, row_number=row_number)
 
-
     def toggle_reveal(current: bool) -> bool:
         return not current
-
 
     # button_reveal = mo.ui.button(label="Reveal Answer", value=False, on_click=toggle_reveal)
     return (current_sentence,)
@@ -1020,7 +1021,9 @@ def _(active_question_key, start_session_id, target_language, widget):
             session_pending_stats["pending_total_correct"] += 1
         target_key = str(target_language or "").strip()
         if target_key:
-            per_language = session_pending_stats["pending_by_target_language"].setdefault(
+            per_language = session_pending_stats[
+                "pending_by_target_language"
+            ].setdefault(
                 target_key,
                 {"attempts": 0, "correct": 0},
             )
@@ -1051,7 +1054,9 @@ def _(
     start_session_id,
 ):
     widget_payload = (
-        lifetime_stats_widget.value if isinstance(lifetime_stats_widget.value, dict) else {}
+        lifetime_stats_widget.value
+        if isinstance(lifetime_stats_widget.value, dict)
+        else {}
     )
     last_applied_nonce = int(widget_payload.get("last_applied_nonce", 0) or 0)
     reset_command_nonce = 1_000_000 + int(lifetime_reset_nonce)
@@ -1082,7 +1087,9 @@ def _(
         pending_lifetime_buffer.get("pending_total_attempts", 0) or 0
     ) > 0 or any(
         int((counts or {}).get("attempts", 0) or 0) > 0
-        for counts in pending_lifetime_buffer.get("pending_by_target_language", {}).values()
+        for counts in pending_lifetime_buffer.get(
+            "pending_by_target_language", {}
+        ).values()
     )
 
     if lifetime_reset_nonce > 0 and last_applied_nonce != reset_command_nonce:
@@ -1159,7 +1166,9 @@ def _(button_next, df, in_question_view, row_number):
     last_question_index = max(0, total_questions - 1)
     is_last_question = total_questions > 0 and row_number >= last_question_index
     show_summary_page = (
-        in_question_view and total_questions > 0 and button_next.value > last_question_index
+        in_question_view
+        and total_questions > 0
+        and button_next.value > last_question_index
     )
     return show_summary_page, total_questions
 
@@ -1416,7 +1425,9 @@ def _(
         )
         attribute_options = family_to_attribute_options.get(_selected_family, [])
         selected_attributes = [
-            tag for tag in list(dropdown_focus_attributes.value) if tag in attribute_options
+            tag
+            for tag in list(dropdown_focus_attributes.value)
+            if tag in attribute_options
         ]
         selected_focus_family = _selected_family
         # If user clears all attributes, keep family-only filtering active.
@@ -1462,7 +1473,6 @@ def _():
 def _():
     def bump(counter: int) -> int:
         return counter + 1
-
 
     button_start_questions = mo.ui.button(
         value=0,
@@ -1532,10 +1542,8 @@ def _(
 def _(start_session_id):
     _ = start_session_id
 
-
     def handle_navigation(c: int) -> int:
         return c + 1
-
 
     button_prev = mo.ui.button(value=0, on_click=handle_navigation, label="◀ Prev")
     button_next = mo.ui.button(value=0, on_click=handle_navigation, label="Next ▶")
@@ -2371,7 +2379,6 @@ def _(
 @app.cell
 def _(current_sentence, df, row_number, session_score):
     # stats = button_check_answer.value
-
 
     def render_stats() -> mo.Html:
         return mo.hstack(
