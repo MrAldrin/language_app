@@ -127,7 +127,6 @@ class QuestionWidget(anywidget.AnyWidget):
             function render({ model, el }) {
                 let answerIndices = [];
                 let phase = "idle";
-                let feedbackPhase = "idle";
                 // ADDED: reveal is independent of phase - user can toggle it any time
                 let revealed = false;
                 let checkNonce = Number(model.get("check_nonce") || 0);
@@ -211,18 +210,15 @@ class QuestionWidget(anywidget.AnyWidget):
                         >${word}</button>`;
                     }).join("");
 
-                    const feedbackByPhase = {
-                        idle:    { cls: "feedback-neutral", text: "Press Check to validate your answer" },
-                        wrong:   { cls: "feedback-wrong", text: "Not quite, continue or try again" },
-                        correct: { cls: "feedback-correct", text: "Correct! Continue" },
+                    const checkStateByPhase = {
+                        idle:    { cls: "check-feedback-idle", text: "Check answer" },
+                        wrong:   { cls: "check-feedback-wrong", text: "Not quite, try again or continue" },
+                        correct: { cls: "check-feedback-correct", text: "Correct" },
                     };
-                    const feedback = feedbackByPhase[feedbackPhase] || feedbackByPhase.idle;
-                    const feedbackHtml = `<div class="feedback ${feedback.cls}">${feedback.text}</div>`;
+                    const checkState = checkStateByPhase[phase] || checkStateByPhase.idle;
 
                     const isLocked = phase === "correct";
                     const checkDisabled = (answerIndices.length === 0 || isLocked) ? "disabled" : "";
-                    const checkLabel = "Check";
-                    const clearDisabled = ((answerIndices.length === 0 && phase === "idle") || isLocked) ? "disabled" : "";
                     const revealDisabled = isLocked ? "disabled" : "";
 
                     el.innerHTML = `
@@ -235,10 +231,8 @@ class QuestionWidget(anywidget.AnyWidget):
                                 ${poolHtml}
                             </div>
                             <div class="button-row">
-                                <button class="control action-btn clear-btn" id="clear-btn" ${clearDisabled}>Clear</button>
-                                <button class="control action-btn check-btn" id="check-btn" ${checkDisabled}>${checkLabel}</button>
+                                <button class="control action-btn check-feedback-btn ${checkState.cls}" id="check-btn" ${checkDisabled}>${checkState.text}</button>
                             </div>
-                            ${feedbackHtml}
                             <div class="reveal-container">
                                 <button class="reveal-toggle-btn" id="reveal-btn" ${revealDisabled}>
                                     ${revealed 
@@ -310,12 +304,6 @@ class QuestionWidget(anywidget.AnyWidget):
                         });
                     }
 
-                    on("#clear-btn", "click", () => {
-                        if (phase === "correct") return;
-                        answerIndices = [];
-                        setIdleAndRedraw();
-                    });
-
                     on("#reveal-btn", "click", () => {
                         if (phase === "correct") return;
                         revealed = !revealed;
@@ -334,7 +322,6 @@ class QuestionWidget(anywidget.AnyWidget):
                         model.save_changes();
 
                         phase = isCorrect ? "correct" : "wrong";
-                        feedbackPhase = phase;
                         if (isCorrect) {
                             revealed = true;
                         }
@@ -345,7 +332,6 @@ class QuestionWidget(anywidget.AnyWidget):
             function resetForNewQuestion() {
                 answerIndices = [];
                 phase = "idle";
-                feedbackPhase = "idle";
                 // ADDED: hide reveal when Python pushes a new question
                 revealed = false;
                 checkNonce = 0;
@@ -394,8 +380,7 @@ class QuestionWidget(anywidget.AnyWidget):
         }
         .question-shell .question-text,
         .question-shell .question-hint,
-        .question-shell .surface,
-        .question-shell .button-row {
+        .question-shell .surface {
             width: 100%;
             max-width: var(--la-max-width-controls, 100%);
             margin-left: auto;
@@ -493,35 +478,6 @@ class QuestionWidget(anywidget.AnyWidget):
             font-style: italic;
             font-size: 0.9rem;
         }
-        .feedback {
-            margin: 0.5rem 0 0.15rem;
-            padding: 0.35rem 0.85rem;
-            border-radius: 9999px;
-            text-align: center;
-            font-weight: 500;
-            font-size: 0.95rem;
-            min-height: 2rem;
-            box-sizing: border-box;
-            width: 100%;
-            max-width: min(var(--la-max-width-controls, 100%), 28rem);
-            margin-left: auto;
-            margin-right: auto;
-        }
-        .feedback-neutral {
-            background: var(--la-neutral-bg, #f1f5f9);
-            border: 1px solid var(--la-neutral-border, #cbd5e1);
-            color: var(--la-neutral-fg, #334155);
-        }
-        .feedback-wrong {
-            background: var(--la-warning-bg, #fff0d8);
-            border: 1px solid var(--la-warning-border, #c97b0e);
-            color: var(--la-warning-fg, #704010);
-        }
-        .feedback-correct {
-            background: var(--la-success-bg, #e5f7ee);
-            border: 1px solid var(--la-success-border, #2e8b57);
-            color: var(--la-success-fg, #145339);
-        }
         .reveal-container {
             margin: 0.35rem auto 0;
             width: 100%;
@@ -569,9 +525,39 @@ class QuestionWidget(anywidget.AnyWidget):
             flex-wrap: wrap;
             gap: 0.5rem;
             margin-top: 0.55rem;
+            width: 100%;
+            max-width: min(var(--la-max-width-controls, 100%), 28rem);
+            margin-left: auto;
+            margin-right: auto;
         }
         .action-btn {
             min-width: 5rem;
+        }
+        .check-feedback-btn {
+            width: 100%;
+            height: 3.5rem;
+            padding: 0.35rem 0.8rem;
+            border-radius: 0.75rem;
+            font-weight: 600;
+        }
+        .check-feedback-idle {
+            background: var(--la-neutral-bg, #f1f5f9);
+            border: 1px solid var(--la-neutral-border, #cbd5e1);
+            color: var(--la-neutral-fg, #334155);
+        }
+        .check-feedback-wrong {
+            background: var(--la-warning-bg, #fff0d8);
+            border: 1px solid var(--la-warning-border, #c97b0e);
+            color: var(--la-warning-fg, #704010);
+        }
+        .check-feedback-correct {
+            background: var(--la-success-bg, #e5f7ee);
+            border: 1px solid var(--la-success-border, #2e8b57);
+            color: var(--la-success-fg, #145339);
+        }
+        .check-feedback-btn[disabled] {
+            opacity: 1;
+            cursor: default;
         }
         .action-btn[disabled] {
             opacity: 0.35;
@@ -857,9 +843,7 @@ def _():
 
 @app.cell
 def _(raw_pairs):
-    pyodide_question_files_by_pair = {
-        pair: ["sentence_builder.json"] for pair in raw_pairs
-    }
+    pyodide_question_files_by_pair = {pair: ["sentence_builder.json"] for pair in raw_pairs}
     pyodide_question_files_by_pair["de_no"] = [
         "sentence_builder.json",
         "single_word_translation.json",
@@ -883,9 +867,7 @@ def _():
 
 @app.cell
 def _(raw_pairs):
-    available_languages = sorted(
-        {lang for pair in raw_pairs for lang in pair.split("_")}
-    )
+    available_languages = sorted({lang for pair in raw_pairs for lang in pair.split("_")})
     return (available_languages,)
 
 
@@ -945,8 +927,10 @@ def _(df, row_number, start_session_id):
     _ = start_session_id
     current_sentence = get_sentence(df=df, row_number=row_number)
 
+
     def toggle_reveal(current: bool) -> bool:
         return not current
+
 
     # button_reveal = mo.ui.button(label="Reveal Answer", value=False, on_click=toggle_reveal)
     return (current_sentence,)
@@ -1022,9 +1006,7 @@ def _(active_question_key, start_session_id, target_language, widget):
             session_pending_stats["pending_total_correct"] += 1
         target_key = str(target_language or "").strip()
         if target_key:
-            per_language = session_pending_stats[
-                "pending_by_target_language"
-            ].setdefault(
+            per_language = session_pending_stats["pending_by_target_language"].setdefault(
                 target_key,
                 {"attempts": 0, "correct": 0},
             )
@@ -1055,9 +1037,7 @@ def _(
     start_session_id,
 ):
     widget_payload = (
-        lifetime_stats_widget.value
-        if isinstance(lifetime_stats_widget.value, dict)
-        else {}
+        lifetime_stats_widget.value if isinstance(lifetime_stats_widget.value, dict) else {}
     )
     last_applied_nonce = int(widget_payload.get("last_applied_nonce", 0) or 0)
     reset_command_nonce = 1_000_000 + int(lifetime_reset_nonce)
@@ -1088,9 +1068,7 @@ def _(
         pending_lifetime_buffer.get("pending_total_attempts", 0) or 0
     ) > 0 or any(
         int((counts or {}).get("attempts", 0) or 0) > 0
-        for counts in pending_lifetime_buffer.get(
-            "pending_by_target_language", {}
-        ).values()
+        for counts in pending_lifetime_buffer.get("pending_by_target_language", {}).values()
     )
 
     if lifetime_reset_nonce > 0 and last_applied_nonce != reset_command_nonce:
@@ -1167,9 +1145,7 @@ def _(button_next, df, in_question_view, row_number):
     last_question_index = max(0, total_questions - 1)
     is_last_question = total_questions > 0 and row_number >= last_question_index
     show_summary_page = (
-        in_question_view
-        and total_questions > 0
-        and button_next.value > last_question_index
+        in_question_view and total_questions > 0 and button_next.value > last_question_index
     )
     return show_summary_page, total_questions
 
@@ -1260,9 +1236,7 @@ def _(
     file_names = sorted(set(file_names + cloze_files))
 
     default_file = (
-        "sentence_builder.json"
-        if "sentence_builder.json" in file_names
-        else file_names[0]
+        "sentence_builder.json" if "sentence_builder.json" in file_names else file_names[0]
     )
     default_file_option = humanize_question_file_name(default_file)
     file_options = {humanize_question_file_name(name): name for name in file_names}
@@ -1426,9 +1400,7 @@ def _(
         )
         attribute_options = family_to_attribute_options.get(_selected_family, [])
         selected_attributes = [
-            tag
-            for tag in list(dropdown_focus_attributes.value)
-            if tag in attribute_options
+            tag for tag in list(dropdown_focus_attributes.value) if tag in attribute_options
         ]
         selected_focus_family = _selected_family
         # If user clears all attributes, keep family-only filtering active.
@@ -1474,6 +1446,7 @@ def _():
 def _():
     def bump(counter: int) -> int:
         return counter + 1
+
 
     button_start_questions = mo.ui.button(
         value=0,
@@ -1566,29 +1539,14 @@ def _(
 def _(start_session_id):
     _ = start_session_id
 
+
     def handle_navigation(c: int) -> int:
         return c + 1
+
 
     button_prev = mo.ui.button(value=0, on_click=handle_navigation, label="◀ Prev")
     button_next = mo.ui.button(value=0, on_click=handle_navigation, label="Next ▶")
     return button_next, button_prev
-
-
-@app.cell
-def _(start_session_id):
-    _ = start_session_id
-
-    # button_check_answer = mo.ui.button(
-    #     value={"tries": 0, "correct": 0, "last_result": None},
-    #     on_click=handle_check_answer,
-    #     label="Check answer",
-    # )
-    # button_reset = mo.ui.button(
-    #     value=0,
-    #     on_click=handle_reset_answer,
-    #     label="↺ Reset",
-    # )
-    return
 
 
 @app.cell(hide_code=True)
@@ -2360,9 +2318,7 @@ def _(lower_level_settings):
         if lower_level_settings is None:
             return None
         advanced_heading = mo.md("**Advanced settings**").center()
-        return mo.vstack(
-            [advanced_heading, lower_level_settings], gap=0.4, align="center"
-        )
+        return mo.vstack([advanced_heading, lower_level_settings], gap=0.4, align="center")
 
     return (render_advanced_settings_section,)
 
@@ -2407,6 +2363,7 @@ def _(
 @app.cell
 def _(current_sentence, df, row_number, session_score):
     # stats = button_check_answer.value
+
 
     def render_stats() -> mo.Html:
         return mo.hstack(
