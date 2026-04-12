@@ -11,7 +11,7 @@
 
 import marimo
 
-__generated_with = "0.23.0"
+__generated_with = "0.23.1"
 app = marimo.App(width="full", layout_file="layouts/language_app.grid.json")
 
 with app.setup:
@@ -50,6 +50,7 @@ def _():
 def _(
     app_theme_styles,
     current_sentence,
+    in_lifetime_stats_view,
     in_question_view,
     render_interaction_section,
     render_lifetime_stats_section,
@@ -74,12 +75,12 @@ def _(
         )
 
         mo_elems = [app_theme_styles, *question_active_marker, app_header]
-        if not in_question_view:
-            mo_elems.append(render_options_section())
+        if in_lifetime_stats_view:
             mo_elems.append(render_lifetime_stats_section())
+        elif not in_question_view:
+            mo_elems.append(render_options_section())
         elif show_summary_page:
             mo_elems.append(render_summary_section())
-            mo_elems.append(render_lifetime_stats_section())
         else:
             if current_sentence:
                 mo_elems.append(render_interaction_section())
@@ -1484,6 +1485,11 @@ def _():
         on_click=bump,
         label="Main menu",
     )
+    button_open_lifetime_stats = mo.ui.button(
+        value=0,
+        on_click=bump,
+        label="Lifetime stats",
+    )
     button_restart_session = mo.ui.button(
         value=0,
         on_click=bump,
@@ -1506,11 +1512,19 @@ def _():
         on_click=bump,
         label="Cancel",
     )
-    mo.hstack([button_start_questions, button_restart_session, button_main_menu])
+    mo.hstack(
+        [
+            button_start_questions,
+            button_restart_session,
+            button_open_lifetime_stats,
+            button_main_menu,
+        ]
+    )
     return (
         button_cancel_reset_lifetime,
         button_confirm_reset_lifetime,
         button_main_menu,
+        button_open_lifetime_stats,
         button_request_reset_lifetime,
         button_restart_session,
         button_start_questions,
@@ -1518,10 +1532,20 @@ def _():
 
 
 @app.cell
-def _(button_main_menu, button_restart_session, button_start_questions):
+def _(
+    button_main_menu,
+    button_open_lifetime_stats,
+    button_restart_session,
+    button_start_questions,
+):
     start_session_id = button_start_questions.value + button_restart_session.value
-    in_question_view = start_session_id > button_main_menu.value
-    return in_question_view, start_session_id
+    in_question_view = start_session_id > max(
+        button_main_menu.value, button_open_lifetime_stats.value
+    )
+    in_lifetime_stats_view = button_open_lifetime_stats.value > max(
+        button_main_menu.value, start_session_id
+    )
+    return in_lifetime_stats_view, in_question_view, start_session_id
 
 
 @app.cell
@@ -2299,14 +2323,11 @@ def _():
     return
 
 
-@app.cell
-def _():
-    def render_options_intro() -> mo.Html:
-        return mo.md(
-            "Choose source and target language, question set, and difficulty, then press start."
-        ).center()
-
-    return (render_options_intro,)
+@app.function
+def render_options_intro() -> mo.Html:
+    return mo.md(
+        "Choose source and target language, question set, and difficulty, then press start."
+    ).center()
 
 
 @app.cell
@@ -2348,10 +2369,10 @@ def _(lower_level_settings):
 
 @app.cell
 def _(
+    button_open_lifetime_stats,
     button_start_questions,
     render_advanced_settings_section,
     render_core_settings_section,
-    render_options_intro,
 ):
     def render_options_section() -> mo.Html:
         section_divider = mo.Html(
@@ -2363,7 +2384,14 @@ def _(
             sections.append(section_divider)
             sections.append(advanced_settings_section)
         sections.append(section_divider)
-        sections.append(button_start_questions.center())
+        sections.append(
+            mo.hstack(
+                [button_start_questions, button_open_lifetime_stats],
+                justify="center",
+                wrap=True,
+                gap=0.6,
+            )
+        )
         return mo.vstack(
             sections,
             gap=1,
@@ -2449,6 +2477,7 @@ def _(
     LANG_MAP,
     button_cancel_reset_lifetime,
     button_confirm_reset_lifetime,
+    button_main_menu,
     button_request_reset_lifetime,
     lifetime_stats,
     lifetime_stats_widget,
@@ -2551,6 +2580,7 @@ def _(
             )
         else:
             elements.append(button_request_reset_lifetime.center())
+        elements.append(button_main_menu.center())
 
         return mo.vstack(elements, gap=0.8).style(
             {
