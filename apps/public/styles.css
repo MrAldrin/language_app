@@ -157,7 +157,7 @@
   }
 
   .app-title h1 {
-    font-size: clamp(1.15rem, 6.6vw, 1.55rem);
+    font-size: clamp(1.25rem, 7vw, 1.7rem);
     line-height: 1.15;
   }
 
